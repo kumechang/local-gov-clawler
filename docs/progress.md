@@ -21,7 +21,7 @@
 ## 未実施 / 次にやること
 1. ~~奈良県の実クロール~~ → 完了(2026-10-14、run #1)。結果は `data/results/actions_direct/29/`。
 1b. ~~ロジック改善の実装~~ → 完了(D-017〜D-024、テスト41件)。**奈良県の再実行**(`commit_results=true` 推奨)と結果比較がユーザー作業待ち。実サイトでの効果は未確認。
-2. **正解データ10件の作成**(ユーザー作業): `data/ground_truth/sports_hub_nara.csv`。奈良県の自治体サイトを目視し、スポーツ施設の入口ページURLを記入。
+2. **正解データ10件の作成**(ユーザー作業): `data/ground_truth/sports_hub_nara.csv` に10自治体を事前記入済み(選定理由と記入手順は `data/ground_truth/README.md`)。各サイトを目視し `hub_url` を記入。結果JSONは見ずに記入する。
 3. 到達率・失敗原因の分類・AIに回る割合の確認 → ロジック調整 → ユーザーへ報告 → 全国展開の判断。
 4. 取得経路の比較: `actions_direct` / `proxy`(要 `CRAWL_PROXY_URL` Secret)/ `local`(手元PC)。
 

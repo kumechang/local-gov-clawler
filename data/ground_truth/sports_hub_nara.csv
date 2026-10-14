@@ -1,1 +1,11 @@
-municipality_code,hub_url,notes
+municipality_code,municipality_name,site_url,hub_url,notes
+29201,奈良市,https://www.city.nara.lg.jp/,,
+29202,大和高田市,https://www.city.yamatotakada.nara.jp/,,
+29205,橿原市,https://www.city.kashihara.nara.jp/,,
+29206,桜井市,https://www.city.sakurai.lg.jp/,,
+29209,生駒市,https://www.city.ikoma.lg.jp/,,
+29210,香芝市,https://www.city.kashiba.lg.jp/,,
+29211,葛城市,https://www.city.katsuragi.nara.jp/,,
+29344,斑鳩町,https://www.town.ikaruga.nara.jp/,,
+29427,河合町,https://www.town.kawai.nara.jp/,,
+29444,黒滝村,https://www.vill.kurotaki.nara.jp/,,
