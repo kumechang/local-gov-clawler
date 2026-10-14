@@ -1,0 +1,129 @@
+name: crawl
+# 手動実行のみ。自治体サイトへのアクセスが発生するため、定期実行にはしていない(docs/decisions.md D-007)。
+on:
+  workflow_dispatch:
+    inputs:
+      prefecture:
+        description: 対象の都道府県名(例 奈良県)。空なら全国
+        default: 奈良県
+      route:
+        description: 取得経路ラベル(actions_direct / proxy)。結果の保存先ディレクトリ名になる
+        default: actions_direct
+      use_proxy:
+        description: Secret CRAWL_PROXY_URL の国内プロキシ経由で取得する
+        type: boolean
+        default: false
+      shards:
+        description: シャード数(全国実行時は20程度)
+        default: "1"
+      commit_results:
+        description: 結果JSONとサマリをこのブランチへコミットする
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      shards: ${{ steps.m.outputs.shards }}
+    steps:
+      - id: m
+        env:
+          SHARDS: ${{ inputs.shards }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          n = int(os.environ["SHARDS"])
+          assert 1 <= n <= 256
+          print("shards=" + json.dumps(list(range(n))))
+          PY
+
+  crawl:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJSON(needs.plan.outputs.shards) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e .
+      - name: crawl
+        env:
+          PREFECTURE: ${{ inputs.prefecture }}
+          ROUTE: ${{ inputs.route }}
+          TOTAL: ${{ inputs.shards }}
+          SHARD: ${{ matrix.shard }}
+          USE_PROXY: ${{ inputs.use_proxy }}
+          CRAWL_PROXY_URL: ${{ secrets.CRAWL_PROXY_URL }}
+        run: |
+          args=(run --route "$ROUTE" --shard "$SHARD/$TOTAL" --out out/results --save-html out/raw)
+          if [ -n "$PREFECTURE" ]; then args+=(--prefecture "$PREFECTURE"); fi
+          if [ "$USE_PROXY" = "true" ]; then args+=(--use-proxy); fi
+          localgov-crawler "${args[@]}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: results-${{ matrix.shard }}
+          path: out/results
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        with:
+          name: raw-html-${{ matrix.shard }}
+          path: out/raw
+          retention-days: 14
+          if-no-files-found: ignore
+
+  merge:
+    needs: [plan, crawl]
+    if: ${{ !cancelled() && needs.plan.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e .
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: results-*
+          path: collected
+          merge-multiple: true
+      - name: merge and summarize
+        env:
+          ROUTE: ${{ inputs.route }}
+          PREFECTURE: ${{ inputs.prefecture }}
+        run: |
+          mkdir -p data/results
+          cp -r collected/. data/results/
+          localgov-crawler summarize --route "$ROUTE"
+          db_args=(merge-db --route "$ROUTE" --db out/crawl.sqlite)
+          if [ -n "$PREFECTURE" ]; then db_args+=(--prefecture "$PREFECTURE"); fi
+          localgov-crawler "${db_args[@]}"
+          cat "data/summary/$ROUTE.md" >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: crawl-sqlite
+          path: out/crawl.sqlite
+          retention-days: 30
+      - name: commit results
+        if: ${{ inputs.commit_results }}
+        env:
+          ROUTE: ${{ inputs.route }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/results data/summary
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "data: crawl results (route=$ROUTE)"
+          git pull --rebase origin "$BRANCH"
+          git push origin "HEAD:$BRANCH"
