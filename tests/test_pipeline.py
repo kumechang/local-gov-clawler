@@ -87,6 +87,7 @@ def test_store_roundtrip_summary_and_evaluate(tmp_path, city_routes):
     truth.write_text("municipality_code,hub_url,notes\n29999,https://www.city.example.jp/sports/shisetsu.html/,\n29998,https://www.town.x.jp/sports/,\n", encoding="utf-8")
     ev = store.evaluate(results, truth)
     assert ev["truth_count"] == 2 and ev["reached"] == 1 and ev["reach_rate"] == 0.5
+    assert ev["selected"] == 1 and ev["selected_correct"] == 1 and ev["selected_precision"] == 1.0 and ev["selected_correct_rate"] == 0.5
     store.build_db(tmp_path, "test", [M], tmp_path / "x.sqlite")
     import sqlite3
     con = sqlite3.connect(tmp_path / "x.sqlite")
