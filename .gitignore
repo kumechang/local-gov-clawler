@@ -1,0 +1,11 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.venv/
+# HTML原本・生データは公開リポジトリに入れない(docs/decisions.md D-005)
+out/
+raw/
+data/raw/
+# 結果JSONから再生成できるSQLite
+*.sqlite
+*.db
