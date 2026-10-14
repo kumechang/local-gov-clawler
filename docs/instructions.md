@@ -23,3 +23,4 @@
 - 「crawlが見つけられない」→ 手動実行ワークフローは `main` に無いとActions一覧に出ないことを説明。
 - 「PRを作ってmainにマージして」→ `claude/local-government-crawler-9nb679` から `main` へPRを作成してマージする。
 - 「crawlを実行した結果を見て」(ユーザーがActionsで奈良県を実行した後)→ 結果を取得・分析し、`docs/reports/pilot-nara-run1.md` に記録。結果JSONを `data/results/actions_direct/29/` に保存。
+- 「1を進めて」(改善案1=ロジック改善6項目の実装)→ 実装してテスト追加、決定ログD-017〜D-024に記録。

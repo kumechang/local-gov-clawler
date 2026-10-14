@@ -32,6 +32,7 @@ class FetchResult:
     redirects: int = 0
     etag: str = ""
     last_modified: str = ""
+    retry_after: float | None = None  # 秒。Retry-Afterが秒数のときだけ
 
     @property
     def ok(self) -> bool:
@@ -51,6 +52,8 @@ class FetchResult:
 def classify_http_status(status: int) -> str:
     if status == 403:
         return "http_403"
+    if status == 408:
+        return "http_408"
     if status == 429:
         return "http_429"
     if status in (404, 410):
@@ -144,6 +147,8 @@ class Fetcher:
                 res.content_type = r.headers.get("content-type", "")
                 res.etag = r.headers.get("etag", "")
                 res.last_modified = r.headers.get("last-modified", "")
+                ra = r.headers.get("retry-after", "")
+                res.retry_after = float(ra) if ra.strip().isdigit() else None
                 chunks, size = [], 0
                 for chunk in r.iter_bytes():
                     size += len(chunk)

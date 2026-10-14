@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import gzip
+import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -18,15 +19,19 @@ from .robots import RobotsInfo, parse_robots
 from .sitemap import UrlTally, parse_sitemap
 
 SCHEMA_VERSION = 1
+RETRYABLE = {"timeout", "conn_reset", "http_408", "http_429", "http_5xx"}
 
 
 @dataclass
 class Config:
     route: str = "local"  # actions_direct / proxy / local など。取得経路の比較に使う
-    max_requests: int = 25
-    d1_fetch: int = 4
+    max_requests: int = 30
+    d1_fetch: int = 6  # トップのリンクから先を取得する候補ページ数
+    d2_fetch: int = 3  # さらにその先(候補ページ内のリンク)を取得する数
+    d2_min_score: int = 5
     sitemap_attempts: int = 3
-    sitemap_children: int = 8
+    sitemap_children: int = 5
+    retry_wait: float = 2.0  # 一時的な失敗の再試行までの待ち(秒)
     save_html_dir: Path | None = None
 
 
@@ -54,6 +59,15 @@ class _Ctx:
                 return FetchResult(url, url, error_class="robots_disallowed")
         res = self.fetcher.get(url)
         self.log.append(res.log_entry())
+        # 一時的な失敗は1回だけ再試行する。Retry-Afterが長い(30秒超)ときは従って諦める
+        if res.error_class in RETRYABLE and len(self.log) < self.cfg.max_requests:
+            wait = res.retry_after if res.retry_after is not None else self.cfg.retry_wait
+            if wait <= 30:
+                time.sleep(wait)
+                res = self.fetcher.get(url)
+                entry = res.log_entry()
+                entry["retry"] = True
+                self.log.append(entry)
         return res
 
     def load_robots(self, url: str) -> RobotsInfo:
@@ -63,8 +77,6 @@ class _Ctx:
             return self.robots[host]
         robots_url = f"{parts.scheme}://{parts.netloc}/robots.txt"
         res = self.get(robots_url, check_robots=False)
-        if res.error_class in ("timeout", "conn_reset", "connect_error", "http_5xx") and len(self.log) < self.cfg.max_requests:
-            res = self.get(robots_url, check_robots=False)  # 一時的な失敗は1回だけ再試行
         info = parse_robots(res)
         if info.crawl_delay:
             self.fetcher.set_host_delay(host, info.crawl_delay)
@@ -148,28 +160,8 @@ def _analyze(m: Municipality, ctx: _Ctx, cfg: Config, result: dict) -> None:
     urls = [l.url for l in links if l.same_site] + (tally.sample if tally else [])
     profile["cms"] = detect_cms(html, soup, urls).to_dict()
 
-    # 5. ハブ候補(トップのナビ → 上位候補ページを取得 → その先のリンクまで)
-    cands = hub.candidates_from_links(links, "nav", 1)
-    if tally:
-        cands += hub.candidates_from_urls(tally.keyword_urls)
-    # robotsで禁止されたパスは、後段でも取得できないため候補から外す(記録は残す)
-    blocked = sorted({c.url for c in cands if not robots.can_fetch(c.url)})
-    cands = [c for c in cands if c.url not in blocked]
-    fetch_targets = [c for c in cands if c.source == "nav" and c.score >= 4][: cfg.d1_fetch]
-    child_cands: list[hub.Candidate] = []
-    for c in fetch_targets:
-        page = ctx.get(c.url)
-        if not page.ok or (page.content_type and "html" not in page.content_type.lower()):
-            c.reasons.append(f"page_fetch_{page.error_class or page.status}")
-            continue
-        p_html = decode_bytes(page.body, page.content_type)
-        p_soup = parse_html(p_html)
-        p_links = extract_links(p_soup, page.final_url, final_host)
-        n, head = hub.page_features(p_soup, p_links)
-        hub.rescore_with_page(c, n, head)
-        child_cands += hub.candidates_from_links(p_links, "depth1_link", 2)[:10]
-    child_cands = [c for c in child_cands if c.url not in blocked and robots.can_fetch(c.url)]
-    decision = hub.decide(cands + child_cands)
+    # 5. ハブ候補(トップのナビ → 上位候補ページ → その先のリンク、まで)
+    decision, blocked = _find_hub(ctx, cfg, robots, links, tally, final_host)
     result["genre_entrypoints"] = [
         {"genre": hub.GENRE, "decision": decision.outcome, "provenance": "auto", "selected": decision.selected.to_dict() if decision.selected else None, "candidates": [c.to_dict() for c in decision.top], "blocked_by_robots": blocked[:20]}
     ]
@@ -183,6 +175,49 @@ def _analyze(m: Municipality, ctx: _Ctx, cfg: Config, result: dict) -> None:
         result["needs_review"].append(outcome)
         result["ai_needed"] = not render.needs_headless
     result["outcome"] = outcome
+
+
+def _visit(ctx: _Ctx, c: hub.Candidate, site_host: str):
+    """候補ページを取得して施設名リンクの数などで再採点し、ページ内のリンクを返す。取れなければNone。"""
+    page = ctx.get(c.url)
+    if not page.ok or (page.content_type and "html" not in page.content_type.lower()):
+        c.reasons.append(f"page_fetch_{page.error_class or page.status}")
+        return None
+    soup = parse_html(decode_bytes(page.body, page.content_type))
+    links = extract_links(soup, page.final_url, site_host)
+    n, head = hub.page_features(soup, links)
+    hub.rescore_with_page(c, n, head)
+    return links
+
+
+def _find_hub(ctx: _Ctx, cfg: Config, robots: RobotsInfo, links, tally, site_host):
+    cands = hub.candidates_from_links(links, "nav", 1)
+    if tally:
+        cands += hub.candidates_from_urls(tally.keyword_urls)
+    # robotsで禁止されたパスは、後段でも取得できないため候補から外す(記録は残す)
+    blocked = sorted({c.url for c in cands if not robots.can_fetch(c.url)})
+    cands = [c for c in cands if c.url not in blocked]
+
+    # 1段目: ナビの候補ページ(スポーツ語・施設を探す・教育/文化などの大分類)を取得
+    children: list[hub.Candidate] = []
+    visited: set[str] = set()
+    for c in [c for c in cands if c.source == "nav" and c.score >= hub.FETCH_MIN][: cfg.d1_fetch]:
+        visited.add(c.url)
+        page_links = _visit(ctx, c, site_host)
+        if page_links is not None:
+            children += hub.candidates_from_links(page_links, "depth1_link", 2)[:10]
+    children = [c for c in children if c.url not in blocked and robots.can_fetch(c.url)]
+
+    # 2段目: 1段目のページで見つかった有望なリンクを、少数だけ取得して施設名リンクを確認
+    seen: set[str] = set()
+    for c in sorted(children, key=lambda c: -c.score):
+        if len(seen) >= cfg.d2_fetch:
+            break
+        if c.url in visited or c.url in seen or c.score < cfg.d2_min_score:
+            continue
+        seen.add(c.url)
+        _visit(ctx, c, site_host)
+    return hub.decide(cands + children), blocked
 
 
 def _sitemap(m, ctx, cfg, robots, top_url, site_host):

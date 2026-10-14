@@ -1,4 +1,6 @@
-"""CMS推定。シグネチャ照合のみ(ルールベース)。ベンダー名が確定しないURL形式は 'url_pattern:*' として記録する。"""
+"""CMS推定。シグネチャ照合のみ(ルールベース)。ベンダー名が確定しないURL形式は 'url_pattern:*' として記録する。
+
+ファミリー名は「同じ仕組みだろう」という分類で、ベンダー特定ではない。ベンダー名の対応付けは手動確認の後に足す。"""
 from __future__ import annotations
 
 import re
@@ -37,6 +39,15 @@ SIGNATURES: list[Signature] = [
     _sig("url_pattern:kiji_numeric", "url", r"/kiji\d+/", 5),
     _sig("url_pattern:www_contents", "url", r"/www/contents/\d+\.html", 5),
     _sig("url_pattern:cmsfiles", "url", r"/cmsfiles/|/_files/", 3),
+    # 奈良県パイロットで共通して見えた形式(ベンダー名は未確定)
+    _sig("url_pattern:category_numeric", "url", r"/category/\d+(-\d+){5,}\.html", 6),
+    _sig("url_pattern:category_numeric", "url", r"/\d{10}\.html", 4),
+    _sig("url_pattern:category_numeric", "url", r"/module/banner\.cgi|/cmsform/", 3),
+    _sig("url_pattern:life_numeric", "url", r"/life/\d+(/\d+)+/?$", 6),
+    _sig("url_pattern:genre_dir_index", "url", r"/(kanko_bunka_sports|kosodate_manabi|kyoiku_bunka_shogai|kenko_sports|kurashi|shisei)/([\w\-]+/)*(index|\d+)\.html", 5),
+    _sig("url_pattern:php_query", "url", r"/(contents_detail|category_list|soshiki_view)\.php", 6),
+    _sig("url_pattern:news_event_numeric", "url", r"/(oshirase_top|event_top|event_news|info|event|bosyu|bosyuinfo|daiji)/\d+\.html", 4),
+    _sig("url_pattern:soshiki_named", "url", r"/soshiki/[a-z0-9_\-]+(/[a-z0-9_\-]+)+/\d+(/\d+)?\.html", 5),
 ]
 
 

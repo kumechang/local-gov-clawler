@@ -17,7 +17,15 @@ robots.txt遵守、1ホスト1req/秒以下、UAに連絡先、自治体単位�
 `data/input/municipalities_master.csv`(1,918行 = 市区町村1,747 + 政令市の区171)。主な列: 地方公共団体コード、名称、`official_website_url`、`xml_sitemap_url` / `xml_sitemap_candidate_url`。
 
 ## 1自治体の処理(`pipeline.analyze`)
-1. robots.txt取得・解釈 → 2. トップページ取得(リダイレクト先・ステータス・所要時間) → 3. JS描画要否判定 → 4. 同一サイトのリンク抽出(文言・URL・領域) + メニュー区分の検出 → 5. サイトマップ(robots記載 → CSVの候補 → /sitemap.xml の順に最大3件試行、indexは子8件まで)→ 件数・lastmod分布・トップレベルパス別件数 → 6. CMS推定(generator/HTML/URL形式のシグネチャ) → 7. ハブ候補スコアリング → 上位4候補ページを取得して施設名リンク数で再採点、その先のリンクも候補化 → 8. 判定。
+1. robots.txt取得・解釈 → 2. トップページ取得(リダイレクト先・ステータス・所要時間) → 3. JS描画要否判定(本文もリンクも少なく画像も少ない場合のみ) → 4. 同一サイトのリンク抽出(文言・URL・領域。画像のみのリンクはファイル名を仮ラベルに) + メニュー区分の検出 → 5. サイトマップ(robots記載 → CSVの候補 → /sitemap.xml の順に最大3件試行、indexは子5件まで)→ 件数・lastmod分布・トップレベルパス別件数 → 6. CMS推定(generator/HTML/URL形式のシグネチャ) → 7. ハブ探索 → 8. 判定。
+
+### ハブ探索(`pipeline._find_hub` / `hub.py`)
+- **候補の採点**: リンク文言(NFKC正規化)をスポーツ語(スポーツ施設・体育施設・運動施設など)、探索語(施設を探す・町の施設など)、大分類(教育・文化・くらしなど)、サイトマップページで採点。お知らせ記事らしい文言は取得も採用もしない。
+- **1段目**: スコア2以上の候補を上位6件まで取得し、施設名リンク(体育館・グラウンド・プール等)の数とtitle/h1で再採点。ページ内のリンクを2段目の候補にする。
+- **2段目**: 2段目の候補のうち有望なもの(スコア5以上)を上位3件まで取得して再採点。
+- **採用**: スコア8以上、かつ施設名リンクがある(または強い語)ものだけ。浅い階層を優先し、同じ階層の次点との差が4未満なら `hub_multiple`。大分類・サイトマップだけが根拠の候補は採用しない。
+- リクエスト上限は1自治体30件。robotsで禁止されたパスは候補から除外する。
+- 一時的な失敗(408/429/5xx/タイムアウト/接続リセット)は1回だけ再試行。
 
 ## 出力(`data/results/<route>/<pref>/<code>.json`、schema_version=1)
 `municipality` / `run` / `outcome` / `failure_class` / `needs_review` / `ai_needed` / `site_profile`(robots, top, rendering, sitemap, cms, fetch_method, used_proxy) / `nav_links` / `menu_labels` / `genre_entrypoints`(decision, selected, candidates, blocked_by_robots) / `requests`。
