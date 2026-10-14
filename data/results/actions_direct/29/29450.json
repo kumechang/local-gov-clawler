@@ -1,0 +1,831 @@
+{
+ "ai_needed": true,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [],
+   "decision": "hub_not_found",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "selected": null
+  }
+ ],
+ "menu_labels": [
+  "暮らし",
+  "子育て",
+  "観光",
+  "行政情報",
+  "手続き"
+ ],
+ "municipality": {
+  "code": "29450",
+  "full_name": "下北山村",
+  "kind": "village",
+  "name": "下北山村",
+  "official_url": "https://www.vill.shimokitayama.nara.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "奈良県吉野郡下北山村 下北山村役場",
+   "url": "https://www.vill.shimokitayama.nara.jp/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "下北山村を知る",
+   "url": "https://www.vill.shimokitayama.nara.jp/about/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "村の概要",
+   "url": "https://www.vill.shimokitayama.nara.jp/about/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "木、鳥、花",
+   "url": "https://www.vill.shimokitayama.nara.jp/about/about2.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "村の位置、気候",
+   "url": "https://www.vill.shimokitayama.nara.jp/about/about3.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "人口と世帯数",
+   "url": "https://www.vill.shimokitayama.nara.jp/about/about4.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "歴史",
+   "url": "https://www.vill.shimokitayama.nara.jp/about/about5.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "総合計画",
+   "url": "https://www.vill.shimokitayama.nara.jp/about/about6.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "総合戦略",
+   "url": "https://www.vill.shimokitayama.nara.jp/about/vision.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "村の施設",
+   "url": "https://www.vill.shimokitayama.nara.jp/about/about7.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "アクセス",
+   "url": "https://www.vill.shimokitayama.nara.jp/about/access.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "役場情報",
+   "url": "https://www.vill.shimokitayama.nara.jp/yakuba/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "村長ごあいさつ",
+   "url": "https://www.vill.shimokitayama.nara.jp/yakuba/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "各課のご案内",
+   "url": "https://www.vill.shimokitayama.nara.jp/yakuba/yakuba2.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "下北山村議会委員会構成",
+   "url": "https://www.vill.shimokitayama.nara.jp/yakuba/yakuba3.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "行政情報",
+   "url": "https://www.vill.shimokitayama.nara.jp/yakuba/yakuba4.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "職員採用情報",
+   "url": "https://www.vill.shimokitayama.nara.jp/yakuba/saiyou.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "女性活躍推進法について",
+   "url": "https://www.vill.shimokitayama.nara.jp/yakuba/woman.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "リンク集",
+   "url": "https://www.vill.shimokitayama.nara.jp/yakuba/link.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "暮らしの情報",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "補助金・支援制度など",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/hojokin.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "戸籍・証明書",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/tetsuduki.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "税金",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/zeikin.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "保険・年金",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/hoken.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "保健・医療",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/iryou.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "福祉",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/fukushi.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子育て・教育",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/kosodate.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ごみ・環境衛生",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/kankyou.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "農業・林業・建設",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/nougyou.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "消防・防災",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/shoubou.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "入札・契約情報",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/nyusatsu.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "広報誌下北山",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/kouhou.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光・イベント情報",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "イベント情報",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/event/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "世界遺産1 前鬼の里",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/sekaiisan1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "世界遺産2 三重の滝",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/sekaiisan2.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "世界遺産3 大日岳・釈迦ヶ岳",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/sekaiisan3.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "「聖地」の四季と伝説",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/seichi.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "フィッシング",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/fishing.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "キャンプ",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/camp.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "温泉",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/onsen.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ゴルフ",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/golf.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "宿泊施設",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/lodging.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "特産",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/tokusanhin.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "特産品ができるまで",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/tokusan/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光いろいろ",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/iroiro/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ワーケーション",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/workcation.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "移住・定住",
+   "url": "https://www.vill.shimokitayama.nara.jp/teiju/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "下北山村移住ガイドブック",
+   "url": "https://www.vill.shimokitayama.nara.jp/teiju/teiju1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "生活基盤情報",
+   "url": "https://www.vill.shimokitayama.nara.jp/teiju/teiju4.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "売却、賃貸可能な住宅用地・建物の紹介",
+   "url": "https://www.vill.shimokitayama.nara.jp/teiju/teiju3.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "きなりの郷 下北山での余暇の過ごし方",
+   "url": "https://www.vill.shimokitayama.nara.jp/teiju/teiju2.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと納税",
+   "url": "https://www.vill.shimokitayama.nara.jp/yakuba/furusatokifu.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "観光案内",
+   "url": "https://www.vill.shimokitayama.nara.jp/kankou/"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "【入札公告】 第繰8-4号 村道池原坂線池郷橋橋梁補修工事",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/10/5411767.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "【入札公告】第8-7号 大里生活改善センター改修工事",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/10/3429766.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "広報下北山2026年10月号を掲載しました!",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/10/0000626.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "下北山村カスタマーハラスメント対策基本方針を策定しました。",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/10/0934765.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "村道池郷の 県工事に伴う通行止めについて",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/09/0000762.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "【入札公告】下農第委8-6号 村道池郷線空谷橋橋梁補修設計委託業務",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/09/0000760.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "【入札公告】下農第委8-5号 村道池郷線小池橋橋梁補修設計委託業務",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/09/0000759.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "【入札公告】下農第委8-4号 村道池郷線道路災害防除工事測量設計委託業務",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/09/0000758.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "令和8年度空き家改修賃貸支援事業補助金のご案内",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/09/2147752.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "【入札公告】第8-6号 村道池郷線道路災害防除(2工区)工事",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/09/3000755.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "8月15日開催 下北山村花火大会2026 交通規制・会場案内のお知らせ",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/07/0000741.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "【7/25(土)】奈良・奥大和移住セミナーを開催します!",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/06/0000730.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "下北山村花火大会2026開催のお知らせ",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/06/0000727.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "バンビシャス奈良によるバスケットボール教室を開催します!",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/06/0000726.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "【6/23(火)】オンライン移住イベントを開催します。",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/06/0800723.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "5/16(土)体操イベント・5/17(日)プロレスイベントを開催します!",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/05/0000714.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "「第39回下北山村さくら祭」開催のお知らせ",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/03/2917696.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "奈良・奥大和移住セミナーを開催します!",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2025/11/5131685.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "奈良・奥大和移住セミナーを開催します!",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2025/09/0118664.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "第39回下北山村夏祭りタイムテーブルのご案内",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2025/07/1253644.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "田舎暮らしの本「2026年版 住みたい田舎ベストランキング」で下北山村が1位に選ばれました",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/01/3000691.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "戸籍へのフリガナ記載について(令和7年5月26日施行)",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2025/04/0605628.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "田舎暮らしの本「2025年版 住みたい田舎ベストランキング」移住者増の人気地ベスト100で下北山村が6位に選ばれました",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2025/01/4634612.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "戸籍の証明書の広域交付について(令和6年3月1日から)",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2024/02/3228550.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "住宅火災が多発しています!!",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2022/02/0122459.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "新型コロナワクチン接種証明書(ワクチンパスポート)について",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2021/07/4225444.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "下北山村公式LINEをはじめました!",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2021/01/5157438.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "起業支援補助金の2次募集を開始しました。",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2019/08/4855388.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "森林林業協力隊の募集【令和9年度採用】",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/09/3433750.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "行政職(一般事務職)を募集します!",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/06/3451677.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "道路情報についてお知らせ",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2024/12/2322606.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "【入札公告】第8-5号 村道小佐田カシモチ線法面工事",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/09/3000754.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "【入札公告】下農第委8-3号 備後川トンネル調査補修設計委託業務",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/09/3000751.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "【入札公告】下総備第8-1号 消防用無反動型ノズルの調達",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/07/0827739.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "【公募型プロポーザル】プロモーション動画制作・放映業務について",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/2026/07/3106738.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "お知らせ一覧はこちら",
+   "url": "https://www.vill.shimokitayama.nara.jp/oshirase/"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "下北山村公式LINEアカウント",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/line.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "きなりの郷下北山 広報誌",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/kouhou.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "窓口・手続き",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/tetsuduki.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "line.jpg",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/line.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "photo_20240419-115352 (1).jpg",
+   "url": "http://www.vill.shimokitayama.nara.jp/yakuba/furusatokifu.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "バナー写真.JPG",
+   "url": "http://www.vill.shimokitayama.nara.jp/workation/"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "企業版ふるさと納税バナー.jpg",
+   "url": "http://www.vill.shimokitayama.nara.jp/yakuba/post_24.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "情報公開.png",
+   "url": "https://www.vill.shimokitayama.nara.jp/yakuba/post_28.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "公益通報者バナー.jpg",
+   "url": "https://www.vill.shimokitayama.nara.jp/yakuba/post_29.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "住民監査請求.jpg",
+   "url": "https://www.vill.shimokitayama.nara.jp/yakuba/post_30.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "line",
+   "url": "https://www.vill.shimokitayama.nara.jp/kurashi/line.html"
+  }
+ ],
+ "needs_review": [
+  "hub_not_found"
+ ],
+ "outcome": "hub_not_found",
+ "requests": [
+  {
+   "bytes": 208,
+   "elapsed_ms": 1020,
+   "error_class": "http_404",
+   "final_url": "https://www.vill.shimokitayama.nara.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.vill.shimokitayama.nara.jp/robots.txt"
+  },
+  {
+   "bytes": 35544,
+   "elapsed_ms": 257,
+   "error_class": "",
+   "final_url": "https://www.vill.shimokitayama.nara.jp/",
+   "status": 200,
+   "url": "https://www.vill.shimokitayama.nara.jp/"
+  },
+  {
+   "bytes": 209,
+   "elapsed_ms": 228,
+   "error_class": "http_404",
+   "final_url": "https://www.vill.shimokitayama.nara.jp/sitemap.xml",
+   "status": 404,
+   "url": "https://www.vill.shimokitayama.nara.jp/sitemap.xml"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 1505,
+  "finished_at": "2026-10-14T22:56:47Z",
+  "request_count": 3,
+  "route": "actions_direct",
+  "started_at": "2026-10-14T22:56:45Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "none",
+   "evidence": [],
+   "family": "unknown",
+   "provenance": "auto",
+   "scores": {}
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 145,
+   "needs_headless": false,
+   "noscript_text_length": 0,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 17,
+   "text_length": 2270
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "http_404",
+     "kind": "",
+     "source": "default_path",
+     "status": 404,
+     "url": "https://www.vill.shimokitayama.nara.jp/sitemap.xml"
+    }
+   ],
+   "found": false,
+   "kind": "",
+   "source": "",
+   "url": ""
+  },
+  "top": {
+   "elapsed_ms": 257,
+   "error_class": "",
+   "final_url": "https://www.vill.shimokitayama.nara.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

@@ -1,0 +1,860 @@
+{
+ "ai_needed": true,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "page_title": "",
+     "reasons": [
+      "text:スポーツ",
+      "url_hint"
+     ],
+     "region": "other",
+     "score": 6,
+     "source": "depth1_link",
+     "text": "スポーツ・体育",
+     "url": "https://www.city.sakurai.lg.jp/life/life16/taiiku/index.html"
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "page_title": "教育・文化・スポーツ/桜井市 教育・文化・スポーツ",
+     "reasons": [
+      "text:スポーツ"
+     ],
+     "region": "other",
+     "score": 5,
+     "source": "nav",
+     "text": "教育・文化スポーツ",
+     "url": "https://www.city.sakurai.lg.jp/life/life16/index.html"
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "page_title": "桜井市施設マップ/桜井市 桜井市施設マップトップページヘ",
+     "reasons": [
+      "text:公共施設|施設案内|施設一覧|施設情報",
+      "region_nav"
+     ],
+     "region": "nav",
+     "score": 4,
+     "source": "nav",
+     "text": "施設案内マップ",
+     "url": "https://www.city.sakurai.lg.jp/map.html"
+    }
+   ],
+   "decision": "hub_not_found",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "selected": null
+  }
+ ],
+ "menu_labels": [
+  "ライフステージ",
+  "目的別",
+  "事業者",
+  "市政",
+  "申請"
+ ],
+ "municipality": {
+  "code": "29206",
+  "full_name": "桜井市",
+  "kind": "city",
+  "name": "桜井市",
+  "official_url": "https://www.city.sakurai.lg.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "スマートフォン専用サイトへ",
+   "url": "https://www.city.sakurai.lg.jp/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "サイトマップ",
+   "url": "https://www.city.sakurai.lg.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ホーム",
+   "url": "https://www.city.sakurai.lg.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらしの情報",
+   "url": "https://www.city.sakurai.lg.jp/life/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "事業者向け",
+   "url": "https://www.city.sakurai.lg.jp/gyosya/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光・文化財",
+   "url": "https://www.city.sakurai.lg.jp/bunkazai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市政情報",
+   "url": "https://www.city.sakurai.lg.jp/shisei/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "組織から探す",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "防災情報",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/kikikanrika/bousai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "防犯・交通情報",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/kikikanrika/bouhan/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "桜井市休日夜間応急診療所",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/hukushihokenbu/kenkouzousin/kenkouzousinkakaranoosirase/1391741573064.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "消防団",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/kikikanrika/syoubou/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ようこそ市長室へ",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/hisyoka/sichyoupage/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "桜井市議会",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/gikaijimukyoku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "桜井市教育委員会",
+   "url": "https://www.city.sakurai.lg.jp/shisei/sisei00/kyoikuiinnkai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市の催しカレンダー",
+   "url": "https://www.city.sakurai.lg.jp/calendar.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "施設案内マップ",
+   "url": "https://www.city.sakurai.lg.jp/map.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市のプロフィール",
+   "url": "https://www.city.sakurai.lg.jp/shisei/cityprofile/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "広報「わかざくら」",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/gyouseikeieika/wakazakura/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "記者会見・発表",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/gyouseikeieika/kohokotyo/houdou/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ご意見・ご要望",
+   "url": "https://www.city.sakurai.lg.jp/cgi-bin/inquiry.php/51?page_no=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "パブリックコメント(意見公募)",
+   "url": "https://www.city.sakurai.lg.jp/shisei/kouhoukoutyou/public/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "申請書ダウンロード",
+   "url": "https://www.city.sakurai.lg.jp/shisei/download/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "桜井市の人口",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/shiminseikatsu/shiminka/zinkohyo/1394512649632.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "YAMATO UNKNOWN ORIGIN TRAVEL GUIDE",
+   "url": "https://www.city.sakurai.lg.jp/section/yamato-travel/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "移住・定住 桜井市で暮らす。",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/gyouseikeieika/ijuteiju/1584579188820.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "コミュニティバス時刻表・運賃表・路線図",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/gyouseikeieika/koukyou/1431562085705.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "三輪そうめん",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/machidukuribu/syoukoushinkouka/miwasoumen/1614130551926.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "furusatotop",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/soumu/zeimuka/sakurai_furusato/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "sakuraikosodatenabi2",
+   "url": "https://www.city.sakurai.lg.jp/kosodate/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "2月1日配信スタート YAMATO桜井周遊ARガイド",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/kyouikuiinkaijimukyoku/bunkazai/YAMATO_sakuraiAR.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "まちづくりバナー",
+   "url": "https://www.city.sakurai.lg.jp/shisei/machidukuri/chikumatizukuri/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "桜井市消防団",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/kikikanrika/syoubou/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市立埋蔵文化財センター発掘調査速報展チラシ",
+   "url": "https://www.city.sakurai.lg.jp/life/lifestage/life06/syougaigakusyuu/1394860892664.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "祝世界遺産登録",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/machidukuribu/kankouka/kankoujigyou/asukafujiwaranokyuto/topic/10133.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "RSS",
+   "url": "https://www.city.sakurai.lg.jp/cgi-bin/feed.php?categoryNo=14&displayCount=15&displayRange=90"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "注目情報一覧",
+   "url": "https://www.city.sakurai.lg.jp/cyumoku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "RSS",
+   "url": "https://www.city.sakurai.lg.jp/cgi-bin/feed.php?siteNew=1&displayCount=15&displayRange=90"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "新着情報一覧",
+   "url": "https://www.city.sakurai.lg.jp/news.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "RSS",
+   "url": "https://www.city.sakurai.lg.jp/cgi-bin/feed.php?categoryNo=16&displayCount=15&displayRange=90"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "募集情報一覧",
+   "url": "https://www.city.sakurai.lg.jp/bosyu/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "妊娠・出産",
+   "url": "https://www.city.sakurai.lg.jp/life/lifestage/life01/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "子育て",
+   "url": "https://www.city.sakurai.lg.jp/life/lifestage/life02/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入園・入学",
+   "url": "https://www.city.sakurai.lg.jp/life/lifestage/life03/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "url": "https://www.city.sakurai.lg.jp/life/lifestage/life04/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "引越し・住まい",
+   "url": "https://www.city.sakurai.lg.jp/life/lifestage/hikkoshi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "生涯学習",
+   "url": "https://www.city.sakurai.lg.jp/life/lifestage/life06/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "高齢者・介護",
+   "url": "https://www.city.sakurai.lg.jp/life/lifestage/koreishakaigo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おくやみ",
+   "url": "https://www.city.sakurai.lg.jp/life/lifestage/life08/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ごみ・環境",
+   "url": "https://www.city.sakurai.lg.jp/life/life12/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "戸籍・住民の手続き",
+   "url": "https://www.city.sakurai.lg.jp/life/koseki/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "税金",
+   "url": "https://www.city.sakurai.lg.jp/life/life10/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "施設利用",
+   "url": "https://www.city.sakurai.lg.jp/shisetsu/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "健康・福祉",
+   "url": "https://www.city.sakurai.lg.jp/life/life18/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "保険・年金",
+   "url": "https://www.city.sakurai.lg.jp/life/life17/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "教育・文化スポーツ",
+   "url": "https://www.city.sakurai.lg.jp/life/life16/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "まちづくり",
+   "url": "https://www.city.sakurai.lg.jp/shisei/machidukuri/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市庁舎案内図",
+   "url": "https://www.city.sakurai.lg.jp/yokumirareru/1640065763806.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "正規職員採用情報",
+   "url": "https://www.city.sakurai.lg.jp/yokumirareru/1559000426972.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "防災情報",
+   "url": "https://www.city.sakurai.lg.jp/yokumirareru/1408501110894.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "クリーンカレンダー(収集日程)",
+   "url": "https://www.city.sakurai.lg.jp/yokumirareru/1443659581342.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "桜井市休日夜間応急診療所",
+   "url": "https://www.city.sakurai.lg.jp/yokumirareru/1483495833809.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "リンク集",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/soumu/soumuka/1395188256792.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ひみこちゃんの紹介ページ",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/machidukuribu/kankouka/himiko/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市公式X(旧Twitter)",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/gyouseikeieika/kohokotyo/sakuraishikousikisns/9415.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "LINEバナー",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/gyouseikeieika/kohokotyo/sakuraishikousikisns/9414.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "採用情報",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/jinjika/saiyo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "桜井子育てナビゲーション",
+   "url": "https://www.city.sakurai.lg.jp/kosodate/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "桜井長生きナビゲーション",
+   "url": "https://www.city.sakurai.lg.jp/nagaiki/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "注目情報一覧へ",
+   "url": "https://www.city.sakurai.lg.jp/cyumoku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新着情報一覧へ",
+   "url": "https://www.city.sakurai.lg.jp/news.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "募集情報一覧へ",
+   "url": "https://www.city.sakurai.lg.jp/bosyu/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ゴミ・環境",
+   "url": "https://www.city.sakurai.lg.jp/life/life12/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "教育・文化・スポーツ",
+   "url": "https://www.city.sakurai.lg.jp/life/life16/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベントカレンダー",
+   "url": "https://www.city.sakurai.lg.jp/calendar.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市のプロフィール",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/gyouseikeieika/shinogaiyou/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広告募集中",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/gyouseikeieika/kohokotyo/koukoku/1396083448966.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広告募集について",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/gyouseikeieika/kohokotyo/koukoku/1396083448966.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "交通アクセス",
+   "url": "https://www.city.sakurai.lg.jp/shisei/cityprofile/1395047968281.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "桜井市ホームページ利用規定",
+   "url": "https://www.city.sakurai.lg.jp/sosiki/koushitsu/gyouseikeieika/kohokotyo/1393574815642.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "PC版で見る",
+   "url": "https://www.city.sakurai.lg.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "トップへ",
+   "url": "https://www.city.sakurai.lg.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "カテゴリ一覧",
+   "url": "https://www.city.sakurai.lg.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "パソコン版へ",
+   "url": "https://www.city.sakurai.lg.jp/index.html"
+  }
+ ],
+ "needs_review": [
+  "hub_not_found"
+ ],
+ "outcome": "hub_not_found",
+ "requests": [
+  {
+   "bytes": 34493,
+   "elapsed_ms": 1112,
+   "error_class": "http_404",
+   "final_url": "https://www.city.sakurai.lg.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.city.sakurai.lg.jp/robots.txt"
+  },
+  {
+   "bytes": 72721,
+   "elapsed_ms": 314,
+   "error_class": "",
+   "final_url": "https://www.city.sakurai.lg.jp/",
+   "status": 200,
+   "url": "https://www.city.sakurai.lg.jp/"
+  },
+  {
+   "bytes": 145493,
+   "elapsed_ms": 351,
+   "error_class": "",
+   "final_url": "https://www.city.sakurai.lg.jp/sitemap.xml",
+   "status": 200,
+   "url": "https://www.city.sakurai.lg.jp/sitemap.xml"
+  },
+  {
+   "bytes": 819,
+   "elapsed_ms": 177,
+   "error_class": "",
+   "final_url": "https://www.city.sakurai.lg.jp/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.sakurai.lg.jp/sitemap.dir.xml"
+  },
+  {
+   "bytes": 1053,
+   "elapsed_ms": 1516,
+   "error_class": "",
+   "final_url": "https://www.city.sakurai.lg.jp/100sen/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.sakurai.lg.jp/100sen/sitemap.dir.xml"
+  },
+  {
+   "bytes": 4165,
+   "elapsed_ms": 187,
+   "error_class": "",
+   "final_url": "https://www.city.sakurai.lg.jp/bosyu/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.sakurai.lg.jp/bosyu/sitemap.dir.xml"
+  },
+  {
+   "bytes": 1223,
+   "elapsed_ms": 177,
+   "error_class": "",
+   "final_url": "https://www.city.sakurai.lg.jp/bunkazai/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.sakurai.lg.jp/bunkazai/sitemap.dir.xml"
+  },
+  {
+   "bytes": 520,
+   "elapsed_ms": 182,
+   "error_class": "",
+   "final_url": "https://www.city.sakurai.lg.jp/bunkazai/bunkazai_virus/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.sakurai.lg.jp/bunkazai/bunkazai_virus/sitemap.dir.xml"
+  },
+  {
+   "bytes": 506,
+   "elapsed_ms": 177,
+   "error_class": "",
+   "final_url": "https://www.city.sakurai.lg.jp/bunkazai/houkoku/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.sakurai.lg.jp/bunkazai/houkoku/sitemap.dir.xml"
+  },
+  {
+   "bytes": 504,
+   "elapsed_ms": 175,
+   "error_class": "",
+   "final_url": "https://www.city.sakurai.lg.jp/bunkazai/kanko/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.sakurai.lg.jp/bunkazai/kanko/sitemap.dir.xml"
+  },
+  {
+   "bytes": 912,
+   "elapsed_ms": 178,
+   "error_class": "",
+   "final_url": "https://www.city.sakurai.lg.jp/bunkazai/maibunannai/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.sakurai.lg.jp/bunkazai/maibunannai/sitemap.dir.xml"
+  },
+  {
+   "bytes": 32655,
+   "elapsed_ms": 265,
+   "error_class": "",
+   "final_url": "https://www.city.sakurai.lg.jp/life/life16/index.html",
+   "status": 200,
+   "url": "https://www.city.sakurai.lg.jp/life/life16/index.html"
+  },
+  {
+   "bytes": 3523,
+   "elapsed_ms": 177,
+   "error_class": "",
+   "final_url": "https://www.city.sakurai.lg.jp/map.html",
+   "status": 200,
+   "url": "https://www.city.sakurai.lg.jp/map.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 4988,
+  "finished_at": "2026-10-14T22:56:09Z",
+  "request_count": 13,
+  "route": "actions_direct",
+  "started_at": "2026-10-14T22:55:57Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "none",
+   "evidence": [],
+   "family": "unknown",
+   "provenance": "auto",
+   "scores": {}
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 151,
+   "needs_headless": false,
+   "noscript_text_length": 0,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 19,
+   "text_length": 865
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "index",
+     "source": "default_path",
+     "status": 200,
+     "url": "https://www.city.sakurai.lg.jp/sitemap.xml"
+    }
+   ],
+   "children_fetched": 8,
+   "children_total": 833,
+   "found": true,
+   "keyword_urls": [],
+   "kind": "index",
+   "lastmod_count": 47,
+   "lastmod_max": "2026-10-14",
+   "lastmod_min": "2021-12-27",
+   "lastmod_years": {
+    "2021": 5,
+    "2022": 8,
+    "2023": 3,
+    "2024": 5,
+    "2025": 11,
+    "2026": 15
+   },
+   "numeric_id_url_ratio": 0.766,
+   "source": "default_path",
+   "top_level_paths": {
+    "/100sen": 5,
+    "/bosyu": 22,
+    "/bunkazai": 16,
+    "/index.html": 1,
+    "/map.html": 1,
+    "/news.html": 1,
+    "/sitemap.html": 1
+   },
+   "truncated": true,
+   "url": "https://www.city.sakurai.lg.jp/sitemap.xml",
+   "url_count": 47
+  },
+  "top": {
+   "elapsed_ms": 314,
+   "error_class": "",
+   "final_url": "https://www.city.sakurai.lg.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

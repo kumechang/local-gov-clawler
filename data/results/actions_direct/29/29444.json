@@ -1,0 +1,327 @@
+{
+ "ai_needed": true,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [],
+   "decision": "hub_not_found",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "selected": null
+  }
+ ],
+ "menu_labels": [
+  "くらし",
+  "観光"
+ ],
+ "municipality": {
+  "code": "29444",
+  "full_name": "黒滝村",
+  "kind": "village",
+  "name": "黒滝村",
+  "official_url": "https://www.vill.kurotaki.nara.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "サイトマップ",
+   "url": "https://www.vill.kurotaki.nara.jp/sitemap/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "お問い合わせ",
+   "url": "https://www.vill.kurotaki.nara.jp/inquiry/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "LANGUAGE",
+   "url": "https://www.vill.kurotaki.nara.jp/language/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらしガイド",
+   "url": "https://www.vill.kurotaki.nara.jp/kurasiguide/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "行政ガイド",
+   "url": "https://www.vill.kurotaki.nara.jp/gyoseiguide/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光ガイド",
+   "url": "https://www.vill.kurotaki.nara.jp/kankoguide/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "移住ガイド",
+   "url": "https://www.vill.kurotaki.nara.jp/ijyuguide/"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "検索の使い方",
+   "url": "https://www.vill.kurotaki.nara.jp/searchusage/"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "目的から探す",
+   "url": "https://www.vill.kurotaki.nara.jp/purpose/"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "黒滝村職員を募集しています。",
+   "url": "https://www.vill.kurotaki.nara.jp/gyosei/saiyoujouhou/"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "国民健康保険 マイナ保険証利用時の不具合について",
+   "url": "https://www.vill.kurotaki.nara.jp/kurasi/kokuho_huguai/"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "黒滝村公営住宅の入居者を募集します!",
+   "url": "https://www.vill.kurotaki.nara.jp/kurasi/sonei_jyutaku_bosyu/"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "黒滝村 紹介映像",
+   "url": "https://www.vill.kurotaki.nara.jp/kanko/movie/"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "ふるさと納税",
+   "url": "https://www.vill.kurotaki.nara.jp/gyosei_cat/furusato/"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "イベント・ごみ収集カレンダー",
+   "url": "https://www.vill.kurotaki.nara.jp/event/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ウェブアクセシビリティ方針",
+   "url": "https://www.vill.kurotaki.nara.jp/accessibility/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "運用管理規約",
+   "url": "https://www.vill.kurotaki.nara.jp/terms/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "個人情報保護方針",
+   "url": "https://www.vill.kurotaki.nara.jp/privacy/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "黒滝村へのアクセス",
+   "url": "https://www.vill.kurotaki.nara.jp/access/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "黒滝村 LIVE映像",
+   "url": "http://bousai.vill.kurotaki.nara.jp/cam_weather/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "黒滝村SNS",
+   "url": "https://www.vill.kurotaki.nara.jp/kanko/sns/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ホーム",
+   "url": "https://www.vill.kurotaki.nara.jp/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "アクセス",
+   "url": "https://www.vill.kurotaki.nara.jp/access/"
+  }
+ ],
+ "needs_review": [
+  "hub_not_found"
+ ],
+ "outcome": "hub_not_found",
+ "requests": [
+  {
+   "bytes": 0,
+   "elapsed_ms": 1032,
+   "error_class": "",
+   "final_url": "https://www.vill.kurotaki.nara.jp/robots.txt",
+   "status": 200,
+   "url": "https://www.vill.kurotaki.nara.jp/robots.txt"
+  },
+  {
+   "bytes": 12864,
+   "elapsed_ms": 379,
+   "error_class": "",
+   "final_url": "https://www.vill.kurotaki.nara.jp/",
+   "status": 200,
+   "url": "https://www.vill.kurotaki.nara.jp/"
+  },
+  {
+   "bytes": 94492,
+   "elapsed_ms": 343,
+   "error_class": "",
+   "final_url": "https://www.vill.kurotaki.nara.jp/sitemap.xml",
+   "status": 200,
+   "url": "https://www.vill.kurotaki.nara.jp/sitemap.xml"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 1754,
+  "finished_at": "2026-10-14T22:56:44Z",
+  "request_count": 3,
+  "route": "actions_direct",
+  "started_at": "2026-10-14T22:56:42Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "medium",
+   "evidence": [
+    "html:/wp-content/"
+   ],
+   "family": "wordpress",
+   "provenance": "auto",
+   "scores": {
+    "wordpress": 6
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 36,
+   "needs_headless": false,
+   "noscript_text_length": 0,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 15,
+   "text_length": 513
+  },
+  "robots": {
+   "available": true,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "",
+   "sitemaps": [],
+   "status": 200,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "urlset",
+     "source": "default_path",
+     "status": 200,
+     "url": "https://www.vill.kurotaki.nara.jp/sitemap.xml"
+    }
+   ],
+   "found": true,
+   "keyword_urls": [],
+   "kind": "urlset",
+   "lastmod_count": 500,
+   "lastmod_max": "2023-03-27",
+   "lastmod_min": "2023-03-23",
+   "lastmod_years": {
+    "2023": 500
+   },
+   "numeric_id_url_ratio": 0.0,
+   "source": "default_path",
+   "top_level_paths": {
+    "/": 1,
+    "/access": 1,
+    "/accessibility": 1,
+    "/category": 2,
+    "/chiiki": 2,
+    "/cms": 227,
+    "/covid19": 1,
+    "/emergencytop": 1,
+    "/event": 1,
+    "/gakko": 6,
+    "/gyosei": 32,
+    "/gyosei_cat": 11,
+    "/gyoseiguide": 1,
+    "/ijyu": 5,
+    "/ijyuguide": 2,
+    "/inquiry": 9,
+    "/kanko": 39,
+    "/kanko_cat": 4,
+    "/kankoguide": 1,
+    "/kodomoen": 6,
+    "/kurasi": 84,
+    "/kurasi_cat": 26,
+    "/kurasiguide": 1,
+    "/language": 1,
+    "/privacy": 1,
+    "/purpose": 1,
+    "/ringyo": 7,
+    "/searchusage": 1,
+    "/sitemap": 1,
+    "/terms": 1
+   },
+   "url": "https://www.vill.kurotaki.nara.jp/sitemap.xml",
+   "url_count": 500
+  },
+  "top": {
+   "elapsed_ms": 379,
+   "error_class": "",
+   "final_url": "https://www.vill.kurotaki.nara.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

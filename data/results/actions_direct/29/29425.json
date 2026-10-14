@@ -1,0 +1,955 @@
+{
+ "ai_needed": false,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "page_title": "",
+     "reasons": [
+      "text:スポーツ施設",
+      "url_hint"
+     ],
+     "region": "other",
+     "score": 12,
+     "source": "depth1_link",
+     "text": "スポーツ施設",
+     "url": "https://www.town.oji.nara.jp/kurashinonavi/bunka_shogaigakushu/sport/12320.html"
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "page_title": "第3回王寺町スポーツフェスティバルを開催します/王寺町 第3回王寺町スポーツフェスティバルを開催します",
+     "reasons": [
+      "text:スポーツ",
+      "url_hint",
+      "region_nav"
+     ],
+     "region": "header",
+     "score": 7,
+     "source": "nav",
+     "text": "スポーツフェスティバル",
+     "url": "https://www.town.oji.nara.jp/kakuka/kyoikuiinkai/syogaigakusyu/event/oji_sports7_1/11822.html"
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "page_title": "文化・スポーツ/王寺町 文化・スポーツ",
+     "reasons": [
+      "text:スポーツ",
+      "region_nav"
+     ],
+     "region": "nav",
+     "score": 5,
+     "source": "nav",
+     "text": "文化・ スポーツ",
+     "url": "https://www.town.oji.nara.jp/kurashinonavi/bunka_shogaigakushu/index.html"
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "page_title": "",
+     "reasons": [
+      "text:スポーツ",
+      "url_hint"
+     ],
+     "region": "other",
+     "score": 5,
+     "source": "depth1_link",
+     "text": "スポーツ・レクリエーション",
+     "url": "https://www.town.oji.nara.jp/kurashinonavi/bunka_shogaigakushu/sport/index.html"
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "page_title": "",
+     "reasons": [
+      "text:スポーツ",
+      "url_hint"
+     ],
+     "region": "other",
+     "score": 5,
+     "source": "depth1_link",
+     "text": "王寺町スポーツ推進審議会",
+     "url": "https://www.town.oji.nara.jp/kurashinonavi/bunka_shogaigakushu/sport/12317.html"
+    }
+   ],
+   "decision": "hub_selected",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "selected": {
+    "depth": 2,
+    "facility_link_count": null,
+    "page_title": "",
+    "reasons": [
+     "text:スポーツ施設",
+     "url_hint"
+    ],
+    "region": "other",
+    "score": 12,
+    "source": "depth1_link",
+    "text": "スポーツ施設",
+    "url": "https://www.town.oji.nara.jp/kurashinonavi/bunka_shogaigakushu/sport/12320.html"
+   }
+  }
+ ],
+ "menu_labels": [
+  "くらし",
+  "暮らし",
+  "子育て",
+  "観光",
+  "事業者",
+  "施設案内",
+  "申請",
+  "手続き"
+ ],
+ "municipality": {
+  "code": "29425",
+  "full_name": "王寺町",
+  "kind": "town",
+  "name": "王寺町",
+  "official_url": "https://www.town.oji.nara.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子育て世代",
+   "url": "https://www.town.oji.nara.jp/kosodatesedai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "シニア世代",
+   "url": "https://www.town.oji.nara.jp/koreisha/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "防災・防犯",
+   "url": "https://www.town.oji.nara.jp/bosai_bohan/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光情報",
+   "url": "https://www.town.oji.nara.jp/kankojoho/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらしのナビゲーション",
+   "url": "http://www.town.oji.nara.jp/kurashinonavi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "移住定住",
+   "url": "https://www.town.oji.nara.jp/iju_teiju/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "事業者の方",
+   "url": "https://www.town.oji.nara.jp/jigyosha/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ホーム",
+   "url": "https://www.town.oji.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "王寺ミルキーウェイ2026",
+   "url": "https://www.town.oji.nara.jp/kakuka/somu/seisakusuishin/gyomuannai/oji_milkyway/kaisaiannai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "サキドリ教育",
+   "url": "https://www.town.oji.nara.jp/kakuka/kyoikuiinkai/gakkokyoiku/gyomuannai/132/11699.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "スポーツフェスティバル",
+   "url": "https://www.town.oji.nara.jp/kakuka/kyoikuiinkai/syogaigakusyu/event/oji_sports7_1/11822.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "王寺町文化祭",
+   "url": "https://www.town.oji.nara.jp/kakuka/kyoikuiinkai/bunkakoryuka/event/bunkasai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "PC版を表示する",
+   "url": "https://www.town.oji.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "デゴイチと桜の写真",
+   "url": "https://www.town.oji.nara.jp/kosodate/10379.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "事業者 の方",
+   "url": "https://www.town.oji.nara.jp/jigyosha/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "王寺町公式LINEが便利 申請・予約、粗大ごみ予約、町のおしらせなどくらしの手続きもLINEから 詳しくはこちら",
+   "url": "https://www.town.oji.nara.jp/kakuka/somu/seisakusuishin/gyomuannai/koho_kocho/sns/2708.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "災害・緊急",
+   "url": "https://www.town.oji.nara.jp/saigai_kinkyu.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "夜間休日救急",
+   "url": "https://www.town.oji.nara.jp/kakuka/kodomomirai/hokencenter/kakushugyoumu/99iryou/1043.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "相談",
+   "url": "https://www.town.oji.nara.jp/sodanmadoguchi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ゴミ・環境",
+   "url": "http://www.town.oji.nara.jp/kurashinonavi/gomi_kankyo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "上下水道",
+   "url": "http://www.town.oji.nara.jp/kurashinonavi/suido/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "健康",
+   "url": "http://www.town.oji.nara.jp/kurashinonavi/kenko/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "福祉",
+   "url": "https://www.town.oji.nara.jp/kurashinonavi/fukushi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "引っ越し 住まい",
+   "url": "https://www.town.oji.nara.jp/kurashinonavi/hikkoshi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "税金",
+   "url": "https://www.town.oji.nara.jp/kurashinonavi/zeikin/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "戸籍・ 住民登録",
+   "url": "https://www.town.oji.nara.jp/kurashinonavi/koseki_jumintoroku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "自治会・ コミュニティ",
+   "url": "https://www.town.oji.nara.jp/kurashinonavi/jichikai_komyunitei/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "url": "http://www.town.oji.nara.jp/kurashinonavi/kekkon_rikon/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "おくやみ",
+   "url": "http://www.town.oji.nara.jp/kurashinonavi/okuyami/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "就職・転職",
+   "url": "https://www.town.oji.nara.jp/kurashinonavi/syushoku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "文化・ スポーツ",
+   "url": "https://www.town.oji.nara.jp/kurashinonavi/bunka_shogaigakushu/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "施設案内・予約",
+   "url": "https://www.town.oji.nara.jp/kurashinonavi/shisetsuannai_yoyaku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "オンライン申請",
+   "url": "https://www.town.oji.nara.jp/kurashinonavi/online_shinsei/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "申請書 ダウンロード",
+   "url": "https://www.town.oji.nara.jp/kurashinonavi/shinseishodl/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "すべての一覧を見る",
+   "url": "https://www.town.oji.nara.jp/news.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "クラリネットアンサンブル【10/17(土曜)】",
+   "url": "https://www.town.oji.nara.jp/info/12716.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "王寺町文化祭開催のお知らせ",
+   "url": "https://www.town.oji.nara.jp/info/12707.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "王寺ミルキーウェイ2026協賛募集を開始しました。",
+   "url": "https://www.town.oji.nara.jp/info/12405.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報おうじ「王伸」の発行",
+   "url": "https://www.town.oji.nara.jp/info/11199.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "冒険の森野外活動『アスレチック&ピザ作りチャレンジ!』参加者募集",
+   "url": "https://www.town.oji.nara.jp/info/12389.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "文化祭に伴う施設使用制限【やわらぎ会館・王寺アリーナ】",
+   "url": "https://www.town.oji.nara.jp/info/10699.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "子どもインフルエンザ予防接種費用を一部助成します",
+   "url": "https://www.town.oji.nara.jp/info/10122.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "王寺オリーブ収穫祭2026〜Hike&Marche〜",
+   "url": "https://www.town.oji.nara.jp/info/12432.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "第6回全国だるころ大会の申し込みについて",
+   "url": "https://www.town.oji.nara.jp/info/12197.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "休日もマイナンバーカードにかかる手続きができます",
+   "url": "https://www.town.oji.nara.jp/info/3921.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "お知らせ一覧を見る",
+   "url": "https://www.town.oji.nara.jp/info/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "クラリネットアンサンブル【10/17(土曜)】",
+   "url": "https://www.town.oji.nara.jp/event/12717.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "王寺町文化祭【10/31(土曜)・11/1(日曜)】",
+   "url": "https://www.town.oji.nara.jp/event/12708.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "第20回やわらぎ子ども落語まつり(伝統文化子ども落語教室発表会)",
+   "url": "https://www.town.oji.nara.jp/event/12714.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "冒険の森野外活動『アスレチック&ピザ作りチャレンジ!』参加者募集",
+   "url": "https://www.town.oji.nara.jp/event/12390.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "王寺オリーブ収穫祭2026〜Hike&Marche〜",
+   "url": "https://www.town.oji.nara.jp/event/12432.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度住民向け認知症啓発講座「認知症世界の歩き方」",
+   "url": "https://www.town.oji.nara.jp/event/12184.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "赤ちゃん絵本とわらべうたあそび",
+   "url": "https://www.town.oji.nara.jp/event/12427.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "第6回 全国だるまさんがころんだ選手権大会 in 王寺町",
+   "url": "https://www.town.oji.nara.jp/event/11251.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【リーベルアラカルト】出演者募集",
+   "url": "https://www.town.oji.nara.jp/event/8264.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "いずみアラカルト出演者募集",
+   "url": "https://www.town.oji.nara.jp/event/11398.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベント一覧を見る",
+   "url": "https://www.town.oji.nara.jp/event/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベントカレンダーを見る",
+   "url": "https://www.town.oji.nara.jp/calendar.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "冒険の森野外活動『アスレチック&ピザ作りチャレンジ!』参加者募集",
+   "url": "https://www.town.oji.nara.jp/bosyuinfo/12391.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "赤ちゃん絵本とわらべうたあそび",
+   "url": "https://www.town.oji.nara.jp/bosyuinfo/12428.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和9年度保育所等・認定こども園の一斉申込について",
+   "url": "https://www.town.oji.nara.jp/bosyuinfo/12366.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ステージオペレーター",
+   "url": "https://www.town.oji.nara.jp/bosyuinfo/11605.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "王寺町地域クラブ(学校部活動の地域展開)",
+   "url": "https://www.town.oji.nara.jp/bosyuinfo/11453.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "王寺町公民館教室講師募集中",
+   "url": "https://www.town.oji.nara.jp/bosyuinfo/10349.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町立幼稚園の預かり保育講師(パートタイム会計年度任用職員)を募集します",
+   "url": "https://www.town.oji.nara.jp/bosyuinfo/8167.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【リーベルアラカルト】出演者募集",
+   "url": "https://www.town.oji.nara.jp/bosyuinfo/8264.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "いずみアラカルト出演者募集",
+   "url": "https://www.town.oji.nara.jp/bosyuinfo/11399.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "選挙当日の投票立会人募集のお知らせ(登録制)",
+   "url": "https://www.town.oji.nara.jp/bosyuinfo/10885.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "募集情報一覧を見る",
+   "url": "https://www.town.oji.nara.jp/bosyuinfo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町長の部屋",
+   "url": "https://www.town.oji.nara.jp/kakuka/somu/hishozinzi/cyocyonoheya/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "王寺町議会",
+   "url": "https://www.town.oji.nara.jp/gyoseijoho/1313.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "組織から探す",
+   "url": "https://www.town.oji.nara.jp/kakuka/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと納税",
+   "url": "https://www.town.oji.nara.jp/kakuka/somu/seisakusuishin/gyomuannai/furusato_nouzei/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報・広聴",
+   "url": "https://www.town.oji.nara.jp/kohokocho/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "まちのこと",
+   "url": "https://www.town.oji.nara.jp/machinokoto/index.html"
+  },
+  {
+   "is_pdf": true,
+   "region": "other",
+   "same_site": true,
+   "text": "2026年10月号を見る",
+   "url": "https://www.town.oji.nara.jp/material/files/group/2/261002_a3_a.pdf"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報誌一覧",
+   "url": "https://www.town.oji.nara.jp/kakuka/somu/seisakusuishin/gyomuannai/koho_kocho/kohoshi/11197.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "Oji Homies(オージホーミーズ)",
+   "url": "https://www.town.oji.nara.jp/kakuka/chiikiseibi/machidukuri/gyomuannai/ojihomies/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町立幼稚園",
+   "url": "https://www.town.oji.nara.jp/kakuka/kodomomirai/kosodateshien/gyomuannai/hoikusho_kodomoen_yochien/3288.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "義務教育学校",
+   "url": "https://www.town.oji.nara.jp/kakuka/kyoikuiinkai/gakkokyoiku/5795.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広告募集中の画像",
+   "url": "https://www.town.oji.nara.jp/kakuka/somu/seisakusuishin/gyomuannai/koho_kocho/koho/230.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広告掲載について",
+   "url": "https://www.town.oji.nara.jp/kakuka/somu/seisakusuishin/gyomuannai/koho_kocho/koho/230.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "スマートフォン版を表示",
+   "url": "https://www.town.oji.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "アクセス",
+   "url": "https://www.town.oji.nara.jp/kakuka/somu/somu/gyomuannai/6342.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "お問い合わせ",
+   "url": "https://www.town.oji.nara.jp/cgi-bin/inquiry.php/1?page_no=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "サイトの利用",
+   "url": "https://www.town.oji.nara.jp/kakuka/somu/seisakusuishin/gyomuannai/koho_kocho/web/1040.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "個人情報の取り扱い",
+   "url": "https://www.town.oji.nara.jp/kakuka/somu/seisakusuishin/gyomuannai/koho_kocho/web/1041.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "ウェブアクセシビリティについて",
+   "url": "https://www.town.oji.nara.jp/kakuka/somu/seisakusuishin/gyomuannai/koho_kocho/web/webaccess/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "サイトマップ",
+   "url": "https://www.town.oji.nara.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "リンク集",
+   "url": "https://www.town.oji.nara.jp/link/link/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "人口・世帯数",
+   "url": "https://www.town.oji.nara.jp/kakuka/jyuminfukushibu/jyumin/gyomuannai/6341.html"
+  }
+ ],
+ "needs_review": [],
+ "outcome": "hub_selected",
+ "requests": [
+  {
+   "bytes": 54038,
+   "elapsed_ms": 1188,
+   "error_class": "http_404",
+   "final_url": "https://www.town.oji.nara.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.town.oji.nara.jp/robots.txt"
+  },
+  {
+   "bytes": 113461,
+   "elapsed_ms": 500,
+   "error_class": "",
+   "final_url": "https://www.town.oji.nara.jp/",
+   "status": 200,
+   "url": "https://www.town.oji.nara.jp/"
+  },
+  {
+   "bytes": 124368,
+   "elapsed_ms": 439,
+   "error_class": "",
+   "final_url": "https://www.town.oji.nara.jp/sitemap.xml",
+   "status": 200,
+   "url": "https://www.town.oji.nara.jp/sitemap.xml"
+  },
+  {
+   "bytes": 992,
+   "elapsed_ms": 232,
+   "error_class": "",
+   "final_url": "https://www.town.oji.nara.jp/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.town.oji.nara.jp/sitemap.dir.xml"
+  },
+  {
+   "bytes": 2283,
+   "elapsed_ms": 234,
+   "error_class": "",
+   "final_url": "https://www.town.oji.nara.jp/anshin/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.town.oji.nara.jp/anshin/sitemap.dir.xml"
+  },
+  {
+   "bytes": 297,
+   "elapsed_ms": 239,
+   "error_class": "",
+   "final_url": "https://www.town.oji.nara.jp/bosai_bohan/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.town.oji.nara.jp/bosai_bohan/sitemap.dir.xml"
+  },
+  {
+   "bytes": 314,
+   "elapsed_ms": 235,
+   "error_class": "",
+   "final_url": "https://www.town.oji.nara.jp/bosai_bohan/bohan_kotsuanzen/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.town.oji.nara.jp/bosai_bohan/bohan_kotsuanzen/sitemap.dir.xml"
+  },
+  {
+   "bytes": 740,
+   "elapsed_ms": 320,
+   "error_class": "",
+   "final_url": "https://www.town.oji.nara.jp/bosai_bohan/bohan_kotsuanzen/bohan/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.town.oji.nara.jp/bosai_bohan/bohan_kotsuanzen/bohan/sitemap.dir.xml"
+  },
+  {
+   "bytes": 755,
+   "elapsed_ms": 252,
+   "error_class": "",
+   "final_url": "https://www.town.oji.nara.jp/bosai_bohan/bohan_kotsuanzen/kotsuanzen/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.town.oji.nara.jp/bosai_bohan/bohan_kotsuanzen/kotsuanzen/sitemap.dir.xml"
+  },
+  {
+   "bytes": 303,
+   "elapsed_ms": 234,
+   "error_class": "",
+   "final_url": "https://www.town.oji.nara.jp/bosai_bohan/bosai/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.town.oji.nara.jp/bosai_bohan/bosai/sitemap.dir.xml"
+  },
+  {
+   "bytes": 518,
+   "elapsed_ms": 265,
+   "error_class": "",
+   "final_url": "https://www.town.oji.nara.jp/bosai_bohan/bosai/hazard_map/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.town.oji.nara.jp/bosai_bohan/bosai/hazard_map/sitemap.dir.xml"
+  },
+  {
+   "bytes": 62950,
+   "elapsed_ms": 342,
+   "error_class": "",
+   "final_url": "https://www.town.oji.nara.jp/kakuka/kyoikuiinkai/syogaigakusyu/event/oji_sports7_1/11822.html",
+   "status": 200,
+   "url": "https://www.town.oji.nara.jp/kakuka/kyoikuiinkai/syogaigakusyu/event/oji_sports7_1/11822.html"
+  },
+  {
+   "bytes": 63358,
+   "elapsed_ms": 336,
+   "error_class": "",
+   "final_url": "https://www.town.oji.nara.jp/kurashinonavi/bunka_shogaigakushu/index.html",
+   "status": 200,
+   "url": "https://www.town.oji.nara.jp/kurashinonavi/bunka_shogaigakushu/index.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 4816,
+  "finished_at": "2026-10-14T22:56:38Z",
+  "request_count": 13,
+  "route": "actions_direct",
+  "started_at": "2026-10-14T22:56:26Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "none",
+   "evidence": [],
+   "family": "unknown",
+   "provenance": "auto",
+   "scores": {}
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 125,
+   "needs_headless": false,
+   "noscript_text_length": 0,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 24,
+   "text_length": 2464
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "index",
+     "source": "default_path",
+     "status": 200,
+     "url": "https://www.town.oji.nara.jp/sitemap.xml"
+    }
+   ],
+   "children_fetched": 8,
+   "children_total": 708,
+   "found": true,
+   "keyword_urls": [],
+   "kind": "index",
+   "lastmod_count": 28,
+   "lastmod_max": "2026-10-05",
+   "lastmod_min": "2018-05-17",
+   "lastmod_years": {
+    "2018": 1,
+    "2019": 1,
+    "2020": 2,
+    "2021": 3,
+    "2023": 2,
+    "2024": 4,
+    "2025": 1,
+    "2026": 14
+   },
+   "numeric_id_url_ratio": 0.571,
+   "source": "default_path",
+   "top_level_paths": {
+    "/anshin": 12,
+    "/bosai_bohan": 11,
+    "/index.html": 1,
+    "/map.html": 1,
+    "/news.html": 1,
+    "/saigai_kinkyu.html": 1,
+    "/sitemap.html": 1
+   },
+   "truncated": true,
+   "url": "https://www.town.oji.nara.jp/sitemap.xml",
+   "url_count": 28
+  },
+  "top": {
+   "elapsed_ms": 500,
+   "error_class": "",
+   "final_url": "https://www.town.oji.nara.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

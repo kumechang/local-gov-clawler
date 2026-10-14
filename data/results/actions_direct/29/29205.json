@@ -1,0 +1,806 @@
+{
+ "ai_needed": false,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "page_title": "観光・文化・スポーツ/橿原市公式ホームページ 観光・文化・スポーツ",
+     "reasons": [
+      "text:スポーツ",
+      "url_hint",
+      "region_nav"
+     ],
+     "region": "nav",
+     "score": 8,
+     "source": "nav",
+     "text": "観光・文化・スポーツ",
+     "url": "https://www.city.kashihara.nara.jp/kanko_bunka_sports/index.html"
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "page_title": "",
+     "reasons": [
+      "text:スポーツ",
+      "url_hint"
+     ],
+     "region": "other",
+     "score": 5,
+     "source": "depth1_link",
+     "text": "スポーツ",
+     "url": "https://www.city.kashihara.nara.jp/kanko_bunka_sports/sports/index.html"
+    }
+   ],
+   "decision": "hub_selected",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "selected": {
+    "depth": 1,
+    "facility_link_count": 0,
+    "page_title": "観光・文化・スポーツ/橿原市公式ホームページ 観光・文化・スポーツ",
+    "reasons": [
+     "text:スポーツ",
+     "url_hint",
+     "region_nav"
+    ],
+    "region": "nav",
+    "score": 8,
+    "source": "nav",
+    "text": "観光・文化・スポーツ",
+    "url": "https://www.city.kashihara.nara.jp/kanko_bunka_sports/index.html"
+   }
+  }
+ ],
+ "menu_labels": [
+  "くらし",
+  "暮らし",
+  "子育て",
+  "健康・福祉",
+  "観光",
+  "文化・スポーツ",
+  "市政",
+  "公共施設",
+  "手続き"
+ ],
+ "municipality": {
+  "code": "29205",
+  "full_name": "橿原市",
+  "kind": "city",
+  "name": "橿原市",
+  "official_url": "https://www.city.kashihara.nara.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "スマートフォン版を表示",
+   "url": "https://www.city.kashihara.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "橿原PRサイト",
+   "url": "https://www.city.kashihara.nara.jp/pr/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "橿原市子育て応援サイト",
+   "url": "https://www.city.kashihara.nara.jp/kosodate/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "橿原市移住促進サイト",
+   "url": "https://www.city.kashihara.nara.jp/iju/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "橿原市観光情報 旅するならかしはら",
+   "url": "https://www.city.kashihara.nara.jp/kanko_bunka_sports/kanko/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "世界遺産「飛鳥・藤原の宮都」橿原市公式ページ 日本国のはじまりを伝える場所へ",
+   "url": "https://www.city.kashihara.nara.jp/kanko_bunka_sports/sekaiisantorokusuishin/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "事業者の方へ",
+   "url": "https://www.city.kashihara.nara.jp/jigyosha/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "妊娠・出産",
+   "url": "https://www.city.kashihara.nara.jp/living_scene/ninshin_shussan/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "子育て",
+   "url": "https://www.city.kashihara.nara.jp/living_scene/kosodate/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "入園・入学",
+   "url": "https://www.city.kashihara.nara.jp/living_scene/nyuen_nyugaku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "url": "https://www.city.kashihara.nara.jp/living_scene/kekkon_rikon/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "住まい・引越し",
+   "url": "https://www.city.kashihara.nara.jp/living_scene/sumai_hikkoshi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ごみ・リサイクル",
+   "url": "https://www.city.kashihara.nara.jp/living_scene/gomi_risaikuru/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "就職",
+   "url": "https://www.city.kashihara.nara.jp/living_scene/shushoku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "高齢者・介護",
+   "url": "https://www.city.kashihara.nara.jp/living_scene/koreisha_kaigo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "おくやみ",
+   "url": "https://www.city.kashihara.nara.jp/living_scene/okuyami/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらし・手続き",
+   "url": "https://www.city.kashihara.nara.jp/kurashi_tetsuzuki/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子育て・教育",
+   "url": "https://www.city.kashihara.nara.jp/kosodate_kyoiku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "健康・福祉",
+   "url": "https://www.city.kashihara.nara.jp/kenko_fukushi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光・文化・スポーツ",
+   "url": "https://www.city.kashihara.nara.jp/kanko_bunka_sports/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "しごと・産業",
+   "url": "https://www.city.kashihara.nara.jp/shigoto_sangyo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市政情報",
+   "url": "https://www.city.kashihara.nara.jp/shiseijoho/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光・文化・ スポーツ",
+   "url": "https://www.city.kashihara.nara.jp/kanko_bunka_sports/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "橿原市観光情報 旅するならかしはら 旅するならかしはら",
+   "url": "https://www.city.kashihara.nara.jp/kanko_bunka_sports/kanko/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "PC版を表示",
+   "url": "https://www.city.kashihara.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "一覧を見る",
+   "url": "https://www.city.kashihara.nara.jp/emergency/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "PRsaito",
+   "url": "https://www.city.kashihara.nara.jp/pr/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "kosodatesaitobana",
+   "url": "https://www.city.kashihara.nara.jp/kosodate/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "休日診療",
+   "url": "https://www.city.kashihara.nara.jp/soshiki/1046/gyomu/2/3/3290.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "防災情報",
+   "url": "https://www.city.kashihara.nara.jp/soshiki/1026/gyomu/2/4/2699.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ハザードマップ",
+   "url": "https://www.city.kashihara.nara.jp/soshiki/1026/gyomu/2/4/1/2439.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "避難場所",
+   "url": "https://www.city.kashihara.nara.jp/soshiki/1026/gyomu/2/4/2/468.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "「飛鳥・藤原の宮都」世界文化遺産として登録決定! 人類共通の宝として未来へ大切に引き継いでいきましょう。",
+   "url": "https://www.city.kashihara.nara.jp/kanko_bunka_sports/sekaiisantorokusuishin/2/20854.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "7月1日から利用開始!7,000円分のくらし応援デジタル・ギフトの詳細はこちらから。",
+   "url": "https://www.city.kashihara.nara.jp/soshiki/1025/1/1/3/19884.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年5月1日から分庁舎(ミグランス)の窓口受付時間が変更になります。",
+   "url": "https://www.city.kashihara.nara.jp/shiseijoho/jinji_shokuinsaiyo/1/18747.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベント盛りだくさん♪橿原市制70周年をみんなで盛り上げよう!",
+   "url": "https://www.city.kashihara.nara.jp/shiseijoho/7070/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "橿原市ふるさと納税はこちら",
+   "url": "https://www.city.kashihara.nara.jp/shigoto_sangyo/furusatonozei/7786.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "株式会社カプコンと連携し、まちの賑わいづくりに取り組んでいます!",
+   "url": "https://www.city.kashihara.nara.jp/soshiki/1006/gyomu/citysales/13840.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "橿原市職員として一緒に働きましょう!職員採用情報はこちら。",
+   "url": "https://www.city.kashihara.nara.jp/shiseijoho/jinji_shokuinsaiyo/2/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新着情報一覧を見る",
+   "url": "https://www.city.kashihara.nara.jp/news_list.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "RSS",
+   "url": "https://www.city.kashihara.nara.jp/cgi-bin/feed.php?displayCount=30&displayRange=90"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度 会計年度任用職員(家庭児童相談員A)募集(こども家庭課)",
+   "url": "https://www.city.kashihara.nara.jp/bosyu_news/17140.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "世界文化遺産「飛鳥・藤原の宮都」構成資産の写真大募集",
+   "url": "https://www.city.kashihara.nara.jp/bosyu_news/21017.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "会計年度任用職員(栄養士)の募集(こども未来課)",
+   "url": "https://www.city.kashihara.nara.jp/bosyu_news/20892.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "学校現場で働いてみませんか?",
+   "url": "https://www.city.kashihara.nara.jp/bosyu_news/14448.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "保育士、社会福祉士、臨床心理士、作業療法士、園長[R9.4.1採用 一般任期付職員]",
+   "url": "http://www.city.kashihara.nara.jp/bosyu_news/20807.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "高校卒対象採用試験[R9.4.1採用予定 土木、建築]",
+   "url": "https://www.city.kashihara.nara.jp/bosyu_news/20639.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "社会人対象採用試験[R8.10.1採用予定・事務職ほか]",
+   "url": "https://www.city.kashihara.nara.jp/bosyu_news/20638.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度 市立認定こども園の会計年度任用職員(保育士等)募集 (こども未来課)",
+   "url": "https://www.city.kashihara.nara.jp/bosyu_news/16459.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度 市立幼稚園の会計年度任用職員(幼稚園教諭等)募集(こども未来課)",
+   "url": "https://www.city.kashihara.nara.jp/bosyu_news/16458.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度 会計年度任用職員(パート保健師)募集(こども家庭課)",
+   "url": "https://www.city.kashihara.nara.jp/bosyu_news/16879.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "募集情報一覧を見る",
+   "url": "https://www.city.kashihara.nara.jp/bosyu_news/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベント カレンダーを見る",
+   "url": "https://www.city.kashihara.nara.jp/calendar.html?calendarType=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ごみ・ リサイクル",
+   "url": "https://www.city.kashihara.nara.jp/living_scene/gomi_risaikuru/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "公共施設予約",
+   "url": "https://www.city.kashihara.nara.jp/soshiki/1005/2232.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "施設マップ",
+   "url": "https://www.city.kashihara.nara.jp/useful_service/map.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "例規集検索",
+   "url": "https://www.city.kashihara.nara.jp/section/reiki/reiki.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "図書検索",
+   "url": "https://www.city.kashihara.nara.jp/soshiki/1048/gyomu/1/3/2528.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "安全・安心メール",
+   "url": "https://www.city.kashihara.nara.jp/soshiki/1026/gyomu/2/4/5/2443.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ごみ分別アプリ",
+   "url": "https://www.city.kashihara.nara.jp/useful_service/gomidashi/8496.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市長の部屋",
+   "url": "https://www.city.kashihara.nara.jp/shiseijoho/shichonoheya/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市議会",
+   "url": "https://www.city.kashihara.nara.jp/shiseijoho/gikai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "教育委員会",
+   "url": "https://www.city.kashihara.nara.jp/kosodate_kyoiku/kyoikuiinkai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入札・契約",
+   "url": "https://www.city.kashihara.nara.jp/jigyosha/nyusatsu_keiyaku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "報道資料",
+   "url": "https://www.city.kashihara.nara.jp/shiseijoho/hodoshiryo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "暮らしの ハンドブック",
+   "url": "https://www.city.kashihara.nara.jp/shiseijoho/koho/10398.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報一覧を見る",
+   "url": "https://www.city.kashihara.nara.jp/shiseijoho/koho/3/kouhoukasihara/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "SNS一覧",
+   "url": "https://www.city.kashihara.nara.jp/shiseijoho/koho/2/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "橿原市 公式LINE",
+   "url": "https://www.city.kashihara.nara.jp/shiseijoho/koho/2/line/10387.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと納税",
+   "url": "https://www.city.kashihara.nara.jp/shigoto_sangyo/furusatonozei/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "人口・世帯数",
+   "url": "https://www.city.kashihara.nara.jp/shiseijoho/kashiharashinogaiyo/2/10538.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "投稿方法を見る",
+   "url": "https://www.city.kashihara.nara.jp/soshiki/1003/gyomu/3/1/12358.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "広告掲載について",
+   "url": "https://www.city.kashihara.nara.jp/soshiki/1003/gyomu/3/4/1408.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "アクセス",
+   "url": "https://www.city.kashihara.nara.jp/soshiki/1003/gyomu/3/kashiharashinitsuite/12396.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "組織から探す",
+   "url": "https://www.city.kashihara.nara.jp/soshiki/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "サイトマップ",
+   "url": "https://www.city.kashihara.nara.jp/sitemap.html"
+  }
+ ],
+ "needs_review": [],
+ "outcome": "hub_selected",
+ "requests": [
+  {
+   "bytes": 70308,
+   "elapsed_ms": 1332,
+   "error_class": "http_404",
+   "final_url": "https://www.city.kashihara.nara.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.city.kashihara.nara.jp/robots.txt"
+  },
+  {
+   "bytes": 119267,
+   "elapsed_ms": 355,
+   "error_class": "",
+   "final_url": "https://www.city.kashihara.nara.jp/",
+   "status": 200,
+   "url": "https://www.city.kashihara.nara.jp/"
+  },
+  {
+   "bytes": 412079,
+   "elapsed_ms": 535,
+   "error_class": "",
+   "final_url": "https://www.city.kashihara.nara.jp/sitemap.xml",
+   "status": 200,
+   "url": "https://www.city.kashihara.nara.jp/sitemap.xml"
+  },
+  {
+   "bytes": 846,
+   "elapsed_ms": 222,
+   "error_class": "",
+   "final_url": "https://www.city.kashihara.nara.jp/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.kashihara.nara.jp/sitemap.dir.xml"
+  },
+  {
+   "bytes": 967,
+   "elapsed_ms": 225,
+   "error_class": "",
+   "final_url": "https://www.city.kashihara.nara.jp/advertisement/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.kashihara.nara.jp/advertisement/sitemap.dir.xml"
+  },
+  {
+   "bytes": 3373,
+   "elapsed_ms": 224,
+   "error_class": "",
+   "final_url": "https://www.city.kashihara.nara.jp/bosyu_news/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.kashihara.nara.jp/bosyu_news/sitemap.dir.xml"
+  },
+  {
+   "bytes": 301,
+   "elapsed_ms": 250,
+   "error_class": "",
+   "final_url": "https://www.city.kashihara.nara.jp/emergency/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.kashihara.nara.jp/emergency/sitemap.dir.xml"
+  },
+  {
+   "bytes": 1979,
+   "elapsed_ms": 1662,
+   "error_class": "",
+   "final_url": "https://www.city.kashihara.nara.jp/event/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.kashihara.nara.jp/event/sitemap.dir.xml"
+  },
+  {
+   "bytes": 505,
+   "elapsed_ms": 226,
+   "error_class": "",
+   "final_url": "https://www.city.kashihara.nara.jp/event/hanadayori/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.kashihara.nara.jp/event/hanadayori/sitemap.dir.xml"
+  },
+  {
+   "bytes": 295,
+   "elapsed_ms": 234,
+   "error_class": "",
+   "final_url": "https://www.city.kashihara.nara.jp/faq/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.kashihara.nara.jp/faq/sitemap.dir.xml"
+  },
+  {
+   "bytes": 1960,
+   "elapsed_ms": 224,
+   "error_class": "",
+   "final_url": "https://www.city.kashihara.nara.jp/iju/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.kashihara.nara.jp/iju/sitemap.dir.xml"
+  },
+  {
+   "bytes": 72113,
+   "elapsed_ms": 236,
+   "error_class": "",
+   "final_url": "https://www.city.kashihara.nara.jp/kanko_bunka_sports/index.html",
+   "status": 200,
+   "url": "https://www.city.kashihara.nara.jp/kanko_bunka_sports/index.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 5725,
+  "finished_at": "2026-10-14T22:56:07Z",
+  "request_count": 12,
+  "route": "actions_direct",
+  "started_at": "2026-10-14T22:55:54Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "medium",
+   "evidence": [
+    "url:1件 例 https://www.city.kashihara.nara.jp/soshiki/1005/2232.html"
+   ],
+   "family": "url_pattern:soshiki_numeric",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:soshiki_numeric": 6
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 154,
+   "needs_headless": false,
+   "noscript_text_length": 0,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 26,
+   "text_length": 2366
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "index",
+     "source": "default_path",
+     "status": 200,
+     "url": "https://www.city.kashihara.nara.jp/sitemap.xml"
+    }
+   ],
+   "children_fetched": 8,
+   "children_total": 2568,
+   "found": true,
+   "keyword_urls": [],
+   "kind": "index",
+   "lastmod_count": 50,
+   "lastmod_max": "2026-10-13",
+   "lastmod_min": "2023-02-20",
+   "lastmod_years": {
+    "2023": 13,
+    "2024": 4,
+    "2025": 6,
+    "2026": 27
+   },
+   "numeric_id_url_ratio": 0.7,
+   "source": "default_path",
+   "top_level_paths": {
+    "/": 4,
+    "/advertisement": 1,
+    "/bosyu_news": 17,
+    "/bosyuu_list.html": 1,
+    "/emergency": 1,
+    "/event": 12,
+    "/faq": 1,
+    "/iju": 10,
+    "/index.html": 1,
+    "/news_list.html": 1,
+    "/sitemap.html": 1
+   },
+   "truncated": true,
+   "url": "https://www.city.kashihara.nara.jp/sitemap.xml",
+   "url_count": 50
+  },
+  "top": {
+   "elapsed_ms": 355,
+   "error_class": "",
+   "final_url": "https://www.city.kashihara.nara.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}
