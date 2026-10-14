@@ -115,21 +115,44 @@ def _norm_url(u: str) -> str:
 
 
 def evaluate(results: list[dict], truth_csv: Path) -> dict:
-    """正解データ(municipality_code,hub_url)に対し、候補(上位5件+選択+その配下リンク)に到達できたかを数える。"""
+    """正解データ(municipality_code,hub_url)に対する採点。
+
+    - reach: 正解URLがハブ候補の上位5件に入った(AI判定や手動確認に渡せば拾える水準)
+    - selected_correct: プログラムが確定(hub_selected)したURLが正解と一致した(そのまま使える水準)
+    hub_urlが空の行(サイトに一覧ページが無い)は母数に含めない。
+    """
     by_code = {r["municipality"]["code"]: r for r in results}
     rows = list(csv.DictReader(open(truth_csv, encoding="utf-8-sig")))
-    rows = [r for r in rows if r.get("municipality_code") and r.get("hub_url")]
+    rows = [r for r in rows if r.get("municipality_code") and (r.get("hub_url") or "").strip()]
     detail = []
     for row in rows:
         code = row["municipality_code"].zfill(5)
         r = by_code.get(code)
         truth = _norm_url(row["hub_url"])
-        reached, rank = False, None
+        reached, rank, selected_url = False, None, None
         if r:
             for ge in r["genre_entrypoints"]:
                 urls = [_norm_url(c["url"]) for c in ge["candidates"]]
                 if truth in urls:
                     reached, rank = True, urls.index(truth) + 1
-        detail.append({"code": code, "reached": reached, "rank": rank, "outcome": r["outcome"] if r else "missing"})
+                if ge.get("selected"):
+                    selected_url = ge["selected"]["url"]
+        detail.append({
+            "code": code, "reached": reached, "rank": rank, "outcome": r["outcome"] if r else "missing",
+            "selected_url": selected_url,
+            "selected_correct": (_norm_url(selected_url) == truth) if selected_url else None,
+        })
     n = len(detail)
-    return {"truth_count": n, "reached": sum(d["reached"] for d in detail), "reach_rate": round(sum(d["reached"] for d in detail) / n, 3) if n else None, "detail": detail}
+    reached = sum(d["reached"] for d in detail)
+    selected = [d for d in detail if d["selected_url"]]
+    correct = sum(1 for d in selected if d["selected_correct"])
+    return {
+        "truth_count": n,
+        "reached": reached,
+        "reach_rate": round(reached / n, 3) if n else None,
+        "selected": len(selected),
+        "selected_correct": correct,
+        "selected_precision": round(correct / len(selected), 3) if selected else None,
+        "selected_correct_rate": round(correct / n, 3) if n else None,
+        "detail": detail,
+    }

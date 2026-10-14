@@ -1,0 +1,598 @@
+{
+ "ai_needed": false,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 1,
+     "facility_link_count": 4,
+     "page_title": "施設案内 | 下市町 施設案内",
+     "reasons": [
+      "text:公共施設|施設案内|施設一覧|施設情報",
+      "region_nav",
+      "facility_links:4"
+     ],
+     "region": "nav",
+     "score": 8,
+     "source": "nav",
+     "text": "施設案内",
+     "url": "https://www.town.shimoichi.lg.jp/category/4-0-0-0-0-0-0-0-0-0.html"
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "page_title": "",
+     "reasons": [
+      "text:体育館"
+     ],
+     "region": "other",
+     "score": 7,
+     "source": "depth1_link",
+     "text": "下市中央公園総合体育館",
+     "url": "https://www.town.shimoichi.lg.jp/category/4-7-0-0-0-0-0-0-0-0.html"
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "page_title": "",
+     "reasons": [
+      "text:体育館"
+     ],
+     "region": "other",
+     "score": 7,
+     "source": "depth1_link",
+     "text": "下市中央公園総合体育館のご案内",
+     "url": "https://www.town.shimoichi.lg.jp/0000000280.html"
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "page_title": "",
+     "reasons": [
+      "text:グラウンド|グランド|運動場"
+     ],
+     "region": "other",
+     "score": 5,
+     "source": "depth1_link",
+     "text": "健民運動場",
+     "url": "https://www.town.shimoichi.lg.jp/category/4-5-0-0-0-0-0-0-0-0.html"
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "page_title": "",
+     "reasons": [
+      "text:グラウンド|グランド|運動場"
+     ],
+     "region": "other",
+     "score": 5,
+     "source": "depth1_link",
+     "text": "奈良県下市健民運動場のご案内",
+     "url": "https://www.town.shimoichi.lg.jp/0000000200.html"
+    }
+   ],
+   "decision": "hub_selected",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "selected": {
+    "depth": 1,
+    "facility_link_count": 4,
+    "page_title": "施設案内 | 下市町 施設案内",
+    "reasons": [
+     "text:公共施設|施設案内|施設一覧|施設情報",
+     "region_nav",
+     "facility_links:4"
+    ],
+    "region": "nav",
+    "score": 8,
+    "source": "nav",
+    "text": "施設案内",
+    "url": "https://www.town.shimoichi.lg.jp/category/4-0-0-0-0-0-0-0-0-0.html"
+   }
+  }
+ ],
+ "menu_labels": [
+  "子育て",
+  "観光",
+  "事業者",
+  "町政",
+  "施設案内",
+  "申請"
+ ],
+ "municipality": {
+  "code": "29443",
+  "full_name": "下市町",
+  "kind": "town",
+  "name": "下市町",
+  "official_url": "https://www.town.shimoichi.lg.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "サイトマップ",
+   "url": "https://www.town.shimoichi.lg.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "お問い合わせ",
+   "url": "https://www.town.shimoichi.lg.jp/mailform/opinion.cgi"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "住民の方へ",
+   "url": "https://www.town.shimoichi.lg.jp/category/6-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光される方へ",
+   "url": "https://www.town.shimoichi.lg.jp/category/8-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "事業者の方へ",
+   "url": "https://www.town.shimoichi.lg.jp/category/3-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "町政情報",
+   "url": "https://www.town.shimoichi.lg.jp/category/5-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "施設案内",
+   "url": "https://www.town.shimoichi.lg.jp/category/4-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "どんなとこ、こんなとこ 下市観光ページへ",
+   "url": "https://www.town.shimoichi.lg.jp/category/8-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ふるさと納税",
+   "url": "https://www.town.shimoichi.lg.jp/0000000081.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "消防・救急",
+   "url": "https://www.town.shimoichi.lg.jp/category/6-8-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "防災について",
+   "url": "https://www.town.shimoichi.lg.jp/category/6-7-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町長室",
+   "url": "https://www.town.shimoichi.lg.jp/0000000145.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "下市町議会",
+   "url": "https://www.town.shimoichi.lg.jp/category/1-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "各課のご案内",
+   "url": "https://www.town.shimoichi.lg.jp/soshiki_list.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "申請書ダウンロード",
+   "url": "https://www.town.shimoichi.lg.jp/category/6-3-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "下市町について",
+   "url": "https://www.town.shimoichi.lg.jp/category/5-13-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入札・契約",
+   "url": "https://www.town.shimoichi.lg.jp/category/3-4-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報しもいち",
+   "url": "https://www.town.shimoichi.lg.jp/category/5-15-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "しもいちテレビ",
+   "url": "https://www.town.shimoichi.lg.jp/0000000289.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "例規集",
+   "url": "https://www.town.shimoichi.lg.jp/kids/reiki/reiki_menu.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "トピックス",
+   "url": "https://www.town.shimoichi.lg.jp/topics/0001.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "トピックス RSS",
+   "url": "https://www.town.shimoichi.lg.jp/rss/rss_topics.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "妊娠 出産",
+   "url": "https://www.town.shimoichi.lg.jp/category/6-19-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "子育て",
+   "url": "https://www.town.shimoichi.lg.jp/category/6-17-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "戸籍 証明",
+   "url": "https://www.town.shimoichi.lg.jp/category/6-14-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "引っ越し",
+   "url": "https://www.town.shimoichi.lg.jp/0000000132.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "税 保険",
+   "url": "https://www.town.shimoichi.lg.jp/category/6-18-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ごみ 環境",
+   "url": "https://www.town.shimoichi.lg.jp/category/6-15-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "福祉 介護",
+   "url": "https://www.town.shimoichi.lg.jp/category/6-20-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "年金",
+   "url": "https://www.town.shimoichi.lg.jp/category/6-5-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "一覧を見る",
+   "url": "https://www.town.shimoichi.lg.jp/news/0001.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新着情報 RSS",
+   "url": "https://www.town.shimoichi.lg.jp/rss/rss_new.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "建設工事等に関する公告等(10月8日公表)",
+   "url": "https://www.town.shimoichi.lg.jp/0000001943.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "発注見通し(令和8年度)",
+   "url": "https://www.town.shimoichi.lg.jp/0000001868.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町営住宅の入居者を募集します",
+   "url": "https://www.town.shimoichi.lg.jp/0000001701.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "建設工事等に関する公告等(9月25日)",
+   "url": "https://www.town.shimoichi.lg.jp/0000001939.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "下市町災害情報伝達手段整備事業に伴う公募型プロポーザルの質問回答について",
+   "url": "https://www.town.shimoichi.lg.jp/0000001918.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "認可地縁団体が所有する不動産に係る登記の特例について",
+   "url": "https://www.town.shimoichi.lg.jp/0000001928.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良県国民健康保険料(税)コールセンターを開設しました",
+   "url": "https://www.town.shimoichi.lg.jp/0000001415.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "吉野杉箸 職人体験ツアー 参加者募集中!",
+   "url": "https://www.town.shimoichi.lg.jp/0000001199.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "マイナポータルアプリが他アプリとの統合により、 呼称を新たに「マイナアプリ」として提供を開始しました。",
+   "url": "https://www.town.shimoichi.lg.jp/0000001927.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ツキノワグマ目撃情報について",
+   "url": "https://www.town.shimoichi.lg.jp/0000001803.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "明水館・秋津荘 下市温泉",
+   "url": "https://www.town.shimoichi.lg.jp/category/4-9-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "キャンプにきてね! 森林公園 やすらぎ村",
+   "url": "https://www.town.shimoichi.lg.jp/0000000304.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "別ウィンドウで開く",
+   "url": "https://www.town.shimoichi.lg.jp/soshiki/2-1-0-0-0_8.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "図書館 図書検索システム",
+   "url": "https://www.town.shimoichi.lg.jp/category/4-3-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "あそびにきぃや。奈良しもいち。",
+   "url": "https://www.town.shimoichi.lg.jp/0000000381.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと 寄付金",
+   "url": "https://www.town.shimoichi.lg.jp/0000000081.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "キッズページ",
+   "url": "https://www.town.shimoichi.lg.jp/kids/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "下市町マスコットキャラクター ごんたくん",
+   "url": "https://www.town.shimoichi.lg.jp/category/2-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "らくらく農法 プロジェクト",
+   "url": "https://www.town.shimoichi.lg.jp/0000000225.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "自然カメラ(Live映像)",
+   "url": "https://www.town.shimoichi.lg.jp/0000000230.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "下市空き家バンク",
+   "url": "https://www.town.shimoichi.lg.jp/0000000063.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "運用管理規約",
+   "url": "https://www.town.shimoichi.lg.jp/site_policy/0000000003.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "ウェブアクセシビリティ方針",
+   "url": "https://www.town.shimoichi.lg.jp/site_policy/0000000005.html"
+  }
+ ],
+ "needs_review": [],
+ "outcome": "hub_selected",
+ "requests": [
+  {
+   "bytes": 8275,
+   "elapsed_ms": 934,
+   "error_class": "http_404",
+   "final_url": "https://www.town.shimoichi.lg.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.town.shimoichi.lg.jp/robots.txt"
+  },
+  {
+   "bytes": 29619,
+   "elapsed_ms": 206,
+   "error_class": "",
+   "final_url": "https://www.town.shimoichi.lg.jp/",
+   "status": 200,
+   "url": "https://www.town.shimoichi.lg.jp/"
+  },
+  {
+   "bytes": 8275,
+   "elapsed_ms": 186,
+   "error_class": "http_404",
+   "final_url": "https://www.town.shimoichi.lg.jp/sitemap.xml",
+   "status": 404,
+   "url": "https://www.town.shimoichi.lg.jp/sitemap.xml"
+  },
+  {
+   "bytes": 14884,
+   "elapsed_ms": 278,
+   "error_class": "",
+   "final_url": "https://www.town.shimoichi.lg.jp/category/4-0-0-0-0-0-0-0-0-0.html",
+   "status": 200,
+   "url": "https://www.town.shimoichi.lg.jp/category/4-0-0-0-0-0-0-0-0-0.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 1604,
+  "finished_at": "2026-10-14T22:56:32Z",
+  "request_count": 4,
+  "route": "actions_direct",
+  "started_at": "2026-10-14T22:56:28Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "none",
+   "evidence": [],
+   "family": "unknown",
+   "provenance": "auto",
+   "scores": {}
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 90,
+   "needs_headless": false,
+   "noscript_text_length": 125,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 12,
+   "text_length": 951
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "http_404",
+     "kind": "",
+     "source": "default_path",
+     "status": 404,
+     "url": "https://www.town.shimoichi.lg.jp/sitemap.xml"
+    }
+   ],
+   "found": false,
+   "kind": "",
+   "source": "",
+   "url": ""
+  },
+  "top": {
+   "elapsed_ms": 206,
+   "error_class": "",
+   "final_url": "https://www.town.shimoichi.lg.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

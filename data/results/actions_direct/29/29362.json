@@ -1,0 +1,677 @@
+{
+ "ai_needed": false,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "page_title": "三宅町体育館",
+     "reasons": [
+      "text:体育館",
+      "region_nav",
+      "title_match"
+     ],
+     "region": "header",
+     "score": 11,
+     "source": "nav",
+     "text": "三宅町体育館",
+     "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=10"
+    }
+   ],
+   "decision": "hub_selected",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "selected": {
+    "depth": 1,
+    "facility_link_count": 0,
+    "page_title": "三宅町体育館",
+    "reasons": [
+     "text:体育館",
+     "region_nav",
+     "title_match"
+    ],
+    "region": "header",
+    "score": 11,
+    "source": "nav",
+    "text": "三宅町体育館",
+    "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=10"
+   }
+  }
+ ],
+ "menu_labels": [
+  "くらし",
+  "子育て",
+  "町政",
+  "よくある質問",
+  "申請",
+  "手続き"
+ ],
+ "municipality": {
+  "code": "29362",
+  "full_name": "三宅町",
+  "kind": "town",
+  "name": "三宅町",
+  "official_url": "https://www.town.miyake.lg.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "Foreign language",
+   "url": "https://www.town.miyake.lg.jp/site/userguide/3117.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらしの情報",
+   "url": "https://www.town.miyake.lg.jp/life/1/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "入札情報",
+   "url": "https://www.town.miyake.lg.jp/life/2/16/78/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "プレスリリース",
+   "url": "https://www.town.miyake.lg.jp/life/4/21/109/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "各課への連絡先",
+   "url": "https://www.town.miyake.lg.jp/soshiki/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "休日・夜間診療",
+   "url": "https://www.town.miyake.lg.jp/soshiki/17/1134.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "防災・防犯",
+   "url": "https://www.town.miyake.lg.jp/life/1/3/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "みやけ安全安心メール",
+   "url": "https://www.town.miyake.lg.jp/soshiki/1/1090.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ページID 検索とは?",
+   "url": "https://www.town.miyake.lg.jp/site/userguide/3121.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "分類でさがす",
+   "url": "https://www.town.miyake.lg.jp/life/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "組織でさがす",
+   "url": "https://www.town.miyake.lg.jp/soshiki/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "よくある質問でさがす",
+   "url": "https://www.town.miyake.lg.jp/life/sub/1/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "カレンダー でさがす",
+   "url": "https://www.town.miyake.lg.jp/calendar/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "妊娠・出産",
+   "url": "https://www.town.miyake.lg.jp/life/1/1/1/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "子育て",
+   "url": "https://www.town.miyake.lg.jp/life/1/9/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "url": "https://www.town.miyake.lg.jp/life/1/1/5/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "引越し",
+   "url": "https://www.town.miyake.lg.jp/life/1/1/6/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "介護",
+   "url": "https://www.town.miyake.lg.jp/life/1/5/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "おくやみ",
+   "url": "https://www.town.miyake.lg.jp/site/okuyami/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "各種申請・届出",
+   "url": "https://www.town.miyake.lg.jp/life/sub/3/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "入札・契約",
+   "url": "https://www.town.miyake.lg.jp/life/2/16/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ごみ・ リサイクル",
+   "url": "https://www.town.miyake.lg.jp/life/1/4/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "各種相談",
+   "url": "https://www.town.miyake.lg.jp/life/sub/2/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "イベント",
+   "url": "https://www.town.miyake.lg.jp/life/sub/4/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "公共交通",
+   "url": "https://www.town.miyake.lg.jp/soshiki/1/1047.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "役場庁舎等での電話通話録音について",
+   "url": "https://www.town.miyake.lg.jp/soshiki/1/9809.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "【10月・11月開催(11月開催分更新)】やまとecoでイベントを開催します",
+   "url": "https://www.town.miyake.lg.jp/soshiki/15/10016.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "「みやけチャレンジファーム」稲刈り体験イベントを開催します",
+   "url": "https://www.town.miyake.lg.jp/soshiki/4/10015.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "令和8年度入札結果(物品)",
+   "url": "https://www.town.miyake.lg.jp/soshiki/1/9377.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "高齢者及び身体障害者等緊急時支援体制整備事業のご案内",
+   "url": "https://www.town.miyake.lg.jp/soshiki/10/9902.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "新着情報の一覧",
+   "url": "https://www.town.miyake.lg.jp/soshiki/list1-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "新着情報のRSS",
+   "url": "https://www.town.miyake.lg.jp/rss/10/list1.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "令和9年度 三宅幼児園、保育所等の新規入所申込について",
+   "url": "https://www.town.miyake.lg.jp/soshiki/17/9896.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "学童保育クラブ入所手続きについて【R9年度入所】",
+   "url": "https://www.town.miyake.lg.jp/soshiki/17/8296.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "令和9年「三宅町二十歳のつどい」開催のご案内(参加には申込が必要となります)",
+   "url": "https://www.town.miyake.lg.jp/soshiki/20/9746.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "イベントの一覧",
+   "url": "https://www.town.miyake.lg.jp/soshiki/list5-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "イベントのRSS",
+   "url": "https://www.town.miyake.lg.jp/rss/10/list5.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "令和8年度 スクールソーシャルワーカー募集について",
+   "url": "https://www.town.miyake.lg.jp/soshiki/20/8981.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "三宅町保健福祉施設「あざさ苑」指定管理者の募集について",
+   "url": "https://www.town.miyake.lg.jp/soshiki/17/9900.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "募集の一覧",
+   "url": "https://www.town.miyake.lg.jp/soshiki/list7-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "募集のRSS",
+   "url": "https://www.town.miyake.lg.jp/rss/10/list7.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "一般競争入札(塵芥車購入業務)について",
+   "url": "https://www.town.miyake.lg.jp/soshiki/15/9752.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "令和8年度入札結果(工事)",
+   "url": "https://www.town.miyake.lg.jp/soshiki/1/9375.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "令和8年度入札結果(業務)",
+   "url": "https://www.town.miyake.lg.jp/soshiki/1/9376.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "入札情報の一覧",
+   "url": "https://www.town.miyake.lg.jp/soshiki/list8-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "入札情報のRSS",
+   "url": "https://www.town.miyake.lg.jp/rss/10/list8.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "広報みやけ表紙",
+   "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "最新号",
+   "url": "https://www.town.miyake.lg.jp/site/koho/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "広報誌一覧",
+   "url": "https://www.town.miyake.lg.jp/site/koho/list16.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "職員募集",
+   "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "マイナンバー",
+   "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=3"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "交流まちづくりセンター",
+   "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=5"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "子育て世代 包括支援センター スマイル",
+   "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=6"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "国保中央病院",
+   "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=9"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "三宅町体育館",
+   "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=10"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "やまとecoクリーンセンター",
+   "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=11"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ならこびnet",
+   "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=7"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "あざさ苑",
+   "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=12"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ふるさと納税",
+   "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=13"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "奈良県広域水道企業団",
+   "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=14"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "定住自立圏イベント情報",
+   "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=15"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "統計情報",
+   "url": "https://www.town.miyake.lg.jp/soshiki/10/1059.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "特別職の紹介",
+   "url": "https://www.town.miyake.lg.jp/site/executives/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "三宅町議会",
+   "url": "https://www.town.miyake.lg.jp/site/gikai/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "教育委員会",
+   "url": "https://www.town.miyake.lg.jp/site/kyouiku/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "申請書ダウンロード",
+   "url": "https://www.town.miyake.lg.jp/soshiki/10/1282.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "オープンデータ",
+   "url": "https://www.town.miyake.lg.jp/soshiki/10/1056.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "三宅町ホームページ",
+   "url": "https://www.town.miyake.lg.jp/"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "メールでのお問い合わせはこちら",
+   "url": "https://www.town.miyake.lg.jp/soshiki/"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "サイトマップ",
+   "url": "https://www.town.miyake.lg.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "個人情報の取扱い方針",
+   "url": "https://www.town.miyake.lg.jp/site/userguide/3031.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "アクセシビリティ方針",
+   "url": "https://www.town.miyake.lg.jp/site/userguide/3067.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "リンク集",
+   "url": "https://www.town.miyake.lg.jp/soshiki/22/3063.html"
+  }
+ ],
+ "needs_review": [],
+ "outcome": "hub_selected",
+ "requests": [
+  {
+   "bytes": 13895,
+   "elapsed_ms": 834,
+   "error_class": "http_404",
+   "final_url": "https://www.town.miyake.lg.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.town.miyake.lg.jp/robots.txt"
+  },
+  {
+   "bytes": 30601,
+   "elapsed_ms": 216,
+   "error_class": "",
+   "final_url": "https://www.town.miyake.lg.jp/",
+   "status": 200,
+   "url": "https://www.town.miyake.lg.jp/"
+  },
+  {
+   "bytes": 13895,
+   "elapsed_ms": 203,
+   "error_class": "http_404",
+   "final_url": "https://www.town.miyake.lg.jp/sitemap.xml",
+   "status": 404,
+   "url": "https://www.town.miyake.lg.jp/sitemap.xml"
+  },
+  {
+   "bytes": 21527,
+   "elapsed_ms": 1275,
+   "error_class": "",
+   "final_url": "https://www.miyake-nara-sports.jp/",
+   "status": 200,
+   "url": "https://www.town.miyake.lg.jp/adv/ba.php?id=10"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 2528,
+  "finished_at": "2026-10-14T22:56:26Z",
+  "request_count": 4,
+  "route": "actions_direct",
+  "started_at": "2026-10-14T22:56:21Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "high",
+   "evidence": [
+    "url:20件 例 https://www.town.miyake.lg.jp/soshiki/17/1134.html"
+   ],
+   "family": "url_pattern:soshiki_numeric",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:site_numeric": 9,
+    "url_pattern:soshiki_numeric": 10
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 97,
+   "needs_headless": false,
+   "noscript_text_length": 43,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 20,
+   "text_length": 1565
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "http_404",
+     "kind": "",
+     "source": "default_path",
+     "status": 404,
+     "url": "https://www.town.miyake.lg.jp/sitemap.xml"
+    }
+   ],
+   "found": false,
+   "kind": "",
+   "source": "",
+   "url": ""
+  },
+  "top": {
+   "elapsed_ms": 216,
+   "error_class": "",
+   "final_url": "https://www.town.miyake.lg.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

@@ -26,6 +26,7 @@ class Link:
     region: str  # nav / header / footer / main / aside / other
     same_site: bool
     is_pdf: bool = False
+    text_kind: str = "text"  # text / img_alt / img_src(画像のみ。ファイル名を仮ラベルにした)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -62,14 +63,23 @@ def _region(a: Tag) -> str:
     return "other"
 
 
-def _link_text(a: Tag) -> str:
+def _link_text(a: Tag) -> tuple[str, str]:
     text = norm_text(a.get_text(" "))
     if text:
-        return text
+        return text, "text"
     img = a.find("img", alt=True)
     if img and img["alt"].strip():
-        return norm_text(img["alt"])
-    return norm_text(a.get("title", "") or a.get("aria-label", ""))
+        return norm_text(img["alt"]), "img_alt"
+    label = norm_text(a.get("title", "") or a.get("aria-label", ""))
+    if label:
+        return label, "text"
+    # alt無しの画像リンク: ファイル名(拡張子なし)を仮ラベルにする。リンク先が分かればナビとして使える
+    img = a.find("img", src=True)
+    if img:
+        stem = re.sub(r"\.[A-Za-z0-9]+$", "", img["src"].split("?", 1)[0].rsplit("/", 1)[-1])
+        if stem:
+            return stem, "img_src"
+    return "", "text"
 
 
 def extract_links(soup: BeautifulSoup, page_url: str, site_host: str) -> list[Link]:
@@ -82,14 +92,14 @@ def extract_links(soup: BeautifulSoup, page_url: str, site_host: str) -> list[Li
         url, _ = urldefrag(urljoin(page_url, href))
         if urlsplit(url).scheme not in ("http", "https") or _SKIP_EXT.search(url):
             continue
-        text = _link_text(a)
+        text, kind = _link_text(a)
         if not text:
             continue
         key = (url, text)
         if key in seen:
             continue
         seen.add(key)
-        out.append(Link(text, url, _region(a), is_same_site(url, site_host), urlsplit(url).path.lower().endswith(".pdf")))
+        out.append(Link(text, url, _region(a), is_same_site(url, site_host), urlsplit(url).path.lower().endswith(".pdf"), kind))
     return out
 
 

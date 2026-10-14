@@ -1,0 +1,622 @@
+{
+ "ai_needed": true,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [],
+   "decision": "hub_not_found",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "selected": null
+  }
+ ],
+ "menu_labels": [
+  "くらし",
+  "子育て",
+  "健康・福祉",
+  "観光",
+  "市政",
+  "よくある質問",
+  "申請",
+  "手続き"
+ ],
+ "municipality": {
+  "code": "29212",
+  "full_name": "宇陀市",
+  "kind": "city",
+  "name": "宇陀市",
+  "official_url": "https://www.city.uda.lg.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "Foreign language",
+   "url": "https://www.city.uda.lg.jp/soshiki/1/1110.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "防災情報",
+   "url": "https://www.city.uda.lg.jp/life/1/2/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "夜間休日診療",
+   "url": "https://www.city.uda.lg.jp/site/kosodate/1853.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "避難所一覧",
+   "url": "https://www.city.uda.lg.jp/soshiki/7/1970.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "AED設置場所",
+   "url": "https://www.city.uda.lg.jp/life/5/38/161/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ハザードマップ",
+   "url": "https://www.city.uda.lg.jp/soshiki/7/1979.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらし・手続き",
+   "url": "https://www.city.uda.lg.jp/life/1/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子育て・教育",
+   "url": "https://www.city.uda.lg.jp/life/2/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "健康・福祉",
+   "url": "https://www.city.uda.lg.jp/life/3/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "しごと・産業",
+   "url": "https://www.city.uda.lg.jp/life/4/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市政情報",
+   "url": "https://www.city.uda.lg.jp/life/5/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "宇陀市職員採用試験情報",
+   "url": "https://www.city.uda.lg.jp/adv/ba.php?id=35"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "宇陀市ふるさと納税",
+   "url": "https://www.city.uda.lg.jp/adv/ba.php?id=31"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "Estonia&Uda プロジェクト",
+   "url": "https://www.city.uda.lg.jp/adv/ba.php?id=32"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "カレンダー",
+   "url": "https://www.city.uda.lg.jp/adv/ba.php?id=39"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "オーガニックビレッジ宣言のまち",
+   "url": "https://www.city.uda.lg.jp/adv/ba.php?id=10"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ページID検索とは?",
+   "url": "https://www.city.uda.lg.jp/soshiki/1/10508.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "うだの薬草",
+   "url": "https://www.city.uda.lg.jp/soshiki/23/25340.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "千年未来塾",
+   "url": "https://www.city.uda.lg.jp/soshiki/5/23151.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "デジタル市役所",
+   "url": "https://www.city.uda.lg.jp/site/digital/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "分類でさがす",
+   "url": "https://www.city.uda.lg.jp/life/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "組織でさがす",
+   "url": "https://www.city.uda.lg.jp/soshiki/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "地図でさがす",
+   "url": "https://www.city.uda.lg.jp/map/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "よくある質問でさがす",
+   "url": "https://www.city.uda.lg.jp/life/sub/4/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "申請・手続きナビ",
+   "url": "https://www.city.uda.lg.jp/site/shinsei/search/search.php"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "デジタル市役所 オンラインでの手続きが可能な行政サービスなどを集約",
+   "url": "https://www.city.uda.lg.jp/site/digital/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "妊娠・出産",
+   "url": "https://www.city.uda.lg.jp/life/2/12/47/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子育て",
+   "url": "https://www.city.uda.lg.jp/life/2/12/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "教育",
+   "url": "https://www.city.uda.lg.jp/life/2/13/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "就職・退職",
+   "url": "https://www.city.uda.lg.jp/life/4/26/118/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "引越し・住まい",
+   "url": "https://www.city.uda.lg.jp/life/1/1/4/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "url": "https://www.city.uda.lg.jp/life/1/1/3/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "健康・医療",
+   "url": "https://www.city.uda.lg.jp/life/3/19/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "高齢・介護",
+   "url": "https://www.city.uda.lg.jp/life/3/22/98/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "おくやみ",
+   "url": "https://www.city.uda.lg.jp/life/1/1/6/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ごみ",
+   "url": "https://www.city.uda.lg.jp/garbage-item/search/search.php"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年熊本地震災害義援金の受付について",
+   "url": "https://www.city.uda.lg.jp/soshiki/18/24957.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年7月熊本地震 災害代理寄附",
+   "url": "https://www.city.uda.lg.jp/soshiki/23/24926.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "重要なお知らせの一覧",
+   "url": "https://www.city.uda.lg.jp/soshiki/list3-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "すくすくで遊ぼう(土曜日開放)・パパ座談会",
+   "url": "https://www.city.uda.lg.jp/site/kosodate/25954.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "子育て講座「寄せ植え」【申込必要】",
+   "url": "https://www.city.uda.lg.jp/site/kosodate/25943.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "大宇陀ふれあい交流ドーム",
+   "url": "https://www.city.uda.lg.jp/soshiki/40/3095.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度宇陀市地元応援プレミアム付八っぴー商品券について",
+   "url": "https://www.city.uda.lg.jp/soshiki/23/25897.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "「宇陀三城」11月(侍月)限定御城印2026販売決定!令和8年11月",
+   "url": "https://www.city.uda.lg.jp/soshiki/41/13043.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新着情報の一覧",
+   "url": "https://www.city.uda.lg.jp/soshiki/list1-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おやじ侍202611",
+   "url": "https://www.city.uda.lg.jp/soshiki/41/13043.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度近畿高等学校駅伝競走大会の懸垂幕の写真",
+   "url": "https://www.city.uda.lg.jp/soshiki/40/16407.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年 男子第77回 女子第42回 近畿高等学校駅伝競走大会",
+   "url": "https://www.city.uda.lg.jp/soshiki/40/16407.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "表紙(202610)",
+   "url": "https://www.city.uda.lg.jp/site/koho/25605.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報うだ(2026年10月)",
+   "url": "https://www.city.uda.lg.jp/site/koho/25605.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "トピックスの一覧",
+   "url": "https://www.city.uda.lg.jp/soshiki/list6-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "宇陀市子育て情報すくすく",
+   "url": "https://www.city.uda.lg.jp/adv/ba.php?id=18"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "宇陀市ふるさと応援団",
+   "url": "https://www.city.uda.lg.jp/adv/ba.php?id=19"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "うだの林業",
+   "url": "https://www.city.uda.lg.jp/adv/ba.php?id=20"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "宇陀市立病院",
+   "url": "https://www.city.uda.lg.jp/adv/ba.php?id=21"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "大和高原宇陀ブランド",
+   "url": "https://www.city.uda.lg.jp/adv/ba.php?id=22"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "宇陀市立図書館",
+   "url": "https://www.city.uda.lg.jp/adv/ba.php?id=33"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市長の部屋",
+   "url": "https://www.city.uda.lg.jp/adv/ba.php?id=12"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "宇陀市議会",
+   "url": "https://www.city.uda.lg.jp/adv/ba.php?id=13"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報うだ",
+   "url": "https://www.city.uda.lg.jp/adv/ba.php?id=14"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "市役所への行き方",
+   "url": "https://www.city.uda.lg.jp/soshiki/6/3273.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "連絡先一覧",
+   "url": "https://www.city.uda.lg.jp/soshiki/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "サイトマップ",
+   "url": "https://www.city.uda.lg.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "著作権・リンク",
+   "url": "https://www.city.uda.lg.jp/soshiki/1/2090.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "個人情報利用規定",
+   "url": "https://www.city.uda.lg.jp/soshiki/1/2052.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ウェブアクセシビリティ",
+   "url": "https://www.city.uda.lg.jp/soshiki/1/1002.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "RSSの使い方",
+   "url": "https://www.city.uda.lg.jp/soshiki/1/2693.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "イベントカレンダー",
+   "url": "https://www.city.uda.lg.jp/calendar/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広告掲載について",
+   "url": "https://www.city.uda.lg.jp/soshiki/1/2108.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "松塚建設株式会社",
+   "url": "https://www.city.uda.lg.jp/adv/ba.php?id=15"
+  }
+ ],
+ "needs_review": [
+  "hub_not_found"
+ ],
+ "outcome": "hub_not_found",
+ "requests": [
+  {
+   "bytes": 16276,
+   "elapsed_ms": 943,
+   "error_class": "http_404",
+   "final_url": "https://www.city.uda.lg.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.city.uda.lg.jp/robots.txt"
+  },
+  {
+   "bytes": 28767,
+   "elapsed_ms": 222,
+   "error_class": "",
+   "final_url": "https://www.city.uda.lg.jp/",
+   "status": 200,
+   "url": "https://www.city.uda.lg.jp/"
+  },
+  {
+   "bytes": 16276,
+   "elapsed_ms": 208,
+   "error_class": "http_404",
+   "final_url": "https://www.city.uda.lg.jp/sitemap.xml",
+   "status": 404,
+   "url": "https://www.city.uda.lg.jp/sitemap.xml"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 1373,
+  "finished_at": "2026-10-14T22:56:09Z",
+  "request_count": 3,
+  "route": "actions_direct",
+  "started_at": "2026-10-14T22:56:06Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "high",
+   "evidence": [
+    "url:20件 例 https://www.city.uda.lg.jp/soshiki/1/1110.html"
+   ],
+   "family": "url_pattern:soshiki_numeric",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:site_numeric": 10,
+    "url_pattern:soshiki_numeric": 10
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 105,
+   "needs_headless": false,
+   "noscript_text_length": 64,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 22,
+   "text_length": 1319
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "http_404",
+     "kind": "",
+     "source": "default_path",
+     "status": 404,
+     "url": "https://www.city.uda.lg.jp/sitemap.xml"
+    }
+   ],
+   "found": false,
+   "kind": "",
+   "source": "",
+   "url": ""
+  },
+  "top": {
+   "elapsed_ms": 222,
+   "error_class": "",
+   "final_url": "https://www.city.uda.lg.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}
