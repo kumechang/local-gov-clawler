@@ -123,3 +123,15 @@ def test_nav_image_only_links_and_rendering():
     # 画像もリンクも無い空の殻は引き続きJS描画扱い
     shell = '<html><body><div id="root"></div></body></html>'
     assert assess_rendering(shell, parse_html(shell)).needs_headless
+
+
+def test_decide_strong_label_beats_shallower_weak_label():
+    """生駒市型: 浅い「スポーツ」(弱いラベル)より、深い「スポーツ施設」(強いラベル)を優先する。"""
+    weak = cand("weak", 11, "sports_pure", 1, 2, text="スポーツ")
+    strong = cand("strong", 23, "sports_pure", 2, 6, text="スポーツ施設")
+    assert hub.decide([weak, strong]).selected.url == "strong"
+    # 奈良市型: 強いラベル同士なら浅い方(トップに近い一覧)を選ぶ
+    d = hub.decide([cand("shallow", 25, "sports_pure", 1, 7, text="スポーツ施設"), cand("deep", 29, "sports_pure", 2, 23, text="スポーツ施設一覧")])
+    assert d.selected.url == "shallow"
+    # 強いラベルが無ければ、これまでどおり弱いラベルを使う(葛城市型)
+    assert hub.decide([weak]).selected.url == "weak"

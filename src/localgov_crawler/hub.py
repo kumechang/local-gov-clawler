@@ -232,11 +232,15 @@ def decide(cands: list[Candidate]) -> HubDecision:
             uniq[c.url] = c
     pool = list(uniq.values())
     viable = [c for c in pool if is_viable(c)]
-    specific = sorted((c for c in viable if c.kind.startswith("sports")), key=lambda c: (c.depth, -c.score))
+    specific = [c for c in viable if c.kind.startswith("sports")]
+    # 強いラベル(スポーツ施設/体育施設/運動施設)があれば、弱いラベル(スポーツ だけ等)より先に評価する。
+    # 同じ強さの中では、浅い(トップに近い)ものを選ぶ
+    strong = [c for c in specific if STRONG_TEXT.search(norm_text(c.text))]
+    specific = sorted(strong or specific, key=lambda c: (c.depth, -c.score))
     generic = sorted((c for c in viable if c.kind == "generic"), key=lambda c: (c.depth, -c.score))
     # 専用ラベルで有望だが、ページを確認できていない候補(深さ3など)
     promising = sorted((c for c in pool if not c.fetched and c.kind.startswith("sports") and c.score >= MIN_SCORE), key=lambda c: -c.score)
-    ordered = specific + generic + promising + sorted(pool, key=lambda c: -c.score)
+    ordered = specific + sorted((c for c in viable if c.kind.startswith("sports") and c not in specific), key=lambda c: (c.depth, -c.score)) + generic + promising + sorted(pool, key=lambda c: -c.score)
     seen: set[str] = set()
     top = [c for c in ordered if not (c.url in seen or seen.add(c.url))][:5]
 
