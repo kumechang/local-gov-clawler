@@ -257,3 +257,29 @@ def test_evaluate_accepts_alternative_urls(tmp_path, city_routes):
     truth.write_text("municipality_code,hub_url,alt_urls,notes\n29999,https://www.city.example.jp/other/,https://www.city.example.jp/sports/shisetsu.html | https://x.jp/,\n", encoding="utf-8")
     ev = store.evaluate([r], truth)
     assert ev["selected_correct"] == 1 and ev["reached"] == 1
+
+
+def test_depth3_strong_candidate_is_fetched_and_confirmed():
+    """橿原市型: 「スポーツ」小分類(施設名リンク1件)の下に深さ3の「スポーツ施設」。3段目を取得して確認でき、確定する。"""
+    routes = {
+        "/": (200, HTML, page('<nav><a href="/kbs/">観光・文化・スポーツ</a></nav>')),
+        "/kbs/": (200, HTML, page('<a href="/kbs/sports/">スポーツ</a>')),
+        "/kbs/sports/": (200, HTML, page('<a href="/kbs/sports/1/">スポーツ施設</a><a href="/f/1.html">市民体育館</a>')),
+        "/kbs/sports/1/": (200, HTML, page(FACILITIES, "スポーツ施設")),
+    }
+    r = analyze(M, make_fetcher(routes), Config(retry_wait=0))
+    ge = r["genre_entrypoints"][0]
+    assert r["outcome"] == "hub_selected" and ge["selected"]["url"].endswith("/kbs/sports/1/") and ge["selected"]["depth"] == 3
+    parent = next(c for c in ge["candidates"] if c["url"].endswith("/kbs/sports/"))
+    assert not parent["viable"]  # 施設名リンク1件のカテゴリは確定しない
+
+
+def test_depth3_fetch_is_limited():
+    links = "".join(f'<a href="/kbs/sports/{i}/">スポーツ施設{i}</a>' for i in range(6))
+    routes = {
+        "/": (200, HTML, page('<nav><a href="/kbs/">観光・文化・スポーツ</a></nav>')),
+        "/kbs/": (200, HTML, page('<a href="/kbs/sports/">スポーツ</a>')),
+        "/kbs/sports/": (200, HTML, page(links)),
+    }
+    r = analyze(M, make_fetcher(routes), Config(retry_wait=0, d3_fetch=2))
+    assert sum(1 for q in r["requests"] if "/kbs/sports/" in q["url"] and q["url"].rstrip("/") != "https://www.city.example.jp/kbs/sports") == 2

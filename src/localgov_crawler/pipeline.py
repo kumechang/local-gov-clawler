@@ -29,6 +29,7 @@ class Config:
     d1_fetch: int = 6  # トップのリンクから先を取得する候補ページ数
     d2_fetch: int = 3  # さらにその先(候補ページ内のリンク)を取得する数
     d2_min_score: int = 5
+    d3_fetch: int = 2  # 深さ3の有望な候補(専用ラベル・スコア8以上)を確認のため取得する数
     sitemap_attempts: int = 3
     sitemap_children: int = 5
     retry_wait: float = 2.0  # 一時的な失敗の再試行までの待ち(秒)
@@ -222,6 +223,19 @@ def _find_hub(ctx: _Ctx, cfg: Config, robots: RobotsInfo, links, tally, site_hos
             # 取得はしないが、深さ3のリンクも候補として記録する(専用ページがさらに奥にある自治体向け)
             deeper += hub.candidates_from_links(page_links, "depth2_link", 3)[:10]
     deeper = [c for c in deeper if c.url not in blocked and robots.can_fetch(c.url)]
+
+    # 3段目: 深さ3の有望な候補(専用ラベルでスコアが確定水準)を少数だけ取得して施設名リンクを確認する。
+    # 確認できれば確定でき、できなければ hub_multiple(後段へ)のまま
+    done = visited | seen
+    tried = 0
+    for c in sorted(deeper, key=lambda c: -c.score):
+        if tried >= cfg.d3_fetch:
+            break
+        if c.url in done or not c.kind.startswith("sports") or c.score < hub.MIN_SCORE:
+            continue
+        done.add(c.url)
+        tried += 1
+        _visit(ctx, c, site_host)
     return hub.decide(cands + children + deeper), blocked
 
 

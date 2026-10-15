@@ -1,91 +1,91 @@
 {
- "truth_count": 10,
- "reached": 5,
- "reach_rate": 0.5,
- "selected": 4,
- "selected_correct": 2,
- "selected_precision": 0.5,
- "selected_correct_rate": 0.2,
  "detail": [
   {
    "code": "29201",
-   "reached": true,
-   "rank": 1,
    "outcome": "hub_selected",
-   "selected_url": "https://www.city.nara.lg.jp/life/2/15/77/",
-   "selected_correct": true
+   "rank": 1,
+   "reached": true,
+   "selected_correct": true,
+   "selected_url": "https://www.city.nara.lg.jp/life/2/15/77/"
   },
   {
    "code": "29202",
-   "reached": true,
-   "rank": 1,
    "outcome": "hub_selected",
-   "selected_url": "https://www.city.yamatotakada.nara.jp/kankos/sports/taiikushisetsu/index.html",
-   "selected_correct": true
+   "rank": 1,
+   "reached": true,
+   "selected_correct": true,
+   "selected_url": "https://www.city.yamatotakada.nara.jp/kankos/sports/taiikushisetsu/index.html"
   },
   {
    "code": "29205",
-   "reached": false,
-   "rank": null,
    "outcome": "hub_selected",
-   "selected_url": "https://www.city.kashihara.nara.jp/kanko_bunka_sports/index.html",
-   "selected_correct": false
+   "rank": null,
+   "reached": false,
+   "selected_correct": false,
+   "selected_url": "https://www.city.kashihara.nara.jp/kanko_bunka_sports/index.html"
   },
   {
    "code": "29206",
-   "reached": true,
-   "rank": 1,
    "outcome": "hub_not_found",
-   "selected_url": null,
-   "selected_correct": null
+   "rank": 1,
+   "reached": true,
+   "selected_correct": null,
+   "selected_url": null
   },
   {
    "code": "29209",
-   "reached": true,
-   "rank": 3,
    "outcome": "hub_selected",
-   "selected_url": "https://www.city.ikoma.lg.jp/category/29-4-0-0-0-0-0-0-0-0.html",
-   "selected_correct": false
+   "rank": 3,
+   "reached": true,
+   "selected_correct": false,
+   "selected_url": "https://www.city.ikoma.lg.jp/category/29-4-0-0-0-0-0-0-0-0.html"
   },
   {
    "code": "29210",
-   "reached": true,
-   "rank": 4,
    "outcome": "hub_not_found",
-   "selected_url": null,
-   "selected_correct": null
+   "rank": 4,
+   "reached": true,
+   "selected_correct": null,
+   "selected_url": null
   },
   {
    "code": "29211",
-   "reached": false,
-   "rank": null,
    "outcome": "hub_multiple",
-   "selected_url": null,
-   "selected_correct": null
+   "rank": null,
+   "reached": false,
+   "selected_correct": null,
+   "selected_url": null
   },
   {
    "code": "29344",
-   "reached": false,
-   "rank": null,
    "outcome": "hub_multiple",
-   "selected_url": null,
-   "selected_correct": null
+   "rank": null,
+   "reached": false,
+   "selected_correct": null,
+   "selected_url": null
   },
   {
    "code": "29427",
-   "reached": false,
-   "rank": null,
    "outcome": "hub_not_found",
-   "selected_url": null,
-   "selected_correct": null
+   "rank": null,
+   "reached": false,
+   "selected_correct": null,
+   "selected_url": null
   },
   {
    "code": "29444",
-   "reached": false,
-   "rank": null,
    "outcome": "hub_not_found",
-   "selected_url": null,
-   "selected_correct": null
+   "rank": null,
+   "reached": false,
+   "selected_correct": null,
+   "selected_url": null
   }
- ]
+ ],
+ "reach_rate": 0.5,
+ "reached": 5,
+ "selected": 4,
+ "selected_correct": 2,
+ "selected_correct_rate": 0.2,
+ "selected_precision": 0.5,
+ "truth_count": 10
 }
