@@ -112,7 +112,10 @@ def summary_markdown(s: dict) -> str:
 
 
 def _norm_url(u: str) -> str:
-    return urldefrag(u.strip())[0].rstrip("/").lower()
+    """比較用のURL正規化: フラグメント・末尾スラッシュ・大文字小文字・スキーム(http/https)・先頭の www. の違いを無視する。"""
+    u = urldefrag(u.strip())[0].rstrip("/").lower()
+    u = re.sub(r"^https?://", "", u)
+    return re.sub(r"^www\.", "", u)
 
 
 def evaluate(results: list[dict], truth_csv: Path) -> dict:

@@ -1,4 +1,86 @@
 {
+ "detail": [
+  {
+   "code": "18201",
+   "outcome": "hub_selected",
+   "rank": 1,
+   "reached": true,
+   "selected_correct": true,
+   "selected_url": "https://www.city.fukui.lg.jp/kyoiku/sports/sisetu/index.html"
+  },
+  {
+   "code": "18202",
+   "outcome": "hub_selected",
+   "rank": 1,
+   "reached": true,
+   "selected_correct": true,
+   "selected_url": "https://www.city.tsuruga.lg.jp/life/7/36/173/"
+  },
+  {
+   "code": "18204",
+   "outcome": "hub_selected",
+   "rank": 1,
+   "reached": true,
+   "selected_correct": true,
+   "selected_url": "https://www1.city.obama.fukui.jp/shisei/kokyoshisetsu/taiikushisetsu/index.html"
+  },
+  {
+   "code": "18207",
+   "outcome": "hub_selected",
+   "rank": 1,
+   "reached": true,
+   "selected_correct": true,
+   "selected_url": "https://www.city.sabae.fukui.jp/about_city/shinoshokai/kokyoshisetsu/sports_shisetsu/index.html"
+  },
+  {
+   "code": "18209",
+   "outcome": "hub_multiple",
+   "rank": 3,
+   "reached": true,
+   "selected_correct": null,
+   "selected_url": null
+  },
+  {
+   "code": "18210",
+   "outcome": "hub_selected",
+   "rank": null,
+   "reached": false,
+   "selected_correct": false,
+   "selected_url": "https://www.city.fukui-sakai.lg.jp/kankou/kanko-bunka/kanko/toujinbousaiseibikihonkeikaku.html"
+  },
+  {
+   "code": "18322",
+   "outcome": "hub_not_found",
+   "rank": null,
+   "reached": false,
+   "selected_correct": null,
+   "selected_url": null
+  },
+  {
+   "code": "18382",
+   "outcome": "hub_multiple",
+   "rank": 2,
+   "reached": true,
+   "selected_correct": null,
+   "selected_url": null
+  },
+  {
+   "code": "18481",
+   "outcome": "hub_selected",
+   "rank": 1,
+   "reached": true,
+   "selected_correct": true,
+   "selected_url": "https://www.town.takahama.fukui.jp/index/0006/0606/index.html"
+  },
+  {
+   "code": "18501",
+   "outcome": "hub_selected",
+   "rank": 1,
+   "reached": true,
+   "selected_correct": true,
+   "selected_url": "https://www.town.fukui-wakasa.lg.jp/shisetsuosagasu/sportsshisetsu/index.html"
+  }
+ ],
  "none_rows": 0,
  "none_selected": 0,
  "reach_rate": 0.8,
