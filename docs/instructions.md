@@ -27,3 +27,11 @@
 - 「正解データ10件…どこの自治体を見ればいいの?」→ 奈良県の10自治体を選定し、`data/ground_truth/sports_hub_nara.csv` に事前記入、選定理由と記入手順を `data/ground_truth/README.md` に記載。
 - 「記入終わったよ」→ ユーザーが `data/ground_truth/sports_hub_nara.csv` に正解URLを記入(ブランチにコミット済み)。第1回(改善前)を採点し、`docs/reports/pilot-nara-baseline-vs-ground-truth.md` に記録。メモ列: 葛城市・斑鳩町は「純粋なスポーツ施設の一覧ではない」、黒滝村は「公共施設一覧の中に混じっている」。
 - 「PRを作ってmainにマージして」(2回目)→ 改善版(D-017〜D-027、正解データ、採点)をPR化して `main` にマージ。マージ後に奈良県を再実行して改善の効果を測る。
+- 「crawlを実行した結果を見て」(2回目、改善版)→ run #2 の結果を取得して採点・分析し、`docs/reports/pilot-nara-run2.md` に記録。
+
+## 2026-10-15
+- 香芝市: クローラーが確定した `life/7/41/179/` の方が良い(複数URLを正解に持てるようにする)。
+- 葛城市・斑鳩町・橿原市・河合町の小分類ページ(純粋な一覧ではない)は、ハブとして許容する。
+- 見直しの実装(精度優先・専用性で選ぶ・深さ3を候補化・個別施設を除外)を進める。検証用の正解データは `data/ground_truth/sports_hub_nara_heldout.csv` に置く(質問「正解データはどこに置けば良い?」への回答)。
+- 「正解データ更新したよ」→ 検証用 `sports_hub_nara_heldout.csv` を記入(9件+「なし」1件)。見直し前の結果を集計値のみで採点し `docs/reports/pilot-nara-heldout-baseline.md` に記録。
+- 「PRを作ってmainにマージして」(3回目)→ 採用ルールの見直し(D-028〜D-032)・正解データ(開発用/検証用)をPR化して `main` にマージ。マージ後に奈良県を再実行(route=actions_direct_v3)。橿原市・斑鳩町の許容URLについてはユーザーから回答なし(未決のまま再実行)。

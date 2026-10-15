@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 import sqlite3
 from collections import Counter
 from pathlib import Path
@@ -120,6 +121,7 @@ def evaluate(results: list[dict], truth_csv: Path) -> dict:
     - reach: 正解URLがハブ候補の上位5件に入った(AI判定や手動確認に渡せば拾える水準)
     - selected_correct: プログラムが確定(hub_selected)したURLが正解と一致した(そのまま使える水準)
     hub_urlが空の行(サイトに一覧ページが無い)は母数に含めない。
+    許容URLは alt_urls 列(空白または | 区切り)に書ける。どれか1つに一致すれば正解。
     """
     by_code = {r["municipality"]["code"]: r for r in results}
     rows = list(csv.DictReader(open(truth_csv, encoding="utf-8-sig")))
@@ -128,19 +130,20 @@ def evaluate(results: list[dict], truth_csv: Path) -> dict:
     for row in rows:
         code = row["municipality_code"].zfill(5)
         r = by_code.get(code)
-        truth = _norm_url(row["hub_url"])
+        truths = {_norm_url(u) for u in re.split(r"[\s|]+", f"{row['hub_url']} {row.get('alt_urls') or ''}") if u}
         reached, rank, selected_url = False, None, None
         if r:
             for ge in r["genre_entrypoints"]:
                 urls = [_norm_url(c["url"]) for c in ge["candidates"]]
-                if truth in urls:
-                    reached, rank = True, urls.index(truth) + 1
+                hits = [i for i, u in enumerate(urls) if u in truths]
+                if hits:
+                    reached, rank = True, hits[0] + 1
                 if ge.get("selected"):
                     selected_url = ge["selected"]["url"]
         detail.append({
             "code": code, "reached": reached, "rank": rank, "outcome": r["outcome"] if r else "missing",
             "selected_url": selected_url,
-            "selected_correct": (_norm_url(selected_url) == truth) if selected_url else None,
+            "selected_correct": (_norm_url(selected_url) in truths) if selected_url else None,
         })
     n = len(detail)
     reached = sum(d["reached"] for d in detail)

@@ -45,6 +45,13 @@ NEGATIVE_TERMS: list[tuple[re.Pattern, int, str]] = [
     (re.compile(r"スポーツ(振興|推進)?(課|係|室|協会|団)|体育協会|スポーツ協会"), -2, "organization"),
     (re.compile(r"子育て|保育|幼稚園|こども"), -2, "childcare"),
 ]
+# ラベルの種類(専用性)。複合ラベル(観光・文化・スポーツ など)は大分類で、ハブにはしない。
+SPORTS_WORD = re.compile(r"スポーツ|体育|運動|グラウンド|グランド")
+OTHER_TOPICS = re.compile(r"観光|文化(?!財)|生涯学習|公民館|レジャー|健康|教育|福祉|イベント|歴史|芸術|図書館|子育て|保育|学校")
+PURE_REMOVE = re.compile(r"スポーツ施設|体育施設|運動施設|スポーツ|体育|運動|レクリエーション|施設|一覧|案内|情報|の|[・/／\s、,&＆と]")
+GENERIC_FACILITY = re.compile(r"公共施設|施設案内|施設一覧|施設情報|施設を探す|施設から探す|施設検索|[市町村]の施設|みんなの施設|公園")
+PURE_BONUS = 4
+
 URL_HINTS = re.compile(r"sport|taiiku|undou|gym|shisetsu|park|kouen|ground", re.I)
 FACILITY_NAME = re.compile(r"体育館|グラウンド|グランド|運動場|運動公園|野球場|テニスコート|プール|スポーツセンター|多目的広場|武道館|競技場|スポーツ公園|スポーツ広場|サッカー場")
 # 施設名リンクの根拠なしでも一覧ページとみなしてよい強い語
@@ -53,6 +60,21 @@ STRONG_TEXT = re.compile(r"スポーツ施設|体育施設|運動施設")
 MIN_SCORE = 8  # ハブとして確定してよい最低スコア
 MARGIN = 4  # 同じ深さの次点との最低差
 FETCH_MIN = 2  # 先のページを見に行く最低スコア(大分類を含む)
+
+
+def classify_label(text: str) -> str:
+    """sports_pure(スポーツ・体育 など) / sports_composite(観光・文化・スポーツ など) / sports_other(施設名など)
+    / generic(公共施設・施設一覧 など) / broad(教育・くらし など) / other"""
+    t = norm_text(text)
+    if SPORTS_WORD.search(t):
+        if OTHER_TOPICS.search(t):
+            return "sports_composite"
+        return "sports_other" if PURE_REMOVE.sub("", t) else "sports_pure"
+    if GENERIC_FACILITY.search(t):
+        return "generic"
+    if BROAD_TERMS.search(t) or SITEMAP_PAGE.search(t):
+        return "broad"
+    return "other"
 
 
 @dataclass
@@ -67,13 +89,14 @@ class Candidate:
     facility_link_count: int | None = None
     page_title: str = ""
     fetched: bool = False
+    kind: str = "other"
 
     def to_dict(self) -> dict:
         return {
             "url": self.url, "text": self.text, "score": self.score, "reasons": self.reasons,
             "region": self.region, "source": self.source, "depth": self.depth,
             "facility_link_count": self.facility_link_count, "page_title": self.page_title,
-            "fetched": self.fetched, "viable": is_viable(self),
+            "fetched": self.fetched, "kind": self.kind, "viable": is_viable(self),
         }
 
 
@@ -108,6 +131,13 @@ def score_text(text: str, url: str = "", region: str = "") -> tuple[int, list[st
             if region in ("nav", "header"):
                 score += 1
                 reasons.append("region_nav")
+        kind = classify_label(t)
+        if kind == "sports_pure":
+            score += PURE_BONUS
+            reasons.append("sports_pure")
+        elif kind == "sports_composite":
+            # 複合ラベルは先のページを探索する価値はあるが、ハブとしては採用しない(is_viable)。点数は下げない
+            reasons.append("composite")
         if "news_like" in reasons:
             # お知らせ記事と判定したリンクは、取得対象(FETCH_MIN)にも採用対象にもしない
             score = min(score, FETCH_MIN - 1)
@@ -123,8 +153,8 @@ def candidates_from_links(links: list[Link], source: str, depth: int) -> list[Ca
         if s <= 0:
             continue
         if depth > 1:
-            s -= 1
-        c = Candidate(l.url, l.text, s, reasons, l.region, source, depth)
+            s -= depth - 1
+        c = Candidate(l.url, l.text, s, reasons, l.region, source, depth, kind=classify_label(l.text))
         if l.url not in best or c.score > best[l.url].score:
             best[l.url] = c
     return sorted(best.values(), key=lambda c: -c.score)
@@ -162,15 +192,23 @@ def rescore_with_page(c: Candidate, facility_links: int, head: str) -> None:
 
 
 def is_viable(c: Candidate) -> bool:
-    """ハブとして採用してよいか。ページを見た候補は、施設名リンクがある(または強い語の見出し)ことが条件。
-    施設リンクのない「観光・文化・スポーツ」のような大分類は採用しない(先のページで探す)。"""
-    if c.score < MIN_SCORE:
+    """ハブとして自動確定してよいか。ページを取得して施設名リンクを確認できたものだけ。
+    - 専用ラベル(スポーツ・体育 など): 施設名リンク1件以上(施設名のラベルは2件以上)
+    - 複合ラベル(文化・スポーツ施設 など): 強い語(スポーツ施設等)を含み、施設名リンク3件以上
+    - 汎用ラベル(公共施設一覧 など): 施設名リンク3件以上(専用ページが無い自治体向け。品質は generic)
+    大分類・サイトマップ・お知らせ記事などは対象外。"""
+    if c.score < MIN_SCORE or not c.fetched:
         return False
-    if not any(r.startswith("text:") for r in c.reasons):
-        return False  # 大分類・サイトマップだけが根拠の候補は探索用。確定はしない(その先で探す)
-    if not c.fetched:
-        return True
-    return bool(c.facility_link_count) or bool(STRONG_TEXT.search(norm_text(c.text)))
+    fl = c.facility_link_count or 0
+    if c.kind == "sports_pure":
+        return fl >= 1
+    if c.kind == "sports_other":
+        return fl >= 2
+    if c.kind == "sports_composite":
+        return fl >= 3 and bool(STRONG_TEXT.search(norm_text(c.text)))
+    if c.kind == "generic":
+        return fl >= 3
+    return False
 
 
 @dataclass
@@ -178,13 +216,16 @@ class HubDecision:
     outcome: str  # hub_selected / hub_multiple / hub_not_found
     selected: Candidate | None
     top: list[Candidate]
+    quality: str = ""  # specific(スポーツ専用/小分類) / generic(公共施設一覧)
 
     def to_dict(self) -> dict:
-        return {"outcome": self.outcome, "selected": self.selected.to_dict() if self.selected else None, "top": [c.to_dict() for c in self.top]}
+        return {"outcome": self.outcome, "selected": self.selected.to_dict() if self.selected else None, "top": [c.to_dict() for c in self.top], "quality": self.quality}
 
 
 def decide(cands: list[Candidate]) -> HubDecision:
-    # 同一URLは「ページを見た候補」→「高スコア」を優先して1件に
+    """精度優先: 迷うときは確定せず hub_multiple(後段のAI/手動へ)にする。
+    確定の候補は専用ラベル(sports_*)を優先し、その中で浅い(トップに近い)ものを選ぶ。
+    複合ラベルの大分類は確定しない。浅い候補と僅差で並ぶものがあれば hub_multiple。"""
     uniq: dict[str, Candidate] = {}
     for c in cands:
         cur = uniq.get(c.url)
@@ -192,14 +233,21 @@ def decide(cands: list[Candidate]) -> HubDecision:
             uniq[c.url] = c
     pool = list(uniq.values())
     viable = [c for c in pool if is_viable(c)]
-    # 記録用の上位: 採用可能なものを浅い順・高スコア順、その後に残りを高スコア順
-    rest = sorted((c for c in pool if c not in viable), key=lambda c: -c.score)
-    top = (sorted(viable, key=lambda c: (c.depth, -c.score)) + rest)[:5]
-    if not viable:
-        return HubDecision("hub_not_found", None, top)
-    # 浅い階層(一覧ページ)を優先する。深い階層の個別ページは、浅い採用候補がある間は競合させない
-    tier_depth = min(c.depth for c in viable)
-    tier = sorted((c for c in viable if c.depth == tier_depth), key=lambda c: -c.score)
-    if len(tier) == 1 or tier[0].score - tier[1].score >= MARGIN:
-        return HubDecision("hub_selected", tier[0], top)
-    return HubDecision("hub_multiple", None, top)
+    specific = sorted((c for c in viable if c.kind.startswith("sports")), key=lambda c: (c.depth, -c.score))
+    generic = sorted((c for c in viable if c.kind == "generic"), key=lambda c: (c.depth, -c.score))
+    # 専用ラベルで有望だが、ページを確認できていない候補(深さ3など)
+    promising = sorted((c for c in pool if not c.fetched and c.kind.startswith("sports") and c.score >= MIN_SCORE), key=lambda c: -c.score)
+    ordered = specific + generic + promising + sorted(pool, key=lambda c: -c.score)
+    seen: set[str] = set()
+    top = [c for c in ordered if not (c.url in seen or seen.add(c.url))][:5]
+
+    tier, quality = (specific, "specific") if specific else (generic, "generic")
+    if tier:
+        best = tier[0]
+        rivals = [c for c in tier[1:] if c.depth == best.depth and best.score - c.score < MARGIN]
+        if rivals:
+            return HubDecision("hub_multiple", None, top, quality)
+        return HubDecision("hub_selected", best, top, quality)
+    if promising:
+        return HubDecision("hub_multiple", None, top)
+    return HubDecision("hub_not_found", None, top)
