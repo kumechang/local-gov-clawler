@@ -27,3 +27,4 @@
 - 「正解データ10件…どこの自治体を見ればいいの?」→ 奈良県の10自治体を選定し、`data/ground_truth/sports_hub_nara.csv` に事前記入、選定理由と記入手順を `data/ground_truth/README.md` に記載。
 - 「記入終わったよ」→ ユーザーが `data/ground_truth/sports_hub_nara.csv` に正解URLを記入(ブランチにコミット済み)。第1回(改善前)を採点し、`docs/reports/pilot-nara-baseline-vs-ground-truth.md` に記録。メモ列: 葛城市・斑鳩町は「純粋なスポーツ施設の一覧ではない」、黒滝村は「公共施設一覧の中に混じっている」。
 - 「PRを作ってmainにマージして」(2回目)→ 改善版(D-017〜D-027、正解データ、採点)をPR化して `main` にマージ。マージ後に奈良県を再実行して改善の効果を測る。
+- 「crawlを実行した結果を見て」(2回目、改善版)→ run #2 の結果を取得して採点・分析し、`docs/reports/pilot-nara-run2.md` に記録。

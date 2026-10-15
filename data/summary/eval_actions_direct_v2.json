@@ -1,0 +1,91 @@
+{
+ "truth_count": 10,
+ "reached": 4,
+ "reach_rate": 0.4,
+ "selected": 6,
+ "selected_correct": 2,
+ "selected_precision": 0.333,
+ "selected_correct_rate": 0.2,
+ "detail": [
+  {
+   "code": "29201",
+   "reached": true,
+   "rank": 1,
+   "outcome": "hub_selected",
+   "selected_url": "https://www.city.nara.lg.jp/life/2/15/77/",
+   "selected_correct": true
+  },
+  {
+   "code": "29202",
+   "reached": true,
+   "rank": 1,
+   "outcome": "hub_selected",
+   "selected_url": "https://www.city.yamatotakada.nara.jp/kankos/sports/taiikushisetsu/index.html",
+   "selected_correct": true
+  },
+  {
+   "code": "29205",
+   "reached": false,
+   "rank": null,
+   "outcome": "hub_not_found",
+   "selected_url": null,
+   "selected_correct": null
+  },
+  {
+   "code": "29206",
+   "reached": true,
+   "rank": 1,
+   "outcome": "hub_not_found",
+   "selected_url": null,
+   "selected_correct": null
+  },
+  {
+   "code": "29209",
+   "reached": true,
+   "rank": 3,
+   "outcome": "hub_selected",
+   "selected_url": "https://www.city.ikoma.lg.jp/category/29-4-0-0-0-0-0-0-0-0.html",
+   "selected_correct": false
+  },
+  {
+   "code": "29210",
+   "reached": false,
+   "rank": null,
+   "outcome": "hub_selected",
+   "selected_url": "https://www.city.kashiba.lg.jp/life/7/41/179/",
+   "selected_correct": false
+  },
+  {
+   "code": "29211",
+   "reached": false,
+   "rank": null,
+   "outcome": "hub_selected",
+   "selected_url": "https://www.city.katsuragi.nara.jp/kanko_bunka_sports/index.html",
+   "selected_correct": false
+  },
+  {
+   "code": "29344",
+   "reached": false,
+   "rank": null,
+   "outcome": "hub_selected",
+   "selected_url": "https://www.town.ikaruga.nara.jp/category/3-4-0-0-0-0-0-0-0-0.html",
+   "selected_correct": false
+  },
+  {
+   "code": "29427",
+   "reached": false,
+   "rank": null,
+   "outcome": "hub_not_found",
+   "selected_url": null,
+   "selected_correct": null
+  },
+  {
+   "code": "29444",
+   "reached": false,
+   "rank": null,
+   "outcome": "hub_not_found",
+   "selected_url": null,
+   "selected_correct": null
+  }
+ ]
+}
