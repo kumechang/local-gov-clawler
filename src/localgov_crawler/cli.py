@@ -114,7 +114,7 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--out", default="data/results")
     sp.add_argument("--workers", type=int, default=4)
     sp.add_argument("--interval", type=float, default=1.0, help="同一ホストへの最小リクエスト間隔(秒)")
-    sp.add_argument("--compact", action="store_true", help="軽量形式で保存(サイト内リンク一覧を捨てる。全国実行用、D-062)")
+    sp.add_argument("--compact", action="store_true", help="軽量形式で保存(インデント無しの1行JSON。リンク一覧は残す。全国実行用、D-062/D-065)")
     sp.add_argument("--use-proxy", action="store_true", help="環境変数 CRAWL_PROXY_URL 経由で取得")
     sp.add_argument("--save-html", help="トップページHTML原本の保存先(リポジトリ外・gitignore対象を推奨)")
     sp.set_defaults(fn=cmd_run)

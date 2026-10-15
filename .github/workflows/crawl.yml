@@ -48,7 +48,7 @@ on:
         description: 空=すべて / municipality=政令市の区を除く / designated_city_ward=区のみ
         default: ""
       compact:
-        description: 軽量形式で保存する(サイト内リンク一覧を捨てる。全国実行用)
+        description: 軽量形式(1行JSON。リンク一覧は残す)で保存する。全国実行用
         type: boolean
         default: false
 

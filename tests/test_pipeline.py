@@ -96,17 +96,20 @@ def test_store_roundtrip_summary_and_evaluate(tmp_path, city_routes):
     assert con.execute("select cms_family from site_profiles").fetchone() == ("wordpress",)
 
 
-def test_compact_result_drops_nav_links_but_keeps_decision(tmp_path, city_routes):
+def test_compact_result_keeps_nav_links_in_one_line(tmp_path, city_routes):
     r = analyze(M, make_fetcher(city_routes), Config(route="cmp"))
-    assert r["nav_links"]
+    assert r["nav_links"] and all(l["text"] and l["url"] for l in r["nav_links"])
     path = store.write_result(tmp_path, r, "29", compact=True)
     text = path.read_text(encoding="utf-8")
     assert text.count("\n") == 1  # 1行のJSON
     got = store.load_results(tmp_path, "cmp")[0]
-    assert got["nav_links"] == [] and got["nav_link_count"] == len(r["nav_links"]) and got["run"]["compact"] is True
-    assert got["outcome"] == r["outcome"] and got["genre_entrypoints"] == r["genre_entrypoints"] and got["requests"] == r["requests"]
+    assert got["run"]["compact"] is True
+    # リンク一覧(リンク文言とURL)・判定・リクエスト記録は、通常形式と同じ内容で残る
+    assert got["nav_links"] == r["nav_links"] and got["genre_entrypoints"] == r["genre_entrypoints"] and got["requests"] == r["requests"]
     assert len(text) < len(json.dumps(r, ensure_ascii=False, indent=1))
-    store.build_db(tmp_path, "cmp", [M], tmp_path / "c.sqlite")  # nav_linksが空でもDBは作れる
+    store.build_db(tmp_path, "cmp", [M], tmp_path / "c.sqlite")
+    import sqlite3
+    assert sqlite3.connect(tmp_path / "c.sqlite").execute("select count(*) from nav_links").fetchone()[0] == len(r["nav_links"])
 
 
 # --- 奈良県パイロット第1回で見つかった失敗パターンの再現(docs/reports/pilot-nara-run1.md) ---

@@ -17,13 +17,9 @@ def result_path(root: Path, route: str, m_prefecture_code: str, code: str) -> Pa
 
 
 def compact_result(result: dict) -> dict:
-    """全国実行用の軽量形式(D-062)。サイト内リンク一覧(1件あたり約33KBで、容量の大半)を捨て、件数だけ残す。
-    ハブ候補・判定・リクエスト記録・サイトプロファイルはそのまま残す。"""
-    out = dict(result)
-    out["nav_link_count"] = len(result.get("nav_links", []))
-    out["nav_links"] = []
-    out["run"] = {**result["run"], "compact": True}
-    return out
+    """全国実行用の軽量形式(D-062, D-065)。サイト内リンク一覧(リンク文言=aタグのテキストとURL)は検索用に残し、
+    インデントを付けない1行JSONで保存する。ここでは印だけ付ける。"""
+    return {**result, "run": {**result["run"], "compact": True}}
 
 
 def write_result(root: Path, result: dict, prefecture_code: str, compact: bool = False) -> Path:
