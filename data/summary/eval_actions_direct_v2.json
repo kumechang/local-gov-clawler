@@ -1,11 +1,11 @@
 {
  "truth_count": 10,
- "reached": 4,
- "reach_rate": 0.4,
+ "reached": 5,
+ "reach_rate": 0.5,
  "selected": 6,
- "selected_correct": 2,
- "selected_precision": 0.333,
- "selected_correct_rate": 0.2,
+ "selected_correct": 3,
+ "selected_precision": 0.5,
+ "selected_correct_rate": 0.3,
  "detail": [
   {
    "code": "29201",
@@ -49,11 +49,11 @@
   },
   {
    "code": "29210",
-   "reached": false,
-   "rank": null,
+   "reached": true,
+   "rank": 1,
    "outcome": "hub_selected",
    "selected_url": "https://www.city.kashiba.lg.jp/life/7/41/179/",
-   "selected_correct": false
+   "selected_correct": true
   },
   {
    "code": "29211",

@@ -151,16 +151,45 @@ def test_news_titles_are_not_hubs():
     assert all("/n/" not in q["url"] for q in r["requests"])  # お知らせ記事は取得もしない
 
 
-def test_facility_page_does_not_beat_list_page():
-    """一覧ページ(深さ1)の配下の個別施設ページ(深さ2、高得点)が競合しない(葛城市型)。"""
+def test_sports_subcategory_beats_composite_category_and_facility_page():
+    """「観光・文化・スポーツ」(複合の大分類)の下の「スポーツ」小分類が正解(葛城市・斑鳩町型)。
+    大分類にも施設名リンクが並んでいるが採用せず、個別施設ページ(施設名リンク0件)も採用しない。"""
     routes = {
         "/": (200, HTML, page('<nav><a href="/kbs/">観光・文化・スポーツ</a></nav>')),
-        "/kbs/": (200, HTML, page('<a href="/kbs/s/5796.html">屋敷山公園内 体育施設情報</a>' + FACILITIES)),
-        "/kbs/s/5796.html": (200, HTML, page("詳細")),
+        "/kbs/": (200, HTML, page('<a href="/kbs/sports/">スポーツ</a><a href="/kbs/sports/5796.html">屋敷山公園内 体育施設情報</a>' + FACILITIES)),
+        "/kbs/sports/": (200, HTML, page(FACILITIES, "スポーツ")),
+        "/kbs/sports/5796.html": (200, HTML, page("詳細")),
     }
     r = analyze(M, make_fetcher(routes), Config(retry_wait=0))
-    assert r["outcome"] == "hub_selected"
-    assert r["genre_entrypoints"][0]["selected"]["url"].endswith("/kbs/")
+    ge = r["genre_entrypoints"][0]
+    assert r["outcome"] == "hub_selected" and ge["selected"]["url"].endswith("/kbs/sports/") and ge["quality"] == "specific"
+    comp = next(c for c in ge["candidates"] if c["url"].endswith("/kbs/"))
+    assert comp["kind"] == "sports_composite" and not comp["viable"]
+
+
+def test_depth3_links_are_recorded_as_candidates():
+    """2段目のページ内にある深さ3のリンク(橿原市・河合町型)は、取得しなくても候補に記録される。"""
+    routes = {
+        "/": (200, HTML, page('<nav><a href="/kbs/">観光・文化・スポーツ</a></nav>')),
+        "/kbs/": (200, HTML, page('<a href="/kbs/sports/">スポーツ</a>')),
+        "/kbs/sports/": (200, HTML, page('<a href="/kbs/sports/1/">スポーツ施設一覧</a>')),
+    }
+    r = analyze(M, make_fetcher(routes), Config(retry_wait=0))
+    ge = r["genre_entrypoints"][0]
+    deep = [c for c in ge["candidates"] if c["url"].endswith("/kbs/sports/1/")]
+    assert deep and deep[0]["depth"] == 3 and not deep[0]["fetched"]
+    assert r["outcome"] == "hub_multiple" and r["ai_needed"]  # 確認できていない有望な候補 → 後段へ
+
+
+def test_generic_facility_list_when_no_sports_page():
+    """スポーツ専用ページが無い村(黒滝村型)。公共施設一覧を、品質 generic として確定する。"""
+    routes = {
+        "/": (200, HTML, page('<nav><a href="/shisetsu/">公共施設一覧</a></nav>')),
+        "/shisetsu/": (200, HTML, page(FACILITIES + '<a href="/f/9.html">公民館</a>', "公共施設一覧")),
+    }
+    r = analyze(M, make_fetcher(routes), Config(retry_wait=0))
+    ge = r["genre_entrypoints"][0]
+    assert r["outcome"] == "hub_selected" and ge["quality"] == "generic"
 
 
 def test_image_only_links_are_kept_and_not_headless():
@@ -220,3 +249,11 @@ def test_html_sitemap_page_is_followed_but_never_selected():
     sel = r["genre_entrypoints"][0]["selected"]
     assert r["outcome"] == "hub_selected" and sel["url"].endswith("/life/sports/") and sel["depth"] == 2
     assert all(not c["viable"] for c in r["genre_entrypoints"][0]["candidates"] if c["url"].endswith(("/sitemap/", "/life/")))
+
+
+def test_evaluate_accepts_alternative_urls(tmp_path, city_routes):
+    r = analyze(M, make_fetcher(city_routes), Config(route="test", retry_wait=0))
+    truth = tmp_path / "t.csv"
+    truth.write_text("municipality_code,hub_url,alt_urls,notes\n29999,https://www.city.example.jp/other/,https://www.city.example.jp/sports/shisetsu.html | https://x.jp/,\n", encoding="utf-8")
+    ev = store.evaluate([r], truth)
+    assert ev["selected_correct"] == 1 and ev["reached"] == 1

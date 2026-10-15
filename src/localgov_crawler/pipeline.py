@@ -163,7 +163,7 @@ def _analyze(m: Municipality, ctx: _Ctx, cfg: Config, result: dict) -> None:
     # 5. ハブ候補(トップのナビ → 上位候補ページ → その先のリンク、まで)
     decision, blocked = _find_hub(ctx, cfg, robots, links, tally, final_host)
     result["genre_entrypoints"] = [
-        {"genre": hub.GENRE, "decision": decision.outcome, "provenance": "auto", "selected": decision.selected.to_dict() if decision.selected else None, "candidates": [c.to_dict() for c in decision.top], "blocked_by_robots": blocked[:20]}
+        {"genre": hub.GENRE, "decision": decision.outcome, "provenance": "auto", "quality": decision.quality, "selected": decision.selected.to_dict() if decision.selected else None, "candidates": [c.to_dict() for c in decision.top], "blocked_by_robots": blocked[:20]}
     ]
 
     # 6. 総合判定(取得失敗と、取れたが判断できなかったものを区別する)
@@ -210,14 +210,19 @@ def _find_hub(ctx: _Ctx, cfg: Config, robots: RobotsInfo, links, tally, site_hos
 
     # 2段目: 1段目のページで見つかった有望なリンクを、少数だけ取得して施設名リンクを確認
     seen: set[str] = set()
+    deeper: list[hub.Candidate] = []
     for c in sorted(children, key=lambda c: -c.score):
         if len(seen) >= cfg.d2_fetch:
             break
         if c.url in visited or c.url in seen or c.score < cfg.d2_min_score:
             continue
         seen.add(c.url)
-        _visit(ctx, c, site_host)
-    return hub.decide(cands + children), blocked
+        page_links = _visit(ctx, c, site_host)
+        if page_links is not None:
+            # 取得はしないが、深さ3のリンクも候補として記録する(専用ページがさらに奥にある自治体向け)
+            deeper += hub.candidates_from_links(page_links, "depth2_link", 3)[:10]
+    deeper = [c for c in deeper if c.url not in blocked and robots.can_fetch(c.url)]
+    return hub.decide(cands + children + deeper), blocked
 
 
 def _sitemap(m, ctx, cfg, robots, top_url, site_host):

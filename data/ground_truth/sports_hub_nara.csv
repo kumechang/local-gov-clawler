@@ -1,11 +1,11 @@
-municipality_code,municipality_name,site_url,hub_url,notes
-29201,奈良市,https://www.city.nara.lg.jp/,https://www.city.nara.lg.jp/life/2/15/77/,
-29202,大和高田市,https://www.city.yamatotakada.nara.jp/,https://www.city.yamatotakada.nara.jp/kankos/sports/taiikushisetsu/index.html,
-29205,橿原市,https://www.city.kashihara.nara.jp/,https://www.city.kashihara.nara.jp/kanko_bunka_sports/sports/1/index.html,
-29206,桜井市,https://www.city.sakurai.lg.jp/,https://www.city.sakurai.lg.jp/life/life16/taiiku/index.html,
-29209,生駒市,https://www.city.ikoma.lg.jp/,https://www.city.ikoma.lg.jp/category/2-28-4-0-0-0-0-0-0-0.html,
-29210,香芝市,https://www.city.kashiba.lg.jp/,https://www.city.kashiba.lg.jp/life/3/23/89/,
-29211,葛城市,https://www.city.katsuragi.nara.jp/,https://www.city.katsuragi.nara.jp/kanko_bunka_sports/sports/index.html,純粋なスポーツ施設の一覧ではない
-29344,斑鳩町,https://www.town.ikaruga.nara.jp/,https://www.town.ikaruga.nara.jp/category/3-4-2-0-0-0-0-0-0-0.html,純粋なスポーツ施設の一覧ではない
-29427,河合町,https://www.town.kawai.nara.jp/,https://www.town.kawai.nara.jp/kenko_sports/sports/3032.html,
-29444,黒滝村,https://www.vill.kurotaki.nara.jp/,https://www.vill.kurotaki.nara.jp/gyosei/pub_facility/,公共施設一覧の中に混じっている
+municipality_code,municipality_name,site_url,hub_url,alt_urls,notes
+29201,奈良市,https://www.city.nara.lg.jp/,https://www.city.nara.lg.jp/life/2/15/77/,,
+29202,大和高田市,https://www.city.yamatotakada.nara.jp/,https://www.city.yamatotakada.nara.jp/kankos/sports/taiikushisetsu/index.html,,
+29205,橿原市,https://www.city.kashihara.nara.jp/,https://www.city.kashihara.nara.jp/kanko_bunka_sports/sports/1/index.html,,
+29206,桜井市,https://www.city.sakurai.lg.jp/,https://www.city.sakurai.lg.jp/life/life16/taiiku/index.html,,
+29209,生駒市,https://www.city.ikoma.lg.jp/,https://www.city.ikoma.lg.jp/category/2-28-4-0-0-0-0-0-0-0.html,,
+29210,香芝市,https://www.city.kashiba.lg.jp/,https://www.city.kashiba.lg.jp/life/7/41/179/,https://www.city.kashiba.lg.jp/life/3/23/89/,クローラーが見つけた「スポーツ施設」ページの方がより良い(ユーザー判断 2026-10-15)。旧正解は許容URL
+29211,葛城市,https://www.city.katsuragi.nara.jp/,https://www.city.katsuragi.nara.jp/kanko_bunka_sports/sports/index.html,,純粋なスポーツ施設の一覧ではない
+29344,斑鳩町,https://www.town.ikaruga.nara.jp/,https://www.town.ikaruga.nara.jp/category/3-4-2-0-0-0-0-0-0-0.html,,純粋なスポーツ施設の一覧ではない
+29427,河合町,https://www.town.kawai.nara.jp/,https://www.town.kawai.nara.jp/kenko_sports/sports/3032.html,,
+29444,黒滝村,https://www.vill.kurotaki.nara.jp/,https://www.vill.kurotaki.nara.jp/gyosei/pub_facility/,,公共施設一覧の中に混じっている

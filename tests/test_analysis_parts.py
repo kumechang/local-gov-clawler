@@ -49,40 +49,56 @@ def test_score_text():
     assert hub.score_text("スポーツ施設")[0] == hub.score_text("ｽﾎﾟｰﾂ施設")[0]  # NFKC
 
 
-def test_decide():
-    c = lambda u, s: hub.Candidate(u, u, s, reasons=["text:x"])
-    assert hub.decide([c("a", 12), c("b", 5)]).outcome == "hub_selected"
-    assert hub.decide([c("a", 12), c("b", 11)]).outcome == "hub_multiple"
-    assert hub.decide([c("a", 5)]).outcome == "hub_not_found"
-    assert hub.decide([c("a", 12), c("a", 3)]).outcome == "hub_selected"
-    assert hub.decide([]).outcome == "hub_not_found"
+def cand(url, score, kind, depth=1, fl=None, fetched=True, text="x"):
+    return hub.Candidate(url, text, score, reasons=["text:x"], depth=depth, fetched=fetched, facility_link_count=fl, kind=kind)
 
 
-def test_new_scoring_cases_from_pilot():
-    s = lambda t, region="nav": hub.score_text(t, "", region)[0]
-    # 大分類・探索用の入口は「先を見に行く」点数にはなるが、確定点数には届かない
-    for t in ["施設を探す", "町の施設", "教育・文化・スポーツ", "教育", "生涯学習"]:
-        assert hub.FETCH_MIN <= s(t) < hub.MIN_SCORE, t
-    # 子育て・文化財・教育委員会は探索対象にしない
-    for t in ["子育て・教育", "文化財", "教育委員会", "観光・文化財"]:
-        assert s(t) < hub.FETCH_MIN, t
-    # 実際にハブになっていたお知らせ記事
-    for t in ["社会体育施設の熱中症対策について", "学校体育施設利用手続きの改正について", "御所スポーツフェスティバル2026", "天理市体育施設指定管理者募集"]:
-        assert s(t, "other") < hub.MIN_SCORE, t
-        assert s(t, "other") < hub.FETCH_MIN + 2, t
-    assert s("スポーツ施設") >= hub.MIN_SCORE and s("体育施設案内") >= hub.MIN_SCORE
+def test_classify_label():
+    k = hub.classify_label
+    assert k("スポーツ・体育") == k("スポーツ施設一覧") == k("体育施設") == k("スポーツ情報") == "sports_pure"
+    assert k("観光・文化・スポーツ") == k("生涯学習・スポーツ") == k("健康・スポーツ") == k("文化・スポーツ施設") == "sports_composite"
+    assert k("学校体育施設の利用") == "sports_composite"
+    assert k("三宅町体育館") == k("屋敷山公園内 体育施設情報") == "sports_other"
+    assert k("公共施設一覧") == k("施設を探す") == k("町の施設") == "generic"
+    assert k("教育") == k("くらし・手続き") == k("サイトマップ") == "broad"
+    assert k("子育て") == "other"
 
 
-def test_decide_prefers_shallow_viable_over_deep_facility():
-    c = lambda u, s, d, fetched=False, fl=None: hub.Candidate(u, "", s, reasons=["text:x"], depth=d, fetched=fetched, facility_link_count=fl)
-    d = hub.decide([c("list", 12, 1, True, 4), c("facility", 13, 2)])
-    assert d.outcome == "hub_selected" and d.selected.url == "list"
-    # 浅い階層に採用可能な候補がなければ深い階層を使う
-    assert hub.decide([c("cat", 9, 1, True, 0), c("facility", 13, 2)]).selected.url == "facility"
-    # 同じ深さで僅差なら複数扱い
-    assert hub.decide([c("a", 12, 1), c("b", 11, 1)]).outcome == "hub_multiple"
-    # 施設リンクの無い大分類は、強い語の見出しでない限り採用しない
-    assert hub.decide([c("cat", 9, 1, True, 0)]).outcome == "hub_not_found"
+def test_decide_precision_first():
+    # 専用ラベルで施設名リンクのある候補は確定
+    assert hub.decide([cand("a", 12, "sports_pure", fl=4)]).outcome == "hub_selected"
+    # 同じ深さで僅差なら確定しない(後段のAI/手動へ)
+    assert hub.decide([cand("a", 12, "sports_pure", fl=4), cand("b", 11, "sports_pure", fl=3)]).outcome == "hub_multiple"
+    # 浅い方が高得点でなくても、浅い専用ラベルを優先(トップに近い一覧が正解の定義)
+    d = hub.decide([cand("shallow", 12, "sports_pure", 1, 4), cand("deep", 25, "sports_pure", 2, 23)])
+    assert d.outcome == "hub_selected" and d.selected.url == "shallow"
+    # ページ未確認の候補は確定しない。有望ならhub_multiple(次の段階へ)
+    assert hub.decide([cand("x", 12, "sports_pure", 3, None, fetched=False)]).outcome == "hub_multiple"
+    assert hub.decide([cand("x", 5, "sports_pure", 3, None, fetched=False)]).outcome == "hub_not_found"
+
+
+def test_decide_composite_and_empty_categories_are_not_hubs():
+    # 生駒市型: ラベルに「スポーツ施設」を含む複合ラベルでも、施設名リンクが無ければ採用しない。専用ページ(深さ2)を採用
+    d = hub.decide([cand("composite", 16, "sports_composite", 1, 0, text="文化・スポーツ施設"), cand("pure", 19, "sports_pure", 2, 6)])
+    assert d.selected.url == "pure"
+    # 葛城市型: 施設名リンクがあっても、強い語を含まない複合ラベル(観光・文化・スポーツ)は採用しない
+    d = hub.decide([cand("kbs", 12, "sports_composite", 1, 4, text="観光・文化・スポーツ"), cand("sports", 9, "sports_pure", 2, 3)])
+    assert d.selected.url == "sports"
+    # 強い語を含む複合ラベルは、施設名リンクが3件以上あれば採用可能
+    assert hub.decide([cand("c", 13, "sports_composite", 1, 5, text="公民館・文化・スポーツ施設")]).outcome == "hub_selected"
+    assert hub.decide([cand("c", 13, "sports_composite", 1, 2, text="公民館・文化・スポーツ施設")]).outcome == "hub_not_found"
+    # 大分類は何点でも採用しない
+    assert hub.decide([cand("b", 30, "broad", 1, 9)]).outcome == "hub_not_found"
+    # 個別施設ページ(施設名リンク1件以下)は採用しない
+    assert hub.decide([cand("f", 14, "sports_other", 2, 0, text="屋敷山公園内 体育施設情報")]).outcome == "hub_not_found"
+
+
+def test_decide_generic_facility_list_only_when_no_specific():
+    d = hub.decide([cand("g", 11, "generic", 1, 8, text="施設一覧")])
+    assert d.outcome == "hub_selected" and d.quality == "generic"
+    d = hub.decide([cand("g", 11, "generic", 1, 8), cand("s", 10, "sports_pure", 2, 3)])
+    assert d.selected.url == "s" and d.quality == "specific"
+    assert hub.decide([cand("g", 11, "generic", 1, 2)]).outcome == "hub_not_found"  # 施設名リンクが少ない
 
 
 def test_cms_url_patterns_from_pilot():
