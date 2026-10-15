@@ -1,0 +1,860 @@
+{
+ "ai_needed": false,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 2,
+     "facility_link_count": 8,
+     "fetched": true,
+     "kind": "sports_other",
+     "page_title": "川西町体育施設 | 奈良県川西町 川西町体育施設",
+     "reasons": [
+      "text:体育施設",
+      "facility_links:8",
+      "title_match"
+     ],
+     "region": "other",
+     "score": 21,
+     "source": "depth1_link",
+     "text": "川西町体育施設",
+     "url": "https://www.town.nara-kawanishi.lg.jp/category/21-7-0-0-0-0-0-0-0-0.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 7,
+     "fetched": true,
+     "kind": "sports_other",
+     "page_title": "川西町立梅戸体育館 | 奈良県川西町 川西町立梅戸体育館",
+     "reasons": [
+      "text:体育館",
+      "facility_links:7",
+      "title_match"
+     ],
+     "region": "other",
+     "score": 16,
+     "source": "depth1_link",
+     "text": "川西町立梅戸体育館",
+     "url": "https://www.town.nara-kawanishi.lg.jp/0000000850.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 7,
+     "fetched": true,
+     "kind": "sports_other",
+     "page_title": "川西町立下永体育館 | 奈良県川西町 川西町立下永体育館",
+     "reasons": [
+      "text:体育館",
+      "facility_links:7",
+      "title_match"
+     ],
+     "region": "other",
+     "score": 16,
+     "source": "depth1_link",
+     "text": "川西町立下永体育館",
+     "url": "https://www.town.nara-kawanishi.lg.jp/0000000851.html",
+     "viable": true
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 7,
+     "fetched": true,
+     "kind": "generic",
+     "page_title": "町の施設 | 奈良県川西町 町の施設",
+     "reasons": [
+      "text:施設を探す|施設から探す|施設検索|[市町村]の施設|みんなの施設",
+      "region_nav",
+      "facility_links:7"
+     ],
+     "region": "nav",
+     "score": 12,
+     "source": "nav",
+     "text": "町の施設",
+     "url": "https://www.town.nara-kawanishi.lg.jp/category/21-0-0-0-0-0-0-0-0-0.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "fetched": false,
+     "kind": "sports_other",
+     "page_title": "",
+     "reasons": [
+      "text:運動公園|総合運動"
+     ],
+     "region": "other",
+     "score": 6,
+     "source": "depth1_link",
+     "text": "川西町結崎運動公園(硬式テニスコート)",
+     "url": "https://www.town.nara-kawanishi.lg.jp/0000000847.html",
+     "viable": false
+    }
+   ],
+   "decision": "hub_selected",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "quality": "specific",
+   "selected": {
+    "depth": 2,
+    "facility_link_count": 8,
+    "fetched": true,
+    "kind": "sports_other",
+    "page_title": "川西町体育施設 | 奈良県川西町 川西町体育施設",
+    "reasons": [
+     "text:体育施設",
+     "facility_links:8",
+     "title_match"
+    ],
+    "region": "other",
+    "score": 21,
+    "source": "depth1_link",
+    "text": "川西町体育施設",
+    "url": "https://www.town.nara-kawanishi.lg.jp/category/21-7-0-0-0-0-0-0-0-0.html",
+    "viable": true
+   }
+  }
+ ],
+ "menu_labels": [
+  "ライフステージ",
+  "暮らし",
+  "子育て",
+  "観光",
+  "事業者",
+  "町政",
+  "申請"
+ ],
+ "municipality": {
+  "code": "29361",
+  "full_name": "川西町",
+  "kind": "town",
+  "name": "川西町",
+  "official_url": "https://www.town.nara-kawanishi.lg.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "奈良県川西町",
+   "text_kind": "img_alt",
+   "url": "https://www.town.nara-kawanishi.lg.jp/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "Language",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/site_policy/0000000025.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "暮らし",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "町政情報",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/19-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "町の施設",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/21-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "イベント",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/event/curr_1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光・イベント",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/20-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "学校",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/24-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "移住定住2025",
+   "text_kind": "img_alt",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000007584.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ふるさと納税(代理寄附)",
+   "text_kind": "img_alt",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000008934.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "トップ",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "妊娠・出産",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-3-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "子育て・教育",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-4-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-5-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "引越・住まい",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-6-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "高齢・介護",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-8-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "健康・医療",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-2-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おくやみ",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-7-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "届出・証明書",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-24-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度 川西町総合計画審議会/ 川西町まち・ひと・しごと創生会議",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000009008.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度 職員採用試験 結果情報 (2)",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000009034.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "「オーバルパークかわにし」のインラインスケートトラック特殊塗装のため、ガバメントクラウドファンディングを実施します",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000009032.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おくやまテラス(2026年10月)",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000009005.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "世帯・人口表",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000009025.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新着情報一覧",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/news/0001.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "課税証明書及び納税証明書のコンビニ交付開始について",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000008960.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度「耐震改修工事を行う事業者向け講習会~達人塾~」の開催について",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000009017.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "川西町こども家庭センターです",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000006776.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "注目情報一覧",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/topics/0001.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "各課の窓口",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/soshiki_list.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "川西町MAP",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/map/map1/map2.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町の概要",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/19-3-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ゴミ・リサイクル",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-18-5-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "申請書 ダウンロード",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-25-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "コミュニティバス",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-17-1-1-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "事業者の方へ",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/22-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報「川西」",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/19-9-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "条例・規則",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/19-18-3-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "相談窓口",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-20-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと 応援寄附金",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/19-15-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "リンク集",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-23-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町長の部屋",
+   "text_kind": "img_alt",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000006673.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町議会",
+   "text_kind": "img_alt",
+   "url": "https://www.town.nara-kawanishi.lg.jp/soshiki/5-0-0-0-0_10.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "パブリックコメント",
+   "text_kind": "img_alt",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/19-16-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "川西町のSNS",
+   "text_kind": "img_alt",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000008806.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報川西",
+   "text_kind": "img_alt",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/19-9-5-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと納税",
+   "text_kind": "img_alt",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000003115.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "職員採用",
+   "text_kind": "img_alt",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/19-20-1-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "地図",
+   "text_kind": "img_alt",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000008367.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "公共交通",
+   "text_kind": "img_alt",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000007979.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "子育て",
+   "text_kind": "img_alt",
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-4-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ちかいがチカラに。かわにし",
+   "text_kind": "img_alt",
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000007584.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "別ウィンドウで開く",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/module/banner.cgi?bannerId=24"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "別ウィンドウで開く",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/module/banner.cgi?bannerId=20"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "別ウィンドウで開く",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/module/banner.cgi?bannerId=19"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "別ウィンドウで開く",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/module/banner.cgi?bannerId=17"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "別ウィンドウで開く",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/module/banner.cgi?bannerId=14"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "別ウィンドウで開く",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/module/banner.cgi?bannerId=18"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "別ウィンドウで開く",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/module/banner.cgi?bannerId=15"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "別ウィンドウで開く",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/module/banner.cgi?bannerId=22"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "別ウィンドウで開く",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/module/banner.cgi?bannerId=23"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "サイト運用について",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/site_policy/0000000014.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "個人情報の取り扱いについて",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/site_policy/0000000015.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "ウェブアクセシビリティ方針",
+   "text_kind": "text",
+   "url": "https://www.town.nara-kawanishi.lg.jp/site_policy/0000000023.html"
+  }
+ ],
+ "needs_review": [],
+ "outcome": "hub_selected",
+ "requests": [
+  {
+   "bytes": 92,
+   "elapsed_ms": 837,
+   "error_class": "",
+   "final_url": "https://www.town.nara-kawanishi.lg.jp/robots.txt",
+   "status": 200,
+   "url": "https://www.town.nara-kawanishi.lg.jp/robots.txt"
+  },
+  {
+   "bytes": 25751,
+   "elapsed_ms": 129,
+   "error_class": "",
+   "final_url": "https://www.town.nara-kawanishi.lg.jp/",
+   "status": 200,
+   "url": "https://www.town.nara-kawanishi.lg.jp/"
+  },
+  {
+   "bytes": 171,
+   "elapsed_ms": 155,
+   "error_class": "",
+   "final_url": "https://www.town.nara-kawanishi.lg.jp/sitemap.xml",
+   "status": 200,
+   "url": "https://www.town.nara-kawanishi.lg.jp/sitemap.xml"
+  },
+  {
+   "bytes": 4635,
+   "elapsed_ms": 158,
+   "error_class": "",
+   "final_url": "https://www.town.nara-kawanishi.lg.jp/rss/sitemap.xml",
+   "status": 200,
+   "url": "https://www.town.nara-kawanishi.lg.jp/rss/sitemap.xml"
+  },
+  {
+   "bytes": 26664,
+   "elapsed_ms": 181,
+   "error_class": "",
+   "final_url": "https://www.town.nara-kawanishi.lg.jp/category/21-0-0-0-0-0-0-0-0-0.html",
+   "status": 200,
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/21-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "bytes": 11017,
+   "elapsed_ms": 185,
+   "error_class": "",
+   "final_url": "https://www.town.nara-kawanishi.lg.jp/sitemap.html",
+   "status": 200,
+   "url": "https://www.town.nara-kawanishi.lg.jp/sitemap.html"
+  },
+  {
+   "bytes": 23796,
+   "elapsed_ms": 184,
+   "error_class": "",
+   "final_url": "https://www.town.nara-kawanishi.lg.jp/category/18-0-0-0-0-0-0-0-0-0.html",
+   "status": 200,
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/18-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "bytes": 11156,
+   "elapsed_ms": 168,
+   "error_class": "",
+   "final_url": "https://www.town.nara-kawanishi.lg.jp/category/21-7-0-0-0-0-0-0-0-0.html",
+   "status": 200,
+   "url": "https://www.town.nara-kawanishi.lg.jp/category/21-7-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "bytes": 18359,
+   "elapsed_ms": 184,
+   "error_class": "",
+   "final_url": "https://www.town.nara-kawanishi.lg.jp/0000000850.html",
+   "status": 200,
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000000850.html"
+  },
+  {
+   "bytes": 18372,
+   "elapsed_ms": 173,
+   "error_class": "",
+   "final_url": "https://www.town.nara-kawanishi.lg.jp/0000000851.html",
+   "status": 200,
+   "url": "https://www.town.nara-kawanishi.lg.jp/0000000851.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 2354,
+  "finished_at": "2026-10-15T00:46:43Z",
+  "request_count": 10,
+  "route": "actions_direct_v3",
+  "started_at": "2026-10-15T00:46:34Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "high",
+   "evidence": [
+    "url:27件 例 https://www.town.nara-kawanishi.lg.jp/category/18-0-0-0-0-0-0-0-0-0.html",
+    "url:59件 例 https://www.town.nara-kawanishi.lg.jp/site_policy/0000000025.html",
+    "url:9件 例 https://www.town.nara-kawanishi.lg.jp/module/banner.cgi?bannerId=24"
+   ],
+   "family": "url_pattern:category_numeric",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:category_numeric": 28
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 89,
+   "image_count": 59,
+   "needs_headless": false,
+   "noscript_text_length": 125,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 13,
+   "text_length": 912
+  },
+  "robots": {
+   "available": true,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 1,
+   "error_class": "",
+   "sitemaps": [
+    "https://www.town.nara-kawanishi.lg.jp/sitemap.xml"
+   ],
+   "status": 200,
+   "text": "User-Agent: *\nDisallow: /kanri/\n\nSitemap: https://www.town.nara-kawanishi.lg.jp/sitemap.xml\n",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "index",
+     "source": "robots",
+     "status": 200,
+     "url": "https://www.town.nara-kawanishi.lg.jp/sitemap.xml"
+    }
+   ],
+   "children_fetched": 1,
+   "children_total": 1,
+   "found": true,
+   "keyword_urls": [],
+   "kind": "index",
+   "lastmod_count": 39,
+   "lastmod_max": "2026-10-13",
+   "lastmod_min": "2026-09-15",
+   "lastmod_years": {
+    "2026": 39
+   },
+   "numeric_id_url_ratio": 1.0,
+   "source": "robots",
+   "top_level_paths": {
+    "/0000004432.html": 1,
+    "/0000006384.html": 1,
+    "/0000006729.html": 1,
+    "/0000007203.html": 1,
+    "/0000007271.html": 1,
+    "/0000008038.html": 1,
+    "/0000008146.html": 1,
+    "/0000008665.html": 1,
+    "/0000008897.html": 1,
+    "/0000008918.html": 1,
+    "/0000008926.html": 1,
+    "/0000008945.html": 1,
+    "/0000008958.html": 1,
+    "/0000008963.html": 1,
+    "/0000009003.html": 1,
+    "/0000009005.html": 1,
+    "/0000009008.html": 1,
+    "/0000009009.html": 1,
+    "/0000009011.html": 1,
+    "/0000009017.html": 1,
+    "/0000009019.html": 1,
+    "/0000009022.html": 1,
+    "/0000009025.html": 1,
+    "/0000009026.html": 1,
+    "/0000009028.html": 1,
+    "/0000009029.html": 1,
+    "/0000009030.html": 1,
+    "/0000009032.html": 1,
+    "/0000009034.html": 1,
+    "/0000009038.html": 1
+   },
+   "truncated": false,
+   "url": "https://www.town.nara-kawanishi.lg.jp/sitemap.xml",
+   "url_count": 39
+  },
+  "top": {
+   "elapsed_ms": 129,
+   "error_class": "",
+   "final_url": "https://www.town.nara-kawanishi.lg.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}
