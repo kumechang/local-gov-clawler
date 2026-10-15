@@ -1,0 +1,725 @@
+{
+ "ai_needed": true,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 2,
+     "facility_link_count": 5,
+     "facility_samples": [
+      "町民グラウンド[other]",
+      "池田小学校体育館[other]",
+      "池田中学校体育館(町民体育館)[other]",
+      "池田町立公民館水海分館(体育館)[other]",
+      "野尻グラウンド[other]"
+     ],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "体育施設 | 福井県池田町",
+     "reasons": [
+      "text:体育施設",
+      "url_hint",
+      "sports_pure",
+      "facility_links:5",
+      "title_match"
+     ],
+     "region": "other",
+     "score": 24,
+     "source": "depth1_link",
+     "text": "体育施設",
+     "url": "https://www.town.ikeda.fukui.jp/shisetsu/taiiku/index.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 5,
+     "facility_samples": [
+      "池田小学校体育館[other]",
+      "池田中学校体育館(町民体育館)[other]",
+      "池田町立公民館水海分館(体育館)[other]",
+      "町民グラウンド[other]",
+      "野尻グラウンド[other]"
+     ],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ施設 | 福井県池田町",
+     "reasons": [
+      "text:スポーツ施設",
+      "sports_pure",
+      "facility_links:5",
+      "title_match"
+     ],
+     "region": "other",
+     "score": 22,
+     "source": "depth1_link",
+     "text": "スポーツ施設",
+     "url": "https://www.town.ikeda.fukui.jp/kurashi/bunka/1423/index.html",
+     "viable": true
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 5,
+     "facility_samples": [
+      "町民グラウンド[other]",
+      "池田小学校体育館[other]",
+      "池田中学校体育館(町民体育館)[other]",
+      "池田町立公民館水海分館(体育館)[other]",
+      "野尻グラウンド[other]"
+     ],
+     "fetched": true,
+     "kind": "generic",
+     "page_title": "施設案内 | 福井県池田町",
+     "reasons": [
+      "text:公共施設|施設案内|施設一覧|施設情報",
+      "url_hint",
+      "region_nav",
+      "facility_links:5"
+     ],
+     "region": "nav",
+     "score": 11,
+     "source": "nav",
+     "text": "施設案内",
+     "url": "https://www.town.ikeda.fukui.jp/shisetsu/index.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "sports_composite",
+     "page_title": "池田小学校体育館 | 福井県池田町",
+     "reasons": [
+      "text:体育館",
+      "url_hint",
+      "composite",
+      "title_match"
+     ],
+     "region": "other",
+     "score": 11,
+     "source": "depth1_link",
+     "text": "池田小学校体育館",
+     "url": "https://www.town.ikeda.fukui.jp/shisetsu/taiiku/p002490.html",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 5,
+     "facility_samples": [
+      "町民グラウンド[other]",
+      "池田小学校体育館[other]",
+      "池田中学校体育館(町民体育館)[other]",
+      "池田町立公民館水海分館(体育館)[other]",
+      "野尻グラウンド[other]"
+     ],
+     "fetched": true,
+     "kind": "broad",
+     "page_title": "サイトマップ | 福井県池田町",
+     "reasons": [
+      "sitemap_page",
+      "facility_links:5"
+     ],
+     "region": "footer",
+     "score": 8,
+     "source": "nav",
+     "text": "サイトマップ",
+     "url": "https://www.town.ikeda.fukui.jp/sitemap.html",
+     "viable": false
+    }
+   ],
+   "decision": "hub_multiple",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "quality": "specific",
+   "selected": null
+  }
+ ],
+ "menu_labels": [],
+ "municipality": {
+  "code": "18382",
+  "full_name": "池田町",
+  "kind": "town",
+  "name": "池田町",
+  "official_url": "https://www.town.ikeda.fukui.jp/",
+  "prefecture": "福井県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "福井県池田町",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "道路情報",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/toplink/emergency/p002627.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "防災情報",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/kurashi/anzen/1351/p002809.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "暮らしのガイド",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/kurashi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "お知らせ",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/news.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "イベント・講座",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/event/event.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "施設案内",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/shisetsu/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "町の案内",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/gyousei/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "農業者・事業者",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/jigyousya/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "防災メールシステムの緊急停止について",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/toplink/emergency/p003018.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【町内でのクマ目撃情報】※随時更新",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/toplink/emergency/p002978.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "窓口業務システムの標準化に伴うコンビニ交付サービスの停止について",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/toplink/emergency/p002975.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "池田町脱炭素実現ビジョンが策定されました。",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/toplink/emergency/p002764.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "一覧 ≫",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/news.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "池田町水処理センター太陽光パネル設置事業に係るプロポーザルの終了について",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/kurashi/datsutanso/machiene/p003008.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報いけだ 令和8年度",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/gyousei/gyousei/1941/p002997.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町内求人情報",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/yoku/kyujin/p001569.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "池田町議会開催日程",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/gyousei/gyousei/1946/p002652.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町議会だより 令和8年度",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/gyousei/gyousei/1946/p003004.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "すべてを見る ≫",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/kurashi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "届出・証明",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/pick/picktodoke/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "冠婚葬祭",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/pick/pickkankon/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "子育て・学校",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/pick/pickkodomo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "引っ越し・住居",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/pick/pickjukyo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "病気・保険",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/pick/pickbyouki/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "脱炭素",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/kurashi/datsutanso/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ゴミ・エコ",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/yoku/gomi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "申請書ダウンロード",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/yoku/dl/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "助成・手当",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/yoku/teate/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "バス・タクシー",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/yoku/bus/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "相談窓口",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/yoku/soudan/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "採用・求人",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/yoku/kyujin/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町役場案内(画像)",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/shozoku.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報いけだ(画像)",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/gyousei/gyousei/1941/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと納税(画像)",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/gyousei/furusato/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町のデータ(画像)",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/about/data/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "お問い合わせ(画像)",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/inquiry/mailform000004.html?PAGE_NO=toppage2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "池田町例規集(画像)",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ikeda.fukui.jp/contents/reiki/reiki_menu.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ホーム",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "地図・利用案内",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/shozoku.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "よくあるご質問",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/faq/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "お問い合わせ",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/inquiry/mailform000004.html?PAGE_NO=toppage"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "サイトポリシー",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/toplink/topetc/p002220.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "プライバシーポリシー",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/toplink/topetc/p002221.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "text",
+   "url": "https://www.town.ikeda.fukui.jp/sitemap.html"
+  }
+ ],
+ "needs_review": [
+  "hub_multiple"
+ ],
+ "outcome": "hub_multiple",
+ "requests": [
+  {
+   "bytes": 196,
+   "elapsed_ms": 1029,
+   "error_class": "http_404",
+   "final_url": "https://www.town.ikeda.fukui.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.town.ikeda.fukui.jp/robots.txt"
+  },
+  {
+   "bytes": 19404,
+   "elapsed_ms": 147,
+   "error_class": "",
+   "final_url": "https://www.town.ikeda.fukui.jp/",
+   "status": 200,
+   "url": "https://www.town.ikeda.fukui.jp/"
+  },
+  {
+   "bytes": 153384,
+   "elapsed_ms": 745,
+   "error_class": "",
+   "final_url": "https://www.town.ikeda.fukui.jp/sitemap.xml",
+   "status": 200,
+   "url": "https://www.town.ikeda.fukui.jp/sitemap.xml"
+  },
+  {
+   "bytes": 14986,
+   "elapsed_ms": 259,
+   "error_class": "",
+   "final_url": "https://www.town.ikeda.fukui.jp/shisetsu/index.html",
+   "status": 200,
+   "url": "https://www.town.ikeda.fukui.jp/shisetsu/index.html"
+  },
+  {
+   "bytes": 19853,
+   "elapsed_ms": 249,
+   "error_class": "",
+   "final_url": "https://www.town.ikeda.fukui.jp/kurashi/index.html",
+   "status": 200,
+   "url": "https://www.town.ikeda.fukui.jp/kurashi/index.html"
+  },
+  {
+   "bytes": 42100,
+   "elapsed_ms": 217,
+   "error_class": "",
+   "final_url": "https://www.town.ikeda.fukui.jp/sitemap.html",
+   "status": 200,
+   "url": "https://www.town.ikeda.fukui.jp/sitemap.html"
+  },
+  {
+   "bytes": 12090,
+   "elapsed_ms": 202,
+   "error_class": "",
+   "final_url": "https://www.town.ikeda.fukui.jp/shisetsu/taiiku/index.html",
+   "status": 200,
+   "url": "https://www.town.ikeda.fukui.jp/shisetsu/taiiku/index.html"
+  },
+  {
+   "bytes": 12353,
+   "elapsed_ms": 202,
+   "error_class": "",
+   "final_url": "https://www.town.ikeda.fukui.jp/kurashi/bunka/1423/index.html",
+   "status": 200,
+   "url": "https://www.town.ikeda.fukui.jp/kurashi/bunka/1423/index.html"
+  },
+  {
+   "bytes": 20108,
+   "elapsed_ms": 231,
+   "error_class": "",
+   "final_url": "https://www.town.ikeda.fukui.jp/shisetsu/taiiku/p002490.html",
+   "status": 200,
+   "url": "https://www.town.ikeda.fukui.jp/shisetsu/taiiku/p002490.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 3281,
+  "finished_at": "2026-10-15T02:49:10Z",
+  "request_count": 9,
+  "route": "actions_direct_v5_fukui",
+  "started_at": "2026-10-15T02:49:02Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "medium",
+   "evidence": [
+    "url:3件 例 https://www.town.ikeda.fukui.jp/kurashi/index.html"
+   ],
+   "family": "url_pattern:genre_dir_index",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:genre_dir_index": 8
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 69,
+   "image_count": 66,
+   "needs_headless": false,
+   "noscript_text_length": 88,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 11,
+   "text_length": 475
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "urlset",
+     "source": "default_path",
+     "status": 200,
+     "url": "https://www.town.ikeda.fukui.jp/sitemap.xml"
+    }
+   ],
+   "found": true,
+   "keyword_urls": [
+    "http://www.town.ikeda.fukui.jp/shisetsu/gyousei/p003013.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/taiiku/p001310.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/gyousei/p002132.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/gyousei/p002192.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/taiiku/p001460.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/taiiku/p002490.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/kankou/p002169.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/gakkou/p001464.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/gakkou/p001465.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/kyouiku/p001443.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/kyouiku/p001442.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/sonota/p002389.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/taiiku/p002462.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/sonota/p002777.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/sonota/p002613.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/kankou/p001471.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/park/p001252.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/kankou/p002166.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/taiiku/p002641.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/taiiku/p002549.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/taiiku/p002487.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/kankou/p002612.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/sonota/p002416.html",
+    "http://www.town.ikeda.fukui.jp/faq/shisetsufaq/5243/p002191.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/taiiku/p002489.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/park/p001475.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/fukushi/p001436.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/kankou/p001468.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/gakkou/p001462.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/gakkou/p001463.html",
+    "http://www.town.ikeda.fukui.jp/faq/shisetsufaq/5243/p002190.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/kyouiku/p001445.html",
+    "http://www.town.ikeda.fukui.jp/shisetsu/gakkou/p001466.html"
+   ],
+   "kind": "urlset",
+   "lastmod_count": 1120,
+   "lastmod_max": "2026-10-13",
+   "lastmod_min": "2015-10-21",
+   "lastmod_years": {
+    "2015": 267,
+    "2016": 110,
+    "2017": 73,
+    "2018": 71,
+    "2019": 84,
+    "2020": 64,
+    "2021": 76,
+    "2022": 61,
+    "2023": 74,
+    "2024": 74,
+    "2025": 81,
+    "2026": 85
+   },
+   "numeric_id_url_ratio": 0.0,
+   "source": "default_path",
+   "top_level_paths": {
+    "/about": 3,
+    "/event": 6,
+    "/faq": 59,
+    "/gyousei": 73,
+    "/jigyousya": 41,
+    "/kurashi": 334,
+    "/pick": 32,
+    "/shisetsu": 31,
+    "/shozoku.html": 1,
+    "/toplink": 21,
+    "/www.e-ikeda.jp": 506,
+    "/www.town.ikeda.fukui.jp": 1,
+    "/yoku": 12
+   },
+   "url": "https://www.town.ikeda.fukui.jp/sitemap.xml",
+   "url_count": 1120
+  },
+  "top": {
+   "elapsed_ms": 147,
+   "error_class": "",
+   "final_url": "https://www.town.ikeda.fukui.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

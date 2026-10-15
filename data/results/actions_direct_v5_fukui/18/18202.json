@@ -1,0 +1,1292 @@
+{
+ "ai_needed": false,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 2,
+     "facility_link_count": 12,
+     "facility_samples": [
+      "令和8年度花城テニスコート期間利用券の発行につい[nav]",
+      "施設のご案内(総合運動公園)[nav]",
+      "中郷体育館[nav]",
+      "敦賀市武道館(指定管理施設)[nav]",
+      "市営野球場[nav]"
+     ],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ施設 - 敦賀市ホームページ スポーツ施設",
+     "reasons": [
+      "text:スポーツ施設",
+      "region_nav",
+      "sports_pure",
+      "facility_links:12",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 28,
+     "source": "depth1_link",
+     "text": "スポーツ施設",
+     "url": "https://www.city.tsuruga.lg.jp/life/7/36/173/",
+     "viable": true
+    },
+    {
+     "depth": 3,
+     "facility_link_count": 9,
+     "facility_samples": [
+      "市立体育館[nav]",
+      "東浦体育館[nav]",
+      "市営野球場[nav]",
+      "花城テニスコート[nav]",
+      "粟野スポーツセンター[nav]"
+     ],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ施設一覧 - 敦賀市ホームページ(スポーツ振興課) スポーツ施設一覧",
+     "reasons": [
+      "text:スポーツ施設",
+      "region_nav",
+      "sports_pure",
+      "facility_links:9",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 27,
+     "source": "depth2_link",
+     "text": "スポーツ施設一覧",
+     "url": "https://www.city.tsuruga.lg.jp/page/1491.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 10,
+     "facility_samples": [
+      "施設のご案内(総合運動公園)[nav]",
+      "総合運動公園多目的広場の改修が始まります![nav]",
+      "総合運動公園遊具(一部)の利用再開について[nav]",
+      "総合運動公園の休館日(令和8年度)[nav]",
+      "総合運動公園陸上競技場改修工事完了のお知らせ[nav]"
+     ],
+     "fetched": true,
+     "kind": "sports_other",
+     "page_title": "総合運動公園 - 敦賀市ホームページ 総合運動公園",
+     "reasons": [
+      "text:運動公園|総合運動",
+      "region_nav",
+      "facility_links:10",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 20,
+     "source": "depth1_link",
+     "text": "総合運動公園",
+     "url": "https://www.city.tsuruga.lg.jp/soshiki/91/",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 6,
+     "facility_samples": [
+      "敦賀マラソン大会開催に係る総合運動公園の臨時休館[other]",
+      "敦賀市内スポーツ施設及び総合運動公園の大会等行事[other]",
+      "総合運動公園トレーニングルーム10月の登録講習会[other]",
+      "施設のご案内(総合運動公園)[other]",
+      "夜間の市立学校グラウンド使用について[other]"
+     ],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ - 敦賀市ホームページ スポーツ",
+     "reasons": [
+      "text:スポーツ",
+      "sports_pure",
+      "facility_links:6"
+     ],
+     "region": "other",
+     "score": 13,
+     "source": "depth1_link",
+     "text": "スポーツ",
+     "url": "https://www.city.tsuruga.lg.jp/life/3/11/",
+     "viable": true
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "sports_composite",
+     "page_title": "文化・スポーツ - 敦賀市ホームページ 文化・スポーツ",
+     "reasons": [
+      "text:スポーツ",
+      "region_nav",
+      "composite"
+     ],
+     "region": "nav",
+     "score": 6,
+     "source": "nav",
+     "text": "文化・スポーツ",
+     "url": "https://www.city.tsuruga.lg.jp/life/3/",
+     "viable": false
+    }
+   ],
+   "decision": "hub_selected",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "quality": "specific",
+   "selected": {
+    "depth": 2,
+    "facility_link_count": 12,
+    "facility_samples": [
+     "令和8年度花城テニスコート期間利用券の発行につい[nav]",
+     "施設のご案内(総合運動公園)[nav]",
+     "中郷体育館[nav]",
+     "敦賀市武道館(指定管理施設)[nav]",
+     "市営野球場[nav]"
+    ],
+    "fetched": true,
+    "kind": "sports_pure",
+    "page_title": "スポーツ施設 - 敦賀市ホームページ スポーツ施設",
+    "reasons": [
+     "text:スポーツ施設",
+     "region_nav",
+     "sports_pure",
+     "facility_links:12",
+     "title_match"
+    ],
+    "region": "nav",
+    "score": 28,
+    "source": "depth1_link",
+    "text": "スポーツ施設",
+    "url": "https://www.city.tsuruga.lg.jp/life/7/36/173/",
+    "viable": true
+   }
+  }
+ ],
+ "menu_labels": [
+  "くらし",
+  "子育て",
+  "健康・福祉",
+  "観光",
+  "文化・スポーツ",
+  "市政",
+  "よくある質問",
+  "申請",
+  "手続き"
+ ],
+ "municipality": {
+  "code": "18202",
+  "full_name": "敦賀市",
+  "kind": "city",
+  "name": "敦賀市",
+  "official_url": "https://www.city.tsuruga.lg.jp/",
+  "prefecture": "福井県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "子育て支援情報サイト",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/page/1069.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "敦賀市ふるさと納税",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/site/furusatonouzei/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらし・手続き",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/1/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "税・保険・年金",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/2/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "文化・スポーツ",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/3/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子育て・教育",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/4/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "健康・福祉",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/5/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "安心・安全",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/6/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市政情報",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/7/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光案内",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/8/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "コミュニティバス",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/site/bus/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ごみ収集日",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/garbage-day/search/search.php"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ごみ分別検索",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/garbage-item/search/search.php"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "職員採用",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/site/shokuinsaiyo/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "配布・回覧文書一覧",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/3325.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "パブリックコメント",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/4368.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "カレンダーでさがす",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/calendar/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "組織でさがす",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/soshiki/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "分類でさがす",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "よくある質問でさがす",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/sub/6"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "子育て",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/4/15"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "就職・退職",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/1/45/214/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/1/1/6"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "引越し・ 住まい",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/1/5"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "高齢者・ 介護",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/5/19/87/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "おくやみ",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/1001.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "オンライン 申請",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/site/onlineshinsei"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "敦賀市ホームページ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "Foreign language",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/17059.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "第45回敦賀マラソン大会",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=73&ef1=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市役所等の開庁時間を見直します",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=82&ef1=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "つるがデジタルスタンプラリーを開催します!",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=87&ef1=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【人道の港 敦賀ムゼウム】リニューアルオープン6周年記念イベント",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=88&ef1=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【人道の港 敦賀ムゼウム】企画展 Today, I Lost My Home ―想像していなかった今日を生きる―",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=70&ef1=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀港イルミネーション ミライエ2026",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=90&ef1=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "引越し・住まい",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/1/5"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "高齢者・介護",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/5/19/87/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "オンライン申請",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/site/onlineshinsei"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "トピックスの一覧",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/soshiki/list6-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市民活動推進研修会 開催のお知らせ",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/22406.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "つるが・わかさのお宝発見ワークショップ",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/27031.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度「敦賀市障がい者スポーツ交流会」の開催について",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/2532.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "精神疾患に関する講演会を開催します",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/25619.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "第45回敦賀マラソン実施に伴うコミュニティバス、ぐるっと敦賀周遊バスの運休・運行経路変更について",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/site/bus/9491.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "「小さな親切」運動 敦賀支部セミナー2026を開催します",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/26324.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【令和8年度】旧敦賀港線(廃線敷)ワークショップについて",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/26497.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "生命のメッセージ展in敦賀市役所2026の開催について",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/24449.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "不登校支援のつどい",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/26355.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "つるがデジタルスタンプラリーを開催します!",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/site/bus/1284.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀市 コミュニティバス",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/site/bus"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと納税",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/site/furusatonouzei"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "不正アクセスに伴うトンボメールの配信停止について",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/27189.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "重要なお知らせの一覧",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/soshiki/list3-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "重要なお知らせのRSS",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/rss/10/list3.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "東郷コミュニティセンター主催教室 貯筋体操教室",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/27147.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ほほえみつうしん(子育て総合支援センター・粟野子育て支援センター)",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/1685.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入札・契約情報",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/4275.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "10月 親子で遊ぼう「らんらん」(子育て総合支援センター)",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/site/kosodateshien-center/27099.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新着情報の一覧",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/soshiki/list1-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新着情報のRSS",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/rss/10/list1.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【男女共同参画推進講座】アサーティブコミュニケーション講座",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/25874.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市民活動団体からのお知らせ(れでぃ・がん)",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/21991.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "こどもの国 親子なかよしひろば 11月",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/site/tsurugakodomonokuni/27027.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "2026年つるが環境フェアが開催されます!",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/26581.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベントの一覧",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/soshiki/list5-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベントのRSS",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/rss/10/list5.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベントのカレンダー",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/calendar/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀マラソン大会",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/site/tsurugamarathon/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報つるが 令和8年11月号",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=89&ef1=3"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報つるがを見る",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/life/7/39/200/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市長の部屋",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/site/mayor"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀市議会",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/site/gikai"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀観光案内サイト",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=33&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市立敦賀病院",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=12&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと夢市場",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=9&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "洪水ハザードマップ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=25&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀きらめき温泉リラ・ポート",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=48&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦とんあるこ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=23&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀美方消防組合",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=47&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "人道の港 敦賀ムゼウム",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=41&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀市立看護大学",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=10&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "みなとつるが山車会館",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=45&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "キッズパークつるが",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=35&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀赤レンガ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=39&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀市民文化センター",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=8&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "北前船寄港地・船主集落",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=42&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "TSURUGA NET MALL",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=28&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀市こどもの国",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=36&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ちえなみき",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=26&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀市立博物館",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=46&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "きらめきみなと館",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=38&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "マイナンバーカードの受け取り予約はインターネットで!",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=24&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "つるが空き家インフォ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=20&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀子育て支援情報サイト",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=34&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀鉄道資料館",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=40&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀駅周辺市営駐車場",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=29&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀海上保安部",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=19&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "オルパーク",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=11&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "KURAS TSURUGA つるが移住サポートサイト",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=66&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀市文化協会",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=7&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "中池見人と自然のふれあいの里",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=43&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "TSURUGA SHARE CYCLE",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=37&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "港都つるが観光協会",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=32&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀市消費生活センター",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=27&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "TSURUGA POLT SQUARE otta",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=30&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀市立図書館",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=44&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "クチコミつるが",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=22&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀市パートナーシップ宣誓制度",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=21&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀市シルバー人材センター",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=31&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "敦賀市子育てサポートブック",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=18&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "7つのすすめ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=6&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "お問い合わせ",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/soshiki"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "敦賀市へのアクセス",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/1322.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "公式ソーシャルメディア",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/4294.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "サイトご利用の案内",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/17051.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "アクセシビリティ・個人情報・著作権など",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/page/17057.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "text",
+   "url": "https://www.city.tsuruga.lg.jp/sitemap.html"
+  }
+ ],
+ "needs_review": [],
+ "outcome": "hub_selected",
+ "requests": [
+  {
+   "bytes": 27210,
+   "elapsed_ms": 1201,
+   "error_class": "http_404",
+   "final_url": "https://www.city.tsuruga.lg.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.city.tsuruga.lg.jp/robots.txt"
+  },
+  {
+   "bytes": 73070,
+   "elapsed_ms": 273,
+   "error_class": "",
+   "final_url": "https://www.city.tsuruga.lg.jp/",
+   "status": 200,
+   "url": "https://www.city.tsuruga.lg.jp/"
+  },
+  {
+   "bytes": 27210,
+   "elapsed_ms": 188,
+   "error_class": "http_404",
+   "final_url": "https://www.city.tsuruga.lg.jp/sitemap.xml",
+   "status": 404,
+   "url": "https://www.city.tsuruga.lg.jp/sitemap.xml"
+  },
+  {
+   "bytes": 32416,
+   "elapsed_ms": 192,
+   "error_class": "",
+   "final_url": "https://www.city.tsuruga.lg.jp/life/3/",
+   "status": 200,
+   "url": "https://www.city.tsuruga.lg.jp/life/3/"
+  },
+  {
+   "bytes": 61298,
+   "elapsed_ms": 223,
+   "error_class": "",
+   "final_url": "https://www.city.tsuruga.lg.jp/sitemap.html",
+   "status": 200,
+   "url": "https://www.city.tsuruga.lg.jp/sitemap.html"
+  },
+  {
+   "bytes": 36641,
+   "elapsed_ms": 159,
+   "error_class": "",
+   "final_url": "https://www.city.tsuruga.lg.jp/life/1/",
+   "status": 200,
+   "url": "https://www.city.tsuruga.lg.jp/life/1/"
+  },
+  {
+   "bytes": 53957,
+   "elapsed_ms": 1539,
+   "error_class": "",
+   "final_url": "https://www.tsuruga-bunka.jp",
+   "status": 200,
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=8&ef1=2"
+  },
+  {
+   "bytes": 46030,
+   "elapsed_ms": 1720,
+   "error_class": "",
+   "final_url": "https://ton-bunkyo.org",
+   "status": 200,
+   "url": "https://www.city.tsuruga.lg.jp/adv/ba.php?id=7&ef1=2"
+  },
+  {
+   "bytes": 31944,
+   "elapsed_ms": 192,
+   "error_class": "",
+   "final_url": "https://www.city.tsuruga.lg.jp/life/7/36/173/",
+   "status": 200,
+   "url": "https://www.city.tsuruga.lg.jp/life/7/36/173/"
+  },
+  {
+   "bytes": 36798,
+   "elapsed_ms": 199,
+   "error_class": "",
+   "final_url": "https://www.city.tsuruga.lg.jp/life/3/11/",
+   "status": 200,
+   "url": "https://www.city.tsuruga.lg.jp/life/3/11/"
+  },
+  {
+   "bytes": 34803,
+   "elapsed_ms": 195,
+   "error_class": "",
+   "final_url": "https://www.city.tsuruga.lg.jp/soshiki/91/",
+   "status": 200,
+   "url": "https://www.city.tsuruga.lg.jp/soshiki/91/"
+  },
+  {
+   "bytes": 42013,
+   "elapsed_ms": 193,
+   "error_class": "",
+   "final_url": "https://www.city.tsuruga.lg.jp/page/1491.html",
+   "status": 200,
+   "url": "https://www.city.tsuruga.lg.jp/page/1491.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 6274,
+  "finished_at": "2026-10-15T02:48:56Z",
+  "request_count": 12,
+  "route": "actions_direct_v5_fukui",
+  "started_at": "2026-10-15T02:48:43Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "high",
+   "evidence": [
+    "url:8件 例 https://www.city.tsuruga.lg.jp/life/4/15"
+   ],
+   "family": "url_pattern:life_numeric",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:life_numeric": 11,
+    "url_pattern:site_numeric": 9
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 161,
+   "image_count": 126,
+   "needs_headless": false,
+   "noscript_text_length": 64,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 33,
+   "text_length": 1802
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "http_404",
+     "kind": "",
+     "source": "default_path",
+     "status": 404,
+     "url": "https://www.city.tsuruga.lg.jp/sitemap.xml"
+    }
+   ],
+   "found": false,
+   "kind": "",
+   "source": "",
+   "url": ""
+  },
+  "top": {
+   "elapsed_ms": 273,
+   "error_class": "",
+   "final_url": "https://www.city.tsuruga.lg.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}
