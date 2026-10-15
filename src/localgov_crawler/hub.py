@@ -60,6 +60,10 @@ PURE_BONUS = 4
 PROCEDURE = re.compile(r"申請|届出|手続|申込|様式|ダウンロード")
 PROCEDURE_PENALTY = 5
 
+# 施設名リンクとして数えないリンク文言: お知らせ記事・工事・入札・休館などの題名(安堵町: 体育館の雨漏修繕工事、広場開放のお知らせ)
+FACILITY_LINK_NOISE = re.compile(r"お知らせ|工事|修繕|入札|休館|閉館|利用停止|延期|令和\d|第\d+回|募集|開催|結果|について|イベント|大会")
+FACILITY_LINK_MAX_LEN = 30
+
 URL_HINTS = re.compile(r"sport|taiiku|undou|gym|shisetsu|park|kouen|ground", re.I)
 FACILITY_NAME = re.compile(rf"体育館|{GROUND}|運動場|運動公園|野球場|テニスコート|プール|スポーツセンター|多目的広場|武道館|競技場|スポーツ公園|スポーツ広場|サッカー場")
 # 施設名リンクの根拠なしでも一覧ページとみなしてよい強い語
@@ -189,6 +193,8 @@ def page_features(soup: BeautifulSoup, links: list[Link]) -> tuple[int, str, lis
         t = norm_text(l.text)
         if not (l.same_site and FACILITY_NAME.search(t)):
             continue
+        if len(t) > FACILITY_LINK_MAX_LEN or FACILITY_LINK_NOISE.search(t):
+            continue  # お知らせ記事などの題名は、施設名リンクに数えない
         key = re.sub(r"\s+", "", t)
         if key in seen_text or l.url in seen_url:  # 同じ施設へのリンクを2回数えない(空白の違い・同じURL)
             continue

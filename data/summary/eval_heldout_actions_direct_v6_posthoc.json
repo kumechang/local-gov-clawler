@@ -1,0 +1,12 @@
+{
+ "none_rows": 0,
+ "none_selected": 0,
+ "reach_rate": 0.7,
+ "reached": 7,
+ "selected": 3,
+ "selected_correct": 3,
+ "selected_correct_rate": 0.3,
+ "selected_precision": 1.0,
+ "selected_precision_all": 1.0,
+ "truth_count": 10
+}

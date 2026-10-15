@@ -173,3 +173,19 @@ def test_procedure_pages_are_not_hubs_but_categories_still_explored():
     assert hub.score_text("スポーツ施設", "", "nav")[0] >= hub.MIN_SCORE
     assert hub.score_text("くらし・手続き", "", "nav")[0] >= hub.FETCH_MIN
     assert hub.score_text("体育施設利用案内", "", "nav")[0] >= hub.MIN_SCORE
+
+
+def test_news_titles_are_not_counted_as_facility_links():
+    """安堵町型: 「体育館の雨漏修繕工事」「広場開放のお知らせ」などの題名を施設名リンクに数えていた。"""
+    html = ('<html><body><nav>'
+            '<a href="/n1">安堵中央公園体育館 雨漏修繕工事および空調設備工事のため休館します</a>'
+            '<a href="/n2">安堵中央公園多目的広場開放のお知らせ</a>'
+            '<a href="/n3">【条件付き一般競争入札の結果】体育館空調</a>'
+            '</nav><main><a href="/f1">安堵中央公園体育館</a><a href="/f2">安堵中央公園多目的広場</a></main></body></html>')
+    soup = parse_html(html)
+    n, _, samples = hub.page_features(soup, extract_links(soup, "https://x.jp/", "x.jp"))
+    assert n == 2 and all("お知らせ" not in x and "工事" not in x for x in samples)
+    # 施設の案内ページへのリンク(「〜のご案内」)は施設名リンクとして数える
+    html2 = '<html><body><a href="/a">下市中央公園総合体育館のご案内</a><a href="/b">奈良県下市健民運動場のご案内</a></body></html>'
+    soup2 = parse_html(html2)
+    assert hub.page_features(soup2, extract_links(soup2, "https://x.jp/", "x.jp"))[0] == 2
