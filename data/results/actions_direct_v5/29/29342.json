@@ -1,0 +1,1066 @@
+{
+ "ai_needed": false,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 1,
+     "facility_link_count": 2,
+     "facility_samples": [
+      "平群町総合スポーツセンター[nav]",
+      "テニスコート・グラウンドなど[nav]"
+     ],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ - 平群町ホームページ スポーツ",
+     "reasons": [
+      "text:スポーツ",
+      "sports_pure",
+      "facility_links:2"
+     ],
+     "region": "other",
+     "score": 10,
+     "source": "nav",
+     "text": "スポーツ情報",
+     "url": "https://www.town.heguri.nara.jp/life/1/1/2/",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 1,
+     "facility_samples": [
+      "平群町総合スポーツセンター[nav]"
+     ],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ施設 - 平群町ホームページ スポーツ施設",
+     "reasons": [
+      "text:スポーツ施設",
+      "region_nav",
+      "sports_pure",
+      "facility_links:1",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 19,
+     "source": "depth1_link",
+     "text": "スポーツ施設",
+     "url": "https://www.town.heguri.nara.jp/life/4/21/69/",
+     "viable": false
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "地図でさがす - 平群町ホームページ 地図でさがす",
+     "reasons": [
+      "text:スポーツ施設",
+      "region_nav",
+      "sports_pure"
+     ],
+     "region": "nav",
+     "score": 15,
+     "source": "depth1_link",
+     "text": "スポーツ施設",
+     "url": "https://www.town.heguri.nara.jp/map/list/list69.html",
+     "viable": false
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "sports_other",
+     "page_title": "テニスコート・グラウンドなど - 平群町ホームページ テニスコート・グラウンドなど",
+     "reasons": [
+      "text:グラウンド|グランド(?=ゴルフ|$|[・\\s、/（(]|施設|一覧|案内|情報|使用|利用|の)|運動場",
+      "region_nav",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 9,
+     "source": "depth1_link",
+     "text": "テニスコート・グラウンドなど",
+     "url": "https://www.town.heguri.nara.jp/soshiki/14/1726.html",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "broad",
+     "page_title": "サイトマップ - 平群町ホームページ サイトマップ",
+     "reasons": [
+      "sitemap_page",
+      "region_nav"
+     ],
+     "region": "header",
+     "score": 4,
+     "source": "nav",
+     "text": "サイトマップ",
+     "url": "https://www.town.heguri.nara.jp/sitemap.html",
+     "viable": false
+    }
+   ],
+   "decision": "hub_selected",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "quality": "specific",
+   "selected": {
+    "depth": 1,
+    "facility_link_count": 2,
+    "facility_samples": [
+     "平群町総合スポーツセンター[nav]",
+     "テニスコート・グラウンドなど[nav]"
+    ],
+    "fetched": true,
+    "kind": "sports_pure",
+    "page_title": "スポーツ - 平群町ホームページ スポーツ",
+    "reasons": [
+     "text:スポーツ",
+     "sports_pure",
+     "facility_links:2"
+    ],
+    "region": "other",
+    "score": 10,
+    "source": "nav",
+    "text": "スポーツ情報",
+    "url": "https://www.town.heguri.nara.jp/life/1/1/2/",
+    "viable": true
+   }
+  }
+ ],
+ "menu_labels": [
+  "くらし",
+  "子育て",
+  "健康・福祉",
+  "観光",
+  "町政",
+  "施設案内",
+  "公共施設",
+  "よくある質問",
+  "申請"
+ ],
+ "municipality": {
+  "code": "29342",
+  "full_name": "平群町",
+  "kind": "town",
+  "name": "平群町",
+  "official_url": "https://www.town.heguri.nara.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ホーム",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ご利用ガイド",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/site/userguide/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "Foreign language",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/site/userguide/list39-72.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらしの情報",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/life/1/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "しごとの情報",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/life/2/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光情報",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/life/3/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "町政情報",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/life/4/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "平群で子育て",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/adv/ba.php?id=86"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "観光情報はこちら(寅ポスト)",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/adv/ba.php?id=77"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと納税はこちら",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/adv/ba.php?id=75"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ごみカレンダー",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/8/10888.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "総合文化センター",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/site/kouminkan/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "夜間診療",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/10/4020.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "デマンドタクシー",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/6/6452.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ふるさと納税",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/site/furusato/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "平群町防災計画",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/6/1189.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "子育てPR",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/18/12728.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "組織でさがす",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "カレンダーで さがす",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/calendar/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "地図でさがす",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/map/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/5/4914.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "妊娠・子育て",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/5/4778.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "引越し・住まい",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/5/4780.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "税金",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/5/4787.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "保険・医療",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/5/4875.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "健康・福祉",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/5/4876.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おくやみ",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/site/okuyami/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "平群町のプロモーションサイト",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/adv/ba.php?id=99"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "パブリックコメント",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/adv/ba.php?id=93"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報へぐり【カラー版】",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/adv/ba.php?id=101"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "(200×250)町政へのご意見",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/adv/ba.php?id=90"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "(200×250)ふるさと納税v2",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/adv/ba.php?id=98"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "(200×250)空き家バンク",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/adv/ba.php?id=7"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "オータムフェスタへぐり2026~秋の収穫祭&文化祭~のご案内",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/16/16168.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ポイ捨て等監視員ときれいな平群町を守ろう!",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/8/18582.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "生駒市緊急速報メール(エリアメール)の訓練配信",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/6/18574.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "「#みんとめ」共同宣言in平群",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/8/18362.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさとへぐりクリーンアップ作戦を実施します",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/6/18417.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【要申込】「わくわくさんでおなじみくぼたまさと親子工作教室」を開催します!",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/18/18133.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "総合文化センターから自習室のお知らせ",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/site/kouminkan/11820.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【総合文化センター】イベント情報",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/site/kouminkan/7179.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "学童保育所で長期学校休業日の早朝保育を開始します!",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/19/18450.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報 へぐり(デジタル版)",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/18/1904.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新着情報の一覧",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/list1-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新着情報のRSS",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/rss/10/list1.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "第32回なら・ヒューマンフェスティバル開催のご案内",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/5/18378.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "「二十歳のつどい」で宣誓してみませんか?",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/site/kyouiku/7149.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "任期付職員(看護師)採用試験のご案内",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/6/18048.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "平群町災害時生活用水協力井戸の登録を募集します",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/6/14181.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【広報紙】あつまれ!へぐりっこの掲載写真を募集します!",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/18/17501.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "公民館教室",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/site/kouminkan/1732.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベント・募集の一覧",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/list5-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベント・募集のRSS",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/rss/10/list5.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "平群町入札参加資格審査申請と変更届のご案内",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/5/18135.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入札情報の一覧",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/list7-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入札情報のRSS",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/rss/10/list7.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ハムスターズファミリー「敬老の日のプレゼントづくり」",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/10/18526.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "一覧",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/list6-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "RSS",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/rss/10/list6.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町長画像",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/site/mayor/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "議会画像",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/site/gikai/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "議会だより",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/site/gikai/1858.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "教育委員会画像",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/site/kyouiku/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町で受けられる 補助金・助成金",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/18/9918.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "申請書ダウンロード",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/life/sub/6/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "スポーツ情報",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/life/1/1/2/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ごみ・リサイクル",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/life/1/9/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ご意見箱",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/site/tyousei/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "よくある質問",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/life/sub/1/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "パブリックコメント",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/life/4/19/60/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "各課のご案内",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "公共施設案内",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/map/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "採用情報",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/life/2/13/42/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "予算・決算・財政状況",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/life/4/17/52/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入札・契約情報",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/life/2/14/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "情報公開",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/life/4/17/51/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町プロフィール",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/life/4/17/73/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "観光情報",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/life/3/15/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "平群町ボランティア団体一覧表",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/adv/ba.php?id=79"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "募集中3",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/adv/ba.php?id=42"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "募集中4",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/adv/ba.php?id=43"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "リンク・著作権・免責事項",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/site/userguide/3908.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "個人情報保護",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/site/userguide/3906.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "アクセシビリティ",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/site/userguide/3909.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "広告バナーについて",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/18/1053.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "平群町はSGDsに取り組んでいます",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/soshiki/18/4822.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "町役場へのアクセス",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/5/4224.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "メールでのお問い合わせ",
+   "text_kind": "text",
+   "url": "https://www.town.heguri.nara.jp/soshiki/18/13761.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "おすすめ1",
+   "text_kind": "img_alt",
+   "url": "http://kanko.town.heguri.nara.jp/walk/categories/news_topics/"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "おすすめ2",
+   "text_kind": "img_alt",
+   "url": "https://www.town.heguri.nara.jp/site/furusato/"
+  }
+ ],
+ "needs_review": [],
+ "outcome": "hub_selected",
+ "requests": [
+  {
+   "bytes": 75,
+   "elapsed_ms": 880,
+   "error_class": "",
+   "final_url": "https://www.town.heguri.nara.jp/robots.txt",
+   "status": 200,
+   "url": "https://www.town.heguri.nara.jp/robots.txt"
+  },
+  {
+   "bytes": 35532,
+   "elapsed_ms": 220,
+   "error_class": "",
+   "final_url": "https://www.town.heguri.nara.jp/",
+   "status": 200,
+   "url": "https://www.town.heguri.nara.jp/"
+  },
+  {
+   "bytes": 35532,
+   "elapsed_ms": 225,
+   "error_class": "",
+   "final_url": "https://www.town.heguri.nara.jp/",
+   "status": 200,
+   "url": "https://www.town.heguri.nara.jp/"
+  },
+  {
+   "bytes": 15153,
+   "elapsed_ms": 194,
+   "error_class": "http_404",
+   "final_url": "https://www.town.heguri.nara.jp/sitemap.xml",
+   "status": 404,
+   "url": "https://www.town.heguri.nara.jp/sitemap.xml"
+  },
+  {
+   "bytes": 17802,
+   "elapsed_ms": 195,
+   "error_class": "",
+   "final_url": "https://www.town.heguri.nara.jp/life/1/1/2/",
+   "status": 200,
+   "url": "https://www.town.heguri.nara.jp/life/1/1/2/"
+  },
+  {
+   "bytes": 30310,
+   "elapsed_ms": 219,
+   "error_class": "",
+   "final_url": "https://www.town.heguri.nara.jp/sitemap.html",
+   "status": 200,
+   "url": "https://www.town.heguri.nara.jp/sitemap.html"
+  },
+  {
+   "bytes": 25964,
+   "elapsed_ms": 206,
+   "error_class": "",
+   "final_url": "https://www.town.heguri.nara.jp/life/1/",
+   "status": 200,
+   "url": "https://www.town.heguri.nara.jp/life/1/"
+  },
+  {
+   "bytes": 27185,
+   "elapsed_ms": 220,
+   "error_class": "",
+   "final_url": "https://www.town.heguri.nara.jp/site/kouminkan/",
+   "status": 200,
+   "url": "https://www.town.heguri.nara.jp/site/kouminkan/"
+  },
+  {
+   "bytes": 16228,
+   "elapsed_ms": 194,
+   "error_class": "",
+   "final_url": "https://www.town.heguri.nara.jp/map/",
+   "status": 200,
+   "url": "https://www.town.heguri.nara.jp/map/"
+  },
+  {
+   "bytes": 16275,
+   "elapsed_ms": 195,
+   "error_class": "",
+   "final_url": "https://www.town.heguri.nara.jp/life/4/21/69/",
+   "status": 200,
+   "url": "https://www.town.heguri.nara.jp/life/4/21/69/"
+  },
+  {
+   "bytes": 17555,
+   "elapsed_ms": 201,
+   "error_class": "",
+   "final_url": "https://www.town.heguri.nara.jp/map/list/list69.html",
+   "status": 200,
+   "url": "https://www.town.heguri.nara.jp/map/list/list69.html"
+  },
+  {
+   "bytes": 20670,
+   "elapsed_ms": 204,
+   "error_class": "",
+   "final_url": "https://www.town.heguri.nara.jp/soshiki/14/1726.html",
+   "status": 200,
+   "url": "https://www.town.heguri.nara.jp/soshiki/14/1726.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 3153,
+  "finished_at": "2026-10-15T02:49:36Z",
+  "request_count": 12,
+  "route": "actions_direct_v5",
+  "started_at": "2026-10-15T02:49:25Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "high",
+   "evidence": [
+    "url:9件 例 https://www.town.heguri.nara.jp/life/1/1/2/"
+   ],
+   "family": "url_pattern:life_numeric",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:life_numeric": 11,
+    "url_pattern:site_numeric": 10,
+    "url_pattern:soshiki_numeric": 10
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 111,
+   "image_count": 23,
+   "needs_headless": false,
+   "noscript_text_length": 64,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 22,
+   "text_length": 1733
+  },
+  "robots": {
+   "available": true,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 1,
+   "error_class": "",
+   "sitemaps": [
+    "https://www.town.heguri.nara.jp/"
+   ],
+   "status": 200,
+   "text": "User-Agent: *\r\nDisallow: /web/\r\n\r\nSitemap: https://www.town.heguri.nara.jp/",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "invalid",
+     "source": "robots",
+     "status": 200,
+     "url": "https://www.town.heguri.nara.jp/"
+    },
+    {
+     "error_class": "http_404",
+     "kind": "",
+     "source": "default_path",
+     "status": 404,
+     "url": "https://www.town.heguri.nara.jp/sitemap.xml"
+    }
+   ],
+   "found": false,
+   "kind": "",
+   "source": "",
+   "url": ""
+  },
+  "top": {
+   "elapsed_ms": 220,
+   "error_class": "",
+   "final_url": "https://www.town.heguri.nara.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}
