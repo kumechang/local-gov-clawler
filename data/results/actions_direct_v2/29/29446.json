@@ -1,0 +1,200 @@
+{
+ "ai_needed": true,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [],
+   "decision": "hub_not_found",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "selected": null
+  }
+ ],
+ "menu_labels": [
+  "観光",
+  "行政情報"
+ ],
+ "municipality": {
+  "code": "29446",
+  "full_name": "天川村",
+  "kind": "village",
+  "name": "天川村",
+  "official_url": "https://www.vill.tenkawa.nara.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "天川村役場 行政情報ページへ",
+   "text_kind": "text",
+   "url": "https://www.vill.tenkawa.nara.jp/office/"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "観光ページへ",
+   "text_kind": "text",
+   "url": "https://www.vill.tenkawa.nara.jp/tourism/"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "修験道体験 特設ページへ",
+   "text_kind": "text",
+   "url": "https://www.vill.tenkawa.nara.jp/ds/"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "天川村定住促進サイト",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.tenkawa.nara.jp/newlife/"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "天川村ふるさと納税のご案内",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.tenkawa.nara.jp/office/furusato"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "お問い合わせ",
+   "text_kind": "text",
+   "url": "https://www.vill.tenkawa.nara.jp/office/contact"
+  }
+ ],
+ "needs_review": [
+  "hub_not_found"
+ ],
+ "outcome": "hub_not_found",
+ "requests": [
+  {
+   "bytes": 125,
+   "elapsed_ms": 809,
+   "error_class": "",
+   "final_url": "https://www.vill.tenkawa.nara.jp/robots.txt",
+   "status": 200,
+   "url": "https://www.vill.tenkawa.nara.jp/robots.txt"
+  },
+  {
+   "bytes": 13424,
+   "elapsed_ms": 226,
+   "error_class": "",
+   "final_url": "https://www.vill.tenkawa.nara.jp/",
+   "status": 200,
+   "url": "https://www.vill.tenkawa.nara.jp/"
+  },
+  {
+   "bytes": 308,
+   "elapsed_ms": 154,
+   "error_class": "",
+   "final_url": "https://www.vill.tenkawa.nara.jp/wp-sitemap.xml",
+   "status": 200,
+   "url": "https://www.vill.tenkawa.nara.jp/wp-sitemap.xml"
+  },
+  {
+   "bytes": 366,
+   "elapsed_ms": 153,
+   "error_class": "",
+   "final_url": "https://www.vill.tenkawa.nara.jp/wp-sitemap-posts-page-1.xml",
+   "status": 200,
+   "url": "https://www.vill.tenkawa.nara.jp/wp-sitemap-posts-page-1.xml"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 1342,
+  "finished_at": "2026-10-15T00:01:14Z",
+  "request_count": 4,
+  "route": "actions_direct_v2",
+  "started_at": "2026-10-15T00:01:11Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "medium",
+   "evidence": [
+    "html:/wp-content/"
+   ],
+   "family": "wordpress",
+   "provenance": "auto",
+   "scores": {
+    "wordpress": 6
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 20,
+   "image_count": 23,
+   "needs_headless": false,
+   "noscript_text_length": 0,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 6,
+   "text_length": 802
+  },
+  "robots": {
+   "available": true,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 1,
+   "error_class": "",
+   "sitemaps": [
+    "https://www.vill.tenkawa.nara.jp/wp-sitemap.xml"
+   ],
+   "status": 200,
+   "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://www.vill.tenkawa.nara.jp/wp-sitemap.xml\n",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "index",
+     "source": "robots",
+     "status": 200,
+     "url": "https://www.vill.tenkawa.nara.jp/wp-sitemap.xml"
+    }
+   ],
+   "children_fetched": 1,
+   "children_total": 1,
+   "found": true,
+   "keyword_urls": [],
+   "kind": "index",
+   "lastmod_count": 1,
+   "lastmod_max": "2024-04-10",
+   "lastmod_min": "2024-04-10",
+   "lastmod_years": {
+    "2024": 1
+   },
+   "numeric_id_url_ratio": 0.0,
+   "source": "robots",
+   "top_level_paths": {
+    "/": 1,
+    "/sample-page": 1
+   },
+   "truncated": false,
+   "url": "https://www.vill.tenkawa.nara.jp/wp-sitemap.xml",
+   "url_count": 2
+  },
+  "top": {
+   "elapsed_ms": 226,
+   "error_class": "",
+   "final_url": "https://www.vill.tenkawa.nara.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

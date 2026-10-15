@@ -1,0 +1,441 @@
+{
+ "ai_needed": true,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "fetched": true,
+     "page_title": "サイトマップ/野迫川村 サイトマップ",
+     "reasons": [
+      "sitemap_page",
+      "region_nav"
+     ],
+     "region": "header",
+     "score": 4,
+     "source": "nav",
+     "text": "サイトマップ",
+     "url": "https://www.vill.nosegawa.nara.jp/top/sitemap.html",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "fetched": true,
+     "page_title": "くらしの情報/野迫川村 くらしの情報",
+     "reasons": [
+      "broad_category",
+      "region_nav"
+     ],
+     "region": "nav",
+     "score": 3,
+     "source": "nav",
+     "text": "くらしの情報",
+     "url": "https://www.vill.nosegawa.nara.jp/top/life/index.html",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "fetched": true,
+     "page_title": "観光・文化/野迫川村 観光・文化",
+     "reasons": [
+      "broad_category",
+      "region_nav"
+     ],
+     "region": "nav",
+     "score": 3,
+     "source": "nav",
+     "text": "観光・文化",
+     "url": "https://www.vill.nosegawa.nara.jp/top/tourism/index.html",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "fetched": true,
+     "page_title": "教育/野迫川村 教育",
+     "reasons": [
+      "broad_category",
+      "region_nav"
+     ],
+     "region": "nav",
+     "score": 3,
+     "source": "nav",
+     "text": "教育",
+     "url": "https://www.vill.nosegawa.nara.jp/top/education/index.html",
+     "viable": false
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "fetched": false,
+     "page_title": "",
+     "reasons": [
+      "text:公共施設|施設案内|施設一覧|施設情報"
+     ],
+     "region": "other",
+     "score": 2,
+     "source": "depth1_link",
+     "text": "野迫川村公共施設等総合管理計画",
+     "url": "https://www.vill.nosegawa.nara.jp/top/business/244.html",
+     "viable": false
+    }
+   ],
+   "decision": "hub_not_found",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "selected": null
+  }
+ ],
+ "menu_labels": [
+  "くらし",
+  "観光",
+  "事業者",
+  "村政"
+ ],
+ "municipality": {
+  "code": "29447",
+  "full_name": "野迫川村",
+  "kind": "village",
+  "name": "野迫川村",
+  "official_url": "https://www.vill.nosegawa.nara.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "スマートフォン版を表示",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.nosegawa.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "野迫川村 Nosegawa Village",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.nosegawa.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ライブカメラ",
+   "text_kind": "text",
+   "url": "https://www.vill.nosegawa.nara.jp/398.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "道路状況",
+   "text_kind": "text",
+   "url": "https://www.vill.nosegawa.nara.jp/top/soshiki/kesetsu/business/399.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "text",
+   "url": "https://www.vill.nosegawa.nara.jp/top/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "役場のご案内",
+   "text_kind": "text",
+   "url": "https://www.vill.nosegawa.nara.jp/top/village_government/office_info/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ホーム",
+   "text_kind": "text",
+   "url": "https://www.vill.nosegawa.nara.jp/top/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらしの情報",
+   "text_kind": "text",
+   "url": "https://www.vill.nosegawa.nara.jp/top/life/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光・文化",
+   "text_kind": "text",
+   "url": "https://www.vill.nosegawa.nara.jp/top/tourism/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "教育",
+   "text_kind": "text",
+   "url": "https://www.vill.nosegawa.nara.jp/top/education/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "事業者向け",
+   "text_kind": "text",
+   "url": "https://www.vill.nosegawa.nara.jp/top/business/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "村政情報",
+   "text_kind": "text",
+   "url": "https://www.vill.nosegawa.nara.jp/top/village_government/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光サイト",
+   "text_kind": "text",
+   "url": "https://www.vill.nosegawa.nara.jp/tourist_guide/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "PC版を表示",
+   "text_kind": "text",
+   "url": "https://www.vill.nosegawa.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらし・行政サイト くらしや手続きに関する情報、 村の行政情報をお探しの方はこちら",
+   "text_kind": "text",
+   "url": "https://www.vill.nosegawa.nara.jp/top/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "企業の方へ 入札情報や企業支援に関する情報をお探しの方はこちら",
+   "text_kind": "text",
+   "url": "https://www.vill.nosegawa.nara.jp/top/business/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光サイト 野迫川村の観光スポット 特産品などをお探しの方はこちら",
+   "text_kind": "text",
+   "url": "https://www.vill.nosegawa.nara.jp/tourist_guide/index.html"
+  }
+ ],
+ "needs_review": [
+  "hub_not_found"
+ ],
+ "outcome": "hub_not_found",
+ "requests": [
+  {
+   "bytes": 37922,
+   "elapsed_ms": 1065,
+   "error_class": "http_404",
+   "final_url": "https://www.vill.nosegawa.nara.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.vill.nosegawa.nara.jp/robots.txt"
+  },
+  {
+   "bytes": 27000,
+   "elapsed_ms": 127,
+   "error_class": "",
+   "final_url": "https://www.vill.nosegawa.nara.jp/",
+   "status": 200,
+   "url": "https://www.vill.nosegawa.nara.jp/"
+  },
+  {
+   "bytes": 23673,
+   "elapsed_ms": 226,
+   "error_class": "",
+   "final_url": "https://www.vill.nosegawa.nara.jp/sitemap.xml",
+   "status": 200,
+   "url": "https://www.vill.nosegawa.nara.jp/sitemap.xml"
+  },
+  {
+   "bytes": 652,
+   "elapsed_ms": 210,
+   "error_class": "",
+   "final_url": "https://www.vill.nosegawa.nara.jp/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.vill.nosegawa.nara.jp/sitemap.dir.xml"
+  },
+  {
+   "bytes": 858,
+   "elapsed_ms": 210,
+   "error_class": "",
+   "final_url": "https://www.vill.nosegawa.nara.jp/top/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.vill.nosegawa.nara.jp/top/sitemap.dir.xml"
+  },
+  {
+   "bytes": 3168,
+   "elapsed_ms": 212,
+   "error_class": "",
+   "final_url": "https://www.vill.nosegawa.nara.jp/top/business/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.vill.nosegawa.nara.jp/top/business/sitemap.dir.xml"
+  },
+  {
+   "bytes": 880,
+   "elapsed_ms": 443,
+   "error_class": "",
+   "final_url": "https://www.vill.nosegawa.nara.jp/top/education/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.vill.nosegawa.nara.jp/top/education/sitemap.dir.xml"
+  },
+  {
+   "bytes": 718,
+   "elapsed_ms": 213,
+   "error_class": "",
+   "final_url": "https://www.vill.nosegawa.nara.jp/top/education/education/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.vill.nosegawa.nara.jp/top/education/education/sitemap.dir.xml"
+  },
+  {
+   "bytes": 75388,
+   "elapsed_ms": 275,
+   "error_class": "",
+   "final_url": "https://www.vill.nosegawa.nara.jp/top/sitemap.html",
+   "status": 200,
+   "url": "https://www.vill.nosegawa.nara.jp/top/sitemap.html"
+  },
+  {
+   "bytes": 39529,
+   "elapsed_ms": 267,
+   "error_class": "",
+   "final_url": "https://www.vill.nosegawa.nara.jp/top/life/index.html",
+   "status": 200,
+   "url": "https://www.vill.nosegawa.nara.jp/top/life/index.html"
+  },
+  {
+   "bytes": 58499,
+   "elapsed_ms": 280,
+   "error_class": "",
+   "final_url": "https://www.vill.nosegawa.nara.jp/top/tourism/index.html",
+   "status": 200,
+   "url": "https://www.vill.nosegawa.nara.jp/top/tourism/index.html"
+  },
+  {
+   "bytes": 42616,
+   "elapsed_ms": 244,
+   "error_class": "",
+   "final_url": "https://www.vill.nosegawa.nara.jp/top/education/index.html",
+   "status": 200,
+   "url": "https://www.vill.nosegawa.nara.jp/top/education/index.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 3772,
+  "finished_at": "2026-10-15T00:01:17Z",
+  "request_count": 12,
+  "route": "actions_direct_v2",
+  "started_at": "2026-10-15T00:01:06Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "medium",
+   "evidence": [
+    "url:1件 例 https://www.vill.nosegawa.nara.jp/top/soshiki/kesetsu/business/399.html"
+   ],
+   "family": "url_pattern:soshiki_named",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:soshiki_named": 6
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 37,
+   "image_count": 19,
+   "needs_headless": false,
+   "noscript_text_length": 0,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 16,
+   "text_length": 359
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "index",
+     "source": "default_path",
+     "status": 200,
+     "url": "https://www.vill.nosegawa.nara.jp/sitemap.xml"
+    }
+   ],
+   "children_fetched": 5,
+   "children_total": 142,
+   "found": true,
+   "keyword_urls": [],
+   "kind": "index",
+   "lastmod_count": 30,
+   "lastmod_max": "2026-06-25",
+   "lastmod_min": "2018-11-16",
+   "lastmod_years": {
+    "2018": 4,
+    "2019": 3,
+    "2020": 3,
+    "2022": 3,
+    "2023": 3,
+    "2024": 2,
+    "2025": 2,
+    "2026": 10
+   },
+   "numeric_id_url_ratio": 0.7,
+   "source": "default_path",
+   "top_level_paths": {
+    "/398.html": 1,
+    "/index.html": 1,
+    "/news_list.html": 1,
+    "/top": 27
+   },
+   "truncated": true,
+   "url": "https://www.vill.nosegawa.nara.jp/sitemap.xml",
+   "url_count": 30
+  },
+  "top": {
+   "elapsed_ms": 127,
+   "error_class": "",
+   "final_url": "https://www.vill.nosegawa.nara.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

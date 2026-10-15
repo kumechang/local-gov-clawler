@@ -1,0 +1,1976 @@
+{
+ "ai_needed": false,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 1,
+     "facility_link_count": 7,
+     "fetched": true,
+     "page_title": "スポーツ施設 - 奈良市ホームページ スポーツ施設",
+     "reasons": [
+      "text:スポーツ施設",
+      "facility_links:7",
+      "title_match"
+     ],
+     "region": "other",
+     "score": 21,
+     "source": "nav",
+     "text": "スポーツ施設",
+     "url": "https://www.city.nara.lg.jp/life/2/15/77/",
+     "viable": true
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 2,
+     "fetched": true,
+     "page_title": "奈良市の施設一覧 - 奈良市ホームページ 奈良市の施設一覧",
+     "reasons": [
+      "text:施設を探す|施設から探す|施設検索|[市町村]の施設|みんなの施設",
+      "url_hint",
+      "region_nav",
+      "facility_links:2"
+     ],
+     "region": "nav",
+     "score": 9,
+     "source": "nav",
+     "text": "市の施設",
+     "url": "https://www.city.nara.lg.jp/site/shisetsu/",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 23,
+     "fetched": true,
+     "page_title": "スポーツ施設一覧 - 奈良市ホームページ(スポーツ振興課) スポーツ施設一覧",
+     "reasons": [
+      "text:スポーツ施設",
+      "region_nav",
+      "facility_links:23",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 25,
+     "source": "depth1_link",
+     "text": "スポーツ施設一覧",
+     "url": "https://www.city.nara.lg.jp/soshiki/22/61877.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 0,
+     "fetched": true,
+     "page_title": "工事等に伴う利用制限のスポーツ施設一覧 - 奈良市ホームページ(スポーツ振興課) 工事等に伴う利用制限のスポーツ施設一覧",
+     "reasons": [
+      "text:スポーツ施設",
+      "region_nav",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 15,
+     "source": "depth1_link",
+     "text": "工事等に伴う利用制限のスポーツ施設一覧",
+     "url": "https://www.city.nara.lg.jp/soshiki/22/225232.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 0,
+     "fetched": true,
+     "page_title": "市スポーツ施設は「敷地内禁煙」を実施しています - 奈良市ホームページ(スポーツ振興課) 市スポーツ施設は「敷地内禁煙」を実施しています",
+     "reasons": [
+      "text:スポーツ施設",
+      "region_nav",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 14,
+     "source": "depth1_link",
+     "text": "市スポーツ施設は「敷地内禁煙」を実施しています",
+     "url": "https://www.city.nara.lg.jp/soshiki/22/9683.html",
+     "viable": true
+    }
+   ],
+   "decision": "hub_selected",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "selected": {
+    "depth": 1,
+    "facility_link_count": 7,
+    "fetched": true,
+    "page_title": "スポーツ施設 - 奈良市ホームページ スポーツ施設",
+    "reasons": [
+     "text:スポーツ施設",
+     "facility_links:7",
+     "title_match"
+    ],
+    "region": "other",
+    "score": 21,
+    "source": "nav",
+    "text": "スポーツ施設",
+    "url": "https://www.city.nara.lg.jp/life/2/15/77/",
+    "viable": true
+   }
+  }
+ ],
+ "menu_labels": [
+  "組織別",
+  "くらし",
+  "暮らし",
+  "子育て",
+  "観光",
+  "事業者",
+  "行政情報",
+  "市政",
+  "公共施設",
+  "よくある質問",
+  "申請",
+  "手続き"
+ ],
+ "municipality": {
+  "code": "29201",
+  "full_name": "奈良市",
+  "kind": "city",
+  "name": "奈良市",
+  "official_url": "https://www.city.nara.lg.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "緊急・災害",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/3/225354.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "Foreign language",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/userguide/list397-1044.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらし・手続き",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/1/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "届出・証明",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/1/1/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "マイナンバー",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/mynamber/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "税金",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/1/2/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "保険・年金",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/1/3/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "防災・防犯",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/1/4/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "消防・救急",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/1/68/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "消費生活",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/1/5/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "住まい・引っ越し",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/1/6/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "環境・衛生",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/1/7/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ペット・動物",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/4/34/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ごみ・リサイクル",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/1/8/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市民のみなさまからのご意見・ご相談",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/1/9/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市民活動・文化・ スポーツ",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/2/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ボランティア活動・NPO・市民参画協働",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/2/10/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "日常に公園のある暮らし",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/parklife/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "地域の活動・自治会",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/2/11/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "奈良市ポイント制度",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/2/12/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "大人のまなび・生涯学習・男女共同参画",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/2/13/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "文化情報",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/bunka/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "スポーツ",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/2/15/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "人権を守る",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/2/16/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子育て・教育",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/3/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子育て応援サイト「子育て@なら」",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/kosodate/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "奈良市子どもセンター",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/childcenter/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "妊娠、子どもの健康・医療",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/kosodate/201308.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "保育園・こども園・幼稚園",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/kosodate/list1039.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "教育委員会",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/kyouiku/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "奈良市版GIGAスクール構想",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/gigaschool/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "小・中学校、高等学校",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/3/18/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "看護専門学校",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/4/30/123/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子どもの安全・不登校・健全育成",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/3/22/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "食育",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/3/23/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "図書館",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/3/24/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "福祉・医療・ 保健・健康",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/4/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子どもの福祉",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/4/25/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "高齢者の福祉",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/4/26/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "障害者の福祉",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/4/27/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "生活保護・生活支援",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/4/28/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "国民健康保険",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/kokuminkenkouhoken/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "介護保険",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/kaigohoken/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "医療費の助成、支援など",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/4/29/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "保健所・医療施設",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/4/30/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "衛生、保健予防",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/4/31/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "予防接種、検診・健診と健康づくり",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/4/32/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "禁煙・受動喫煙防止",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/4/33/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "産業・しごと・ 事業者向け",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/5/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "入札・契約・事業者募集",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/5/35/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "企業立地",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/ricchi/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "広告",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/5/36/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "農業・林業",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/5/37/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "起業・経営支援・就職",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/5/38/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "地域の活性化",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/5/40/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "税金(法人・事業者)",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/5/41/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "医療・介護・障害(法人)",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/5/42/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "開発・工事",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/5/43/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "営業に関する許可等",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/5/44/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "環境・ごみ(法人)",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/5/45/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市有財産",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/5/55/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "奈良市の魅力",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/6/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光情報",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/kankou/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "東部観光情報・里山体験(さとやま民泊)",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/naranoharu/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "奈良の食の魅力",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/naranoshoku/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "奈良町",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/naramachi/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "世界遺産「古都奈良の文化財」",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/world-heritage/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "文化財",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/bunkazai/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "伝統工芸",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/6/56/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "移住・定住(シティプロモーション)",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/6/58/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "友好姉妹都市",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/6/79/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "奈良市学生応援サイト ならキャン",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/nara-campuslife/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市政情報",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/7/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市の概要(プロフィール)",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/7/47/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "情報公開",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/7/48/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "審議会等",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/shingikai/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "条例・規則",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/7/50/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市政運営",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/7/51/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "行財政",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/7/62/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "計画",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/7/63/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "職員採用・人事行政",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/7/64/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "奈良市公報",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/7/60/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "広報活動",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/7/52/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "選挙",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/7/53/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ページID検索とは?",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/3/228664.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ごみ減量へのご協力をお願いします",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=322&ef1=4"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "パートタイム(スポーツ・文化芸術活動指導に係る職)募集",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=317&ef1=4"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "奇跡の壁画とシルクロードの至宝",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=340&ef1=4"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "奈良デジタル市役所",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=300&ef1=4"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "奈良市公式LINEがリニューアル",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=170&ef1=4"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "移住ポータルサイト「ならりずむ。」",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=202&ef1=4"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和9年度会計年度任用職員募集",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=345&ef1=5"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良市道路管理コールセンターを開設します!",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=233&ef1=5"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "移住ポータルサイト「ならりずむ。」",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=332&ef1=5"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良しごとlibrary",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=304&ef1=5"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良市公共施設予約システム",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=269&ef1=5"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良デジタル市役所",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=299&ef1=5"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良市企業立地サイト",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=305&ef1=5"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "避難所受付システム事前登録",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=336&ef1=5"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "防災情報メール配信システム提供元事業者への不正アクセスによるメールアドレスの流出の可能性について",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/bousai-saigai/276922.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良市認知症高齢者等AI相談事業についてのご案内",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/33/274412.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "「古都祝奈良(ことほぐなら)の時空旅行」を開催します 「東アジア文化都市2016奈良市」10周年記念企画アートで1300年の奈良の時間を移動する体験を提供。【市長会見】(令和8年10月13日発表)",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/press-release/276868.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良市子どもセンター前屋外広場の愛称が「ジョー・プリンス広場」に決定しました~ ジョー・プリンス竹下株式会社をスポンサーに決定 ~【市長会見】(令和8年10月13日発表)",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/press-release/276853.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良から恋しよう!Vol.1 セミナー開催!",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/40/272900.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良から恋しよう!Vol.2、3 交流イベント開催!",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/40/276453.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【個人住宅・事業所対象】奈良市地域脱炭素移行・再エネ推進事業補助金(令和8年度)",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/zerocarbon/263838.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ご家庭で使用する省エネ性能の高いエアコン・冷蔵庫の購入を支援します!",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/zerocarbon/268658.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【10/17~】パークアンドライドサイクルライドで奈良の観光を楽しみませんか",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/kankyoseisaku/87717.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良市職員カスタマーハラスメント対策基本方針",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/5/276052.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "トピックスの一覧",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/list6-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "風しん抗体検査が無料で受けられます!",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/98/10350.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【給食調理員】パートタイム月18日(保健給食課)",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/naracity-kaikeinendo-bosyu8/262524.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "(R8.10公告分)「大和西大寺駅北側市有地活用事業」について、公募型プロポーザルを実施します",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/4/276410.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "「奈良市議会インターネットライブ・オンデマンド映像配信業務委託」の一般競争入札について",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/narasigikai/276439.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "R8就農ツアー参加者募集 ※受付は終了しました※",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/110/272575.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "子育ておうえん隊(子育て支援アドバイザー)",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/kosodate/8669.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新着情報の一覧",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/list1-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "『若草山焼き2027』ふるさと納税の寄附金申込みについて",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/furusato/276189.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと納税の募集費用の支払先に係る一覧表の公表について",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/furusato/275766.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと納税返礼品の地場産品基準第3号に関する証明事項の公表について",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/furusato/275767.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "110余年の歴史、新たな時を刻む奈良ホテル「西館」リニューアルオープン",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/furusato/272493.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年熊本地震 災害代理寄附を受付ています",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/3/272128.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと納税の一覧",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/list10-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良から恋しよう!セミナーと交流イベントを開催します!",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=342&ef1=6"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベントカレンダー",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/calendar/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【奈良しみんだより9月号特集】「奈良を、現代アートから見る」",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=339&ef1=7"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "レッツ水切り!ひとしぼりで環境にやさしいまちへ(ロングver.)",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=326&ef1=7"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ENJOYNARA / 井上涼 【奈良市観光PR】",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=157&ef1=7"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "日本最大の円墳 富雄丸山古墳【4K】",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=158&ef1=7"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "2026年10月号(表紙画像からアクセス)の画像",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=343&ef1=8"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "バックナンバー",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/shimindayori/list668.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "奈良デジタル市役所 いつでも、どこでも、 市役所があなたの手の中に",
+   "text_kind": "text",
+   "url": "https://digitalx.city.nara.lg.jp/naracity_portal"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "防災",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/bousai-saigai/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "医療施設",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/4/30/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ごみ",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/gomi-syusyu/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "助成・補助金",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/sub/5/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "相談",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/sub/6/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/kankou/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市の施設",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/shisetsu/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "引っ越し",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/hikkoshi/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "おくやみ",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/1/1/11/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "妊娠・出産",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/kosodate/201316.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "高齢者・介護",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/4/26/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "障がい者・福祉",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/4/27/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "地図でさがす",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/map/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "組織でさがす",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "カレンダーでさがす",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/calendar/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "よくある質問でさがす",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/sub/3/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ようこそ市長室へ",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=219&ef1=9"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良市議会",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=172&ef1=9"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ニュースリリース",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=138&ef1=9"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "職員採用案内",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=139&ef1=9"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "教育委員会",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=140&ef1=10"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "消防局",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=141&ef1=10"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "企業局(上下水道)",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=142&ef1=10"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市役所",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/shisetsu/list448-1271.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "出張所・行政センター・連絡所",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/shisetsu/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "公民館など地域の施設",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/shisetsu/list449.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "スポーツ施設",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/2/15/77/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "文化施設",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/shisetsu/list444-1276.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "総合計画",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/soukei5/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "条例・規則(例規集)",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/9/50467.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "申請書",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/sub/7/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市のプロフィール",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/7/47/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "オープンデータカタログ",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/6/9651.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良市地図情報公開サイト",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/6/94247.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良市公報",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/7/60/238/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "職員募集",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/saiyo/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "パブリックコメント",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/ikenboshu/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "よくある質問と回答",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/sub/3/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "お問い合わせ",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/3/8837.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市政へのご提言など",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/7/5517.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "相談窓口",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/life/sub/6/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "子育て@なら",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=5&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ならりずむ。",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=6&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと納税",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=7&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "企業立地ガイド",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=306&ef1=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良市第5次総合計画",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=37&ef1=3"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新クリーンセンター建設事業",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=95&ef1=3"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "犬・猫の譲渡",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=18&ef1=3"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "DVに関する相談機関のご案内",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=15&ef1=3"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "一般コミュニティ助成事業",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=344&ef1=3"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良市子どもセンター",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=53&ef1=3"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "日常に公園のある暮らし",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=71&ef1=3"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "未利用公有財産情報",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=41&ef1=3"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "道路損傷通報システム",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=73&ef1=3"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "公園施設損傷等がスマホで通報できるようになりました",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=14&ef1=3"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "適正に管理されていない空き家の相談について",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=119&ef1=3"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "奈良市の事業者支援策",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=16&ef1=3"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "リニア新駅を奈良市に",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=93&ef1=3"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "株式会社 N-Vision",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=98&ef1=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "社会福祉法人福寿会(2026.5.1~)",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=310&ef1=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "A-LIFE株式会社(2026.5.1~)",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=311&ef1=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "株式会社 コネクトライフ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/adv/ba.php?id=245&ef1=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "バナー広告・奈良しみんだよりへの 掲載広告 募集中",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/shimindayori/9843.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "組織別連絡先一覧",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "メールでのお問い合わせ",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/soshiki/3/8837.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "Facebook",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/soshiki/3/50660.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "Instagram",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/soshiki/3/50660.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "X",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/soshiki/3/50660.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "ライン",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/soshiki/3/50660.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "YouTube",
+   "text_kind": "img_alt",
+   "url": "https://www.city.nara.lg.jp/site/movie/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "このホームページについて",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/userguide/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "個人情報の取り扱いについて",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/userguide/56052.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "リンク・免責事項",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/userguide/8771.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市庁舎へのアクセス",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/shisetsu/10325.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市庁舎フロア案内",
+   "text_kind": "text",
+   "url": "https://www.city.nara.lg.jp/site/shisetsu/8327.html"
+  }
+ ],
+ "needs_review": [],
+ "outcome": "hub_selected",
+ "requests": [
+  {
+   "bytes": 19275,
+   "elapsed_ms": 838,
+   "error_class": "http_404",
+   "final_url": "https://www.city.nara.lg.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.city.nara.lg.jp/robots.txt"
+  },
+  {
+   "bytes": 51369,
+   "elapsed_ms": 155,
+   "error_class": "",
+   "final_url": "https://www.city.nara.lg.jp/",
+   "status": 200,
+   "url": "https://www.city.nara.lg.jp/"
+  },
+  {
+   "bytes": 19275,
+   "elapsed_ms": 193,
+   "error_class": "http_404",
+   "final_url": "https://www.city.nara.lg.jp/sitemap.xml",
+   "status": 404,
+   "url": "https://www.city.nara.lg.jp/sitemap.xml"
+  },
+  {
+   "bytes": 28682,
+   "elapsed_ms": 202,
+   "error_class": "",
+   "final_url": "https://www.city.nara.lg.jp/life/2/15/77/",
+   "status": 200,
+   "url": "https://www.city.nara.lg.jp/life/2/15/77/"
+  },
+  {
+   "bytes": 30552,
+   "elapsed_ms": 200,
+   "error_class": "",
+   "final_url": "https://www.city.nara.lg.jp/site/shisetsu/",
+   "status": 200,
+   "url": "https://www.city.nara.lg.jp/site/shisetsu/"
+  },
+  {
+   "bytes": 28497,
+   "elapsed_ms": 2545,
+   "error_class": "",
+   "final_url": "https://www.city.nara.lg.jp/site/parklife/",
+   "status": 200,
+   "url": "https://www.city.nara.lg.jp/site/parklife/"
+  },
+  {
+   "bytes": 26798,
+   "elapsed_ms": 200,
+   "error_class": "",
+   "final_url": "https://www.city.nara.lg.jp/life/2/",
+   "status": 200,
+   "url": "https://www.city.nara.lg.jp/life/2/"
+  },
+  {
+   "bytes": 27273,
+   "elapsed_ms": 259,
+   "error_class": "",
+   "final_url": "https://www.city.nara.lg.jp/life/2/15/",
+   "status": 200,
+   "url": "https://www.city.nara.lg.jp/life/2/15/"
+  },
+  {
+   "bytes": 29256,
+   "elapsed_ms": 202,
+   "error_class": "",
+   "final_url": "https://www.city.nara.lg.jp/site/shisetsu/list444-1276.html",
+   "status": 200,
+   "url": "https://www.city.nara.lg.jp/site/shisetsu/list444-1276.html"
+  },
+  {
+   "bytes": 35984,
+   "elapsed_ms": 294,
+   "error_class": "",
+   "final_url": "https://www.city.nara.lg.jp/soshiki/22/61877.html",
+   "status": 200,
+   "url": "https://www.city.nara.lg.jp/soshiki/22/61877.html"
+  },
+  {
+   "bytes": 26037,
+   "elapsed_ms": 210,
+   "error_class": "",
+   "final_url": "https://www.city.nara.lg.jp/soshiki/22/225232.html",
+   "status": 200,
+   "url": "https://www.city.nara.lg.jp/soshiki/22/225232.html"
+  },
+  {
+   "bytes": 28753,
+   "elapsed_ms": 222,
+   "error_class": "",
+   "final_url": "https://www.city.nara.lg.jp/soshiki/22/9683.html",
+   "status": 200,
+   "url": "https://www.city.nara.lg.jp/soshiki/22/9683.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 5520,
+  "finished_at": "2026-10-15T00:00:09Z",
+  "request_count": 12,
+  "route": "actions_direct_v2",
+  "started_at": "2026-10-14T23:59:56Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "high",
+   "evidence": [
+    "url:62件 例 https://www.city.nara.lg.jp/life/1/1/"
+   ],
+   "family": "url_pattern:life_numeric",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:life_numeric": 11,
+    "url_pattern:site_numeric": 10,
+    "url_pattern:soshiki_numeric": 10
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 237,
+   "image_count": 81,
+   "needs_headless": false,
+   "noscript_text_length": 64,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 18,
+   "text_length": 3319
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "http_404",
+     "kind": "",
+     "source": "master_csv",
+     "status": 404,
+     "url": "https://www.city.nara.lg.jp/sitemap.xml"
+    }
+   ],
+   "found": false,
+   "kind": "",
+   "source": "",
+   "url": ""
+  },
+  "top": {
+   "elapsed_ms": 155,
+   "error_class": "",
+   "final_url": "https://www.city.nara.lg.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

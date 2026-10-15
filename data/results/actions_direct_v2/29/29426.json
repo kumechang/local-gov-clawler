@@ -1,0 +1,667 @@
+{
+ "ai_needed": true,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "fetched": false,
+     "page_title": "",
+     "reasons": [
+      "text:スポーツ"
+     ],
+     "region": "other",
+     "score": 4,
+     "source": "depth1_link",
+     "text": "生涯学習・スポーツ・文化振興",
+     "url": "https://www.town.koryo.nara.jp/category/16-10-0-0-0-0-0-0-0-0.html",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "fetched": true,
+     "page_title": "くらし・手続き | 広陵町 くらし・手続き",
+     "reasons": [
+      "broad_category",
+      "region_nav"
+     ],
+     "region": "nav",
+     "score": 3,
+     "source": "nav",
+     "text": "くらし・手続き",
+     "url": "https://www.town.koryo.nara.jp/category/16-0-0-0-0-0-0-0-0-0.html",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "fetched": true,
+     "page_title": "サイトマップ | 広陵町 サイトマップ",
+     "reasons": [
+      "sitemap_page"
+     ],
+     "region": "footer",
+     "score": 3,
+     "source": "nav",
+     "text": "サイトマップ",
+     "url": "https://www.town.koryo.nara.jp/sitemap.html",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "fetched": true,
+     "page_title": "学校・教育 | 広陵町 学校・教育",
+     "reasons": [
+      "broad_category"
+     ],
+     "region": "other",
+     "score": 2,
+     "source": "nav",
+     "text": "学校・教育",
+     "url": "https://www.town.koryo.nara.jp/category/21-2-0-0-0-0-0-0-0-0.html",
+     "viable": false
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "fetched": false,
+     "page_title": "",
+     "reasons": [
+      "text:公園"
+     ],
+     "region": "other",
+     "score": 2,
+     "source": "depth1_link",
+     "text": "施設・公園関係",
+     "url": "https://www.town.koryo.nara.jp/category/24-0-0-0-0-0-0-0-0-0.html",
+     "viable": false
+    }
+   ],
+   "decision": "hub_not_found",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "selected": null
+  }
+ ],
+ "menu_labels": [
+  "ライフシーン",
+  "くらし",
+  "子育て",
+  "観光",
+  "事業者",
+  "行政情報",
+  "手続き"
+ ],
+ "municipality": {
+  "code": "29426",
+  "full_name": "広陵町",
+  "kind": "town",
+  "name": "広陵町",
+  "official_url": "https://www.town.koryo.nara.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ウェルカムページ",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/front.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "Languages",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/site_policy/0000000008.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "各課の窓口",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/soshiki_list.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらし・手続き",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/16-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子育て・教育",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/27-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光・文化・イベント",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/18-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "行政情報",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/20-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "事業者情報",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/19-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "まちづくり",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/0000004512.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ホーム",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度 工事発注見通し",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/0000007892.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "災害時帰宅困難に関するお知らせ",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/0000008123.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "防災行政無線の訓練放送について",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/0000008147.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度広陵町職員採用試験【令和9年4月1日採用】(第1次試験)の結果について",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/0000008164.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広陵町教育委員会だより",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/0000005018.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新着情報一覧",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/news/0001.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "学校の図書室を開放しています(10月)",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/library/0000007628.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベント一覧",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/event2/0curr_1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "妊娠・出産",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/21-1-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "学校・教育",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/21-2-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "健康・医療",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/21-12-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "福祉・介護",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/21-4-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ごみ",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/21-11-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/21-3-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "住まい・引越し",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/21-8-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "保険・年金",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/21-9-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おくやみ",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/21-10-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "上下水道",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/21-5-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "防災・ハザードマップ・避難所一覧",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/22-1-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "安全情報",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/22-3-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "救急診療",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/22-4-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町の紹介",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/20-1-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町長の部屋",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/20-3-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広陵町議会/キッズページ(小学生向け)",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/20-10-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広陵町の公共交通 広陵町の公共交通",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/16-12-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "移住・定住 移住・定住",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/25-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "子育て応援サイト 広陵町子育て応援サイト",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/kosodate"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広陵町立図書館 広陵町立図書館",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/library/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報こうりょう 広報こうりょう",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/20-2-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "職員採用 職員採用",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/20-19-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広陵町例規集 広陵町例規集",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/20-11-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "手続きナビ 手続きナビ",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/module/tetsuzuki.php?mode=search&furiwake=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "靴下製造事業者紹介 靴下製造事業者紹介",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/26-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広告募集中",
+   "text_kind": "img_alt",
+   "url": "https://www.town.koryo.nara.jp/module/banner.cgi?bannerId=9"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "アクセシビリティ",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/site_policy/0000000002.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "著作権・セキュリティ",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/site_policy/0000000004.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "個人情報保護規定",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/site_policy/0000000006.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "外部リンク集",
+   "text_kind": "text",
+   "url": "https://www.town.koryo.nara.jp/category/20-22-0-0-0-0-0-0-0-0.html"
+  }
+ ],
+ "needs_review": [
+  "hub_not_found"
+ ],
+ "outcome": "hub_not_found",
+ "requests": [
+  {
+   "bytes": 10266,
+   "elapsed_ms": 1304,
+   "error_class": "http_404",
+   "final_url": "https://www.town.koryo.nara.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.town.koryo.nara.jp/robots.txt"
+  },
+  {
+   "bytes": 25078,
+   "elapsed_ms": 124,
+   "error_class": "",
+   "final_url": "https://www.town.koryo.nara.jp/",
+   "status": 200,
+   "url": "https://www.town.koryo.nara.jp/"
+  },
+  {
+   "bytes": 9789,
+   "elapsed_ms": 182,
+   "error_class": "",
+   "final_url": "https://www.town.koryo.nara.jp/sitemap.xml",
+   "status": 200,
+   "url": "https://www.town.koryo.nara.jp/sitemap.xml"
+  },
+  {
+   "bytes": 18311,
+   "elapsed_ms": 125,
+   "error_class": "",
+   "final_url": "https://www.town.koryo.nara.jp/category/16-0-0-0-0-0-0-0-0-0.html",
+   "status": 200,
+   "url": "https://www.town.koryo.nara.jp/category/16-0-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "bytes": 15447,
+   "elapsed_ms": 119,
+   "error_class": "",
+   "final_url": "https://www.town.koryo.nara.jp/sitemap.html",
+   "status": 200,
+   "url": "https://www.town.koryo.nara.jp/sitemap.html"
+  },
+  {
+   "bytes": 14992,
+   "elapsed_ms": 189,
+   "error_class": "",
+   "final_url": "https://www.town.koryo.nara.jp/category/21-2-0-0-0-0-0-0-0-0.html",
+   "status": 200,
+   "url": "https://www.town.koryo.nara.jp/category/21-2-0-0-0-0-0-0-0-0.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 2043,
+  "finished_at": "2026-10-15T00:00:34Z",
+  "request_count": 6,
+  "route": "actions_direct_v2",
+  "started_at": "2026-10-15T00:00:28Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "high",
+   "evidence": [
+    "url:28件 例 https://www.town.koryo.nara.jp/category/16-0-0-0-0-0-0-0-0-0.html",
+    "url:98件 例 https://www.town.koryo.nara.jp/site_policy/0000000008.html",
+    "url:1件 例 https://www.town.koryo.nara.jp/module/banner.cgi?bannerId=9"
+   ],
+   "family": "url_pattern:category_numeric",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:category_numeric": 24
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 77,
+   "image_count": 24,
+   "needs_headless": false,
+   "noscript_text_length": 222,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 20,
+   "text_length": 1081
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "urlset",
+     "source": "default_path",
+     "status": 200,
+     "url": "https://www.town.koryo.nara.jp/sitemap.xml"
+    }
+   ],
+   "found": true,
+   "keyword_urls": [],
+   "kind": "urlset",
+   "lastmod_count": 88,
+   "lastmod_max": "2026-10-14",
+   "lastmod_min": "2026-09-16",
+   "lastmod_years": {
+    "2026": 88
+   },
+   "numeric_id_url_ratio": 0.989,
+   "source": "default_path",
+   "top_level_paths": {
+    "/0000001919.html": 1,
+    "/0000002821.html": 1,
+    "/0000004043.html": 1,
+    "/0000004744.html": 1,
+    "/0000004878.html": 1,
+    "/0000005018.html": 1,
+    "/0000006179.html": 1,
+    "/0000007269.html": 1,
+    "/0000007503.html": 1,
+    "/0000007538.html": 1,
+    "/0000007770.html": 1,
+    "/0000007874.html": 1,
+    "/0000007892.html": 1,
+    "/0000007919.html": 1,
+    "/0000007963.html": 1,
+    "/0000007973.html": 1,
+    "/0000007997.html": 1,
+    "/0000008087.html": 1,
+    "/0000008123.html": 1,
+    "/0000008127.html": 1,
+    "/0000008128.html": 1,
+    "/0000008147.html": 1,
+    "/0000008148.html": 1,
+    "/0000008153.html": 1,
+    "/0000008156.html": 1,
+    "/0000008161.html": 1,
+    "/0000008164.html": 1,
+    "/0000008174.html": 1,
+    "/kosodate": 5,
+    "/library": 2
+   },
+   "url": "https://www.town.koryo.nara.jp/sitemap.xml",
+   "url_count": 88
+  },
+  "top": {
+   "elapsed_ms": 124,
+   "error_class": "",
+   "final_url": "https://www.town.koryo.nara.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}
