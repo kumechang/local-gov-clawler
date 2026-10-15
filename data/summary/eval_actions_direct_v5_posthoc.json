@@ -1,0 +1,94 @@
+{
+ "detail": [
+  {
+   "code": "29201",
+   "outcome": "hub_selected",
+   "rank": 1,
+   "reached": true,
+   "selected_correct": true,
+   "selected_url": "https://www.city.nara.lg.jp/life/2/15/77/"
+  },
+  {
+   "code": "29202",
+   "outcome": "hub_selected",
+   "rank": 1,
+   "reached": true,
+   "selected_correct": true,
+   "selected_url": "https://www.city.yamatotakada.nara.jp/kankos/sports/taiikushisetsu/index.html"
+  },
+  {
+   "code": "29205",
+   "outcome": "hub_selected",
+   "rank": 1,
+   "reached": true,
+   "selected_correct": true,
+   "selected_url": "https://www.city.kashihara.nara.jp/kanko_bunka_sports/sports/1/index.html"
+  },
+  {
+   "code": "29206",
+   "outcome": "hub_not_found",
+   "rank": 1,
+   "reached": true,
+   "selected_correct": null,
+   "selected_url": null
+  },
+  {
+   "code": "29209",
+   "outcome": "hub_selected",
+   "rank": 1,
+   "reached": true,
+   "selected_correct": true,
+   "selected_url": "https://www.city.ikoma.lg.jp/category/2-28-4-0-0-0-0-0-0-0.html"
+  },
+  {
+   "code": "29210",
+   "outcome": "hub_selected",
+   "rank": 1,
+   "reached": true,
+   "selected_correct": true,
+   "selected_url": "https://www.city.kashiba.lg.jp/life/7/41/179/"
+  },
+  {
+   "code": "29211",
+   "outcome": "hub_selected",
+   "rank": 1,
+   "reached": true,
+   "selected_correct": true,
+   "selected_url": "https://www.city.katsuragi.nara.jp/kanko_bunka_sports/sports/index.html"
+  },
+  {
+   "code": "29344",
+   "outcome": "hub_selected",
+   "rank": 1,
+   "reached": true,
+   "selected_correct": true,
+   "selected_url": "https://www.town.ikaruga.nara.jp/category/2-2-0-0-0-0-0-0-0-0.html"
+  },
+  {
+   "code": "29427",
+   "outcome": "hub_not_found",
+   "rank": null,
+   "reached": false,
+   "selected_correct": null,
+   "selected_url": null
+  },
+  {
+   "code": "29444",
+   "outcome": "hub_not_found",
+   "rank": null,
+   "reached": false,
+   "selected_correct": null,
+   "selected_url": null
+  }
+ ],
+ "none_rows": 0,
+ "none_selected": 0,
+ "reach_rate": 0.8,
+ "reached": 8,
+ "selected": 7,
+ "selected_correct": 7,
+ "selected_correct_rate": 0.7,
+ "selected_precision": 1.0,
+ "selected_precision_all": 1.0,
+ "truth_count": 10
+}
