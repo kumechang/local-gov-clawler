@@ -1,7 +1,7 @@
 name: auto-crawl
 # mainへのマージで、config/auto_crawl.json の対象を自動クロールする(docs/decisions.md D-056)。
 # 第三者のサイトへアクセスが発生するため、次の安全策がある:
-#  - src/ か config/auto_crawl.json を変更したときだけ動く(docsやデータの変更では動かない)
+#  - src/、config/auto_crawl.json、クロール用ワークフローを変更したときだけ動く(docsやデータの変更では動かない)
 #  - 結果が既にある route は実行しない(上書きで実験の結果が消えるのを防ぐ。新しい route 名にする)
 #  - config の enabled=false、またはコミットメッセージの [skip crawl] で止まる
 on:
@@ -10,6 +10,9 @@ on:
     paths:
       - "src/**"
       - "config/auto_crawl.json"
+      # ワークフローの修正でも動く。結果のある route は実行されないので、取りこぼした route だけが再実行される
+      - ".github/workflows/crawl.yml"
+      - ".github/workflows/auto-crawl.yml"
   workflow_dispatch:
 
 concurrency:
