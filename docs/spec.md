@@ -70,3 +70,6 @@ localgov-crawler compare   actions_direct proxy local
 localgov-crawler merge-db  --route local --db out/crawl.sqlite
 ```
 GitHub Actions: `crawl` ワークフローを手動実行(`.github/workflows/crawl.yml`)。
+
+## ジャンルと施設一覧の階層について(2026-10-15 ユーザー指摘)
+自治体ごとに、スポーツ施設を「スポーツ施設一覧」として専用にまとめているところと、「公共施設一覧」にまとめているところがある。両者は固定の親子関係ではない。そのため、スポーツ専用の一覧があればそれを(`quality=specific`)、無ければ汎用の施設一覧を(`quality=generic`)入口とし、他ジャンルの入口も別々に探す。
