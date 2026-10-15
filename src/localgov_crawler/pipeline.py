@@ -188,6 +188,7 @@ def _visit(ctx: _Ctx, c: hub.Candidate, site_host: str):
     links = extract_links(soup, page.final_url, site_host)
     n, head, samples = hub.page_features(soup, links)
     hub.rescore_with_page(c, n, head, samples)
+    c.body_terms = hub.body_facility_terms(soup)
     return links
 
 

@@ -60,8 +60,12 @@ PURE_BONUS = 4
 PROCEDURE = re.compile(r"申請|届出|手続|申込|様式|ダウンロード")
 PROCEDURE_PENALTY = 5
 
+# 施設の一覧ではない専用ラベル(整備事業・学校体育施設の開放制度・予約システムの案内)は、候補には残すが自動確定しない(D-067)。
+# 段階1の疑わしい確定: 岡崎市「…整備事業」・堺市「スポーツ施設の整備」・常滑市/あま市「学校体育施設開放…」・東大阪市「OPAS(…システム)」
+NOT_LISTING = re.compile(r"整備|建て?替|改修|耐震|開放|システム")
+
 # 施設名リンクとして数えないリンク文言: お知らせ記事・工事・入札・休館などの題名(安堵町: 体育館の雨漏修繕工事、広場開放のお知らせ)
-FACILITY_LINK_NOISE = re.compile(r"お知らせ|工事|修繕|入札|休館|閉館|利用停止|延期|令和\d|第\d+回|募集|開催|結果|について|イベント|大会")
+FACILITY_LINK_NOISE = re.compile(r"お知らせ|工事|修繕|入札|休館|閉館|利用停止|延期|令和\d|第\d+回|募集|開催|結果|について|イベント|大会|開場|設置|空調|講習|講座|教室|皆さん|皆様|皆さま|お願い|ください|ご利用")
 FACILITY_LINK_MAX_LEN = 30
 
 URL_HINTS = re.compile(r"sport|taiiku|undou|gym|shisetsu|park|kouen|ground", re.I)
@@ -104,13 +108,14 @@ class Candidate:
     fetched: bool = False
     kind: str = "other"
     facility_samples: list[str] = field(default_factory=list)  # 施設名リンクとして数えたリンク文言の例(診断用)
+    body_terms: dict[str, int] | None = None  # リンクでない本文中の施設語の出現数(診断用。判定には使わない、D-068)
 
     def to_dict(self) -> dict:
         return {
             "url": self.url, "text": self.text, "score": self.score, "reasons": self.reasons,
             "region": self.region, "source": self.source, "depth": self.depth,
             "facility_link_count": self.facility_link_count, "page_title": self.page_title,
-            "fetched": self.fetched, "kind": self.kind, "facility_samples": self.facility_samples, "viable": is_viable(self),
+            "fetched": self.fetched, "kind": self.kind, "facility_samples": self.facility_samples, "body_terms": self.body_terms, "viable": is_viable(self),
         }
 
 
@@ -209,6 +214,22 @@ def page_features(soup: BeautifulSoup, links: list[Link]) -> tuple[int, str, lis
     return n, head, samples
 
 
+def body_facility_terms(soup: BeautifulSoup) -> dict[str, int]:
+    """リンク(aタグ)の外にある本文中の施設語(体育館・テニスコート・プール 等)の出現数。
+    施設名がリンクでなく文字・表で並ぶ一覧ページを見分けるための診断(判定には使わない、D-068)。"""
+    parts = []
+    for node in soup.find_all(string=True):
+        if node.parent is None or node.parent.name in ("script", "style", "noscript", "title"):
+            continue
+        if node.find_parent("a") is not None:
+            continue
+        parts.append(str(node))
+    counts: dict[str, int] = {}
+    for m in FACILITY_NAME.finditer(norm_text(" ".join(parts))):
+        counts[m.group(0)] = counts.get(m.group(0), 0) + 1
+    return dict(sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))[:8])
+
+
 def rescore_with_page(c: Candidate, facility_links: int, head: str, samples: list[str] | None = None) -> None:
     c.fetched = True
     c.facility_samples = samples or []
@@ -230,6 +251,8 @@ def is_viable(c: Candidate) -> bool:
     - 汎用ラベル(公共施設一覧 など): 施設名リンク3件以上(専用ページが無い自治体向け。品質は generic)
     大分類・サイトマップ・お知らせ記事などは対象外。"""
     if c.score < MIN_SCORE or not c.fetched:
+        return False
+    if c.kind.startswith("sports") and NOT_LISTING.search(norm_text(c.text)):
         return False
     fl = c.facility_link_count or 0
     if c.kind in ("sports_pure", "sports_other"):
