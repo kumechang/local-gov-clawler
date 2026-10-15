@@ -1,0 +1,404 @@
+{
+ "ai_needed": true,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "broad",
+     "page_title": "くらし・手続き/御杖村 くらし・手続き",
+     "reasons": [
+      "broad_category",
+      "region_nav"
+     ],
+     "region": "nav",
+     "score": 3,
+     "source": "nav",
+     "text": "くらし・手続き",
+     "url": "https://www.vill.mitsue.nara.jp/kurashi/kurashi_tetsuzuki/index.html",
+     "viable": false
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "facility_samples": [],
+     "fetched": false,
+     "kind": "broad",
+     "page_title": "",
+     "reasons": [
+      "sitemap_page"
+     ],
+     "region": "footer",
+     "score": 2,
+     "source": "depth1_link",
+     "text": "サイトマップ",
+     "url": "https://www.vill.mitsue.nara.jp/kurashi/sitemap.html",
+     "viable": false
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "facility_samples": [],
+     "fetched": false,
+     "kind": "broad",
+     "page_title": "",
+     "reasons": [
+      "broad_category"
+     ],
+     "region": "other",
+     "score": 1,
+     "source": "depth1_link",
+     "text": "くらしの情報",
+     "url": "https://www.vill.mitsue.nara.jp/kurashi/index.html",
+     "viable": false
+    }
+   ],
+   "decision": "hub_not_found",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "quality": "",
+   "selected": null
+  }
+ ],
+ "menu_labels": [
+  "くらし",
+  "子育て",
+  "事業者",
+  "村政",
+  "手続き"
+ ],
+ "municipality": {
+  "code": "29386",
+  "full_name": "御杖村",
+  "kind": "village",
+  "name": "御杖村",
+  "official_url": "https://www.vill.mitsue.nara.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "スマートフォン版を表示",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.mitsue.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ホーム",
+   "text_kind": "text",
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらし・手続き",
+   "text_kind": "text",
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/kurashi_tetsuzuki/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子育て・教育",
+   "text_kind": "text",
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/kosodate_kyoiku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "森と風と手をつなぐ 奈良県御杖村",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "健康・医療・福祉",
+   "text_kind": "text",
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/kenko_iryo_fukushi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "村政情報",
+   "text_kind": "text",
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/gyosei/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "事業者の方へ",
+   "text_kind": "text",
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/jigyosha/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "奈良県御杖村",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.mitsue.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "みつえの観光",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/kanko/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ふるさと納税",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/kurashi_tetsuzuki/zeikin/1_1/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "各課のご案内",
+   "text_kind": "text",
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/annai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "PC版を表示",
+   "text_kind": "text",
+   "url": "https://www.vill.mitsue.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "くらしの情報 手続きやくらしの情報を掲載",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "みつえの観光 旬の観光情報をお届け",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/kanko/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと納税 御杖村へ",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/kurashi_tetsuzuki/zeikin/1_1/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "村の紹介",
+   "text_kind": "text",
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/gyosei/mitsuemura/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "アクセス",
+   "text_kind": "text",
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/kanko/641.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "御杖村役場へのお問い合わせ",
+   "text_kind": "text",
+   "url": "https://www.vill.mitsue.nara.jp/cgi-bin/inquiry.php/10?page_no=1"
+  }
+ ],
+ "needs_review": [
+  "hub_not_found"
+ ],
+ "outcome": "hub_not_found",
+ "requests": [
+  {
+   "bytes": 36054,
+   "elapsed_ms": 2063,
+   "error_class": "http_404",
+   "final_url": "https://www.vill.mitsue.nara.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.vill.mitsue.nara.jp/robots.txt"
+  },
+  {
+   "bytes": 28266,
+   "elapsed_ms": 353,
+   "error_class": "",
+   "final_url": "https://www.vill.mitsue.nara.jp/",
+   "status": 200,
+   "url": "https://www.vill.mitsue.nara.jp/"
+  },
+  {
+   "bytes": 41086,
+   "elapsed_ms": 406,
+   "error_class": "",
+   "final_url": "https://www.vill.mitsue.nara.jp/sitemap.xml",
+   "status": 200,
+   "url": "https://www.vill.mitsue.nara.jp/sitemap.xml"
+  },
+  {
+   "bytes": 470,
+   "elapsed_ms": 1203,
+   "error_class": "",
+   "final_url": "https://www.vill.mitsue.nara.jp/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.vill.mitsue.nara.jp/sitemap.dir.xml"
+  },
+  {
+   "bytes": 295,
+   "elapsed_ms": 278,
+   "error_class": "",
+   "final_url": "https://www.vill.mitsue.nara.jp/kinkyu/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.vill.mitsue.nara.jp/kinkyu/sitemap.dir.xml"
+  },
+  {
+   "bytes": 1038,
+   "elapsed_ms": 274,
+   "error_class": "",
+   "final_url": "https://www.vill.mitsue.nara.jp/kurashi/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/sitemap.dir.xml"
+  },
+  {
+   "bytes": 493,
+   "elapsed_ms": 275,
+   "error_class": "",
+   "final_url": "https://www.vill.mitsue.nara.jp/kurashi/annai/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/annai/sitemap.dir.xml"
+  },
+  {
+   "bytes": 317,
+   "elapsed_ms": 276,
+   "error_class": "",
+   "final_url": "https://www.vill.mitsue.nara.jp/kurashi/annai/gikaijimukyoku/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/annai/gikaijimukyoku/sitemap.dir.xml"
+  },
+  {
+   "bytes": 56157,
+   "elapsed_ms": 418,
+   "error_class": "",
+   "final_url": "https://www.vill.mitsue.nara.jp/kurashi/kurashi_tetsuzuki/index.html",
+   "status": 200,
+   "url": "https://www.vill.mitsue.nara.jp/kurashi/kurashi_tetsuzuki/index.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 5546,
+  "finished_at": "2026-10-15T10:41:06Z",
+  "request_count": 9,
+  "route": "actions_direct_v7",
+  "started_at": "2026-10-15T10:40:57Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "high",
+   "evidence": [
+    "url:21件 例 https://www.vill.mitsue.nara.jp/kurashi/index.html"
+   ],
+   "family": "url_pattern:genre_dir_index",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:genre_dir_index": 10
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 37,
+   "image_count": 32,
+   "needs_headless": false,
+   "noscript_text_length": 0,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 18,
+   "text_length": 278
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "index",
+     "source": "default_path",
+     "status": 200,
+     "url": "https://www.vill.mitsue.nara.jp/sitemap.xml"
+    }
+   ],
+   "children_fetched": 5,
+   "children_total": 249,
+   "found": true,
+   "keyword_urls": [],
+   "kind": "index",
+   "lastmod_count": 11,
+   "lastmod_max": "2026-10-13",
+   "lastmod_min": "2019-06-06",
+   "lastmod_years": {
+    "2019": 4,
+    "2020": 3,
+    "2025": 2,
+    "2026": 2
+   },
+   "numeric_id_url_ratio": 0.273,
+   "source": "default_path",
+   "top_level_paths": {
+    "/index.html": 1,
+    "/kinkyu": 1,
+    "/kurashi": 8,
+    "/news_list.html": 1
+   },
+   "truncated": true,
+   "url": "https://www.vill.mitsue.nara.jp/sitemap.xml",
+   "url_count": 11
+  },
+  "top": {
+   "elapsed_ms": 353,
+   "error_class": "",
+   "final_url": "https://www.vill.mitsue.nara.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}
