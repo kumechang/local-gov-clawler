@@ -51,6 +51,8 @@ jobs:
       use_proxy: false
       shards: "1"
       commit_results: true
+      scope: ${{ matrix.scope }}
+      compact: ${{ matrix.compact }}
     permissions:
       contents: write
     secrets: inherit

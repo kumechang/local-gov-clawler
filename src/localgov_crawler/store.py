@@ -16,10 +16,20 @@ def result_path(root: Path, route: str, m_prefecture_code: str, code: str) -> Pa
     return Path(root) / route / m_prefecture_code / f"{code}.json"
 
 
-def write_result(root: Path, result: dict, prefecture_code: str) -> Path:
+def compact_result(result: dict) -> dict:
+    """全国実行用の軽量形式(D-062, D-065)。サイト内リンク一覧(リンク文言=aタグのテキストとURL)は検索用に残し、
+    インデントを付けない1行JSONで保存する。ここでは印だけ付ける。"""
+    return {**result, "run": {**result["run"], "compact": True}}
+
+
+def write_result(root: Path, result: dict, prefecture_code: str, compact: bool = False) -> Path:
     path = result_path(root, result["run"]["route"], prefecture_code, result["municipality"]["code"])
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(result, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    if compact:
+        text = json.dumps(compact_result(result), ensure_ascii=False, separators=(",", ":"), sort_keys=True)
+    else:
+        text = json.dumps(result, ensure_ascii=False, indent=1, sort_keys=True)
+    path.write_text(text + "\n", encoding="utf-8")
     return path
 
 

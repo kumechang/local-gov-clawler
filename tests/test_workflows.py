@@ -23,3 +23,10 @@ def test_workflows_are_valid_yaml_and_auto_crawl_calls_crawl():
     assert auto["jobs"]["crawl"]["uses"] == "./.github/workflows/crawl.yml"
     crawl = yaml.safe_load((ROOT / ".github/workflows/crawl.yml").read_text(encoding="utf-8"))
     assert "workflow_call" in (crawl.get("on") or crawl.get(True))
+
+
+def test_scope_and_compact_flow_from_auto_crawl_to_cli():
+    crawl = (ROOT / ".github/workflows/crawl.yml").read_text(encoding="utf-8")
+    assert '--scope "$SCOPE"' in crawl and "--compact" in crawl
+    auto = (ROOT / ".github/workflows/auto-crawl.yml").read_text(encoding="utf-8")
+    assert "scope: ${{ matrix.scope }}" in auto and "compact: ${{ matrix.compact }}" in auto
