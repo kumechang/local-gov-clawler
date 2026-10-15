@@ -36,3 +36,4 @@
 - 「正解データ更新したよ」→ 検証用 `sports_hub_nara_heldout.csv` を記入(9件+「なし」1件)。見直し前の結果を集計値のみで採点し `docs/reports/pilot-nara-heldout-baseline.md` に記録。
 - 「PRを作ってmainにマージして」(3回目)→ 採用ルールの見直し(D-028〜D-032)・正解データ(開発用/検証用)をPR化して `main` にマージ。マージ後に奈良県を再実行(route=actions_direct_v3)。橿原市・斑鳩町の許容URLについてはユーザーから回答なし(未決のまま再実行)。
 - 橿原市の `.../kanko_bunka_sports/sports/index.html` は「スポーツ施設より一段上のカテゴリーで、スポーツ施設一覧ではない」(許容しない)。斑鳩町の `category/2-2-0-0-0-0-0-0-0-0.html` は「OK」(許容)。
+- 「PRを作ってmainにマージして」(4回目)→ 専用ラベルの確定条件の修正(D-033)と正解データ更新(D-034)をPR化して `main` にマージ。その後 route=actions_direct_v3 で再実行。
