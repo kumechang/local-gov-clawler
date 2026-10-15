@@ -1,0 +1,1041 @@
+{
+ "ai_needed": true,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 2,
+     "facility_link_count": 2,
+     "fetched": true,
+     "kind": "sports_other",
+     "page_title": "総合運動公園 - 福井県美浜町 総合運動公園",
+     "reasons": [
+      "text:運動公園|総合運動",
+      "region_nav",
+      "facility_links:2",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 12,
+     "source": "depth1_link",
+     "text": "総合運動公園",
+     "url": "https://www.town.fukui-mihama.lg.jp/soshiki/31/",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 3,
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ - 福井県美浜町 スポーツ",
+     "reasons": [
+      "text:スポーツ",
+      "region_nav",
+      "sports_pure",
+      "facility_links:3"
+     ],
+     "region": "nav",
+     "score": 11,
+     "source": "depth1_link",
+     "text": "スポーツ",
+     "url": "https://www.town.fukui-mihama.lg.jp/life/2/17/71/",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 1,
+     "fetched": true,
+     "kind": "sports_other",
+     "page_title": "公園・スポーツ施設 - 福井県美浜町 公園・スポーツ施設",
+     "reasons": [
+      "text:スポーツ施設",
+      "region_nav",
+      "facility_links:1",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 16,
+     "source": "depth1_link",
+     "text": "公園・スポーツ施設",
+     "url": "https://www.town.fukui-mihama.lg.jp/life/6/40/192/",
+     "viable": false
+    },
+    {
+     "depth": 3,
+     "facility_link_count": null,
+     "fetched": false,
+     "kind": "sports_other",
+     "page_title": "",
+     "reasons": [
+      "text:体育館",
+      "region_nav"
+     ],
+     "region": "nav",
+     "score": 6,
+     "source": "depth2_link",
+     "text": "美浜町総合体育館内 案内図",
+     "url": "https://www.town.fukui-mihama.lg.jp/soshiki/31/501.html",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 1,
+     "fetched": true,
+     "kind": "broad",
+     "page_title": "サイトマップ - 福井県美浜町 サイトマップ",
+     "reasons": [
+      "sitemap_page",
+      "facility_links:1"
+     ],
+     "region": "footer",
+     "score": 4,
+     "source": "nav",
+     "text": "サイトマップ",
+     "url": "https://www.town.fukui-mihama.lg.jp/sitemap.html",
+     "viable": false
+    }
+   ],
+   "decision": "hub_multiple",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "quality": "specific",
+   "selected": null
+  }
+ ],
+ "menu_labels": [
+  "くらし",
+  "子育て",
+  "健康・福祉",
+  "観光",
+  "町政",
+  "手続き"
+ ],
+ "municipality": {
+  "code": "18442",
+  "full_name": "美浜町",
+  "kind": "town",
+  "name": "美浜町",
+  "official_url": "https://www.town.fukui-mihama.lg.jp/",
+  "prefecture": "福井県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "美浜町公式SNS一覧",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/5/3310.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "美浜町ホームページ",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "初めての方へ",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/5/3430.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "Language",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/5/3437.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "休日当番医",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/37/136.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ごみ情報",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/site/gomi/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ご意見メール",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/ques/questionnaire.php?openid=2"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "狭みはま「まち旅」博覧会プレ開催",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=132"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "手続きナビを運用しています",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=120"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "LINE公式アカウントトップページバナー",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=125"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "学びを挑戦のエンジンに!",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=116"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "みはまシナプスプロジェクト 企業版ふるさと納税募集",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=131"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "職員採用特設サイト",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=115"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "美浜町ブランドサイト",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=108"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "美浜町レイクセンター202604~",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=126"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ふるさと納税",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=62"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "応援クルー募集",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=63"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらし・手続き",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/1/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子育て・教育",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/2/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "健康・福祉",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/3/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "しごと・産業",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/4/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "町政情報",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/6/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "移住・定住",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/site/iju/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度美浜町職員採用候補者試験 第1次試験の合格者の受験番号について",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/2/14979.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "美浜町ため池ハザードマップについて",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/13/16732.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "重要なお知らせの一覧",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/list3-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "重要なお知らせのRSS",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/rss/10/list3.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "災害・防災",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/1/4/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "原子力防災",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/1/4/27/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "美浜町防災 アプリ",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/7/3473.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "美浜町健康楽膳拠点施設「こるぱ」の指定管理者の募集に係る質問の回答について",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/11/16950.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "美浜町ハートフルウォーク2026~久々子8つのパワースポット巡り~を開催します",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/10/16867.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "スマホ相談会開催のお知らせ(2026年10月~11月開催)",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/5/16940.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "2026きいぱすWINTERサイエンスキャンプを開催します!",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/site/kiipasu/16909.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "参加者募集!! 若狭みはま「まち旅」博覧会プレ開催",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/11/16903.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "トピックスの一覧",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/list6-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "トピックスのRSS",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/rss/10/list6.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "分類で さがす",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "組織で さがす",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "カレンダー でさがす",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/calendar/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "手続き申請ナビ",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/site/shinsei-navi/search/search.php"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "出産・育児",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/2/14/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入園・入学",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/2/16/65/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "就職・退職",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/4/23/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "手当・助成",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/sub/3/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/1/1/7/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "引越・住まい",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/1/1/8/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "高齢・介護",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/3/19/80/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おくやみ",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/life/1/1/9/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "企画講座「かがみであそぼう~ミラーボックスを作ろう~」を開催します!",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/site/kiipasu/16900.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "企画講座「たたいて、こすって、音であそぼう」を開催します!",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/site/kiipasu/16899.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "子育てわくわくカレンダー10月号",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/18/9438.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "きいぱす臨時休館(10月19日)のお知らせ",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/site/kiipasu/16932.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "すべての一覧",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/list1-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "すべてのRSS",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/rss/10/list1.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベントの一覧",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/list5-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベントのRSS",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/rss/10/list5.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "募集の一覧",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/list7-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "募集のRSS",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/rss/10/list7.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "お知らせの一覧",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/list8-1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "お知らせのRSS",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/rss/10/list8.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町長の部屋の画像",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/site/mayor/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "美浜町議会の画像",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/site/town-council/"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年10月号(9月18日発行)No.669",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/site/koho/16781.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "美浜町ふるさと応援寄附金の画像",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/12/107.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "学びを挑戦のエンジンに!",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=117"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "美浜町レイクセンター",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=127"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "美浜町公衆無線LANサービスについて",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=106"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "道の駅",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=100"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "すくすく美浜っ子",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=103"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "なびあす",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=102"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "応援クルー募集",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=64"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "空き家情報バンク",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=67"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "若狭美浜インター産業団地",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=68"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "創業支援ホームページ",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=78"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "美浜町エネルギー環境教育体験館「きいぱす」",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=80"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "美しい浜プロジェクト(事業PR)",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=82"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "移住定住情報",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=88"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "若狭美浜HAMABERRY~いちごの郷みはま~(事業PR)",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=89"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "暮らしの便利帳",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=128"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "291JOBS",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=70"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "個人情報の取り扱いについて",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/5/3434.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "免責事項",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/5/3433.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "アクセシビリティ",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/5/3426.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "リンク集",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/5/3461.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "著作権",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/5/3431.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "町役場への行き方",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/5/4467.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "美浜町",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "メールでのお問い合わせ",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/form/detail.php?sec_sec1=5"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "なびあす",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/site/navi-us/"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "きいぱす",
+   "text_kind": "img_alt",
+   "url": "https://www.town.fukui-mihama.lg.jp/site/kiipasu/"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "大阪・京都方面から",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/5/3477.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "東京・名古屋方面から",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/5/3478.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "大阪・京都方面から",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/5/3479.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "東京・名古屋方面から",
+   "text_kind": "text",
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/5/3480.html"
+  }
+ ],
+ "needs_review": [
+  "hub_multiple"
+ ],
+ "outcome": "hub_multiple",
+ "requests": [
+  {
+   "bytes": 11896,
+   "elapsed_ms": 856,
+   "error_class": "http_404",
+   "final_url": "https://www.town.fukui-mihama.lg.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.town.fukui-mihama.lg.jp/robots.txt"
+  },
+  {
+   "bytes": 46405,
+   "elapsed_ms": 365,
+   "error_class": "",
+   "final_url": "https://www.town.fukui-mihama.lg.jp/",
+   "status": 200,
+   "url": "https://www.town.fukui-mihama.lg.jp/"
+  },
+  {
+   "bytes": 11896,
+   "elapsed_ms": 291,
+   "error_class": "http_404",
+   "final_url": "https://www.town.fukui-mihama.lg.jp/sitemap.xml",
+   "status": 404,
+   "url": "https://www.town.fukui-mihama.lg.jp/sitemap.xml"
+  },
+  {
+   "bytes": 27534,
+   "elapsed_ms": 375,
+   "error_class": "",
+   "final_url": "https://www.town.fukui-mihama.lg.jp/life/1/",
+   "status": 200,
+   "url": "https://www.town.fukui-mihama.lg.jp/life/1/"
+  },
+  {
+   "bytes": 42696,
+   "elapsed_ms": 353,
+   "error_class": "",
+   "final_url": "https://www.town.fukui-mihama.lg.jp/sitemap.html",
+   "status": 200,
+   "url": "https://www.town.fukui-mihama.lg.jp/sitemap.html"
+  },
+  {
+   "bytes": 3367,
+   "elapsed_ms": 1078,
+   "error_class": "",
+   "final_url": "https://ebooks.scinex.co.jp/contents/13091/",
+   "status": 200,
+   "url": "https://www.town.fukui-mihama.lg.jp/adv/ba.php?id=128"
+  },
+  {
+   "bytes": 18096,
+   "elapsed_ms": 261,
+   "error_class": "",
+   "final_url": "https://www.town.fukui-mihama.lg.jp/life/6/40/192/",
+   "status": 200,
+   "url": "https://www.town.fukui-mihama.lg.jp/life/6/40/192/"
+  },
+  {
+   "bytes": 20466,
+   "elapsed_ms": 269,
+   "error_class": "",
+   "final_url": "https://www.town.fukui-mihama.lg.jp/life/2/17/71/",
+   "status": 200,
+   "url": "https://www.town.fukui-mihama.lg.jp/life/2/17/71/"
+  },
+  {
+   "bytes": 20374,
+   "elapsed_ms": 527,
+   "error_class": "",
+   "final_url": "https://www.town.fukui-mihama.lg.jp/soshiki/31/",
+   "status": 200,
+   "url": "https://www.town.fukui-mihama.lg.jp/soshiki/31/"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 4375,
+  "finished_at": "2026-10-15T02:30:40Z",
+  "request_count": 9,
+  "route": "actions_direct_v4_fukui",
+  "started_at": "2026-10-15T02:30:31Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "high",
+   "evidence": [
+    "url:9件 例 https://www.town.fukui-mihama.lg.jp/life/1/4/"
+   ],
+   "family": "url_pattern:life_numeric",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:life_numeric": 11,
+    "url_pattern:site_numeric": 10,
+    "url_pattern:soshiki_numeric": 10
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 140,
+   "image_count": 50,
+   "needs_headless": false,
+   "noscript_text_length": 43,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 22,
+   "text_length": 2410
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "http_404",
+     "kind": "",
+     "source": "default_path",
+     "status": 404,
+     "url": "https://www.town.fukui-mihama.lg.jp/sitemap.xml"
+    }
+   ],
+   "found": false,
+   "kind": "",
+   "source": "",
+   "url": ""
+  },
+  "top": {
+   "elapsed_ms": 365,
+   "error_class": "",
+   "final_url": "https://www.town.fukui-mihama.lg.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

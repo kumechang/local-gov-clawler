@@ -1,0 +1,793 @@
+{
+ "ai_needed": false,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 2,
+     "facility_link_count": 5,
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ施設|高浜町公式ホームページ スポーツ施設",
+     "reasons": [
+      "text:スポーツ施設",
+      "region_nav",
+      "sports_pure",
+      "facility_links:5",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 23,
+     "source": "depth1_link",
+     "text": "スポーツ施設",
+     "url": "https://www.town.takahama.fukui.jp/index/0006/0606/index.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 3,
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ|高浜町公式ホームページ スポーツ",
+     "reasons": [
+      "text:スポーツ",
+      "url_hint",
+      "region_nav",
+      "sports_pure",
+      "facility_links:3"
+     ],
+     "region": "nav",
+     "score": 13,
+     "source": "depth1_link",
+     "text": "スポーツ",
+     "url": "https://www.town.takahama.fukui.jp/0005/sports/index.html",
+     "viable": true
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 6,
+     "fetched": true,
+     "kind": "generic",
+     "page_title": "公共施設案内|高浜町公式ホームページ 公共施設案内",
+     "reasons": [
+      "text:公共施設|施設案内|施設一覧|施設情報",
+      "region_nav",
+      "facility_links:6"
+     ],
+     "region": "nav",
+     "score": 10,
+     "source": "nav",
+     "text": "公共施設案内",
+     "url": "https://www.town.takahama.fukui.jp/index/0006/index.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 0,
+     "fetched": true,
+     "kind": "sports_other",
+     "page_title": "西地区体育館|高浜町公式ホームページ 西地区体育館",
+     "reasons": [
+      "text:体育館",
+      "url_hint",
+      "region_nav",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 12,
+     "source": "depth1_link",
+     "text": "西地区体育館",
+     "url": "https://www.town.takahama.fukui.jp/page/kyouiku/nisichikutaiikukan.html",
+     "viable": false
+    },
+    {
+     "depth": 3,
+     "facility_link_count": 1,
+     "fetched": true,
+     "kind": "sports_other",
+     "page_title": "中央体育館|高浜町公式ホームページ 中央体育館",
+     "reasons": [
+      "text:体育館",
+      "url_hint",
+      "region_nav",
+      "facility_links:1",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 12,
+     "source": "depth2_link",
+     "text": "中央体育館",
+     "url": "https://www.town.takahama.fukui.jp/page/kyouiku/chuoutaiikukan.html",
+     "viable": false
+    }
+   ],
+   "decision": "hub_selected",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "quality": "specific",
+   "selected": {
+    "depth": 2,
+    "facility_link_count": 5,
+    "fetched": true,
+    "kind": "sports_pure",
+    "page_title": "スポーツ施設|高浜町公式ホームページ スポーツ施設",
+    "reasons": [
+     "text:スポーツ施設",
+     "region_nav",
+     "sports_pure",
+     "facility_links:5",
+     "title_match"
+    ],
+    "region": "nav",
+    "score": 23,
+    "source": "depth1_link",
+    "text": "スポーツ施設",
+    "url": "https://www.town.takahama.fukui.jp/index/0006/0606/index.html",
+    "viable": true
+   }
+  }
+ ],
+ "menu_labels": [
+  "くらし",
+  "暮らし",
+  "施設案内",
+  "公共施設",
+  "申請"
+ ],
+ "municipality": {
+  "code": "18481",
+  "full_name": "高浜町",
+  "kind": "town",
+  "name": "高浜町",
+  "official_url": "https://www.town.takahama.fukui.jp/",
+  "prefecture": "福井県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "検索のしかた",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/admin/kensaku.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "Language",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/admin/p006473.html"
+  },
+  {
+   "is_pdf": true,
+   "region": "main",
+   "same_site": true,
+   "text": "takahamadays",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takahama.fukui.jp/page/sanngyousinnkou/p008635_d/fil/takahamadays2025.pdf"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "ワールドマスターズゲーム",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takahama.fukui.jp/page/sougouseisaku/p008923.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "たかはまプラス",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takahama.fukui.jp/page/hokenhukusi/p008788.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "高浜町ふるさと納税",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/hurusatonouzei/p007260.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "赤ふんバス",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/p007003.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "移住・定住情報",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/p007341.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子育て支援情報",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takahama.fukui.jp/kosodate/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "令和8年度高浜町職員採用候補者試験第一次試験合格者",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/soumuka/jinnji/p009062.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "高浜町カスタマーハラスメントに対する基本方針を策定しました",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/soumuka/p009019.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "生活道路における自動車の法定速度30km/h引き下げについて",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/bousai/p009028.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "高浜町 自然災害時における保育施設の対応基準",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/kodomomirai/p009021.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "「福井大雨災害義援金」の受付について",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/tiikifukusisuishinnshitsu/p009016.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/0001/kekkon/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "教育",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/0001/education/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "高齢・介護",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/0001/kourei/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "死亡・相続",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/0001/shibou/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "助成・手当",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/0001/josei/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "国保・年金",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/0001/kokuho/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "健康・医療",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/0001/kenkou/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "障がい",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/0001/shogai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "税金",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/0001/zeikin/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ごみ",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/0001/gomi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "届出・証明",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/0001/todoke/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "入札・契約",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/0001/nyusatsu/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらし・イベントカレンダー",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/sonota/events/event.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "公共施設案内",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/index/0006/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "町内バス時刻表",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/bus.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "申請書ダウンロード",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/index/application/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "各課から探す",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/syozoku.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "サイトマップから探す",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "例規集",
+   "text_kind": "text",
+   "url": "http://www.town.takahama.fukui.jp/reiki/reiki_menu.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "暮らしの便利帳",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/p008033.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "たかはま情報ナビ",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/bousai/takahamazyohonabi.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "中央図書館蔵書検索",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/kyouiku/toshokan.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "休日当番医",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/sonota/events/touban/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "高浜町防災マップ",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/bousai/p001274.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "町長の部屋",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takahama.fukui.jp/chosei/0003/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "町議会",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takahama.fukui.jp/gikai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "広報たかはま",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/kouhou1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "高浜町を知りたい",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/0004/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "(お笑い・バラエティー公演)のりおよしお主義の開催",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/kyouiku/p009022.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "令和8年度 全国学力・学習状況調査の結果分析",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/kyouiku/iinkai/p009066.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "嶺南における地域資源の新たな魅力創出プロジェクトワークショップ開催!",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/sanngyousinnkou/p009071.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "内浦公民館講座「バドミントン教室」",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/kyouiku/p009069.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "高浜まちづくりネットワーク「心ズキズキわくわく作品展」開催のお知らせ",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/p009054.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "令和8年度 公共工事発注見通しについて",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/kensetuseibi/p008483.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "議会の予定(令和8年10月臨時会)",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/gikai/p009068.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "『 2026高浜町文化祭 』 開催のご案内",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/kyouiku/p008946.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "中央図書館10月10日(土)新刊案内について",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/kyouiku/p009040.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "内浦公民館講座「ニュースポーツ体験教室~スティックリング~」",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/kyouiku/p009065.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "新着情報一覧",
+   "text_kind": "text",
+   "url": "http://www.town.takahama.fukui.jp/news2026.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "RSS",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/news.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "分譲地 和田グリーンタウン",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takahama.fukui.jp/sakatagreentown/"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "ごみサポ!",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takahama.fukui.jp/page/jyuminseikatu/p002506.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ご意見・お問い合わせ",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/admin/goiken.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "個人情報の取扱い",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/admin/kojinjyouhou.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "著作権・リンクについて",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/page/admin/chosaku.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "リンク集",
+   "text_kind": "text",
+   "url": "https://www.town.takahama.fukui.jp/0008/index.html"
+  }
+ ],
+ "needs_review": [],
+ "outcome": "hub_selected",
+ "requests": [
+  {
+   "bytes": 1260,
+   "elapsed_ms": 974,
+   "error_class": "http_404",
+   "final_url": "https://www.town.takahama.fukui.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.town.takahama.fukui.jp/robots.txt"
+  },
+  {
+   "bytes": 24092,
+   "elapsed_ms": 3499,
+   "error_class": "",
+   "final_url": "https://www.town.takahama.fukui.jp/",
+   "status": 200,
+   "url": "https://www.town.takahama.fukui.jp/"
+  },
+  {
+   "bytes": 1260,
+   "elapsed_ms": 241,
+   "error_class": "http_404",
+   "final_url": "https://www.town.takahama.fukui.jp/sitemap.xml",
+   "status": 404,
+   "url": "https://www.town.takahama.fukui.jp/sitemap.xml"
+  },
+  {
+   "bytes": 29710,
+   "elapsed_ms": 183,
+   "error_class": "",
+   "final_url": "https://www.town.takahama.fukui.jp/index/0006/index.html",
+   "status": 200,
+   "url": "https://www.town.takahama.fukui.jp/index/0006/index.html"
+  },
+  {
+   "bytes": 33422,
+   "elapsed_ms": 229,
+   "error_class": "",
+   "final_url": "https://www.town.takahama.fukui.jp/sitemap.html",
+   "status": 200,
+   "url": "https://www.town.takahama.fukui.jp/sitemap.html"
+  },
+  {
+   "bytes": 20112,
+   "elapsed_ms": 203,
+   "error_class": "",
+   "final_url": "https://www.town.takahama.fukui.jp/0001/education/index.html",
+   "status": 200,
+   "url": "https://www.town.takahama.fukui.jp/0001/education/index.html"
+  },
+  {
+   "bytes": 18810,
+   "elapsed_ms": 175,
+   "error_class": "",
+   "final_url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/p008033.html",
+   "status": 200,
+   "url": "https://www.town.takahama.fukui.jp/page/sougouseisaku/p008033.html"
+  },
+  {
+   "bytes": 15099,
+   "elapsed_ms": 174,
+   "error_class": "",
+   "final_url": "https://www.town.takahama.fukui.jp/index/0006/0606/index.html",
+   "status": 200,
+   "url": "https://www.town.takahama.fukui.jp/index/0006/0606/index.html"
+  },
+  {
+   "bytes": 18034,
+   "elapsed_ms": 228,
+   "error_class": "",
+   "final_url": "https://www.town.takahama.fukui.jp/0005/sports/index.html",
+   "status": 200,
+   "url": "https://www.town.takahama.fukui.jp/0005/sports/index.html"
+  },
+  {
+   "bytes": 28529,
+   "elapsed_ms": 199,
+   "error_class": "",
+   "final_url": "https://www.town.takahama.fukui.jp/page/kyouiku/nisichikutaiikukan.html",
+   "status": 200,
+   "url": "https://www.town.takahama.fukui.jp/page/kyouiku/nisichikutaiikukan.html"
+  },
+  {
+   "bytes": 29620,
+   "elapsed_ms": 203,
+   "error_class": "",
+   "final_url": "https://www.town.takahama.fukui.jp/page/kyouiku/chuoutaiikukan.html",
+   "status": 200,
+   "url": "https://www.town.takahama.fukui.jp/page/kyouiku/chuoutaiikukan.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 6308,
+  "finished_at": "2026-10-15T02:30:59Z",
+  "request_count": 11,
+  "route": "actions_direct_v4_fukui",
+  "started_at": "2026-10-15T02:30:46Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "none",
+   "evidence": [],
+   "family": "unknown",
+   "provenance": "auto",
+   "scores": {}
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 89,
+   "image_count": 51,
+   "needs_headless": false,
+   "noscript_text_length": 113,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 9,
+   "text_length": 1221
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "http_404",
+     "kind": "",
+     "source": "default_path",
+     "status": 404,
+     "url": "https://www.town.takahama.fukui.jp/sitemap.xml"
+    }
+   ],
+   "found": false,
+   "kind": "",
+   "source": "",
+   "url": ""
+  },
+  "top": {
+   "elapsed_ms": 3499,
+   "error_class": "",
+   "final_url": "https://www.town.takahama.fukui.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}
