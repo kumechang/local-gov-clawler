@@ -135,3 +135,21 @@ def test_decide_strong_label_beats_shallower_weak_label():
     assert d.selected.url == "shallow"
     # 強いラベルが無ければ、これまでどおり弱いラベルを使う(葛城市型)
     assert hub.decide([weak]).selected.url == "weak"
+
+
+def test_ground_word_is_only_a_sports_ground():
+    """福井県パイロットの坂井市: 「三国グランドビジョン」(防災整備計画)を運動場と誤認していた。"""
+    assert hub.classify_label("三国グランドビジョン") == "other"
+    assert hub.score_text("三国グランドビジョン")[0] == 0
+    assert not hub.FACILITY_NAME.search("グランドホテル")
+    # 運動場としての「グラウンド/グランド」は引き続き有効
+    for t in ["中央グラウンド", "市民グランド", "グランドゴルフ場", "グランド使用の案内", "グランド・野球場", "グランド"]:
+        assert hub.classify_label(t).startswith("sports"), t
+        assert hub.FACILITY_NAME.search(t), t
+
+
+def test_page_features_reports_counted_links_for_diagnosis():
+    html = '<html><body><nav><a href="/a">市民体育館</a></nav><main><a href="/b">中央グラウンド</a><a href="/c">お知らせ</a></main></body></html>'
+    soup = parse_html(html)
+    n, head, samples = hub.page_features(soup, extract_links(soup, "https://x.jp/", "x.jp"))
+    assert n == 2 and samples == ["市民体育館[nav]", "中央グラウンド[main]"]

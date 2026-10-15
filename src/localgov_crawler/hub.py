@@ -11,6 +11,10 @@ from .nav import Link, norm_text
 
 GENRE = "sports_facility"
 
+# 「グラウンド」は常に運動場。「グランド」は、ゴルフ・語尾・区切り・施設語・「の」の前だけ運動場とみなす
+# (「三国グランドビジョン」「グランドホテル」などを除くため)
+GROUND = r"グラウンド|グランド(?=ゴルフ|$|[・\s、/（(]|施設|一覧|案内|情報|使用|利用|の)"
+
 # (パターン, 重み)。リンク文言はNFKC正規化後に照合する。
 POSITIVE_TERMS: list[tuple[re.Pattern, int]] = [
     (re.compile(p), w)
@@ -20,7 +24,7 @@ POSITIVE_TERMS: list[tuple[re.Pattern, int]] = [
         (r"運動施設", 9),
         (r"体育館", 6),
         (r"運動公園|総合運動", 6),
-        (r"グラウンド|グランド|運動場", 6),
+        (rf"{GROUND}|運動場", 6),
         (r"スポーツ", 4),
         (r"施設を探す|施設から探す|施設検索|[市町村]の施設|みんなの施設", 4),
         (r"体育", 3),
@@ -46,14 +50,14 @@ NEGATIVE_TERMS: list[tuple[re.Pattern, int, str]] = [
     (re.compile(r"子育て|保育|幼稚園|こども"), -2, "childcare"),
 ]
 # ラベルの種類(専用性)。複合ラベル(観光・文化・スポーツ など)は大分類で、ハブにはしない。
-SPORTS_WORD = re.compile(r"スポーツ|体育|運動|グラウンド|グランド")
+SPORTS_WORD = re.compile(rf"スポーツ|体育|運動|{GROUND}")
 OTHER_TOPICS = re.compile(r"観光|文化(?!財)|生涯学習|公民館|レジャー|健康|教育|福祉|イベント|歴史|芸術|図書館|子育て|保育|学校")
 PURE_REMOVE = re.compile(r"スポーツ施設|体育施設|運動施設|スポーツ|体育|運動|レクリエーション|施設|一覧|案内|情報|の|[・/／\s、,&＆と]")
 GENERIC_FACILITY = re.compile(r"公共施設|施設案内|施設一覧|施設情報|施設を探す|施設から探す|施設検索|[市町村]の施設|みんなの施設|公園")
 PURE_BONUS = 4
 
 URL_HINTS = re.compile(r"sport|taiiku|undou|gym|shisetsu|park|kouen|ground", re.I)
-FACILITY_NAME = re.compile(r"体育館|グラウンド|グランド|運動場|運動公園|野球場|テニスコート|プール|スポーツセンター|多目的広場|武道館|競技場|スポーツ公園|スポーツ広場|サッカー場")
+FACILITY_NAME = re.compile(rf"体育館|{GROUND}|運動場|運動公園|野球場|テニスコート|プール|スポーツセンター|多目的広場|武道館|競技場|スポーツ公園|スポーツ広場|サッカー場")
 # 施設名リンクの根拠なしでも一覧ページとみなしてよい強い語
 STRONG_TEXT = re.compile(r"スポーツ施設|体育施設|運動施設")
 
@@ -91,13 +95,14 @@ class Candidate:
     page_title: str = ""
     fetched: bool = False
     kind: str = "other"
+    facility_samples: list[str] = field(default_factory=list)  # 施設名リンクとして数えたリンク文言の例(診断用)
 
     def to_dict(self) -> dict:
         return {
             "url": self.url, "text": self.text, "score": self.score, "reasons": self.reasons,
             "region": self.region, "source": self.source, "depth": self.depth,
             "facility_link_count": self.facility_link_count, "page_title": self.page_title,
-            "fetched": self.fetched, "kind": self.kind, "viable": is_viable(self),
+            "fetched": self.fetched, "kind": self.kind, "facility_samples": self.facility_samples, "viable": is_viable(self),
         }
 
 
@@ -170,17 +175,20 @@ def candidates_from_urls(urls: list[str]) -> list[Candidate]:
     return out
 
 
-def page_features(soup: BeautifulSoup, links: list[Link]) -> tuple[int, str]:
-    """入口候補ページの特徴: 施設名らしいリンクの数と、title/h1。"""
-    n = sum(1 for l in links if l.same_site and FACILITY_NAME.search(norm_text(l.text)))
+def page_features(soup: BeautifulSoup, links: list[Link]) -> tuple[int, str, list[str]]:
+    """入口候補ページの特徴: 施設名らしいリンクの数、title/h1、数えたリンクの例。"""
+    facility = [(norm_text(l.text), l.region) for l in links if l.same_site and FACILITY_NAME.search(norm_text(l.text))]
+    n = len(facility)
+    samples = [f"{t[:24]}[{region}]" for t, region in facility[:5]]
     title = norm_text(soup.title.get_text()) if soup.title else ""
     h1 = soup.find("h1")
     head = " ".join(filter(None, [title, norm_text(h1.get_text()) if h1 else ""]))
-    return n, head
+    return n, head, samples
 
 
-def rescore_with_page(c: Candidate, facility_links: int, head: str) -> None:
+def rescore_with_page(c: Candidate, facility_links: int, head: str, samples: list[str] | None = None) -> None:
     c.fetched = True
+    c.facility_samples = samples or []
     c.facility_link_count = facility_links
     c.page_title = head[:120]
     bonus = min(facility_links, 10)
