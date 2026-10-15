@@ -88,12 +88,12 @@ jobs:
           localgov-crawler "${args[@]}"
       - uses: actions/upload-artifact@v4
         with:
-          name: results-${{ matrix.shard }}
+          name: results-${{ inputs.route }}-${{ matrix.shard }}
           path: out/results
           retention-days: 30
       - uses: actions/upload-artifact@v4
         with:
-          name: raw-html-${{ matrix.shard }}
+          name: raw-html-${{ inputs.route }}-${{ matrix.shard }}
           path: out/raw
           retention-days: 14
           if-no-files-found: ignore
@@ -112,7 +112,7 @@ jobs:
       - run: pip install -e .
       - uses: actions/download-artifact@v4
         with:
-          pattern: results-*
+          pattern: results-${{ inputs.route }}-*
           path: collected
           merge-multiple: true
       - name: merge and summarize
@@ -129,7 +129,7 @@ jobs:
           cat "data/summary/$ROUTE.md" >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with:
-          name: crawl-sqlite
+          name: crawl-sqlite-${{ inputs.route }}
           path: out/crawl.sqlite
           retention-days: 30
       - name: commit results

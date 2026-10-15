@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8"]
+dev = ["pytest>=8", "pyyaml>=6"]
 
 [project.scripts]
 localgov-crawler = "localgov_crawler.cli:main"
