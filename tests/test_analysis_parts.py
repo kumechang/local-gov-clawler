@@ -67,6 +67,9 @@ def test_classify_label():
 def test_decide_precision_first():
     # 専用ラベルで施設名リンクのある候補は確定
     assert hub.decide([cand("a", 12, "sports_pure", fl=4)]).outcome == "hub_selected"
+    # 施設名リンクが1件だけのページは一覧とみなさない(橿原市の「スポーツ」小分類型)
+    assert hub.decide([cand("a", 12, "sports_pure", fl=1)]).outcome == "hub_not_found"
+    assert hub.decide([cand("a", 12, "sports_pure", fl=2)]).outcome == "hub_selected"
     # 同じ深さで僅差なら確定しない(後段のAI/手動へ)
     assert hub.decide([cand("a", 12, "sports_pure", fl=4), cand("b", 11, "sports_pure", fl=3)]).outcome == "hub_multiple"
     # 浅い方が高得点でなくても、浅い専用ラベルを優先(トップに近い一覧が正解の定義)

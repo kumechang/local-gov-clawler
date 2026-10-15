@@ -58,6 +58,7 @@ FACILITY_NAME = re.compile(r"体育館|グラウンド|グランド|運動場|�
 STRONG_TEXT = re.compile(r"スポーツ施設|体育施設|運動施設")
 
 MIN_SCORE = 8  # ハブとして確定してよい最低スコア
+MIN_FACILITY_LINKS = 2  # 一覧ページとみなす施設名リンクの最小数(1件だけのページは一段上のカテゴリであることが多い)
 MARGIN = 4  # 同じ深さの次点との最低差
 FETCH_MIN = 2  # 先のページを見に行く最低スコア(大分類を含む)
 
@@ -193,17 +194,15 @@ def rescore_with_page(c: Candidate, facility_links: int, head: str) -> None:
 
 def is_viable(c: Candidate) -> bool:
     """ハブとして自動確定してよいか。ページを取得して施設名リンクを確認できたものだけ。
-    - 専用ラベル(スポーツ・体育 など): 施設名リンク1件以上(施設名のラベルは2件以上)
+    - 専用ラベル(スポーツ・体育 など、施設名のラベルも): 施設名リンク2件以上(「一覧」は複数の施設が並ぶページ)
     - 複合ラベル(文化・スポーツ施設 など): 強い語(スポーツ施設等)を含み、施設名リンク3件以上
     - 汎用ラベル(公共施設一覧 など): 施設名リンク3件以上(専用ページが無い自治体向け。品質は generic)
     大分類・サイトマップ・お知らせ記事などは対象外。"""
     if c.score < MIN_SCORE or not c.fetched:
         return False
     fl = c.facility_link_count or 0
-    if c.kind == "sports_pure":
-        return fl >= 1
-    if c.kind == "sports_other":
-        return fl >= 2
+    if c.kind in ("sports_pure", "sports_other"):
+        return fl >= MIN_FACILITY_LINKS
     if c.kind == "sports_composite":
         return fl >= 3 and bool(STRONG_TEXT.search(norm_text(c.text)))
     if c.kind == "generic":
