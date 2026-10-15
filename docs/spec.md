@@ -73,3 +73,10 @@ GitHub Actions: `crawl` ワークフローを手動実行(`.github/workflows/cra
 
 ## ジャンルと施設一覧の階層について(2026-10-15 ユーザー指摘)
 自治体ごとに、スポーツ施設を「スポーツ施設一覧」として専用にまとめているところと、「公共施設一覧」にまとめているところがある。両者は固定の親子関係ではない。そのため、スポーツ専用の一覧があればそれを(`quality=specific`)、無ければ汎用の施設一覧を(`quality=generic`)入口とし、他ジャンルの入口も別々に探す。
+
+
+## 自動クロール(マージをきっかけにした実行、D-056)
+`main` に `src/**` か `config/auto_crawl.json` の変更がマージされると、`auto-crawl` ワークフローが `config/auto_crawl.json` の `targets`(県と route)を `crawl` ワークフローで実行し、結果を `main` にコミットする。
+- コードを変えたら、`config/auto_crawl.json` の route を新しい名前に更新する(結果がある route は実行されない)
+- 止める: `enabled: false`、またはコミットメッセージに `[skip crawl]`
+- 手動実行: Actions の `auto-crawl`(設定どおり)または `crawl`(県・routeを指定)

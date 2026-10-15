@@ -1,0 +1,53 @@
+name: auto-crawl
+# mainへのマージで、config/auto_crawl.json の対象を自動クロールする(docs/decisions.md D-056)。
+# 第三者のサイトへアクセスが発生するため、次の安全策がある:
+#  - src/ か config/auto_crawl.json を変更したときだけ動く(docsやデータの変更では動かない)
+#  - 結果が既にある route は実行しない(上書きで実験の結果が消えるのを防ぐ。新しい route 名にする)
+#  - config の enabled=false、またはコミットメッセージの [skip crawl] で止まる
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "config/auto_crawl.json"
+  workflow_dispatch:
+
+concurrency:
+  group: auto-crawl
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      count: ${{ steps.p.outputs.count }}
+      matrix: ${{ steps.p.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - id: p
+        env:
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+        run: python3 scripts/plan_auto_crawl.py
+
+  crawl:
+    needs: plan
+    if: ${{ needs.plan.outputs.count != '0' }}
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    uses: ./.github/workflows/crawl.yml
+    with:
+      prefecture: ${{ matrix.prefecture }}
+      route: ${{ matrix.route }}
+      use_proxy: false
+      shards: "1"
+      commit_results: true
+    permissions:
+      contents: write
+    secrets: inherit
