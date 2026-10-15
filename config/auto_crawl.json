@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "note": "mainへのマージ(src/ または このファイルの変更)で、targets を自動クロールする。routeは未使用の名前にすること(結果が既にある route は実行されない)。止めるには enabled を false にするか、コミットメッセージに [skip crawl] を入れる",
+  "targets": [
+    {"prefecture": "奈良県", "route": "actions_direct_v6"},
+    {"prefecture": "福井県", "route": "actions_direct_v6_fukui"}
+  ]
+}

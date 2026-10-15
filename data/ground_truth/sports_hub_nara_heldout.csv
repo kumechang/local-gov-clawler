@@ -1,6 +1,6 @@
 municipality_code,municipality_name,site_url,hub_url,alt_urls,notes
 29203,大和郡山市,https://www.city.yamatokoriyama.lg.jp/,https://www.city.yamatokoriyama.lg.jp/kanko_bunka_sports/sports/sportsshisetsu/index.html,,
-29204,天理市,https://www.city.tenri.nara.jp/,,,なし
+29204,天理市,https://www.city.tenri.nara.jp/,https://www.city.tenri.nara.jp/shisetsu/sportsshisetsu/index.html,,なし / 正解は当初「なし」。【事後の許容】クローラーが確定したページを見て、ユーザーが妥当と判断(2026-10-15)
 29342,平群町,https://www.town.heguri.nara.jp/,https://www.town.heguri.nara.jp/life/1/1/2/,,
 29401,高取町,https://www.town.takatori.nara.jp/,https://www.town.takatori.nara.jp/contents_detail.php?frmId=160,,他の施設と混同
 29402,明日香村,https://www.asukamura.jp/,https://www.asukamura.jp/kurashi_syogaigakusyu_syakaitaiiku_shisetsu.html,,

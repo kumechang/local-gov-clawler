@@ -56,6 +56,10 @@ PURE_REMOVE = re.compile(r"スポーツ施設|体育施設|運動施設|スポ�
 GENERIC_FACILITY = re.compile(r"公共施設|施設案内|施設一覧|施設情報|施設を探す|施設から探す|施設検索|[市町村]の施設|みんなの施設|公園")
 PURE_BONUS = 4
 
+# 「利用申請について」のような手続き案内ページは、施設が並んでいても一覧ページではない
+PROCEDURE = re.compile(r"申請|届出|手続|申込|様式|ダウンロード")
+PROCEDURE_PENALTY = 5
+
 URL_HINTS = re.compile(r"sport|taiiku|undou|gym|shisetsu|park|kouen|ground", re.I)
 FACILITY_NAME = re.compile(rf"体育館|{GROUND}|運動場|運動公園|野球場|テニスコート|プール|スポーツセンター|多目的広場|武道館|競技場|スポーツ公園|スポーツ広場|サッカー場")
 # 施設名リンクの根拠なしでも一覧ページとみなしてよい強い語
@@ -138,6 +142,9 @@ def score_text(text: str, url: str = "", region: str = "") -> tuple[int, list[st
                 score += 1
                 reasons.append("region_nav")
         kind = classify_label(t)
+        if kind.startswith("sports") and PROCEDURE.search(t):
+            score -= PROCEDURE_PENALTY
+            reasons.append("procedure_page")
         if kind == "sports_pure":
             score += PURE_BONUS
             reasons.append("sports_pure")
@@ -177,7 +184,17 @@ def candidates_from_urls(urls: list[str]) -> list[Candidate]:
 
 def page_features(soup: BeautifulSoup, links: list[Link]) -> tuple[int, str, list[str]]:
     """入口候補ページの特徴: 施設名らしいリンクの数、title/h1、数えたリンクの例。"""
-    facility = [(norm_text(l.text), l.region) for l in links if l.same_site and FACILITY_NAME.search(norm_text(l.text))]
+    facility, seen_text, seen_url = [], set(), set()
+    for l in links:
+        t = norm_text(l.text)
+        if not (l.same_site and FACILITY_NAME.search(t)):
+            continue
+        key = re.sub(r"\s+", "", t)
+        if key in seen_text or l.url in seen_url:  # 同じ施設へのリンクを2回数えない(空白の違い・同じURL)
+            continue
+        seen_text.add(key)
+        seen_url.add(l.url)
+        facility.append((t, l.region))
     n = len(facility)
     samples = [f"{t[:24]}[{region}]" for t, region in facility[:5]]
     title = norm_text(soup.title.get_text()) if soup.title else ""

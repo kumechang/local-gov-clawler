@@ -153,3 +153,23 @@ def test_page_features_reports_counted_links_for_diagnosis():
     soup = parse_html(html)
     n, head, samples = hub.page_features(soup, extract_links(soup, "https://x.jp/", "x.jp"))
     assert n == 2 and samples == ["市民体育館[nav]", "中央グラウンド[main]"]
+
+
+def test_duplicate_facility_links_are_counted_once():
+    """川上村型: 同じ公園へのリンクが、空白の違いで2件に数えられていた。"""
+    html = ('<html><body><main><a href="/p">あきつの小野スポーツ公園</a></main>'
+            '<nav><a href="/p2">あきつの小野 スポーツ公園</a><a href="/p">スポーツ公園の案内(別文言)</a></nav></body></html>')
+    soup = parse_html(html)
+    n, _, samples = hub.page_features(soup, extract_links(soup, "https://x.jp/", "x.jp"))
+    assert n == 1 and len(samples) == 1
+    html2 = '<html><body><a href="/a">市民体育館</a><a href="/b">中央グラウンド</a></body></html>'
+    soup2 = parse_html(html2)
+    assert hub.page_features(soup2, extract_links(soup2, "https://x.jp/", "x.jp"))[0] == 2
+
+
+def test_procedure_pages_are_not_hubs_but_categories_still_explored():
+    """あわら市型: 「スポーツ施設の利用申請について」は一覧ではない。「くらし・手続き」の大分類は探索対象のまま。"""
+    assert hub.score_text("スポーツ施設の利用申請について", "", "other")[0] < hub.FETCH_MIN + 2
+    assert hub.score_text("スポーツ施設", "", "nav")[0] >= hub.MIN_SCORE
+    assert hub.score_text("くらし・手続き", "", "nav")[0] >= hub.FETCH_MIN
+    assert hub.score_text("体育施設利用案内", "", "nav")[0] >= hub.MIN_SCORE

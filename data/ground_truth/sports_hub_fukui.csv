@@ -4,7 +4,7 @@ municipality_code,municipality_name,site_url,hub_url,alt_urls,notes
 18204,小浜市,https://www1.city.obama.fukui.jp/,https://www1.city.obama.fukui.jp/shisei/kokyoshisetsu/taiikushisetsu/index.html,,なし / 正解は当初「なし」。【事後の許容】クローラーが確定したページを見て、ユーザーが妥当と判断(2026-10-15)
 18207,鯖江市,https://www.city.sabae.fukui.jp/,https://www.city.sabae.fukui.jp/about_city/shinoshokai/kokyoshisetsu/sports_shisetsu/index.html,,
 18209,越前市,https://www.city.echizen.lg.jp/,https://www.city.echizen.lg.jp/office/010/040/sisetu/sportsisetusyoukai.html,,
-18210,坂井市,https://www.city.fukui-sakai.lg.jp/,https://www.city.fukui-sakai.lg.jp/shisetsu/shisetsu-joho/taikukan/index.html,,
+18210,坂井市,https://www.city.fukui-sakai.lg.jp/,https://www.city.fukui-sakai.lg.jp/shisetsu/shisetsu-joho/taikukan/index.html,https://www.city.fukui-sakai.lg.jp/shisetsu/kensaku/taikukan/index.html,【事後の許容】クローラーが確定したページを見て、ユーザーが妥当と判断(2026-10-15)
 18322,永平寺町,https://www.town.eiheiji.lg.jp/,https://www.town.eiheiji.lg.jp/600/603/index.html,,
 18382,池田町,https://www.town.ikeda.fukui.jp/,https://www.town.ikeda.fukui.jp/kurashi/bunka/1423/index.html,,
 18481,高浜町,https://www.town.takahama.fukui.jp/,https://www.town.takahama.fukui.jp/index/0006/0606/index.html,,

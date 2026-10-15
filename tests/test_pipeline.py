@@ -292,3 +292,12 @@ def test_evaluate_counts_selection_where_truth_is_none(tmp_path, city_routes):
     truth.write_text("municipality_code,hub_url,alt_urls,notes\n29999,,,なし\n", encoding="utf-8")
     ev = store.evaluate([r], truth)
     assert ev["truth_count"] == 0 and ev["none_rows"] == 1 and ev["none_selected"] == 1 and ev["selected_precision_all"] == 0.0
+
+
+def test_evaluate_ignores_scheme_and_www_differences(tmp_path, city_routes):
+    """おおい町型: https://www.x と http://x は同じページ。"""
+    r = analyze(M, make_fetcher(city_routes), Config(route="test", retry_wait=0))
+    truth = tmp_path / "t.csv"
+    truth.write_text("municipality_code,hub_url,alt_urls,notes\n29999,http://city.example.jp/sports/shisetsu.html/,,\n", encoding="utf-8")
+    ev = store.evaluate([r], truth)
+    assert ev["selected_correct"] == 1 and ev["reached"] == 1

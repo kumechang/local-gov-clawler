@@ -1,6 +1,24 @@
 name: crawl
-# 手動実行のみ。自治体サイトへのアクセスが発生するため、定期実行にはしていない(docs/decisions.md D-007)。
+# 手動実行(workflow_dispatch)と、auto-crawl.yml からの呼び出し(workflow_call)。
+# 自治体サイトへのアクセスが発生するため、定期実行にはしていない(docs/decisions.md D-007)。
 on:
+  workflow_call:
+    inputs:
+      prefecture:
+        type: string
+        default: 奈良県
+      route:
+        type: string
+        default: actions_direct
+      use_proxy:
+        type: boolean
+        default: false
+      shards:
+        type: string
+        default: "1"
+      commit_results:
+        type: boolean
+        default: false
   workflow_dispatch:
     inputs:
       prefecture:
@@ -125,5 +143,10 @@ jobs:
           git add data/results data/summary
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "data: crawl results (route=$ROUTE)"
-          git pull --rebase origin "$BRANCH"
-          git push origin "HEAD:$BRANCH"
+          # 複数の実行が同時にコミットすることがあるので、押し返されたら取り込み直して再試行する
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin "$BRANCH" && git push origin "HEAD:$BRANCH" && exit 0
+            sleep $((i * 3))
+          done
+          echo "push に失敗しました" >&2
+          exit 1

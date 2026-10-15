@@ -81,11 +81,14 @@
    "selected_url": null
   }
  ],
+ "none_rows": 0,
+ "none_selected": 0,
  "reach_rate": 0.8,
  "reached": 8,
  "selected": 7,
  "selected_correct": 7,
  "selected_correct_rate": 0.7,
  "selected_precision": 1.0,
+ "selected_precision_all": 1.0,
  "truth_count": 10
 }
