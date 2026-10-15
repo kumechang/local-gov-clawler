@@ -1,0 +1,1282 @@
+{
+ "ai_needed": false,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 3,
+     "facility_link_count": 13,
+     "facility_samples": [
+      "三国運動公園[nav]",
+      "三国体育館[nav]",
+      "丸岡今福体育館[nav]",
+      "丸岡武道館[nav]",
+      "丸岡体育館[nav]"
+     ],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "福井県坂井市/体育施設 体育施設",
+     "reasons": [
+      "text:体育施設",
+      "url_hint",
+      "sports_pure",
+      "facility_links:13",
+      "title_match"
+     ],
+     "region": "other",
+     "score": 28,
+     "source": "depth2_link",
+     "text": "体育施設",
+     "url": "https://www.city.fukui-sakai.lg.jp/shisetsu/kensaku/taikukan/index.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "福井県坂井市/スポーツ スポーツ",
+     "reasons": [
+      "text:スポーツ",
+      "url_hint",
+      "region_nav",
+      "sports_pure"
+     ],
+     "region": "nav",
+     "score": 10,
+     "source": "depth1_link",
+     "text": "スポーツ",
+     "url": "https://www.city.fukui-sakai.lg.jp/kanko-bunka/sports/sports/index.html",
+     "viable": false
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "sports_composite",
+     "page_title": "福井県坂井市/スポーツ・レジャー・公園 スポーツ・レジャー・公園",
+     "reasons": [
+      "text:スポーツ",
+      "url_hint",
+      "region_nav",
+      "composite"
+     ],
+     "region": "nav",
+     "score": 7,
+     "source": "depth1_link",
+     "text": "スポーツ・レジャー・公園",
+     "url": "https://www.city.fukui-sakai.lg.jp/kanko-bunka/sports/index.html",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "sports_composite",
+     "page_title": "福井県坂井市/観光・文化・スポーツ",
+     "reasons": [
+      "text:スポーツ",
+      "region_nav",
+      "composite"
+     ],
+     "region": "nav",
+     "score": 6,
+     "source": "nav",
+     "text": "観光・文化 スポーツ",
+     "url": "https://www.city.fukui-sakai.lg.jp/kanko-bunka/index.html",
+     "viable": false
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "generic",
+     "page_title": "福井県坂井市/施設検索 施設検索",
+     "reasons": [
+      "text:施設を探す|施設から探す|施設検索|[市町村]の施設|みんなの施設",
+      "url_hint",
+      "region_nav"
+     ],
+     "region": "nav",
+     "score": 6,
+     "source": "depth1_link",
+     "text": "施設検索",
+     "url": "https://www.city.fukui-sakai.lg.jp/shisetsu/kensaku/index.html",
+     "viable": false
+    }
+   ],
+   "decision": "hub_selected",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "quality": "specific",
+   "selected": {
+    "depth": 3,
+    "facility_link_count": 13,
+    "facility_samples": [
+     "三国運動公園[nav]",
+     "三国体育館[nav]",
+     "丸岡今福体育館[nav]",
+     "丸岡武道館[nav]",
+     "丸岡体育館[nav]"
+    ],
+    "fetched": true,
+    "kind": "sports_pure",
+    "page_title": "福井県坂井市/体育施設 体育施設",
+    "reasons": [
+     "text:体育施設",
+     "url_hint",
+     "sports_pure",
+     "facility_links:13",
+     "title_match"
+    ],
+    "region": "other",
+    "score": 28,
+    "source": "depth2_link",
+    "text": "体育施設",
+    "url": "https://www.city.fukui-sakai.lg.jp/shisetsu/kensaku/taikukan/index.html",
+    "viable": true
+   }
+  }
+ ],
+ "menu_labels": [
+  "くらし",
+  "暮らし",
+  "子育て",
+  "観光",
+  "事業者",
+  "市政",
+  "施設案内",
+  "申請",
+  "手続き"
+ ],
+ "municipality": {
+  "code": "18210",
+  "full_name": "坂井市",
+  "kind": "city",
+  "name": "坂井市",
+  "official_url": "https://www.city.fukui-sakai.lg.jp/",
+  "prefecture": "福井県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "文字サイズ・色合いの変更",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/henko.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "携帯サイト",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/shisei/koho/homepage/keitai.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "Foreign Language",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/foreign.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ホーム",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "防犯・防災",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/bosai-bohan/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらし 手続き・税",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kurashi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子育て・教育",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kosodate/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "健康・医療 福祉",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kenko/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光・文化 スポーツ",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kanko-bunka/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "事業者向け",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/jigyosha/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市政情報",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shisei/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "oameoshirase",
+   "text_kind": "img_alt",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/oameoshirase.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ごみの収集日",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kurashi/gomi/shushubi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと納税について",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kikakuseisaku/shisei/kifu/furusato/furusato-nozei.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イータク(坂井市",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kokyokotsu/kurashi/toshi-keikaku/kotsu/on-demand.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "オンデマンド型交通",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kokyokotsu/kurashi/toshi-keikaku/kotsu/on-demand.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "申請・届出",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shinsei/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "各種証明書(戸籍,住民票,印鑑登録など)について",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shimin/kurashi/koseki/shomeisho/kakusyu.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "就労証明書様式",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/hoiku/kosodate/kosodate/hoiku/syuurousyoumeisyo.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市民税・県民税申告が必要かどうかのご案内",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kazei/kurashi/zeikin/kojin/shinkoku-hukakizitsu.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "情報の探し方のヒント",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/shisei/koho/homepage/kensaku-no-hinto.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "よくあるご質問",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/faq/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "個人情報ファイル簿の公表について",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/somu/shisei/joho/kojin-joho/kojinjyouhoufile.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "YONETSU-KANささおかの営業休止について",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kankyou/kurashi/gomi/sesaku/yonetsu-kan2.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "行政配布文書(令和8年度)",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/machi-zukuri/kubunsyohaifu/haifubunsyo.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "坂井市の封筒に広告を掲載しませんか",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/somu/jigyosha/shokogyo/shinko/fuutoukoukokur08.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "広報さかい(2026年)",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/shisei/koho/koho-sakai/kohoshi-2026.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "さかい未来創造座談会を開催します",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/shisei/kocho/zadankai/documents/r8zadankai.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市の花「ゆり」事業所で育てませんか《募集!》",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/nogyoshinko/jigyosha/norin/nogyo/yuriboshyuu.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "おさかな料理教室を開催します",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/ringyo-suisan/kenkou/kenkou/eiyou/osakanaryourikyoushitu.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "第21回坂井市民文化祭を開催します!",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/bunka/kanko-bunka/bunka/geino/2025bunkasai.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "新着情報一覧",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shinchaku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "新着情報RSS",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shinchaku/shinchaku.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "大雨被害で廃業危機の料理店を救いたい! 竹田を愛する若者ら18日に土砂撤去",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/machi-zukuri/houdou/potsun.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "【マクドナルド新店舗開業】運営の株式会社ティーエムエーと市が21日に包括協定締結",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kikakuseisaku/houdou/20261021tma.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "【全国高校ロボット競技大会】21日に全国文化芸術大会出場の坂井高校を激励します",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/bunka/houdou/robotto.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "【第23回小葉田淳記念文庫講演会】11月7日、「豊臣秀吉・秀長兄弟の時代と敦賀」をテーマに",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/tosyo-miku/hodo/kobata/r8.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "【丸岡中学校】丸岡LOVERS(ラバーズ)20日に最終発表会",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/gakko/maruokalavers2026saisyu.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "【三国湊まちづくり】16日(金)夜に第4回ワークショップ",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kikakuseisaku/houdou/20261016machidukuriws.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "(曜日修正しました)【三国木部まち協】18日にホタルの里公園披露会&ふるさとまつり",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/mikukibe-cc/kouenopen/kouenopen.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "来春出発に向け英国派遣団 23日に結団式を開催!",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shogai-gakusyu/houdou/r8/1023ketsudanshiki.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "10月15日坂井市交通関係団体合同研修会の開催について",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/anzen/koutuu/20261015kennsyuukai.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "報道発表一覧",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/press/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "報道発表RSS",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/press/press.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報さかい",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shisei/koho/koho-sakai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市長の部屋",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shisei/shicho/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "坂井市議会",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/gikai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "便利アプリ",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/application/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベント カレンダー",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/cgi-bin/event_cal_multi/calendar.cgi"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "施設案内",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shisetsu/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "公共交通",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kokyokotsu/kurashi/toshi-keikaku/kotsu/kokyokotsu.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "もしもの時",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/moshimo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "妊娠・出産",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/ninshin/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "育児・子育て",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/ikuji/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入学・教育",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/nyugaku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kekkon/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "住まい・引越し",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/sumai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "就職・仕事",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shushoku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "医療・福祉",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/iryo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "高齢・介護",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kaigo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "死亡・相続",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shibo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ごみ・リサイクル",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/gomi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "移住・定住",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/iju/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "悩み・相談",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/nayami/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "坂井市らしさ、かがやく。公式キャラクター",
+   "text_kind": "text",
+   "url": "http://www.city.fukui-sakai.lg.jp/iju/chara.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "坂井市保育士募集案内",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/hoiku/kosodate/kosodate/hoiku/hoiku/hoikusisien/hoikushi_shien.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市有地売払い情報",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kanri/kurashi/sumai/tochi/shiyuchi/baikyaku.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イータク(坂井市オンデマンド型交通)",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kokyokotsu/kurashi/toshi-keikaku/kotsu/on-demand.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "健康さかい大作戦",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/kenko/kenko/kenko-toshi/kenko-daisakusen/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "集団健診WEB予約 AITEL",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/hoken/kurashi/hoken/kenko-hoken/webyoyaku.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "坂井市補助金等一覧",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/shisei/hojokin/list.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "坂井市WebMap ハザードマップなどの電子地図",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/johotokei/shisei/joho/webmap/sakaishi-webmap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "坂井市空き家情報バンク登録物件一覧",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/iju/kurashi/sumai/sumai/akiya/list.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "MOVIE SAKAI",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/movie/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【福井県坂井市】もっと、ギュット、Good!さかい情報局(20...",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/movie/jouhoukyoku/20251216.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "バックナンバー一覧",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/movie/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "FOCUS(まちの話題)",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shisei/koho/focus/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "竹田Tキャンプの夏が始動! 学生らがプロジェクトを報告",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/shisei/koho/focus/2026/8gatsu/2026-09-14.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "バックナンバー一覧",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shisei/koho/focus/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "坂井市のプロフィール",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shisei/gaiyo/profile/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "坂井市へのアクセス",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/shisei/gaiyo/profile/access.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "組織案内",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shisei/gaiyo/soshiki/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "パブリックコメント",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/shisei/kocho/public/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "三国病院HPへジャンプ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.fukui-sakai.lg.jp/cgi-bin/advert/click_total/click.cgi?cms_area_id=2&cms_banner_id=5&cms_link_url=https%3A%2F%2Fwww.city.fukui-sakai.lg.jp%2Fbyouin%2F"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "mikuniboat",
+   "text_kind": "img_alt",
+   "url": "https://www.city.fukui-sakai.lg.jp/cgi-bin/advert/click_total/click.cgi?cms_area_id=2&cms_banner_id=4&cms_link_url=http%3A%2F%2Fwww.boatrace-mikuni.jp%2F"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "mikunimiraihole",
+   "text_kind": "img_alt",
+   "url": "https://www.city.fukui-sakai.lg.jp/cgi-bin/advert/click_total/click.cgi?cms_area_id=2&cms_banner_id=1&cms_link_url=http%3A%2F%2Fwww.sakai-bunka.jp%2Fmiraihall%2F"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ha-topiaharue",
+   "text_kind": "img_alt",
+   "url": "https://www.city.fukui-sakai.lg.jp/cgi-bin/advert/click_total/click.cgi?cms_area_id=2&cms_banner_id=2&cms_link_url=http%3A%2F%2Fwww.sakai-bunka.jp%2Fheartopia%2F"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "maruokabunkazaidan",
+   "text_kind": "img_alt",
+   "url": "https://www.city.fukui-sakai.lg.jp/cgi-bin/advert/click_total/click.cgi?cms_area_id=2&cms_banner_id=3&cms_link_url=http%3A%2F%2Fwww.tegami-museum.jp%2F"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "坂井市龍翔博物館HPへジャンプ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.fukui-sakai.lg.jp/cgi-bin/advert/click_total/click.cgi?cms_area_id=2&cms_banner_id=6&cms_link_url=https%3A%2F%2Fryusho-museum.jp"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "坂井市シルバー人材センター",
+   "text_kind": "img_alt",
+   "url": "https://www.city.fukui-sakai.lg.jp/cgi-bin/advert/click_total/click.cgi?cms_area_id=2&cms_banner_id=7&cms_link_url=https%3A%2F%2Fwww.sjc.ne.jp%2Fsakai"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "公益財団法人坂井市スポーツ協会",
+   "text_kind": "img_alt",
+   "url": "https://www.city.fukui-sakai.lg.jp/cgi-bin/advert/click_total/click.cgi?cms_area_id=2&cms_banner_id=8&cms_link_url=https%3A%2F%2Fwww.s-taikyo.jp%2F"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "坂井市国際交流協会",
+   "text_kind": "img_alt",
+   "url": "https://www.city.fukui-sakai.lg.jp/cgi-bin/advert/click_total/click.cgi?cms_area_id=2&cms_banner_id=9&cms_link_url=https%3A%2F%2Fwww.fsis.jp"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "坂井市立図書館",
+   "text_kind": "img_alt",
+   "url": "https://www.city.fukui-sakai.lg.jp/cgi-bin/advert/click_total/click.cgi?cms_area_id=2&cms_banner_id=10&cms_link_url=https%3A%2F%2Flib.city.sakai.fukui.jp"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ゆりの里公園インスタグラム",
+   "text_kind": "img_alt",
+   "url": "https://www.city.fukui-sakai.lg.jp/cgi-bin/advert/click_total/click.cgi?cms_area_id=2&cms_banner_id=13&cms_link_url=https%3A%2F%2Fwww.instagram.com%2Fyurinosatokouen%3Figsh%3DMXdhMDZ2Y3NzaHdkcw%3D%3D"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ゆりいちX(旧ツイッター)",
+   "text_kind": "img_alt",
+   "url": "https://www.city.fukui-sakai.lg.jp/cgi-bin/advert/click_total/click.cgi?cms_area_id=2&cms_banner_id=14&cms_link_url=https%3A%2F%2Fx.com%2Fyuriichi_sakai%3Ft%3DggnTfCzhWVf1N31Yp3az4A%26s%3D09"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広告一覧ページへ",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/banner/1/banner_list_1.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広告一覧ページへ",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/banner/3/banner_list_3.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "お問い合わせ",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/shisei/kocho/otoiawase.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "坂井市役所本庁舎",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/shisetsu/shisetsu-joho/chosha/honchosha.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "坂井市役所丸岡庁舎",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/shisetsu/shisetsu-joho/chosha/maruoka-chosha.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "坂井市役所三国庁舎",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/shisetsu/shisetsu-joho/chosha/mikuni-chosha.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "坂井市役所春江庁舎",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/shisetsu/shisetsu-joho/chosha/harue-chosha.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "個人情報保護方針",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/shisei/koho/homepage/kojin-joho.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "リンク・著作権・免責事項",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/shisei/koho/homepage/chosakuken.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ウェブアクセシビリティ方針",
+   "text_kind": "text",
+   "url": "https://www.city.fukui-sakai.lg.jp/koho/shisei/koho/homepage/accessibility.html"
+  }
+ ],
+ "needs_review": [],
+ "outcome": "hub_selected",
+ "requests": [
+  {
+   "bytes": 9023,
+   "elapsed_ms": 1858,
+   "error_class": "http_404",
+   "final_url": "https://www.city.fukui-sakai.lg.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.city.fukui-sakai.lg.jp/robots.txt"
+  },
+  {
+   "bytes": 32281,
+   "elapsed_ms": 329,
+   "error_class": "",
+   "final_url": "https://www.city.fukui-sakai.lg.jp/",
+   "status": 200,
+   "url": "https://www.city.fukui-sakai.lg.jp/"
+  },
+  {
+   "bytes": 445826,
+   "elapsed_ms": 843,
+   "error_class": "",
+   "final_url": "https://www.city.fukui-sakai.lg.jp/sitemap.xml",
+   "status": 200,
+   "url": "https://www.city.fukui-sakai.lg.jp/sitemap.xml"
+  },
+  {
+   "bytes": 16164,
+   "elapsed_ms": 343,
+   "error_class": "",
+   "final_url": "https://www.city.fukui-sakai.lg.jp/kanko-bunka/index.html",
+   "status": 200,
+   "url": "https://www.city.fukui-sakai.lg.jp/kanko-bunka/index.html"
+  },
+  {
+   "bytes": 9841,
+   "elapsed_ms": 293,
+   "error_class": "",
+   "final_url": "https://www.city.fukui-sakai.lg.jp/shisetsu/index.html",
+   "status": 200,
+   "url": "https://www.city.fukui-sakai.lg.jp/shisetsu/index.html"
+  },
+  {
+   "bytes": 22994,
+   "elapsed_ms": 1133,
+   "error_class": "",
+   "final_url": "https://www.city.fukui-sakai.lg.jp/sitemap.html",
+   "status": 200,
+   "url": "https://www.city.fukui-sakai.lg.jp/sitemap.html"
+  },
+  {
+   "bytes": 22944,
+   "elapsed_ms": 303,
+   "error_class": "",
+   "final_url": "https://www.city.fukui-sakai.lg.jp/kurashi/index.html",
+   "status": 200,
+   "url": "https://www.city.fukui-sakai.lg.jp/kurashi/index.html"
+  },
+  {
+   "bytes": 389014,
+   "elapsed_ms": 1732,
+   "error_class": "",
+   "final_url": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fyurinosatokouen%3Figsh%3DMXdhMDZ2Y3NzaHdkcw%253D%253D&is_from_rle",
+   "status": 200,
+   "url": "https://www.city.fukui-sakai.lg.jp/cgi-bin/advert/click_total/click.cgi?cms_area_id=2&cms_banner_id=13&cms_link_url=https%3A%2F%2Fwww.instagram.com%2Fyurinosatokouen%3Figsh%3DMXdhMDZ2Y3NzaHdkcw%3D%3D"
+  },
+  {
+   "bytes": 10493,
+   "elapsed_ms": 322,
+   "error_class": "",
+   "final_url": "https://www.city.fukui-sakai.lg.jp/nyugaku/index.html",
+   "status": 200,
+   "url": "https://www.city.fukui-sakai.lg.jp/nyugaku/index.html"
+  },
+  {
+   "bytes": 11335,
+   "elapsed_ms": 334,
+   "error_class": "",
+   "final_url": "https://www.city.fukui-sakai.lg.jp/kanko-bunka/sports/sports/index.html",
+   "status": 200,
+   "url": "https://www.city.fukui-sakai.lg.jp/kanko-bunka/sports/sports/index.html"
+  },
+  {
+   "bytes": 10659,
+   "elapsed_ms": 304,
+   "error_class": "",
+   "final_url": "https://www.city.fukui-sakai.lg.jp/kanko-bunka/sports/index.html",
+   "status": 200,
+   "url": "https://www.city.fukui-sakai.lg.jp/kanko-bunka/sports/index.html"
+  },
+  {
+   "bytes": 16226,
+   "elapsed_ms": 3300,
+   "error_class": "",
+   "final_url": "https://www.city.fukui-sakai.lg.jp/shisetsu/kensaku/index.html",
+   "status": 200,
+   "url": "https://www.city.fukui-sakai.lg.jp/shisetsu/kensaku/index.html"
+  },
+  {
+   "bytes": 13655,
+   "elapsed_ms": 297,
+   "error_class": "",
+   "final_url": "https://www.city.fukui-sakai.lg.jp/shisetsu/kensaku/taikukan/index.html",
+   "status": 200,
+   "url": "https://www.city.fukui-sakai.lg.jp/shisetsu/kensaku/taikukan/index.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 11391,
+  "finished_at": "2026-10-15T04:19:55Z",
+  "request_count": 13,
+  "route": "actions_direct_v6_fukui",
+  "started_at": "2026-10-15T04:19:39Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "high",
+   "evidence": [
+    "url:10件 例 https://www.city.fukui-sakai.lg.jp/kurashi/index.html"
+   ],
+   "family": "url_pattern:genre_dir_index",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:genre_dir_index": 10
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 123,
+   "image_count": 35,
+   "needs_headless": false,
+   "noscript_text_length": 82,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 22,
+   "text_length": 1638
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "urlset",
+     "source": "default_path",
+     "status": 200,
+     "url": "https://www.city.fukui-sakai.lg.jp/sitemap.xml"
+    }
+   ],
+   "found": true,
+   "keyword_urls": [
+    "http://www.city.fukui-sakai.lg.jp/gyosei/shisei/keikaku/kaikaku/shisetsu-maneji.html",
+    "http://www.city.fukui-sakai.lg.jp/gyosei/shisei/keikaku/kaikaku/shisetsu-maneji/maneji-hakusho.html",
+    "http://www.city.fukui-sakai.lg.jp/gyosei/shisei/keikaku/kaikaku/shisetsu-maneji/arikata.html",
+    "http://www.city.fukui-sakai.lg.jp/kyoiku/kosodate/kyoiku/shisetsu/taishin.html",
+    "http://www.city.fukui-sakai.lg.jp/machi-zukuri/kurashi/machi-zukuri/kyodo/ku/syukai-shisetsu.html",
+    "http://www.city.fukui-sakai.lg.jp/seibi/jigyosha/jogesui/tokutei-shisetsu/jogai-shisetsu.html",
+    "http://www.city.fukui-sakai.lg.jp/shakai-fukushi/kenko/fukushi/shogaisha/shienho/service/shisetsu-nyusho.html",
+    "http://www.city.fukui-sakai.lg.jp/kanko/kanko-bunka/kanko/annaijo/melody-park.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/kanko-bunka/sports/koen/bbq-yoyaku.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/kanko-bunka/sports/koen/sakuratani.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/kanko-bunka/sports/koen/koen-riyo.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/kanko-bunka/sports/koen/koen-shiyo.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/kanko-bunka/sports/koen/kibe-fureai-koen1.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/kanko-bunka/sports/koen/ipponden-koen.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/kanko-bunka/sports/koen/edomegami.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/kanko-bunka/sports/koen/omona-koen.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/kanko-bunka/sports/koen/kasumigajo-shiki.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/kanko-bunka/sports/koen/mikuniundokoen-koen.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/kanko-bunka/sports/koen/koen-kanri.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/kanko-bunka/sports/koen/kasumigajo.html",
+    "http://www.city.fukui-sakai.lg.jp/shogai-gakusyu/kanko-bunka/sports/torikumi/gekireikin.html",
+    "http://www.city.fukui-sakai.lg.jp/shogai-gakusyu/kanko-bunka/sports/torikumi/asunofukui.html",
+    "http://www.city.fukui-sakai.lg.jp/shogai-gakusyu/kanko-bunka/sports/sports/sports-keikaku.html",
+    "http://www.city.fukui-sakai.lg.jp/shogai-gakusyu/kanko-bunka/sports/sports/technoport-sogokoen.html",
+    "http://www.city.fukui-sakai.lg.jp/shogai-gakusyu/kanko-bunka/sports/sports/kojo-marathon-7.html",
+    "http://www.city.fukui-sakai.lg.jp/shogai-gakusyu/kanko-bunka/sports/sports/kojo-marathon-6.html",
+    "http://www.city.fukui-sakai.lg.jp/shogai-gakusyu/kanko-bunka/sports/sports/kojo-marathon-9.html",
+    "http://www.city.fukui-sakai.lg.jp/shogai-gakusyu/kanko-bunka/sports/sports/kojo-marathon-8.html",
+    "http://www.city.fukui-sakai.lg.jp/shogai-gakusyu/kanko-bunka/sports/sports/kojo-marathon.html",
+    "http://www.city.fukui-sakai.lg.jp/shogai-gakusyu/kanko-bunka/sports/sports/suporesyu.html",
+    "http://www.city.fukui-sakai.lg.jp/nosui/shisetsu/shisetsu-joho/shukuhaku/yuri-no-sato-koen.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/shisetsu/shisetsu-joho/shiei/kasumigaoka-danchi.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/shisetsu/shisetsu-joho/shiei/nakasuji-danchi.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/shisetsu/shisetsu-joho/shiei/mizui-danchi.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/shisetsu/shisetsu-joho/shiei/ipponden-jutaku.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/shisetsu/shisetsu-joho/shiei/atago-jutaku.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/shisetsu/shisetsu-joho/shiei/shin-midorigaoka-danchi.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/shisetsu/shisetsu-joho/shiei/mikuni-higashi-danchi.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/shisetsu/shisetsu-joho/shiei/tatta-danchi.html",
+    "http://www.city.fukui-sakai.lg.jp/toshi-keikaku/shisetsu/shisetsu-joho/shiei/edomikami-danchi.html",
+    "http://www.city.fukui-sakai.lg.jp/kenko-zoshin/shisetsu/shisetsu-joho/hoken/harue-hoken.html",
+    "http://www.city.fukui-sakai.lg.jp/kenko-zoshin/shisetsu/shisetsu-joho/hoken/sakai-kenko.html",
+    "http://www.city.fukui-sakai.lg.jp/kenko-zoshin/shisetsu/shisetsu-joho/hoken/maruoka-hoken.html",
+    "http://www.city.fukui-sakai.lg.jp/kenko-zoshin/shisetsu/shisetsu-joho/hoken/mikuni-hoken.html",
+    "http://www.city.fukui-sakai.lg.jp/machi-zukuri/shisetsu/shisetsu-joho/community/isobe-comisen.html",
+    "http://www.city.fukui-sakai.lg.jp/machi-zukuri/shisetsu/shisetsu-joho/community/haruehigashi-comisen.html",
+    "http://www.city.fukui-sakai.lg.jp/machi-zukuri/shisetsu/shisetsu-joho/community/takabokoseibu-comisen.html",
+    "http://www.city.fukui-sakai.lg.jp/machi-zukuri/shisetsu/shisetsu-joho/community/hyogo-comisen.html",
+    "http://www.city.fukui-sakai.lg.jp/machi-zukuri/shisetsu/shisetsu-joho/community/maruokajo-comisen.html",
+    "http://www.city.fukui-sakai.lg.jp/machi-zukuri/shisetsu/shisetsu-joho/community/higashijugo-comisen.html"
+   ],
+   "kind": "urlset",
+   "lastmod_count": 0,
+   "lastmod_max": "",
+   "lastmod_min": "",
+   "lastmod_years": {},
+   "numeric_id_url_ratio": 0.317,
+   "source": "default_path",
+   "top_level_paths": {
+    "/anzen": 20,
+    "/bosai-bohan": 16,
+    "/bunka": 56,
+    "/faq": 61,
+    "/gakko": 70,
+    "/gikai": 316,
+    "/gyosei": 31,
+    "/hoken-nenkin": 19,
+    "/jigyosha": 50,
+    "/kanko": 98,
+    "/kankyo": 55,
+    "/kanri": 21,
+    "/kazei": 67,
+    "/kenko": 48,
+    "/kenko-zoshin": 30,
+    "/kikaku": 69,
+    "/koho": 2026,
+    "/korei-fukushi": 40,
+    "/kosodate": 179,
+    "/kurashi": 112,
+    "/machi-zukuri": 86,
+    "/nozei": 30,
+    "/shakai-fukushi": 148,
+    "/shimin": 69,
+    "/shisei": 88,
+    "/shisetsu": 26,
+    "/shogai-gakusyu": 74,
+    "/somu": 31,
+    "/suido-center": 36,
+    "/toshi-keikaku": 62
+   },
+   "url": "https://www.city.fukui-sakai.lg.jp/sitemap.xml",
+   "url_count": 4247
+  },
+  "top": {
+   "elapsed_ms": 329,
+   "error_class": "",
+   "final_url": "https://www.city.fukui-sakai.lg.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

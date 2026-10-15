@@ -1,0 +1,1324 @@
+{
+ "ai_needed": false,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 2,
+     "facility_link_count": 6,
+     "facility_samples": [
+      "おおい町総合運動公園「球技場」[nav]",
+      "「プレーパーク大飯」多目的グラウンド[nav]",
+      "「プレーパーク大飯」 テニスコート[nav]",
+      "「プレーパーク大飯」体育館[nav]",
+      "「プレーパーク大飯」 野球場[nav]"
+     ],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ施設 | おおい町公式ホームページ",
+     "reasons": [
+      "text:スポーツ施設",
+      "region_nav",
+      "sports_pure",
+      "facility_links:6",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 24,
+     "source": "depth1_link",
+     "text": "スポーツ施設",
+     "url": "https://www.town.ohi.fukui.jp/object/object08/8009/index.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 7,
+     "facility_samples": [
+      "おおい町名田庄総合運動場の施設利用について[nav]",
+      "おおい町総合運動公園「球技場」[nav]",
+      "「プレーパーク大飯」多目的グラウンド[nav]",
+      "「プレーパーク大飯」 テニスコート[nav]",
+      "「プレーパーク大飯」体育館[nav]"
+     ],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ | おおい町公式ホームページ",
+     "reasons": [
+      "text:スポーツ",
+      "region_nav",
+      "sports_pure",
+      "facility_links:7"
+     ],
+     "region": "nav",
+     "score": 15,
+     "source": "depth1_link",
+     "text": "スポーツ",
+     "url": "https://www.town.ohi.fukui.jp/1001/1207/46/index.html",
+     "viable": true
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 6,
+     "facility_samples": [
+      "おおい町総合運動公園「球技場」[nav]",
+      "「プレーパーク大飯」多目的グラウンド[nav]",
+      "「プレーパーク大飯」 テニスコート[nav]",
+      "「プレーパーク大飯」体育館[nav]",
+      "「プレーパーク大飯」 野球場[nav]"
+     ],
+     "fetched": true,
+     "kind": "generic",
+     "page_title": "施設案内 | おおい町公式ホームページ",
+     "reasons": [
+      "text:公共施設|施設案内|施設一覧|施設情報",
+      "region_nav",
+      "facility_links:6"
+     ],
+     "region": "nav",
+     "score": 10,
+     "source": "nav",
+     "text": "施設案内",
+     "url": "https://www.town.ohi.fukui.jp/object/object08/index.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "sports_other",
+     "page_title": "おおい町総合運動公園「球技場」 | おおい町公式ホームページ おおい町総合運動公園「球技場」",
+     "reasons": [
+      "text:運動公園|総合運動",
+      "region_nav",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 10,
+     "source": "depth1_link",
+     "text": "おおい町総合運動公園「球技場」",
+     "url": "https://www.town.ohi.fukui.jp/1003/63/p13426.html",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 6,
+     "facility_samples": [
+      "おおい町総合運動公園「球技場」[nav]",
+      "「プレーパーク大飯」多目的グラウンド[nav]",
+      "「プレーパーク大飯」 テニスコート[nav]",
+      "「プレーパーク大飯」体育館[nav]",
+      "「プレーパーク大飯」 野球場[nav]"
+     ],
+     "fetched": true,
+     "kind": "broad",
+     "page_title": "社会教育課 | おおい町公式ホームページ",
+     "reasons": [
+      "broad_category",
+      "region_nav",
+      "facility_links:6"
+     ],
+     "region": "nav",
+     "score": 9,
+     "source": "nav",
+     "text": "社会教育課",
+     "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/shakai/index.html",
+     "viable": false
+    }
+   ],
+   "decision": "hub_selected",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "quality": "specific",
+   "selected": {
+    "depth": 2,
+    "facility_link_count": 6,
+    "facility_samples": [
+     "おおい町総合運動公園「球技場」[nav]",
+     "「プレーパーク大飯」多目的グラウンド[nav]",
+     "「プレーパーク大飯」 テニスコート[nav]",
+     "「プレーパーク大飯」体育館[nav]",
+     "「プレーパーク大飯」 野球場[nav]"
+    ],
+    "fetched": true,
+    "kind": "sports_pure",
+    "page_title": "スポーツ施設 | おおい町公式ホームページ",
+    "reasons": [
+     "text:スポーツ施設",
+     "region_nav",
+     "sports_pure",
+     "facility_links:6",
+     "title_match"
+    ],
+    "region": "nav",
+    "score": 24,
+    "source": "depth1_link",
+    "text": "スポーツ施設",
+    "url": "https://www.town.ohi.fukui.jp/object/object08/8009/index.html",
+    "viable": true
+   }
+  }
+ ],
+ "menu_labels": [
+  "暮らし",
+  "子育て",
+  "観光",
+  "事業者",
+  "町政",
+  "施設案内",
+  "申請",
+  "手続き"
+ ],
+ "municipality": {
+  "code": "18483",
+  "full_name": "おおい町",
+  "kind": "town",
+  "name": "おおい町",
+  "official_url": "https://www.town.ohi.fukui.jp/",
+  "prefecture": "福井県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "住む人に豊かさを、訪れる人に感動を おおい町",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ohi.fukui.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "手続き・証明",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1202/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "税金",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1203/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "生活環境",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1204/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "もしもの時",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1205/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "保健・福祉",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1206/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "学ぶ・交流",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1207/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ライフライン",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1208/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "団体・協会等",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1213/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "事業者支援",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1005/1214/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "入札情報",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1005/107/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "事業者の税金",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1005/7030/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "その他",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1005/1215/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "町長の部屋",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1002/1006/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "町の概要",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1002/1210/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "広報・広聴",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1002/8148/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "掲示板",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1002/board/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "広報おおい",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1002/102/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "行財政",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1002/1209/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "町議会",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1002/1007/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "映像館",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1002/video/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "国際交流",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1002/international-exchange/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "各課一覧",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1002/8145/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光パンフレット",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/kankou/panf/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光マップ",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/kankou/map/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "トップリンク",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/kankou/toplink/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "おおい町を知りたい",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/iju/5101/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "おおい町に住みたい",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/iju/5102/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "おおい町で子育てしたい",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/iju/5103/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "お知らせ",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/iju/news/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "トップ",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "暮らしの情報",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "事業者向け",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1005/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "町政情報",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1002/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "子育てにやさしい町",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ohi.fukui.jp/kosodate/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベント情報",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ohi.fukui.jp/calendar/event/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おおい町観光サイト",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ohi.fukui.jp/kankou/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おおい町子育て応援サイト",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ohi.fukui.jp/kosodate/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おおい町国際交流",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ohi.fukui.jp/1002/international-exchange/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おおい町移住定住サイト",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ohi.fukui.jp/newijuteiju/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おおい町防災ポータルサイト",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ohi.fukui.jp/bousai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "申請書ダウンロード",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/object/object01/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "税金・ふるさと納税",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/object/object02/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ごみ・リサイクル",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/object/object04/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "補助・助成",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/object/object05/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "公募・募集",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/object/object06/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "施設案内",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/object/object08/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "公民館・図書館情報",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/object/object13/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "パブリックコメント",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/object/object09/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "リンク集",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/object/object12/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "妊娠・出産",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1201/lifeevent01/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子育て",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1201/lifeevent02/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "入園・入学",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1201/lifeevent03/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "就職・退職",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1201/lifeevent04/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1201/lifeevent05/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "引越し・住まい",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1201/lifeevent06/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "高齢・介護",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1201/lifeevent07/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "死亡・相続",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1201/lifeevent08/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "総務課",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/soumu/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "まちづくり課",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/machizukurika/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "防災安全課",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/bousai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "税務地籍課",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/zeimu/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "住民窓口課",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/jumin/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "すこやか健康課",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/sukoyaka/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "子育て世代包括支援センター",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/kosodate/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "いきいき福祉課",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/ikiiki/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "地域包括支援センター",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/houkatsu/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "農林水産課",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/nousui/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "商工観光課",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/syoukan/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "しごと創生室",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/shigoto/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "建設課",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/kensetsu/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "上下水道課",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/jyougesuidou/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "会計契約課",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/kaikei/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "教育委員会事務局",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/kyouikuiinnkai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "学校教育課",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/kyouiku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "社会教育課",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/shakai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "議会事務局",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/gikaijimukyoku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "住民サービス室",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/natasyo/service/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "国保 名田庄診療所",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/dept/natasyo/2029/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "燃やすごみの収集日",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/calendar/trash/p10209.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "生活・イベントカレンダーを見る (ごみの日・休日当番医)",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/calendar/event.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "詳しい 気象情報",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/bousai/weather/p16101.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おくやみ 10月9日更新",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/catv_data/ceremony01/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "たかさご(結婚) 10月10日更新",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/catv_data/ceremony02/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "赤ちゃん(出産)",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/catv_data/ceremony03/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "メール配信システム",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ohi.fukui.jp/about/p17029.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "これまでのフォト",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/302/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "サザエ刺し網漁体験教室が開かれました。",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/302/310/312/p25717.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おおい町若者出会い・交流応援事業補助金について",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1201/lifeevent05/p14064.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おおい町結婚新生活支援事業補助金について",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1202/86/p22518.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "安定ヨウ素剤の事前配布について",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1205/7026/p22679.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おおい町若者夫婦支援金を給付します。",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1202/86/p22519.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和7年度・令和8年度 おおい町入札参加資格審査申請 随時受付について",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1005/107/p24686.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "AED(自動体外式除細動器)設置場所について",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1205/33/p24759.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "RSS",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/news.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "パパと子の教室 ~リズムジャンプ~",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/calendar/kosodate/lecture/p25103.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "『人権に関するメッセージ&みんなで作る人権標語』の募集について",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1100/advertise/p25876.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度おおい町職員採用候補者第一次試験結果",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1201/lifeevent04/p25869.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "10月10日は目の愛護デーです",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1206/40/p25861.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "大飯図書館「おはなしバンザイよみきかせコンクール」の参加者を募集します",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/object/object13/p25862.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "福井県ひとり親家庭等の大学等受験料・模擬試験受験料支援事業補助金について",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1202/18/p25268.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "路線バス名田庄線の一部運休について",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1208/53/p25867.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年9月定例会議 一般質問(録画配信)",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1002/1007/1218/81/p25864.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度 健康診査のお知らせ",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1001/1206/40/p25546.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "原子力広報番組の放送について",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/1000/p25815.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "情報一覧を見る",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/news.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "電子掲示場のバナー画像",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ohi.fukui.jp/9999/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "令和7年度・令和8年度 おおい町入札参加資格申請のバナー画像",
+   "text_kind": "img_alt",
+   "url": "http://www.town.ohi.fukui.jp/1005/107/p24686.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ふるさと納税サイトのバナー画像",
+   "text_kind": "img_alt",
+   "url": "http://www.town.ohi.fukui.jp/object/object02/p18230.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "おおい町アンケート一覧のバナー画像",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ohi.fukui.jp/enquete/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "おおい町デマンドバス『うみりんスマイル号』のバナー画像",
+   "text_kind": "img_alt",
+   "url": "https://www.town.ohi.fukui.jp/1001/1208/53/p21038.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "このホームページについて",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/about/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "おおい町役場のご案内",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/about/p17174.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "お問い合わせ",
+   "text_kind": "text",
+   "url": "https://www.town.ohi.fukui.jp/inquiry/mailform2002.html?PAGE_NO=toppage"
+  }
+ ],
+ "needs_review": [],
+ "outcome": "hub_selected",
+ "requests": [
+  {
+   "bytes": 1260,
+   "elapsed_ms": 1863,
+   "error_class": "http_404",
+   "final_url": "https://www.town.ohi.fukui.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.town.ohi.fukui.jp/robots.txt"
+  },
+  {
+   "bytes": 43776,
+   "elapsed_ms": 258,
+   "error_class": "",
+   "final_url": "https://www.town.ohi.fukui.jp/",
+   "status": 200,
+   "url": "https://www.town.ohi.fukui.jp/"
+  },
+  {
+   "bytes": 266580,
+   "elapsed_ms": 662,
+   "error_class": "",
+   "final_url": "https://www.town.ohi.fukui.jp/sitemap.xml",
+   "status": 200,
+   "url": "https://www.town.ohi.fukui.jp/sitemap.xml"
+  },
+  {
+   "bytes": 29549,
+   "elapsed_ms": 216,
+   "error_class": "",
+   "final_url": "https://www.town.ohi.fukui.jp/object/object08/index.html",
+   "status": 200,
+   "url": "https://www.town.ohi.fukui.jp/object/object08/index.html"
+  },
+  {
+   "bytes": 25940,
+   "elapsed_ms": 239,
+   "error_class": "",
+   "final_url": "https://www.town.ohi.fukui.jp/1001/index.html",
+   "status": 200,
+   "url": "https://www.town.ohi.fukui.jp/1001/index.html"
+  },
+  {
+   "bytes": 25564,
+   "elapsed_ms": 279,
+   "error_class": "",
+   "final_url": "https://www.town.ohi.fukui.jp/dept/ooicyou/kyouiku/index.html",
+   "status": 200,
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/kyouiku/index.html"
+  },
+  {
+   "bytes": 28500,
+   "elapsed_ms": 215,
+   "error_class": "",
+   "final_url": "https://www.town.ohi.fukui.jp/dept/ooicyou/shakai/index.html",
+   "status": 200,
+   "url": "https://www.town.ohi.fukui.jp/dept/ooicyou/shakai/index.html"
+  },
+  {
+   "bytes": 23160,
+   "elapsed_ms": 167,
+   "error_class": "",
+   "final_url": "https://www.town.ohi.fukui.jp/sitemap.html",
+   "status": 200,
+   "url": "https://www.town.ohi.fukui.jp/sitemap.html"
+  },
+  {
+   "bytes": 20725,
+   "elapsed_ms": 211,
+   "error_class": "",
+   "final_url": "https://www.town.ohi.fukui.jp/object/object08/8009/index.html",
+   "status": 200,
+   "url": "https://www.town.ohi.fukui.jp/object/object08/8009/index.html"
+  },
+  {
+   "bytes": 25543,
+   "elapsed_ms": 215,
+   "error_class": "",
+   "final_url": "https://www.town.ohi.fukui.jp/1001/1207/46/index.html",
+   "status": 200,
+   "url": "https://www.town.ohi.fukui.jp/1001/1207/46/index.html"
+  },
+  {
+   "bytes": 22507,
+   "elapsed_ms": 216,
+   "error_class": "",
+   "final_url": "https://www.town.ohi.fukui.jp/1003/63/p13426.html",
+   "status": 200,
+   "url": "https://www.town.ohi.fukui.jp/1003/63/p13426.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 4541,
+  "finished_at": "2026-10-15T04:20:30Z",
+  "request_count": 11,
+  "route": "actions_direct_v6_fukui",
+  "started_at": "2026-10-15T04:20:19Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "none",
+   "evidence": [],
+   "family": "unknown",
+   "provenance": "auto",
+   "scores": {}
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 202,
+   "image_count": 42,
+   "needs_headless": false,
+   "noscript_text_length": 312,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 15,
+   "text_length": 2051
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "urlset",
+     "source": "default_path",
+     "status": 200,
+     "url": "https://www.town.ohi.fukui.jp/sitemap.xml"
+    }
+   ],
+   "found": true,
+   "keyword_urls": [
+    "http://www.town.ohi.fukui.jphttp://www.nikkansports.com/",
+    "http://www.town.ohi.fukui.jphttp://www.jsports.co.jp/"
+   ],
+   "kind": "urlset",
+   "lastmod_count": 2111,
+   "lastmod_max": "2026-10-14",
+   "lastmod_min": "2006-05-10",
+   "lastmod_years": {
+    "2006": 3,
+    "2007": 52,
+    "2008": 10,
+    "2009": 6,
+    "2010": 15,
+    "2011": 89,
+    "2012": 50,
+    "2013": 37,
+    "2014": 60,
+    "2015": 123,
+    "2016": 78,
+    "2017": 356,
+    "2018": 181,
+    "2019": 133,
+    "2020": 137,
+    "2021": 88,
+    "2022": 76,
+    "2023": 91,
+    "2024": 104,
+    "2025": 153,
+    "2026": 269
+   },
+   "numeric_id_url_ratio": 0.0,
+   "source": "default_path",
+   "top_level_paths": {
+    "/1000": 10,
+    "/1001": 301,
+    "/1002": 823,
+    "/1003": 61,
+    "/1005": 110,
+    "/1100": 26,
+    "/1201": 100,
+    "/1221": 8,
+    "/302": 118,
+    "/about": 10,
+    "/bousai": 67,
+    "/calendar": 28,
+    "/catv_data": 6,
+    "/chichishi.web.fc2.com": 2,
+    "/houmukyoku.moj.go.jp": 1,
+    "/iju": 8,
+    "/info.pref.fukui.jp": 1,
+    "/kankou": 101,
+    "/kosodate": 59,
+    "/mmul": 32,
+    "/newijuteiju": 32,
+    "/object": 108,
+    "/toplink": 2,
+    "/www.city.tsuruga.lg.jp": 2,
+    "/www.mlit.go.jp": 2,
+    "/www.nhk.or.jp": 2,
+    "/www.ntpc.gov.tw": 1,
+    "/www.pref.fukui.lg.jp": 2,
+    "/www.tamsui.ntpc.gov.tw": 1,
+    "/www15.schoolweb.ne.jp": 6
+   },
+   "url": "https://www.town.ohi.fukui.jp/sitemap.xml",
+   "url_count": 2111
+  },
+  "top": {
+   "elapsed_ms": 258,
+   "error_class": "",
+   "final_url": "https://www.town.ohi.fukui.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

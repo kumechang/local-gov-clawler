@@ -1,0 +1,1499 @@
+{
+ "ai_needed": false,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 3,
+     "facility_link_count": 8,
+     "facility_samples": [
+      "あわら市民武道館[other]",
+      "ゆうゆうパークあわら内多目的グラウンド 施設案内[other]",
+      "ゆうゆうパークあわら内多目的グラウンドの使用につ[other]",
+      "柿原グラウンド[other]",
+      "金津B&G海洋センター体育館[other]"
+     ],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ施設 | あわら市ホームページ スポーツ",
+     "reasons": [
+      "text:スポーツ施設",
+      "region_nav",
+      "sports_pure",
+      "facility_links:8",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 25,
+     "source": "depth2_link",
+     "text": "スポーツ施設",
+     "url": "https://www.city.awara.lg.jp/mokuteki/education/education03/education0302/index.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 7,
+     "facility_samples": [
+      "あわら市民武道館[other]",
+      "ゆうゆうパークあわら内多目的グラウンド 施設案内[other]",
+      "柿原グラウンド[other]",
+      "金津B&G海洋センター体育館[other]",
+      "金津中学校グラウンドナイター施設[other]"
+     ],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ | あわら市ホームページ 公共施設案内",
+     "reasons": [
+      "text:スポーツ",
+      "region_nav",
+      "sports_pure",
+      "facility_links:7"
+     ],
+     "region": "nav",
+     "score": 15,
+     "source": "depth1_link",
+     "text": "スポーツ",
+     "url": "https://www.city.awara.lg.jp/annai/7200/7250/index.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 3,
+     "facility_samples": [
+      "金津B&G海洋センター体育館[nav]",
+      "柿原グラウンド[nav]",
+      "国影グラウンド[nav]"
+     ],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ | あわら市ホームページ 教育・文化・スポーツ",
+     "reasons": [
+      "text:スポーツ",
+      "region_nav",
+      "sports_pure",
+      "facility_links:3"
+     ],
+     "region": "nav",
+     "score": 11,
+     "source": "depth1_link",
+     "text": "スポーツ",
+     "url": "https://www.city.awara.lg.jp/mokuteki/education/education03/index.html",
+     "viable": true
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 7,
+     "facility_samples": [
+      "あわら市民武道館[other]",
+      "ゆうゆうパークあわら内多目的グラウンド 施設案内[other]",
+      "柿原グラウンド[other]",
+      "金津B&G海洋センター体育館[other]",
+      "金津中学校グラウンドナイター施設[other]"
+     ],
+     "fetched": true,
+     "kind": "generic",
+     "page_title": "公共施設案内 | あわら市ホームページ 公共施設案内",
+     "reasons": [
+      "text:公共施設|施設案内|施設一覧|施設情報",
+      "region_nav",
+      "facility_links:7"
+     ],
+     "region": "nav",
+     "score": 11,
+     "source": "nav",
+     "text": "あわら市公共施設",
+     "url": "https://www.city.awara.lg.jp/annai/7200/index.html",
+     "viable": true
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "sports_other",
+     "page_title": "スポーツ施設の使用料金について | あわら市ホームページ スポーツ施設の使用料金について",
+     "reasons": [
+      "text:スポーツ施設",
+      "sentence_like",
+      "region_nav",
+      "title_match"
+     ],
+     "region": "nav",
+     "score": 11,
+     "source": "depth1_link",
+     "text": "スポーツ施設の使用料金について",
+     "url": "https://www.city.awara.lg.jp/mokuteki/education/education03/education0301/p003427.html",
+     "viable": false
+    }
+   ],
+   "decision": "hub_selected",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "quality": "specific",
+   "selected": {
+    "depth": 3,
+    "facility_link_count": 8,
+    "facility_samples": [
+     "あわら市民武道館[other]",
+     "ゆうゆうパークあわら内多目的グラウンド 施設案内[other]",
+     "ゆうゆうパークあわら内多目的グラウンドの使用につ[other]",
+     "柿原グラウンド[other]",
+     "金津B&G海洋センター体育館[other]"
+    ],
+    "fetched": true,
+    "kind": "sports_pure",
+    "page_title": "スポーツ施設 | あわら市ホームページ スポーツ",
+    "reasons": [
+     "text:スポーツ施設",
+     "region_nav",
+     "sports_pure",
+     "facility_links:8",
+     "title_match"
+    ],
+    "region": "nav",
+    "score": 25,
+    "source": "depth2_link",
+    "text": "スポーツ施設",
+    "url": "https://www.city.awara.lg.jp/mokuteki/education/education03/education0302/index.html",
+    "viable": true
+   }
+  }
+ ],
+ "menu_labels": [
+  "暮らし",
+  "子育て",
+  "観光",
+  "よくある質問",
+  "申請",
+  "手続き"
+ ],
+ "municipality": {
+  "code": "18208",
+  "full_name": "あわら市",
+  "kind": "city",
+  "name": "あわら市",
+  "official_url": "https://www.city.awara.lg.jp/",
+  "prefecture": "福井県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "テキスト版",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mobile/"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "あわら市",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "あわら市へのお問いあわせ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/toplink/systempage/p006063.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "Foreign Language",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/benri/5100/p007996.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ホーム",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "くらし・環境",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/life/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "健康・福祉",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/health/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "教育・スポーツ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/education/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "産業・まちづくり",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "市政情報",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/cityinfo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "竜王戦関連情報",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/kanko/event/event/p014789.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "防災サイト",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/life/life06/life0602/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "避難所一覧",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/life/life06/life0602/p000228.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "テレフォンサービス",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/life/life06/life0601/p004624.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/scene/p003145.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "妊娠・出産",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/scene/p003020.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "子育て",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/scene/p006067.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入園・入学",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/scene/p003146.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "就職・退職",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/scene/p003151.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "引っ越し・住まい",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/scene/p003143.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "高齢・介護",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/scene/p003152.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "お悔やみ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/scene/p003266.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "災害情報配信システムの停止について",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/life/life06/life0601/p015692.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和9年度認定こども園入園等の手続きについて",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/health/health02/health0203/nyuuen.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【ふるさと納税3.0】令和8年度クラウドファンディング挑戦事業者について",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/cityinfo0103/p014725.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "罹災証明書の交付について",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/life/life06/life0605/p006504.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "職員採用情報 前期第2次試験(最終)合格者(令和8年度あわら市職員採用候補者試験)",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/cityinfo/cityinfo0401/p015371.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "RSS",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/topics.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "過去の注目情報一覧",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/topics.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年10月号 吉崎公民館だより",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/education/kouminkan-n/komin-yoshizaki/tayori/p015691.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "まちかどgraffitiでは、広報担当が取材した“あわらの話題”をお届けします!",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/cityinfo/kouhou/graffiti/p015683.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報あわら第272号(2026年10月)",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/cityinfo/kouhou/3400/p015682.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "魯迅著「藤野先生」発表100周年記念講演会について",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/p015693.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度資料館講座「深ぼり!伝説からみた蓮如さんの経営戦略」参加者募集中!",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/education/kyoudo/ibentojojouho/kouza/p015308.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "学校給食レストランを開催します",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/gakkoukyusyokuresutorann.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度生き活きライフセミナー(あわら市民大学講座)について",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/education/education0201/p009997.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "「YONETSU-KANささおか」レジオネラ属菌の検出による営業休止について(2026/10/15~)",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/health/kenkouiryou/kenkodukuri/p015694.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "なりすましメールや不審なメールにご注意ください",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/cityinfo/cityinfo0301/p015206.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "RSS",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/news.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "過去の新着情報一覧",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/news.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "子育て支援センター 交通教室と子ども免許証づくり",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/health/health02/kosodateshiensentaa/ibento/p015667.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市内のイベント情報",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/p014226.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "湯のまち公民館単発講座「カンタケ栽培教室」のご案内",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/education/kouminkan-n/komin-yunomachi/oshirase/oshirase/p015670.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おはなし会開催のお知らせ",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/p012917.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "古雑誌販売をします",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/koho-baitai/koho-koho-end/p006565.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おせち料理作り教室 参加者募集",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/p015529.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "RSS",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/event-into/news.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "全てのイベント情報",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "あわら市全天候型子どもの遊び場基本設計業務に関するプロポーザルの実施について",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry01/industry0106/p015676.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度創業者向けスモール・ビジネス支援事業補助金について",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry0401/p006589.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "市民団体・NPO法人等助成金事業合同説明会を開催します",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/cityinfo0102/p015672.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "「お宝発見ツアー ~あわら湯のまちめぐり~」の参加者募集について",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/education/education0401/p015596.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "「令和9年あわら市はたちのつどい」実行委員を募集しています!",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/education/education0201/p014770.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "福井県れいほく地方景観フォトコンテスト",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/bosyuu/p015645.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "「あわら暮らし応援商品券」利用期間は終了しました",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry0401/p015270.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度「あわら暮らし応援商品券」取扱店舗の募集について【終了】",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry0401/p015244.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "あわら市文化協議会について",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/education/education0401/p000378.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "RSS",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/bosyuu/news.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "募集情報一覧",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/bosyuu/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "あわら市全天候型子どもの遊び場管理運営業務に関するプロポーザル_質問に対する回答について(10月9日更新)",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry01/nyuusatu-info/p015678.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "発注見通しの公表",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry01/industry0102/p012391.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "建設工事における週休2日の実施について",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry01/nyuusatu-info/p014652.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度の入札結果の公表",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry01/industry0103/p015388.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "電子契約について",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry01/industry0104/p015481.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "あわら市上下水道事業ウォーターPPP導入可能性調査業務公募型プロポーザルの実施について",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry01/industry0106/wppp.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "電子入札について",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry01/denshinyuusatu/p001889.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度の公開見積合わせ結果の公表",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry01/industry0103/p015340.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "建設工事における最低制限価格の設定について",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry01/nyuusatu-info/p015328.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "RSS",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry01/news.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入札契約一覧",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry01/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "有料広告バナー",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/cityinfo/cityinfo0201/p000136.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "マイナンバーカード",
+   "text_kind": "img_alt",
+   "url": "http://www.city.awara.lg.jp/mokuteki/life/life0101/p013126.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報あわら10月号表紙の画像",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/cityinfo/kouhou/3400/p015682.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "記念撮影の様子",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/cityinfo/kouhou/graffiti/p015683.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "まちかどgraffiti 2026年 8・9月",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/cityinfo/kouhou/graffiti/p015683.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報一覧",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/cityinfo/kouhou/3400/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベントカレンダー",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/event-into/event.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "1",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "2",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "3",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "5",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "6",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "7",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "8",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "9",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "10",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "13",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "14",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "15",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "16",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "17",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "18",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "19",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "20",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "21",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "22",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "23",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "24",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "25",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "26",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "27",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "28",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "29",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "30",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "31",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202610.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "次月分",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event202611.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "カレンダー一覧へ",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/event-into/event.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "防災サイト",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/life/life06/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "熱中症対策",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/health/kenkouiryou/iryou/syeruta.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市長の部屋",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/shisei/mayor/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "あわら市議会",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/gikai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "あわら市の紹介",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/syokai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "申請書ダウンロード",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/online/6200/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "相談窓口",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/benri/5100/p000058.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "乗合タクシー",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/life/life0701/noriaitakusi.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ごみについて",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/life/life03/life0302/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "あわらKIDS",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/health/health02/5200/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "よくある質問",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/shitsumon/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "リンク集",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/benri/5100/p000231.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "事業者の方へ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/industry0201/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ふるさと納税",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/industry/cityinfo0103/p011218.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ふくe-ねっと",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/cityinfo/cityinfo01/cityinfo0101/p003634.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "あわら市ソーシャルメディア",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/mokuteki/cityinfo/kouhou/syo-syarumedelia/p012584.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "あわら市公共施設",
+   "text_kind": "img_alt",
+   "url": "https://www.city.awara.lg.jp/annai/7200/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光施設一覧",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "図書館",
+   "text_kind": "text",
+   "url": "https://lib.city.awara.lg.jp"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "郷土歴史資料館",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/education/kyoudo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "過去のデータ",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/toplink/jinkou/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "連絡先一覧",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/shozoku.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "目的から探す",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/mokuteki/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "地図・交通アクセス",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/syokai/2100/p000002.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "庁舎案内図",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/annai/7100/p013337.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "個人情報保護について",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/toplink/footer/p000016.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "著作権・リンク・免責事項",
+   "text_kind": "text",
+   "url": "https://www.city.awara.lg.jp/toplink/footer/p000017.html"
+  }
+ ],
+ "needs_review": [],
+ "outcome": "hub_selected",
+ "requests": [
+  {
+   "bytes": 13279,
+   "elapsed_ms": 1690,
+   "error_class": "http_404",
+   "final_url": "https://www.city.awara.lg.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.city.awara.lg.jp/robots.txt"
+  },
+  {
+   "bytes": 34786,
+   "elapsed_ms": 231,
+   "error_class": "",
+   "final_url": "https://www.city.awara.lg.jp/",
+   "status": 200,
+   "url": "https://www.city.awara.lg.jp/"
+  },
+  {
+   "bytes": 620218,
+   "elapsed_ms": 2331,
+   "error_class": "",
+   "final_url": "https://www.city.awara.lg.jp/sitemap.xml",
+   "status": 200,
+   "url": "https://www.city.awara.lg.jp/sitemap.xml"
+  },
+  {
+   "bytes": 13460,
+   "elapsed_ms": 210,
+   "error_class": "",
+   "final_url": "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/index.html",
+   "status": 200,
+   "url": "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/index.html"
+  },
+  {
+   "bytes": 13098,
+   "elapsed_ms": 193,
+   "error_class": "",
+   "final_url": "https://www.city.awara.lg.jp/mokuteki/education/index.html",
+   "status": 200,
+   "url": "https://www.city.awara.lg.jp/mokuteki/education/index.html"
+  },
+  {
+   "bytes": 18121,
+   "elapsed_ms": 195,
+   "error_class": "",
+   "final_url": "https://www.city.awara.lg.jp/annai/7200/index.html",
+   "status": 200,
+   "url": "https://www.city.awara.lg.jp/annai/7200/index.html"
+  },
+  {
+   "bytes": 13753,
+   "elapsed_ms": 193,
+   "error_class": "",
+   "final_url": "https://www.city.awara.lg.jp/mokuteki/life/index.html",
+   "status": 200,
+   "url": "https://www.city.awara.lg.jp/mokuteki/life/index.html"
+  },
+  {
+   "bytes": 15777,
+   "elapsed_ms": 215,
+   "error_class": "",
+   "final_url": "https://www.city.awara.lg.jp/sitemap.html",
+   "status": 200,
+   "url": "https://www.city.awara.lg.jp/sitemap.html"
+  },
+  {
+   "bytes": 12622,
+   "elapsed_ms": 213,
+   "error_class": "",
+   "final_url": "https://www.city.awara.lg.jp/mokuteki/index.html",
+   "status": 200,
+   "url": "https://www.city.awara.lg.jp/mokuteki/index.html"
+  },
+  {
+   "bytes": 11417,
+   "elapsed_ms": 203,
+   "error_class": "",
+   "final_url": "https://www.city.awara.lg.jp/mokuteki/education/education03/index.html",
+   "status": 200,
+   "url": "https://www.city.awara.lg.jp/mokuteki/education/education03/index.html"
+  },
+  {
+   "bytes": 29175,
+   "elapsed_ms": 217,
+   "error_class": "",
+   "final_url": "https://www.city.awara.lg.jp/mokuteki/education/education03/education0301/p003427.html",
+   "status": 200,
+   "url": "https://www.city.awara.lg.jp/mokuteki/education/education03/education0301/p003427.html"
+  },
+  {
+   "bytes": 12339,
+   "elapsed_ms": 195,
+   "error_class": "",
+   "final_url": "https://www.city.awara.lg.jp/annai/7200/7250/index.html",
+   "status": 200,
+   "url": "https://www.city.awara.lg.jp/annai/7200/7250/index.html"
+  },
+  {
+   "bytes": 12687,
+   "elapsed_ms": 193,
+   "error_class": "",
+   "final_url": "https://www.city.awara.lg.jp/mokuteki/education/education03/education0302/index.html",
+   "status": 200,
+   "url": "https://www.city.awara.lg.jp/mokuteki/education/education03/education0302/index.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 6279,
+  "finished_at": "2026-10-15T04:19:53Z",
+  "request_count": 13,
+  "route": "actions_direct_v6_fukui",
+  "started_at": "2026-10-15T04:19:39Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "medium",
+   "evidence": [
+    "url:1件 例 https://www.city.awara.lg.jp/shisei/mayor/index.html"
+   ],
+   "family": "url_pattern:genre_dir_index",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:genre_dir_index": 6
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 183,
+   "image_count": 83,
+   "needs_headless": false,
+   "noscript_text_length": 92,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 12,
+   "text_length": 2206
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "urlset",
+     "source": "default_path",
+     "status": 200,
+     "url": "https://www.city.awara.lg.jp/sitemap.xml"
+    }
+   ],
+   "found": true,
+   "keyword_urls": [
+    "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/p004987.html",
+    "https://www.city.awara.lg.jp/mokuteki/education/kyoudo/ibentojojouho/kouenkai/p015310.html",
+    "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/p000736.html",
+    "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/p000253.html",
+    "https://www.city.awara.lg.jp/mokuteki/education/kyoudo/ibentojojouho/kouenkai/p015307.html",
+    "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/p006550.html",
+    "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/p000474.html",
+    "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/p000263.html",
+    "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/p014640.html",
+    "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/p000092.html",
+    "https://www.city.awara.lg.jp/mokuteki/industry/kouen/tyouzyumyouka.html",
+    "https://www.city.awara.lg.jp/mokuteki/cityinfo/kakusyukouen/koenkyosai.html",
+    "https://www.city.awara.lg.jp/mokuteki/industry/kouen/p000367.html",
+    "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/kenkyounoyakata.html",
+    "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/p003308.html",
+    "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/p000021.html",
+    "https://www.city.awara.lg.jp/shitsumon/education-culture/sport/p007043.html",
+    "https://www.city.awara.lg.jp/shitsumon/education-culture/sport/p007045.html",
+    "https://www.city.awara.lg.jp/shitsumon/education-culture/sport/p007044.html",
+    "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/p006609.html",
+    "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/p000304.html",
+    "https://www.city.awara.lg.jp/annai/7200/kankoshisetsu/p000949.html"
+   ],
+   "kind": "urlset",
+   "lastmod_count": 3709,
+   "lastmod_max": "2026-10-15",
+   "lastmod_min": "2008-10-27",
+   "lastmod_years": {
+    "2008": 1,
+    "2014": 115,
+    "2015": 110,
+    "2016": 89,
+    "2017": 19,
+    "2018": 19,
+    "2019": 109,
+    "2020": 106,
+    "2021": 141,
+    "2022": 171,
+    "2023": 343,
+    "2024": 1168,
+    "2025": 531,
+    "2026": 787
+   },
+   "numeric_id_url_ratio": 0.001,
+   "source": "default_path",
+   "top_level_paths": {
+    "/annai": 36,
+    "/awara-zeitaku.jp": 35,
+    "/benri": 5,
+    "/bosyuu": 8,
+    "/depttop": 30,
+    "/event-into": 14,
+    "/gikai": 144,
+    "/koho-baitai": 12,
+    "/mokuteki": 3139,
+    "/online": 3,
+    "/shisei": 55,
+    "/shitsumon": 198,
+    "/syokai": 3,
+    "/toplink": 27
+   },
+   "url": "https://www.city.awara.lg.jp/sitemap.xml",
+   "url_count": 3709
+  },
+  "top": {
+   "elapsed_ms": 231,
+   "error_class": "",
+   "final_url": "https://www.city.awara.lg.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}
