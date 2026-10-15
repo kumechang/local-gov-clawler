@@ -1,0 +1,684 @@
+{
+ "ai_needed": true,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 2,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ | 高取町 スポーツ",
+     "reasons": [
+      "text:スポーツ",
+      "sports_pure"
+     ],
+     "region": "other",
+     "score": 7,
+     "source": "depth1_link",
+     "text": "スポーツ",
+     "url": "https://www.town.takatori.nara.jp/category_list.php?frmCd=5-2-2-0-0",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "broad",
+     "page_title": "サイトマップ | 高取町 サイトマップ",
+     "reasons": [
+      "sitemap_page"
+     ],
+     "region": "other",
+     "score": 3,
+     "source": "nav",
+     "text": "サイトマップ",
+     "url": "http://www.town.takatori.nara.jp/sitemap.php",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "generic",
+     "page_title": "公共施設 | 高取町 公共施設",
+     "reasons": [
+      "text:公共施設|施設案内|施設一覧|施設情報"
+     ],
+     "region": "other",
+     "score": 3,
+     "source": "nav",
+     "text": "施設一覧",
+     "url": "http://www.town.takatori.nara.jp/contents_detail.php?frmId=160",
+     "viable": false
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "facility_samples": [],
+     "fetched": false,
+     "kind": "sports_other",
+     "page_title": "",
+     "reasons": [
+      "text:スポーツ"
+     ],
+     "region": "other",
+     "score": 3,
+     "source": "depth1_link",
+     "text": "学び・スポーツ",
+     "url": "https://www.town.takatori.nara.jp/category_list.php?frmCd=5-2-0-0-0",
+     "viable": false
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "facility_samples": [],
+     "fetched": false,
+     "kind": "generic",
+     "page_title": "",
+     "reasons": [
+      "text:施設を探す|施設から探す|施設検索|[市町村]の施設|みんなの施設"
+     ],
+     "region": "other",
+     "score": 3,
+     "source": "depth1_link",
+     "text": "町の施設",
+     "url": "https://www.town.takatori.nara.jp/category_list.php?frmCd=3-1-3-0-0",
+     "viable": false
+    }
+   ],
+   "decision": "hub_not_found",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "quality": "",
+   "selected": null
+  }
+ ],
+ "menu_labels": [],
+ "municipality": {
+  "code": "29401",
+  "full_name": "高取町",
+  "kind": "town",
+  "name": "高取町",
+  "official_url": "https://www.town.takatori.nara.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/sitemap.php"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町政への意見箱",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takatori.nara.jp/mailform/opinion.cgi"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "お問い合わせ",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takatori.nara.jp/soshiki_list.php"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "Language",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/contents_detail.php?frmId=2312"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと納税 221202",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/contents_detail.php?co=kak&frmId=704"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "たかとりん紹介",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=kak&frmId=2424"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "暮らしの情報 手続きや制度の案内",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=5-0-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光・文化 観光や産業情報など",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=4-0-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "町政情報 まちの概要や施設など",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=3-0-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "事業者の方へ 入札情報や事業など",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=2-0-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "課・組織から探す 課や組織情報など",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/soshiki_list.php"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "防災情報",
+   "text_kind": "text",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=5-3-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町長室",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takatori.nara.jp/soshiki_view.php?so_cd1=2&so_cd2=3&so_cd3=0&so_cd4=0&so_cd5=0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町議会",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/soshiki_view.php?so_cd1=2&so_cd2=2&so_cd3=0&so_cd4=0&so_cd5=0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "教育委員会",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/soshiki_view.php?so_cd1=2&so_cd2=1&so_cd3=0&so_cd4=0&so_cd5=0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベント情報",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=4-5-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "申請・届出",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/contents_detail.php?co=kak&frmId=1100"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報たかとり",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/soshiki_view.php?so_cd1=2&so_cd2=14&so_cd3=0&so_cd4=0&so_cd5=0&bn_cd=4"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "たかとりんグッズ",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takatori.nara.jp/category_list.php?frmCd=4-8-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "施設一覧",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/contents_detail.php?frmId=160"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "例規集2",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/reiki/reiki_int/reiki_menu.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "転入・転出",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=5-14-5-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=5-15-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "妊娠・出産・育児",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=5-13-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "就学・教育",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=5-12-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "就職・退職",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=5-21-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "保険・医療制度",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=5-10-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "介護・福祉制度",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=5-9-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おくやみ",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/contents_detail.php?co=cat&frmId=297&frmCd=5-14-3-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ごみ・環境",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=5-16-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "税金",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=5-11-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "各種相談",
+   "text_kind": "img_alt",
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=5-19-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入札・指名願・契約",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takatori.nara.jp/category_list.php?frmCd=2-6-0-0-0"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新着情報の一覧を見る",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takatori.nara.jp/new_list.php"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新着情報のRSS2.0(フィードへリンク)",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takatori.nara.jp/rss/rss_new.xml"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ツキノワグマ出没の注意喚起",
+   "text_kind": "text",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=new&frmId=2706"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入札情報",
+   "text_kind": "text",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=new&frmId=2704"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "薬害について",
+   "text_kind": "text",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=new&frmId=2700"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "第53回高取町民スポーツフェスティバルを開催します!",
+   "text_kind": "text",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=new&frmId=2695"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入札情報",
+   "text_kind": "text",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=new&frmId=2702"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "高取町地域おこし協力隊を募集します!(令和9年4月1日採用)",
+   "text_kind": "text",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=new&frmId=2697"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おためし地域おこし協力隊を募集します!",
+   "text_kind": "text",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=new&frmId=2698"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広報「たかとり」最新号",
+   "text_kind": "text",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=new&frmId=1533"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入札情報",
+   "text_kind": "text",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=new&frmId=2701"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年高取町議会第3回定例会(9月8日~9月16日)",
+   "text_kind": "text",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=new&frmId=2690"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "(仮称)高取町多機能複合型未来拠点施設整備基本計画策定支援業務に関する公募型プロポーザルの実施について",
+   "text_kind": "text",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=new&frmId=2692"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "行政報告会の開催について",
+   "text_kind": "text",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=new&frmId=2251"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度高取町魅力再発見講座開催のお知らせ",
+   "text_kind": "text",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=new&frmId=2687"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "災害備蓄品一覧",
+   "text_kind": "text",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=new&frmId=2688"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "高取町公式マスコットキャラクター「たかとりん」グッズの紹介",
+   "text_kind": "text",
+   "url": "https://www.town.takatori.nara.jp/contents_detail.php?co=new&frmId=2684"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "公式LINE",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takatori.nara.jp/module/banner.cgi?bannerId=20"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "マイ広報紙",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takatori.nara.jp/module/banner.cgi?bannerId=23"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "バナー広告",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takatori.nara.jp/module/banner.cgi?bannerId=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "たかとりケアマネ会(高取町介護支援専門員連絡協議会)",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takatori.nara.jp/module/banner.cgi?bannerId=12"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "お問い合わせはこちら",
+   "text_kind": "img_alt",
+   "url": "https://www.town.takatori.nara.jp/soshiki_list.php"
+  }
+ ],
+ "needs_review": [
+  "hub_not_found"
+ ],
+ "outcome": "hub_not_found",
+ "requests": [
+  {
+   "bytes": 108,
+   "elapsed_ms": 1029,
+   "error_class": "",
+   "final_url": "https://www.town.takatori.nara.jp/robots.txt",
+   "status": 200,
+   "url": "https://www.town.takatori.nara.jp/robots.txt"
+  },
+  {
+   "bytes": 26777,
+   "elapsed_ms": 371,
+   "error_class": "",
+   "final_url": "https://www.town.takatori.nara.jp/",
+   "status": 200,
+   "url": "https://www.town.takatori.nara.jp/"
+  },
+  {
+   "bytes": 4835,
+   "elapsed_ms": 185,
+   "error_class": "http_404",
+   "final_url": "https://www.town.takatori.nara.jp/sitemap.xml",
+   "status": 404,
+   "url": "https://www.town.takatori.nara.jp/sitemap.xml"
+  },
+  {
+   "bytes": 25006,
+   "elapsed_ms": 573,
+   "error_class": "",
+   "final_url": "https://www.town.takatori.nara.jp/sitemap.php",
+   "status": 200,
+   "url": "http://www.town.takatori.nara.jp/sitemap.php"
+  },
+  {
+   "bytes": 19095,
+   "elapsed_ms": 422,
+   "error_class": "",
+   "final_url": "https://www.town.takatori.nara.jp/contents_detail.php?frmId=160",
+   "status": 200,
+   "url": "http://www.town.takatori.nara.jp/contents_detail.php?frmId=160"
+  },
+  {
+   "bytes": 10183,
+   "elapsed_ms": 390,
+   "error_class": "",
+   "final_url": "https://www.town.takatori.nara.jp/category_list.php?frmCd=5-12-0-0-0",
+   "status": 200,
+   "url": "http://www.town.takatori.nara.jp/category_list.php?frmCd=5-12-0-0-0"
+  },
+  {
+   "bytes": 9120,
+   "elapsed_ms": 384,
+   "error_class": "",
+   "final_url": "https://www.town.takatori.nara.jp/category_list.php?frmCd=5-2-2-0-0",
+   "status": 200,
+   "url": "https://www.town.takatori.nara.jp/category_list.php?frmCd=5-2-2-0-0"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 3354,
+  "finished_at": "2026-10-15T04:21:01Z",
+  "request_count": 7,
+  "route": "actions_direct_v6",
+  "started_at": "2026-10-15T04:20:55Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "high",
+   "evidence": [
+    "url:43件 例 http://www.town.takatori.nara.jp/contents_detail.php?frmId=2312"
+   ],
+   "family": "url_pattern:php_query",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:category_numeric": 7,
+    "url_pattern:php_query": 11
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 67,
+   "image_count": 65,
+   "needs_headless": false,
+   "noscript_text_length": 125,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 11,
+   "text_length": 547
+  },
+  "robots": {
+   "available": true,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "",
+   "sitemaps": [],
+   "status": 200,
+   "text": "User-agent: MJ12bot\nDisallow: /\n\nUser-agent: AhrefsBot\nDisallow: /\n\nUser-agent: Domains Project\nDisallow: /\n",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "http_404",
+     "kind": "",
+     "source": "default_path",
+     "status": 404,
+     "url": "https://www.town.takatori.nara.jp/sitemap.xml"
+    }
+   ],
+   "found": false,
+   "kind": "",
+   "source": "",
+   "url": ""
+  },
+  "top": {
+   "elapsed_ms": 371,
+   "error_class": "",
+   "final_url": "https://www.town.takatori.nara.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

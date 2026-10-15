@@ -1,0 +1,427 @@
+{
+ "ai_needed": true,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "broad",
+     "page_title": "奈良県曽爾村 サイトマップ サイトマップ",
+     "reasons": [
+      "sitemap_page",
+      "region_nav"
+     ],
+     "region": "nav",
+     "score": 4,
+     "source": "nav",
+     "text": "サイトマップ",
+     "url": "https://www.vill.soni.nara.jp/sitemap",
+     "viable": false
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "facility_samples": [],
+     "fetched": false,
+     "kind": "sports_other",
+     "page_title": "",
+     "reasons": [
+      "text:スポーツ",
+      "region_nav"
+     ],
+     "region": "nav",
+     "score": 4,
+     "source": "depth1_link",
+     "text": "スポーツ・レク",
+     "url": "https://www.vill.soni.nara.jp/menu/9",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "facility_samples": [],
+     "fetched": true,
+     "kind": "broad",
+     "page_title": "",
+     "reasons": [
+      "broad_category",
+      "region_nav"
+     ],
+     "region": "nav",
+     "score": 3,
+     "source": "nav",
+     "text": "くらし",
+     "url": "https://www.vill.soni.nara.jp/link/itemlist/85",
+     "viable": false
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "facility_samples": [],
+     "fetched": false,
+     "kind": "generic",
+     "page_title": "",
+     "reasons": [
+      "text:公共施設|施設案内|施設一覧|施設情報",
+      "region_nav"
+     ],
+     "region": "nav",
+     "score": 3,
+     "source": "depth1_link",
+     "text": "公共施設",
+     "url": "https://www.vill.soni.nara.jp/menu/23",
+     "viable": false
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "facility_samples": [],
+     "fetched": false,
+     "kind": "broad",
+     "page_title": "",
+     "reasons": [
+      "sitemap_page",
+      "region_nav"
+     ],
+     "region": "nav",
+     "score": 3,
+     "source": "depth1_link",
+     "text": "サイトマップ",
+     "url": "https://www.vill.soni.nara.jp/sitemap/",
+     "viable": false
+    }
+   ],
+   "decision": "hub_not_found",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "quality": "",
+   "selected": null
+  }
+ ],
+ "menu_labels": [],
+ "municipality": {
+  "code": "29385",
+  "full_name": "曽爾村",
+  "kind": "village",
+  "name": "曽爾村",
+  "official_url": "https://www.vill.soni.nara.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "曽爾村",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.soni.nara.jp/"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらし",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.soni.nara.jp/link/itemlist/85"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光情報",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.soni.nara.jp/link/itemlist/81"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "移住・定住",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.soni.nara.jp/link/itemlist/83"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "緊急時には",
+   "text_kind": "text",
+   "url": "https://www.vill.soni.nara.jp/menu/54"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "RSS",
+   "text_kind": "text",
+   "url": "https://www.vill.soni.nara.jp/RSSFeed/menu/5"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "曽爾高原にお越しの皆様へ",
+   "text_kind": "text",
+   "url": "https://www.vill.soni.nara.jp/info/528"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "奈良県曽爾村 起業型地域おこし協力隊を募集します!(令和9年4月採用)",
+   "text_kind": "text",
+   "url": "https://www.vill.soni.nara.jp/info/532"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "ツキノワグマ目撃情報に伴う注意喚起について(最新)",
+   "text_kind": "text",
+   "url": "https://www.vill.soni.nara.jp/info/707"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "ツキノワグマ目撃情報に伴う注意喚起について",
+   "text_kind": "text",
+   "url": "https://www.vill.soni.nara.jp/info/505"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "移住コーディネーターを募集します",
+   "text_kind": "text",
+   "url": "https://www.vill.soni.nara.jp/info/535"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "広報曽爾の最新号を掲載しました。",
+   "text_kind": "text",
+   "url": "https://www.vill.soni.nara.jp/info/686"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "続きを見る",
+   "text_kind": "text",
+   "url": "https://www.vill.soni.nara.jp/alllist/topic"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "RSS",
+   "text_kind": "text",
+   "url": "https://www.vill.soni.nara.jp/RSSFeed/topic"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "そにのわGLOCAL",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.soni.nara.jp/link/itemlist/135"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "曽爾村地域おこし協力隊",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.soni.nara.jp/link/itemlist/87"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "そにのわ 曽爾村農林業公社",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.soni.nara.jp/link/itemlist/88"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "山と漆と暮らし",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.soni.nara.jp/link/itemlist/89"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "ふるさと納税",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.soni.nara.jp/link/itemlist/90"
+  },
+  {
+   "is_pdf": false,
+   "region": "main",
+   "same_site": true,
+   "text": "移住定住ポータルサイト",
+   "text_kind": "img_alt",
+   "url": "https://www.vill.soni.nara.jp/link/itemlist/130"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "曽爾村へのアクセス",
+   "text_kind": "text",
+   "url": "https://www.vill.soni.nara.jp/info/11"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "曽爾村を知る",
+   "text_kind": "text",
+   "url": "https://www.vill.soni.nara.jp/info/8"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ご意見・お問い合わせ",
+   "text_kind": "text",
+   "url": "https://www.vill.soni.nara.jp/forms/contactaccept/edit/div/18"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "text",
+   "url": "https://www.vill.soni.nara.jp/sitemap"
+  }
+ ],
+ "needs_review": [
+  "hub_not_found"
+ ],
+ "outcome": "hub_not_found",
+ "requests": [
+  {
+   "bytes": 250,
+   "elapsed_ms": 1704,
+   "error_class": "",
+   "final_url": "https://www.vill.soni.nara.jp/robots.txt",
+   "status": 200,
+   "url": "https://www.vill.soni.nara.jp/robots.txt"
+  },
+  {
+   "bytes": 18654,
+   "elapsed_ms": 345,
+   "error_class": "",
+   "final_url": "https://www.vill.soni.nara.jp/",
+   "status": 200,
+   "url": "https://www.vill.soni.nara.jp/"
+  },
+  {
+   "bytes": 0,
+   "elapsed_ms": 269,
+   "error_class": "http_404",
+   "final_url": "https://www.vill.soni.nara.jp/sitemap.xml",
+   "status": 404,
+   "url": "https://www.vill.soni.nara.jp/sitemap.xml"
+  },
+  {
+   "bytes": 43375,
+   "elapsed_ms": 541,
+   "error_class": "",
+   "final_url": "https://www.vill.soni.nara.jp/sitemap",
+   "status": 200,
+   "url": "https://www.vill.soni.nara.jp/sitemap"
+  },
+  {
+   "bytes": 223,
+   "elapsed_ms": 448,
+   "error_class": "",
+   "final_url": "https://www.vill.soni.nara.jp/link/itemlist/85",
+   "status": 200,
+   "url": "https://www.vill.soni.nara.jp/link/itemlist/85"
+  },
+  {
+   "bytes": 236,
+   "elapsed_ms": 218,
+   "error_class": "",
+   "final_url": "https://www.vill.soni.nara.jp/link/itemlist/89",
+   "status": 200,
+   "url": "https://www.vill.soni.nara.jp/link/itemlist/89"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 3525,
+  "finished_at": "2026-10-15T04:21:42Z",
+  "request_count": 6,
+  "route": "actions_direct_v6",
+  "started_at": "2026-10-15T04:21:17Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "none",
+   "evidence": [],
+   "family": "unknown",
+   "provenance": "auto",
+   "scores": {}
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 26,
+   "image_count": 18,
+   "needs_headless": false,
+   "noscript_text_length": 0,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 7,
+   "text_length": 408
+  },
+  "robots": {
+   "available": true,
+   "crawl_delay": 5.0,
+   "disallow_all": false,
+   "disallow_count": 5,
+   "error_class": "",
+   "sitemaps": [],
+   "status": 200,
+   "text": "User-agent: *\r\nDisallow: /manager/\r\nDisallow: /info/print/\r\nDisallow: /forms/\r\nDisallow: /local/scripts/\r\nDisallow: /Module/\r\nCrawl-delay: 5\r\n\r\nUser-agent: baiduspider\r\nDisallow: /\r\nCrawl-delay:5\r\n\r\nUser-agent: BaiduSpider\r\nDisallow: /\r\nCrawl-delay:5",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "http_404",
+     "kind": "",
+     "source": "default_path",
+     "status": 404,
+     "url": "https://www.vill.soni.nara.jp/sitemap.xml"
+    }
+   ],
+   "found": false,
+   "kind": "",
+   "source": "",
+   "url": ""
+  },
+  "top": {
+   "elapsed_ms": 345,
+   "error_class": "",
+   "final_url": "https://www.vill.soni.nara.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

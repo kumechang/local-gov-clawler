@@ -1,0 +1,1083 @@
+{
+ "ai_needed": false,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 2,
+     "facility_link_count": 9,
+     "facility_samples": [
+      "総合体育館[other]",
+      "健民運動場[other]",
+      "白川ダム運動場[other]",
+      "天理ダム運動場[other]",
+      "福住運動場[other]"
+     ],
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ施設/天理市 スポーツ施設",
+     "reasons": [
+      "text:スポーツ施設",
+      "url_hint",
+      "sports_pure",
+      "facility_links:9",
+      "title_match"
+     ],
+     "region": "other",
+     "score": 28,
+     "source": "depth1_link",
+     "text": "スポーツ施設",
+     "url": "https://www.city.tenri.nara.jp/shisetsu/sportsshisetsu/index.html",
+     "viable": true
+    },
+    {
+     "depth": 3,
+     "facility_link_count": null,
+     "facility_samples": [],
+     "fetched": false,
+     "kind": "sports_other",
+     "page_title": "",
+     "reasons": [
+      "text:体育館",
+      "url_hint"
+     ],
+     "region": "other",
+     "score": 7,
+     "source": "depth2_link",
+     "text": "総合体育館",
+     "url": "https://www.city.tenri.nara.jp/shisetsu/sportsshisetsu/sougoutaiikukan/index.html",
+     "viable": false
+    },
+    {
+     "depth": 3,
+     "facility_link_count": null,
+     "facility_samples": [],
+     "fetched": false,
+     "kind": "sports_other",
+     "page_title": "",
+     "reasons": [
+      "text:体育館",
+      "url_hint"
+     ],
+     "region": "other",
+     "score": 7,
+     "source": "depth2_link",
+     "text": "二階堂体育館",
+     "url": "https://www.city.tenri.nara.jp/shisetsu/sportsshisetsu/nikaidoutaiikukan/index.html",
+     "viable": false
+    },
+    {
+     "depth": 3,
+     "facility_link_count": null,
+     "facility_samples": [],
+     "fetched": false,
+     "kind": "sports_other",
+     "page_title": "",
+     "reasons": [
+      "text:体育館",
+      "url_hint"
+     ],
+     "region": "other",
+     "score": 7,
+     "source": "depth2_link",
+     "text": "三島体育館",
+     "url": "https://www.city.tenri.nara.jp/shisetsu/sportsshisetsu/mishimataiikukan/index.html",
+     "viable": false
+    },
+    {
+     "depth": 3,
+     "facility_link_count": null,
+     "facility_samples": [],
+     "fetched": false,
+     "kind": "sports_other",
+     "page_title": "",
+     "reasons": [
+      "text:グラウンド|グランド(?=ゴルフ|$|[・\\s、/（(]|施設|一覧|案内|情報|使用|利用|の)|運動場",
+      "url_hint"
+     ],
+     "region": "other",
+     "score": 6,
+     "source": "depth2_link",
+     "text": "健民運動場",
+     "url": "https://www.city.tenri.nara.jp/shisetsu/sportsshisetsu/kenminundoujou/index.html",
+     "viable": false
+    }
+   ],
+   "decision": "hub_selected",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "quality": "specific",
+   "selected": {
+    "depth": 2,
+    "facility_link_count": 9,
+    "facility_samples": [
+     "総合体育館[other]",
+     "健民運動場[other]",
+     "白川ダム運動場[other]",
+     "天理ダム運動場[other]",
+     "福住運動場[other]"
+    ],
+    "fetched": true,
+    "kind": "sports_pure",
+    "page_title": "スポーツ施設/天理市 スポーツ施設",
+    "reasons": [
+     "text:スポーツ施設",
+     "url_hint",
+     "sports_pure",
+     "facility_links:9",
+     "title_match"
+    ],
+    "region": "other",
+    "score": 28,
+    "source": "depth1_link",
+    "text": "スポーツ施設",
+    "url": "https://www.city.tenri.nara.jp/shisetsu/sportsshisetsu/index.html",
+    "viable": true
+   }
+  }
+ ],
+ "menu_labels": [
+  "申請"
+ ],
+ "municipality": {
+  "code": "29204",
+  "full_name": "天理市",
+  "kind": "city",
+  "name": "天理市",
+  "official_url": "https://www.city.tenri.nara.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "スマートフォン専用サイトへ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "ほっとステーション",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/kyouikuiinkai/hot_station/14202.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "オンライン申請サービス",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kurashi/todokede/15453.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "「ほっとステーション」市立小中学校・園・所に通うご家庭の相談専用窓口へのリンク画像",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/kyouikuiinkai/hot_station/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ホーム",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "暮らしの情報",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kurashi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市政の情報",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/shisei/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "事業者の方へ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/jigyou/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "天理の魅力",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/miryoku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "各課のご案内",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "施設のご案内",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/shisetsu/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "よくある質問",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/shitsumon/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "携帯サイト",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/mobile/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "特殊詐欺非常事態宣言発令中",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/daiji/15834.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "NHK「あしたが変わるトリセツショー」と連携したがん撲滅キャンペーン2026",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/daiji/15777.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "クビアカツヤカミキリにご注意ください",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/daiji/15670.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新たな防災気象情報について 令和8年5月29日より気象警報等がかわります",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/daiji/15622.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度第1回天理市議会定例会 並河市長施政方針",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/daiji/15478.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "自治体を装った「詐欺メール」にご注意ください",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/daiji/15572.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年度天理市職員採用候補者試験の実施について(令和8年度通年採用)",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/daiji/15493.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "天理市環境クリーンセンター解体事業の経緯について",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/daiji/15465.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "クマの出没にご注意ください!",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/daiji/14774.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "【終了しました】令和7年大分市佐賀関の大規模火災義援金募金箱を設置します",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/daiji/15310.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "大事なお知らせ一覧",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/daiji/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "天理市制度融資利子補給臨時支援金の交付について",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/info/15817.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町から町へ9月号31ページ安堵の里ハンドボールクラブ全国大会出場報告会お名前の誤りにつきまして",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/info/15802.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年熊本地震に係る募金箱を設置しております",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/info/15747.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "天理市下水道事業企業会計システム更新業務プロポーザルの実施",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/info/15773.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "令和8年10月 市営住宅入居者募集",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/info/15806.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "天理市体育施設指定管理者募集について",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/info/15687.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町から町へ8月号32ページ、裏表紙帯(左上部)の月表示の訂正につきまして",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/info/15730.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "天理市トレイルセンター指定管理者の募集について",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/info/15749.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "歌手 寺本圭佑さん 天理市PR大使就任記念企画!記念曲の歌詞を大募集!",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/info/15713.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "生活道路における自動車の法定速度について(道路交通法令和7年4月改正、令和8年9月施行)",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/info/15342.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "RSS",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/cgi-bin/feed.php?categoryNo=11&includeShortcut=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "お知らせ一覧",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/info/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "RSS",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/cgi-bin/feed.php?siteNew=11&includeShortcut=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新着一覧",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/news_list.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "RSS",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/cgi-bin/feed.php?calendarNo=1&includeShortcut=1"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "天理市山の辺の道ボランティアガイド申込・受付について",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/riyou/1492125612777.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "天理市トレイルセンター",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/riyou/1492388862484.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "総合窓口の混雑状況及び来庁不要なサービス(コンビニ交付・オンライン申請)について",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/riyou/15373.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "「めぐみ めぐる てんり」移住・定住促進 ドキュメンタリー映像公開のお知らせ",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/riyou/1509601372322.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "eftバナー",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/kenkoukodomokateikyoku/kodomoshienka/15686.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "天理市ふるさと納税",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/sougouseisakuka/kigyoubannfurusatonouzei/14759.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "小規模特認校制度児童生徒募集",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/kyouikuiinkai/manabisuisinka/syoukibotokuninkouseido/13880.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "定住自立圏 イベント情報",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/sougouseisakuka/teijyujirituken/teijujiritsukenibentojoho/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "産地直送 てんりのええもん わが街とくさんネット",
+   "text_kind": "img_alt",
+   "url": "http://www.city.tenri.nara.jp/kakuka/kankyoukeizaibu/sangyoushinkoukan/1443484347225.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "マイナンバー 社会保障・税番号制度",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/kurasibunkabu/shiminka/mainanbaa/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "引越し・デジタル申請",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kurashi/digital/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "妊娠・出産",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kantan/ninshin/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "届出・手続",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kantan/todokede/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "入園・入学",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kantan/nyuugaku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "結婚・離婚",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kantan/kekkon/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "就職・仕事",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kantan/shuushoku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おくやみ",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kantan/okuyami/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ごみ・リサイクル",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kantan/gomi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "引越し",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kantan/hikkoshi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "子育てガイド",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kosodateguide/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "健康・長寿ガイド",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/chyojyukenkoguide/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "天理市公式Facebook 「e~やん天理」",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/kohoka/facebook/1390279112622.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "天理市公式Instagram",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/kohoka/instagram/1599803870990.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベントカレンダー",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/calendar.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "関連サイト",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/kohoka/about/kanren.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "【お知らせ】令和8年5月29日より防災気象情報が新しくなります",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/kakuka/kurasibunkabu/bousaianzenka/aratanabousaiakishoujouhounituite/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "南海トラフ地震臨時情報「巨大地震注意」解除も ~引き続き備えを~",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/kakuka/kurasibunkabu/bousaianzenka/kinkyuujouhou/13782.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "防災マップ",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/kakuka/kurasibunkabu/bousaianzenka/hazado/sougoubousaimap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "防災関連動画",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/kakuka/kurasibunkabu/bousaianzenka/13931.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "防災情報リンク",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/kohoka/about/1416356245235.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "e~メール天理",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/kurashi/machidukuri/bouhanbousai/1395634127895.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ため池ハザードマップ",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/kakuka/kankyoukeizaibu/nourinka/information/r030501tameikehazardmap/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市長の部屋",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/hishoka/1394607673273.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "天理市議会",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/gikaijimukyoku/shigikai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "教育委員会",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/kyouikuiinkai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "市立図書館",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/kyouikuiinkai/toshokan/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "採用・募集情報(会計年度任用職員も含む)",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/jinjika/shokuinsaiyou/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "Art-Space TARN",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/kurasibunkabu/sportsinkou/bunnkasinnkougakari/tarn/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "天理市文化施設",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/kurasibunkabu/shiminkaikan/1558054445414.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "天理の音楽支援",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/kurasibunkabu/bunkacenter/tenrionngakusien/1571641593024.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "広報誌「町から町へ」",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/kohoka/kouhou_machi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "街づくり協議会",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/sougouseisakuka/matizukuri/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "天理市空き家バンク",
+   "text_kind": "img_alt",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/sougouseisakuka/ijyuuteijyuu/1600829175300.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "オープンデータ",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/kakuka/soumubu/jouhouseisakuka/1425528872138.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "申請書ダウンロード",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/kohoka/about/download.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "パブリックコメント",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/sougouseisakuka/public_comment/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "ご意見・お問い合わせ(かがやきポスト)",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/shisei/gyousei/kouhou/1390278810175.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "人口一覧",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/shisei/shinogaiyou/toukei/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広告募集について",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/kohoka/about/koukoku.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "著作権・リンクについて",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/kohoka/about/link.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "免責事項について",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/kakuka/shichoukoushitsu/kohoka/about/menseki.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "footer",
+   "same_site": true,
+   "text": "市役所へのアクセス",
+   "text_kind": "text",
+   "url": "https://www.city.tenri.nara.jp/shisei/shinogaiyou/access.html"
+  }
+ ],
+ "needs_review": [],
+ "outcome": "hub_selected",
+ "requests": [
+  {
+   "bytes": 75,
+   "elapsed_ms": 1234,
+   "error_class": "",
+   "final_url": "https://www.city.tenri.nara.jp/robots.txt",
+   "status": 200,
+   "url": "https://www.city.tenri.nara.jp/robots.txt"
+  },
+  {
+   "bytes": 66638,
+   "elapsed_ms": 411,
+   "error_class": "",
+   "final_url": "https://www.city.tenri.nara.jp/",
+   "status": 200,
+   "url": "https://www.city.tenri.nara.jp/"
+  },
+  {
+   "bytes": 2637,
+   "elapsed_ms": 242,
+   "error_class": "",
+   "final_url": "https://www.city.tenri.nara.jp/sitemap.xml",
+   "status": 200,
+   "url": "https://www.city.tenri.nara.jp/sitemap.xml"
+  },
+  {
+   "bytes": 466,
+   "elapsed_ms": 256,
+   "error_class": "",
+   "final_url": "https://www.city.tenri.nara.jp/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.tenri.nara.jp/sitemap.dir.xml"
+  },
+  {
+   "bytes": 3955,
+   "elapsed_ms": 242,
+   "error_class": "",
+   "final_url": "https://www.city.tenri.nara.jp/daiji/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.tenri.nara.jp/daiji/sitemap.dir.xml"
+  },
+  {
+   "bytes": 296,
+   "elapsed_ms": 243,
+   "error_class": "",
+   "final_url": "https://www.city.tenri.nara.jp/kakuka/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.tenri.nara.jp/kakuka/sitemap.dir.xml"
+  },
+  {
+   "bytes": 310,
+   "elapsed_ms": 239,
+   "error_class": "",
+   "final_url": "https://www.city.tenri.nara.jp/kakuka/kurasibunkabu/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.tenri.nara.jp/kakuka/kurasibunkabu/sitemap.dir.xml"
+  },
+  {
+   "bytes": 322,
+   "elapsed_ms": 239,
+   "error_class": "",
+   "final_url": "https://www.city.tenri.nara.jp/kakuka/kurasibunkabu/sportsinkou/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.city.tenri.nara.jp/kakuka/kurasibunkabu/sportsinkou/sitemap.dir.xml"
+  },
+  {
+   "bytes": 38134,
+   "elapsed_ms": 272,
+   "error_class": "",
+   "final_url": "https://www.city.tenri.nara.jp/kurashi/index.html",
+   "status": 200,
+   "url": "https://www.city.tenri.nara.jp/kurashi/index.html"
+  },
+  {
+   "bytes": 37368,
+   "elapsed_ms": 272,
+   "error_class": "",
+   "final_url": "https://www.city.tenri.nara.jp/kakuka/kurasibunkabu/shiminkaikan/1558054445414.html",
+   "status": 200,
+   "url": "https://www.city.tenri.nara.jp/kakuka/kurasibunkabu/shiminkaikan/1558054445414.html"
+  },
+  {
+   "bytes": 93193,
+   "elapsed_ms": 424,
+   "error_class": "",
+   "final_url": "https://www.city.tenri.nara.jp/sitemap.html",
+   "status": 200,
+   "url": "https://www.city.tenri.nara.jp/sitemap.html"
+  },
+  {
+   "bytes": 36844,
+   "elapsed_ms": 310,
+   "error_class": "",
+   "final_url": "https://www.city.tenri.nara.jp/shisetsu/sportsshisetsu/index.html",
+   "status": 200,
+   "url": "https://www.city.tenri.nara.jp/shisetsu/sportsshisetsu/index.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 4384,
+  "finished_at": "2026-10-15T04:20:17Z",
+  "request_count": 12,
+  "route": "actions_direct_v6",
+  "started_at": "2026-10-15T04:20:06Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "high",
+   "evidence": [
+    "url:7件 例 https://www.city.tenri.nara.jp/kurashi/todokede/15453.html"
+   ],
+   "family": "url_pattern:genre_dir_index",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:genre_dir_index": 10,
+    "url_pattern:news_event_numeric": 9
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 128,
+   "image_count": 79,
+   "needs_headless": false,
+   "noscript_text_length": 0,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 21,
+   "text_length": 1192
+  },
+  "robots": {
+   "available": true,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 1,
+   "error_class": "",
+   "sitemaps": [],
+   "status": 200,
+   "text": "User-agent: *\r\nDisallow: /koji_sotatsu/\r\n\r\nUser-agent: ndl-japan\r\nDisallow:",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "index",
+     "source": "default_path",
+     "status": 200,
+     "url": "https://www.city.tenri.nara.jp/sitemap.xml"
+    }
+   ],
+   "children_fetched": 5,
+   "children_total": 15,
+   "found": true,
+   "keyword_urls": [
+    "https://www.city.tenri.nara.jp/kakuka/kurasibunkabu/sportsinkou/index.html"
+   ],
+   "kind": "index",
+   "lastmod_count": 26,
+   "lastmod_max": "2026-10-15",
+   "lastmod_min": "2021-04-01",
+   "lastmod_years": {
+    "2021": 2,
+    "2023": 2,
+    "2024": 2,
+    "2025": 4,
+    "2026": 16
+   },
+   "numeric_id_url_ratio": 0.808,
+   "source": "default_path",
+   "top_level_paths": {
+    "/13577.html": 1,
+    "/daiji": 21,
+    "/index.html": 1,
+    "/kakuka": 3
+   },
+   "truncated": true,
+   "url": "https://www.city.tenri.nara.jp/sitemap.xml",
+   "url_count": 26
+  },
+  "top": {
+   "elapsed_ms": 411,
+   "error_class": "",
+   "final_url": "https://www.city.tenri.nara.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}
