@@ -1,0 +1,743 @@
+{
+ "ai_needed": true,
+ "failure_class": "",
+ "genre_entrypoints": [
+  {
+   "blocked_by_robots": [],
+   "candidates": [
+    {
+     "depth": 2,
+     "facility_link_count": 0,
+     "fetched": true,
+     "kind": "sports_pure",
+     "page_title": "スポーツ/河合町",
+     "reasons": [
+      "text:スポーツ",
+      "url_hint",
+      "sports_pure"
+     ],
+     "region": "other",
+     "score": 9,
+     "source": "depth1_link",
+     "text": "スポーツ",
+     "url": "https://www.town.kawai.nara.jp/kenko_sports/sports/index.html",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "fetched": true,
+     "kind": "sports_composite",
+     "page_title": "健康・スポーツ/河合町 健康・スポーツ",
+     "reasons": [
+      "text:スポーツ",
+      "url_hint",
+      "region_nav",
+      "composite"
+     ],
+     "region": "nav",
+     "score": 7,
+     "source": "nav",
+     "text": "健康・ スポーツ",
+     "url": "https://www.town.kawai.nara.jp/kenko_sports/index.html",
+     "viable": false
+    },
+    {
+     "depth": 2,
+     "facility_link_count": 0,
+     "fetched": true,
+     "kind": "sports_other",
+     "page_title": "河合町総合型地域スポーツクラブ/河合町 河合町総合型地域スポーツクラブ",
+     "reasons": [
+      "text:スポーツ",
+      "url_hint"
+     ],
+     "region": "other",
+     "score": 5,
+     "source": "depth1_link",
+     "text": "河合町総合型地域スポーツクラブ",
+     "url": "https://www.town.kawai.nara.jp/kenko_sports/sports/1/index.html",
+     "viable": false
+    },
+    {
+     "depth": 1,
+     "facility_link_count": 0,
+     "fetched": true,
+     "kind": "broad",
+     "page_title": "サイトマップ/河合町 サイトマップ",
+     "reasons": [
+      "sitemap_page",
+      "region_nav"
+     ],
+     "region": "header",
+     "score": 4,
+     "source": "nav",
+     "text": "サイトマップ",
+     "url": "https://www.town.kawai.nara.jp/sitemap.html",
+     "viable": false
+    },
+    {
+     "depth": 2,
+     "facility_link_count": null,
+     "fetched": false,
+     "kind": "generic",
+     "page_title": "",
+     "reasons": [
+      "text:公園",
+      "url_hint"
+     ],
+     "region": "other",
+     "score": 4,
+     "source": "depth1_link",
+     "text": "Kawaiフラワーマラソンin馬見丘陵公園",
+     "url": "https://www.town.kawai.nara.jp/kenko_sports/sports/7703.html",
+     "viable": false
+    }
+   ],
+   "decision": "hub_not_found",
+   "genre": "sports_facility",
+   "provenance": "auto",
+   "quality": "",
+   "selected": null
+  }
+ ],
+ "menu_labels": [
+  "くらし",
+  "子育て",
+  "観光",
+  "町政"
+ ],
+ "municipality": {
+  "code": "29427",
+  "full_name": "河合町",
+  "kind": "town",
+  "name": "河合町",
+  "official_url": "https://www.town.kawai.nara.jp/",
+  "prefecture": "奈良県",
+  "scope": "municipality"
+ },
+ "nav_links": [
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "スマートフォン版を表示",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "Select Language",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/homepage/language.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "サイトマップ",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/sitemap.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "各課のご案内",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kakuka/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "header",
+   "same_site": true,
+   "text": "河合町 Kawai Town Website",
+   "text_kind": "img_alt",
+   "url": "https://www.town.kawai.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "くらしの情報",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kurashi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "教育・文化・ 生涯学習",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kyoiku_bunka_shogai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "健康・ スポーツ",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kenko_sports/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "町政",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/chosei/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "観光",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kanko/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "教育・文化・生涯学習",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kyoiku_bunka_shogai/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "健康・スポーツ",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kenko_sports/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "PCサイトを表示",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "hurusatonouezeiHP2",
+   "text_kind": "img_alt",
+   "url": "https://www.town.kawai.nara.jp/kakuka/somu/seisakutyousei/4/1/894.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "bousaimap20261005",
+   "text_kind": "img_src",
+   "url": "https://www.town.kawai.nara.jp/kakuka/somu/1_1/2/kawaityousougoubousaimap/971.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "kouminkansunamarugourenewal",
+   "text_kind": "img_src",
+   "url": "https://www.town.kawai.nara.jp/kyoiku_bunka_shogai/4/1/7193.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "有料広告募集",
+   "text_kind": "img_alt",
+   "url": "https://www.town.kawai.nara.jp/kakuka/somu/seisakutyousei/2_1/1_3/885.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "gohunnintop",
+   "text_kind": "img_alt",
+   "url": "https://www.town.kawai.nara.jp/kakuka/machizukuri/kankoushinkou/1_1/949.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "LINE募集",
+   "text_kind": "img_alt",
+   "url": "https://www.town.kawai.nara.jp/kakuka/somu/seisakutyousei/2_1/1_3/3/2059.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "出産・ 子育て",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kurashi/shussan_kosodate/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "就職",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kurashi/shushoku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "結婚",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kurashi/kekkon/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "引越し",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kurashi/hikkoshi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ごみ",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kurashi/gomi/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "相談",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kurashi/sodan/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "医療・介護",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kurashi/iryo_kaigo/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "おくやみ",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kurashi/okuyami/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "休日応急診療所",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kenko_sports/kenko/kyujitsu.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "kouhokawai",
+   "text_kind": "img_src",
+   "url": "https://www.town.kawai.nara.jp/chosei/koho_kocho/2/4/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "saiyou",
+   "text_kind": "img_alt",
+   "url": "https://www.town.kawai.nara.jp/kakuka/somu/3/jinji/syokuinsaiyoujouhou/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町長の部屋",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kakuka/somu/seisakutyousei/tyoutyounoheya_morikawa/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町議会",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/10/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "役場案内",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/chosei/yakuba/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "町の概要",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/chosei/purofuru/2990.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと 納税",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/kakuka/somu/seisakutyousei/4/1/894.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "イベント カレンダー",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/calendar.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "新着情報一覧",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/news_list.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "トピックス一覧",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/topics_list.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "小・中学校、こども園",
+   "text_kind": "img_alt",
+   "url": "https://www.town.kawai.nara.jp/kakugakko_enichiran/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "河合町体育協会",
+   "text_kind": "img_alt",
+   "url": "https://www.town.kawai.nara.jp/taiiku/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "河合町文化協会",
+   "text_kind": "img_alt",
+   "url": "https://www.town.kawai.nara.jp/bunka/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "sportsclubs",
+   "text_kind": "img_alt",
+   "url": "https://www.town.kawai.nara.jp/kakuka/kyoiku/1/1/1/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "そうだ、やっぱり河合で暮らそう!",
+   "text_kind": "img_alt",
+   "url": "https://www.town.kawai.nara.jp/iju_teiju/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "ふるさと納税",
+   "text_kind": "img_alt",
+   "url": "https://www.town.kawai.nara.jp/kakuka/somu/seisakutyousei/4/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "河合町立図書館",
+   "text_kind": "img_alt",
+   "url": "https://www.town.kawai.nara.jp/kyoiku_bunka_shogai/3/index.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "akiyapuratto",
+   "text_kind": "img_src",
+   "url": "https://www.town.kawai.nara.jp/kakuka/kankyo/juutaku/akiya/kawaiakiyatouryuutuusokusinnpurattofo-mu/7706.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "川合市場物語",
+   "text_kind": "img_alt",
+   "url": "https://www.town.kawai.nara.jp/kakuka/somu/seisakutyousei/kakusyuzigyou/1/7/1809.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "other",
+   "same_site": true,
+   "text": "広告掲載2",
+   "text_kind": "img_alt",
+   "url": "https://www.town.kawai.nara.jp/kakuka/somu/seisakutyousei/2_1/1_3/885.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "プライバシーポリシー",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/homepage/privacy.html"
+  },
+  {
+   "is_pdf": false,
+   "region": "nav",
+   "same_site": true,
+   "text": "河合町ウェブサイトについて",
+   "text_kind": "text",
+   "url": "https://www.town.kawai.nara.jp/homepage/about.html"
+  }
+ ],
+ "needs_review": [
+  "hub_not_found"
+ ],
+ "outcome": "hub_not_found",
+ "requests": [
+  {
+   "bytes": 36802,
+   "elapsed_ms": 1316,
+   "error_class": "http_404",
+   "final_url": "https://www.town.kawai.nara.jp/robots.txt",
+   "status": 404,
+   "url": "https://www.town.kawai.nara.jp/robots.txt"
+  },
+  {
+   "bytes": 64099,
+   "elapsed_ms": 260,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/",
+   "status": 200,
+   "url": "https://www.town.kawai.nara.jp/"
+  },
+  {
+   "bytes": 99760,
+   "elapsed_ms": 384,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/sitemap.xml",
+   "status": 200,
+   "url": "https://www.town.kawai.nara.jp/sitemap.xml"
+  },
+  {
+   "bytes": 289,
+   "elapsed_ms": 192,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.town.kawai.nara.jp/sitemap.dir.xml"
+  },
+  {
+   "bytes": 1544,
+   "elapsed_ms": 201,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/10/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.town.kawai.nara.jp/10/sitemap.dir.xml"
+  },
+  {
+   "bytes": 296,
+   "elapsed_ms": 195,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/10/1_1/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.town.kawai.nara.jp/10/1_1/sitemap.dir.xml"
+  },
+  {
+   "bytes": 298,
+   "elapsed_ms": 212,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/10/1_1/1/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.town.kawai.nara.jp/10/1_1/1/sitemap.dir.xml"
+  },
+  {
+   "bytes": 2918,
+   "elapsed_ms": 196,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/10/1_1/1/1/sitemap.dir.xml",
+   "status": 200,
+   "url": "https://www.town.kawai.nara.jp/10/1_1/1/1/sitemap.dir.xml"
+  },
+  {
+   "bytes": 40468,
+   "elapsed_ms": 210,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/kenko_sports/index.html",
+   "status": 200,
+   "url": "https://www.town.kawai.nara.jp/kenko_sports/index.html"
+  },
+  {
+   "bytes": 72569,
+   "elapsed_ms": 264,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/sitemap.html",
+   "status": 200,
+   "url": "https://www.town.kawai.nara.jp/sitemap.html"
+  },
+  {
+   "bytes": 79463,
+   "elapsed_ms": 232,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/kurashi/index.html",
+   "status": 200,
+   "url": "https://www.town.kawai.nara.jp/kurashi/index.html"
+  },
+  {
+   "bytes": 48577,
+   "elapsed_ms": 215,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/kyoiku_bunka_shogai/index.html",
+   "status": 200,
+   "url": "https://www.town.kawai.nara.jp/kyoiku_bunka_shogai/index.html"
+  },
+  {
+   "bytes": 39977,
+   "elapsed_ms": 221,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/taiiku/index.html",
+   "status": 200,
+   "url": "https://www.town.kawai.nara.jp/taiiku/index.html"
+  },
+  {
+   "bytes": 37853,
+   "elapsed_ms": 226,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/bunka/index.html",
+   "status": 200,
+   "url": "https://www.town.kawai.nara.jp/bunka/index.html"
+  },
+  {
+   "bytes": 38450,
+   "elapsed_ms": 259,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/kenko_sports/sports/index.html",
+   "status": 200,
+   "url": "https://www.town.kawai.nara.jp/kenko_sports/sports/index.html"
+  },
+  {
+   "bytes": 35477,
+   "elapsed_ms": 227,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/kenko_sports/sports/1/index.html",
+   "status": 200,
+   "url": "https://www.town.kawai.nara.jp/kenko_sports/sports/1/index.html"
+  }
+ ],
+ "run": {
+  "crawler_version": "0.1.0",
+  "elapsed_ms": 4810,
+  "finished_at": "2026-10-15T02:14:01Z",
+  "request_count": 16,
+  "route": "actions_direct_v4",
+  "started_at": "2026-10-15T02:13:46Z"
+ },
+ "schema_version": 1,
+ "site_profile": {
+  "cms": {
+   "confidence": "high",
+   "evidence": [
+    "url:15件 例 https://www.town.kawai.nara.jp/kurashi/index.html"
+   ],
+   "family": "url_pattern:genre_dir_index",
+   "provenance": "auto",
+   "scores": {
+    "url_pattern:genre_dir_index": 10
+   }
+  },
+  "fetch_method": "http",
+  "rendering": {
+   "anchor_count": 78,
+   "image_count": 60,
+   "needs_headless": false,
+   "noscript_text_length": 0,
+   "provenance": "auto",
+   "reasons": [],
+   "script_count": 17,
+   "text_length": 504
+  },
+  "robots": {
+   "available": false,
+   "crawl_delay": null,
+   "disallow_all": false,
+   "disallow_count": 0,
+   "error_class": "http_404",
+   "sitemaps": [],
+   "status": 404,
+   "text": "",
+   "unreachable": false
+  },
+  "sitemap": {
+   "attempts": [
+    {
+     "error_class": "",
+     "kind": "index",
+     "source": "default_path",
+     "status": 200,
+     "url": "https://www.town.kawai.nara.jp/sitemap.xml"
+    }
+   ],
+   "children_fetched": 5,
+   "children_total": 636,
+   "found": true,
+   "keyword_urls": [],
+   "kind": "index",
+   "lastmod_count": 26,
+   "lastmod_max": "2026-10-07",
+   "lastmod_min": "2021-05-28",
+   "lastmod_years": {
+    "2021": 13,
+    "2022": 1,
+    "2023": 1,
+    "2024": 2,
+    "2025": 3,
+    "2026": 6
+   },
+   "numeric_id_url_ratio": 0.808,
+   "source": "default_path",
+   "top_level_paths": {
+    "/10": 25,
+    "/index.html": 1
+   },
+   "truncated": true,
+   "url": "https://www.town.kawai.nara.jp/sitemap.xml",
+   "url_count": 26
+  },
+  "top": {
+   "elapsed_ms": 260,
+   "error_class": "",
+   "final_url": "https://www.town.kawai.nara.jp/",
+   "redirects": 0,
+   "status": 200
+  },
+  "used_proxy": false
+ }
+}

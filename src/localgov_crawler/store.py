@@ -120,12 +120,15 @@ def evaluate(results: list[dict], truth_csv: Path) -> dict:
 
     - reach: 正解URLがハブ候補の上位5件に入った(AI判定や手動確認に渡せば拾える水準)
     - selected_correct: プログラムが確定(hub_selected)したURLが正解と一致した(そのまま使える水準)
-    hub_urlが空の行(サイトに一覧ページが無い)は母数に含めない。
+    hub_urlが空の行(サイトに一覧ページが無い)は到達・正解の母数に含めないが、プログラムが何かを確定していたら
+    誤りとして数える(none_selected、selected_precision_all)。
     許容URLは alt_urls 列(空白または | 区切り)に書ける。どれか1つに一致すれば正解。
     """
     by_code = {r["municipality"]["code"]: r for r in results}
     rows = list(csv.DictReader(open(truth_csv, encoding="utf-8-sig")))
-    rows = [r for r in rows if r.get("municipality_code") and (r.get("hub_url") or "").strip()]
+    all_rows = [r for r in rows if r.get("municipality_code")]
+    none_codes = [r["municipality_code"].zfill(5) for r in all_rows if not (r.get("hub_url") or "").strip()]
+    rows = [r for r in all_rows if (r.get("hub_url") or "").strip()]
     detail = []
     for row in rows:
         code = row["municipality_code"].zfill(5)
@@ -149,7 +152,13 @@ def evaluate(results: list[dict], truth_csv: Path) -> dict:
     reached = sum(d["reached"] for d in detail)
     selected = [d for d in detail if d["selected_url"]]
     correct = sum(1 for d in selected if d["selected_correct"])
+    # 正解が「なし」の自治体で、プログラムが何かを確定していたら誤り
+    none_selected = sum(1 for c in none_codes if c in by_code and any(ge.get("selected") for ge in by_code[c]["genre_entrypoints"]))
+    all_selected = len(selected) + none_selected
     return {
+        "none_rows": len(none_codes),
+        "none_selected": none_selected,
+        "selected_precision_all": round(correct / all_selected, 3) if all_selected else None,
         "truth_count": n,
         "reached": reached,
         "reach_rate": round(reached / n, 3) if n else None,

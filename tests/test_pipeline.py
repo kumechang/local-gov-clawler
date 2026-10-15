@@ -283,3 +283,12 @@ def test_depth3_fetch_is_limited():
     }
     r = analyze(M, make_fetcher(routes), Config(retry_wait=0, d3_fetch=2))
     assert sum(1 for q in r["requests"] if "/kbs/sports/" in q["url"] and q["url"].rstrip("/") != "https://www.city.example.jp/kbs/sports") == 2
+
+
+def test_evaluate_counts_selection_where_truth_is_none(tmp_path, city_routes):
+    """正解が「なし」の自治体で何かを確定していたら誤りとして数える(母数には含めない)。"""
+    r = analyze(M, make_fetcher(city_routes), Config(route="test", retry_wait=0))
+    truth = tmp_path / "t.csv"
+    truth.write_text("municipality_code,hub_url,alt_urls,notes\n29999,,,なし\n", encoding="utf-8")
+    ev = store.evaluate([r], truth)
+    assert ev["truth_count"] == 0 and ev["none_rows"] == 1 and ev["none_selected"] == 1 and ev["selected_precision_all"] == 0.0
