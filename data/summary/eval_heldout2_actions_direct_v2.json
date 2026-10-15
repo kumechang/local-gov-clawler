@@ -1,0 +1,9 @@
+{
+ "reach_rate": 0.3,
+ "reached": 3,
+ "selected": 4,
+ "selected_correct": 1,
+ "selected_correct_rate": 0.1,
+ "selected_precision": 0.25,
+ "truth_count": 10
+}
