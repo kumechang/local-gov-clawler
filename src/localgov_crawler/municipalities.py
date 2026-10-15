@@ -63,8 +63,12 @@ def select(
     prefecture: str | None = None,
     codes: list[str] | None = None,
     shard: tuple[int, int] | None = None,
+    scope: str | None = None,
 ) -> list[Municipality]:
-    """prefectureは名称('奈良県')または2桁コード('29')。shardは(index, total)。"""
+    """prefectureは名称('奈良県')または2桁コード('29')。shardは(index, total)。
+    scopeは 'municipality'(政令市の区を除く1,747件)または 'designated_city_ward'(区のみ)。"""
+    if scope:
+        items = [m for m in items if m.scope == scope]
     if prefecture:
         items = [m for m in items if prefecture in (m.prefecture_name, m.prefecture_code)]
     if codes:

@@ -23,7 +23,7 @@ def _shard(arg: str | None):
 
 def _select(args):
     items = mun.load(args.master)
-    return items, mun.select(items, args.prefecture, args.code, _shard(args.shard))
+    return items, mun.select(items, args.prefecture, args.code, _shard(args.shard), getattr(args, "scope", None) or None)
 
 
 def cmd_list(args) -> int:
@@ -57,7 +57,7 @@ def cmd_run(args) -> int:
         futures = [ex.submit(work, m) for m in sel]
         for fut in as_completed(futures):
             m, res = fut.result()
-            store.write_result(out, res, m.prefecture_code)
+            store.write_result(out, res, m.prefecture_code, compact=args.compact)
             done += 1
             print(f"[{done}/{len(sel)}] {m.code} {m.name}: {res['outcome']} {res['failure_class']}".strip(), flush=True)
     return 0
@@ -106,6 +106,7 @@ def main(argv: list[str] | None = None) -> int:
         sp.add_argument("--prefecture", help="都道府県名または2桁コード")
         sp.add_argument("--code", action="append", help="自治体コード(複数指定可)")
         sp.add_argument("--shard", help="i/n 形式(例: 0/4)")
+        sp.add_argument("--scope", choices=["municipality", "designated_city_ward"], help="municipality=区を除く / designated_city_ward=政令市の区のみ")
 
     sp = sub.add_parser("list"); add_select(sp); sp.set_defaults(fn=cmd_list)
     sp = sub.add_parser("run"); add_select(sp)
@@ -113,6 +114,7 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--out", default="data/results")
     sp.add_argument("--workers", type=int, default=4)
     sp.add_argument("--interval", type=float, default=1.0, help="同一ホストへの最小リクエスト間隔(秒)")
+    sp.add_argument("--compact", action="store_true", help="軽量形式で保存(サイト内リンク一覧を捨てる。全国実行用、D-062)")
     sp.add_argument("--use-proxy", action="store_true", help="環境変数 CRAWL_PROXY_URL 経由で取得")
     sp.add_argument("--save-html", help="トップページHTML原本の保存先(リポジトリ外・gitignore対象を推奨)")
     sp.set_defaults(fn=cmd_run)

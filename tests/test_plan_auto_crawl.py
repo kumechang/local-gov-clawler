@@ -38,3 +38,11 @@ def test_real_config_is_valid():
     assert all({"prefecture", "route"} <= set(t) for t in cfg["targets"])
     routes = [t["route"] for t in cfg["targets"]]
     assert len(routes) == len(set(routes))
+
+
+def test_scope_and_compact_are_passed_through_with_defaults(tmp_path):
+    (tmp_path / "results").mkdir()
+    cfg = write_cfg(tmp_path, targets=[{"prefecture": "愛知県", "route": "r1", "scope": "municipality", "compact": True}, {"prefecture": "福井県", "route": "r2"}])
+    targets, _ = mod.plan(cfg, str(tmp_path / "results"), "")
+    assert targets[0]["scope"] == "municipality" and targets[0]["compact"] is True
+    assert targets[1]["scope"] == "" and targets[1]["compact"] is False

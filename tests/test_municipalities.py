@@ -27,3 +27,12 @@ def test_shards_partition_and_keep_hosts_together():
         for m in s:
             if m.host:
                 assert host_to_shard.setdefault(m.host, i) == i
+
+
+def test_scope_excludes_designated_city_wards():
+    items = mun.load()
+    plain = mun.select(items, scope="municipality")
+    assert len(plain) == 1747 and all(m.scope == "municipality" for m in plain)
+    assert len(mun.select(items, scope="designated_city_ward")) == 171
+    osaka = mun.select(items, prefecture="大阪府", scope="municipality")
+    assert len(osaka) == 43

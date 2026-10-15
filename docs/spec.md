@@ -80,3 +80,8 @@ GitHub Actions: `crawl` ワークフローを手動実行(`.github/workflows/cra
 - コードを変えたら、`config/auto_crawl.json` の route を新しい名前に更新する(結果がある route は実行されない)
 - 止める: `enabled: false`、またはコミットメッセージに `[skip crawl]`
 - 手動実行: Actions の `auto-crawl`(設定どおり)または `crawl`(県・routeを指定)
+
+## 全国実行用の軽量形式(D-062)・範囲指定(D-063)
+- `localgov-crawler run --compact`: `nav_links` を空にして件数を `nav_link_count` に残し、1行JSONで保存する(`run.compact=true`)。`merge-db` は `nav_links` が空でも動く(DBの `nav_links` テーブルは空)。
+- `list/run --scope municipality|designated_city_ward`: 政令市の区(171件)を除く/区のみ。
+- `config/auto_crawl.json` の各 target は `scope`(省略可)と `compact`(省略可、既定false)を持てる。`crawl` ワークフローにも同名の入力がある。

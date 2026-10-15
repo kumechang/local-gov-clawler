@@ -19,6 +19,12 @@ on:
       commit_results:
         type: boolean
         default: false
+      scope:
+        type: string
+        default: ""
+      compact:
+        type: boolean
+        default: false
   workflow_dispatch:
     inputs:
       prefecture:
@@ -36,6 +42,13 @@ on:
         default: "1"
       commit_results:
         description: 結果JSONとサマリをこのブランチへコミットする
+        type: boolean
+        default: false
+      scope:
+        description: 空=すべて / municipality=政令市の区を除く / designated_city_ward=区のみ
+        default: ""
+      compact:
+        description: 軽量形式で保存する(サイト内リンク一覧を捨てる。全国実行用)
         type: boolean
         default: false
 
@@ -80,11 +93,15 @@ jobs:
           TOTAL: ${{ inputs.shards }}
           SHARD: ${{ matrix.shard }}
           USE_PROXY: ${{ inputs.use_proxy }}
+          SCOPE: ${{ inputs.scope }}
+          COMPACT: ${{ inputs.compact }}
           CRAWL_PROXY_URL: ${{ secrets.CRAWL_PROXY_URL }}
         run: |
           args=(run --route "$ROUTE" --shard "$SHARD/$TOTAL" --out out/results --save-html out/raw)
           if [ -n "$PREFECTURE" ]; then args+=(--prefecture "$PREFECTURE"); fi
           if [ "$USE_PROXY" = "true" ]; then args+=(--use-proxy); fi
+          if [ -n "$SCOPE" ]; then args+=(--scope "$SCOPE"); fi
+          if [ "$COMPACT" = "true" ]; then args+=(--compact); fi
           localgov-crawler "${args[@]}"
       - uses: actions/upload-artifact@v4
         with:
