@@ -85,3 +85,7 @@ GitHub Actions: `crawl` ワークフローを手動実行(`.github/workflows/cra
 - `localgov-crawler run --compact`: インデントなしの1行JSONで保存する(`run.compact=true`)。`nav_links`(トップページ内のaタグのリンク文言・URL・領域。同一サイト内、最大400件、画像のみのリンクはalt/ファイル名)は**残す**(D-065)。
 - `list/run --scope municipality|designated_city_ward`: 政令市の区(171件)を除く/区のみ。
 - `config/auto_crawl.json` の各 target は `scope`(省略可)と `compact`(省略可、既定false)を持てる。`crawl` ワークフローにも同名の入力がある。
+
+## 「一覧ページ」の人間の判断基準(2026-10-16 ユーザー、D-075)
+人間は次の2点で一覧と判断する: ①リスト形式になっている(人間が見て)、②体育館・グラウンド・広場など、運動を連想する施設がいくつか並んでいる。
+現行の近似: 施設名の語を含むaタグリンクの数(`facility_link_count`)。リンクでない本文の施設語は診断(`body_terms`)のみで、判定には使っていない。
