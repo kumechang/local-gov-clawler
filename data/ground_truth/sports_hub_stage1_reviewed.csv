@@ -11,3 +11,4 @@ municipality_code,municipality_name,site_url,hub_url,alt_urls,notes
 27140,堺市,https://www.city.sakai.lg.jp/,https://www.city.sakai.lg.jp/kurashi/sports/sports_shisetsu/shisetsu/index.html,,ユーザー判断(2026-10-16)。v10の確定「スポーツ」(sports/index.html)より、2階層下の sports_shisetsu/shisetsu/index.html が適切
 23215,犬山市,https://www.city.inuyama.aichi.jp/,https://www.city.inuyama.aichi.jp/kurashi/sports/1000791/1004678.html,,ユーザー判断(2026-10-16)。v9の確定(体育施設利用案内)が適切。v10の「施設予約確認 体育施設予約」は不適切
 27216,河内長野市,https://www.city.kawachinagano.lg.jp/,https://www.city.kawachinagano.lg.jp/map/list/list145.html,,ユーザー判断(2026-10-16)。v9/v10の確定(life/2/11/68/、soshiki/47/3841.html)より map/list/list145.html が適切
+30381,美浜町(和歌山県),http://www.town.mihama.wakayama.jp/,http://www.town.mihama.wakayama.jp/docs/2014011800113/,,ユーザー判断(2026-10-16)。v12の確定(体育施設)で妥当。ページ内の施設は体育センター・吉原公園テニスコートのほか、ゲートボールコート・若者広場(いずれも写真は体育施設)。リンクとして数えられた施設は2件だけだったが、一覧として妥当
