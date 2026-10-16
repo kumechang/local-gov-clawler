@@ -1,0 +1,55 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,hit_pages,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_snippet
+23100,名古屋市,愛知県,surveyed,False,0,,164,exhausted,0,0,,,
+23201,豊橋市,愛知県,surveyed,False,0,,57,exhausted,0,0,,,
+23202,岡崎市,愛知県,surveyed,False,0,,200,max_pages,0,0,,,
+23203,一宮市,愛知県,surveyed,False,0,,200,max_pages,0,0,,,
+23204,瀬戸市,愛知県,surveyed,False,0,,76,exhausted,0,0,,,
+23205,半田市,愛知県,surveyed,False,0,,145,exhausted,0,0,,,
+23206,春日井市,愛知県,surveyed,False,0,,200,max_pages,0,0,,,
+23207,豊川市,愛知県,surveyed,True,16,event|facility,108,exhausted,0,0,https://www.city.toyokawa.lg.jp/shisetsu/sports_sushisetsu/16522.html,facility,時まで 利用可能種目 少年軟式野球、ソフトボール、サッカー、グラウンド・ゴルフ 所在地 豊川市桜ヶ丘町79-2 設備 ソフトボール場 1面
+23208,津島市,愛知県,surveyed,True,1,facility,71,exhausted,0,0,https://www.city.tsushima.lg.jp/shisetsu/sports/higashikouengrando.html,facility,15年1月30日 東公園グラウンド サッカーやソフトボール、グラウンドゴルフなど多目的に利用されています。市主催行事・各種スポーツ大会な
+23209,碧南市,愛知県,surveyed,True,1,event,147,exhausted,0,0,https://www.city.hekinan.lg.jp/event_sports/sports_promotion/sports_association/14744.html,event,を深めています。 (連絡先 榊原純子41-9301) 碧南市グラウンド・ゴルフ協会 会長 三浦信仁 毎週1~6回の練習と、休憩時間には会員
+23210,刈谷市,愛知県,surveyed,False,0,,199,exhausted,0,0,,,
+23211,豊田市,愛知県,surveyed,False,0,,200,max_pages,0,0,,,
+23212,安城市,愛知県,surveyed,True,3,facility|listing,89,exhausted,0,2,https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/sportstop.html,listing,・外部リンク) 和泉公園運動広場 秋葉公園テニスコート 西部グラウンドゴルフ場 スポーツ施設予約 スポーツ施設の予約について 熱中症警戒
+23213,西尾市,愛知県,surveyed,True,3,facility|listing,89,exhausted,0,0,https://www.city.nishio.aichi.jp/shisetsu/sports/1001573/index.html,listing,
+23214,蒲郡市,愛知県,surveyed,False,0,,200,max_pages,0,0,,,
+23215,犬山市,愛知県,surveyed,True,3,facility|listing,125,exhausted,0,2,https://www.city.inuyama.aichi.jp/kurashi/sports/1000791/1004678.html,listing,
+23216,常滑市,愛知県,surveyed,True,1,facility,95,exhausted,0,1,https://www.city.tokoname.aichi.jp/kurashi/sportspark/1000999/1003952.html,facility,
+23217,江南市,愛知県,surveyed,True,2,listing,113,exhausted,0,0,https://www.city.konan.lg.jp/shisetsu/sports/index.html,listing,
+23219,小牧市,愛知県,no_seed,False,0,,0,,0,0,,,
+23220,稲沢市,愛知県,surveyed,True,5,event|facility,163,exhausted,0,0,https://www.city.inazawa.aichi.jp/0000000524.html,facility,稲沢市小沢二丁目6番 利用種目 ソフトボール(一般男子不可)グラウンド・ゴルフ等軽スポーツ 利用時間 午前8時~午後6時 使用料 無料 吹
+23221,新城市,愛知県,surveyed,True,4,event|facility,89,exhausted,0,0,https://www.city.shinshiro.lg.jp/kanko/sports/svss.html,event, 空手道 ソフトバレーボール バスケットボール 卓球 柔道 グラウンドゴルフ ダーツ サッカー バドミントン 少林寺拳法 対象者 市内小
+23222,東海市,愛知県,surveyed,True,3,facility|listing,128,exhausted,0,0,https://www.city.tokai.aichi.jp/bunka/1002868/1002873/index.html,listing,
+23223,大府市,愛知県,surveyed,False,0,,200,max_pages,0,0,,,
+23224,知多市,愛知県,surveyed,True,10,event|facility,140,exhausted,0,0,https://www.city.chita.lg.jp/docs/2014012300117/,facility,・スポーツの振興と親睦を目的として、とうちゃんソフトボール、グラウンドゴルフ、ビーチボールバレー、レクインディアカの4運営委員会がありま
+23225,知立市,愛知県,surveyed,True,6,event|facility,81,exhausted,0,1,https://www.city.chiryu.aichi.jp/kanko_bunka_sports/sports/1/1451813721587.html,facility,クネットを備えており、主にソフトボール、少年野球、サッカー、グランドゴルフ、ゲートボール、運動会会場などで利用いただけます。 利用料金
+23226,尾張旭市,愛知県,surveyed,True,3,event|facility,116,exhausted,0,1,https://www.city.owariasahi.lg.jp/page/11266.html,event,/112KB] バレーボール [PDFファイル/53KB] グラウンド・ゴルフ [PDFファイル/50KB] エスキーテニス [PDFファ
+23227,高浜市,愛知県,surveyed,True,2,facility|listing,40,exhausted,0,0,https://www.city.takahama.lg.jp/soshiki/bunka/18786.html,listing,(地域交流施設たかぴあ) 利用用途 少年野球、少年サッカー、グラウンドゴルフ、地域の活動 等 施設利用方法 スポーツ施設利用申請 【申請
+23228,岩倉市,愛知県,surveyed,True,12,event|facility|listing|sports_nav,200,max_pages,0,0,https://www.city.iwakura.aichi.jp/category/1-9-1-0-0-0-0-0-0-0.html,listing,車場) 模擬店にて食べ物、飲み物を販売します。 第30回市民グラウンドゴルフ大会の参加者を募集しています [2026年9月30日] 黒木
+23229,豊明市,愛知県,surveyed,False,0,,79,exhausted,0,6,,,
+23230,日進市,愛知県,surveyed,True,1,event,92,exhausted,0,0,https://www.city.nisshin.lg.jp/department/shogai/manabi/2/2/2/sportsevent/index.html,event, 少林寺拳法合同演武大会 少年軟式野球体験会 第62回日進市グラウンド・ゴルフ大会 健康ポイントラリー・レクリエーション講座 タスポニー体
+23231,田原市,愛知県,surveyed,False,0,,154,exhausted,0,0,,,
+23232,愛西市,愛知県,surveyed,False,0,,108,exhausted,0,0,,,
+23233,清須市,愛知県,surveyed,False,0,,99,exhausted,0,0,,,
+23234,北名古屋市,愛知県,surveyed,False,0,,103,exhausted,0,0,,,
+23235,弥富市,愛知県,surveyed,True,1,event,69,exhausted,0,0,https://www.city.yatomi.lg.jp/kurashi/1000296/1000305/1003639.html,event,育センター (アリーナ) 12月16日から 1月14日まで グラウンドゴルフ大会 3月6日 予備日:3月13日 子宝グランド 1月20日
+23236,みよし市,愛知県,surveyed,False,0,,96,exhausted,0,0,,,
+23237,あま市,愛知県,surveyed,False,0,,43,exhausted,0,0,,,
+23238,長久手市,愛知県,surveyed,True,1,facility,63,exhausted,0,0,https://www.city.nagakute.lg.jp/kanko_bunka_sports/2/1/13700.html,facility,RCジュニア(小学生)会員募集 長久手RCジュニアのブログ グラウンド・ゴルフ連盟 会長 中野 孝春 62-1694 事務局 後藤 康 6
+23302,東郷町,愛知県,surveyed,True,7,facility,52,exhausted,0,0,https://www.town.aichi-togo.lg.jp/kanko_bunka_sports/sports/sportsshisetsu/5568.html,facility,嶺小学校 兵庫小学校 少年軟式野球 ソフトボール サッカー グラウンドゴルフ バレーボール バスケットボール バドミントン インディアカ
+23342,豊山町,愛知県,surveyed,False,0,,67,exhausted,0,0,,,
+23361,大口町,愛知県,surveyed,False,0,,26,exhausted,0,0,,,
+23362,扶桑町,愛知県,surveyed,False,0,,98,exhausted,0,0,,,
+23424,大治町,愛知県,surveyed,True,4,event,65,exhausted,0,0,https://www.town.oharu.aichi.jp/4798.htm,event,第33回町民グラウンドゴルフ大会/大治町
+23425,蟹江町,愛知県,surveyed,False,0,,42,exhausted,0,0,,,
+23427,飛島村,愛知県,surveyed,True,2,facility,59,exhausted,0,0,https://www.vill.tobishima.aichi.jp/bunkasports/sports/1002030/index.html,facility,
+23441,阿久比町,愛知県,surveyed,False,0,,122,exhausted,0,0,,,
+23442,東浦町,愛知県,surveyed,True,1,facility,185,exhausted,0,0,https://www.town.aichi-higashiura.lg.jp/kanko_bunka/sports/shinko/1454930915157.html,facility,球部 ソフトボール部 サッカー部 ソフトテニス部 テニス部 グラウンド・ゴルフ部 ソフトバレーボール部 バレーボール部 バスケットボール部
+23445,南知多町,愛知県,surveyed,False,0,,44,exhausted,0,0,,,
+23446,美浜町,愛知県,surveyed,False,0,,45,exhausted,0,0,,,
+23447,武豊町,愛知県,surveyed,False,0,,84,exhausted,0,0,,,
+23501,幸田町,愛知県,surveyed,True,5,facility|listing,43,exhausted,0,0,https://www.town.kota.lg.jp/life/1/16/91/,listing, 幸田町大日蔭運動場 2020年7月27日更新 幸田町大日蔭グラウンド・ゴルフ場 2020年7月27日更新 幸田町スポーツ協会少年少女スポ
+23561,設楽町,愛知県,surveyed,True,1,facility,39,exhausted,0,0,https://www.town.shitara.lg.jp/soshiki/13/1250.html,facility,ーを飛ばして本文へ 本文 野球やソフトボール・ゲートボール・グランドゴルフ等さまざまなスポーツにご利用いただけます。 夜間照明(ナイタ
+23562,東栄町,愛知県,surveyed,False,0,,22,exhausted,0,0,,,
+23563,豊根村,愛知県,surveyed,False,0,,7,exhausted,0,0,,,
