@@ -1,0 +1,32 @@
+{
+ "ai_needed": 18,
+ "avg_elapsed_ms": 4506,
+ "avg_requests": 13.5,
+ "cms_families": {
+  "joruri": 1,
+  "unknown": 4,
+  "url_pattern:category_numeric": 3,
+  "url_pattern:genre_dir_index": 18,
+  "url_pattern:life_numeric": 4,
+  "url_pattern:news_event_numeric": 4,
+  "url_pattern:soshiki_named": 7,
+  "url_pattern:soshiki_numeric": 2
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.558,
+ "municipalities_failed": [],
+ "needs_headless": 1,
+ "outcomes": {
+  "hub_multiple": 5,
+  "hub_not_found": 13,
+  "hub_selected": 24,
+  "needs_headless": 1
+ },
+ "program_only_resolved": 24,
+ "robots_available": 9,
+ "route": "actions_direct_v11_osaka",
+ "sitemap_found": 29,
+ "total": 43,
+ "undecided_hub": 18
+}
