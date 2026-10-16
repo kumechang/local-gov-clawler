@@ -1,0 +1,22 @@
+{
+ "ai_needed": 5,
+ "avg_elapsed_ms": 11158,
+ "avg_requests": 4.0,
+ "cms_families": {
+  "url_pattern:kiji_numeric": 5
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.0,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_not_found": 5
+ },
+ "program_only_resolved": 0,
+ "robots_available": 5,
+ "route": "actions_direct_v11_wards_kumamoto",
+ "sitemap_found": 5,
+ "total": 5,
+ "undecided_hub": 5
+}
