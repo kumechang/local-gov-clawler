@@ -1,0 +1,29 @@
+{
+ "ai_needed": 11,
+ "avg_elapsed_ms": 3613,
+ "avg_requests": 9.2,
+ "cms_families": {
+  "joruri": 1,
+  "unknown": 4,
+  "url_pattern:genre_dir_index": 4,
+  "url_pattern:life_numeric": 9,
+  "url_pattern:soshiki_numeric": 2
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.3,
+ "municipalities_failed": [],
+ "needs_headless": 3,
+ "outcomes": {
+  "hub_multiple": 3,
+  "hub_not_found": 8,
+  "hub_selected": 6,
+  "needs_headless": 3
+ },
+ "program_only_resolved": 6,
+ "robots_available": 5,
+ "route": "actions_direct_v12_ehime",
+ "sitemap_found": 6,
+ "total": 20,
+ "undecided_hub": 11
+}
