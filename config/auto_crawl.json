@@ -3,62 +3,152 @@
   "note": "mainへのマージ(src/ または このファイルの変更)で、targets を自動クロールする。routeは未使用の名前にすること(結果が既にある route は実行されない)。止めるには enabled を false にするか、コミットメッセージに [skip crawl] を入れる。scope=municipality で政令市の区を除く、compact=true で軽量形式(D-062)",
   "targets": [
     {
-      "prefecture": "茨城県",
-      "route": "actions_direct_v11_ibaraki",
+      "prefecture": "富山県",
+      "route": "actions_direct_v11_toyama",
       "scope": "municipality",
       "compact": true
     },
     {
-      "prefecture": "栃木県",
-      "route": "actions_direct_v11_tochigi",
+      "prefecture": "石川県",
+      "route": "actions_direct_v11_ishikawa",
       "scope": "municipality",
       "compact": true
     },
     {
-      "prefecture": "群馬県",
-      "route": "actions_direct_v11_gunma",
+      "prefecture": "岐阜県",
+      "route": "actions_direct_v11_gifu",
       "scope": "municipality",
       "compact": true
     },
     {
-      "prefecture": "埼玉県",
-      "route": "actions_direct_v11_saitama",
+      "prefecture": "静岡県",
+      "route": "actions_direct_v11_shizuoka",
       "scope": "municipality",
       "compact": true
     },
     {
-      "prefecture": "千葉県",
-      "route": "actions_direct_v11_chiba",
+      "prefecture": "三重県",
+      "route": "actions_direct_v11_mie",
       "scope": "municipality",
       "compact": true
     },
     {
-      "prefecture": "東京都",
-      "route": "actions_direct_v11_tokyo",
+      "prefecture": "滋賀県",
+      "route": "actions_direct_v11_shiga",
       "scope": "municipality",
       "compact": true
     },
     {
-      "prefecture": "神奈川県",
-      "route": "actions_direct_v11_kanagawa",
+      "prefecture": "京都府",
+      "route": "actions_direct_v11_kyoto",
       "scope": "municipality",
       "compact": true
     },
     {
-      "prefecture": "新潟県",
-      "route": "actions_direct_v11_niigata",
+      "prefecture": "兵庫県",
+      "route": "actions_direct_v11_hyogo",
       "scope": "municipality",
       "compact": true
     },
     {
-      "prefecture": "山梨県",
-      "route": "actions_direct_v11_yamanashi",
+      "prefecture": "和歌山県",
+      "route": "actions_direct_v11_wakayama",
       "scope": "municipality",
       "compact": true
     },
     {
-      "prefecture": "長野県",
-      "route": "actions_direct_v11_nagano",
+      "prefecture": "鳥取県",
+      "route": "actions_direct_v11_tottori",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "岡山県",
+      "route": "actions_direct_v11_okayama",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "広島県",
+      "route": "actions_direct_v11_hiroshima",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "山口県",
+      "route": "actions_direct_v11_yamaguchi",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "徳島県",
+      "route": "actions_direct_v11_tokushima",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "香川県",
+      "route": "actions_direct_v11_kagawa",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "愛媛県",
+      "route": "actions_direct_v11_ehime",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "高知県",
+      "route": "actions_direct_v11_kochi",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "福岡県",
+      "route": "actions_direct_v11_fukuoka",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "佐賀県",
+      "route": "actions_direct_v11_saga",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "長崎県",
+      "route": "actions_direct_v11_nagasaki",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "熊本県",
+      "route": "actions_direct_v11_kumamoto",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "大分県",
+      "route": "actions_direct_v11_oita",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "宮崎県",
+      "route": "actions_direct_v11_miyazaki",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "鹿児島県",
+      "route": "actions_direct_v11_kagoshima",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "沖縄県",
+      "route": "actions_direct_v11_okinawa",
       "scope": "municipality",
       "compact": true
     }
