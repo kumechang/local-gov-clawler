@@ -25,6 +25,9 @@ on:
       compact:
         type: boolean
         default: false
+      code:
+        type: string
+        default: ""
   workflow_dispatch:
     inputs:
       prefecture:
@@ -51,6 +54,9 @@ on:
         description: 軽量形式(1行JSON。リンク一覧は残す)で保存する。全国実行用
         type: boolean
         default: false
+      code:
+        description: 自治体コード(空=絞らない)。マスタのURLを直した自治体だけ取り直すときに使う
+        default: ""
 
 permissions:
   contents: read
@@ -95,6 +101,7 @@ jobs:
           USE_PROXY: ${{ inputs.use_proxy }}
           SCOPE: ${{ inputs.scope }}
           COMPACT: ${{ inputs.compact }}
+          CODE: ${{ inputs.code }}
           CRAWL_PROXY_URL: ${{ secrets.CRAWL_PROXY_URL }}
         run: |
           args=(run --route "$ROUTE" --shard "$SHARD/$TOTAL" --out out/results --save-html out/raw)
@@ -102,6 +109,7 @@ jobs:
           if [ "$USE_PROXY" = "true" ]; then args+=(--use-proxy); fi
           if [ -n "$SCOPE" ]; then args+=(--scope "$SCOPE"); fi
           if [ "$COMPACT" = "true" ]; then args+=(--compact); fi
+          if [ -n "$CODE" ]; then args+=(--code "$CODE"); fi
           localgov-crawler "${args[@]}"
       - uses: actions/upload-artifact@v4
         with:

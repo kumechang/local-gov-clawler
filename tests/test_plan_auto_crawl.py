@@ -46,3 +46,9 @@ def test_scope_and_compact_are_passed_through_with_defaults(tmp_path):
     targets, _ = mod.plan(cfg, str(tmp_path / "results"), "")
     assert targets[0]["scope"] == "municipality" and targets[0]["compact"] is True
     assert targets[1]["scope"] == "" and targets[1]["compact"] is False
+
+
+def test_code_is_passed_through_with_default(tmp_path):
+    cfg = write_cfg(tmp_path, targets=[{"prefecture": "和歌山県", "route": "r1", "code": "30381"}, {"prefecture": "福井県", "route": "r2"}])
+    targets, _ = mod.plan(str(cfg), str(tmp_path / "results"), "x")
+    assert targets[0]["code"] == "30381" and targets[1]["code"] == ""

@@ -91,6 +91,12 @@
       "route": "actions_direct_v11_wards_kumamoto",
       "scope": "designated_city_ward",
       "compact": true
+    },
+    {
+      "prefecture": "和歌山県",
+      "route": "actions_direct_v12_fix_30381",
+      "code": "30381",
+      "compact": true
     }
   ]
 }

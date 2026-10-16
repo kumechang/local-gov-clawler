@@ -18,8 +18,8 @@ def plan(config_path: str, results_dir: str, commit_message: str) -> tuple[list[
         if (Path(results_dir) / route).exists():
             notes.append(f"route={route}: 結果が既にあるため実行しない(上書き防止。新しい route 名にすること)")
             continue
-        # scope(空=すべて / municipality=区を除く)と compact(軽量形式)は省略可。matrixの全要素に同じキーが要る
-        targets.append({"prefecture": t["prefecture"], "route": route, "scope": t.get("scope", ""), "compact": bool(t.get("compact", False))})
+        # scope(空=すべて / municipality=区を除く)、compact(軽量形式)、code(自治体コード、1件だけ取り直すとき)は省略可。matrixの全要素に同じキーが要る
+        targets.append({"prefecture": t["prefecture"], "route": route, "scope": t.get("scope", ""), "compact": bool(t.get("compact", False)), "code": t.get("code", "")})
     return targets, notes
 
 
@@ -27,7 +27,7 @@ def main() -> int:
     targets, notes = plan("config/auto_crawl.json", "data/results", os.environ.get("COMMIT_MESSAGE", ""))
     out = os.environ.get("GITHUB_OUTPUT")
     # 対象が0件でも、matrix が空にならないようダミーを入れる(実行は count の if で止める)
-    matrix = {"include": targets or [{"prefecture": "none", "route": "none", "scope": "", "compact": False}]}
+    matrix = {"include": targets or [{"prefecture": "none", "route": "none", "scope": "", "compact": False, "code": ""}]}
     lines = [f"count={len(targets)}", "matrix=" + json.dumps(matrix, ensure_ascii=False)]
     if out:
         with open(out, "a", encoding="utf-8") as f:
@@ -35,7 +35,7 @@ def main() -> int:
     else:
         print("\n".join(lines))
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
-    text = "## 自動クロールの計画\n\n" + ("\n".join(f"- 実行: {t['prefecture']} → route `{t['route']}`" + (f" (scope={t['scope']})" if t["scope"] else "") + (" [compact]" if t["compact"] else "") for t in targets) or "- 実行する対象なし") + "\n" + "".join(f"- {n}\n" for n in notes)
+    text = "## 自動クロールの計画\n\n" + ("\n".join(f"- 実行: {t['prefecture']} → route `{t['route']}`" + (f" (scope={t['scope']})" if t["scope"] else "") + (" [compact]" if t["compact"] else "") + (f" (code={t['code']})" if t["code"] else "") for t in targets) or "- 実行する対象なし") + "\n" + "".join(f"- {n}\n" for n in notes)
     if summary:
         Path(summary).write_text(text, encoding="utf-8")
     print(text)
