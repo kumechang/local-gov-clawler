@@ -445,6 +445,41 @@ def is_viable(c: Candidate) -> bool:
     return False
 
 
+LISTING_WORD = re.compile(r"一覧")
+SENTENCE_LABEL = re.compile(r"について")
+
+
+def _dir_url(u: str) -> str:
+    """URLのスキーム・index.html・末尾スラッシュを除いた形(親子の判定用)。"""
+    return re.sub(r"/index\.(html?|php)$", "", re.sub(r"^https?://(www\.)?", "", u.split("#")[0])).rstrip("/")
+
+
+def break_tie(group: list[Candidate]) -> Candidate | None:
+    """同点の候補の絞り込み(v12.1、D-103)。ユーザーが判断した例に基づく3つの規則を順に当て、1件に絞れたら返す。
+    絞れなければ None(従来どおり hub_multiple)。確定済み(同点でない)の自治体には使わない。
+    T4: 『…について』のような文章のラベルは、施設名が並ぶページより後(読谷村)
+    T1: 名前に『一覧』があるページだけを残す(出雲市)
+    T2: 専用ラベル(sports_pure)の親ページが、他の候補すべての親なら親(入口)を採る(一宮市・刈谷市)"""
+    g = list(group)
+    plain = [c for c in g if not SENTENCE_LABEL.search(norm_text(c.text))]
+    if plain and len(plain) < len(g):
+        g = plain
+    if len(g) == 1:
+        return g[0]
+    listed = [c for c in g if c.kind in ("sports_pure", "sports_other") and LISTING_WORD.search(norm_text(c.text))]  # 複合ラベル(…連絡先一覧 など)は対象外
+    if listed and len(listed) < len(g):
+        g = listed
+    if len(g) == 1:
+        return g[0]
+    for p in g:
+        if p.kind != "sports_pure":
+            continue
+        pu = _dir_url(p.url)
+        if all(q is p or _dir_url(q.url).startswith(pu + "/") for q in g):
+            return p
+    return None
+
+
 @dataclass
 class HubDecision:
     outcome: str  # hub_selected / hub_multiple / hub_not_found
@@ -462,9 +497,10 @@ def decide(cands: list[Candidate]) -> HubDecision:
     複合ラベルの大分類は確定しない。浅い候補と僅差で並ぶものがあれば hub_multiple。"""
     uniq: dict[str, Candidate] = {}
     for c in cands:
-        cur = uniq.get(c.url)
+        key = _dir_url(c.url)  # http/https・wwwの有無・末尾スラッシュ・index.htmlだけが違う同じページは1件にする(v12.1、D-104)
+        cur = uniq.get(key)
         if cur is None or (c.fetched, c.score) > (cur.fetched, cur.score):
-            uniq[c.url] = c
+            uniq[key] = c
     pool = list(uniq.values())
     viable = [c for c in pool if is_viable(c)]
     specific = [c for c in viable if c.kind.startswith("sports")]
@@ -483,7 +519,10 @@ def decide(cands: list[Candidate]) -> HubDecision:
         best = tier[0]
         rivals = [c for c in tier[1:] if c.depth == best.depth and best.score - c.score < MARGIN]
         if rivals:
-            return HubDecision("hub_multiple", None, top, quality)
+            picked = break_tie([best] + rivals)
+            if picked is None:
+                return HubDecision("hub_multiple", None, top, quality)
+            return HubDecision("hub_selected", picked, [picked] + [c for c in top if c is not picked], quality)
         return HubDecision("hub_selected", best, top, quality)
     if promising:
         return HubDecision("hub_multiple", None, top)
@@ -491,6 +530,16 @@ def decide(cands: list[Candidate]) -> HubDecision:
 
 
 _TITLE_SPLIT = re.compile(r"\s*[|｜]\s*|\s+[-–—]\s+|/")
+
+
+def _single_facility(text: str) -> bool:
+    return facility_head(text) is not None and "・" not in text
+
+
+def _tied_single_facilities(decision: HubDecision) -> bool:
+    """同点の上位2件が、どちらも1つの施設の名前(三厩体育館 など)か。『公園・スポーツ施設』のような分類ページが並ぶ場合は含めない。"""
+    top = [c for c in decision.top if c.fetched and c.kind.startswith("sports")][:2]
+    return len(top) == 2 and all(_single_facility(c.text) for c in top)
 
 
 def ascend(decision: HubDecision, parent_check: dict | None) -> HubDecision:
@@ -505,14 +554,22 @@ def ascend(decision: HubDecision, parent_check: dict | None) -> HubDecision:
     if target is None or target.kind != "sports_other" or pc.get("of") != target.url:
         return decision
     label = _TITLE_SPLIT.split(pc.get("page_title", ""))[0].strip()
-    if not label or classify_label(label) != "sports_pure" or NOT_LISTING.search(label) or STRONG_NEWS.search(label):
+    if not label or NOT_LISTING.search(label) or STRONG_NEWS.search(label):
         return decision
-    if (pc.get("facility_link_count") or 0) < MIN_FACILITY_LINKS:
+    kind = classify_label(label)
+    fl = pc.get("facility_link_count") or 0
+    if kind == "sports_pure" and fl >= MIN_FACILITY_LINKS:
+        quality = "specific"
+    elif (kind == "generic" and decision.outcome == "hub_multiple" and fl >= 3 and not RESERVATION_TITLE.search(pc.get("page_title", ""))
+          and _tied_single_facilities(decision)):
+        # v12.1(D-103、太良町): 個別の施設ページ同士が同点のとき、上位の『公共施設利用案内』のような汎用の施設一覧を採る
+        quality = "generic"
+    else:
         return decision
     parent = Candidate(
-        url=pc.get("final_url") or pc["parent_url"], text=label, score=target.score, reasons=["ascended_from_child", "sports_pure"],
+        url=pc.get("final_url") or pc["parent_url"], text=label, score=target.score, reasons=["ascended_from_child", kind],
         source="parent", depth=max(1, target.depth - 1), facility_link_count=pc["facility_link_count"], page_title=pc.get("page_title", ""),
-        fetched=True, kind="sports_pure", facility_samples=pc.get("facility_samples", []), body_terms=pc.get("body_terms"),
+        fetched=True, kind=kind, facility_samples=pc.get("facility_samples", []), body_terms=pc.get("body_terms"),
     )
     top = [parent] + [c for c in decision.top if c.url != parent.url][:4]
-    return HubDecision("hub_selected", parent, top, "specific")
+    return HubDecision("hub_selected", parent, top, quality)
