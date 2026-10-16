@@ -182,3 +182,43 @@ def evaluate(results: list[dict], truth_csv: Path) -> dict:
         "selected_correct_rate": round(correct / n, 3) if n else None,
         "detail": detail,
     }
+
+
+REVIEW_OUTCOMES = ("hub_multiple", "hub_not_found", "needs_headless", "fetch_failed", "robots_blocked")
+
+
+def review_rows(results: list[dict], top: int = 5) -> list[dict]:
+    """手動確認用の行(D-050: AIは使わず人が確認する)。確定できなかった自治体ごとに、上位の候補と、人が記入する欄を付ける。
+    記入欄: reviewed_hub_url(正解のURL。なければ『なし』)、note。記入済みのものは正解データ(data/ground_truth/)に取り込める。"""
+    rows = []
+    for r in sorted(results, key=lambda x: x["municipality"]["code"]):
+        if r["outcome"] not in REVIEW_OUTCOMES:
+            continue
+        ge = (r.get("genre_entrypoints") or [{}])[0]
+        row = {
+            "municipality_code": r["municipality"]["code"], "municipality_name": r["municipality"]["name"],
+            "official_url": r["municipality"]["official_url"], "outcome": r["outcome"], "failure_class": r.get("failure_class", ""),
+        }
+        cands = ge.get("candidates", [])[:top]
+        for i in range(top):
+            c = cands[i] if i < len(cands) else {}
+            row[f"cand{i + 1}_text"] = c.get("text", "")
+            row[f"cand{i + 1}_url"] = c.get("url", "")
+            row[f"cand{i + 1}_kind"] = c.get("kind", "")
+            row[f"cand{i + 1}_score"] = c.get("score", "")
+            row[f"cand{i + 1}_facilities"] = c.get("facility_link_count", "") if c.get("facility_link_count") is not None else ""
+        row["reviewed_hub_url"] = ""
+        row["note"] = ""
+        rows.append(row)
+    return rows
+
+
+def write_review_csv(path: Path, rows: list[dict]) -> None:
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if not rows:
+        return
+    with open(path, "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        w.writeheader()
+        w.writerows(rows)

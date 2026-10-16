@@ -1,4 +1,4 @@
-"""コマンドライン。run / merge-db / summarize / evaluate / compare / list。"""
+"""コマンドライン。run / merge-db / summarize / evaluate / compare / list / review-list。"""
 from __future__ import annotations
 
 import argparse
@@ -97,6 +97,26 @@ def cmd_compare(args) -> int:
     return 0
 
 
+def cmd_review_list(args) -> int:
+    """確定できなかった自治体を、都道府県別のCSV(手動確認用、候補つき)に書き出す。"""
+    items = {m.code: m for m in mun.load(args.master)}
+    results = []
+    for route in args.routes:
+        results += store.load_results(Path(args.results), route)
+    by_pref: dict[str, list[dict]] = {}
+    for r in results:
+        by_pref.setdefault(items[r["municipality"]["code"]].prefecture_code, []).append(r)
+    total = 0
+    for pc, rs in sorted(by_pref.items()):
+        rows = store.review_rows(rs)
+        if rows:
+            name = items[rows[0]["municipality_code"]].prefecture_name
+            store.write_review_csv(Path(args.out) / f"{pc}_{name}.csv", rows)
+            total += len(rows)
+    print(f"{total} municipalities to review → {args.out}")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="localgov-crawler")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -131,6 +151,11 @@ def main(argv: list[str] | None = None) -> int:
     sp = sub.add_parser("compare")
     sp.add_argument("--results", default="data/results"); sp.add_argument("routes", nargs="+")
     sp.set_defaults(fn=cmd_compare)
+
+    sp = sub.add_parser("review-list")
+    sp.add_argument("--master", default=str(mun.DEFAULT_MASTER)); sp.add_argument("--results", default="data/results")
+    sp.add_argument("--out", default="data/review/v11"); sp.add_argument("routes", nargs="+")
+    sp.set_defaults(fn=cmd_review_list)
 
     args = p.parse_args(argv)
     return args.fn(args)
