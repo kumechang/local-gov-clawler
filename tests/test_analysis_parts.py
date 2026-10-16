@@ -366,3 +366,17 @@ def test_pure_label_beats_shallower_other_label_and_reservation_or_school_pages_
     assert not hub.is_viable(cand("施設予約確認 体育施設予約", "sports_other", 1, 11, 3))
     assert not hub.is_viable(cand("穂の香看護専門学校体育施設の利用案内", "sports_composite", 3, 16, 3))
     assert hub.is_viable(cand("体育施設利用案内", "sports_other", 2, 25, 11))
+
+
+def test_plain_text_lines_separated_by_br_are_counted_in_rich_mode():
+    """長久手市・大田市・吉賀町型(D-093): 施設名がリンクでもリストでもなく、<br>や改行で並ぶ。文は数えない。"""
+    html = ('<html><body><main><h1>スポーツ施設</h1><p>総合体育館<br>市民プール<br>多目的広場<br>野球場<br>'
+            '体育館は月曜日が休みです。</p></main></body></html>')
+    soup = parse_html(html)
+    links = extract_links(soup, "https://x.jp/", "x.jp")
+    n, _, samples = hub.page_features(soup, links, rich=True)
+    assert n == 4 and all("[text]" in x for x in samples[:4])
+    assert hub.page_features(soup, links, rich=False)[0] == 0  # リンクが無ければ従来方式は数えない
+    # 文だけのページは数えない
+    soup2 = parse_html('<html><body><p>テニスコートは予約が必要です。体育館は夜間も使えます。</p></body></html>')
+    assert hub.page_features(soup2, extract_links(soup2, "https://x.jp/", "x.jp"), rich=True)[0] == 0

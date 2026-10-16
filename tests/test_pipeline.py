@@ -340,3 +340,19 @@ def test_norm_url_treats_trailing_index_html_as_same_page():
     assert store._norm_url("https://www.city.kasugai.lg.jp/bunka/sports/") == store._norm_url("https://www.city.kasugai.lg.jp/bunka/sports/index.html")
     assert store._norm_url("http://x.jp/a/index.htm") == store._norm_url("https://www.x.jp/a")
     assert store._norm_url("https://x.jp/a/b.html") != store._norm_url("https://x.jp/a")
+
+
+def test_review_rows_lists_undecided_with_candidates_and_blank_fields(tmp_path, city_routes):
+    r = analyze(M, make_fetcher(city_routes), Config(route="rv"))
+    assert store.review_rows([r]) == []  # 確定した自治体は対象外
+    bad = analyze(Municipality("29998", "失敗町", "失敗町", "29", "奈良県", "town", "municipality", "", "https://www.town.x.jp/", "", ""),
+                  make_fetcher({"/": httpx.Response(403)}), Config(route="rv"))
+    rows = store.review_rows([r, bad])
+    assert [x["municipality_code"] for x in rows] == ["29998"] and rows[0]["outcome"] == "fetch_failed"
+    assert rows[0]["reviewed_hub_url"] == "" and rows[0]["cand1_url"] == ""
+    # 候補があるときは上位5件が入る
+    r2 = dict(r, outcome="hub_multiple")
+    row = store.review_rows([r2])[0]
+    assert row["cand1_url"] and row["cand1_text"] and "cand5_url" in row
+    store.write_review_csv(tmp_path / "x" / "r.csv", rows)
+    assert (tmp_path / "x" / "r.csv").exists()

@@ -244,6 +244,22 @@ def _page_features_legacy(soup: BeautifulSoup, links: list[Link]) -> tuple[int, 
     return len(facility), head, [f"{t[:24]}[{region}]" for t, region in facility[:5]]
 
 
+_SENTENCE = re.compile(r"です|ます|ください|。|、.*、")
+
+
+def _text_lines(soup: BeautifulSoup, max_len: int = FACILITY_LINK_MAX_LEN) -> list[str]:
+    """ページ本文の短い行(施設語を含み、文でないもの)。script/style/noscriptは除く。"""
+    root = BeautifulSoup(str(soup), "lxml")
+    for t in root(["script", "style", "noscript", "head", "a"]):  # リンクの文言は別に数える(二重に数えない)
+        t.decompose()
+    out = []
+    for line in root.get_text("\n").split("\n"):
+        t = norm_text(line)
+        if 2 <= len(t) <= max_len and FACILITY_NAME.search(t) and not _SENTENCE.search(t):
+            out.append(t)
+    return out
+
+
 def page_features(soup: BeautifulSoup, links: list[Link], rich: bool = True) -> tuple[int, str, list[str]]:
     """入口候補ページの特徴: 施設の数、title/h1、数えたものの例。
 
@@ -286,6 +302,10 @@ def page_features(soup: BeautifulSoup, links: list[Link], rich: bool = True) -> 
         if el.find(["li", "dt", "dd", "td", "th", "tr", "ul", "ol", "table", "dl"]) is not None:
             continue  # 入れ子の外側は数えない
         add(el.get_text(" "), "text", None)
+    # v12(D-093): リスト/表の項目だけでなく、<br>や改行で区切られた短い行(『体育館』『テニスコート 2面』のような並び)も数える。
+    # 文(です/ます/句点)は除く。専用ラベルのページ(rich)だけで使う
+    for line in _text_lines(soup):
+        add(line, "text", None)
     total = {**soft, **clean}
     if len(clean) >= MIN_FACILITY_LINKS or len(total) >= SOFT_MIN_FACILITIES:
         facility = list(total.values())

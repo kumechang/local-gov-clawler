@@ -3,152 +3,284 @@
   "note": "mainへのマージ(src/ または このファイルの変更)で、targets を自動クロールする。routeは未使用の名前にすること(結果が既にある route は実行されない)。止めるには enabled を false にするか、コミットメッセージに [skip crawl] を入れる。scope=municipality で政令市の区を除く、compact=true で軽量形式(D-062)",
   "targets": [
     {
+      "prefecture": "北海道",
+      "route": "actions_direct_v12_hokkaido",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "青森県",
+      "route": "actions_direct_v12_aomori",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "岩手県",
+      "route": "actions_direct_v12_iwate",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "宮城県",
+      "route": "actions_direct_v12_miyagi",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "秋田県",
+      "route": "actions_direct_v12_akita",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "山形県",
+      "route": "actions_direct_v12_yamagata",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "福島県",
+      "route": "actions_direct_v12_fukushima",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "茨城県",
+      "route": "actions_direct_v12_ibaraki",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "栃木県",
+      "route": "actions_direct_v12_tochigi",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "群馬県",
+      "route": "actions_direct_v12_gunma",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "埼玉県",
+      "route": "actions_direct_v12_saitama",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "千葉県",
+      "route": "actions_direct_v12_chiba",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "東京都",
+      "route": "actions_direct_v12_tokyo",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "神奈川県",
+      "route": "actions_direct_v12_kanagawa",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "新潟県",
+      "route": "actions_direct_v12_niigata",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
       "prefecture": "富山県",
-      "route": "actions_direct_v11_toyama",
+      "route": "actions_direct_v12_toyama",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "石川県",
-      "route": "actions_direct_v11_ishikawa",
+      "route": "actions_direct_v12_ishikawa",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "福井県",
+      "route": "actions_direct_v12_fukui",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "山梨県",
+      "route": "actions_direct_v12_yamanashi",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "長野県",
+      "route": "actions_direct_v12_nagano",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "岐阜県",
-      "route": "actions_direct_v11_gifu",
+      "route": "actions_direct_v12_gifu",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "静岡県",
-      "route": "actions_direct_v11_shizuoka",
+      "route": "actions_direct_v12_shizuoka",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "愛知県",
+      "route": "actions_direct_v12_aichi",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "三重県",
-      "route": "actions_direct_v11_mie",
+      "route": "actions_direct_v12_mie",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "滋賀県",
-      "route": "actions_direct_v11_shiga",
+      "route": "actions_direct_v12_shiga",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "京都府",
-      "route": "actions_direct_v11_kyoto",
+      "route": "actions_direct_v12_kyoto",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "大阪府",
+      "route": "actions_direct_v12_osaka",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "兵庫県",
-      "route": "actions_direct_v11_hyogo",
+      "route": "actions_direct_v12_hyogo",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "奈良県",
+      "route": "actions_direct_v12_nara",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "和歌山県",
-      "route": "actions_direct_v11_wakayama",
+      "route": "actions_direct_v12_wakayama",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "鳥取県",
-      "route": "actions_direct_v11_tottori",
+      "route": "actions_direct_v12_tottori",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "島根県",
+      "route": "actions_direct_v12_shimane",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "岡山県",
-      "route": "actions_direct_v11_okayama",
+      "route": "actions_direct_v12_okayama",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "広島県",
-      "route": "actions_direct_v11_hiroshima",
+      "route": "actions_direct_v12_hiroshima",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "山口県",
-      "route": "actions_direct_v11_yamaguchi",
+      "route": "actions_direct_v12_yamaguchi",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "徳島県",
-      "route": "actions_direct_v11_tokushima",
+      "route": "actions_direct_v12_tokushima",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "香川県",
-      "route": "actions_direct_v11_kagawa",
+      "route": "actions_direct_v12_kagawa",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "愛媛県",
-      "route": "actions_direct_v11_ehime",
+      "route": "actions_direct_v12_ehime",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "高知県",
-      "route": "actions_direct_v11_kochi",
+      "route": "actions_direct_v12_kochi",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "福岡県",
-      "route": "actions_direct_v11_fukuoka",
+      "route": "actions_direct_v12_fukuoka",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "佐賀県",
-      "route": "actions_direct_v11_saga",
+      "route": "actions_direct_v12_saga",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "長崎県",
-      "route": "actions_direct_v11_nagasaki",
+      "route": "actions_direct_v12_nagasaki",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "熊本県",
-      "route": "actions_direct_v11_kumamoto",
+      "route": "actions_direct_v12_kumamoto",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "大分県",
-      "route": "actions_direct_v11_oita",
+      "route": "actions_direct_v12_oita",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "宮崎県",
-      "route": "actions_direct_v11_miyazaki",
+      "route": "actions_direct_v12_miyazaki",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "鹿児島県",
-      "route": "actions_direct_v11_kagoshima",
+      "route": "actions_direct_v12_kagoshima",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "沖縄県",
-      "route": "actions_direct_v11_okinawa",
+      "route": "actions_direct_v12_okinawa",
       "scope": "municipality",
       "compact": true
     }
