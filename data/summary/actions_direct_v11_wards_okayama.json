@@ -1,0 +1,22 @@
+{
+ "ai_needed": 0,
+ "avg_elapsed_ms": 1847,
+ "avg_requests": 9.0,
+ "cms_families": {
+  "url_pattern:category_numeric": 4
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 1.0,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_selected": 4
+ },
+ "program_only_resolved": 4,
+ "robots_available": 0,
+ "route": "actions_direct_v11_wards_okayama",
+ "sitemap_found": 0,
+ "total": 4,
+ "undecided_hub": 0
+}
