@@ -162,9 +162,9 @@ def _analyze(m: Municipality, ctx: _Ctx, cfg: Config, result: dict) -> None:
     profile["cms"] = detect_cms(html, soup, urls).to_dict()
 
     # 5. ハブ候補(トップのナビ → 上位候補ページ → その先のリンク、まで)
-    decision, blocked = _find_hub(ctx, cfg, robots, links, tally, final_host)
+    decision, blocked, parent_check = _find_hub(ctx, cfg, robots, links, tally, final_host)
     result["genre_entrypoints"] = [
-        {"genre": hub.GENRE, "decision": decision.outcome, "provenance": "auto", "quality": decision.quality, "selected": decision.selected.to_dict() if decision.selected else None, "candidates": [c.to_dict() for c in decision.top], "blocked_by_robots": blocked[:20]}
+        {"genre": hub.GENRE, "decision": decision.outcome, "provenance": "auto", "quality": decision.quality, "selected": decision.selected.to_dict() if decision.selected else None, "candidates": [c.to_dict() for c in decision.top], "blocked_by_robots": blocked[:20], "parent_check": parent_check}
     ]
 
     # 6. 総合判定(取得失敗と、取れたが判断できなかったものを区別する)
@@ -189,6 +189,9 @@ def _visit(ctx: _Ctx, c: hub.Candidate, site_host: str):
     n, head, samples = hub.page_features(soup, links)
     hub.rescore_with_page(c, n, head, samples)
     c.body_terms = hub.body_facility_terms(soup)
+    c.breadcrumb = hub.breadcrumb(soup, page.final_url)
+    if c.kind in ("sports_pure", "sports_other") and n < hub.MIN_FACILITY_LINKS:
+        c.link_samples = hub.link_samples(links)  # 診断: 施設名リンクが少ないとき、何が並んでいるか(D-073)
     return links
 
 
@@ -237,7 +240,38 @@ def _find_hub(ctx: _Ctx, cfg: Config, robots: RobotsInfo, links, tally, site_hos
         done.add(c.url)
         tried += 1
         _visit(ctx, c, site_host)
-    return hub.decide(cands + children + deeper), blocked
+    allc = cands + children + deeper
+    decision = hub.decide(allc)
+    return decision, blocked, _parent_check(ctx, robots, decision, allc, site_host)
+
+
+def _parent_check(ctx: _Ctx, robots: RobotsInfo, decision: hub.HubDecision, allc: list[hub.Candidate], site_host: str) -> dict | None:
+    """診断(判定には使わない、D-073): 確定したページ(なければ1位の取得済み候補)の「1つ上の階層」を1件取得し、
+    施設名リンクの数などを記録する。詳細ページを選んでしまい、1つ上に一覧があった例(常滑市・東大阪市、D-071)を調べるため。"""
+    target = decision.selected or next((c for c in decision.top if c.fetched and c.kind.startswith("sports")), None)
+    if target is None:
+        return None
+    crumbs = target.breadcrumb or []
+    parent_url, source = hub.parent_url_candidates(target.url, crumbs)
+    info: dict = {"of": target.url, "of_selected": decision.selected is not None, "source": source, "parent_url": parent_url,
+                  "breadcrumb": crumbs[:8], "fetched": False}
+    if not parent_url or not is_same_site(parent_url, site_host) or not robots.can_fetch(parent_url):
+        return info
+    known = next((c for c in allc if c.url == parent_url and c.fetched), None)
+    if known is not None:  # 既に取得した候補ならリクエストしない
+        info.update(fetched=True, from_candidate=True, page_title=known.page_title, facility_link_count=known.facility_link_count,
+                    facility_samples=known.facility_samples, body_terms=known.body_terms, label=known.text)
+        return info
+    page = ctx.get(parent_url)
+    if not page.ok or (page.content_type and "html" not in page.content_type.lower()):
+        info["error"] = page.error_class or str(page.status)
+        return info
+    soup = parse_html(decode_bytes(page.body, page.content_type))
+    plinks = extract_links(soup, page.final_url, site_host)
+    n, head, samples = hub.page_features(soup, plinks)
+    info.update(fetched=True, final_url=page.final_url, page_title=head[:120], facility_link_count=n, facility_samples=samples,
+                body_terms=hub.body_facility_terms(soup))
+    return info
 
 
 def _sitemap(m, ctx, cfg, robots, top_url, site_host):

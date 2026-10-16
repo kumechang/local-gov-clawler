@@ -4,29 +4,29 @@
   "targets": [
     {
       "prefecture": "奈良県",
-      "route": "actions_direct_v8_nara",
+      "route": "actions_direct_v9_nara",
       "compact": true
     },
     {
       "prefecture": "福井県",
-      "route": "actions_direct_v8_fukui",
+      "route": "actions_direct_v9_fukui",
       "compact": true
     },
     {
       "prefecture": "愛知県",
-      "route": "actions_direct_v8_aichi",
+      "route": "actions_direct_v9_aichi",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "大阪府",
-      "route": "actions_direct_v8_osaka",
+      "route": "actions_direct_v9_osaka",
       "scope": "municipality",
       "compact": true
     },
     {
       "prefecture": "島根県",
-      "route": "actions_direct_v8_shimane",
+      "route": "actions_direct_v9_shimane",
       "scope": "municipality",
       "compact": true
     }
