@@ -1,0 +1,32 @@
+{
+ "ai_needed": 38,
+ "avg_elapsed_ms": 7429,
+ "avg_requests": 9.8,
+ "cms_families": {
+  "joruri": 1,
+  "unknown": 27,
+  "url_pattern:genre_dir_index": 7,
+  "url_pattern:life_numeric": 19,
+  "url_pattern:news_event_numeric": 2,
+  "url_pattern:soshiki_named": 1,
+  "url_pattern:soshiki_numeric": 1,
+  "wordpress": 1
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.339,
+ "municipalities_failed": [],
+ "needs_headless": 1,
+ "outcomes": {
+  "hub_multiple": 3,
+  "hub_not_found": 35,
+  "hub_selected": 20,
+  "needs_headless": 1
+ },
+ "program_only_resolved": 20,
+ "robots_available": 7,
+ "route": "actions_direct_v12_fukushima",
+ "sitemap_found": 10,
+ "total": 59,
+ "undecided_hub": 38
+}
