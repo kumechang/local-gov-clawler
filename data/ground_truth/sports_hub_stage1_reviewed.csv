@@ -1,3 +1,5 @@
 municipality_code,municipality_name,site_url,hub_url,alt_urls,notes
-23216,常滑市,https://www.city.tokoname.aichi.jp/,https://www.city.tokoname.aichi.jp/shisetsu/gym/1002046/index.html,,ユーザー提示(2026-10-16)。v8の確定「体育館」(…/1002046/1001884.html)は体育館の詳細ページで、1つ上の階層に一覧がある。v8の候補では2位に入っていた
+23216,常滑市,https://www.city.tokoname.aichi.jp/,https://www.city.tokoname.aichi.jp/shisetsu/gym/1002046/index.html,https://www.city.tokoname.aichi.jp/shisetsu/gym/1002046/,ユーザー提示(2026-10-16)。v8の確定「体育館」(…/1002046/1001884.html)は体育館の詳細ページで、1つ上の階層に一覧がある。v8の候補では2位に入っていた
 27227,東大阪市,https://www.city.higashiosaka.lg.jp/,https://www.city.higashiosaka.lg.jp/category/13-7-3-0-0-0-0-0-0-0.html,,ユーザー提示(2026-10-16)。v8の確定「公共施設の貸出」(0000035522.html)は予約システムの詳細で、1つ上の階層に、お知らせとともに一覧がある。v8の候補には無かった(教育委員会 13-0 の配下。「教育委員会」は大分類から除外している)
+23206,春日井市,https://www.city.kasugai.lg.jp/,https://www.city.kasugai.lg.jp/bunka/sports/,,ユーザー判断「妥当」(2026-10-16)。v9で確定なし(hub_multiple)。確定ページの1つ上(規則R)の候補。施設名リンク4件
+23210,刈谷市,https://www.city.kariya.lg.jp/,https://www.city.kariya.lg.jp/kankobunka/sports/,,ユーザー判断「妥当」(2026-10-16)。v9で確定なし(hub_multiple)。確定ページの1つ上(規則R)の候補。施設名リンク2件
