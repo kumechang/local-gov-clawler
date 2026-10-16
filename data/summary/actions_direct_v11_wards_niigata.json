@@ -1,0 +1,22 @@
+{
+ "ai_needed": 0,
+ "avg_elapsed_ms": 5209,
+ "avg_requests": 10.1,
+ "cms_families": {
+  "url_pattern:genre_dir_index": 8
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 1.0,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_selected": 8
+ },
+ "program_only_resolved": 8,
+ "robots_available": 8,
+ "route": "actions_direct_v11_wards_niigata",
+ "sitemap_found": 0,
+ "total": 8,
+ "undecided_hub": 0
+}
