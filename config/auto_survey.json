@@ -2,7 +2,33 @@
   "enabled": true,
   "note": "mainへのマージ(このファイル・ワード設定・調査用ワークフローの変更)で、targets のワード調査を自動実行する(D-107)。(keyword, route) の結果が既にあるものは実行されない(新しい route 名にすること)。止めるには enabled を false にするか、コミットメッセージに [skip survey] を入れる。keyword は config/keywords/<keyword>.json、from_route は入口にするハブ判定の結果のroute",
   "targets": [
-    {"prefecture": "愛知県", "keyword": "grandgolf", "route": "pilot_aichi", "from_route": "redecide_v12_1", "max_pages": 200},
-    {"prefecture": "福井県", "keyword": "grandgolf", "route": "pilot_fukui", "from_route": "redecide_v12_1", "max_pages": 200}
+    {
+      "prefecture": "愛知県",
+      "keyword": "grandgolf",
+      "route": "pilot_aichi",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "福井県",
+      "keyword": "grandgolf",
+      "route": "pilot_fukui",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "愛知県",
+      "keyword": "grandgolf",
+      "route": "pilot2_aichi",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "福井県",
+      "keyword": "grandgolf",
+      "route": "pilot2_fukui",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    }
   ]
 }
