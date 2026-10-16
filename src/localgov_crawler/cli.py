@@ -2,9 +2,11 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import os
 import sys
+import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
@@ -44,23 +46,37 @@ def cmd_run(args) -> int:
     cfg = Config(route=args.route, save_html_dir=Path(args.save_html) if args.save_html else None)
     out = Path(args.out)
 
-    # 並列化は自治体単位。ワーカーごとにFetcherを持つので、同じ自治体に複数リクエストが同時に当たらない
-    def work(m):
+    # 並列化はホスト単位。同じホスト(政令市の区は親市と同じホスト)の自治体は1つのワーカーが順番に処理し、
+    # Fetcher(最小間隔の管理)を共有するので、1ホストへのリクエストは常に1秒に1回以下になる(D-096)
+    lock = threading.Lock()
+
+    def work(group):
         f = Fetcher(user_agent=build_user_agent(contact), proxy=proxy, min_interval=args.interval)
         try:
-            return m, analyze(m, f, cfg)
+            for m in group:
+                res = analyze(m, f, cfg)
+                store.write_result(out, res, m.prefecture_code, compact=args.compact)
+                with lock:
+                    counter[0] += 1
+                    print(f"[{counter[0]}/{len(sel)}] {m.code} {m.name}: {res['outcome']} {res['failure_class']}".strip(), flush=True)
         finally:
             f.close()
 
-    done = 0
+    counter = [0]
+    groups = group_by_host(sel)
     with ThreadPoolExecutor(max_workers=args.workers) as ex:
-        futures = [ex.submit(work, m) for m in sel]
+        futures = [ex.submit(work, g) for g in groups]
         for fut in as_completed(futures):
-            m, res = fut.result()
-            store.write_result(out, res, m.prefecture_code, compact=args.compact)
-            done += 1
-            print(f"[{done}/{len(sel)}] {m.code} {m.name}: {res['outcome']} {res['failure_class']}".strip(), flush=True)
+            fut.result()
     return 0
+
+
+def group_by_host(sel):
+    """同じホストの自治体をまとめる(順序は保つ)。ホストが空の自治体は単独のグループ。"""
+    groups: dict[str, list] = {}
+    for m in sel:
+        groups.setdefault(m.host or f"_nohost_{m.code}", []).append(m)
+    return list(groups.values())
 
 
 def cmd_merge_db(args) -> int:
@@ -117,6 +133,34 @@ def cmd_review_list(args) -> int:
     return 0
 
 
+def cmd_ward_report(args) -> int:
+    """政令市の区の結果を親市と比べ、CSVと概要に書き出す(D-096)。"""
+    items = {m.code: m for m in mun.load(args.master)}
+    parent_of = {c: m.parent_code for c, m in items.items() if m.scope == "designated_city_ward"}
+    wards, parents = [], {}
+    for route in args.ward_routes:
+        wards += store.load_results(Path(args.results), route)
+    for route in args.parent_routes:
+        for r in store.load_results(Path(args.results), route):
+            parents[r["municipality"]["code"]] = r
+    rows = store.ward_rows(wards, parents, parent_of)
+    out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
+    with open(out / "wards.csv", "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        w.writeheader()
+        w.writerows(rows)
+    from collections import Counter
+    rel = Counter(r["relation"] for r in rows)
+    oc = Counter(r["ward_outcome"] for r in rows)
+    text = [f"# 政令市の区の結果(D-096)", "", f"- 区: {len(rows)}件", f"- 関係: " + "、".join(f"{k} {v}" for k, v in sorted(rel.items())),
+            f"- 区の結果: " + "、".join(f"{k} {v}" for k, v in sorted(oc.items())),
+            f"- 区または親市のハブが分かる(`effective_hub_url`あり): {sum(1 for r in rows if r['effective_hub_url'])}件", ""]
+    (out / "wards.md").write_text("\n".join(text), encoding="utf-8")
+    print("\n".join(text))
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="localgov-crawler")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -156,6 +200,12 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--master", default=str(mun.DEFAULT_MASTER)); sp.add_argument("--results", default="data/results")
     sp.add_argument("--out", default="data/review/v11"); sp.add_argument("routes", nargs="+")
     sp.set_defaults(fn=cmd_review_list)
+
+    sp = sub.add_parser("ward-report")
+    sp.add_argument("--master", default=str(mun.DEFAULT_MASTER)); sp.add_argument("--results", default="data/results")
+    sp.add_argument("--out", default="data/summary"); sp.add_argument("--ward-routes", nargs="+", required=True)
+    sp.add_argument("--parent-routes", nargs="+", required=True)
+    sp.set_defaults(fn=cmd_ward_report)
 
     args = p.parse_args(argv)
     return args.fn(args)

@@ -222,3 +222,35 @@ def write_review_csv(path: Path, rows: list[dict]) -> None:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         w.writeheader()
         w.writerows(rows)
+
+
+def _selected_url(r: dict | None) -> str:
+    ge = (r or {}).get("genre_entrypoints") or [{}]
+    return ((ge[0].get("selected") or {}).get("url")) or ""
+
+
+def ward_rows(ward_results: list[dict], parent_results: dict[str, dict], parent_of: dict[str, str]) -> list[dict]:
+    """政令市の区の扱い(D-096): 区ごとの結果を、親市のハブと比べて分類する。
+    own=区に固有のハブ(親と異なる) / same=親と同じハブ / ward_only=区だけ確定(親は未確定) /
+    inherit=区は未確定で親が確定(親のハブを引き継ぐ) / none=どちらも未確定(手動確認)。"""
+    rows = []
+    for r in sorted(ward_results, key=lambda x: x["municipality"]["code"]):
+        code = r["municipality"]["code"]
+        pc = parent_of.get(code, "")
+        parent = parent_results.get(pc)
+        w_url, p_url = _selected_url(r), _selected_url(parent)
+        if w_url and p_url:
+            rel = "same" if _norm_url(w_url) == _norm_url(p_url) else "own"
+        elif w_url:
+            rel = "ward_only"
+        elif p_url:
+            rel = "inherit"
+        else:
+            rel = "none"
+        rows.append({
+            "ward_code": code, "ward_name": r["municipality"]["full_name"], "parent_code": pc,
+            "parent_name": (parent or {}).get("municipality", {}).get("name", ""),
+            "ward_outcome": r["outcome"], "relation": rel, "ward_hub_url": w_url, "parent_hub_url": p_url,
+            "effective_hub_url": w_url or p_url,
+        })
+    return rows
