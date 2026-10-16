@@ -189,3 +189,42 @@ def test_news_titles_are_not_counted_as_facility_links():
     html2 = '<html><body><a href="/a">下市中央公園総合体育館のご案内</a><a href="/b">奈良県下市健民運動場のご案内</a></body></html>'
     soup2 = parse_html(html2)
     assert hub.page_features(soup2, extract_links(soup2, "https://x.jp/", "x.jp"))[0] == 2
+
+
+def _viable(text, fl=5):
+    sc, reasons = hub.score_text(text, "", "nav")
+    c = hub.Candidate("https://x.jp/a", text, sc, reasons, kind=hub.classify_label(text))
+    hub.rescore_with_page(c, fl, text)
+    return hub.is_viable(c)
+
+
+def test_project_opening_and_system_pages_are_not_auto_selected():
+    """段階1(愛知・大阪)で確定してしまった、施設の一覧ではないページ(D-067)。"""
+    for label in ["龍北総合運動場整備事業", "スポーツ施設の整備", "学校体育施設開放事業", "学校体育施設開放案内",
+                  "OPAS(オーパススポーツ施設情報システム)"]:
+        assert not _viable(label), label
+    # 通常の一覧ページは、これまでどおり確定できる
+    for label in ["スポーツ施設", "スポーツ施設一覧", "体育施設", "運動施設", "社会体育施設"]:
+        assert _viable(label), label
+
+
+def test_notices_and_course_titles_are_not_facility_links_v8():
+    html = ('<html><body><main>'
+            '<a href="/1">市民総合体育館空調設備設置(スポーツ振興くじ助成)</a>'
+            '<a href="/2">市民総合体育館トレーニング講習会</a>'
+            '<a href="/3">下里総合運動場を硬式野球等でご利用される皆さんへ</a>'
+            '<a href="/4">市民プール(屋外冷水プール)開場のご案内</a>'
+            '<a href="/5">市民総合体育館</a><a href="/6">下里総合運動場</a>'
+            '</main></body></html>')
+    soup = parse_html(html)
+    n, _, samples = hub.page_features(soup, extract_links(soup, "https://x.jp/", "x.jp"))
+    assert n == 2 and samples == ["市民総合体育館[main]", "下里総合運動場[main]"]
+
+
+def test_body_facility_terms_count_only_text_outside_links():
+    """診断(判定には使わない、D-068): 施設名がリンクでなく本文・表の文字で並ぶページの見分け用。"""
+    html = ('<html><head><title>スポーツ施設 体育館</title></head><body><nav><a href="/a">市民体育館</a></nav>'
+            '<main><table><tr><td>総合体育館</td><td>テニスコート</td></tr><tr><td>第二体育館</td><td>市民プール</td></tr></table>'
+            '<p>野球場の予約は<a href="/r">体育館の予約</a>から</p></main><script>var 体育館=1;</script></body></html>')
+    got = hub.body_facility_terms(parse_html(html))
+    assert got == {"体育館": 2, "テニスコート": 1, "プール": 1, "野球場": 1}
