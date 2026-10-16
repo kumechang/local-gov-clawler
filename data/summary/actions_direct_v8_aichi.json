@@ -1,0 +1,30 @@
+{
+ "ai_needed": 20,
+ "avg_elapsed_ms": 4958,
+ "avg_requests": 12.4,
+ "cms_families": {
+  "joruri": 1,
+  "unknown": 7,
+  "url_pattern:category_numeric": 4,
+  "url_pattern:genre_dir_index": 30,
+  "url_pattern:life_numeric": 6,
+  "url_pattern:news_event_numeric": 1,
+  "url_pattern:soshiki_named": 5
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.63,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_multiple": 8,
+  "hub_not_found": 12,
+  "hub_selected": 34
+ },
+ "program_only_resolved": 34,
+ "robots_available": 25,
+ "route": "actions_direct_v8_aichi",
+ "sitemap_found": 12,
+ "total": 54,
+ "undecided_hub": 20
+}
