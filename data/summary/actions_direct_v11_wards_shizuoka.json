@@ -1,0 +1,24 @@
+{
+ "ai_needed": 3,
+ "avg_elapsed_ms": 1913,
+ "avg_requests": 7.5,
+ "cms_families": {
+  "unknown": 5,
+  "url_pattern:news_event_numeric": 1
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.5,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_not_found": 3,
+  "hub_selected": 3
+ },
+ "program_only_resolved": 3,
+ "robots_available": 3,
+ "route": "actions_direct_v11_wards_shizuoka",
+ "sitemap_found": 3,
+ "total": 6,
+ "undecided_hub": 3
+}
