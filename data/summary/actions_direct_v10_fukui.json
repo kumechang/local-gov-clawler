@@ -1,0 +1,27 @@
+{
+ "ai_needed": 5,
+ "avg_elapsed_ms": 8017,
+ "avg_requests": 12.2,
+ "cms_families": {
+  "unknown": 6,
+  "url_pattern:genre_dir_index": 7,
+  "url_pattern:life_numeric": 3,
+  "url_pattern:news_event_numeric": 1
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.706,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_multiple": 3,
+  "hub_not_found": 2,
+  "hub_selected": 12
+ },
+ "program_only_resolved": 12,
+ "robots_available": 1,
+ "route": "actions_direct_v10_fukui",
+ "sitemap_found": 6,
+ "total": 17,
+ "undecided_hub": 5
+}
