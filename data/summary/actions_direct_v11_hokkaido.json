@@ -1,0 +1,37 @@
+{
+ "ai_needed": 106,
+ "avg_elapsed_ms": 6287,
+ "avg_requests": 9.7,
+ "cms_families": {
+  "drupal": 2,
+  "unknown": 115,
+  "url_pattern:category_numeric": 1,
+  "url_pattern:genre_dir_index": 24,
+  "url_pattern:life_numeric": 15,
+  "url_pattern:soshiki_named": 8,
+  "wordpress": 14
+ },
+ "failure_classes": {
+  "robots_unreachable": 1
+ },
+ "fetch_failure_rate": 0.005,
+ "hub_selected_rate": 0.378,
+ "municipalities_failed": [
+  "01518"
+ ],
+ "needs_headless": 3,
+ "outcomes": {
+  "fetch_failed": 1,
+  "hub_multiple": 13,
+  "hub_not_found": 93,
+  "hub_selected": 70,
+  "needs_headless": 3,
+  "no_url": 5
+ },
+ "program_only_resolved": 70,
+ "robots_available": 91,
+ "route": "actions_direct_v11_hokkaido",
+ "sitemap_found": 73,
+ "total": 185,
+ "undecided_hub": 106
+}
