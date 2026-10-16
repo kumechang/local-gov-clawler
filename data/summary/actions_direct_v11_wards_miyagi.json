@@ -1,0 +1,22 @@
+{
+ "ai_needed": 0,
+ "avg_elapsed_ms": 1951,
+ "avg_requests": 13.0,
+ "cms_families": {
+  "url_pattern:genre_dir_index": 5
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 1.0,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_selected": 5
+ },
+ "program_only_resolved": 5,
+ "robots_available": 0,
+ "route": "actions_direct_v11_wards_miyagi",
+ "sitemap_found": 5,
+ "total": 5,
+ "undecided_hub": 0
+}
