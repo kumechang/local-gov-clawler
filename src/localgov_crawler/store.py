@@ -122,9 +122,10 @@ def summary_markdown(s: dict) -> str:
 
 
 def _norm_url(u: str) -> str:
-    """比較用のURL正規化: フラグメント・末尾スラッシュ・大文字小文字・スキーム(http/https)・先頭の www. の違いを無視する。"""
+    """比較用のURL正規化: フラグメント・末尾スラッシュ・大文字小文字・スキーム(http/https)・先頭の www.・末尾の index.html の違いを無視する。"""
     u = urldefrag(u.strip())[0].rstrip("/").lower()
     u = re.sub(r"^https?://", "", u)
+    u = re.sub(r"/index\.(html?|php)$", "", u)  # …/sports/ と …/sports/index.html は同じページ(D-085)
     return re.sub(r"^www\.", "", u)
 
 

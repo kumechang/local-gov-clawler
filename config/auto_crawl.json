@@ -3,30 +3,44 @@
   "note": "mainへのマージ(src/ または このファイルの変更)で、targets を自動クロールする。routeは未使用の名前にすること(結果が既にある route は実行されない)。止めるには enabled を false にするか、コミットメッセージに [skip crawl] を入れる。scope=municipality で政令市の区を除く、compact=true で軽量形式(D-062)",
   "targets": [
     {
-      "prefecture": "奈良県",
-      "route": "actions_direct_v11_nara",
-      "compact": true
-    },
-    {
-      "prefecture": "福井県",
-      "route": "actions_direct_v11_fukui",
-      "compact": true
-    },
-    {
-      "prefecture": "愛知県",
-      "route": "actions_direct_v11_aichi",
+      "prefecture": "北海道",
+      "route": "actions_direct_v11_hokkaido",
       "scope": "municipality",
       "compact": true
     },
     {
-      "prefecture": "大阪府",
-      "route": "actions_direct_v11_osaka",
+      "prefecture": "青森県",
+      "route": "actions_direct_v11_aomori",
       "scope": "municipality",
       "compact": true
     },
     {
-      "prefecture": "島根県",
-      "route": "actions_direct_v11_shimane",
+      "prefecture": "岩手県",
+      "route": "actions_direct_v11_iwate",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "宮城県",
+      "route": "actions_direct_v11_miyagi",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "秋田県",
+      "route": "actions_direct_v11_akita",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "山形県",
+      "route": "actions_direct_v11_yamagata",
+      "scope": "municipality",
+      "compact": true
+    },
+    {
+      "prefecture": "福島県",
+      "route": "actions_direct_v11_fukushima",
       "scope": "municipality",
       "compact": true
     }
