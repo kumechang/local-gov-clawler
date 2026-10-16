@@ -1,0 +1,35 @@
+{
+ "ai_needed": 12,
+ "avg_elapsed_ms": 8525,
+ "avg_requests": 10.9,
+ "cms_families": {
+  "unknown": 4,
+  "url_pattern:genre_dir_index": 3,
+  "url_pattern:life_numeric": 9,
+  "url_pattern:site_numeric": 1,
+  "url_pattern:soshiki_named": 3,
+  "url_pattern:soshiki_numeric": 1,
+  "wordpress": 1
+ },
+ "failure_classes": {
+  "robots_unreachable": 1
+ },
+ "fetch_failure_rate": 0.043,
+ "hub_selected_rate": 0.435,
+ "municipalities_failed": [
+  "34307"
+ ],
+ "needs_headless": 0,
+ "outcomes": {
+  "fetch_failed": 1,
+  "hub_multiple": 2,
+  "hub_not_found": 10,
+  "hub_selected": 10
+ },
+ "program_only_resolved": 10,
+ "robots_available": 6,
+ "route": "actions_direct_v12_hiroshima",
+ "sitemap_found": 10,
+ "total": 23,
+ "undecided_hub": 12
+}
