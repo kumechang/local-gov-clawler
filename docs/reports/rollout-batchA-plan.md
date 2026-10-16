@@ -6,7 +6,7 @@
 コードは v11 のまま(ロジックは変えない)。区を除く、軽量形式。
 | 県 | route | 件数 |
 |---|---|---|
-| 北海道 | `actions_direct_v11_hokkaido` | 179(うち公式URLが空の5件は `no_url`) |
+| 北海道 | `actions_direct_v11_hokkaido` | 185(うち公式URLが空の5件は `no_url`) |
 | 青森県 | `actions_direct_v11_aomori` | 40 |
 | 岩手県 | `actions_direct_v11_iwate` | 33 |
 | 宮城県 | `actions_direct_v11_miyagi` | 35 |
