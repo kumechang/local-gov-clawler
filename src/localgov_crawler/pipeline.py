@@ -242,7 +242,12 @@ def _find_hub(ctx: _Ctx, cfg: Config, robots: RobotsInfo, links, tally, site_hos
         _visit(ctx, c, site_host)
     allc = cands + children + deeper
     decision = hub.decide(allc)
-    return decision, blocked, _parent_check(ctx, robots, decision, allc, site_host)
+    parent_check = _parent_check(ctx, robots, decision, allc, site_host)
+    ascended = hub.ascend(decision, parent_check)  # 規則R(D-078)
+    if ascended is not decision and parent_check is not None:
+        parent_check["ascended"] = True
+        parent_check["decision_before"] = decision.outcome
+    return ascended, blocked, parent_check
 
 
 def _parent_check(ctx: _Ctx, robots: RobotsInfo, decision: hub.HubDecision, allc: list[hub.Candidate], site_host: str) -> dict | None:

@@ -66,11 +66,21 @@ RESERVATION_TITLE = re.compile(r"予約|申込")
 NOT_LISTING = re.compile(r"整備|建て?替|改修|耐震|開放|システム")
 
 # 施設名リンクとして数えないリンク文言: お知らせ記事・工事・入札・休館などの題名(安堵町: 体育館の雨漏修繕工事、広場開放のお知らせ)
-FACILITY_LINK_NOISE = re.compile(r"お知らせ|工事|修繕|入札|休館|閉館|利用停止|延期|令和\d|第\d+回|募集|開催|結果|について|イベント|大会|開場|設置|空調|講習|講座|教室|皆さん|皆様|皆さま|お願い|ください|ご利用|整備|助成|のです|ですか|でしょうか|ますか")
-FACILITY_LINK_MAX_LEN = 30
+# 施設名として数えるときの、リンク/項目の文言の扱い(D-058, D-072 → v10 の D-079 で人間の基準に合わせて変更)
+# 強いお知らせ語(工事・入札・休館・募集・開催…)を含むものは、数えない。
+# 弱いお知らせ語(ご利用・について・設置・整備・助成…)を含むものは、数える。ただし同じ施設への言及は1件にし、
+# 数える件数がこれに頼る(きれいな施設名が MIN_FACILITY_LINKS 件に満たない)ときは SOFT_MIN_FACILITIES 件以上を求める
+STRONG_NEWS = re.compile(r"お知らせ|工事|修繕|入札|休館|閉館|利用停止|延期|令和\d|第\d+回|募集|開催|結果|イベント|大会|中止|休止|臨時|再開|停止")
+SOFT_NOISE = re.compile(r"ご利用|について|設置|空調|講習|講座|教室|皆さん|皆様|皆さま|お願い|ください|整備|助成|のです|ですか|でしょうか|ますか|開場")
+SOFT_MIN_FACILITIES = 3
+FACILITY_LINK_MAX_LEN = 30  # きれいな施設名の最大文字数
+FACILITY_SOFT_MAX_LEN = 40  # 弱いお知らせ語を含む文言の最大文字数
 
 URL_HINTS = re.compile(r"sport|taiiku|undou|gym|shisetsu|park|kouen|ground", re.I)
-FACILITY_NAME = re.compile(rf"体育館|{GROUND}|運動場|運動公園|野球場|テニスコート|プール|スポーツセンター|多目的広場|武道館|競技場|スポーツ公園|スポーツ広場|サッカー場")
+FACILITY_NAME = re.compile(
+    rf"体育館|{GROUND}|運動場|運動広場|運動公園|野球場|庭球場|テニスコート|テニス場|プール|スポーツセンター|体育センター|多目的広場|武道館|武道場|柔道場|剣道場|弓道場|"
+    r"競技場|球技場|スポーツ公園|スポーツ広場|スポーツパーク|スケボーパーク|スケートパーク|スケート場|サッカー場|フットサル場|ゲートボール場|ゴルフ場|アリーナ|海洋センター"
+)
 # 施設名リンクの根拠なしでも一覧ページとみなしてよい強い語
 STRONG_TEXT = re.compile(r"スポーツ施設|体育施設|運動施設")
 
@@ -194,23 +204,64 @@ def candidates_from_urls(urls: list[str]) -> list[Candidate]:
     return out
 
 
+_LEADING_TAG = re.compile(r"^[【\[（(][^】\])）]*[】\])）]\s*")
+
+
+def facility_head(text: str) -> str | None:
+    """施設の名前(先頭の【…】を除き、最後の施設語までの部分)。同じ施設への言及をまとめるために使う。
+    「市民総合体育館空調設備設置(…)」と「市民総合体育館トレーニング講習会」は、どちらも「市民総合体育館」。"""
+    t = _LEADING_TAG.sub("", norm_text(text))
+    last = None
+    for m in FACILITY_NAME.finditer(t):
+        last = m
+    return re.sub(r"\s+", "", t[: last.end()]) if last else None
+
+
 def page_features(soup: BeautifulSoup, links: list[Link]) -> tuple[int, str, list[str]]:
-    """入口候補ページの特徴: 施設名らしいリンクの数、title/h1、数えたリンクの例。"""
-    facility, seen_text, seen_url = [], set(), set()
+    """入口候補ページの特徴: 施設の数、title/h1、数えたものの例。
+
+    人間の判断基準(D-075, D-076)に合わせて、(1) リンクだけでなく、リスト/表の項目(li・dt・dd・td・th)の文字も数え、
+    (2) イベントなどの情報が混ざっていても、運動施設が並んでいれば数える。同じ施設への言及は1件にする。
+    - 数える: 施設語を含むリンク/項目。強いお知らせ語(工事・入札・休館 等)を含むものは数えない
+    - きれいな施設名が MIN_FACILITY_LINKS 件未満なら、弱いお知らせ語を含むものも数えて SOFT_MIN_FACILITIES 件以上のときだけ採る"""
+    clean: dict[str, tuple[str, str]] = {}
+    soft: dict[str, tuple[str, str]] = {}
+    seen_url: set[str] = set()
+
+    def add(text: str, region: str, url: str | None) -> None:
+        t = norm_text(text)
+        if not t or not FACILITY_NAME.search(t) or STRONG_NEWS.search(t):
+            return
+        is_soft = bool(SOFT_NOISE.search(t))
+        if len(t) > (FACILITY_SOFT_MAX_LEN if is_soft else FACILITY_LINK_MAX_LEN):
+            return
+        if url is not None:
+            if url in seen_url:
+                return
+            seen_url.add(url)
+        key = facility_head(t)
+        if not key or key in clean:
+            return
+        if key in soft:
+            if is_soft:
+                return
+            del soft[key]  # きれいな名前のリンクがあれば、そちらを採る
+        (soft if is_soft else clean)[key] = (key, region)
+
     for l in links:
-        t = norm_text(l.text)
-        if not (l.same_site and FACILITY_NAME.search(t)):
-            continue
-        if len(t) > FACILITY_LINK_MAX_LEN or FACILITY_LINK_NOISE.search(t):
-            continue  # お知らせ記事などの題名は、施設名リンクに数えない
-        key = re.sub(r"\s+", "", t)
-        if key in seen_text or l.url in seen_url:  # 同じ施設へのリンクを2回数えない(空白の違い・同じURL)
-            continue
-        seen_text.add(key)
-        seen_url.add(l.url)
-        facility.append((t, l.region))
+        if l.same_site:
+            add(l.text, l.region, l.url)
+    for el in soup.find_all(["li", "dt", "dd", "td", "th"]):
+        if el.find(["li", "dt", "dd", "td", "th", "tr", "ul", "ol", "table", "dl"]) is not None:
+            continue  # 入れ子の外側は数えない
+        add(el.get_text(" "), "text", None)
+    total = {**soft, **clean}
+    if len(clean) >= MIN_FACILITY_LINKS or len(total) >= SOFT_MIN_FACILITIES:
+        facility = list(total.values())
+    else:
+        facility = list(clean.values())
     n = len(facility)
-    samples = [f"{t[:24]}[{region}]" for t, region in facility[:5]]
+    samples = [f"{name[:24]}[{region}]" for name, region in facility[:5]]
     title = norm_text(soup.title.get_text()) if soup.title else ""
     h1 = soup.find("h1")
     head = " ".join(filter(None, [title, norm_text(h1.get_text()) if h1 else ""]))
@@ -387,3 +438,31 @@ def decide(cands: list[Candidate]) -> HubDecision:
     if promising:
         return HubDecision("hub_multiple", None, top)
     return HubDecision("hub_not_found", None, top)
+
+
+_TITLE_SPLIT = re.compile(r"\s*[|｜]\s*|\s+[-–—]\s+|/")
+
+
+def ascend(decision: HubDecision, parent_check: dict | None) -> HubDecision:
+    """規則R(D-078): 確定した(または1位の)ページが sports_other(施設の種別名・システム名など)で、
+    その1つ上の階層の題名が専用ラベル(スポーツ・スポーツ施設 等)かつ施設が2件以上並ぶなら、親ページを採る。
+    例: 常滑市「体育館」の1つ上=「施設案内 スポーツ」、東大阪市「OPAS」の1つ上=「スポーツ」。
+    確定ページが専用ラベル(sports_pure)のときは対象外(あわら市は、ユーザーが正しいと判断した確定ページ)。"""
+    pc = parent_check
+    if not pc or not pc.get("fetched"):
+        return decision
+    target = decision.selected or next((c for c in decision.top if c.fetched and c.kind.startswith("sports")), None)
+    if target is None or target.kind != "sports_other" or pc.get("of") != target.url:
+        return decision
+    label = _TITLE_SPLIT.split(pc.get("page_title", ""))[0].strip()
+    if not label or classify_label(label) != "sports_pure" or NOT_LISTING.search(label) or STRONG_NEWS.search(label):
+        return decision
+    if (pc.get("facility_link_count") or 0) < MIN_FACILITY_LINKS:
+        return decision
+    parent = Candidate(
+        url=pc.get("final_url") or pc["parent_url"], text=label, score=target.score, reasons=["ascended_from_child", "sports_pure"],
+        source="parent", depth=max(1, target.depth - 1), facility_link_count=pc["facility_link_count"], page_title=pc.get("page_title", ""),
+        fetched=True, kind="sports_pure", facility_samples=pc.get("facility_samples", []), body_terms=pc.get("body_terms"),
+    )
+    top = [parent] + [c for c in decision.top if c.url != parent.url][:4]
+    return HubDecision("hub_selected", parent, top, "specific")
