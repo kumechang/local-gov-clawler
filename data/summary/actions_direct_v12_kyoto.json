@@ -1,0 +1,30 @@
+{
+ "ai_needed": 18,
+ "avg_elapsed_ms": 3422,
+ "avg_requests": 10.5,
+ "cms_families": {
+  "unknown": 5,
+  "url_pattern:category_numeric": 10,
+  "url_pattern:genre_dir_index": 2,
+  "url_pattern:life_numeric": 4,
+  "url_pattern:news_event_numeric": 2,
+  "url_pattern:php_query": 1,
+  "url_pattern:soshiki_named": 2
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.269,
+ "municipalities_failed": [],
+ "needs_headless": 1,
+ "outcomes": {
+  "hub_not_found": 18,
+  "hub_selected": 7,
+  "needs_headless": 1
+ },
+ "program_only_resolved": 7,
+ "robots_available": 6,
+ "route": "actions_direct_v12_kyoto",
+ "sitemap_found": 11,
+ "total": 26,
+ "undecided_hub": 18
+}
