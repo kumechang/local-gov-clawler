@@ -1,0 +1,28 @@
+{
+ "ai_needed": 29,
+ "avg_elapsed_ms": 1699,
+ "avg_requests": 6.8,
+ "cms_families": {
+  "unknown": 27,
+  "url_pattern:genre_dir_index": 2,
+  "url_pattern:life_numeric": 3,
+  "wordpress": 2
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.059,
+ "municipalities_failed": [],
+ "needs_headless": 3,
+ "outcomes": {
+  "hub_multiple": 3,
+  "hub_not_found": 26,
+  "hub_selected": 2,
+  "needs_headless": 3
+ },
+ "program_only_resolved": 2,
+ "robots_available": 11,
+ "route": "actions_direct_v12_kochi",
+ "sitemap_found": 6,
+ "total": 34,
+ "undecided_hub": 29
+}
