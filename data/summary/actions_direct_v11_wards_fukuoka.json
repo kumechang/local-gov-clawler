@@ -1,0 +1,23 @@
+{
+ "ai_needed": 6,
+ "avg_elapsed_ms": 1410,
+ "avg_requests": 11.6,
+ "cms_families": {
+  "url_pattern:genre_dir_index": 14
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.571,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_not_found": 6,
+  "hub_selected": 8
+ },
+ "program_only_resolved": 8,
+ "robots_available": 14,
+ "route": "actions_direct_v11_wards_fukuoka",
+ "sitemap_found": 7,
+ "total": 14,
+ "undecided_hub": 6
+}
