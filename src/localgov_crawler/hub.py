@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
-from urllib.parse import urlsplit
+from urllib.parse import urldefrag, urljoin, urlsplit
 
 from bs4 import BeautifulSoup
 
@@ -62,10 +62,11 @@ PROCEDURE_PENALTY = 5
 
 # 施設の一覧ではない専用ラベル(整備事業・学校体育施設の開放制度・予約システムの案内)は、候補には残すが自動確定しない(D-067)。
 # 段階1の疑わしい確定: 岡崎市「…整備事業」・堺市「スポーツ施設の整備」・常滑市/あま市「学校体育施設開放…」・東大阪市「OPAS(…システム)」
+RESERVATION_TITLE = re.compile(r"予約|申込")
 NOT_LISTING = re.compile(r"整備|建て?替|改修|耐震|開放|システム")
 
 # 施設名リンクとして数えないリンク文言: お知らせ記事・工事・入札・休館などの題名(安堵町: 体育館の雨漏修繕工事、広場開放のお知らせ)
-FACILITY_LINK_NOISE = re.compile(r"お知らせ|工事|修繕|入札|休館|閉館|利用停止|延期|令和\d|第\d+回|募集|開催|結果|について|イベント|大会|開場|設置|空調|講習|講座|教室|皆さん|皆様|皆さま|お願い|ください|ご利用")
+FACILITY_LINK_NOISE = re.compile(r"お知らせ|工事|修繕|入札|休館|閉館|利用停止|延期|令和\d|第\d+回|募集|開催|結果|について|イベント|大会|開場|設置|空調|講習|講座|教室|皆さん|皆様|皆さま|お願い|ください|ご利用|整備|助成|のです|ですか|でしょうか|ますか")
 FACILITY_LINK_MAX_LEN = 30
 
 URL_HINTS = re.compile(r"sport|taiiku|undou|gym|shisetsu|park|kouen|ground", re.I)
@@ -109,13 +110,15 @@ class Candidate:
     kind: str = "other"
     facility_samples: list[str] = field(default_factory=list)  # 施設名リンクとして数えたリンク文言の例(診断用)
     body_terms: dict[str, int] | None = None  # リンクでない本文中の施設語の出現数(診断用。判定には使わない、D-068)
+    link_samples: list[str] | None = None  # 施設名リンクが少ない専用候補ページの、ページ内リンク文言の先頭15件(診断用、D-073)
+    breadcrumb: list[list[str]] | None = None  # パンくずリスト [[文言, URL], ...](診断用、D-073)
 
     def to_dict(self) -> dict:
         return {
             "url": self.url, "text": self.text, "score": self.score, "reasons": self.reasons,
             "region": self.region, "source": self.source, "depth": self.depth,
             "facility_link_count": self.facility_link_count, "page_title": self.page_title,
-            "fetched": self.fetched, "kind": self.kind, "facility_samples": self.facility_samples, "body_terms": self.body_terms, "viable": is_viable(self),
+            "fetched": self.fetched, "kind": self.kind, "facility_samples": self.facility_samples, "body_terms": self.body_terms, "link_samples": self.link_samples, "breadcrumb": self.breadcrumb, "viable": is_viable(self),
         }
 
 
@@ -214,6 +217,80 @@ def page_features(soup: BeautifulSoup, links: list[Link]) -> tuple[int, str, lis
     return n, head, samples
 
 
+def link_samples(links: list[Link], limit: int = 15) -> list[str]:
+    """診断: ページ内リンクの文言の先頭(本文領域を優先)。施設名リンクが少ないページで、何が並んでいるかを見る。"""
+    same = [l for l in links if l.same_site]
+    pool = [l for l in same if l.region not in ("nav", "header", "footer")] or same
+    out, seen = [], set()
+    for l in pool:
+        t = norm_text(l.text)
+        if t in seen:
+            continue
+        seen.add(t)
+        out.append(f"{t[:30]}[{l.region}]")
+        if len(out) >= limit:
+            break
+    return out
+
+
+_CRUMB_HINT = re.compile(r"breadcrumb|pankuzu|topicpath|topic-path|topic_path|crumb|パンくず", re.I)
+
+
+def breadcrumb(soup: BeautifulSoup, page_url: str) -> list[list[str]]:
+    """パンくずリスト(文言とURL)。見つからなければ空。診断・親ページの特定に使う。"""
+    best: list[list[str]] = []
+    for el in soup.find_all(True):
+        ident = " ".join(filter(None, [el.get("id", ""), " ".join(el.get("class", [])), el.get("aria-label", ""), el.get("itemtype", "")]))
+        if not (ident and _CRUMB_HINT.search(ident)):
+            continue
+        items, seen = [], set()
+        for a in el.find_all("a", href=True):
+            href = a["href"].strip()
+            if not href or href.startswith("#") or href.lower().startswith(("mailto:", "tel:", "javascript:")):
+                continue
+            url = urldefrag(urljoin(page_url, href))[0]
+            text = norm_text(a.get_text(" "))
+            if not text or url in seen:
+                continue
+            seen.add(url)
+            items.append([text, url])
+        if len(items) >= 2:
+            return items
+        if items and not best:
+            best = items
+    return best
+
+
+def parent_url_candidates(page_url: str, crumbs: list[list[str]]) -> tuple[str, str]:
+    """確定ページの1つ上の階層のURLと、その根拠(breadcrumb / url / none)。
+    パンくずの最後のリンクが自分自身なら1つ手前、トップページしか無いときは none。URLからの推定は、ファイル名を落とした
+    ディレクトリ(index.html なら1つ上のディレクトリ)。"""
+    here = _plain(page_url)
+    for text, url in reversed(crumbs):
+        if _plain(url) != here:
+            if urlsplit(url).path.strip("/") == "":
+                break  # トップページだけ
+            return url, "breadcrumb"
+    parts = urlsplit(page_url)
+    if parts.query:
+        return "", "none"
+    segs = [x for x in parts.path.split("/") if x]
+    if parts.path.endswith("/"):
+        segs = segs[:-1]  # /a/b/ → /a/
+    elif segs and segs[-1].lower().startswith("index."):
+        segs = segs[:-2]  # /a/b/index.html → /a/
+    else:
+        segs = segs[:-1]  # /a/b/c.html → /a/b/(そのファイルがあるディレクトリ)
+    if not segs:
+        return "", "none"
+    return f"{parts.scheme}://{parts.netloc}/" + "/".join(segs) + "/", "url"
+
+
+def _plain(u: str) -> str:
+    p = urlsplit(urldefrag(u)[0])
+    return f"{p.netloc.lower()}{p.path.rstrip('/')}?{p.query}"
+
+
 def body_facility_terms(soup: BeautifulSoup) -> dict[str, int]:
     """リンク(aタグ)の外にある本文中の施設語(体育館・テニスコート・プール 等)の出現数。
     施設名がリンクでなく文字・表で並ぶ一覧ページを見分けるための診断(判定には使わない、D-068)。"""
@@ -254,6 +331,8 @@ def is_viable(c: Candidate) -> bool:
         return False
     if c.kind.startswith("sports") and NOT_LISTING.search(norm_text(c.text)):
         return False
+    if c.kind == "generic" and RESERVATION_TITLE.search(c.page_title):
+        return False  # 「公共施設予約(…)」のような予約の案内ページは、汎用の施設一覧として確定しない(東大阪市型、D-072)
     fl = c.facility_link_count or 0
     if c.kind in ("sports_pure", "sports_other"):
         return fl >= MIN_FACILITY_LINKS

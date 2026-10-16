@@ -228,3 +228,49 @@ def test_body_facility_terms_count_only_text_outside_links():
             '<p>野球場の予約は<a href="/r">体育館の予約</a>から</p></main><script>var 体育館=1;</script></body></html>')
     got = hub.body_facility_terms(parse_html(html))
     assert got == {"体育館": 2, "テニスコート": 1, "プール": 1, "野球場": 1}
+
+
+def test_faq_and_project_titles_are_not_facility_links_v9():
+    """河内長野市型: 「整備(…くじ助成)」「…利用したいのです」(D-072)。"""
+    html = ('<html><body><main>'
+            '<a href="/1">大師庭球場テニスコート整備(スポーツ振興くじ助成)</a>'
+            '<a href="/2">市民総合体育館のトレーニング室を利用したいのです</a>'
+            '<a href="/3">市民総合体育館</a><a href="/4">下里総合運動場</a></main></body></html>')
+    soup = parse_html(html)
+    n, _, samples = hub.page_features(soup, extract_links(soup, "https://x.jp/", "x.jp"))
+    assert n == 2 and samples == ["市民総合体育館[main]", "下里総合運動場[main]"]
+
+
+def test_generic_reservation_pages_are_not_auto_selected():
+    """東大阪市型: 「公共施設予約(貸会議室・ホール・野球場・…)」は予約の案内ページ(D-072)。"""
+    sc, reasons = hub.score_text("公共施設の貸出", "", "nav")
+    c = hub.Candidate("https://x.jp/a", "公共施設の貸出", max(sc, hub.MIN_SCORE), reasons, kind="generic")
+    hub.rescore_with_page(c, 11, "公共施設予約(貸会議室・ホール・野球場・テニスコートなど) | 東大阪市")
+    assert not hub.is_viable(c)
+    c2 = hub.Candidate("https://x.jp/b", "施設案内", max(sc, hub.MIN_SCORE), reasons, kind="generic")
+    hub.rescore_with_page(c2, 4, "施設案内 | 太子町")
+    assert hub.is_viable(c2)
+
+
+def test_breadcrumb_and_parent_url():
+    html = ('<html><body><ol class="breadcrumb"><li><a href="/">ホーム</a></li><li><a href="/shisetsu/">施設案内</a></li>'
+            '<li><a href="/shisetsu/gym/index.html">スポーツ</a></li><li>体育館</li></ol></body></html>')
+    crumbs = hub.breadcrumb(parse_html(html), "https://x.jp/shisetsu/gym/1.html")
+    assert [c[0] for c in crumbs] == ["ホーム", "施設案内", "スポーツ"]
+    assert hub.parent_url_candidates("https://x.jp/shisetsu/gym/1.html", crumbs) == ("https://x.jp/shisetsu/gym/index.html", "breadcrumb")
+    # 最後のリンクが自分自身なら1つ手前
+    assert hub.parent_url_candidates("https://x.jp/shisetsu/gym/index.html", crumbs)[0] == "https://x.jp/shisetsu/"
+    # トップしか無い → URLから推定
+    top_only = [["ホーム", "https://x.jp/"]]
+    assert hub.parent_url_candidates("https://x.jp/shisetsu/gym/1.html", top_only) == ("https://x.jp/shisetsu/gym/", "url")
+    assert hub.parent_url_candidates("https://x.jp/shisetsu/gym/index.html", []) == ("https://x.jp/shisetsu/", "url")
+    assert hub.parent_url_candidates("https://x.jp/shisetsu/gym/", []) == ("https://x.jp/shisetsu/", "url")
+    # 階層の無いURL・クエリ付きURLは推定しない
+    assert hub.parent_url_candidates("https://x.jp/0000035522.html", []) == ("", "none")
+    assert hub.parent_url_candidates("https://x.jp/a.php?id=3", []) == ("", "none")
+
+
+def test_link_samples_prefers_main_region_links():
+    html = '<html><body><nav><a href="/n">メニュー</a></nav><main><a href="/a">ふれあいアリーナ</a><a href="/b">中央公園</a><a href="/c">中央公園</a></main></body></html>'
+    soup = parse_html(html)
+    assert hub.link_samples(extract_links(soup, "https://x.jp/", "x.jp")) == ["ふれあいアリーナ[main]", "中央公園[main]"]

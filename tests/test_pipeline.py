@@ -24,6 +24,21 @@ def test_hub_selected(city_routes):
     assert all("news" not in c["url"] for c in r["genre_entrypoints"][0]["candidates"])
 
 
+def test_parent_check_is_recorded_but_does_not_change_the_decision(city_routes):
+    """診断(D-073): 確定ページの1つ上の階層を取得して記録する。判定は変えない。"""
+    html = "text/html; charset=utf-8"
+    base = analyze(M, make_fetcher(city_routes), Config(route="test"))
+    assert base["genre_entrypoints"][0]["parent_check"]["source"] == "url"  # /sports/shisetsu.html → /sports/
+    city_routes["/sports/"] = (200, html, '<html><head><title>スポーツ</title></head><body><a href="/g1">市民体育館</a><a href="/g2">中央運動場</a></body></html>')
+    r = analyze(M, make_fetcher(city_routes), Config(route="test"))
+    pc = r["genre_entrypoints"][0]["parent_check"]
+    assert pc["of"].endswith("/sports/shisetsu.html") and pc["parent_url"] == "https://www.city.example.jp/sports/"
+    assert pc["fetched"] and pc["facility_link_count"] == 2 and pc["page_title"] == "スポーツ"
+    assert r["outcome"] == base["outcome"] == "hub_selected"
+    assert r["genre_entrypoints"][0]["selected"]["url"] == base["genre_entrypoints"][0]["selected"]["url"]
+    assert r["run"]["request_count"] == base["run"]["request_count"]  # どちらも親ページを1回取得(base は404)
+
+
 def test_robots_disallow_prevents_fetch_and_excludes_candidate(city_routes):
     city_routes["/robots.txt"] = (200, "text/plain", "User-agent: *\nDisallow: /sports/\n")
     r = analyze(M, make_fetcher(city_routes), Config())
