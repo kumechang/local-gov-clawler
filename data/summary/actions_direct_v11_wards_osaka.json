@@ -1,0 +1,24 @@
+{
+ "ai_needed": 24,
+ "avg_elapsed_ms": 2326,
+ "avg_requests": 8.6,
+ "cms_families": {
+  "url_pattern:category_numeric": 24,
+  "url_pattern:genre_dir_index": 7
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.226,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_not_found": 24,
+  "hub_selected": 7
+ },
+ "program_only_resolved": 7,
+ "robots_available": 0,
+ "route": "actions_direct_v11_wards_osaka",
+ "sitemap_found": 7,
+ "total": 31,
+ "undecided_hub": 24
+}
