@@ -53,6 +53,7 @@ jobs:
       commit_results: true
       scope: ${{ matrix.scope }}
       compact: ${{ matrix.compact }}
+      code: ${{ matrix.code }}
     permissions:
       contents: write
     secrets: inherit
