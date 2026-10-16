@@ -459,7 +459,7 @@ def break_tie(group: list[Candidate]) -> Candidate | None:
     絞れなければ None(従来どおり hub_multiple)。確定済み(同点でない)の自治体には使わない。
     T4: 『…について』のような文章のラベルは、施設名が並ぶページより後(読谷村)
     T1: 名前に『一覧』があるページだけを残す(出雲市)
-    T2: 専用ラベル(sports_pure)の親ページが、他の候補すべての親なら親(入口)を採る(一宮市・刈谷市)"""
+    T2: 強いラベル(スポーツ施設・体育施設・運動施設)の専用ラベルの親ページが、他の候補すべての親なら親(入口)を採る(一宮市)"""
     g = list(group)
     plain = [c for c in g if not SENTENCE_LABEL.search(norm_text(c.text))]
     if plain and len(plain) < len(g):
@@ -472,7 +472,7 @@ def break_tie(group: list[Candidate]) -> Candidate | None:
     if len(g) == 1:
         return g[0]
     for p in g:
-        if p.kind != "sports_pure":
+        if p.kind != "sports_pure" or not STRONG_TEXT.search(norm_text(p.text)):  # 『スポーツ』だけの広い入口は対象外(千代田区・岡谷市で不適切、D-105)
             continue
         pu = _dir_url(p.url)
         if all(q is p or _dir_url(q.url).startswith(pu + "/") for q in g):

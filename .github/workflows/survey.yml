@@ -1,0 +1,149 @@
+name: survey
+# ワード調査(D-107)。保存済みのハブ判定の結果を入口に、ワードがあるページを調べる。
+# 手動実行(workflow_dispatch)と、auto-survey.yml からの呼び出し(workflow_call)。
+on:
+  workflow_call:
+    inputs:
+      prefecture:
+        type: string
+        default: ""
+      keyword:
+        type: string
+        default: grandgolf
+      route:
+        type: string
+        default: local
+      from_route:
+        type: string
+        default: redecide_v12_1
+      shards:
+        type: string
+        default: "1"
+      max_pages:
+        type: string
+        default: "200"
+      commit_results:
+        type: boolean
+        default: false
+  workflow_dispatch:
+    inputs:
+      prefecture:
+        description: 対象の都道府県名(例 愛知県)。空なら全国
+        default: ""
+      keyword:
+        description: ワードの設定名(config/keywords/<名前>.json)
+        default: grandgolf
+      route:
+        description: この調査の実行ラベル。結果の保存先(data/survey/<keyword>/<route>/)になる
+        default: local
+      from_route:
+        description: 入口にするハブ判定の結果のroute
+        default: redecide_v12_1
+      shards:
+        description: シャード数
+        default: "1"
+      max_pages:
+        description: 1自治体あたり取得するページ数の上限
+        default: "200"
+      commit_results:
+        description: 結果とサマリをこのブランチへコミットする
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      shards: ${{ steps.m.outputs.shards }}
+    steps:
+      - id: m
+        env:
+          SHARDS: ${{ inputs.shards }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          n = int(os.environ["SHARDS"])
+          assert 1 <= n <= 256
+          print("shards=" + json.dumps(list(range(n))))
+          PY
+
+  survey:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJSON(needs.plan.outputs.shards) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e .
+      - name: survey
+        env:
+          PREFECTURE: ${{ inputs.prefecture }}
+          KEYWORD: ${{ inputs.keyword }}
+          ROUTE: ${{ inputs.route }}
+          FROM_ROUTE: ${{ inputs.from_route }}
+          MAX_PAGES: ${{ inputs.max_pages }}
+          TOTAL: ${{ inputs.shards }}
+          SHARD: ${{ matrix.shard }}
+        run: |
+          args=(survey --scope municipality --keywords "config/keywords/$KEYWORD.json" --route "$ROUTE" --from-route "$FROM_ROUTE" --max-pages "$MAX_PAGES" --shard "$SHARD/$TOTAL" --out out/survey)
+          if [ -n "$PREFECTURE" ]; then args+=(--prefecture "$PREFECTURE"); fi
+          localgov-crawler "${args[@]}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: survey-${{ inputs.keyword }}-${{ inputs.route }}-${{ matrix.shard }}
+          path: out/survey
+          retention-days: 30
+
+  merge:
+    needs: [plan, survey]
+    if: ${{ !cancelled() && needs.plan.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e .
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: survey-${{ inputs.keyword }}-${{ inputs.route }}-*
+          path: collected
+          merge-multiple: true
+      - name: merge and summarize
+        env:
+          KEYWORD: ${{ inputs.keyword }}
+          ROUTE: ${{ inputs.route }}
+        run: |
+          mkdir -p data/survey
+          cp -r collected/. data/survey/
+          localgov-crawler survey-summary --keyword "$KEYWORD" --route "$ROUTE" >> "$GITHUB_STEP_SUMMARY"
+      - name: commit results
+        if: ${{ inputs.commit_results }}
+        env:
+          KEYWORD: ${{ inputs.keyword }}
+          ROUTE: ${{ inputs.route }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/survey data/summary
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "data: survey results (keyword=$KEYWORD route=$ROUTE)"
+          # 複数の実行が同時にコミットすることがあるので、押し返されたら取り込み直して再試行する
+          for i in 1 2 3 4 5 6 7 8 9 10; do
+            git pull --rebase origin "$BRANCH" && git push origin "HEAD:$BRANCH" && exit 0
+            sleep $((i * 3 + RANDOM % 5))
+          done
+          echo "push に失敗しました" >&2
+          exit 1

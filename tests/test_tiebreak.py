@@ -92,3 +92,8 @@ def test_t3_not_for_category_pages():  # 釧路市: 『公園・スポーツ施�
     d = hub.decide([a, b, g])
     pc = {"of": a.url, "fetched": True, "page_title": "公共施設一覧 | x", "facility_link_count": 11, "parent_url": g.url, "final_url": g.url}
     assert d.outcome == "hub_multiple" and hub.ascend(d, pc).outcome == "hub_multiple"
+
+
+def test_t2_bare_sports_parent_stays_multiple():  # 千代田区・岡谷市: 『スポーツ』だけの親は採らない(D-105)
+    d = hub.decide([c("https://x.jp/sports/index.html", "スポーツ", "sports_pure", 14, 4), c("https://x.jp/sports/riyo.html", "スポーツ施設利用補助", "sports_other", 17, 3)])
+    assert d.outcome == "hub_multiple"

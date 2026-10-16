@@ -2,8 +2,8 @@
 
 - 対象: 1747自治体
 - 取得失敗率: 0.9%
-- ハブ候補をプログラムのみで確定: 771 (44.1%)
-- AI判定に回る(取れたが判断できない): 911
+- ハブ候補をプログラムのみで確定: 763 (43.7%)
+- AI判定に回る(取れたが判断できない): 919
 - JS描画フォールバック要: 45
 - サイトマップ検出: 737 / robots.txt取得: 617
 - 平均リクエスト数: 10.8 / 平均所要時間: 4915ms
@@ -11,9 +11,9 @@
 ## outcome別
 
 - fetch_failed: 16
-- hub_multiple: 136
+- hub_multiple: 144
 - hub_not_found: 775
-- hub_selected: 771
+- hub_selected: 763
 - needs_headless: 42
 - no_url: 5
 - robots_blocked: 2

@@ -175,6 +175,54 @@ def cmd_redecide(args) -> int:
     return 0
 
 
+def cmd_survey(args) -> int:
+    """保存済みのハブ判定の結果を入口に、ワードがあるページを調べる(D-107)。ホスト単位の処理は run と同じ(1ホスト1リクエスト/秒以下)。"""
+    from . import survey as sv
+    _, sel = _select(args)
+    spec = sv.KeywordSpec.load(args.keywords)
+    stored = {r["municipality"]["code"]: r for r in store.load_results(Path(args.results), args.from_route)}
+    proxy = os.environ.get("CRAWL_PROXY_URL") if args.use_proxy else None
+    contact = os.environ.get("CRAWLER_CONTACT", DEFAULT_CONTACT)
+    cfg = sv.SurveyConfig(route=args.route, max_pages=args.max_pages, seed_depth=args.depth)
+    out = Path(args.out)
+    lock = threading.Lock()
+    counter = [0]
+
+    def work(group):
+        f = Fetcher(user_agent=build_user_agent(contact), proxy=proxy, min_interval=args.interval)
+        try:
+            for m in group:
+                res = sv.survey_municipality(m, stored.get(m.code), f, spec, cfg)
+                sv.write_survey(out, res, m.prefecture_code)
+                with lock:
+                    counter[0] += 1
+                    print(f"[{counter[0]}/{len(sel)}] {m.code} {m.name}: {res['outcome']} found={res['found']} pages={res.get('pages_fetched', 0)} {res['failure_class']}".strip(), flush=True)
+        finally:
+            f.close()
+
+    with ThreadPoolExecutor(max_workers=args.workers) as ex:
+        for fut in as_completed([ex.submit(work, g) for g in group_by_host(sel)]):
+            fut.result()
+    return 0
+
+
+def cmd_survey_summary(args) -> int:
+    from . import survey as sv
+    rows = sv.survey_rows(sv.load_surveys(Path(args.surveys), args.keyword, args.route))
+    out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
+    stem = f"survey_{args.keyword}_{args.route}"
+    if rows:
+        with open(out / f"{stem}.csv", "w", encoding="utf-8-sig", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+            w.writeheader()
+            w.writerows(rows)
+    text = sv.summary_markdown(rows, args.keyword)
+    (out / f"{stem}.md").write_text(text, encoding="utf-8")
+    print(text)
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="localgov-crawler")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -220,6 +268,21 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--route", required=True); sp.add_argument("--rules", default="v12.1")
     sp.add_argument("--from-routes", nargs="+", required=True); sp.add_argument("--compact", action="store_true")
     sp.set_defaults(fn=cmd_redecide)
+
+    sp = sub.add_parser("survey"); add_select(sp)
+    sp.add_argument("--from-route", required=True, help="入口にするハブ判定の結果のroute(例: redecide_v12_1)")
+    sp.add_argument("--keywords", required=True, help="ワードの設定ファイル(config/keywords/*.json)")
+    sp.add_argument("--route", default="local", help="この調査の実行ラベル(結果の保存先)")
+    sp.add_argument("--results", default="data/results"); sp.add_argument("--out", default="data/survey")
+    sp.add_argument("--max-pages", type=int, default=200); sp.add_argument("--depth", type=int, default=2)
+    sp.add_argument("--workers", type=int, default=4); sp.add_argument("--interval", type=float, default=1.0)
+    sp.add_argument("--use-proxy", action="store_true")
+    sp.set_defaults(fn=cmd_survey)
+
+    sp = sub.add_parser("survey-summary")
+    sp.add_argument("--surveys", default="data/survey"); sp.add_argument("--keyword", required=True); sp.add_argument("--route", required=True)
+    sp.add_argument("--out", default="data/summary")
+    sp.set_defaults(fn=cmd_survey_summary)
 
     sp = sub.add_parser("ward-report")
     sp.add_argument("--master", default=str(mun.DEFAULT_MASTER)); sp.add_argument("--results", default="data/results")
