@@ -1,0 +1,26 @@
+{
+ "ai_needed": 18,
+ "avg_elapsed_ms": 4909,
+ "avg_requests": 11.0,
+ "cms_families": {
+  "joruri": 10,
+  "unknown": 10,
+  "url_pattern:cmsfiles": 1,
+  "url_pattern:genre_dir_index": 3
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.25,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_not_found": 18,
+  "hub_selected": 6
+ },
+ "program_only_resolved": 6,
+ "robots_available": 21,
+ "route": "actions_direct_v12_tokushima",
+ "sitemap_found": 15,
+ "total": 24,
+ "undecided_hub": 18
+}
