@@ -83,3 +83,50 @@ def test_summary_rows(tmp_path):
     rows = sv.survey_rows(sv.load_surveys(tmp_path, "grandgolf", "t"))
     assert rows[0]["found"] and rows[0]["first_hit_role"] == "listing" and "グランドゴルフ" in rows[0]["first_hit_snippet"]
     assert "ワードがあった: 1" in sv.summary_markdown(rows, "grandgolf")
+
+
+def test_classify_page_by_content():
+    c = sv.classify_page
+    assert c("碧南市レクリエーション協会/碧南市") == "organization"
+    assert c("各種スポーツ関連表彰の受賞者、受賞団体の紹介") == "organization"
+    assert c("第33回町民グラウンドゴルフ大会/大治町") == "event"
+    assert c("市スポーツ大会・教室|弥富市公式ホームページ") == "event"
+    assert c("西尾市吉良グラウンド・ゴルフ場|西尾市公式ウェブサイト") == "facility"
+    assert c("桜ヶ丘公園(グラウンド)/豊川市") == "facility"
+    assert c("公園使用の許可 - 尾張旭市公式ホームページ(公園農政課)") == "facility"  # 『公園』を含む。手続きの種類は今後の分類の課題
+    assert c("お問い合わせ") == "other"
+
+
+def test_priority_fetches_facility_and_keyword_links_before_event_pages_under_the_cap():
+    events = "".join(f'<a href="/ev/{i}">スポーツ大会{i}</a>' for i in range(40))
+    routes = {
+        "/robots.txt": (404, "text/plain", ""),
+        "/sports/": page("スポーツ", '<a href="/event/">スポーツ大会</a><a href="/f/gg">西部グラウンドゴルフ場</a>'),
+        "/event/": page("スポーツ大会", events),
+        "/f/gg": page("西部グラウンドゴルフ場", "施設"),
+    }
+    for i in range(40):
+        routes[f"/ev/{i}"] = page(f"スポーツ大会{i}", "本文")
+    r = result(cands=[("スポーツ", "https://www.city.example.jp/sports/")], nav=[("スポーツ大会", "https://www.city.example.jp/event/")])
+    out = sv.survey_municipality(M, r, make_fetcher(routes), SPEC, sv.SurveyConfig(route="t", max_pages=4))
+    urls = [p["url"].rsplit("/", 1)[-1] for p in out["pages"]]
+    assert "gg" in urls and urls.index("gg") <= 2  # ワードを含むリンクが先
+    assert out["pages"][urls.index("gg")]["kind"] == "facility" and out["found"]
+
+
+def test_event_pages_are_capped_separately():
+    events = "".join(f'<a href="/ev/{i}">スポーツ大会{i}</a>' for i in range(30))
+    routes = {"/robots.txt": (404, "text/plain", ""), "/event/": page("スポーツ大会", events)}
+    for i in range(30):
+        routes[f"/ev/{i}"] = page(f"スポーツ大会{i}", "本文")
+    r = result(nav=[("スポーツ大会", "https://www.city.example.jp/event/")])
+    out = sv.survey_municipality(M, r, make_fetcher(routes), SPEC, sv.SurveyConfig(route="t", max_event_pages=5))
+    assert out["pages_fetched"] == 5
+
+
+def test_pdf_link_only_is_reported_separately():
+    routes = {"/robots.txt": (404, "text/plain", ""), "/sports/": page("スポーツ", "本文", '<nav><a href="/a.pdf">グラウンドゴルフ大会要項</a></nav>')}  # ナビのPDFリンクは本文に数えない
+    out = sv.survey_municipality(M, result(cands=[("スポーツ", "https://www.city.example.jp/sports/")]), make_fetcher(routes), SPEC, sv.SurveyConfig(route="t"))
+    assert not out["found"] and out["pdf_link_found"]
+    rows = sv.survey_rows([out])
+    assert rows[0]["pdf_link_found"] and "PDFのリンク文言だけにあった: 1" in sv.summary_markdown(rows, "grandgolf")

@@ -118,5 +118,11 @@
 - [x] 目的を記録: 一覧・イベント・施設詳細のページに、特定のワードがあるかを調べる(一覧を厳密に1つ特定することが目的ではない)
 - [x] ユーザーに確認: ワード=グラウンドゴルフ(表記ゆれ込み、次回は別)、ページ数=できるところまで(上限200)、イベント=おすすめ
 - [x] ワード調査を実装(`survey`、`survey-summary`、survey.yml/auto-survey.yml、config/keywords/grandgolf.json)。テスト110件通過
-- [ ] パイロット(愛知県・福井県)の実クロール: mainへのマージで自動実行(PR・マージは指示待ち)。事前基準は `docs/reports/survey-grandgolf-plan.md`
+- [x] パイロット(愛知県・福井県)の実クロール: 実行済み。結果は `docs/reports/survey-grandgolf-pilot-result.md`(D-108)
+- [ ] 精度の判断(10件、`data/review/survey_grandgolf_pilot_spotcheck.md`)、見逃しの確認(任意)
 - 一覧の特定(親市5市・同点144件・hub_not_found 775件)の手動確認は、この目的に照らして優先度を見直す
+
+## 2026-10-16 ワード調査 第2版(D-109)
+- [x] 優先度つきキュー・イベント枠・`kind`・`pdf_link_found` を実装、テスト114件通過
+- [ ] 実クロール(pilot2_aichi・pilot2_fukui): mainへのマージで自動実行(PR・マージは指示待ち)
+- [ ] 第1版の精度10件の判断、見逃しの確認(任意)
