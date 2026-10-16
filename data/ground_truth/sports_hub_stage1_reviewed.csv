@@ -20,3 +20,12 @@ municipality_code,municipality_name,site_url,hub_url,alt_urls,notes
 19209,北杜市,https://www.city.hokuto.yamanashi.jp/,https://www.city.hokuto.yamanashi.jp/docs/1510.html,https://www.city.hokuto.yamanashi.jp/docs/1492.html|https://www.city.hokuto.yamanashi.jp/docs/1685.html,ユーザー判断(2026-10-16、代表8件)。町ごとの案内(大泉・白州・武川)はすべて正解。地区が違う
 41441,太良町,https://www.town.tara.lg.jp/,https://www.town.tara.lg.jp/koukyou.html,,ユーザー判断(2026-10-16、代表8件)。候補3「公共施設利用案内」が正解。スポーツ以外の施設も含むが、一覧としてよい
 47324,読谷村,https://www.vill.yomitan.okinawa.jp/,https://www.vill.yomitan.okinawa.jp/gyosei_joho/shisetsu/taiikushisetsu/index.html,,ユーザー判断(2026-10-16、代表8件)。候補2「読谷村体育施設」
+06428,庄内町,https://www.town.shonai.lg.jp/,https://www.town.shonai.lg.jp/sportskouen/shisetsu/ichiran.html,,ユーザー判断(2026-10-16、v12.1の確認10件)。v12.1の確定が妥当
+27228,泉南市,https://www.city.sennan.lg.jp/,https://www.city.sennan.lg.jp/kanko/1458795189336.html,,ユーザー判断(2026-10-16、v12.1の確認10件)。v12.1の確定が妥当
+03321,紫波町,https://www.town.shiwa.iwate.jp/,https://www.town.shiwa.iwate.jp/soshiki/5_1/2_3/,,ユーザー判断(2026-10-16、v12.1の確認10件)。v12.1の確定が妥当
+13201,八王子市,https://www.city.hachioji.tokyo.jp/,https://www.city.hachioji.tokyo.jp/shisetsu/004/index.html,,ユーザー判断(2026-10-16、v12.1の確認10件)。v12.1の確定が妥当
+12204,船橋市,https://www.city.funabashi.lg.jp/,https://www.city.funabashi.lg.jp/shisetsu/sportsshisetu/index.html,,ユーザー判断(2026-10-16、v12.1の確認10件)。v12.1の確定が妥当
+01233,伊達市,https://www.city.date.hokkaido.jp/,https://www.city.date.hokkaido.jp/hotnews/category/159.html,,ユーザー判断(2026-10-16、v12.1の確認10件)。v12.1の確定が妥当
+41208,小城市,https://www.city.ogi.lg.jp/,https://www.city.ogi.lg.jp/main/11170.html,,ユーザー判断(2026-10-16、v12.1の確認10件)。v12.1の確定が妥当
+13101,千代田区,https://www.city.chiyoda.lg.jp/,https://www.city.chiyoda.lg.jp/shisetsu/bunka/index.html,,ユーザー判断(2026-10-16、v12.1の確認10件)。v12.1の確定(…/koho/bunka/sports/、スポーツ)は不適切。こちらが正しい
+20204,岡谷市,https://www.city.okaya.lg.jp/,https://www.city.okaya.lg.jp/soshikikarasagasu/sportsshinkoka/438/3526.html,,ユーザー判断(2026-10-16、v12.1の確認10件)。v12.1の確定(…/bunka_sports/sports/、スポーツ)は不適切。こちらが正しい
