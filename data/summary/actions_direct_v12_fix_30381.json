@@ -1,0 +1,22 @@
+{
+ "ai_needed": 0,
+ "avg_elapsed_ms": 3703,
+ "avg_requests": 12.0,
+ "cms_families": {
+  "joruri": 1
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 1.0,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_selected": 1
+ },
+ "program_only_resolved": 1,
+ "robots_available": 1,
+ "route": "actions_direct_v12_fix_30381",
+ "sitemap_found": 0,
+ "total": 1,
+ "undecided_hub": 0
+}
