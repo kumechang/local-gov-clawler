@@ -356,3 +356,20 @@ def test_review_rows_lists_undecided_with_candidates_and_blank_fields(tmp_path, 
     assert row["cand1_url"] and row["cand1_text"] and "cand5_url" in row
     store.write_review_csv(tmp_path / "x" / "r.csv", rows)
     assert (tmp_path / "x" / "r.csv").exists()
+
+
+def _res(code, name, outcome, url=None):
+    return {"municipality": {"code": code, "name": name, "full_name": name}, "outcome": outcome,
+            "genre_entrypoints": [{"selected": {"url": url} if url else None, "candidates": []}]}
+
+
+def test_ward_rows_classify_relation_to_parent():
+    parents = {"01100": _res("01100", "札幌市", "hub_selected", "https://x.jp/sports/")}
+    parent_of = {"01101": "01100", "01102": "01100", "01103": "01100", "01104": "01100"}
+    wards = [_res("01101", "A区", "hub_selected", "https://x.jp/sports/index.html"), _res("01102", "B区", "hub_selected", "https://x.jp/b/sports/"),
+             _res("01103", "C区", "hub_not_found"), _res("01104", "D区", "hub_selected", "https://x.jp/d/")]
+    rel = {r["ward_code"]: r["relation"] for r in store.ward_rows(wards, parents, parent_of)}
+    assert rel == {"01101": "same", "01102": "own", "01103": "inherit", "01104": "own"}
+    none_parent = {"01100": _res("01100", "札幌市", "hub_not_found")}
+    rel2 = {r["ward_code"]: r["relation"] for r in store.ward_rows(wards, none_parent, parent_of)}
+    assert rel2["01101"] == "ward_only" and rel2["01103"] == "none"

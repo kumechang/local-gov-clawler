@@ -36,3 +36,19 @@ def test_scope_excludes_designated_city_wards():
     assert len(mun.select(items, scope="designated_city_ward")) == 171
     osaka = mun.select(items, prefecture="大阪府", scope="municipality")
     assert len(osaka) == 43
+
+
+def test_group_by_host_keeps_same_host_wards_together():
+    """政令市の区は親市と同じホスト。1つのワーカーが順番に処理して、1ホスト1リクエスト/秒を守る(D-096)。"""
+    from localgov_crawler.cli import group_by_host
+    wards = mun.select(mun.load(), prefecture="大阪府", scope="designated_city_ward")
+    groups = group_by_host(wards)
+    assert len(wards) == 31 and sorted(len(g) for g in groups) == [7, 24]  # 大阪市24区と堺市7区(ホストが別)
+    towns = mun.select(mun.load(), prefecture="奈良県")
+    assert len(group_by_host(towns)) == len(towns)  # 通常の自治体はホストが別
+
+
+def test_all_wards_share_the_parent_host():
+    items = {m.code: m for m in mun.load()}
+    wards = [m for m in items.values() if m.scope == "designated_city_ward"]
+    assert len(wards) == 171 and all(m.host == items[m.parent_code].host for m in wards)
