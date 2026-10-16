@@ -3,3 +3,11 @@ municipality_code,municipality_name,site_url,hub_url,alt_urls,notes
 27227,東大阪市,https://www.city.higashiosaka.lg.jp/,https://www.city.higashiosaka.lg.jp/category/13-7-3-0-0-0-0-0-0-0.html,,ユーザー提示(2026-10-16)。v8の確定「公共施設の貸出」(0000035522.html)は予約システムの詳細で、1つ上の階層に、お知らせとともに一覧がある。v8の候補には無かった(教育委員会 13-0 の配下。「教育委員会」は大分類から除外している)
 23206,春日井市,https://www.city.kasugai.lg.jp/,https://www.city.kasugai.lg.jp/bunka/sports/,,ユーザー判断「妥当」(2026-10-16)。v9で確定なし(hub_multiple)。確定ページの1つ上(規則R)の候補。施設名リンク4件
 23210,刈谷市,https://www.city.kariya.lg.jp/,https://www.city.kariya.lg.jp/kankobunka/sports/,,ユーザー判断「妥当」(2026-10-16)。v9で確定なし(hub_multiple)。確定ページの1つ上(規則R)の候補。施設名リンク2件
+29441,吉野町,https://www.town.yoshino.nara.jp/,https://www.town.yoshino.nara.jp/chosei/yoshinochonogaiyo/shisetsuannai/index.html,,ユーザー判断(2026-10-16)。v10の確定「吉野運動公園」(…/shisetsuannai/982.html)は1施設のページで、1つ上の施設案内が適切
+29362,三宅町,https://www.town.miyake.lg.jp/,https://www.town.miyake.lg.jp/adv/ba.php?id=10,,ユーザー判断(2026-10-16)。v10の確定「三宅町体育館」でOK
+18442,美浜町,https://www.town.fukui-mihama.lg.jp/,https://www.town.fukui-mihama.lg.jp/life/6/40/192/,,ユーザー判断(2026-10-16)。v10の確定「公園・スポーツ施設」でOK
+23221,新城市,https://www.city.shinshiro.lg.jp/,https://www.city.shinshiro.lg.jp/mokuteki/shisetu/kyoiku-bunka/index.html,,ユーザー判断(2026-10-16)。v10の確定「穂の香看護専門学校体育施設の利用案内」より、1つ上の kyoiku-bunka/index.html が適切
+23229,豊明市,https://www.city.toyoake.lg.jp/,https://www.city.toyoake.lg.jp/2818.htm,,ユーザー判断(2026-10-16)。v10の確定「スポーツ施設の利用について」(4037.htm)より 2818.htm が適切
+27140,堺市,https://www.city.sakai.lg.jp/,https://www.city.sakai.lg.jp/kurashi/sports/sports_shisetsu/shisetsu/index.html,,ユーザー判断(2026-10-16)。v10の確定「スポーツ」(sports/index.html)より、2階層下の sports_shisetsu/shisetsu/index.html が適切
+23215,犬山市,https://www.city.inuyama.aichi.jp/,https://www.city.inuyama.aichi.jp/kurashi/sports/1000791/1004678.html,,ユーザー判断(2026-10-16)。v9の確定(体育施設利用案内)が適切。v10の「施設予約確認 体育施設予約」は不適切
+27216,河内長野市,https://www.city.kawachinagano.lg.jp/,https://www.city.kawachinagano.lg.jp/map/list/list145.html,,ユーザー判断(2026-10-16)。v9/v10の確定(life/2/11/68/、soshiki/47/3841.html)より map/list/list145.html が適切

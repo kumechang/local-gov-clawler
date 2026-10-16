@@ -63,14 +63,14 @@ PROCEDURE_PENALTY = 5
 # 施設の一覧ではない専用ラベル(整備事業・学校体育施設の開放制度・予約システムの案内)は、候補には残すが自動確定しない(D-067)。
 # 段階1の疑わしい確定: 岡崎市「…整備事業」・堺市「スポーツ施設の整備」・常滑市/あま市「学校体育施設開放…」・東大阪市「OPAS(…システム)」
 RESERVATION_TITLE = re.compile(r"予約|申込")
-NOT_LISTING = re.compile(r"整備|建て?替|改修|耐震|開放|システム")
+NOT_LISTING = re.compile(r"整備|建て?替|改修|耐震|開放|システム|予約|専門学校|大学|高等学校")
 
 # 施設名リンクとして数えないリンク文言: お知らせ記事・工事・入札・休館などの題名(安堵町: 体育館の雨漏修繕工事、広場開放のお知らせ)
 # 施設名として数えるときの、リンク/項目の文言の扱い(D-058, D-072 → v10 の D-079 で人間の基準に合わせて変更)
 # 強いお知らせ語(工事・入札・休館・募集・開催…)を含むものは、数えない。
 # 弱いお知らせ語(ご利用・について・設置・整備・助成…)を含むものは、数える。ただし同じ施設への言及は1件にし、
 # 数える件数がこれに頼る(きれいな施設名が MIN_FACILITY_LINKS 件に満たない)ときは SOFT_MIN_FACILITIES 件以上を求める
-STRONG_NEWS = re.compile(r"お知らせ|工事|修繕|入札|休館|閉館|利用停止|延期|令和\d|第\d+回|募集|開催|結果|イベント|大会|中止|休止|臨時|再開|停止")
+STRONG_NEWS = re.compile(r"お知らせ|工事|修繕|入札|休館|閉館|利用停止|延期|令和\d|第\d+回|募集|開催|結果|イベント|大会|中止|休止|臨時|再開|停止|\\d{4}年\\d{1,2}月\\d{1,2}日|更新|寄附|寄付")
 SOFT_NOISE = re.compile(r"ご利用|について|設置|空調|講習|講座|教室|皆さん|皆様|皆さま|お願い|ください|整備|助成|のです|ですか|でしょうか|ますか|開場")
 SOFT_MIN_FACILITIES = 3
 FACILITY_LINK_MAX_LEN = 30  # きれいな施設名の最大文字数
@@ -217,13 +217,44 @@ def facility_head(text: str) -> str | None:
     return re.sub(r"\s+", "", t[: last.end()]) if last else None
 
 
-def page_features(soup: BeautifulSoup, links: list[Link]) -> tuple[int, str, list[str]]:
+# v9までの数え方(リンクだけ、強い/弱いの区別なし、語はv9の辞書)。専用ラベル以外のページでは、これを使う(v11、D-083)
+_LEGACY_NAME = re.compile(rf"体育館|{GROUND}|運動場|運動公園|野球場|テニスコート|プール|スポーツセンター|多目的広場|武道館|競技場|スポーツ公園|スポーツ広場|サッカー場")
+_LEGACY_NOISE = re.compile(
+    r"お知らせ|工事|修繕|入札|休館|閉館|利用停止|延期|令和\d|第\d+回|募集|開催|結果|について|イベント|大会|開場|設置|空調|講習|講座|教室|皆さん|皆様|皆さま|お願い|ください|ご利用|整備|助成|のです|ですか|でしょうか|ますか"
+)
+
+
+def _page_features_legacy(soup: BeautifulSoup, links: list[Link]) -> tuple[int, str, list[str]]:
+    facility, seen_text, seen_url = [], set(), set()
+    for l in links:
+        t = norm_text(l.text)
+        if not (l.same_site and _LEGACY_NAME.search(t)):
+            continue
+        if len(t) > FACILITY_LINK_MAX_LEN or _LEGACY_NOISE.search(t):
+            continue
+        key = re.sub(r"\s+", "", t)
+        if key in seen_text or l.url in seen_url:
+            continue
+        seen_text.add(key)
+        seen_url.add(l.url)
+        facility.append((t, l.region))
+    title = norm_text(soup.title.get_text()) if soup.title else ""
+    h1 = soup.find("h1")
+    head = " ".join(filter(None, [title, norm_text(h1.get_text()) if h1 else ""]))
+    return len(facility), head, [f"{t[:24]}[{region}]" for t, region in facility[:5]]
+
+
+def page_features(soup: BeautifulSoup, links: list[Link], rich: bool = True) -> tuple[int, str, list[str]]:
     """入口候補ページの特徴: 施設の数、title/h1、数えたものの例。
+
+    rich=False は v9 までの数え方(リンクだけ)。題名が一覧を表す専用ラベルのページ(rich=True)でだけ、下の方式を使う(D-083)。
 
     人間の判断基準(D-075, D-076)に合わせて、(1) リンクだけでなく、リスト/表の項目(li・dt・dd・td・th)の文字も数え、
     (2) イベントなどの情報が混ざっていても、運動施設が並んでいれば数える。同じ施設への言及は1件にする。
     - 数える: 施設語を含むリンク/項目。強いお知らせ語(工事・入札・休館 等)を含むものは数えない
     - きれいな施設名が MIN_FACILITY_LINKS 件未満なら、弱いお知らせ語を含むものも数えて SOFT_MIN_FACILITIES 件以上のときだけ採る"""
+    if not rich:
+        return _page_features_legacy(soup, links)
     clean: dict[str, tuple[str, str]] = {}
     soft: dict[str, tuple[str, str]] = {}
     seen_url: set[str] = set()
@@ -417,10 +448,9 @@ def decide(cands: list[Candidate]) -> HubDecision:
     pool = list(uniq.values())
     viable = [c for c in pool if is_viable(c)]
     specific = [c for c in viable if c.kind.startswith("sports")]
-    # 強いラベル(スポーツ施設/体育施設/運動施設)があれば、弱いラベル(スポーツ だけ等)より先に評価する。
-    # 同じ強さの中では、浅い(トップに近い)ものを選ぶ
-    strong = [c for c in specific if STRONG_TEXT.search(norm_text(c.text))]
-    specific = sorted(strong or specific, key=lambda c: (c.depth, -c.score))
+    # v11(D-083): 専用ラベル(sports_pure)を先に、次に強いラベル、その中で浅いものを選ぶ。
+    # 使用料金・利用案内・施設名だけのラベルが、題名が一覧を表す専用ラベルのページより優先されない
+    specific = sorted(specific, key=lambda c: (c.kind != "sports_pure", not STRONG_TEXT.search(norm_text(c.text)), c.depth, -c.score))
     generic = sorted((c for c in viable if c.kind == "generic"), key=lambda c: (c.depth, -c.score))
     # 専用ラベルで有望だが、ページを確認できていない候補(深さ3など)
     promising = sorted((c for c in pool if not c.fetched and c.kind.startswith("sports") and c.score >= MIN_SCORE), key=lambda c: -c.score)

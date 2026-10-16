@@ -334,3 +334,35 @@ def test_ascend_rule_r_does_not_apply_to_pure_labels_or_weak_parents():
     assert hub.ascend(d, {**_pc(c), "fetched": False}) is d
     assert hub.ascend(d, None) is d
     assert hub.ascend(d, {**_pc(c), "of": "https://x.jp/other.html"}) is d
+
+
+def test_rich_counting_only_for_pure_labels_legacy_for_others():
+    """v11(D-083): 使用料金・利用案内・単一施設などのページが、本文の表で『一覧』と判定されない。"""
+    html = '<html><body><table><tr><td>総合体育館</td><td>市民プール</td></tr><tr><td>多目的広場</td><td>武道館</td></tr></table></body></html>'
+    soup = parse_html(html)
+    links = extract_links(soup, "https://x.jp/", "x.jp")
+    assert hub.page_features(soup, links, rich=True)[0] == 4
+    assert hub.page_features(soup, links, rich=False)[0] == 0  # リンクが無ければ数えない(v9と同じ)
+    linked = parse_html('<html><body><a href="/a">市民体育館</a><a href="/b">中央グラウンド</a><a href="/c">市民体育館空調設備設置</a></body></html>')
+    assert hub.page_features(linked, extract_links(linked, "https://x.jp/", "x.jp"), rich=False)[0] == 2
+
+
+def test_dated_news_and_donation_appeals_are_not_facilities_v11():
+    n, _, _ = _pf('<html><body><main><a href="/1">2026年7月10日市民体育館の利用について</a><a href="/2">2021年1月4日更新美浜町総合体育館</a>'
+                  '<a href="/3">寄附のお願い(原池公園野球場)</a><a href="/4">寄附のお願い(大浜体育館・大浜武道館)</a><a href="/5">金岡公園のスポーツ施設等</a></main></body></html>')
+    assert n == 0
+
+
+def test_pure_label_beats_shallower_other_label_and_reservation_or_school_pages_are_not_lists():
+    """あわら市型(使用料金のページ)・犬山市型(予約ページ)・新城市型(専門学校)(D-083)。"""
+    def cand(text, kind, depth, score, fl):
+        c = hub.Candidate(f"https://x.jp/{text}", text, score, [], depth=depth, facility_link_count=fl, fetched=True, kind=kind)
+        return c
+    fee = cand("スポーツ施設の使用料金について", "sports_other", 2, 21, 20)
+    pure = cand("スポーツ施設", "sports_pure", 3, 25, 8)
+    d = hub.decide([fee, pure])
+    assert d.outcome == "hub_selected" and d.selected.text == "スポーツ施設"
+    # 予約ページ・専門学校の体育施設は一覧にしない。体育施設利用案内は従来どおり確定できる
+    assert not hub.is_viable(cand("施設予約確認 体育施設予約", "sports_other", 1, 11, 3))
+    assert not hub.is_viable(cand("穂の香看護専門学校体育施設の利用案内", "sports_composite", 3, 16, 3))
+    assert hub.is_viable(cand("体育施設利用案内", "sports_other", 2, 25, 11))

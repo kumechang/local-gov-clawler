@@ -94,3 +94,6 @@ GitHub Actions: `crawl` ワークフローを手動実行(`.github/workflows/cra
 `hub.page_features` が、候補ページの「施設の数」(`facility_link_count`)を返す。リンクと、リスト/表の項目(li・dt・dd・td・th)の文字から、施設語(`FACILITY_NAME`)を含むものを集め、施設名(先頭の【…】を除き、最後の施設語まで)で重複をまとめる。強いお知らせ語(`STRONG_NEWS`)を含むものは数えない。弱い語(`SOFT_NOISE`)を含むものは、きれいな施設名が2件以上あるか、合計3件以上のときに数える。
 ## 規則R(v10、D-080)
 `hub.ascend`: 確定した(または1位の)ページが `sports_other` で、1つ上の階層(`parent_check`)の題名が専用ラベルかつ施設2件以上なら、親ページを採る。
+
+## v11の数え方と順序(D-083)
+`page_features(rich)`: 専用ラベル(sports_pure)と強い語を含む複合ラベルのページだけ rich(本文の項目・弱いお知らせ語・同じ施設は1件)。それ以外は v9 のリンクだけの数え方。`decide`: 専用ラベル → 強いラベル → 浅い → スコアの順。
