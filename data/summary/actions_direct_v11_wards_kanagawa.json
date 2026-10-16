@@ -1,0 +1,24 @@
+{
+ "ai_needed": 18,
+ "avg_elapsed_ms": 3552,
+ "avg_requests": 12.0,
+ "cms_families": {
+  "url_pattern:category_numeric": 7,
+  "url_pattern:genre_dir_index": 21
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.357,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_multiple": 18,
+  "hub_selected": 10
+ },
+ "program_only_resolved": 10,
+ "robots_available": 10,
+ "route": "actions_direct_v11_wards_kanagawa",
+ "sitemap_found": 7,
+ "total": 28,
+ "undecided_hub": 18
+}
