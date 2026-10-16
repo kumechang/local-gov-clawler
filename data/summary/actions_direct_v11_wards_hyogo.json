@@ -1,0 +1,22 @@
+{
+ "ai_needed": 9,
+ "avg_elapsed_ms": 774,
+ "avg_requests": 4.6,
+ "cms_families": {
+  "unknown": 9
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.0,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_not_found": 9
+ },
+ "program_only_resolved": 0,
+ "robots_available": 9,
+ "route": "actions_direct_v11_wards_hyogo",
+ "sitemap_found": 0,
+ "total": 9,
+ "undecided_hub": 9
+}
