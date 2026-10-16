@@ -1,0 +1,28 @@
+{
+ "ai_needed": 10,
+ "avg_elapsed_ms": 4563,
+ "avg_requests": 12.4,
+ "cms_families": {
+  "unknown": 4,
+  "url_pattern:category_numeric": 3,
+  "url_pattern:genre_dir_index": 7,
+  "url_pattern:soshiki_named": 5
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.421,
+ "municipalities_failed": [],
+ "needs_headless": 1,
+ "outcomes": {
+  "hub_multiple": 1,
+  "hub_not_found": 9,
+  "hub_selected": 8,
+  "needs_headless": 1
+ },
+ "program_only_resolved": 8,
+ "robots_available": 5,
+ "route": "actions_direct_v11_shiga",
+ "sitemap_found": 11,
+ "total": 19,
+ "undecided_hub": 10
+}
