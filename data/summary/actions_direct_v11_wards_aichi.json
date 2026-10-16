@@ -1,0 +1,23 @@
+{
+ "ai_needed": 4,
+ "avg_elapsed_ms": 5688,
+ "avg_requests": 13.4,
+ "cms_families": {
+  "url_pattern:genre_dir_index": 16
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.75,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_not_found": 4,
+  "hub_selected": 12
+ },
+ "program_only_resolved": 12,
+ "robots_available": 16,
+ "route": "actions_direct_v11_wards_aichi",
+ "sitemap_found": 0,
+ "total": 16,
+ "undecided_hub": 4
+}
