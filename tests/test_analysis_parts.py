@@ -208,17 +208,58 @@ def test_project_opening_and_system_pages_are_not_auto_selected():
         assert _viable(label), label
 
 
-def test_notices_and_course_titles_are_not_facility_links_v8():
-    html = ('<html><body><main>'
-            '<a href="/1">市民総合体育館空調設備設置(スポーツ振興くじ助成)</a>'
-            '<a href="/2">市民総合体育館トレーニング講習会</a>'
-            '<a href="/3">下里総合運動場を硬式野球等でご利用される皆さんへ</a>'
-            '<a href="/4">市民プール(屋外冷水プール)開場のご案内</a>'
-            '<a href="/5">市民総合体育館</a><a href="/6">下里総合運動場</a>'
-            '</main></body></html>')
+def _pf(html):
     soup = parse_html(html)
-    n, _, samples = hub.page_features(soup, extract_links(soup, "https://x.jp/", "x.jp"))
-    assert n == 2 and samples == ["市民総合体育館[main]", "下里総合運動場[main]"]
+    return hub.page_features(soup, extract_links(soup, "https://x.jp/", "x.jp"))
+
+
+def test_strong_news_titles_are_never_counted_as_facilities():
+    """安堵町型(同じ施設の工事・入札・休館のお知らせ)は、数えない。"""
+    n, _, samples = _pf('<html><body><main><a href="/1">市民プール開場のお知らせ</a><a href="/2">体育館の改修工事のため休館します</a>'
+                        '<a href="/3">【入札の結果】テニスコート整備</a><a href="/4">市民体育館</a><a href="/5">中央グラウンド</a></main></body></html>')
+    assert n == 2 and samples == ["市民体育館[main]", "中央グラウンド[main]"]
+
+
+def test_soft_notice_wording_is_counted_per_facility_when_three_or_more():
+    """人間の基準(D-076): イベント等の情報が混ざっていても、運動施設が並んでいれば一覧。同じ施設は1件(河内長野市型)。"""
+    html = ('<html><body><main>'
+            '<a href="/1">大師庭球場テニスコート整備(スポーツ振興くじ助成)</a>'
+            '<a href="/2">市民総合体育館空調設備設置</a><a href="/3">市民総合体育館トレーニング講習会</a>'
+            '<a href="/4">市民総合体育館のトレーニング室を利用したいのです</a>'
+            '<a href="/5">下里総合運動場を硬式野球等でご利用される皆さんへ</a></main></body></html>')
+    n, _, samples = _pf(html)
+    assert n == 3 and len(samples) == 3  # 大師庭球場テニスコート / 市民総合体育館 / 下里総合運動場
+    # 同じ施設の言及だけ、または2施設だけでは足りない
+    assert _pf('<html><body><a href="/1">市民総合体育館空調設備設置</a><a href="/2">市民総合体育館トレーニング講習会</a></body></html>')[0] == 0
+    assert _pf('<html><body><a href="/1">市民総合体育館空調設備設置</a><a href="/2">下里総合運動場のご利用について</a></body></html>')[0] == 0
+    # きれいな施設名が2件あれば、弱い語の言及も加えて数える
+    assert _pf('<html><body><a href="/1">市民総合体育館</a><a href="/2">下里総合運動場</a><a href="/3">中央庭球場のご利用について</a></body></html>')[0] == 3
+
+
+def test_list_items_without_links_are_counted():
+    """尾張旭市・長久手市・大田市・吉賀町型(D-075): 施設名がリンクでなく、リスト/表の文字で並ぶ。"""
+    n, _, samples = _pf('<html><body><ul><li>総合体育館</li><li>市民プール</li><li>多目的広場</li><li>お問い合わせ</li></ul></body></html>')
+    assert n == 3 and all("[text]" in x for x in samples)
+    n2, _, _ = _pf('<html><body><table><tr><td>野球場</td><td>テニスコート</td></tr><tr><td>武道館</td><td>電話番号</td></tr></table></body></html>')
+    assert n2 == 3
+    # 入れ子の外側(ナビ全体など)や長い文は数えない
+    n3, _, _ = _pf('<html><body><ul><li><ul><li>市民体育館</li></ul>' + '広い' * 30 + '</li></ul></body></html>')
+    assert n3 == 1
+    # リンクと同じ施設は1件
+    assert _pf('<html><body><ul><li><a href="/g">総合体育館</a></li><li>総合体育館</li></ul></body></html>')[0] == 1
+
+
+def test_wider_sports_vocabulary_matsubara_style():
+    """松原市型: 運動広場・スポーツパーク・スケボーパークなど、辞書に無かった語(D-075)。"""
+    html = ('<html><body><main>'
+            '<a href="/1">【案内】運動広場のご利用</a><a href="/2">【案内】運動広場のナイター利用について</a>'
+            '<a href="/3">松原市民プールのご案内</a><a href="/4">【案内】スポーツパークまつばら</a>'
+            '<a href="/5">【案内】おくさま印スケボーパーク</a><a href="/6">【お知らせ】スポーツパークまつばら新エリアがオープンしました</a>'
+            '</main></body></html>')
+    n, _, samples = _pf(html)
+    assert n == 4  # 運動広場 / 松原市民プール / スポーツパーク / おくさま印スケボーパーク(お知らせ記事は数えない)
+    assert hub.facility_head("【重要】大和川運動広場の利用に関するお知らせ") == "大和川運動広場"
+    assert hub.facility_head("西部生涯スポーツセンター屋内温水プール") != hub.facility_head("西部生涯スポーツセンター体育館")
 
 
 def test_body_facility_terms_count_only_text_outside_links():
@@ -228,17 +269,6 @@ def test_body_facility_terms_count_only_text_outside_links():
             '<p>野球場の予約は<a href="/r">体育館の予約</a>から</p></main><script>var 体育館=1;</script></body></html>')
     got = hub.body_facility_terms(parse_html(html))
     assert got == {"体育館": 2, "テニスコート": 1, "プール": 1, "野球場": 1}
-
-
-def test_faq_and_project_titles_are_not_facility_links_v9():
-    """河内長野市型: 「整備(…くじ助成)」「…利用したいのです」(D-072)。"""
-    html = ('<html><body><main>'
-            '<a href="/1">大師庭球場テニスコート整備(スポーツ振興くじ助成)</a>'
-            '<a href="/2">市民総合体育館のトレーニング室を利用したいのです</a>'
-            '<a href="/3">市民総合体育館</a><a href="/4">下里総合運動場</a></main></body></html>')
-    soup = parse_html(html)
-    n, _, samples = hub.page_features(soup, extract_links(soup, "https://x.jp/", "x.jp"))
-    assert n == 2 and samples == ["市民総合体育館[main]", "下里総合運動場[main]"]
 
 
 def test_generic_reservation_pages_are_not_auto_selected():
@@ -274,3 +304,33 @@ def test_link_samples_prefers_main_region_links():
     html = '<html><body><nav><a href="/n">メニュー</a></nav><main><a href="/a">ふれあいアリーナ</a><a href="/b">中央公園</a><a href="/c">中央公園</a></main></body></html>'
     soup = parse_html(html)
     assert hub.link_samples(extract_links(soup, "https://x.jp/", "x.jp")) == ["ふれあいアリーナ[main]", "中央公園[main]"]
+
+
+def _dec(kind, depth=1, selected=True, url="https://x.jp/gym/1.html"):
+    c = hub.Candidate(url, "体育館", 15, ["text:体育館"], depth=depth, facility_link_count=2, fetched=True, kind=kind)
+    return hub.HubDecision("hub_selected" if selected else "hub_multiple", c if selected else None, [c], "specific"), c
+
+
+def _pc(c, title="施設案内 スポーツ|常滑市", n=2):
+    return {"of": c.url, "fetched": True, "parent_url": "https://x.jp/gym/", "page_title": title, "facility_link_count": n, "facility_samples": ["体育館[nav]"]}
+
+
+def test_ascend_rule_r_moves_from_detail_page_to_sports_parent():
+    """常滑市・東大阪市・春日井市・刈谷市型(D-078)。確定でない場合(hub_multiple)でも、1位が詳細ページなら親を採る。"""
+    for selected in (True, False):
+        d, c = _dec("sports_other", selected=selected)
+        out = hub.ascend(d, _pc(c))
+        assert out.outcome == "hub_selected" and out.selected.url == "https://x.jp/gym/" and out.selected.kind == "sports_pure"
+        assert out.top[0] is out.selected and out.quality == "specific"
+
+
+def test_ascend_rule_r_does_not_apply_to_pure_labels_or_weak_parents():
+    d, c = _dec("sports_pure")  # あわら市型: 確定ページが専用ラベルなら上がらない
+    assert hub.ascend(d, _pc(c)) is d
+    d, c = _dec("sports_other")
+    assert hub.ascend(d, _pc(c, n=1)) is d  # 橿原市型: 親に施設が並んでいない
+    assert hub.ascend(d, _pc(c, title="町の施設 | 川西町")) is d  # 川西町型: 親が汎用ラベル
+    assert hub.ascend(d, _pc(c, title="スポーツ施設の整備 | 堺市")) is d
+    assert hub.ascend(d, {**_pc(c), "fetched": False}) is d
+    assert hub.ascend(d, None) is d
+    assert hub.ascend(d, {**_pc(c), "of": "https://x.jp/other.html"}) is d

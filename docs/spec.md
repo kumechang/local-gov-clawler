@@ -85,3 +85,12 @@ GitHub Actions: `crawl` ワークフローを手動実行(`.github/workflows/cra
 - `localgov-crawler run --compact`: インデントなしの1行JSONで保存する(`run.compact=true`)。`nav_links`(トップページ内のaタグのリンク文言・URL・領域。同一サイト内、最大400件、画像のみのリンクはalt/ファイル名)は**残す**(D-065)。
 - `list/run --scope municipality|designated_city_ward`: 政令市の区(171件)を除く/区のみ。
 - `config/auto_crawl.json` の各 target は `scope`(省略可)と `compact`(省略可、既定false)を持てる。`crawl` ワークフローにも同名の入力がある。
+
+## 「一覧ページ」の人間の判断基準(2026-10-16 ユーザー、D-075)
+人間は次の2点で一覧と判断する: ①リスト形式になっている(人間が見て)、②体育館・グラウンド・広場など、運動を連想する施設がいくつか並んでいる。
+現行の近似: 施設名の語を含むaタグリンクの数(`facility_link_count`)。リンクでない本文の施設語は診断(`body_terms`)のみで、判定には使っていない。
+
+## 施設の数え方(v10、D-079)
+`hub.page_features` が、候補ページの「施設の数」(`facility_link_count`)を返す。リンクと、リスト/表の項目(li・dt・dd・td・th)の文字から、施設語(`FACILITY_NAME`)を含むものを集め、施設名(先頭の【…】を除き、最後の施設語まで)で重複をまとめる。強いお知らせ語(`STRONG_NEWS`)を含むものは数えない。弱い語(`SOFT_NOISE`)を含むものは、きれいな施設名が2件以上あるか、合計3件以上のときに数える。
+## 規則R(v10、D-080)
+`hub.ascend`: 確定した(または1位の)ページが `sports_other` で、1つ上の階層(`parent_check`)の題名が専用ラベルかつ施設2件以上なら、親ページを採る。
