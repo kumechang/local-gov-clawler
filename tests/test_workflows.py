@@ -36,3 +36,15 @@ def test_code_flows_from_auto_crawl_to_cli():
     crawl = (ROOT / ".github/workflows/crawl.yml").read_text(encoding="utf-8")
     auto = (ROOT / ".github/workflows/auto-crawl.yml").read_text(encoding="utf-8")
     assert '--code "$CODE"' in crawl and "code: ${{ matrix.code }}" in auto
+
+
+def test_survey_workflows_are_valid_and_wired():
+    for name in ("survey", "auto-survey"):
+        yaml.safe_load((ROOT / f".github/workflows/{name}.yml").read_text(encoding="utf-8"))
+    survey = (ROOT / ".github/workflows/survey.yml").read_text(encoding="utf-8")
+    assert "name: survey-${{ inputs.keyword }}-${{ inputs.route }}-${{ matrix.shard }}" in survey
+    assert "pattern: survey-${{ inputs.keyword }}-${{ inputs.route }}-*" in survey
+    auto = yaml.safe_load((ROOT / ".github/workflows/auto-survey.yml").read_text(encoding="utf-8"))
+    assert auto["jobs"]["survey"]["uses"] == "./.github/workflows/survey.yml"
+    cfg = (ROOT / "config/auto_survey.json").read_text(encoding="utf-8")
+    assert "grandgolf" in cfg and (ROOT / "config/keywords/grandgolf.json").exists()

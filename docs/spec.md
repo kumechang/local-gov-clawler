@@ -106,3 +106,6 @@ GitHub Actions: `crawl` ワークフローを手動実行(`.github/workflows/cra
 - T3(`hub.ascend`): hub_multiple で、同点の上位2件がどちらも1つの施設の名前(『・』を含まない)のとき、1つ上のページが汎用ラベル(公共施設利用案内 など)で施設リンク3件以上なら、それを採る(quality=generic)。予約・申込のタイトルは除く
 - 同じページ(http/https・www・末尾スラッシュ・index.html だけが違う)は、候補を1件にまとめる
 - `localgov-crawler redecide`: 保存済みの結果から判定だけをやり直す(サイトには接続しない)
+
+## ワード調査(D-106/D-107)
+`localgov-crawler survey --from-route <ハブ判定のroute> --keywords config/keywords/<名前>.json --route <実行ラベル>`。入口(確定ページ・上位候補・ナビのスポーツ/イベント)から同じサイトを2階層まで、取得は1自治体200ページまで。結果は `data/survey/<keyword>/<route>/<都道府県>/<自治体>.json`(1行JSON)。主な項目: `found`(ワードがあったか)、`hit_roles`、`pages[]`(url・role・hit・snippets)、`nav_hits`、`pdf_link_hits`、`outcome`(surveyed / no_seed / no_url / fetch_failed)。集計は `survey-summary`(`data/summary/survey_<keyword>_<route>.{csv,md}`)。

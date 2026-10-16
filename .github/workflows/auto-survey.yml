@@ -1,0 +1,57 @@
+name: auto-survey
+# mainへのマージで、config/auto_survey.json の対象のワード調査を自動実行する(D-107)。
+# 安全策は auto-crawl と同じ:
+#  - config/auto_survey.json、ワード設定、調査用ワークフローを変更したときだけ動く
+#  - 結果が既にある (keyword, route) は実行しない(新しい route 名にする)
+#  - config の enabled=false、またはコミットメッセージの [skip survey] で止まる
+on:
+  push:
+    branches: [main]
+    paths:
+      - "config/auto_survey.json"
+      - "config/keywords/**"
+      - ".github/workflows/survey.yml"
+      - ".github/workflows/auto-survey.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: auto-survey
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      count: ${{ steps.p.outputs.count }}
+      matrix: ${{ steps.p.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - id: p
+        env:
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+        run: python3 scripts/plan_auto_survey.py
+
+  survey:
+    needs: plan
+    if: ${{ needs.plan.outputs.count != '0' }}
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    uses: ./.github/workflows/survey.yml
+    with:
+      prefecture: ${{ matrix.prefecture }}
+      keyword: ${{ matrix.keyword }}
+      route: ${{ matrix.route }}
+      from_route: ${{ matrix.from_route }}
+      shards: ${{ matrix.shards }}
+      max_pages: ${{ matrix.max_pages }}
+      commit_results: true
+    permissions:
+      contents: write
+    secrets: inherit
