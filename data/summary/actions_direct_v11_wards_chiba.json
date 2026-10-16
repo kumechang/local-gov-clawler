@@ -1,0 +1,23 @@
+{
+ "ai_needed": 1,
+ "avg_elapsed_ms": 2408,
+ "avg_requests": 11.8,
+ "cms_families": {
+  "url_pattern:genre_dir_index": 6
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.833,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_multiple": 1,
+  "hub_selected": 5
+ },
+ "program_only_resolved": 5,
+ "robots_available": 6,
+ "route": "actions_direct_v11_wards_chiba",
+ "sitemap_found": 6,
+ "total": 6,
+ "undecided_hub": 1
+}
