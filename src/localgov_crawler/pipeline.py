@@ -186,7 +186,9 @@ def _visit(ctx: _Ctx, c: hub.Candidate, site_host: str):
         return None
     soup = parse_html(decode_bytes(page.body, page.content_type))
     links = extract_links(soup, page.final_url, site_host)
-    n, head, samples = hub.page_features(soup, links)
+    # 本文の項目まで数えるのは、題名が一覧を表す専用ラベル(と、強い語を含む複合ラベル)のページだけ(D-083)
+    rich = c.kind == "sports_pure" or (c.kind == "sports_composite" and bool(hub.STRONG_TEXT.search(c.text)))
+    n, head, samples = hub.page_features(soup, links, rich=rich)
     hub.rescore_with_page(c, n, head, samples)
     c.body_terms = hub.body_facility_terms(soup)
     c.breadcrumb = hub.breadcrumb(soup, page.final_url)
