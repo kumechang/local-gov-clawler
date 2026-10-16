@@ -76,3 +76,4 @@
 - (春日井市・刈谷市=妥当の回答を受けて)v10を実装: 施設の数え方を人間の基準に合わせる(D-079)、規則R(D-080)。5県の再実行を設定(D-081)。PR・マージは未実施(指示待ち)。
 - 「crawlを実行した結果を見て」(v10)→ 事前基準で判定して報告(D-082)。
 - v10で確定したページへのユーザーの判断(2026-10-16): 吉野町=`shisetsuannai/index.html`が適切(1つ上)、三宅町=OK、美浜町(福井)=OK、新城市=`kyoiku-bunka/index.html`が適切(1つ上)、豊明市=`2818.htm`が適切、堺市=`sports/sports_shisetsu/shisetsu/index.html`が適切(2階層下)、あわら市=`education0302/index.html`が適切(v9の確定)、犬山市=`kurashi/sports/1000791/1004678.html`が適切(v9の確定)、河内長野市=`map/list/list145.html`が適切。太子町は回答なし → `sports_hub_stage1_reviewed.csv` に追加、D-083。
+- 「crawlを実行した結果を見て」(v11)→ 事前基準で判定して報告(D-085)。

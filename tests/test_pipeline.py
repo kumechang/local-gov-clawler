@@ -333,3 +333,10 @@ def test_evaluate_ignores_scheme_and_www_differences(tmp_path, city_routes):
     truth.write_text("municipality_code,hub_url,alt_urls,notes\n29999,http://city.example.jp/sports/shisetsu.html/,,\n", encoding="utf-8")
     ev = store.evaluate([r], truth)
     assert ev["selected_correct"] == 1 and ev["reached"] == 1
+
+
+def test_norm_url_treats_trailing_index_html_as_same_page():
+    """春日井市: 正解 …/bunka/sports/ と確定 …/bunka/sports/index.html は同じページ(D-085)。"""
+    assert store._norm_url("https://www.city.kasugai.lg.jp/bunka/sports/") == store._norm_url("https://www.city.kasugai.lg.jp/bunka/sports/index.html")
+    assert store._norm_url("http://x.jp/a/index.htm") == store._norm_url("https://www.x.jp/a")
+    assert store._norm_url("https://x.jp/a/b.html") != store._norm_url("https://x.jp/a")
