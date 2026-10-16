@@ -1,0 +1,22 @@
+{
+ "ai_needed": 11,
+ "avg_elapsed_ms": 881,
+ "avg_requests": 5.6,
+ "cms_families": {
+  "url_pattern:category_numeric": 11
+ },
+ "failure_classes": {},
+ "fetch_failure_rate": 0.0,
+ "hub_selected_rate": 0.0,
+ "municipalities_failed": [],
+ "needs_headless": 0,
+ "outcomes": {
+  "hub_not_found": 11
+ },
+ "program_only_resolved": 0,
+ "robots_available": 0,
+ "route": "actions_direct_v11_wards_kyoto",
+ "sitemap_found": 0,
+ "total": 11,
+ "undecided_hub": 11
+}
