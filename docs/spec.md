@@ -97,3 +97,12 @@ GitHub Actions: `crawl` ワークフローを手動実行(`.github/workflows/cra
 
 ## v11の数え方と順序(D-083)
 `page_features(rich)`: 専用ラベル(sports_pure)と強い語を含む複合ラベルのページだけ rich(本文の項目・弱いお知らせ語・同じ施設は1件)。それ以外は v9 のリンクだけの数え方。`decide`: 専用ラベル → 強いラベル → 浅い → スコアの順。
+
+## v12.1 同点のタイブレーク(D-103/D-104)
+`hub.decide` で同点(同じ深さで、スコア差が MARGIN 未満)になったとき、`hub.break_tie` が順に絞る。1件に絞れなければ hub_multiple のまま。同点でない自治体の判定は変えない。
+- T4: 『…について』を含むラベルは、含まない候補があれば除く
+- T1: 名前に『一覧』がある sports_pure/sports_other だけを残す(複合ラベルの『…連絡先一覧』は対象外)
+- T2: sports_pure の候補が、他のすべての候補の親(URLのディレクトリ)なら、その親を採る
+- T3(`hub.ascend`): hub_multiple で、同点の上位2件がどちらも1つの施設の名前(『・』を含まない)のとき、1つ上のページが汎用ラベル(公共施設利用案内 など)で施設リンク3件以上なら、それを採る(quality=generic)。予約・申込のタイトルは除く
+- 同じページ(http/https・www・末尾スラッシュ・index.html だけが違う)は、候補を1件にまとめる
+- `localgov-crawler redecide`: 保存済みの結果から判定だけをやり直す(サイトには接続しない)

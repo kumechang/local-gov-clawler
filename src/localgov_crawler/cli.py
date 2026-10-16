@@ -161,6 +161,20 @@ def cmd_ward_report(args) -> int:
     return 0
 
 
+def cmd_redecide(args) -> int:
+    """保存済みの結果にハブの判定ルールをやり直して、新しいrouteに書く(自治体サイトには接続しない、D-104)。"""
+    from .redecide import redecide
+    n = changed = 0
+    for route in args.from_routes:
+        for r in store.load_results(Path(args.results), route):
+            new = redecide(r, args.route, args.rules)
+            store.write_result(Path(args.out), new, r["municipality"]["code"][:2], compact=args.compact)
+            n += 1
+            changed += new["outcome"] != r["outcome"]
+    print(f"{n} results → {args.out}/{args.route} ({changed} outcomes changed)")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="localgov-crawler")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -200,6 +214,12 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--master", default=str(mun.DEFAULT_MASTER)); sp.add_argument("--results", default="data/results")
     sp.add_argument("--out", default="data/review/v11"); sp.add_argument("routes", nargs="+")
     sp.set_defaults(fn=cmd_review_list)
+
+    sp = sub.add_parser("redecide")
+    sp.add_argument("--results", default="data/results"); sp.add_argument("--out", default="data/results")
+    sp.add_argument("--route", required=True); sp.add_argument("--rules", default="v12.1")
+    sp.add_argument("--from-routes", nargs="+", required=True); sp.add_argument("--compact", action="store_true")
+    sp.set_defaults(fn=cmd_redecide)
 
     sp = sub.add_parser("ward-report")
     sp.add_argument("--master", default=str(mun.DEFAULT_MASTER)); sp.add_argument("--results", default="data/results")
