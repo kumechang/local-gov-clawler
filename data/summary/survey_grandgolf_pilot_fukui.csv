@@ -1,0 +1,18 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,hit_pages,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_snippet
+18201,福井市,福井県,surveyed,True,5,event|facility,200,max_pages,0,0,https://www.city.fukui.lg.jp/kyoiku/sports/sisetu/spo-park.html,facility,要はこちら ソフトボール場:ソフトボール3面、少年野球1面 グラウンドゴルフ場:18H マレットゴルフ場東コース:18H マレットゴルフ
+18202,敦賀市,福井県,surveyed,True,5,event|facility,198,exhausted,0,0,https://www.city.tsuruga.lg.jp/page/1499.html,facility,/5.69MB] 修景池芝生広場 芝生広場 菖蒲園 修景池 グラウンド・ゴルフ利用 Aコース・Bコース・Cコース・Dコース・Eコース 全5
+18204,小浜市,福井県,surveyed,False,0,,38,exhausted,0,0,,,
+18205,大野市,福井県,surveyed,False,0,,117,exhausted,0,0,,,
+18206,勝山市,福井県,surveyed,False,0,,69,exhausted,0,0,,,
+18207,鯖江市,福井県,surveyed,False,0,,122,exhausted,0,0,,,
+18208,あわら市,福井県,surveyed,False,0,,122,exhausted,0,0,,,
+18209,越前市,福井県,surveyed,True,1,facility,88,exhausted,0,1,https://www.city.echizen.lg.jp/office/010/040/sinkou/newsport.html,facility,アウト&ディスゲッター 公式ワナゲ ゴルフ型 ボールゴルフ グラウンド・ゴルフ ターゲット・バードゴルフ マレットゴルフ スカットボール 
+18210,坂井市,福井県,surveyed,False,0,,98,exhausted,0,0,,,
+18322,永平寺町,福井県,surveyed,False,0,,29,exhausted,0,0,,,
+18382,池田町,福井県,surveyed,True,1,facility,36,exhausted,0,0,https://www.town.ikeda.fukui.jp/shisetsu/taiiku/p002489.html,facility,ージID 002489 Tweet 利用案内 ゲートボール、グラウンドゴルフ等でご利用できます。(ナイター設備あり) 駐車場は、野尻グラ
+18404,南越前町,福井県,surveyed,False,0,,34,exhausted,0,0,,,
+18423,越前町,福井県,surveyed,False,0,,45,exhausted,0,0,,,
+18442,美浜町,福井県,surveyed,True,1,facility,51,exhausted,0,0,https://www.town.fukui-mihama.lg.jp/soshiki/44/,facility, お知らせ 2022年5月17日更新 美浜町西郷健康ひろば グラウンドゴルフ場 2022年5月17日更新 西郷健康ひろば 屋内運動場
+18481,高浜町,福井県,surveyed,True,3,event|facility,79,exhausted,0,1,https://www.town.takahama.fukui.jp/sonota/events/event.html,event,~プロが教える体づくり講座~」 31日 土曜日 第6回高浜町グラウンド・ゴルフ大会の開催について 次の月のカレンダー
+18483,おおい町,福井県,surveyed,True,1,listing,95,exhausted,0,0,https://www.town.ohi.fukui.jp/1003/63/p13426.html,listing,ビーなど) サブコート 人工芝グラウンド(フットサルなど) グランドゴルフ (天然芝16ホール) クラブハウス ミーティングルーム・審
+18501,若狭町,福井県,surveyed,False,0,,26,exhausted,0,0,,,
