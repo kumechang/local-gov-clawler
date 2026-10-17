@@ -1,0 +1,43 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+21201,岐阜市,岐阜県,surveyed,True,False,6,facility|organization|other,facility,200,max_pages,0,0,https://www.city.gifu.lg.jp/info/shisetsu/1009640/1009641/1009645.html,facility,facility,岐阜市南部スポーツセンター 施設案内|岐阜市公式ホームページ-Gifu city, ※トレーニングルームについては関連情報をご覧ください。 ※グラウンド・ゴルフ場については関連情報をご覧ください。 使用期間 1月4日から
+21202,大垣市,岐阜県,surveyed,True,False,1,event,event,83,exhausted,0,0,https://www.city.ogaki.lg.jp/0000009551.html,event,event,大垣市かみいしづ緑の村公園・大垣市山村体験宿泊施設奥養老 | 大垣市公式ホームページ/水の都おおがき,"5月2日 開園面積15.0ha 芝生広場 アスレチック遊具 グラウンドゴルフ テニスコート 自然豊かな環境に囲まれた広さ150,000平"
+21203,高山市,岐阜県,surveyed,True,False,3,facility,facility,200,max_pages,0,0,https://www.city.takayama.lg.jp/shisetsu/1004139/1000043/1001720.html,facility,facility,施設案内 大八グラウンド|高山市,用いただけます! また、 サッカーだけでなく、幼児の運動会やグラウンドゴルフ、イベントや交流の場としてご利用ください。 新たに建築された
+21204,多治見市,岐阜県,surveyed,True,False,1,facility,facility,96,exhausted,0,0,https://www.city.tajimi.lg.jp/kanko_bunka_sports/sports/1006736/1010517.html,facility,facility,市民広場(星ケ台競技場)無料開放(朝の部)|多治見市公式ホームページ,印刷 大きな文字で印刷 イベントカテゴリ: 体験 スポーツ グラウンドゴルフ、ペタング、モルック、輪投げなど軽スポーツを無料で体験できま
+21205,関市,岐阜県,surveyed,True,False,1,facility,facility,161,exhausted,0,0,https://www.city.seki.lg.jp/0000004410.html,facility,facility,中池かわせみスタジアム(陸上競技場) | 関市役所公式ホームページ,を1周することができます。また、サッカー1面、ラグビー1面、グラウンドゴルフの利用もできます。 中池かわせみスタジアム(陸上競技場) 使
+21206,中津川市,岐阜県,surveyed,True,False,1,facility,facility,67,exhausted,0,0,https://www.city.nakatsugawa.lg.jp/tcs/facility/1/4350.html,facility,facility,マレットゴルフ場、ゲートボール場/中津川市,法人わくわくプラザ 電話番号 0573-79-3260 福岡グラウンドゴルフ場 施設概要 グラウンドゴルフ18ホール 開館時間 8時00
+21207,美濃市,岐阜県,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
+21208,瑞浪市,岐阜県,surveyed,False,False,0,,,90,exhausted,0,0,,,,,
+21209,羽島市,岐阜県,surveyed,True,False,1,facility,facility,41,exhausted,0,0,https://www.city.hashima.lg.jp/1685.html,facility,facility,木曽川・長良川堤外施設/羽島市公式Webサイト,面)・サッカー場(少年用2面)・テニス場(6面 全天候型)・グラウンドゴルフ場 テニス場は有料 1面1時間220円 所在地 羽島市正木町
+21210,恵那市,岐阜県,surveyed,False,False,0,,,66,exhausted,0,0,,,,,
+21211,美濃加茂市,岐阜県,surveyed,False,False,0,,,92,exhausted,0,0,,,,,
+21212,土岐市,岐阜県,surveyed,True,True,7,event|organization|other,event|facility,124,exhausted,0,1,https://www.city.toki.lg.jp/kanko/sports/1006956.html,facility,other,ニュースポーツの紹介|土岐市公式ウェブサイト,止まっているボールをバットで打って得点を競うゲーム。 13 グラウンドゴルフ 屋外 1袋6本セット 大6セット 小5セット ボールをクラ
+21213,各務原市,岐阜県,surveyed,True,False,4,event|facility|organization|other,event|facility,104,exhausted,0,0,https://www.city.kakamigahara.lg.jp/shisei/shisetsu/1005665/1022820.html,facility,facility,学校体育施設の開放について|各務原市公式ウェブサイト,、学校行事などがある日 利用種目 陸上(投てき種目を除く)、グラウンド・ゴルフなど (注1)備え付けの器具・備品などは一切ありません (注
+21214,可児市,岐阜県,surveyed,True,False,1,other,facility,151,exhausted,0,0,https://www.city.kani.lg.jp/27101.htm,facility,other,市原産業スポーツフィールド/可児市,人工芝のメリットを生かし、軟式野球やソフトボール、サッカー、グラウンド・ゴルフ、ホッケーなどのスポーツやレクリエーションなど、さまざまな目
+21215,山県市,岐阜県,no_seed,False,False,0,,,0,,0,0,,,,,
+21216,瑞穂市,岐阜県,surveyed,True,False,1,other,facility,101,exhausted,0,0,https://www.city.mizuho.lg.jp/2218.htm,facility,other,スポーツ用具の借用申込み/瑞穂市,を逆さにしたようなホールに入れ、その打数を競うゲームです。 グラウンドゴルフ グラウンド・ゴルフは、ゴルフをアレンジした軽スポーツです。
+21217,飛騨市,岐阜県,surveyed,False,False,0,,,93,exhausted,0,0,,,,,
+21218,本巣市,岐阜県,surveyed,True,False,1,organization,facility,73,exhausted,0,0,https://www.city.motosu.lg.jp/0000001120.html,facility,organization,本巣市スポーツ協会ガイド | 本巣市,めるジョイフルスローピッチソフトボールははまる! 福田 浄 グラウンドゴルフ 真正 真桑みどり公園 第1・2日曜日 8時30分~11時0
+21219,郡上市,岐阜県,surveyed,False,False,0,,,22,exhausted,0,0,,,,,
+21220,下呂市,岐阜県,surveyed,True,False,1,facility,facility,95,exhausted,0,0,https://www.city.gero.lg.jp/soshiki/59/1606.html,facility,facility,飛騨川公園 - 下呂市ホームページ,車場(70台) サッカー1面 テニス2面(クレー・人工芝) グラウンドゴルフ (社団法人日本グラウンド・ゴルフ協会認定コース) 他、様々
+21221,海津市,岐阜県,surveyed,True,False,5,facility|organization,facility|listing,79,exhausted,0,0,https://www.city.kaizu.lg.jp/kurashi/category/1-8-4-0-0-0-0-0-0-0.html,listing,facility,体育施設 | 海津市, 南濃体育館 平田体育館 体育施設利用調整会議について 南濃グラウンド・ゴルフ場 5月8日以降の新型コロナウイルス感染症対策について 海津
+21302,岐南町,岐阜県,surveyed,False,False,0,,,44,exhausted,0,0,,,,,
+21303,笠松町,岐阜県,surveyed,True,True,7,event|other,event|facility|listing,116,exhausted,0,2,https://www.town.kasamatsu.gifu.jp/category/bunya/sports_bunka_kanko/,listing,other,スポーツ・文化・観光 | 笠松町 笠松町 KASAMATSU,2026年08月26日 教育文化課 ) 第44回 町民・交流グラウンド・ゴルフ大会開催のお知らせ ( 2026年08月26日 教育文化課 
+21341,養老町,岐阜県,surveyed,False,False,0,,,55,exhausted,0,0,,,,,
+21361,垂井町,岐阜県,surveyed,False,False,0,,,57,exhausted,0,0,,,,,
+21362,関ケ原町,岐阜県,surveyed,False,False,0,,,28,exhausted,0,0,,,,,
+21381,神戸町,岐阜県,surveyed,True,False,1,organization,facility,35,exhausted,0,0,https://www.town.godo.gifu.jp/life/sho_supo/sho_supo12.html,facility,organization,神戸町スポーツ協会 | 岐阜県安八郡神戸町公式ホームページ,・空手協会・ソフトテニス協会・柔道協会・走ろう会・野歩路会・グラウンドゴルフ協会・綱引協会・ソフトバレーボール協会・インディアカ協会 お
+21382,輪之内町,岐阜県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
+21383,安八町,岐阜県,surveyed,False,False,0,,,58,exhausted,0,0,,,,,
+21401,揖斐川町,岐阜県,surveyed,True,False,1,organization,facility,36,exhausted,0,0,https://www.town.ibigawa.lg.jp/page/1047.html,facility,organization,揖斐川町体育協会 - 揖斐川町公式ホームページへようこそ(社会教育課),剣道 スキー 陸上 ゴルフ テニス 卓球 レクリエーション グランドゴルフ 空手 カヌー ラジオ体操 スポーツ少年団 このページに関す
+21403,大野町,岐阜県,surveyed,True,False,1,facility,listing,41,exhausted,0,0,https://www.town-ono.jp/0000000416.html,listing,facility,大野町運動公園 | 大野町,縦約130m、横約140mの広さで、サッカー、ソフトボール、グラウンドゴルフなど多くのスポーツが楽しめる多目的運動場です。 開園期間 年
+21404,池田町,岐阜県,surveyed,True,False,5,facility,facility,49,exhausted,0,0,https://www.town.gifu-ikeda.lg.jp/0000002879.html,facility,facility,「池田公園人工芝グラウンド」オープニングセレモニーを行いました | 岐阜県揖斐郡池田町,長とサッカー少年団団員らによる「キックインセレモニー」と地元グラウンドゴルフ愛好団体らによる「ホールポストインセレモニー」を行い、完成を
+21421,北方町,岐阜県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
+21501,坂祝町,岐阜県,surveyed,False,False,0,,,4,exhausted,0,0,,,,,
+21502,富加町,岐阜県,surveyed,True,False,1,facility,listing,60,exhausted,0,0,https://www.town.tomika.gifu.jp/docs/227.html,listing,facility,半布ヶ丘グラウンド - 富加町,半布ヶ丘グラウンドについて 野球、ソフトボール、グラウンドゴルフなどができます。 使用できる時間と料金 区分 全面 半面 備
+21503,川辺町,岐阜県,surveyed,True,False,1,facility,event,39,exhausted,0,0,https://www.kawabe-gifu.jp/?page_id=51512,event,facility,公園紹介サイト – 川辺町ホームページ,ベキューは原則としてできません。 Q 公園内でゲートボール、グラウンドゴルフなどをしていいですか。 A 公園は地域の皆さまの共有スペース
+21504,七宗町,岐阜県,no_seed,False,False,0,,,0,,0,0,,,,,
+21505,八百津町,岐阜県,surveyed,True,False,1,facility,facility,44,exhausted,0,0,https://www.town.yaotsu.lg.jp/1504.htm,facility,facility,蘇水公園/八百津町, が1面 および 80m×50mが1面 ※サッカーをはじめ、グラウンドゴルフやソフトボールなど地域行事や各種イベントにご利用ください。 
+21506,白川町,岐阜県,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
+21507,東白川村,岐阜県,surveyed,True,False,1,organization,facility,38,exhausted,0,0,https://www.vill.higashishirakawa.gifu.jp/kurashi/sports/kyoukai/,facility,organization,東白川村体育協会について | スポーツ | くらしのガイド | 東白川村役場 東白川村の公式サイト,ケットボール バレーボール 県道 クレー射撃 ソフトテニス グラウンドゴルフ カヌー ゴルフ お問い合わせ先 東白川村体育協会(東白川村
+21521,御嵩町,岐阜県,surveyed,False,False,0,,,57,exhausted,0,0,,,,,
+21604,白川村,岐阜県,no_seed,False,False,0,,,0,,0,0,,,,,
