@@ -1,0 +1,55 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+23100,名古屋市,愛知県,surveyed,True,False,9,organization,facility,164,exhausted,0,0,https://www.city.nagoya.jp/chikusa/kurashi/1036473/1033166.html,facility,organization,千種区地域ジュニアスポーツクラブ|千種区公式ウェブサイト,、千種区地域力推進課までご連絡ください。 大和小学区 大和小グラウンドゴルフ【種目:グラウンドゴルフ】 活動日・時間帯 毎週日曜日 午前
+23201,豊橋市,愛知県,surveyed,False,False,0,,,57,exhausted,0,0,,,,,
+23202,岡崎市,愛知県,surveyed,True,False,1,facility,facility,200,max_pages,0,0,https://www.city.okazaki.lg.jp/bunka/sports_shisetsu/1004863/1012575.html,facility,facility,スポーツ施設(龍北総合運動場)|岡崎市公式ホームページ,外部リンク) 多目的運動場 種別 少年サッカー フットサル グラウンド・ゴルフ ゲートボール 夜間照明 - 多目的運動場 (外部リンク) 
+23203,一宮市,愛知県,surveyed,True,False,12,facility,facility,200,max_pages,0,0,https://www.city.ichinomiya.aichi.jp/shisetsu/1008918/1044560/1009368.html,facility,facility,施設案内 奥町公園野球場|一宮市,前7時~午後5時 主な使用可能種目 軟式野球、ソフトボール、グラウンド・ゴルフ 完成年月日 昭和39年3月31日 付帯設備 照明設備:鉄塔
+23204,瀬戸市,愛知県,surveyed,False,False,0,,,76,exhausted,0,0,,,,,
+23205,半田市,愛知県,surveyed,True,False,7,event|facility|other,event|facility,145,exhausted,0,0,https://www.city.handa.lg.jp/bunka/sports/1002825/1002846.html,facility,facility,半田北部グラウンド|半田市公式ウェブサイト,など 【多目的グラウンド(1万平方メートル)】サッカー1面、グラウンドゴルフ、ソフトボール、少年野球など 申込方法 予約システムをご利用
+23206,春日井市,愛知県,surveyed,True,False,4,facility|organization,facility|listing,200,max_pages,0,0,https://www.city.kasugai.lg.jp/bunka/sports/1004285.html,listing,facility,屋外スポーツ施設(グラウンド・テニスコート)の概要|春日井市公式ホームページ,ウンド ナイター 春日井市鳥居松町 軟式野球、ソフトボール、グラウンド・ゴルフ、サッカーの練習等(サッカーゴールはありません) ナイター2
+23207,豊川市,愛知県,surveyed,True,False,16,facility|other,event|facility,108,exhausted,0,0,https://www.city.toyokawa.lg.jp/shisetsu/sports_sushisetsu/16522.html,facility,facility,桜ヶ丘公園(グラウンド)/豊川市,時まで 利用可能種目 少年軟式野球、ソフトボール、サッカー、グラウンド・ゴルフ 所在地 豊川市桜ヶ丘町79-2 設備 ソフトボール場 1面
+23208,津島市,愛知県,surveyed,True,False,1,facility,facility,71,exhausted,0,0,https://www.city.tsushima.lg.jp/shisetsu/sports/higashikouengrando.html,facility,facility,東公園グラウンド 津島市公式ホームページ,15年1月30日 東公園グラウンド サッカーやソフトボール、グラウンドゴルフなど多目的に利用されています。市主催行事・各種スポーツ大会な
+23209,碧南市,愛知県,surveyed,True,False,1,organization,event,146,exhausted,0,0,https://www.city.hekinan.lg.jp/event_sports/sports_promotion/sports_association/14744.html,event,organization,碧南市レクリエーション協会/碧南市,を深めています。 (連絡先 榊原純子41-9301) 碧南市グラウンド・ゴルフ協会 会長 三浦信仁 毎週1~6回の練習と、休憩時間には会員
+23210,刈谷市,愛知県,surveyed,False,False,0,,,200,exhausted,0,0,,,,,
+23211,豊田市,愛知県,surveyed,False,False,0,,,200,max_pages,0,0,,,,,
+23212,安城市,愛知県,surveyed,True,True,6,event|facility|other,event|facility|listing,89,exhausted,0,2,https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/sportstop.html,listing,facility,安城市/スポーツ施設について,・外部リンク) 和泉公園運動広場 秋葉公園テニスコート 西部グラウンドゴルフ場 スポーツ施設予約 スポーツ施設の予約について 熱中症警戒
+23213,西尾市,愛知県,surveyed,True,False,13,facility|organization,facility|listing,89,exhausted,0,0,https://www.city.nishio.aichi.jp/shisetsu/sports/1001573/index.html,listing,facility,屋外スポーツ施設|西尾市公式ウェブサイト,場 西尾市緑ヶ崎野球場 西尾市寺部ソフトボール場 西尾市吉良グラウンド・ゴルフ場 西尾市松原グラウンド・ゴルフ場 西尾市浜ノ山グラウンドA
+23214,蒲郡市,愛知県,surveyed,True,False,4,facility,facility,200,max_pages,0,0,https://www.city.gamagori.lg.jp/site/yakyuujou/,facility,facility,野球場・ソフトボール場 - 愛知県蒲郡市公式ホームページ,ウンド 蒲郡市三谷町水神町通9 軟式野球2面 他に少年野球・グラウンドゴルフ・ゲートボールの利用可。 夜間照明設備あり(4月1日から10
+23215,犬山市,愛知県,surveyed,True,True,8,facility,facility|listing,125,exhausted,0,2,https://www.city.inuyama.aichi.jp/kurashi/sports/1000791/1004678.html,listing,facility,体育施設利用案内|犬山市,木曽川犬山緑地テニスコート 野外活動センター キャンプ広場、グラウンド・ゴルフさるコース 第20回アジア競技大会に伴うエナジーサポートアリ
+23216,常滑市,愛知県,surveyed,True,True,2,facility,facility,95,exhausted,0,1,https://www.city.tokoname.aichi.jp/kurashi/sportspark/1000999/1003952.html,facility,facility,スポーツ用具の貸し出しについて|常滑市,DF 357.8KB) ボッチャ (PDF 89.8KB) グラウンドゴルフ (PDF 166.6KB) PDFファイルをご覧いただくに
+23217,江南市,愛知県,surveyed,True,False,6,facility,facility|listing,113,exhausted,0,0,https://www.city.konan.lg.jp/shisetsu/sports/1003417.html,listing,facility,施設案内 グラウンド・ゴルフ場(緑地公園内)|江南市公式ホームページ,施設案内 グラウンド・ゴルフ場(緑地公園内) ページID 1003417 更新日 令和4
+23219,小牧市,愛知県,no_seed,False,False,0,,,0,,0,0,,,,,
+23220,稲沢市,愛知県,surveyed,True,False,5,facility|organization,event|facility,162,exhausted,0,0,https://www.city.inazawa.aichi.jp/0000000530.html,facility,facility,施設案内 1号遊水地運動広場 | 稲沢市,目 硬式野球(高校生以上不可) 軟式野球 ソフトボール1面 グラウンド・ゴルフ等軽スポーツ 利用時間 午前8時~午後6時 使用料 無料 団
+23221,新城市,愛知県,surveyed,True,False,4,event|facility,event|facility,89,exhausted,0,0,https://www.city.shinshiro.lg.jp/mokuteki/shisetu/kyoiku-bunka/onikubo/ground.html,facility,facility,グラウンド(鬼久保ふれあい広場):新城市,ンド グラウンドは黒土で整備されており、軟式野球やサッカー、グラウンド・ゴルフなど様々な種目の大会や合宿、練習場所の会場として使用できます
+23222,東海市,愛知県,surveyed,True,False,4,facility,facility|listing,113,exhausted,0,0,https://www.city.tokai.aichi.jp/bunka/1002868/1002873/index.html,listing,facility,スポーツ施設|東海市公式ウェブサイト,・パターゴルフ場 加木屋運動公園 野球場・テニスコート 荒尾グラウンドゴルフ場 大池公園 野球場・テニスコート 平地公園 野球場・テニス
+23223,大府市,愛知県,surveyed,True,False,4,facility|other,facility,200,max_pages,0,0,https://www.city.obu.aichi.jp/bunka/sports/sports_shisetsu/1007094.html,facility,facility,グラウンド|大府市,ー等 米田多目的グラウンド ソフトボール等 桜木多目的広場 グラウンド・ゴルフ、ゲートボール 長草多目的広場 グラウンド・ゴルフ、ゲートボ
+23224,知多市,愛知県,surveyed,True,False,10,facility|organization|other,event|facility,140,exhausted,0,0,https://www.city.chita.lg.jp/docs/2021070300010/,facility,facility,南5区多目的グラウンド | 知多市,(大人4面、子ども4面) サッカー(大人2面、子ども2面) グラウンドゴルフ等 施設規模 AB(168m×92m)、CD(164m×92
+23225,知立市,愛知県,surveyed,True,True,6,event|facility,event|facility,80,exhausted,0,1,https://www.city.chiryu.aichi.jp/kanko_bunka_sports/sports/1/1451813692260.html,facility,facility,北林運動広場紹介/知立市 -輝くまち、みんなの知立‐,、簡易トイレ(男女各1)、倉庫 利用可能種目 ゲートボール・グラウンドゴルフ・ペタンク など 利用方法 知立市内に活動拠点がある団体(1
+23226,尾張旭市,愛知県,surveyed,True,True,3,event|facility|organization,event|facility,117,exhausted,0,1,https://www.city.owariasahi.lg.jp/page/1928.html,facility,organization,スポーツ推進委員について - 尾張旭市公式ホームページ(健康都市・スポーツ課),約半分のコート、スポンジボール、軽いラケットを使用します。 グラウンド・ゴルフ ゴルフをアレンジしたスポーツで、高度な技術を必要とせず、誰
+23227,高浜市,愛知県,surveyed,True,False,2,facility,facility|listing,40,exhausted,0,0,https://www.city.takahama.lg.jp/soshiki/bunka/18786.html,listing,facility,スポーツ施設情報ページ - 高浜市ホームページ,(地域交流施設たかぴあ) 利用用途 少年野球、少年サッカー、グラウンドゴルフ、地域の活動 等 施設利用方法 スポーツ施設利用申請 【申請
+23228,岩倉市,愛知県,surveyed,True,False,9,event|organization|other,event|facility|listing|sports_nav,170,exhausted,0,0,https://www.city.iwakura.aichi.jp/category/1-9-1-0-0-0-0-0-0-0.html,listing,other,スポーツ | 岩倉市,車場) 模擬店にて食べ物、飲み物を販売します。 第30回市民グラウンドゴルフ大会の参加者を募集しています [2026年9月30日] 黒木
+23229,豊明市,愛知県,surveyed,True,True,1,organization,event,79,exhausted,0,6,https://www.city.toyoake.lg.jp/3409.htm,event,organization,レクリエーション協会/豊明市,ット・バードゴルフ協会会員募集案内(pdf 2627KB) グラウンドゴルフ協会 グラウンド・ゴルフ協会活動案内(pdf 426KB) 
+23230,日進市,愛知県,surveyed,False,False,0,,,92,exhausted,0,0,,,,,
+23231,田原市,愛知県,surveyed,True,False,1,event,event,154,exhausted,0,0,https://www.city.tahara.aichi.jp/event/sports/1011201.html,event,event,第21回田原市スポーツギネス大会|田原市,2、第3ゲートの順に通過し、ポールに当てた連続回数を競う。 グラウンドゴルフ ホールポストの中心点からの距離で得点を競う。 主催 田原市
+23232,愛西市,愛知県,surveyed,False,False,0,,,108,exhausted,0,0,,,,,
+23233,清須市,愛知県,surveyed,False,False,0,,,99,exhausted,0,0,,,,,
+23234,北名古屋市,愛知県,surveyed,True,False,3,facility|other,facility,103,exhausted,0,0,https://www.city.kitanagoya.lg.jp/bunka/sports/1004073/1004096.html,facility,facility,親水運動広場|北名古屋市公式ウェブサイト,ボール・サッカー(小学生以下)・ソフトボール(小学生以下)・グラウンドゴルフ 駐車場 5台 その他設備 トイレ、バックネット 地図 地図
+23235,弥富市,愛知県,surveyed,True,False,1,event,event,69,exhausted,0,0,https://www.city.yatomi.lg.jp/kurashi/1000296/1000305/1003639.html,event,event,市スポーツ大会・教室|弥富市公式ホームページ,育センター (アリーナ) 12月16日から 1月14日まで グラウンドゴルフ大会 3月6日 予備日:3月13日 子宝グランド 1月20日
+23236,みよし市,愛知県,surveyed,False,False,0,,,96,exhausted,0,0,,,,,
+23237,あま市,愛知県,surveyed,True,False,1,facility,facility,43,exhausted,0,0,https://www.city.ama.aichi.jp/shisetsu/1004201/1004584/1004209.html,facility,facility,施設案内 森グラウンド|あま市公式ウェブサイト,シューズは可)。 施設内容 軟式野球 2面 少年野球 2面 グラウンドゴルフ 施設の利用方法 専用利用 あま市公共施設予約システムにて、
+23238,長久手市,愛知県,surveyed,True,False,1,organization,facility,63,exhausted,0,0,https://www.city.nagakute.lg.jp/kanko_bunka_sports/2/1/13700.html,facility,organization,スポーツ協会/長久手市,RCジュニア(小学生)会員募集 長久手RCジュニアのブログ グラウンド・ゴルフ連盟 会長 中野 孝春 62-1694 事務局 後藤 康 6
+23302,東郷町,愛知県,surveyed,True,False,7,facility|organization|other,facility,52,exhausted,0,0,https://www.town.aichi-togo.lg.jp/kanko_bunka_sports/sports/sportsshisetsu/5573.html,facility,facility,境川多目的広場/東郷町,設の特徴 ソフトボール、少年野球、少年サッカー、フットサル、グラウンドゴルフ等のスポーツができる施設です。 境川をはさんで第1多目的広場
+23342,豊山町,愛知県,surveyed,True,False,1,facility,facility,67,exhausted,0,0,https://www.town.toyoyama.lg.jp/shisetsu/sports/1000994.html,facility,facility,青山ゲートボール場|豊山町公式ウェブサイト,8年4月1日 印刷 大きな文字で印刷 ゲートボール専用です。グラウンド・ゴルフではご利用いただけません。 地図 map 青山ゲートボール場
+23361,大口町,愛知県,surveyed,True,False,2,facility|other,facility,26,exhausted,0,0,https://www.town.oguchi.lg.jp/2698.htm,facility,facility,多目的広場/大口町,賞について 歴史民俗資料館 ページの先頭へ戻る 多目的広場 グラウンドゴルフやレクレーション、軽スポーツなどにご利用いただけます。 住所
+23362,扶桑町,愛知県,surveyed,True,False,1,organization,facility,98,exhausted,0,0,https://www.town.fuso.lg.jp/sports/1001972/1003962.html,facility,organization,扶桑町スポーツ協会|扶桑町公式ホームページ, ソフトボール協会 会 長 大河原光雄 理事長 山田 正直 グラウンド・ゴルフ協会 会 長 伊藤伊佐夫 副会長 金井 勝 バドミントン協会
+23424,大治町,愛知県,surveyed,True,False,8,event|facility|organization,event|facility,65,exhausted,0,0,https://www.town.oharu.aichi.jp/2518.htm,facility,facility,多目的スポーツ広場/大治町,スポーツ課へお申し込みください。 利用競技は、ゲートボール・グラウンドゴルフとなります。これ以外で使用したい場合は、事前に教育委員会と協
+23425,蟹江町,愛知県,surveyed,False,False,0,,,42,exhausted,0,0,,,,,
+23427,飛島村,愛知県,surveyed,True,False,2,organization,facility,59,exhausted,0,0,https://www.vill.tobishima.aichi.jp/bunkasports/sports/1002030/index.html,facility,organization,スポーツ協会|飛島村公式ホームページ,ール連盟 サッカー協会 インディアカ協会(チーム名:飛翔) グラウンドゴルフ協会 ソフトテニス協会 カローリング協会 育成クラブ 剣道ク
+23441,阿久比町,愛知県,surveyed,False,False,0,,,122,exhausted,0,0,,,,,
+23442,東浦町,愛知県,surveyed,True,False,1,organization,facility,185,exhausted,0,0,https://www.town.aichi-higashiura.lg.jp/kanko_bunka/sports/shinko/1454930915157.html,facility,organization,東浦町スポーツ協会/東浦町,球部 ソフトボール部 サッカー部 ソフトテニス部 テニス部 グラウンド・ゴルフ部 ソフトバレーボール部 バレーボール部 バスケットボール部
+23445,南知多町,愛知県,surveyed,False,False,0,,,44,exhausted,0,0,,,,,
+23446,美浜町,愛知県,surveyed,False,False,0,,,45,exhausted,0,0,,,,,
+23447,武豊町,愛知県,surveyed,False,False,0,,,84,exhausted,0,0,,,,,
+23501,幸田町,愛知県,surveyed,True,False,5,facility|organization|other,facility|listing,38,exhausted,0,0,https://www.town.kota.lg.jp/life/1/16/91/,listing,other,スポーツ - 幸田町公式ホームページ, 幸田町大日蔭運動場 2020年7月27日更新 幸田町大日蔭グラウンド・ゴルフ場 2020年7月27日更新 幸田町スポーツ協会少年少女スポ
+23561,設楽町,愛知県,surveyed,True,False,1,facility,facility,39,exhausted,0,0,https://www.town.shitara.lg.jp/soshiki/13/1250.html,facility,facility,津具スポーツ広場 - 設楽町公式ホームページ,8日更新 印刷ページ表示 野球やソフトボール・ゲートボール・グランドゴルフ等さまざまなスポーツにご利用いただけます。 夜間照明(ナイタ
+23562,東栄町,愛知県,surveyed,False,False,0,,,22,exhausted,0,0,,,,,
+23563,豊根村,愛知県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
