@@ -69,7 +69,10 @@ def test_robots_disallow_is_respected_and_budget_is_limited():
 
 
 def test_no_seed_and_unreachable_robots():
-    assert sv.survey_municipality(M, {"nav_links": [], "genre_entrypoints": []}, make_fetcher({}), SPEC, sv.SurveyConfig())["outcome"] == "no_seed"
+    out0 = sv.survey_municipality(M, {"nav_links": [], "genre_entrypoints": []}, make_fetcher({}), SPEC, sv.SurveyConfig())
+    assert out0["outcome"] == "fetch_failed" and out0["failure_class"].startswith("top_fetch_")  # 入口が無く、トップも取れない
+    plain = {"/robots.txt": (404, "text/plain", ""), "/": page("トップ", '<a href="/news/">お知らせ</a>')}
+    assert sv.survey_municipality(M, {"nav_links": [], "genre_entrypoints": []}, make_fetcher(plain), SPEC, sv.SurveyConfig())["outcome"] == "no_seed"
     r = result(cands=[("スポーツ", "https://www.city.example.jp/sports/")])
     out = sv.survey_municipality(M, r, make_fetcher({"/robots.txt": (503, "text/plain", "")}), SPEC, sv.SurveyConfig(retry_wait=0))
     assert out["outcome"] == "fetch_failed" and out["failure_class"] == "robots_unreachable" and not out["pages"]
@@ -170,3 +173,41 @@ def test_negated_mentions_are_not_hits():  # 豊山町: 『グラウンド・ゴ
     out = sv.survey_municipality(M, result(cands=[("スポーツ", "https://www.city.example.jp/sports/")]), make_fetcher(routes), SPEC, sv.SurveyConfig(route="t"))
     by = {p["url"].rsplit("/", 1)[-1]: p for p in out["pages"]}
     assert not by["1"]["hit"] and by["1"]["negated"] == 1 and by["2"]["hit"]
+
+
+def test_negation_only_counts_on_the_same_line_as_the_word():  # D-116: 禁止されているのは他のスポーツ
+    html = '<ul><li>グラウンド・ゴルフ</li><li>ゲートボール</li><li>野球・サッカーは使用禁止です</li></ul><p>多目的広場は、グラウンドゴルフ、ゲートボールに利用できます。</p><table><tr><th>利用種目</th><td>グラウンドゴルフ</td></tr><tr><th>注意</th><td>ゴルフ練習は禁止</td></tr></table>'
+    title, body = _pt(f"<html><head><title>T</title></head><body><main>{html}{'<p>本文です。</p>' * 20}</main></body></html>")
+    assert len(SPEC.find_affirmative(body)) == 3  # 3か所とも、同じ行に否定は無い
+    assert len(SPEC.find_lines(body)) == 3
+    one = "<p>ゲートボール専用です。グラウンド・ゴルフではご利用いただけません。</p>"
+    _, body2 = _pt(f"<html><body><main>{one}{'<p>本文です。</p>' * 20}</main></body></html>")
+    assert SPEC.find_lines(body2) and not SPEC.find_affirmative(body2)  # 同じ行の否定は外す
+
+
+def test_classify_facility_with_weak_event_word_in_name():  # 大垣市: 山村体験宿泊施設は施設
+    assert sv.classify_page("大垣市かみいしづ緑の村公園・大垣市山村体験宿泊施設奥養老") == "facility"
+    assert sv.classify_page("体験会のお知らせ") == "event"
+    assert sv.classify_page("第56回四日市市民スポーツフェスタ開催について") == "event"
+
+
+def test_fallback_seeds_find_sports_through_broad_categories():  # D-117: スポーツの入口が見つからない自治体
+    routes = {
+        "/robots.txt": (404, "text/plain", ""),
+        "/": page("トップ", '<a href="/bunka/">文化・生涯学習</a><a href="/news/">お知らせ</a><a href="/sitemap/">サイトマップ</a>'),
+        "/bunka/": page("文化・生涯学習", '<a href="/bunka/sports/">スポーツ</a><a href="/bunka/lib/">図書館</a>'),
+        "/bunka/sports/": page("スポーツ", '<a href="/f/1">中央運動場</a>'),
+        "/f/1": page("中央運動場", "<p>グラウンド・ゴルフができます。</p>"),
+        "/sitemap/": page("サイトマップ", '<a href="/bunka/sports/">スポーツ</a>'),
+    }
+    out = sv.survey_municipality(M, {"nav_links": [], "genre_entrypoints": []}, make_fetcher(routes), SPEC, sv.SurveyConfig(route="t"))
+    assert out["outcome"] == "surveyed" and out["seed_mode"] == "fallback" and out["found"]
+    f1 = next(p for p in out["pages"] if p["url"].endswith("/f/1"))
+    assert f1["hit"] and f1["depth"] == 2  # 大分類(深さ0)→スポーツ(1)→運動場(2)
+    assert [s["role"] for s in out["seeds"]][0] == "broad" and out["seeds"][0]["text"] == "サイトマップ"
+
+
+def test_fallback_seeds_ranking():
+    links = [{"text": t, "url": f"https://x.jp/{i}", "same_site": True, "is_pdf": False} for i, t in enumerate(["お知らせ", "観光", "文化・生涯学習", "サイトマップ", "スポーツ", "予約システム"])]
+    seeds = sv.fallback_seeds(links)
+    assert [s["text"] for s in seeds] == ["サイトマップ", "スポーツ", "文化・生涯学習", "観光"]

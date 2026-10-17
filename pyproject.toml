@@ -15,6 +15,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "pyyaml>=6"]
+headless = ["playwright>=1.40"]
 
 [project.scripts]
 localgov-crawler = "localgov_crawler.cli:main"

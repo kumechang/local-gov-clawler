@@ -85,6 +85,132 @@
       "route": "stage1_toyama",
       "from_route": "redecide_v12_1",
       "max_pages": 200
+    },
+    {
+      "prefecture": "三重県",
+      "keyword": "grandgolf",
+      "route": "stage1b_mie",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "岐阜県",
+      "keyword": "grandgolf",
+      "route": "stage1b_gifu",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "静岡県",
+      "keyword": "grandgolf",
+      "route": "stage1b_shizuoka",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "滋賀県",
+      "keyword": "grandgolf",
+      "route": "stage1b_shiga",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "石川県",
+      "keyword": "grandgolf",
+      "route": "stage1b_ishikawa",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "富山県",
+      "keyword": "grandgolf",
+      "route": "stage1b_toyama",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "京都府",
+      "keyword": "grandgolf",
+      "route": "stage2_kyoto",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "大阪府",
+      "keyword": "grandgolf",
+      "route": "stage2_osaka",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "兵庫県",
+      "keyword": "grandgolf",
+      "route": "stage2_hyogo",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "奈良県",
+      "keyword": "grandgolf",
+      "route": "stage2_nara",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "和歌山県",
+      "keyword": "grandgolf",
+      "route": "stage2_wakayama",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "茨城県",
+      "keyword": "grandgolf",
+      "route": "stage2_ibaraki",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "栃木県",
+      "keyword": "grandgolf",
+      "route": "stage2_tochigi",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "群馬県",
+      "keyword": "grandgolf",
+      "route": "stage2_gunma",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "埼玉県",
+      "keyword": "grandgolf",
+      "route": "stage2_saitama",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "千葉県",
+      "keyword": "grandgolf",
+      "route": "stage2_chiba",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "東京都",
+      "keyword": "grandgolf",
+      "route": "stage2_tokyo",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "神奈川県",
+      "keyword": "grandgolf",
+      "route": "stage2_kanagawa",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
     }
   ]
 }
