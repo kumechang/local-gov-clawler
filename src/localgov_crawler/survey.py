@@ -19,7 +19,7 @@ from .municipalities import Municipality
 from .nav import base_host, extract_links, is_same_site, norm_text
 from .pipeline import Config, _Ctx, _now
 
-SURVEY_SCHEMA = 5
+SURVEY_SCHEMA = 6
 
 # 予約システム・ログインが必要なページには入らない(handoff §3、CLAUDE.md)
 RESERVATION_URL = re.compile(r"yoyaku|reserve|rsv|login|logon|signin|/sp/reserve|shisetsu-?yoyaku|k-?system|eshisetsu|e-?shisetsu", re.I)
@@ -32,6 +32,7 @@ FOLLOW_SPORTS = re.compile(
 EVENT_ENTRANCE = re.compile(r"スポーツ.{0,6}(大会|イベント|教室|行事|スケジュール|カレンダー)|大会|イベント|行事|教室|講座")
 EVENT_LINK = re.compile(r"大会|イベント|行事|教室|講座|体験|交流|カップ|選手権|フェスタ|フェスティバル|祭|レクリエーション|ウォーキング|マラソン")
 # 個別のお知らせ記事(入口にしない)
+SITEMAP_LABEL = re.compile(r"サイトマップ|サイト内の?案内")
 NEWS_LABEL = re.compile(r"お知らせ|に関する|令和|第\d+回|募集|結果|開催のお|について")
 # ナビ・サイドバー等を表すクラス名・ID(トークンが完全に一致するときだけ。部分一致だと、ページ全体を囲む要素まで消してしまう、D-111)
 _CHROME_TOKEN = re.compile(r"(?:g|global|local|main|side|sub|foot|head|top|page)?-?(?:nav|navi|navigation|gnav|menu|sidebar|sidenav|breadcrumbs?|pankuzu|topicpath|footer|header)", re.I)
@@ -206,11 +207,46 @@ def seeds_from_result(result: dict, max_seeds: int = 12) -> list[dict]:
     return sorted(seeds, key=lambda s: order[s["role"]])[:max_seeds]
 
 
+BROAD_NAV = re.compile(r"サイトマップ|サイト内の?案内|文化|生涯学習|学習|教育|くらし|暮らし|生活|施設|市民|町民|村民|観光|イベント|行事|健康|レクリエーション|分野|目的|各課")
+
+
+def fallback_seeds(links: list[dict], max_seeds: int = 12) -> list[dict]:
+    """スポーツの入口が見つからない自治体の入口(D-117)。トップのナビにある『サイトマップ』『文化・生涯学習』『施設』『イベント』などの
+    大分類を入口にし、その先でスポーツのリンクを探す(1階層深くたどる)。"""
+    cand = []
+    for l in links:
+        t = norm_text(l.get("text", ""))
+        if not l.get("same_site", True) or l.get("is_pdf") or len(t) > 24 or not t:
+            continue
+        if not (BROAD_NAV.search(t) or hub.SPORTS_WORD.search(t)) or RESERVATION_TEXT.search(t) or NEWS_LABEL.search(t) or RESERVATION_URL.search(l["url"]):
+            continue
+        if SITEMAP_LABEL.search(t):
+            rank = 0
+        elif hub.SPORTS_WORD.search(t):
+            rank = 1
+        elif re.search(r"文化|生涯学習|学習|教育", t):
+            rank = 2
+        elif re.search(r"施設|イベント|行事", t):
+            rank = 3
+        else:
+            rank = 4
+        cand.append((rank, t, l["url"]))
+    seeds, seen = [], set()
+    for rank, t, url in sorted(cand, key=lambda x: x[0]):
+        if url in seen:
+            continue
+        seen.add(url)
+        seeds.append({"url": url, "role": "sports_nav" if hub.SPORTS_WORD.search(t) else "broad", "source": "fallback", "text": t})
+    return seeds[:max_seeds]
+
+
 def _child_role(parent_role: str, text: str, spec: KeywordSpec) -> str | None:
     """リンクをたどるか・たどるならどの役割か。たどらないなら None。"""
     t = norm_text(text)
     if len(t) > 60 or RESERVATION_TEXT.search(t) or hub.STRONG_NEWS.search(t) and not EVENT_LINK.search(t):
         return None
+    if parent_role == "broad" and hub.SPORTS_WORD.search(t) and not spec.in_text(t):
+        return "sports_nav"  # 入口が見つからない自治体: 大分類のページの中の『スポーツ』への入口(D-117)
     if spec.in_text(t):
         return "facility" if parent_role != "event" else "event"
     if parent_role == "event":
@@ -262,27 +298,41 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
         return
     out["nav_hits"] = [{"text": l["text"], "url": l["url"]} for l in result.get("nav_links", []) if spec.in_text(l["text"]) and l.get("same_site")][:20]
     seeds = seeds_from_result(result, cfg.max_seeds)
-    out["seeds"] = seeds
-    if not seeds:
-        out["outcome"] = "no_seed"
-        return
+    out["seed_mode"] = "normal"
     robots = ctx.load_robots(m.url)
     if robots.unreachable:
         out["outcome"], out["failure_class"] = "fetch_failed", "robots_unreachable"
         return
     site_host = base_host(m.url)
-    heap: list[tuple[int, int, int, str, str, int, str]] = []
+    if not seeds:
+        # 入口が見つからない自治体(D-117): ナビが取れていない・JS描画なら、トップを取得し直し(JS描画はヘッドレス)、大分類を入口にする
+        links = [l for l in result.get("nav_links", []) if l.get("same_site") and not l.get("is_pdf")]
+        needs_headless = bool(result.get("site_profile", {}).get("rendering", {}).get("needs_headless"))
+        if needs_headless or len(links) < 5:
+            top = ctx.get(m.url)
+            if top.ok and is_same_site(top.final_url, site_host):
+                links = [l.to_dict() for l in extract_links(parse_html(decode_bytes(top.body, top.content_type)), top.final_url, site_host) if l.same_site and not l.is_pdf]
+            elif not links:
+                out["outcome"], out["failure_class"] = "fetch_failed", f"top_fetch_{top.error_class or 'other'}"
+                return
+        seeds = fallback_seeds(links, cfg.max_seeds)
+        out["seed_mode"] = "fallback"
+    out["seeds"] = seeds
+    if not seeds:
+        out["outcome"] = "no_seed"
+        return
+    heap: list = []
     seq = 0
 
-    def push(url: str, role: str, depth: int, via: str, text: str) -> None:
+    def push(url: str, role: str, depth: int, via: str, text: str, maxd: int) -> None:
         nonlocal seq
         seq += 1
         cls, d = _priority(role, depth, text or via, spec)
-        heapq.heappush(heap, (cls, d, seq, url, role, depth, via))
+        heapq.heappush(heap, (cls, d, seq, url, role, depth, via, maxd))
 
     queued = {s["url"] for s in seeds}
     for sd in seeds:
-        push(sd["url"], sd["role"], 0, "seed", sd.get("text", ""))
+        push(sd["url"], sd["role"], 0, "seed", sd.get("text", ""), cfg.seed_depth + (1 if sd["role"] == "broad" or sd.get("source") == "fallback" else 0))
     fetched = 0
     event_pages = 0
     stopped = "exhausted"
@@ -290,7 +340,7 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
         if fetched >= cfg.max_pages:
             stopped = "max_pages"
             break
-        _, _, _, url, role, depth, via = heapq.heappop(heap)
+        _, _, _, url, role, depth, via, maxd = heapq.heappop(heap)
         if role == "event" and event_pages >= cfg.max_event_pages:
             continue
         res = ctx.get(url)
@@ -319,7 +369,7 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
         for l in links:
             if l.is_pdf and spec.in_text(l.text) and len(out["pdf_link_hits"]) < 20:
                 out["pdf_link_hits"].append({"text": l.text[:80], "url": l.url, "page": url})
-        if depth >= cfg.seed_depth:
+        if depth >= maxd:
             continue
         for l in links:
             if not l.same_site or l.is_pdf or l.url in queued or RESERVATION_URL.search(l.url) or l.region in ("footer",):
@@ -328,7 +378,7 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
             if child is None:
                 continue
             queued.add(l.url)
-            push(l.url, child, depth + 1, norm_text(l.text)[:40], norm_text(l.text))
+            push(l.url, child, depth + 1, norm_text(l.text)[:40], norm_text(l.text), maxd)
     _drop_boilerplate(out["pages"], fetched)
     out["outcome"] = "surveyed"
     out["stopped"] = stopped

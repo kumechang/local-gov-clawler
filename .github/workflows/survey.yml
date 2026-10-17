@@ -83,7 +83,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -e .
+      - run: pip install -e ".[headless]"
+      - name: install chromium (JS描画のサイト用)
+        run: python -m playwright install --with-deps chromium
       - name: survey
         env:
           PREFECTURE: ${{ inputs.prefecture }}
@@ -94,7 +96,7 @@ jobs:
           TOTAL: ${{ inputs.shards }}
           SHARD: ${{ matrix.shard }}
         run: |
-          args=(survey --scope municipality --keywords "config/keywords/$KEYWORD.json" --route "$ROUTE" --from-route "$FROM_ROUTE" --max-pages "$MAX_PAGES" --shard "$SHARD/$TOTAL" --out out/survey)
+          args=(survey --scope municipality --keywords "config/keywords/$KEYWORD.json" --route "$ROUTE" --from-route "$FROM_ROUTE" --max-pages "$MAX_PAGES" --shard "$SHARD/$TOTAL" --out out/survey --headless)
           if [ -n "$PREFECTURE" ]; then args+=(--prefecture "$PREFECTURE"); fi
           localgov-crawler "${args[@]}"
       - uses: actions/upload-artifact@v4

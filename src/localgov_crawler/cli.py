@@ -190,15 +190,27 @@ def cmd_survey(args) -> int:
 
     def work(group):
         f = Fetcher(user_agent=build_user_agent(contact), proxy=proxy, min_interval=args.interval)
+        hl = None
         try:
             for m in group:
-                res = sv.survey_municipality(m, stored.get(m.code), f, spec, cfg)
+                r = stored.get(m.code)
+                fetcher, before = f, (0, 0)
+                # JS描画のサイトは、ヘッドレスブラウザで取得する(handoff §2のフォールバック。D-117)
+                if args.headless and r and r.get("site_profile", {}).get("rendering", {}).get("needs_headless"):
+                    from .headless import HeadlessFetcher, HybridFetcher
+                    hl = hl or HeadlessFetcher(build_user_agent(contact), min_interval=args.interval)
+                    fetcher, before = HybridFetcher(f, hl), (hl.pages, hl.subrequests)
+                res = sv.survey_municipality(m, r, fetcher, spec, cfg)
+                if fetcher is not f:
+                    res["run"]["headless"] = {"pages": hl.pages - before[0], "subrequests": hl.subrequests - before[1]}
                 sv.write_survey(out, res, m.prefecture_code)
                 with lock:
                     counter[0] += 1
                     print(f"[{counter[0]}/{len(sel)}] {m.code} {m.name}: {res['outcome']} found={res['found']} pages={res.get('pages_fetched', 0)} {res['failure_class']}".strip(), flush=True)
         finally:
             f.close()
+            if hl is not None:
+                hl.close()
 
     with ThreadPoolExecutor(max_workers=args.workers) as ex:
         for fut in as_completed([ex.submit(work, g) for g in group_by_host(sel)]):
@@ -277,6 +289,7 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--max-pages", type=int, default=200); sp.add_argument("--depth", type=int, default=2)
     sp.add_argument("--workers", type=int, default=4); sp.add_argument("--interval", type=float, default=1.0)
     sp.add_argument("--use-proxy", action="store_true")
+    sp.add_argument("--headless", action="store_true", help="JS描画のサイト(needs_headless)をヘッドレスブラウザで取得する(要 playwright)")
     sp.set_defaults(fn=cmd_survey)
 
     sp = sub.add_parser("survey-summary")
