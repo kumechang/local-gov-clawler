@@ -1,0 +1,20 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+25201,大津市,滋賀県,surveyed,True,True,8,event|facility|other,event|facility,116,exhausted,0,5,https://www.city.otsu.lg.jp/sc/s/sh/index.html,facility,facility,スポーツ関連施設/大津市,民運動広場 瀬田南市民運動広場 スポーツ関連施設 大津大石淀グラウンド・ゴルフ場 学校体育施設開放のご案内 坂本市民格技場 比良げんき村 
+25202,彦根市,滋賀県,surveyed,True,False,8,facility|other,facility|listing,115,exhausted,0,0,https://www.city.hikone.lg.jp/kakuka/toshi_seisaku/7_1/kouen/2/2/4143.html,listing,facility,彦根市金亀公園運動施設(施設の概要)/彦根市,ントシェルターあり サッカー、ラグビー、グラウンドホッケー、グラウンドゴルフなど多目的にご利用いただけます。 株式会社Mi-Oスポーツと
+25203,長浜市,滋賀県,surveyed,True,False,3,facility|organization,event|facility,116,exhausted,0,0,https://www.city.nagahama.lg.jp/0000002398.html,facility,facility,多目的グラウンド | 長浜市,73 施設の概要:野球1面、ソフト2面、ゲートボール10面、グラウンドゴルフなど(夜間照明つき) 【位置図】 別ウィンドウで開く 山本山
+25204,近江八幡市,滋賀県,surveyed,True,False,4,facility,facility|listing,36,exhausted,0,0,https://www.city.omihachiman.lg.jp/soshiki/sports/shisetsu-riyou/11866.html,listing,facility,市内スポーツ施設 地図情報/近江八幡市,な地図を見る(GoogleMapページへ) 日野川多目的広場グラウンドゴルフ場 野村町 大きな地図を見る(GoogleMapページへ) 
+25206,草津市,滋賀県,surveyed,True,False,2,facility|other,facility|listing,95,exhausted,0,0,https://www.city.kusatsu.shiga.jp/bunka/sports/shisetsu/shakaishisetsu.html,listing,facility,社会体育施設|草津市,ンド 野村3丁目2番5号 軟式野球・ソフトボール・サッカー・グラウンドゴルフ 等 電話:077-563-1265 ファクス:077-56
+25207,守山市,滋賀県,surveyed,True,False,2,event|organization,event,95,exhausted,0,0,https://www.city.moriyama.lg.jp/kanko_event_manabi/event_leisure/1002762/1002780/index.html,event,event,スポーツイベント|滋賀県守山市公式ウェブサイト,ベントについて 関西サッカーリーグ 守山ダービーの開催 守山グラウンド・ゴルフ交流大会
+25208,栗東市,滋賀県,surveyed,False,False,0,,,6,exhausted,0,0,,,,,
+25209,甲賀市,滋賀県,surveyed,True,False,5,facility,facility|listing,53,exhausted,0,0,https://www.city.koka.lg.jp/5214.htm,listing,facility,運動公園・グラウンド/甲賀市,027(貴生川地域市民センター) 施設内容 ゲートボール場、グラウンドゴルフ場、ターゲットバードゴルフ場 利用時間 8時30分~17時0
+25210,野洲市,滋賀県,surveyed,True,False,1,facility,facility,52,exhausted,0,0,https://www.city.yasu.lg.jp/soshiki/kouhouhisho/yasu_shisetsu/1450924208494.html,facility,facility,野洲市野洲川河川公園/野洲市,",000円に満たない場合は、10,000円を徴収する。 ク.グラウンドゴルフ場(個人使用) 土曜日、日曜日、祝日 グラウンドゴルフ場の土"
+25211,湖南市,滋賀県,surveyed,True,False,1,event,event,93,exhausted,0,0,https://www.city.shiga-konan.lg.jp/kanko/supotsu/konansportssuishin/40340.html,event,event,第7回湖南市スポーツフェスティバルを開催しました!/湖南市,・保健センターの保健師、看護師による糖化度測定、血圧測定 ・グラウンド・ゴルフ(ホールインワンゲーム、コースチャレンジ) ・ゲートボール(
+25212,高島市,滋賀県,surveyed,True,False,4,facility|organization,facility,43,exhausted,0,0,https://www.city.takashima.lg.jp/kurashi_tetsuzuki/shisetsuannai/1/4628.html,facility,facility,今津総合運動公園・今津B&G海洋センター/高島市,内2面、屋外4面 屋外ゲートボール場 テニスコート 10面 グラウンドゴルフ場 今津屋根付き運動場「サンルーフ今津」 今津B&G海洋セン
+25213,東近江市,滋賀県,no_seed,False,False,0,,,0,,0,0,,,,,
+25214,米原市,滋賀県,surveyed,True,False,1,facility,facility,70,exhausted,0,0,https://www.city.maibara.lg.jp/kanko/sport/riyou/taiiku/hiroba/16902.html,facility,facility,米原市番場多目的広場の利用について/米原市,おりです。御利用になる場合は、申請書に記載をしてください。 グラウンドゴルフセット(8ホール分) フットサルゴール 1組 米原市番場多目
+25383,日野町,滋賀県,surveyed,True,False,3,event|facility|other,event|facility,77,exhausted,0,0,https://www.town.shiga-hino.lg.jp/0000004873.html,facility,facility,大谷公園・大谷体育館について | 日野町役場," 全天候型オムニコート3面(内1面乱打板付) ナイター設備 グラウンドゴルフ場 施設面積:7,200平方メートル(芝面積)常設3コース("
+25384,竜王町,滋賀県,surveyed,True,True,2,facility|organization,facility,12,exhausted,0,1,https://www.town.ryuoh.shiga.jp/life/education/sofugawakouen_riyou.html,facility,facility,|竜王町祖父川公園の利用|竜王町|教育と文化| 場所,、スポーツ振興に祖父川公園をぜひご活用ください!広場として、グラウンド・ゴルフ場としてお使いいただけます。 町外の方もご利用いただけます。
+25425,愛荘町,滋賀県,surveyed,False,False,0,,,8,exhausted,0,0,,,,,
+25441,豊郷町,滋賀県,no_seed,False,False,0,,,0,,0,0,,,,,
+25442,甲良町,滋賀県,surveyed,False,False,0,,,9,exhausted,0,0,,,,,
+25443,多賀町,滋賀県,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
