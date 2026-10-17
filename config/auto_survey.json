@@ -211,6 +211,232 @@
       "route": "stage2_kanagawa",
       "from_route": "redecide_v12_1",
       "max_pages": 200
+    },
+    {
+      "prefecture": "三重県",
+      "keyword": "grandgolf",
+      "route": "recheck_mie",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "滋賀県",
+      "keyword": "grandgolf",
+      "route": "recheck_shiga",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "茨城県",
+      "keyword": "grandgolf",
+      "route": "recheck_ibaraki",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "埼玉県",
+      "keyword": "grandgolf",
+      "route": "recheck_saitama",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "千葉県",
+      "keyword": "grandgolf",
+      "route": "recheck_chiba",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "北海道",
+      "keyword": "grandgolf",
+      "route": "stage3_hokkaido",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200,
+      "shards": 3
+    },
+    {
+      "prefecture": "青森県",
+      "keyword": "grandgolf",
+      "route": "stage3_aomori",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "岩手県",
+      "keyword": "grandgolf",
+      "route": "stage3_iwate",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "宮城県",
+      "keyword": "grandgolf",
+      "route": "stage3_miyagi",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "秋田県",
+      "keyword": "grandgolf",
+      "route": "stage3_akita",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "山形県",
+      "keyword": "grandgolf",
+      "route": "stage3_yamagata",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "福島県",
+      "keyword": "grandgolf",
+      "route": "stage3_fukushima",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "山梨県",
+      "keyword": "grandgolf",
+      "route": "stage3_yamanashi",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "長野県",
+      "keyword": "grandgolf",
+      "route": "stage3_nagano",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200,
+      "shards": 2
+    },
+    {
+      "prefecture": "新潟県",
+      "keyword": "grandgolf",
+      "route": "stage3_niigata",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "鳥取県",
+      "keyword": "grandgolf",
+      "route": "stage3_tottori",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "島根県",
+      "keyword": "grandgolf",
+      "route": "stage3_shimane",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "岡山県",
+      "keyword": "grandgolf",
+      "route": "stage3_okayama",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "広島県",
+      "keyword": "grandgolf",
+      "route": "stage3_hiroshima",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "山口県",
+      "keyword": "grandgolf",
+      "route": "stage3_yamaguchi",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "徳島県",
+      "keyword": "grandgolf",
+      "route": "stage3_tokushima",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "香川県",
+      "keyword": "grandgolf",
+      "route": "stage3_kagawa",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "愛媛県",
+      "keyword": "grandgolf",
+      "route": "stage3_ehime",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "高知県",
+      "keyword": "grandgolf",
+      "route": "stage3_kochi",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "福岡県",
+      "keyword": "grandgolf",
+      "route": "stage3_fukuoka",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "佐賀県",
+      "keyword": "grandgolf",
+      "route": "stage3_saga",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "長崎県",
+      "keyword": "grandgolf",
+      "route": "stage3_nagasaki",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "熊本県",
+      "keyword": "grandgolf",
+      "route": "stage3_kumamoto",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "大分県",
+      "keyword": "grandgolf",
+      "route": "stage3_oita",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "宮崎県",
+      "keyword": "grandgolf",
+      "route": "stage3_miyazaki",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "鹿児島県",
+      "keyword": "grandgolf",
+      "route": "stage3_kagoshima",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "沖縄県",
+      "keyword": "grandgolf",
+      "route": "stage3_okinawa",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
     }
   ]
 }

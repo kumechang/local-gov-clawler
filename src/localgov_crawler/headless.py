@@ -12,6 +12,7 @@ from urllib.parse import urlsplit
 
 from .fetcher import FetchResult, Fetcher, classify_http_status
 
+MAX_SUBREQUESTS_PER_PAGE = 80  # 1ページの描画で追加の読み込みがこれを超えたら、残りは止める(定期的に通信を続けるページへの対策、D-118)
 BLOCKED_TYPES = {"image", "media", "font", "stylesheet", "other", "ping", "websocket", "eventsource", "manifest", "texttrack"}
 
 
@@ -35,6 +36,7 @@ class HeadlessFetcher:
         self.used_proxy = False
         self.pages = 0
         self.subrequests = 0
+        self._page_requests = 0
         self._host_delay: dict[str, float] = {}
         self._last: dict[str, float] = {}
         self._lock = threading.Lock()
@@ -57,8 +59,12 @@ class HeadlessFetcher:
         if req.resource_type in BLOCKED_TYPES:
             route.abort()
             return
+        if self._page_requests >= MAX_SUBREQUESTS_PER_PAGE and req.resource_type != "document":
+            route.abort()
+            return
         self._wait((urlsplit(req.url).hostname or "").lower())
         self.subrequests += 1
+        self._page_requests += 1
         route.continue_()
 
     def _start(self) -> None:
@@ -76,6 +82,7 @@ class HeadlessFetcher:
     def get(self, url: str) -> FetchResult:
         res = FetchResult(url=url, final_url=url)
         start = time.monotonic()
+        self._page_requests = 0
         try:
             if self._page is None:
                 self._start()

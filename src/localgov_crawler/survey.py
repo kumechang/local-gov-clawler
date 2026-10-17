@@ -19,7 +19,7 @@ from .municipalities import Municipality
 from .nav import base_host, extract_links, is_same_site, norm_text
 from .pipeline import Config, _Ctx, _now
 
-SURVEY_SCHEMA = 6
+SURVEY_SCHEMA = 8
 
 # 予約システム・ログインが必要なページには入らない(handoff §3、CLAUDE.md)
 RESERVATION_URL = re.compile(r"yoyaku|reserve|rsv|login|logon|signin|/sp/reserve|shisetsu-?yoyaku|k-?system|eshisetsu|e-?shisetsu", re.I)
@@ -99,14 +99,24 @@ class KeywordSpec:
         return [(l, m) for l, m in self.find_lines(text) if not is_negated(l, m.end())]
 
 
-# ワードの直後(同じ文の中)にある否定。『グラウンド・ゴルフではご利用いただけません』のような文は、ワードのある記載として数えない(D-113)
+# ワードにかかる否定(D-113、D-119)。『グラウンド・ゴルフではご利用いただけません』のように、ワードの直後に区切りなしで続く否定だけを数える。
+# 同じ行でも、読点・中点・空白・括弧などで区切られた先の否定(他のスポーツの『使用禁止』など)や、『グラウンド・ゴルフ以外は…』は、ワードの否定ではない。
 NEGATION = re.compile(r"いただけません|できません|できない|使えません|ご遠慮|不可|禁止|対象外|行えません|なれません|お断り")
 NEGATION_WINDOW = 40
+NEGATION_MAX_GAP = 20
+CLAUSE_BREAK = re.compile(r"[、，,;；/／・･()（）「」『』\[\]【】\s]")
+EXCEPT_PREFIX = re.compile(r"^(?:以外|を除|除く|のほか|の他|以外の|のみ)")
 
 
 def is_negated(text: str, end: int) -> bool:
     tail = text[end: end + NEGATION_WINDOW].split("。", 1)[0]
-    return bool(NEGATION.search(tail))
+    if EXCEPT_PREFIX.match(tail):
+        return False
+    m = NEGATION.search(tail)
+    if not m:
+        return False
+    gap = tail[: m.start()]
+    return len(gap) <= NEGATION_MAX_GAP and not CLAUSE_BREAK.search(gap)
 
 
 @dataclass
@@ -361,9 +371,12 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
         links = extract_links(soup, res.final_url, site_host)
         title, body = page_text(parse_html(decode_bytes(res.body, res.content_type)))
         hits_t, hits_b = spec.find(title), spec.find_affirmative(body)
-        negated = len(spec.find_lines(body)) - len(hits_b)
+        all_pairs = spec.find_lines(body)
+        negated = len(all_pairs) - len(hits_b)
+        affirmed = {(l, m.start()) for l, m in hits_b}
+        negated_samples = [l[max(0, m.start() - 20): m.end() + 60] for l, m in all_pairs if (l, m.start()) not in affirmed][:2]
         link_hits = [l for l in links if spec.in_text(l.text) and not l.is_pdf and l.region not in ("nav", "header", "footer")]
-        page.update(title=title[:80], kind=classify_page(title, res.final_url), text_len=len(body), hit=bool(hits_t or hits_b or link_hits), count=len(hits_b) + len(hits_t), negated=negated,
+        page.update(title=title[:80], kind=classify_page(title, res.final_url), text_len=len(body), hit=bool(hits_t or hits_b or link_hits), count=len(hits_b) + len(hits_t), negated=negated, negated_samples=negated_samples,
                     in_title=bool(hits_t), snippets=snippets(spec, body, cfg.snippet_chars, affirmative=True), keys=match_keys(spec, body, affirmative=True), link_hits=[{"text": l.text[:60], "url": l.url} for l in link_hits[:5]])
         out["pages"].append(page)
         for l in links:
