@@ -1,0 +1,27 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+26100,京都市,京都府,surveyed,True,False,2,facility|other,facility,85,exhausted,0,0,https://www.city.kyoto.lg.jp/bunshi/page/0000342593.html,facility,facility,京都市:京都市スポーツ施設における利用種目等の拡大について(試行実施),ビー、アメリカンフットボールの練習(ゴール等はありません)、グラウンドゴルフ、運動会、イベント(地域のお祭り、学校行事など)等
+26201,福知山市,京都府,no_seed,False,False,0,,,0,,0,0,,,,,
+26202,舞鶴市,京都府,surveyed,True,False,1,facility,listing,100,exhausted,0,0,https://www.city.maizuru.kyoto.jp/kyouiku/0000003943.html,listing,facility,伊佐津川運動公園(スポーツ施設)の施設概要 | 舞鶴市 公式ホームページ,138台を整備し、公園内のスポーツ施設には、野球、サッカー、グラウンドゴルフなど、幅広い屋外スポーツに対応した多目的人工芝グラウンドや多
+26203,綾部市,京都府,surveyed,True,False,2,facility,facility,116,exhausted,0,0,https://www.city.ayabe.lg.jp/0000000925.html,facility,facility,丸山スポーツ公園 | 綾部市,グラウンドゴルフコース(全面芝コース)8ホール、2コース(サザンカコース・ク
+26204,宇治市,京都府,surveyed,True,True,3,event|other,event|facility,123,exhausted,0,1,https://www.city.uji.kyoto.jp/soshiki/91/58591.html,facility,event,宇治市の体育振興会について 〜地域のスポーツイベントのご紹介 - 宇治市公式ホームページ,宇治市体育振興会連合会 第16回春季交流グラウンド・ゴルフ大会 アクトパル宇治にて開催!!!
+26205,宮津市,京都府,surveyed,False,False,0,,,52,exhausted,0,0,,,,,
+26206,亀岡市,京都府,surveyed,False,False,0,,,43,exhausted,0,0,,,,,
+26207,城陽市,京都府,surveyed,False,False,0,,,56,exhausted,0,0,,,,,
+26208,向日市,京都府,surveyed,False,False,0,,,30,exhausted,0,0,,,,,
+26209,長岡京市,京都府,surveyed,True,False,5,facility|organization|other,facility,200,max_pages,0,0,https://www.city.nagaokakyo.lg.jp/0000000912.html,facility,organization,総合型地域スポーツクラブ | 長岡京市公式ホームページ,成人向け...(ショート)テニス・バドミントン・グラウンドゴルフ・カローリングなど
+26210,八幡市,京都府,surveyed,True,False,6,facility|organization|other,facility|listing,52,exhausted,0,0,https://www.city.yawata.kyoto.jp/category/2-6-0-0-0-0-0-0-0-0.html,listing,other,スポーツ | 八幡市役所,グラウンドゴルフ [2014年2月7日]
+26211,京田辺市,京都府,surveyed,False,False,0,,,60,exhausted,0,0,,,,,
+26212,京丹後市,京都府,surveyed,False,False,0,,,45,exhausted,0,0,,,,,
+26213,南丹市,京都府,no_seed,False,False,0,,,0,,0,0,,,,,
+26214,木津川市,京都府,surveyed,True,False,1,other,facility,45,exhausted,0,0,https://www.city.kizugawa.lg.jp/0000001522.html,facility,other,ニュースポーツ用具の貸出について | 木津川市,囲碁ボール、インディアカ、大縄跳び、グラウンドゴルフ、スカイクロス、ターゲットバードゴルフ、ティーボール、ディス
+26303,大山崎町,京都府,surveyed,True,False,1,facility,facility,29,exhausted,0,0,http://www.town.oyamazaki.kyoto.jp/annai/kyoikuiinkai/sports_facilities/others/1622.html,facility,facility,名神高速道路高架下多目的広場が利用できます/大山崎町,グランドゴルフやゲートボールなどの軽スポーツ、町内会・自治会などの催し、町
+26322,久御山町,京都府,surveyed,False,False,0,,,49,exhausted,0,0,,,,,
+26343,井手町,京都府,surveyed,False,False,0,,,5,exhausted,0,0,,,,,
+26344,宇治田原町,京都府,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+26364,笠置町,京都府,surveyed,False,False,0,,,12,exhausted,0,0,,,,,
+26365,和束町,京都府,surveyed,False,False,0,,,10,exhausted,0,0,,,,,
+26366,精華町,京都府,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+26367,南山城村,京都府,surveyed,False,False,0,,,6,exhausted,0,0,,,,,
+26407,京丹波町,京都府,surveyed,True,False,2,facility|organization,event|facility,21,exhausted,0,0,https://www.town.kyotamba.kyoto.jp/kanko_bunka_sports/sports/4687.html,facility,organization,京丹波町体育委員(集落委員)について/京丹波町,(例)グラウンド・ゴルフ交流大会、駅伝競走交流大会
+26463,伊根町,京都府,surveyed,False,False,0,,,27,exhausted,0,0,,,,,
+26465,与謝野町,京都府,surveyed,True,False,6,facility,facility,72,exhausted,0,0,https://www.town.yosano.lg.jp/facility-info/leisure-sightseeing-hotel/leisure-facilities/entry_284/,facility,facility,野田川森林公園|レジャー施設|レジャー・観光・宿泊施設|施設案内・予約|与謝野町,グラウンド・ゴルフも楽しめます
