@@ -1,0 +1,36 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+10201,前橋市,群馬県,surveyed,True,False,1,other,facility,85,exhausted,0,0,https://www.city.maebashi.gunma.jp/bunka_sports_kanko/2/3/11435.html,facility,other,スポーツ用具等の貸し出しについて/前橋市,グランドゴルフ
+10202,高崎市,群馬県,surveyed,True,False,12,event|facility|other,event|facility|listing,103,exhausted,0,0,https://www.city.takasaki.gunma.jp/page/1592.html,listing,facility,スポーツ施設紹介 - 高崎市公式ホームページ(スポーツ課),京目公園グラウンドゴルフ場
+10203,桐生市,群馬県,surveyed,True,False,10,facility|organization,facility|listing,200,max_pages,0,0,https://www.city.kiryu.lg.jp/shisetsu/sports/taiiku/index.html,listing,facility,スポーツ施設一覧|桐生市ホームページ,サッカー、グラウンド・ゴルフ
+10204,伊勢崎市,群馬県,surveyed,True,False,20,facility,facility|listing,154,exhausted,0,0,http://www.city.isesaki.lg.jp/kurashi_tetsuzuki/shisetsu/undoshisetsu/index.html,listing,facility,運動施設/伊勢崎市,グラウンドゴルフ場・ゲートボール場
+10205,太田市,群馬県,surveyed,True,False,11,facility|other,facility|listing,200,max_pages,0,0,https://www.city.ota.gunma.jp/site/home-town-ota/1013832.html,listing,facility,太田市スポーツ施設一覧 - Home town Ota - 太田市ホームページ(スポーツ施設管理課),渡良瀬スポーツ広場グラウンドゴルフ場
+10206,沼田市,群馬県,surveyed,True,True,10,event|facility|other,event|facility,127,exhausted,0,5,https://www.city.numata.gunma.jp/shisetsu/taiiku/1001645.html,facility,facility,施設案内 ニュースポーツ広場|沼田市公式ホームページ,グラウンドゴルフコース8コース、ターゲットバードゴルフコース8コース(グラウ
+10207,館林市,群馬県,surveyed,True,True,11,facility,facility|listing,68,exhausted,0,1,https://www.city.tatebayashi.gunma.jp/li/kosodate/060/010/index.html,listing,facility,スポーツ施設|館林市,城沼グラウンドゴルフ場
+10208,渋川市,群馬県,surveyed,True,False,9,facility|other,facility|listing,200,max_pages,0,0,http://www.city.shibukawa.lg.jp/kyouiku/000144/000148/p001549.html,listing,facility,スポーツ施設一覧 | 渋川市公式ホームページ,グラウンドゴルフ/ゲートボール
+10209,藤岡市,群馬県,surveyed,False,False,0,,,63,exhausted,0,0,,,,,
+10210,富岡市,群馬県,fetch_failed,False,False,0,,,0,,0,0,,,,,
+10211,安中市,群馬県,surveyed,True,False,4,facility,facility|listing,101,exhausted,0,0,https://www.city.annaka.lg.jp/page/2390.html,listing,facility,安中地域スポーツ施設-グラウンド- - 安中市ホームページ,対象競技 サッカー(少年・大人) グラウンドゴルフ など
+10212,みどり市,群馬県,surveyed,True,False,4,facility,facility|listing,101,exhausted,0,0,https://www.city.midori.gunma.jp/shisetsu/1001688/1003764.html,listing,facility,社会体育施設 |群馬県みどり市,あすかホールグラウンドゴルフ場
+10344,榛東村,群馬県,surveyed,True,False,9,facility|other,facility,53,exhausted,0,0,https://www.vill.shinto.gunma.jp/sightseeing/000255/000264/index.html,facility,other,ニュースポーツ | 榛東村公式ホームページ,グラウンドゴルフ
+10345,吉岡町,群馬県,surveyed,False,False,0,,,54,exhausted,0,0,,,,,
+10366,上野村,群馬県,surveyed,True,False,1,facility,listing,24,exhausted,0,0,https://www.uenomura.jp/admin/education/kyoiku/syougai/riyou.html,listing,facility,生涯スポーツ施設・物品利用案内 | 上野村,グラウンドゴルフ
+10367,神流町,群馬県,surveyed,False,False,0,,,5,exhausted,0,0,,,,,
+10382,下仁田町,群馬県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+10383,南牧村,群馬県,surveyed,True,False,1,facility,facility,17,exhausted,0,0,https://nanmoku.ne.jp/lifehealth/koukyou/activation_center/,facility,facility,南牧村活性化センター - 群馬県なんもく村,グランドゴルフ用具 10組
+10384,甘楽町,群馬県,surveyed,False,False,0,,,3,exhausted,0,0,,,,,
+10421,中之条町,群馬県,surveyed,True,False,2,event|facility,event|listing,34,exhausted,0,0,https://www.town.nakanojo.gunma.jp/soshiki/15/1194.html,listing,facility,社会体育施設一覧 - 中之条町公式サイト,グラウンドゴルフ 3面
+10424,長野原町,群馬県,surveyed,True,True,5,facility,facility|listing,34,exhausted,0,1,https://www.town.naganohara.gunma.jp/development/?content=389,listing,facility,社会体育施設の利用案内について|公共施設|群馬県長野原町,
+10425,嬬恋村,群馬県,no_seed,False,False,0,,,0,,0,0,,,,,
+10426,草津町,群馬県,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
+10428,高山村,群馬県,surveyed,False,False,0,,,18,exhausted,0,0,,,,,
+10429,東吾妻町,群馬県,surveyed,False,False,0,,,35,exhausted,0,0,,,,,
+10443,片品村,群馬県,surveyed,False,False,0,,,2,exhausted,0,0,,,,,
+10444,川場村,群馬県,surveyed,False,False,0,,,9,exhausted,0,0,,,,,
+10448,昭和村,群馬県,surveyed,True,True,3,facility,facility|listing,29,exhausted,0,1,https://www.vill.showa.gunma.jp/kurashi/kyouiku/sports/2017-0228-1823-29.html,listing,facility,スポーツ施設の貸出|教育・文化・スポーツ |群馬県昭和村公式ホームページ,"※ターゲットバードゴルフ場、グラウンドゴルフ場については1日50円とし、年間使用料は1,000円"
+10449,みなかみ町,群馬県,surveyed,True,False,3,facility,facility|listing,68,exhausted,0,0,https://www.town.minakami.gunma.jp/politics/13sisetu/2016-1012-1903-12.html,listing,facility,スポーツ施設 | みなかみ町,グラウンドゴルフ
+10464,玉村町,群馬県,surveyed,True,False,2,event|facility,event|facility,21,exhausted,0,0,https://www.town.tamamura.lg.jp/docs/2014091810682/,facility,facility,役場関係施設 | 玉村町,グラウンドゴルフ場
+10521,板倉町,群馬県,surveyed,True,False,1,facility,listing,20,exhausted,0,0,https://www.town.itakura.gunma.jp/cont/s027000/d027010/20121217205902.html,listing,facility,スポーツ施設 - 板倉町,谷田川グラウンドゴルフ場
+10522,明和町,群馬県,surveyed,True,False,2,facility|organization,facility,44,exhausted,0,0,https://www.town.meiwa.gunma.jp/life/bunka_sports/4805.html,facility,facility,各施設の概要/群馬県明和町|公式ホームページ,利根川総合運動場(パークゴルフ グラウンドゴルフ場)
+10523,千代田町,群馬県,surveyed,False,False,0,,,30,exhausted,0,0,,,,,
+10524,大泉町,群馬県,surveyed,False,False,0,,,22,exhausted,0,0,,,,,
+10525,邑楽町,群馬県,surveyed,True,False,4,event|facility,event|facility|listing,41,exhausted,0,0,https://www.town.ora.gunma.jp/s047/040/080/050/sports1.html,listing,facility,社会体育施設のご案内|群馬県邑楽町,グラウンド・ゴルフ
