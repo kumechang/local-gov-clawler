@@ -19,7 +19,7 @@ from .municipalities import Municipality
 from .nav import base_host, extract_links, is_same_site, norm_text
 from .pipeline import Config, _Ctx, _now
 
-SURVEY_SCHEMA = 3
+SURVEY_SCHEMA = 4
 
 # 予約システム・ログインが必要なページには入らない(handoff §3、CLAUDE.md)
 RESERVATION_URL = re.compile(r"yoyaku|reserve|rsv|login|logon|signin|/sp/reserve|shisetsu-?yoyaku|k-?system|eshisetsu|e-?shisetsu", re.I)
@@ -80,6 +80,21 @@ class KeywordSpec:
     def in_text(self, text: str) -> bool:
         return bool(self.find(text))
 
+    def find_affirmative(self, text: str) -> list[re.Match]:
+        """否定の文(『…ではご利用いただけません』など)を除いた一致。"""
+        t = norm_text(text)
+        return [m for m in self.find(t) if not is_negated(t, m.end())]
+
+
+# ワードの直後(同じ文の中)にある否定。『グラウンド・ゴルフではご利用いただけません』のような文は、ワードのある記載として数えない(D-113)
+NEGATION = re.compile(r"いただけません|できません|できない|使えません|ご遠慮|不可|禁止|対象外|行えません|なれません|お断り")
+NEGATION_WINDOW = 40
+
+
+def is_negated(text: str, end: int) -> bool:
+    tail = text[end: end + NEGATION_WINDOW].split("。", 1)[0]
+    return bool(NEGATION.search(tail))
+
 
 @dataclass
 class SurveyConfig:
@@ -130,16 +145,16 @@ def page_text(soup: BeautifulSoup) -> tuple[str, str]:
     return title, norm_text(base.get_text(" "))
 
 
-def match_keys(spec: KeywordSpec, text: str, limit: int = 5) -> list[str]:
+def match_keys(spec: KeywordSpec, text: str, limit: int = 5, affirmative: bool = False) -> list[str]:
     """ワードと、その直後の15文字。全ページ共通の文(ナビ・バナー)を見分ける目印。"""
     t = norm_text(text)
-    return [t[m.start(): m.end() + 15] for m in spec.find(t)[:limit]]
+    return [t[m.start(): m.end() + 15] for m in (spec.find_affirmative(t) if affirmative else spec.find(t))[:limit]]
 
 
-def snippets(spec: KeywordSpec, text: str, chars: int = 30, limit: int = 3) -> list[str]:
+def snippets(spec: KeywordSpec, text: str, chars: int = 30, limit: int = 3, affirmative: bool = False) -> list[str]:
     t = norm_text(text)
     out = []
-    for m in spec.find(t)[:limit]:
+    for m in (spec.find_affirmative(t) if affirmative else spec.find(t))[:limit]:
         out.append(t[max(0, m.start() - chars): m.end() + chars])
     return out
 
@@ -279,10 +294,11 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
         soup = parse_html(decode_bytes(res.body, res.content_type))
         links = extract_links(soup, res.final_url, site_host)
         title, body = page_text(parse_html(decode_bytes(res.body, res.content_type)))
-        hits_t, hits_b = spec.find(title), spec.find(body)
+        hits_t, hits_b = spec.find(title), spec.find_affirmative(body)
+        negated = len(spec.find(body)) - len(hits_b)
         link_hits = [l for l in links if spec.in_text(l.text) and not l.is_pdf and l.region not in ("nav", "header", "footer")]
-        page.update(title=title[:80], kind=classify_page(title, res.final_url), text_len=len(body), hit=bool(hits_t or hits_b or link_hits), count=len(hits_b) + len(hits_t),
-                    in_title=bool(hits_t), snippets=snippets(spec, body, cfg.snippet_chars), keys=match_keys(spec, body), link_hits=[{"text": l.text[:60], "url": l.url} for l in link_hits[:5]])
+        page.update(title=title[:80], kind=classify_page(title, res.final_url), text_len=len(body), hit=bool(hits_t or hits_b or link_hits), count=len(hits_b) + len(hits_t), negated=negated,
+                    in_title=bool(hits_t), snippets=snippets(spec, body, cfg.snippet_chars, affirmative=True), keys=match_keys(spec, body, affirmative=True), link_hits=[{"text": l.text[:60], "url": l.url} for l in link_hits[:5]])
         out["pages"].append(page)
         for l in links:
             if l.is_pdf and spec.in_text(l.text) and len(out["pdf_link_hits"]) < 20:

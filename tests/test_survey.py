@@ -159,3 +159,14 @@ def test_site_wide_boilerplate_hits_are_not_counted():
     out = sv.survey_municipality(M, result(cands=[("スポーツ", "https://www.city.example.jp/sports/")]), make_fetcher(routes), SPEC, sv.SurveyConfig(route="t"))
     hits = [p["url"].rsplit("/", 1)[-1] for p in out["pages"] if p["hit"]]
     assert hits == ["3"]  # 全ページ共通のバナーは数えない。固有の記載は数える
+
+
+def test_negated_mentions_are_not_hits():  # 豊山町: 『グラウンド・ゴルフではご利用いただけません』(D-113)
+    assert sv.is_negated("ゲートボール専用です。グラウンド・ゴルフではご利用いただけません。", len("ゲートボール専用です。グラウンド・ゴルフ"))
+    assert not sv.is_negated("グラウンド・ゴルフにご利用いただけます。ゲートボールは不可。", len("グラウンド・ゴルフ"))  # 次の文の否定は無関係
+    routes = {"/robots.txt": (404, "text/plain", ""), "/sports/": page("スポーツ", '<a href="/f/1">ゲートボール場</a><a href="/f/2">多目的広場</a>'),
+              "/f/1": page("ゲートボール場", "<p>ゲートボール専用です。グラウンド・ゴルフではご利用いただけません。</p>"),
+              "/f/2": page("多目的広場", "<p>グラウンド・ゴルフにご利用いただけます。</p>")}
+    out = sv.survey_municipality(M, result(cands=[("スポーツ", "https://www.city.example.jp/sports/")]), make_fetcher(routes), SPEC, sv.SurveyConfig(route="t"))
+    by = {p["url"].rsplit("/", 1)[-1]: p for p in out["pages"]}
+    assert not by["1"]["hit"] and by["1"]["negated"] == 1 and by["2"]["hit"]
