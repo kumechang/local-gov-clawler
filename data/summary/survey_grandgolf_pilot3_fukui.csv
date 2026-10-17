@@ -1,0 +1,18 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+18201,福井市,福井県,surveyed,True,False,4,facility|organization,facility,200,max_pages,0,0,https://www.city.fukui.lg.jp/kyoiku/sports/sisetu/spo-park.html,facility,facility,スポーツ公園の施設案内,要はこちら ソフトボール場:ソフトボール3面、少年野球1面 グラウンドゴルフ場:18H マレットゴルフ場東コース:18H マレットゴルフ
+18202,敦賀市,福井県,surveyed,True,False,3,facility|organization,event|facility,132,exhausted,0,0,https://www.city.tsuruga.lg.jp/page/1499.html,facility,facility,施設のご案内(総合運動公園) - 敦賀市ホームページ(総合運動公園),/5.69MB] 修景池芝生広場 芝生広場 菖蒲園 修景池 グラウンド・ゴルフ利用 Aコース・Bコース・Cコース・Dコース・Eコース 全5
+18204,小浜市,福井県,surveyed,False,False,0,,,38,exhausted,0,0,,,,,
+18205,大野市,福井県,surveyed,False,False,0,,,117,exhausted,0,0,,,,,
+18206,勝山市,福井県,surveyed,False,False,0,,,69,exhausted,0,0,,,,,
+18207,鯖江市,福井県,surveyed,False,False,0,,,122,exhausted,0,0,,,,,
+18208,あわら市,福井県,surveyed,False,False,0,,,122,exhausted,0,0,,,,,
+18209,越前市,福井県,surveyed,True,True,1,other,facility,88,exhausted,0,1,https://www.city.echizen.lg.jp/office/010/040/sinkou/newsport.html,facility,other,ニュースポーツの紹介 - 越前市 スポーツ振興,アウト&ディスゲッター 公式ワナゲ ゴルフ型 ボールゴルフ グラウンド・ゴルフ ターゲット・バードゴルフ マレットゴルフ スカットボール 
+18210,坂井市,福井県,surveyed,False,False,0,,,98,exhausted,0,0,,,,,
+18322,永平寺町,福井県,surveyed,False,False,0,,,29,exhausted,0,0,,,,,
+18382,池田町,福井県,surveyed,True,False,1,facility,facility,36,exhausted,0,0,https://www.town.ikeda.fukui.jp/shisetsu/taiiku/p002489.html,facility,facility,野尻グラウンド | 福井県池田町,ージID 002489 Tweet 利用案内 ゲートボール、グラウンドゴルフ等でご利用できます。(ナイター設備あり) 駐車場は、野尻グラ
+18404,南越前町,福井県,surveyed,False,False,0,,,34,exhausted,0,0,,,,,
+18423,越前町,福井県,surveyed,False,False,0,,,45,exhausted,0,0,,,,,
+18442,美浜町,福井県,surveyed,True,False,1,facility,facility,51,exhausted,0,0,https://www.town.fukui-mihama.lg.jp/soshiki/44/,facility,facility,西郷健康ひろば - 福井県美浜町, お知らせ 2022年5月17日更新 美浜町西郷健康ひろば グラウンドゴルフ場 2022年5月17日更新 西郷健康ひろば 屋内運動場
+18481,高浜町,福井県,surveyed,True,True,6,event|other,event|facility|listing,76,exhausted,0,1,https://www.town.takahama.fukui.jp/0005/sports/index.html,listing,other,スポーツ|高浜町公式ホームページ,塾」参加者募集! 更新日:2026年9月30日 第6回高浜町グラウンド・ゴルフ大会の開催について 更新日:2026年9月25日 中央体育館
+18483,おおい町,福井県,surveyed,True,False,1,facility,listing,97,exhausted,0,0,https://www.town.ohi.fukui.jp/1003/63/p13426.html,listing,facility,おおい町総合運動公園「球技場」 | おおい町公式ホームページ,ビーなど) サブコート 人工芝グラウンド(フットサルなど) グランドゴルフ (天然芝16ホール) クラブハウス ミーティングルーム・審
+18501,若狭町,福井県,surveyed,False,False,0,,,26,exhausted,0,0,,,,,
