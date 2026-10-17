@@ -19,7 +19,7 @@ from .municipalities import Municipality
 from .nav import base_host, extract_links, is_same_site, norm_text
 from .pipeline import Config, _Ctx, _now
 
-SURVEY_SCHEMA = 4
+SURVEY_SCHEMA = 5
 
 # 予約システム・ログインが必要なページには入らない(handoff §3、CLAUDE.md)
 RESERVATION_URL = re.compile(r"yoyaku|reserve|rsv|login|logon|signin|/sp/reserve|shisetsu-?yoyaku|k-?system|eshisetsu|e-?shisetsu", re.I)
@@ -37,14 +37,16 @@ NEWS_LABEL = re.compile(r"お知らせ|に関する|令和|第\d+回|募集|結�
 _CHROME_TOKEN = re.compile(r"(?:g|global|local|main|side|sub|foot|head|top|page)?-?(?:nav|navi|navigation|gnav|menu|sidebar|sidenav|breadcrumbs?|pankuzu|topicpath|footer|header)", re.I)
 _MAIN_SELECTORS = ("main", "[role=main]", "#main", "#main_body", "#mainContents", "#contents", "#content", "#maincontent", "article", ".main")
 _DROP_TAGS = ("script", "style", "noscript")
+_BLOCK_TAGS = ("p", "li", "tr", "td", "th", "dt", "dd", "div", "section", "article", "table", "ul", "ol", "dl", "h1", "h2", "h3", "h4", "h5", "h6", "blockquote", "pre", "figure", "figcaption", "main")
 _SEMANTIC_CHROME = ("nav", "header", "footer", "aside")
 WRAPPER_RATIO = 0.6  # 本文の6割を超える要素は、ナビでなく全体を囲む要素とみなして消さない
 
 
 # ページの内容による分類(題名・URLから)。たどった経路で付く role とは別に付ける
 ORG_TITLE = re.compile(r"協会|連盟|連合|委員|クラブ|団体|サークル|審議会|表彰|受賞|課の仕事|会長|役員|スポーツ少年団|同好会")
-EVENT_TITLE = re.compile(r"大会|イベント|教室|講座|体験|開催|募集|日程|カレンダー|スケジュール|交流会|フェスタ|フェスティバル|選手権|カップ|記録|行事")
-FACILITY_TITLE = re.compile(r"施設|公園|運動場|運動広場|広場|体育館|グラウンド|グランド|コート|プール|競技場|野球場|センター|ゴルフ場|ひろば")
+EVENT_STRONG = re.compile(r"大会|イベント|教室|講座|開催|募集|日程|カレンダー|スケジュール|フェスタ|フェスティバル|選手権|カップ|結果")
+EVENT_WEAK = re.compile(r"体験|交流|記録|行事")  # 『山村体験宿泊施設』のように施設名にも入る語。施設を表す語があれば施設とみなす(D-116)
+FACILITY_TITLE = re.compile(r"施設|公園|運動場|運動広場|広場|体育館|グラウンド|グランド|コート|プール|競技場|野球場|センター|ゴルフ場|ひろば|宿泊")
 
 
 def classify_page(title: str, url: str = "") -> str:
@@ -52,11 +54,12 @@ def classify_page(title: str, url: str = "") -> str:
     t = norm_text(title)
     if ORG_TITLE.search(t):
         return "organization"
-    if EVENT_TITLE.search(t):
+    if EVENT_STRONG.search(t):
         return "event"
-    if FACILITY_TITLE.search(t) or hub.facility_head(t) or re.search(r"shisetsu|sisetu|facility|koen|park|ground", url, re.I):
-        return "facility"
-    return "other"
+    facility = bool(FACILITY_TITLE.search(t) or hub.facility_head(t) or re.search(r"shisetsu|sisetu|facility|koen|park|ground", url, re.I))
+    if EVENT_WEAK.search(t) and not facility:
+        return "event"
+    return "facility" if facility else "other"
 
 
 @dataclass
@@ -80,10 +83,19 @@ class KeywordSpec:
     def in_text(self, text: str) -> bool:
         return bool(self.find(text))
 
-    def find_affirmative(self, text: str) -> list[re.Match]:
-        """否定の文(『…ではご利用いただけません』など)を除いた一致。"""
-        t = norm_text(text)
-        return [m for m in self.find(t) if not is_negated(t, m.end())]
+    def find_lines(self, text: str) -> list[tuple[str, re.Match]]:
+        """行(改行区切り)ごとの一致。(その行の文, 一致) の組。"""
+        out = []
+        for raw in text.split("\n"):
+            line = norm_text(raw)
+            if line:
+                out += [(line, m) for m in self.find(line)]
+        return out
+
+    def find_affirmative(self, text: str) -> list[tuple[str, re.Match]]:
+        """否定の文を除いた一致。ワードと**同じ行**で、直後(同じ文の中)に『いただけません・禁止』などがあるときだけ否定とみなす。
+        別の行・別の項目(他のスポーツの禁止など)は無関係(D-116)。"""
+        return [(l, m) for l, m in self.find_lines(text) if not is_negated(l, m.end())]
 
 
 # ワードの直後(同じ文の中)にある否定。『グラウンド・ゴルフではご利用いただけません』のような文は、ワードのある記載として数えない(D-113)
@@ -142,21 +154,25 @@ def page_text(soup: BeautifulSoup) -> tuple[str, str]:
         tokens = [t for t in (tag.get("class") or []) + [tag.get("id") or ""] if t]
         if any(_CHROME_TOKEN.fullmatch(t.replace("_", "-")) for t in tokens) and _text_len(tag) <= limit:
             tag.decompose()
-    return title, norm_text(base.get_text(" "))
+    # ブロック要素の境目を改行にして、行ごとに見られるようにする(否定の文を同じ行だけで判断するため、D-116)
+    for br in base.find_all("br"):
+        br.replace_with("\n")
+    for tag in base.find_all(_BLOCK_TAGS):
+        tag.insert_before("\n")
+        tag.insert_after("\n")
+    lines = [norm_text(l) for l in base.get_text("").split("\n")]
+    return title, "\n".join(l for l in lines if l)
 
 
 def match_keys(spec: KeywordSpec, text: str, limit: int = 5, affirmative: bool = False) -> list[str]:
     """ワードと、その直後の15文字。全ページ共通の文(ナビ・バナー)を見分ける目印。"""
-    t = norm_text(text)
-    return [t[m.start(): m.end() + 15] for m in (spec.find_affirmative(t) if affirmative else spec.find(t))[:limit]]
+    pairs = spec.find_affirmative(text) if affirmative else spec.find_lines(text)
+    return [line[m.start(): m.end() + 15] for line, m in pairs[:limit]]
 
 
 def snippets(spec: KeywordSpec, text: str, chars: int = 30, limit: int = 3, affirmative: bool = False) -> list[str]:
-    t = norm_text(text)
-    out = []
-    for m in (spec.find_affirmative(t) if affirmative else spec.find(t))[:limit]:
-        out.append(t[max(0, m.start() - chars): m.end() + chars])
-    return out
+    pairs = spec.find_affirmative(text) if affirmative else spec.find_lines(text)
+    return [line[max(0, m.start() - chars): m.end() + chars] for line, m in pairs[:limit]]
 
 
 def seeds_from_result(result: dict, max_seeds: int = 12) -> list[dict]:
@@ -295,7 +311,7 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
         links = extract_links(soup, res.final_url, site_host)
         title, body = page_text(parse_html(decode_bytes(res.body, res.content_type)))
         hits_t, hits_b = spec.find(title), spec.find_affirmative(body)
-        negated = len(spec.find(body)) - len(hits_b)
+        negated = len(spec.find_lines(body)) - len(hits_b)
         link_hits = [l for l in links if spec.in_text(l.text) and not l.is_pdf and l.region not in ("nav", "header", "footer")]
         page.update(title=title[:80], kind=classify_page(title, res.final_url), text_len=len(body), hit=bool(hits_t or hits_b or link_hits), count=len(hits_b) + len(hits_t), negated=negated,
                     in_title=bool(hits_t), snippets=snippets(spec, body, cfg.snippet_chars, affirmative=True), keys=match_keys(spec, body, affirmative=True), link_hits=[{"text": l.text[:60], "url": l.url} for l in link_hits[:5]])

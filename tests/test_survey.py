@@ -170,3 +170,19 @@ def test_negated_mentions_are_not_hits():  # 豊山町: 『グラウンド・ゴ
     out = sv.survey_municipality(M, result(cands=[("スポーツ", "https://www.city.example.jp/sports/")]), make_fetcher(routes), SPEC, sv.SurveyConfig(route="t"))
     by = {p["url"].rsplit("/", 1)[-1]: p for p in out["pages"]}
     assert not by["1"]["hit"] and by["1"]["negated"] == 1 and by["2"]["hit"]
+
+
+def test_negation_only_counts_on_the_same_line_as_the_word():  # D-116: 禁止されているのは他のスポーツ
+    html = '<ul><li>グラウンド・ゴルフ</li><li>ゲートボール</li><li>野球・サッカーは使用禁止です</li></ul><p>多目的広場は、グラウンドゴルフ、ゲートボールに利用できます。</p><table><tr><th>利用種目</th><td>グラウンドゴルフ</td></tr><tr><th>注意</th><td>ゴルフ練習は禁止</td></tr></table>'
+    title, body = _pt(f"<html><head><title>T</title></head><body><main>{html}{'<p>本文です。</p>' * 20}</main></body></html>")
+    assert len(SPEC.find_affirmative(body)) == 3  # 3か所とも、同じ行に否定は無い
+    assert len(SPEC.find_lines(body)) == 3
+    one = "<p>ゲートボール専用です。グラウンド・ゴルフではご利用いただけません。</p>"
+    _, body2 = _pt(f"<html><body><main>{one}{'<p>本文です。</p>' * 20}</main></body></html>")
+    assert SPEC.find_lines(body2) and not SPEC.find_affirmative(body2)  # 同じ行の否定は外す
+
+
+def test_classify_facility_with_weak_event_word_in_name():  # 大垣市: 山村体験宿泊施設は施設
+    assert sv.classify_page("大垣市かみいしづ緑の村公園・大垣市山村体験宿泊施設奥養老") == "facility"
+    assert sv.classify_page("体験会のお知らせ") == "event"
+    assert sv.classify_page("第56回四日市市民スポーツフェスタ開催について") == "event"
