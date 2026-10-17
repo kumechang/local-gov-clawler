@@ -1,0 +1,42 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+28100,神戸市,兵庫県,surveyed,True,False,2,other,facility,22,exhausted,0,0,https://www.city.kobe.lg.jp/a27565/kanko/sport/syougai.html,facility,other,神戸市:生涯スポーツ・健康づくり,程度)で、卓球、民踊、ハイキング、ボウリング、バドミントン、グラウンドゴルフ、弓道、社交ダンス、フォークダンスの9種目について入門体験し
+28201,姫路市,兵庫県,surveyed,True,False,3,organization|other,facility,197,exhausted,0,0,https://www.city.himeji.lg.jp/kanko/0000003733.html,facility,other,スポーツ用具の貸し出し | 姫路市,ツ振興室では、一般財団法人姫路市まちづくり振興機構を通じて、グラウンド・ゴルフやペタンクなどのスポーツ用具を貸し出しています。
+28202,尼崎市,兵庫県,surveyed,True,False,4,event|organization|other,event|facility,157,exhausted,0,0,https://www.city.amagasaki.hyogo.jp/manabu/sports_act/1029711/1013152.html,facility,organization,尼崎市体育協会|尼崎市公式ホームページ,ボウリング、家庭バレーボール、ニュースポーツ(フリーテニス・グラウンド・ゴルフ)
+28203,明石市,兵庫県,surveyed,True,False,14,facility,facility,179,exhausted,0,0,https://www.city.akashi.lg.jp/doboku/kaigan_ka/shisetsu/koen-sports/kaigan.html,facility,facility,大蔵海岸多目的広場/明石市,~フットサルやグラウンドゴルフが楽しめる広場に~
+28204,西宮市,兵庫県,surveyed,True,False,34,facility|organization,facility,200,max_pages,0,0,https://www.nishi.or.jp/access/sports/taiikukan/bunkan.html,facility,facility,中央体育館分館|西宮市ホームページ,グラウンド・ゴルフ、ゲートボール、トレーニング 等
+28205,洲本市,兵庫県,surveyed,True,False,1,facility,facility,47,exhausted,0,0,https://www.city.sumoto.lg.jp/soshiki/16/8982.html,facility,facility,城戸アグリ公園について - 洲本市ホームページ,ゴルフ(グラウンドゴルフは除く)
+28206,芦屋市,兵庫県,surveyed,False,False,0,,,200,max_pages,0,0,,,,,
+28207,伊丹市,兵庫県,surveyed,True,False,2,other,facility,55,exhausted,0,0,https://www.city.itami.lg.jp/bunka_sports/1/39600.html,facility,other,ニュースポーツ用具の貸出について/伊丹市,グラウンドゴルフ
+28208,相生市,兵庫県,surveyed,True,True,4,event|facility|organization,event|facility|listing,81,exhausted,0,1,https://www.city.aioi.lg.jp/soshiki/taiikushinko/,listing,organization,教育委員会体育振興課 - 相生市ホームページ,2026年10月1日更新JAあいおいカップ相生市民冬季グラウンドゴルフ大会要項について
+28209,豊岡市,兵庫県,surveyed,True,False,2,facility|organization,facility,51,exhausted,0,0,https://www.city.toyooka.lg.jp/kurashi/shogaisports/sports/1019458/1027977.html,facility,facility,玄武洞スポーツ公園開園5周年記念事業記念動画のご紹介|豊岡市公式ウェブサイト,グラウンドゴルフ
+28210,加古川市,兵庫県,surveyed,False,False,0,,,2,exhausted,0,0,,,,,
+28212,赤穂市,兵庫県,surveyed,True,False,3,event|facility,event|facility,93,exhausted,0,0,https://www.city.ako.lg.jp/kensetsu/kouen/shisetsu/bunka/kaihinminato.html,facility,facility,赤穂市/赤穂元禄スポーツセンター,グラウンドゴルフ、軟式野球などを楽しめる施設です。
+28213,西脇市,兵庫県,surveyed,True,False,1,event,event,32,exhausted,0,0,https://www.city.nishiwaki.lg.jp/kakukanogoannai/machizukuribu/machizukurika/rinpokanuenokaikan/ikiikijinkenkouryuusai/1357887593240.html,event,event,上野・下戸田いきいき人権交流祭/西脇市,交流グラウンドゴルフ大会(津万地区)
+28214,宝塚市,兵庫県,surveyed,False,False,0,,,53,exhausted,0,0,,,,,
+28215,三木市,兵庫県,surveyed,True,False,1,facility,facility,122,exhausted,0,0,https://www.city.miki.lg.jp/soshiki/38/8445.html,facility,facility,三木市有料スポーツ施設について - 三木市ホームページ,・多目的グラウンド(400mトラック、陸上・野球・サッカー・グラウンドゴルフ、ナイター照明あり)
+28216,高砂市,兵庫県,surveyed,True,False,1,organization,facility,50,exhausted,0,0,https://www.city.takasago.lg.jp/gyoseisite/bunka_sports_kanko/sports/2/4133.html,facility,organization,高砂市スポーツクラブ21/高砂市,競技場にわかれて、スーパードライブ・ファミリーバドミントン・グランドゴルフの3種目を実施し、子どもから大人まで会員同士の交流を深めなが
+28217,川西市,兵庫県,surveyed,True,False,1,other,facility,73,exhausted,0,0,https://www.city.kawanishi.hyogo.jp/kurashi/shimin/sports/1023197.html,facility,other,川西市スポーツ振興事業補助金(文化・スポーツ課)|川西市,川西市グラウンド・ゴルフ協会
+28218,小野市,兵庫県,surveyed,True,False,8,facility|organization|other,facility|listing,43,exhausted,0,0,https://www.city.ono.hyogo.jp/kanko_sports/sports/sportsshisetsu/index.html,listing,facility,スポーツ施設/兵庫県小野市行政サイト,グラウンドゴルフのできる公園
+28219,三田市,兵庫県,surveyed,True,True,5,event|facility|organization,event|facility,120,exhausted,0,1,https://www.city.sanda.lg.jp/kanko_bunka_sports/sports/3/index.html,facility,organization,三田市スポーツ協会/三田市ホームページ,三田市グラウンド・ゴルフ協会
+28220,加西市,兵庫県,surveyed,True,True,4,event|facility,event|facility,76,exhausted,0,2,https://www.city.kasai.hyogo.jp/soshiki/5/1406.html,facility,facility,アクアスかさい(グリーンスポーツ広場)について - 加西市ホームページ,全面に天然芝を張ったグラウンドで、サッカー場、グラウンド・ゴルフ場など、多目的な用途で利用できます。災害時には調節池の役割を
+28221,丹波篠山市,兵庫県,surveyed,False,False,0,,,34,exhausted,0,0,,,,,
+28222,養父市,兵庫県,surveyed,True,False,1,facility,event,35,exhausted,0,0,https://www.city.yabu.hyogo.jp/kanko_ibento/asobu/9360.html,event,facility,養父市はさまじ里山の森公園/養父市,る「養父市はさまじ里山の森公園」の指定管理者が交代しました。グラウンド・ゴルフや大型遊具を備えた多目的広場で、通称名を「はさまじ里山の森公
+28223,丹波市,兵庫県,surveyed,True,False,3,facility|organization,facility|listing,38,exhausted,0,0,https://www.city.tamba.lg.jp/kanko_bunka/supotsu/10785.html,listing,facility,漢方の里総合運動公園/丹波市ホームページ,草薬樹公園施設(庭園、薬草風呂、農産物処理加工及び実習施設、グラウンドゴルフ場)については下記URLよりご覧ください。
+28224,南あわじ市,兵庫県,surveyed,True,False,6,facility,facility,49,exhausted,0,0,https://www.city.minamiawaji.hyogo.jp/map/shisetsu-033.html,facility,facility,西淡グラウンド - 南あわじ市ホームページ,●グラウンド・ゴルフ、ゲートボール
+28225,朝来市,兵庫県,surveyed,False,False,0,,,33,exhausted,0,0,,,,,
+28226,淡路市,兵庫県,surveyed,False,False,0,,,45,exhausted,0,0,,,,,
+28227,宍粟市,兵庫県,surveyed,False,False,0,,,24,exhausted,0,0,,,,,
+28228,加東市,兵庫県,surveyed,False,False,0,,,9,exhausted,0,0,,,,,
+28229,たつの市,兵庫県,surveyed,True,False,3,facility,event|facility,38,exhausted,0,0,https://www.city.tatsuno.lg.jp/kanko-bunka-sports/supotsu/1/tatsunotaiikukan/5637.html,facility,facility,龍野体育館(中川原グラウンド・テニスコート等)/たつの市ホームページ,早朝から夜間まで、野球・ソフトボール・サッカー・テニス・グラウンドゴルフ等各種スポーツにご利用ください。
+28301,猪名川町,兵庫県,surveyed,False,False,0,,,44,exhausted,0,0,,,,,
+28365,多可町,兵庫県,fetch_failed,False,False,0,,,0,,0,0,,,,,
+28381,稲美町,兵庫県,surveyed,True,False,9,facility|other,facility|listing,81,exhausted,0,0,https://www.town.hyogo-inami.lg.jp/0000005984.html,listing,facility,稲美中央公園(多目的グラウンド、テニスコート、ゲートボール場、アーバンスポーツ施設) | 稲美町ホームページ,ソフトボールやサッカー、グラウンドゴルフでの利用が可能な多目的グラウンドです。
+28382,播磨町,兵庫県,surveyed,True,False,3,facility,event|facility,99,exhausted,0,0,https://www.town.harima.lg.jp/kyodo/shisetsuannai/sport/005.html,facility,facility,播磨町 望海公園球場,ソフトボール、サッカー、グラウンド・ゴルフなどができる多目的グラウンドです。
+28442,市川町,兵庫県,surveyed,True,False,1,organization,facility,39,exhausted,0,0,https://www.town.ichikawa.lg.jp/Info/215,facility,organization,兵庫県市川町 兵庫県市川町 グラウンドゴルフ協会,
+28443,福崎町,兵庫県,surveyed,True,False,3,organization|other,facility,21,exhausted,0,0,https://www.town.fukusaki.hyogo.jp/sports/0000002830.html,facility,other,ソフトボール場 | 福崎町,ソフトボール・グラウンドゴルフ等
+28446,神河町,兵庫県,surveyed,True,False,2,organization,facility,31,exhausted,0,0,https://www.town.kamikawa.hyogo.jp/0000000647.html,facility,organization,神河町スポーツ協会 | 兵庫県神河町,グラウンドゴルフ協会
+28464,太子町,兵庫県,surveyed,False,False,0,,,60,exhausted,0,0,,,,,
+28481,上郡町,兵庫県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
+28501,佐用町,兵庫県,surveyed,True,False,4,facility,broad|facility|sports_nav,119,exhausted,0,0,https://www.town.sayo.lg.jp/cms-sypher/www/section/detail.jsp?id=10144,sports_nav,facility,南光スポーツ公園 (若あゆランド)|各課・施設情報|佐用町 公式ホームページ|絆できらめく ひと・まち・自然 未来へつなぐ 共生の郷 佐用,た本格的な野球場やテニスコート、またソフトボール・サッカー・グラウンドゴルフなどに使用できる多目的グラウンド、悪天候でもゲートボールやテ
+28585,香美町,兵庫県,surveyed,True,False,2,facility,facility,37,exhausted,0,0,https://www.town.mikata-kami.lg.jp/kanko-bunka-sports/sports/2/3193.html,facility,facility,広井多目的山村広場/香美町ホームページ,グラウンドゴルフ 1面
+28586,新温泉町,兵庫県,surveyed,True,False,10,event|facility|other,facility|listing,105,exhausted,0,0,https://www.town.shinonsen.hyogo.jp/p/list/C0411/,listing,facility,スポーツ施設・小中学校 屋内運動場等 | 施設案内 | 新温泉町,浜坂多目的公園グラウンドゴルフ場
