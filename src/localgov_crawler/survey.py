@@ -19,7 +19,7 @@ from .municipalities import Municipality
 from .nav import base_host, extract_links, is_same_site, norm_text
 from .pipeline import Config, _Ctx, _now
 
-SURVEY_SCHEMA = 6
+SURVEY_SCHEMA = 7
 
 # 予約システム・ログインが必要なページには入らない(handoff §3、CLAUDE.md)
 RESERVATION_URL = re.compile(r"yoyaku|reserve|rsv|login|logon|signin|/sp/reserve|shisetsu-?yoyaku|k-?system|eshisetsu|e-?shisetsu", re.I)
@@ -361,9 +361,12 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
         links = extract_links(soup, res.final_url, site_host)
         title, body = page_text(parse_html(decode_bytes(res.body, res.content_type)))
         hits_t, hits_b = spec.find(title), spec.find_affirmative(body)
-        negated = len(spec.find_lines(body)) - len(hits_b)
+        all_pairs = spec.find_lines(body)
+        negated = len(all_pairs) - len(hits_b)
+        affirmed = {(l, m.start()) for l, m in hits_b}
+        negated_samples = [l[max(0, m.start() - 20): m.end() + 60] for l, m in all_pairs if (l, m.start()) not in affirmed][:2]
         link_hits = [l for l in links if spec.in_text(l.text) and not l.is_pdf and l.region not in ("nav", "header", "footer")]
-        page.update(title=title[:80], kind=classify_page(title, res.final_url), text_len=len(body), hit=bool(hits_t or hits_b or link_hits), count=len(hits_b) + len(hits_t), negated=negated,
+        page.update(title=title[:80], kind=classify_page(title, res.final_url), text_len=len(body), hit=bool(hits_t or hits_b or link_hits), count=len(hits_b) + len(hits_t), negated=negated, negated_samples=negated_samples,
                     in_title=bool(hits_t), snippets=snippets(spec, body, cfg.snippet_chars, affirmative=True), keys=match_keys(spec, body, affirmative=True), link_hits=[{"text": l.text[:60], "url": l.url} for l in link_hits[:5]])
         out["pages"].append(page)
         for l in links:
