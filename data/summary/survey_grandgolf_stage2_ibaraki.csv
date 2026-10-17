@@ -1,0 +1,45 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+08201,水戸市,茨城県,surveyed,True,False,3,facility|organization,facility,105,exhausted,0,0,https://www.city.mito.lg.jp/page/2294.html,facility,facility,下入野健康増進センターのご案内(体育施設整備課) - 水戸市ホームページ,利用時間:午前9時~午後10時まで(グラウンドゴルフ場は午後6時まで)
+08202,日立市,茨城県,surveyed,False,False,0,,,200,max_pages,0,0,,,,,
+08203,土浦市,茨城県,surveyed,True,False,1,facility,facility,126,exhausted,0,0,https://www.city.tsuchiura.lg.jp/kasumigaurasogokoen/page001068.html,facility,facility,施設案内 | 霞ヶ浦総合公園 | 土浦市公式ホームページ,霞ヶ浦総合公園の中心に位置し、ソフトボールやサッカーの他、グランドゴルフなどの大会にもご利用いただけます。会場のご予約は、霞ヶ浦文化
+08204,古河市,茨城県,surveyed,True,False,8,event|organization,event|facility|listing,75,exhausted,0,0,https://www.city.ibaraki-koga.lg.jp/bunrui/kenkofukushi/sports/17582.html,listing,event,スポーツフェスタ古河(SFK)| ココロとカラダを動かす日/古河市公式ホームページ,ポーツチャンバラ・銃剣道・社交ダンス・ウエイトトレーニング・グラウンドゴルフ・ラグビー・ストラックアウト・eスポーツ・シャフルボード・ユ
+08205,石岡市,茨城県,surveyed,False,False,0,,,141,exhausted,0,0,,,,,
+08207,結城市,茨城県,surveyed,True,False,1,facility,facility,80,exhausted,0,0,https://www.city.yuki.lg.jp/kosodate-kyouiku/sports/kanakubo/page000982.html,facility,facility,施設案内 | 結城市公式ホームページ,パークゴルフ・グラウンドゴルフ・ターゲットバードゴルフ
+08208,龍ケ崎市,茨城県,surveyed,False,False,0,,,149,exhausted,0,0,,,,,
+08210,下妻市,茨城県,surveyed,True,False,2,event,event,46,exhausted,0,0,https://www.city.shimotsuma.lg.jp/shogaigakushu-bunka-sports/park/page008919.html,event,event,公園の利用について(イベント等を行いたい場合) | 下妻市公式ホームページ,"スポーツの練習(グラウンドゴルフ,サッカーなど)"
+08211,常総市,茨城県,surveyed,False,False,0,,,4,exhausted,0,0,,,,,
+08212,常陸太田市,茨城県,surveyed,False,False,0,,,37,exhausted,0,0,,,,,
+08214,高萩市,茨城県,surveyed,True,False,2,facility,facility,54,exhausted,0,0,https://www.city.takahagi.ibaraki.jp/kurashi/bunka_sports/sports/shisetsu/page002517.html,facility,facility,サンスポーツランド高萩 | 高萩市公式ホームページ,サッカー、ラクビー、軟式野球、ソフトボール、グラウンドゴルフ
+08215,北茨城市,茨城県,surveyed,True,False,1,facility,sports_nav,80,exhausted,0,0,https://www.city.kitaibaraki.lg.jp/docs/2023060900019/,sports_nav,facility,北茨城市華川スポーツパーク | 北茨城市,【グラウンドゴルフ場】
+08216,笠間市,茨城県,surveyed,False,False,0,,,66,exhausted,0,0,,,,,
+08217,取手市,茨城県,surveyed,True,False,4,facility|organization,event|facility,119,exhausted,0,0,https://www.city.toride.ibaraki.jp/mizutomidori/shisetsu/011.html,facility,facility,取手市/取手緑地運動公園,グラウンドゴルフ場
+08219,牛久市,茨城県,surveyed,True,False,2,facility,facility,45,exhausted,0,0,https://www.city.ushiku.lg.jp/kanko-bunka-sports/sports/sports-shisetsu/undohiroba/page000580.html,facility,facility,女化運動広場 | 牛久市公式ホームページ,サッカー、グラウンドゴルフなどのプレイが可能なグラウンドです。
+08220,つくば市,茨城県,surveyed,True,False,5,facility,facility,160,exhausted,0,0,https://www.city.tsukuba.lg.jp/shisetsu/kouensports/sports/24225.html,facility,facility,スポーツフィールド(つくばウェルネスパーク)/つくば市公式ウェブサイト,サッカー・グラウンドゴルフで御利用いただけます。
+08221,ひたちなか市,茨城県,surveyed,False,False,0,,,149,exhausted,0,0,,,,,
+08222,鹿嶋市,茨城県,surveyed,True,True,6,event|facility|other,facility|listing,25,exhausted,0,1,https://www.city.kashima.ibaraki.jp/soshiki/74/3399.html,listing,facility,高松緑地有料スポーツ施設を利用するには - 鹿嶋市ホームページ,【その他】:ジョギングコース・グラウンドゴルフ場が整備されている。
+08223,潮来市,茨城県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+08224,守谷市,茨城県,surveyed,True,False,2,event,event,93,exhausted,0,0,https://www.city.moriya.ibaraki.jp/bunka_sports_shiminkatsudou/sports/1008050/index.html,event,event,スポーツ大会|守谷市公式サイト|Moriya City,守谷市グラウンドゴルフ大会 参加者募集中!(8月28日〆切)
+08225,常陸大宮市,茨城県,surveyed,True,False,1,organization,facility,48,exhausted,0,0,https://www.city.hitachiomiya.lg.jp/kurashi_gyousei/kankou_bunka/sports/page008855.html,facility,organization,常陸大宮市スポーツ推進委員会 | 常陸大宮市公式ホームページ,グラウンドゴルフ
+08226,那珂市,茨城県,surveyed,True,False,1,event,event,86,exhausted,0,0,https://www.city.naka.lg.jp/bunka-sports-shimin/kokusaikouryu/page010890.html,event,event,台南市(台湾)と友好交流協定を締結 | 那珂市公式ホームページ,たことをきっかけとして、平成 27 年度から市国際交流協会やグラウンドゴルフなど市民レベルでの交流を続けてきました。
+08227,筑西市,茨城県,surveyed,False,False,0,,,70,exhausted,0,0,,,,,
+08228,坂東市,茨城県,surveyed,True,False,2,facility|other,event,37,exhausted,0,0,https://www.city.bando.lg.jp/section.php?code=41,event,other,各課のページ | 坂東市公式ホームページ,坂東市グラウンドゴルフ場ネーミングライツ事業募集要領
+08229,稲敷市,茨城県,surveyed,False,False,0,,,89,exhausted,0,0,,,,,
+08230,かすみがうら市,茨城県,surveyed,False,False,0,,,67,exhausted,0,0,,,,,
+08231,桜川市,茨城県,surveyed,False,False,0,,,41,exhausted,0,0,,,,,
+08232,神栖市,茨城県,surveyed,True,True,2,event|other,event|sports_nav,95,exhausted,0,3,https://www.city.kamisu.ibaraki.jp/kanko_sports/sports/1002351/1008218/1014004.html,sports_nav,other,神栖市スポーツレクリエーション祭2026 / 茨城県神栖市,第8回令和杯グラウンド・ゴルフ大会 (PDF 67.5 KB)
+08233,行方市,茨城県,surveyed,True,False,2,facility,listing,15,exhausted,0,0,https://www.city.namegata.ibaraki.jp/sports/sports-kitauraundou/page008582.html,listing,facility,北浦運動場 | 行方市スポーツ推進室 | 行方市公式ホームページ 行方市生涯学習課 スポーツ推進室ホームページ,"天然芝の多目的グラウンドです。陸上競技はもちろん,サッカーやグラウンド・ゴルフなど広いフィールドを必要とするスポーツが楽しめます。"
+08234,鉾田市,茨城県,surveyed,True,False,1,organization,event,74,exhausted,0,0,https://www.city.hokota.lg.jp/page/page000819.html,event,organization,鉾田市スポーツレクリエーション | 鉾田市公式ホームページ 鉾田市教育委員会ホームページ,種目:グラウンドゴルフ
+08235,つくばみらい市,茨城県,surveyed,False,False,0,,,83,exhausted,0,0,,,,,
+08236,小美玉市,茨城県,surveyed,True,False,4,organization|other,facility,161,exhausted,0,0,https://www.city.omitama.lg.jp/office0364/section-0.html,facility,other,スポーツ推進課 | 小美玉市公式ホームページ,小川グラウンドゴルフクラブ
+08302,茨城町,茨城県,surveyed,False,False,0,,,84,exhausted,0,0,,,,,
+08309,大洗町,茨城県,surveyed,False,False,0,,,36,exhausted,0,0,,,,,
+08310,城里町,茨城県,surveyed,True,False,3,facility|other,facility,30,exhausted,0,0,https://www.town.shirosato.lg.jp/page/page003368.html,facility,facility,七会町民センター「アツマーレ」 | 城里町公式ホームページ,▶ グラウンドゴルフ無料開放
+08341,東海村,茨城県,surveyed,True,False,1,other,listing,43,exhausted,0,0,https://www.vill.tokai.ibaraki.jp/bunka_sports/sports/7922.html,listing,other,東海村スポーツ総合情報ページ/東海村,"サッカー,ソフトボール,グランドゴルフ等"
+08364,大子町,茨城県,surveyed,False,False,0,,,29,exhausted,0,0,,,,,
+08442,美浦村,茨城県,surveyed,False,False,0,,,51,exhausted,0,0,,,,,
+08443,阿見町,茨城県,surveyed,True,False,1,event,event,59,exhausted,0,0,https://www.town.ami.lg.jp/0000010508.html,event,event,あみスポーツフェスタ | 茨城県阿見町ホームページ,グラウンドゴルフ(ホールインワンチャレンジ)(対象:全年齢)
+08447,河内町,茨城県,no_seed,False,False,0,,,0,,0,0,,,,,
+08521,八千代町,茨城県,surveyed,True,False,1,facility,facility,50,exhausted,0,0,https://www.town.ibaraki-yachiyo.lg.jp/page/page000318.html,facility,facility,町民公園 | 八千代町公式ホームページ,グラウンドゴルフなど
+08542,五霞町,茨城県,surveyed,True,False,4,facility|other,facility|sports_nav,38,exhausted,0,0,https://www.town.goka.lg.jp/kurashi-machi-shigoto/gokanabi/sports/,sports_nav,other,スポーツ | 五霞町公式ホームページ,丸池台グラウンド・ゴルフ場について
+08546,境町,茨城県,surveyed,False,False,0,,,20,exhausted,0,0,,,,,
+08564,利根町,茨城県,surveyed,False,False,0,,,36,exhausted,0,0,,,,,
