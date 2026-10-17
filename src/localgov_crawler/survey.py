@@ -19,7 +19,7 @@ from .municipalities import Municipality
 from .nav import base_host, extract_links, is_same_site, norm_text
 from .pipeline import Config, _Ctx, _now
 
-SURVEY_SCHEMA = 2
+SURVEY_SCHEMA = 3
 
 # 予約システム・ログインが必要なページには入らない(handoff §3、CLAUDE.md)
 RESERVATION_URL = re.compile(r"yoyaku|reserve|rsv|login|logon|signin|/sp/reserve|shisetsu-?yoyaku|k-?system|eshisetsu|e-?shisetsu", re.I)
@@ -33,9 +33,12 @@ EVENT_ENTRANCE = re.compile(r"スポーツ.{0,6}(大会|イベント|教室|行�
 EVENT_LINK = re.compile(r"大会|イベント|行事|教室|講座|体験|交流|カップ|選手権|フェスタ|フェスティバル|祭|レクリエーション|ウォーキング|マラソン")
 # 個別のお知らせ記事(入口にしない)
 NEWS_LABEL = re.compile(r"お知らせ|に関する|令和|第\d+回|募集|結果|開催のお|について")
-# ナビに載るだけの、すべてのページに現れる領域(ここのワードは、ページの内容ではない)
-_CHROME = re.compile(r"nav|menu|sidebar|side-|footer|breadcrumb|pankuzu|topicpath|globalnav|gnav|localnav|header", re.I)
-_DROP_TAGS = ("script", "style", "noscript", "nav", "header", "footer", "aside", "form")
+# ナビ・サイドバー等を表すクラス名・ID(トークンが完全に一致するときだけ。部分一致だと、ページ全体を囲む要素まで消してしまう、D-111)
+_CHROME_TOKEN = re.compile(r"(?:g|global|local|main|side|sub|foot|head|top|page)?-?(?:nav|navi|navigation|gnav|menu|sidebar|sidenav|breadcrumbs?|pankuzu|topicpath|footer|header)", re.I)
+_MAIN_SELECTORS = ("main", "[role=main]", "#main", "#main_body", "#mainContents", "#contents", "#content", "#maincontent", "article", ".main")
+_DROP_TAGS = ("script", "style", "noscript")
+_SEMANTIC_CHROME = ("nav", "header", "footer", "aside")
+WRAPPER_RATIO = 0.6  # 本文の6割を超える要素は、ナビでなく全体を囲む要素とみなして消さない
 
 
 # ページの内容による分類(題名・URLから)。たどった経路で付く role とは別に付ける
@@ -93,21 +96,44 @@ class SurveyConfig:
         return Config(route=self.route, max_requests=self.max_requests or self.max_pages + 8, retry_wait=self.retry_wait)
 
 
+def _text_len(tag) -> int:
+    return len(norm_text(tag.get_text(" ")))
+
+
 def page_text(soup: BeautifulSoup) -> tuple[str, str]:
-    """(題名, 本文)。ナビ・ヘッダー・フッター・サイドバーは本文から外す(全ページ共通のワードを拾わないため)。"""
+    """(題名, 本文)。ナビ・ヘッダー・フッター・サイドバーは本文から外す(全ページ共通のワードを拾わないため)。
+    本文の枠(main など)があればその中だけを見る。ページ全体を囲む要素(本文の6割超)は消さない。"""
     title = norm_text(soup.title.get_text(" ")) if soup.title else ""
     h1 = soup.find("h1")
     if h1 and norm_text(h1.get_text(" ")) not in title:
         title = f"{title} {norm_text(h1.get_text(' '))}".strip()
     for tag in soup.find_all(_DROP_TAGS):
         tag.decompose()
-    for tag in soup.find_all(True):
-        if tag.attrs is None:
+    base = soup.body or soup
+    for sel in _MAIN_SELECTORS:
+        found = base.select_one(sel)
+        if found is not None and _text_len(found) >= 100:
+            base = found
+            break
+    total = _text_len(base)
+    limit = total * WRAPPER_RATIO
+    for tag in list(base.find_all(True)):
+        if getattr(tag, "decomposed", False) or tag.attrs is None or tag is base:
             continue
-        ident = " ".join(filter(None, [tag.get("id", "") or "", " ".join(tag.get("class", []) or [])]))
-        if ident and _CHROME.search(ident):
+        if tag.name in _SEMANTIC_CHROME:
+            if tag.find(["main", "article"]) is None:  # 本文を囲んでいるものは消さない
+                tag.decompose()
+            continue
+        tokens = [t for t in (tag.get("class") or []) + [tag.get("id") or ""] if t]
+        if any(_CHROME_TOKEN.fullmatch(t.replace("_", "-")) for t in tokens) and _text_len(tag) <= limit:
             tag.decompose()
-    return title, norm_text(soup.get_text(" "))
+    return title, norm_text(base.get_text(" "))
+
+
+def match_keys(spec: KeywordSpec, text: str, limit: int = 5) -> list[str]:
+    """ワードと、その直後の15文字。全ページ共通の文(ナビ・バナー)を見分ける目印。"""
+    t = norm_text(text)
+    return [t[m.start(): m.end() + 15] for m in spec.find(t)[:limit]]
 
 
 def snippets(spec: KeywordSpec, text: str, chars: int = 30, limit: int = 3) -> list[str]:
@@ -256,7 +282,7 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
         hits_t, hits_b = spec.find(title), spec.find(body)
         link_hits = [l for l in links if spec.in_text(l.text) and not l.is_pdf and l.region not in ("nav", "header", "footer")]
         page.update(title=title[:80], kind=classify_page(title, res.final_url), text_len=len(body), hit=bool(hits_t or hits_b or link_hits), count=len(hits_b) + len(hits_t),
-                    in_title=bool(hits_t), snippets=snippets(spec, body, cfg.snippet_chars), link_hits=[{"text": l.text[:60], "url": l.url} for l in link_hits[:5]])
+                    in_title=bool(hits_t), snippets=snippets(spec, body, cfg.snippet_chars), keys=match_keys(spec, body), link_hits=[{"text": l.text[:60], "url": l.url} for l in link_hits[:5]])
         out["pages"].append(page)
         for l in links:
             if l.is_pdf and spec.in_text(l.text) and len(out["pdf_link_hits"]) < 20:
@@ -271,9 +297,27 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
                 continue
             queued.add(l.url)
             push(l.url, child, depth + 1, norm_text(l.text)[:40], norm_text(l.text))
+    _drop_boilerplate(out["pages"], fetched)
     out["outcome"] = "surveyed"
     out["stopped"] = stopped
     out["pages_fetched"] = fetched
+
+
+def _drop_boilerplate(pages: list[dict], fetched: int) -> None:
+    """多くのページに同じ文脈で出るワード(ナビの見落とし・全ページ共通のバナー)は、ページの内容ではないので数えない。"""
+    from collections import Counter
+    threshold = max(3, -(-fetched // 5))  # 取得ページの2割(最低3ページ)
+    count: Counter = Counter()
+    for p in pages:
+        for key in set(p.get("keys", []) + [l["url"] for l in p.get("link_hits", [])]):
+            count[key] += 1
+    for p in pages:
+        keys = p.pop("keys", None) or []
+        if not p.get("hit") or p.get("in_title"):
+            continue
+        keys = keys + [l["url"] for l in p.get("link_hits", [])]
+        if keys and all(count[k] >= threshold for k in keys):
+            p["hit"], p["boilerplate"] = False, True
 
 
 def write_survey(root: Path, survey: dict, prefecture_code: str) -> Path:

@@ -130,3 +130,32 @@ def test_pdf_link_only_is_reported_separately():
     assert not out["found"] and out["pdf_link_found"]
     rows = sv.survey_rows([out])
     assert rows[0]["pdf_link_found"] and "PDFのリンク文言だけにあった: 1" in sv.summary_markdown(rows, "grandgolf")
+
+
+def _pt(html):
+    return sv.page_text(sv.parse_html(html))
+
+
+def test_page_text_keeps_content_inside_wrappers_with_chrome_like_class_names():  # 実サイトで本文が空になっていた原因(D-111)
+    long = "本文です。" * 30
+    html = f'<html><body class="has-sidebar page-header"><div id="wrapper" class="menu-open header-fixed"><div class="sidebar">ナビ語</div><div class="content">グラウンドゴルフ {long}</div></div></body></html>'
+    title, body = _pt(html)
+    assert "グラウンドゴルフ" in body and "ナビ語" not in body and len(body) > 100
+
+
+def test_page_text_form_wrapper_and_main_container():
+    long = "本文です。" * 30
+    html = f'<html><body><form id="aspnetForm"><div id="gnav">グランドゴルフ(メニュー)</div><div id="contents"><p>{long}</p><p>グラウンド・ゴルフ場</p></div></form></body></html>'
+    _, body = _pt(html)
+    assert "グラウンド・ゴルフ場" in body and "メニュー" not in body
+
+
+def test_site_wide_boilerplate_hits_are_not_counted():
+    banner = '<div class="banner">グラウンドゴルフ教室のお知らせ</div>'
+    routes = {"/robots.txt": (404, "text/plain", ""), "/sports/": page("スポーツ", "".join(f'<a href="/f/{i}">運動場{i}</a>' for i in range(6)) + banner)}
+    for i in range(6):
+        routes[f"/f/{i}"] = page(f"運動場{i}", f"<p>本文{i}</p>" + banner)
+    routes["/f/3"] = page("運動場3", "<p>グラウンドゴルフ場があります</p>" + banner)
+    out = sv.survey_municipality(M, result(cands=[("スポーツ", "https://www.city.example.jp/sports/")]), make_fetcher(routes), SPEC, sv.SurveyConfig(route="t"))
+    hits = [p["url"].rsplit("/", 1)[-1] for p in out["pages"] if p["hit"]]
+    assert hits == ["3"]  # 全ページ共通のバナーは数えない。固有の記載は数える
