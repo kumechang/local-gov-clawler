@@ -1,0 +1,34 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+14100,横浜市,神奈川県,surveyed,True,False,3,event|organization|other,event|facility,200,max_pages,0,0,https://www.city.yokohama.lg.jp/kanko-bunka/sports/shinko/shinko/club.html,facility,organization,総合型地域スポーツクラブについて 横浜市,グラウンドゴルフ
+14130,川崎市,神奈川県,surveyed,True,False,1,organization,facility,146,exhausted,0,0,https://www.city.kawasaki.jp/miryoku/category/73-7-4-8-0-0-0-0-0-0.html,facility,organization,川崎市 : 総合型地域スポーツクラブ,カローリング、ヨガ、卓球、グラウンドゴルフ、バドミントン教室を開催しています。
+14150,相模原市,神奈川県,surveyed,True,False,1,facility,facility,159,exhausted,0,0,https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/sports/baseball/1003189.html,facility,facility,施設案内 城山湖野球場|相模原市,C面(多目的グラウンド)少年野球、ソフトボール、グラウンドゴルフなど
+14201,横須賀市,神奈川県,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
+14203,平塚市,神奈川県,surveyed,True,False,5,event|facility|other,event|facility,119,exhausted,0,0,https://www.city.hiratsuka.kanagawa.jp/sport/page-c_02986.html,facility,facility,平塚市 野球施設情報 | 平塚市,野球場・・・軟式野球、ソフトボール、グラウンドゴルフの試合・練習での利用ができます。硬式野球(守備練習やキャッチ
+14204,鎌倉市,神奈川県,surveyed,True,False,2,event|organization,event|facility,74,exhausted,0,0,https://www.city.kamakura.kanagawa.jp/sports/sougougatasports.html,facility,organization,鎌倉市/総合型地域スポーツクラブ,グランドゴルフ教室
+14205,藤沢市,神奈川県,surveyed,True,False,1,facility,facility,58,exhausted,0,0,https://www.city.fujisawa.kanagawa.jp/kouen/kouenshiyou.html,facility,facility,公園の使用・占用等の許可申請について|藤沢市,【例】●ゲートボール ●グラウンドゴルフ など
+14206,小田原市,神奈川県,surveyed,True,True,3,facility|other,facility,200,max_pages,0,1,https://www.city.odawara.kanagawa.jp/field/lifelong/sports/sport-f/sport-f/p07390.html,facility,facility,小田原市 | 鴨宮運動広場,動広場(ソフトボール・軟式少年野球・サッカー・ゲートボール・グラウンドゴルフ等)
+14207,茅ヶ崎市,神奈川県,surveyed,True,False,3,facility|other,facility,120,exhausted,0,0,https://www.city.chigasaki.kanagawa.jp/sports/1006321/1006471.html,facility,facility,円蔵スポーツ広場・小出暫定スポーツ広場・堤スポーツ広場|茅ヶ崎市,市内3カ所に、軟式少年野球、少年サッカー、ソフトボール、グラウンド・ゴルフ等のスポーツ・レクリエーション活動が無料でできる「スポーツ広
+14208,逗子市,神奈川県,surveyed,True,False,2,other,event,155,exhausted,0,0,https://www.city.zushi.kanagawa.jp/shiminkatsudo/sports/1004511/1004512.html,event,other,スポーツの祭典2022 みんな集まれ!スポーツの力で元気になろう≪終了≫|逗子市公式サイト,・タグラグビー、コーンホール、フレスコボール、ソフトボール、グラウンド・ゴルフ
+14210,三浦市,神奈川県,surveyed,True,False,1,event,event,18,exhausted,0,0,https://www.city.miura.kanagawa.jp/kanko_bunka_sports/leisure_sports/1/6204.html,event,event,第72回三浦市総合体育大会開催のお知らせ/三浦市,グラウンド・ゴルフ大会(会場:潮風スポーツ公園)
+14211,秦野市,神奈川県,surveyed,False,False,0,,,34,exhausted,0,0,,,,,
+14212,厚木市,神奈川県,surveyed,True,True,13,event|facility|other,event|facility|listing,172,exhausted,0,2,https://www.city.atsugi.kanagawa.jp/bunka_sports/sports/index.html,listing,other,スポーツ/厚木市,グラウンド・ゴルフ
+14213,大和市,神奈川県,surveyed,True,False,5,facility|organization|other,facility,52,exhausted,0,0,https://www.city.yamato.lg.jp/gyosei/soshik/10/sports/sportsshisetsu/6178.html,facility,facility,大和市スポーツ関連施設一覧/大和市,軟式野球・ソフトボール・グラウンドゴルフ
+14214,伊勢原市,神奈川県,surveyed,False,False,0,,,126,exhausted,0,0,,,,,
+14215,海老名市,神奈川県,surveyed,True,False,3,facility|other,event|facility,73,exhausted,0,0,https://www.city.ebina.kanagawa.jp/guide/bunka/sports/1011492/1011522.html,facility,facility,海老名運動公園 各広場・野外炉(バーベキュー場)|海老名市公式ウェブサイト,グランドゴルフ、ターゲットバードゴルフ、その他ボール遊びなど
+14216,座間市,神奈川県,surveyed,True,False,1,facility,facility,166,exhausted,0,0,https://www.city.zama.kanagawa.jp/bunkasports/sports/shisetsu/1003268.html,facility,facility,軟式野球場、スポーツ広場、グラウンドなど|座間市ホームページ,ターゲットバードゴルフ、グラウンドゴルフ、ゲートボール、パークゴルフなど
+14217,南足柄市,神奈川県,surveyed,False,False,0,,,116,exhausted,0,0,,,,,
+14218,綾瀬市,神奈川県,surveyed,True,False,2,organization,facility,40,exhausted,0,0,https://www.city.ayase.kanagawa.jp/kanko_bunka_sports/sports/sportssuishiniin/15836.html,facility,organization,綾瀬市スポーツ推進委員協議会 活動内容/綾瀬市,グランドゴルフ、ターゲットバードゴルフ、ペタンク、輪投げ、ドッヂビー、イン
+14301,葉山町,神奈川県,surveyed,True,False,1,organization,facility,45,exhausted,0,0,https://www.town.hayama.lg.jp/asobi/sports/supotudantai/10078.html,facility,organization,葉山町スポーツ協会/葉山町,・グラウンドゴルフ
+14321,寒川町,神奈川県,surveyed,True,False,1,organization,event,53,exhausted,0,0,https://www.town.samukawa.kanagawa.jp/soshiki/chomin/sports/sports/info/sportskannkeisosikisyoukai/17745.html,event,organization,寒川町レクリエーション協会/寒川町ホームページ,たりして、みんなで楽しく活動しています。現在では、ペタンク、グラウンドゴルフ、ターゲットバードゴルフ、ファミリーバドミントン、民踊の計5
+14341,大磯町,神奈川県,surveyed,False,False,0,,,67,exhausted,0,0,,,,,
+14342,二宮町,神奈川県,surveyed,False,False,0,,,90,exhausted,0,0,,,,,
+14361,中井町,神奈川県,surveyed,False,False,0,,,59,exhausted,0,0,,,,,
+14362,大井町,神奈川県,surveyed,False,False,0,,,53,exhausted,0,0,,,,,
+14363,松田町,神奈川県,surveyed,False,False,0,,,91,exhausted,0,0,,,,,
+14364,山北町,神奈川県,surveyed,False,False,0,,,32,exhausted,0,0,,,,,
+14366,開成町,神奈川県,surveyed,False,False,0,,,57,exhausted,0,0,,,,,
+14382,箱根町,神奈川県,surveyed,False,False,0,,,39,exhausted,0,0,,,,,
+14383,真鶴町,神奈川県,surveyed,False,False,0,,,38,exhausted,0,0,,,,,
+14384,湯河原町,神奈川県,surveyed,False,False,0,,,52,exhausted,0,0,,,,,
+14401,愛川町,神奈川県,surveyed,True,False,14,event|facility|organization,event|facility|listing,154,exhausted,0,0,https://www.town.aikawa.kanagawa.jp/sports_bunka/sports/6639.html,listing,facility,スポーツ施設の利用案内/愛川町ホームページ,人工芝の多目的広場(少年サッカーやフットサル、ハンドボール、グラウンド・ゴルフ等の利用を想定)の利用予約は、次のとおり実施しています。
+14402,清川村,神奈川県,surveyed,True,False,3,event|other,event|facility|listing,11,exhausted,0,0,https://www.town.kiyokawa.kanagawa.jp/Sightseeing/sports/index.html,listing,other,スポーツ/清川村,【雨天により中止】生涯スポーツ推進事業「清川村グラウンド・ゴルフ大会」(令和8年6月27日開催)
