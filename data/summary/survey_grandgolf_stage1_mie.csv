@@ -1,0 +1,30 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+24201,津市,三重県,surveyed,True,False,3,facility|organization,facility,200,max_pages,0,0,https://www.info.city.tsu.mie.jp/kankou_bunka_sports/sports_shinkou/1004414/1004418.html,facility,organization,津市スポーツ協会|津市公式ウェブサイト-Official Website of Tsu City,います。 アーチェリー 合気道 エアロビック 空手道 弓道 グラウンドゴルフ ゲートボール 剣道 ゴルフ サッカー 山岳 少林寺拳法 少
+24202,四日市市,三重県,surveyed,True,False,4,event,event,62,exhausted,0,0,https://www.city.yokkaichi.lg.jp/www/contents/1751268024375/index.html,event,event,第56回四日市市民スポーツフェスタ開催について | 四日市市役所,リーナ四日市、四日市市中央陸上競技場 ほか 6.種目 (1)グラウンド・ゴルフ大会 (2)ファミリーロゲイニング大会(3時間の部) (3)
+24203,伊勢市,三重県,surveyed,True,False,1,organization,facility,148,exhausted,0,0,https://www.city.ise.mie.jp/kyouiku/sports/shinko/club/1001824.html,facility,organization,総合型地域スポーツクラブ一覧|伊勢市公式ホームページ,ッカー、フットサル、野球、ソフトテニス、ソフトバレーボール、グラウンドゴルフ、外国人と遊ぶ教室、大学生と遊ぶ教室、ものづくり、理科工作 
+24204,松阪市,三重県,surveyed,True,False,5,facility|organization,facility,200,max_pages,0,0,https://www.city.matsusaka.mie.jp/site/sports/23.html,facility,facility,阪内川スポーツ公園多目的グラウンド - スポーツ - お肉のまち 松阪市公式ホームページ,じ広さの多目的グラウンドでは、軟式野球をはじめソフトボール、グラウンド・ゴルフ等、幅広くご利用いただけます。​ 住所 松阪市阿形町819番
+24205,桑名市,三重県,surveyed,True,False,5,event|facility,event|facility,130,exhausted,0,0,https://www.city.kuwana.lg.jp/shisetsu/sports/003.html,facility,facility,NTN総合運動公園多目的運動広場/桑名市,NTN総合運動公園多目的運動広場 多目的運動広場 陸上競技、グラウンドゴルフにご利用いただけます。 NTN総合運動公園多目的運動広場の管
+24207,鈴鹿市,三重県,surveyed,True,True,1,other,facility,122,exhausted,0,1,https://www.city.suzuka.lg.jp/bunka/sports/1003321.html,facility,other,ニュースポーツ用具の貸し出し|鈴鹿市公式ウェブサイト,、貸し出しができる用具は、PDFファイルをご確認ください。 グラウンド・ゴルフ 貸し出し用具 (PDF 252.5KB) バッゴー 貸し出
+24208,名張市,三重県,surveyed,True,False,2,event|facility,event|facility,48,exhausted,0,0,https://www.city.nabari.lg.jp/s062/010/420/201502051839.html,facility,facility,つつじが丘公園|名張市,ニスコート 全天候型(ハード) 2面 ゲートボール場 1面 グラウンドゴルフ場 9ホール 利用時間 午前9時から午後6時 (テニスコート
+24209,尾鷲市,三重県,surveyed,False,False,0,,,60,exhausted,0,0,,,,,
+24210,亀山市,三重県,surveyed,False,False,0,,,51,exhausted,0,0,,,,,
+24211,鳥羽市,三重県,surveyed,True,False,1,organization,facility,19,exhausted,0,0,https://www.city.toba.mie.jp/soshiki/k_sports/gyomu/sports/2861.html,facility,organization,鳥羽市体育協会/鳥羽市ホームページ,道場 村山 栄太郎 鳥羽市クレー射撃協会 水川 敬善 鳥羽市グラウンドゴルフ協会 山田 良平 鳥羽市剣道協会 山下 真由 鳥羽市ゴルフ協
+24212,熊野市,三重県,no_seed,False,False,0,,,0,,0,0,,,,,
+24214,いなべ市,三重県,surveyed,True,False,1,facility,facility,62,exhausted,0,0,https://www.city.inabe.mie.jp/shisetsu/sportsshisetsu/sportsshisetsu/1002767.html,facility,facility,施設案内 大安スポーツ公園運動場|いなべ市公式ウェブサイト,場(夜間照明設備使用できません) (サッカー、ソフトボール、グランドゴルフ利用可) ※サッカーコートは大人用の正規格は取れません。 付
+24215,志摩市,三重県,surveyed,False,False,0,,,14,exhausted,0,0,,,,,
+24216,伊賀市,三重県,surveyed,True,False,4,facility|organization,facility|listing,151,exhausted,0,0,https://www.city.iga.lg.jp/0000003163.html,listing,facility,上野運動公園のスポーツ施設 | 三重県伊賀市,多目的グラウンド(72m×58m) 少年野球、少年サッカー、グラウンド・ゴルフなどにご利用いただけます。 利用時間 午前6時~午後5時 ※
+24303,木曽岬町,三重県,surveyed,False,False,0,,,26,exhausted,0,0,,,,,
+24324,東員町,三重県,surveyed,True,False,5,event|facility,event|facility|listing,34,exhausted,0,0,https://www.town.toin.lg.jp/bunka_sports/sports/2509.html,listing,facility,体育施設の使用料/東員町ホームページ,"利用区分/使用区分 町内 町外 町内(夜間) 町外(夜間) グラウンドゴルフ等静的競技で使用するとき 1,000円 2,000円 2,0"
+24341,菰野町,三重県,surveyed,False,False,0,,,57,exhausted,0,0,,,,,
+24343,朝日町,三重県,surveyed,False,False,0,,,11,exhausted,0,0,,,,,
+24344,川越町,三重県,surveyed,True,False,3,event|facility,event,44,exhausted,0,0,https://www.town.kawagoe.mie.jp/bunka_sports_event/index.html,event,event,文化・スポーツ・イベント|三重県川越町公式サイト,み聞かせ おひさま児童館 ウクレレ歌あそび おひさま児童館 グラウンドゴルフ おひさま児童館 紙芝居 川越町FAGクラブ・おひさま児童館
+24441,多気町,三重県,no_seed,False,False,0,,,0,,0,0,,,,,
+24442,明和町,三重県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+24443,大台町,三重県,no_seed,False,False,0,,,0,,0,0,,,,,
+24461,玉城町,三重県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
+24470,度会町,三重県,surveyed,True,False,1,organization,facility,164,exhausted,0,0,https://www.town.watarai.lg.jp/contents_detail.php?co=kak&frmId=1956,facility,organization,総合型地域スポーツクラブ | 度会町公式ホームページ,本の武道を学ぶ。 基本から正しく指導します。 12 シニア グランドゴルフ 65歳以上 毎月最終日曜日 9:00~11:30 宮リバー
+24471,大紀町,三重県,surveyed,False,False,0,,,5,exhausted,0,0,,,,,
+24472,南伊勢町,三重県,surveyed,False,False,0,,,8,exhausted,0,0,,,,,
+24543,紀北町,三重県,no_seed,False,False,0,,,0,,0,0,,,,,
+24561,御浜町,三重県,surveyed,True,False,1,facility,listing,14,exhausted,0,0,https://www.town.mihama.mie.jp/kanko_bunka_sports/bunka_sports/595.html,listing,facility,体育施設の利用について/御浜町,面・ソフトボール2面 テニスコート砂入り人工芝コート 4面 グラウンドゴルフ場 グラウンドゴルフ16コース (注意)上記以外の施設の利用
+24562,紀宝町,三重県,surveyed,False,False,0,,,12,exhausted,0,0,,,,,
