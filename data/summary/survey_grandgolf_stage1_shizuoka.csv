@@ -1,0 +1,36 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+22100,静岡市,静岡県,surveyed,True,False,5,facility,facility|listing,89,exhausted,0,0,https://www.city.shizuoka.lg.jp/s5423/s005313.html,listing,facility,スポーツ施設一覧(所在地別):静岡市公式ホームページ,スコート(6面・壁打ち0.5面)・ターゲットバードゴルフ場・グラウンドゴルフ場・野球場・クラブハウス会議室 指定管理者: 静岡市スポーツ
+22130,浜松市,静岡県,surveyed,True,False,4,facility,facility,200,max_pages,0,0,https://www.city.hamamatsu.shizuoka.jp/w-machi/n-yuto_g_price_list.html,facility,facility,雄踏グラウンドの料金/浜松市,お願いします。 雄踏グラウンドについて 野球や少年サッカー、グラウンドゴルフなどの種目でご利用いただけます。夜間照明設備のご利用も可能で
+22203,沼津市,静岡県,surveyed,True,False,5,event|facility,event|listing,81,exhausted,0,0,https://www.city.numazu.shizuoka.jp/kurashi/shisetsu/seibushiminundo.htm,listing,facility,西部市民運動場/沼津市,使用料が必要) 利用種目 ソフトボール、サッカー、陸上競技、グラウンドゴルフ その他レクリエーション 関連リンク 市施設の利用割引や駐車
+22205,熱海市,静岡県,surveyed,True,False,4,facility|other,facility,58,exhausted,0,0,https://www.city.atami.lg.jp/shisetsu/bunka/1002029/1002035.html,facility,facility,施設案内 姫の沢公園スポーツ広場|熱海市公式ウェブサイト,節に関らず通年利用が可能な人工芝です。サッカー、フットサル、グランドゴルフなど多目的に利用できます。市民の方はもとより、市内で宿泊され
+22206,三島市,静岡県,surveyed,True,False,6,facility|other,facility|listing,183,exhausted,0,0,https://www.city.mishima.shizuoka.jp/page/2560.html,listing,facility,体育施設(体育館、グラウンド、プールなど)・広場の一覧 - 三島市公式ホームページ(スポーツまちづくり課),目的 グラウンド × ソフトボール 少年野球 少年サッカー グラウンドゴルフ等 南二日町22-10 市内団体のみ利用可 浄化センター広場
+22207,富士宮市,静岡県,surveyed,True,True,2,facility|other,facility|sports_nav,77,exhausted,0,1,https://www.city.fujinomiya.lg.jp/3010500000/p001979.html,sports_nav,other,富士宮市民スポーツ祭 | 静岡県富士宮市," スキー、スケート、ペーパーホッケー、ゴルフ、インディアカ、グラウンド・ゴルフ、ハンドボール、 テニス、合気道、登山種目 (PDF:1,5"
+22208,伊東市,静岡県,surveyed,True,False,1,facility,listing,22,exhausted,0,0,https://www.city.ito.shizuoka.jp/gyosei/bunka_sports/sports/sportsshisetsu/5365.html,listing,facility,伊東市民運動場/伊東市,き状況照会 施設写真 市民運動場の施設写真です。 サッカーやグラウンドゴルフ、少年野球など様々な競技が利用できます。 また、夜間照明設備
+22209,島田市,静岡県,surveyed,True,False,6,facility|other,facility|listing,136,exhausted,0,0,https://www.city.shimada.shizuoka.jp/kanko-docs/1605.html,listing,facility,スポーツ施設一覧 - 島田市公式ホームページ, 21.金谷人工芝サッカー場 サッカーのできる施設について グラウンドゴルフ場 22.島田市グラウンドゴルフ場 23.大井川緑地芝生広場
+22210,富士市,静岡県,surveyed,False,False,0,,,65,exhausted,0,0,,,,,
+22211,磐田市,静岡県,surveyed,True,False,1,facility,facility,178,exhausted,0,0,https://www.city.iwata.shizuoka.jp/shisetsu_guide/koen_shisetsu/kouen/1003388.html,facility,facility,施設ガイド 中央公園|磐田市公式ウェブサイト 施設ガイド 中央公園 (ちゅうおうこうえん),東へ300m 園内施設 多目的グラウンド1面(ゲートボール、グラウンドゴルフ、ミニサッカーなど)、ブランコ、滑り台、ジャングルジム、鉄棒
+22212,焼津市,静岡県,surveyed,True,False,2,other,event|facility,40,exhausted,0,0,https://www.city.yaizu.lg.jp/culture-sports/sports/content/new-sports.html,facility,other,ニュースポーツ|焼津市,なっております。 上記に挙げられているニュースポーツのほか、グラウンドゴルフやスポレック、バルーンバレー、ユニホック、スカイクロスなどの
+22213,掛川市,静岡県,surveyed,True,False,2,facility,facility,200,max_pages,0,0,https://www.city.kakegawa.shizuoka.jp/gyosei/docs/7498.html,facility,facility,下垂木多目的広場「ゆうゆうパーク」 - 掛川市 くらし・行政情報,使用できる多目的運動広場です。 広場の整備形態上、サッカー、グラウンドゴルフ、ゲートボールの使用に適した施設となっています。 詳細情報 
+22214,藤枝市,静岡県,surveyed,True,False,11,facility|organization,facility|listing,169,exhausted,0,0,https://www.city.fujieda.shizuoka.jp/bunka/sports/BU002/BE003/1447731254326.html,listing,facility,大井川河川敷スポーツ広場・グラウンドゴルフ場/藤枝市ホームページ,"大井川河川敷スポーツ広場・グラウンドゴルフ場 施設概要 グラウンドゴルフ場『高麗芝』10,200平方メ"
+22215,御殿場市,静岡県,surveyed,True,False,6,facility|other,facility,67,exhausted,0,0,https://www.city.gotemba.lg.jp/kyouiku/d-4/d-4-1/237.html,facility,facility,印野地区スポーツ公園(丸尾パーク) – 教育・文化・スポーツ,トラック/ソフトボール2面 サッカー1面/ゲートボール6面 グラウンドゴルフ テニスコート2面/フットサルコート1面 ジョギングコース 
+22216,袋井市,静岡県,surveyed,True,False,4,facility,facility,49,exhausted,0,0,https://www.city.fukuroi.shizuoka.jp/kanko_bunka/suportsshinko/suportsshisetsu/sports_shisetsu/1425446943241.html,facility,facility,国道1号(バイパス)高架下多目的広場/袋井市,用時間 午前9時~午後5時 施設内容 バスケットボール1面・グラウンドゴルフ・ゲートボール 使用料 無料(専用利用には申し込みが必要です
+22219,下田市,静岡県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+22220,裾野市,静岡県,surveyed,True,False,2,event|other,event|facility,145,exhausted,0,0,https://www.city.susono.shizuoka.jp/kenko/4/21636.html,facility,other,すその健康マイレージ事業/裾野市,に1マイル シルバー生きがい教室 1回参加ごとに1マイル 市グラウンドゴルフ大会(裾野市老人クラブ連合会) 1マイル 市ペタンク大会(裾
+22221,湖西市,静岡県,surveyed,True,False,1,organization,facility,33,exhausted,0,0,https://www.city.kosai.shizuoka.jp/kanko_bunka_sports/sportsG/9732.html,facility,organization,スポーツ協会/湖西市,上、ソフトテニス、弓道、空手(下記リンクをご覧ください。)、グラウンドゴルフがあり、それぞれの部に個人や団体がたくさん加盟しています。 
+22222,伊豆市,静岡県,surveyed,True,False,4,event|facility,event|facility,27,exhausted,0,0,https://www.city.izu.shizuoka.jp/bunka_sports/3/1/3704.html,facility,facility,狩野グラウンド/伊豆市 公式ポータルサイト,野川の清流のすぐそばにあるクレーグラウンド。野球、サッカー、グラウンドゴルフなど多目的に使用可能。低料金なので合宿にも最適。ナイター設備
+22223,御前崎市,静岡県,surveyed,False,False,0,,,83,exhausted,0,0,,,,,
+22224,菊川市,静岡県,surveyed,True,False,9,facility|other,facility|listing,62,exhausted,0,0,https://www.city.kikugawa.shizuoka.jp/shisetsu/kouen_sports/index.html,listing,facility,菊川市/公園・スポーツ施設,体育館 菊川市堀之内体育館 丹野グラウンド 棚草運動場 小笠グラウンドゴルフ場 蓮池公園 おがさセントラルパーク 菊川中央公園 菊川運動
+22225,伊豆の国市,静岡県,surveyed,True,False,1,facility,facility,63,exhausted,0,0,https://www.city.izunokuni.shizuoka.jp/sports/manabi/kashidashi/ichiran/007.html,facility,facility,伊豆の国市/江間グラウンド,貸出備品 競技可能種目 貸出備品 軟式野球(両翼約80m)、グラウンドゴルフ、ソフトボール1面、運動会 ベース、ライン引き 施設写真 グ
+22226,牧之原市,静岡県,surveyed,False,False,0,,,55,exhausted,0,0,,,,,
+22301,東伊豆町,静岡県,surveyed,False,False,0,,,26,exhausted,0,0,,,,,
+22302,河津町,静岡県,surveyed,False,False,0,,,20,exhausted,0,0,,,,,
+22304,南伊豆町,静岡県,surveyed,False,False,0,,,28,exhausted,0,0,,,,,
+22305,松崎町,静岡県,surveyed,True,False,1,facility,facility,27,exhausted,0,0,https://www.town.matsuzaki.shizuoka.jp/docs/2016011900091/,facility,facility,松崎町・西伊豆町公営施設相互利用について | 松崎町,"2-3971 午前・午後:1,200円 夜間:1,000円 グランドゴルフ場 電話 0558-42-3971 午前・午後:300円 松"
+22306,西伊豆町,静岡県,no_seed,False,False,0,,,0,,0,0,,,,,
+22325,函南町,静岡県,surveyed,True,True,5,event|other,event|facility|listing,29,exhausted,0,6,https://www.town.kannami.shizuoka.jp/kanko_bunka_sports/sports/index.html,listing,other,スポーツ/函南町,PO法人函南町スポーツ協会加入団体と会員募集案内 第10回 グラウンドゴルフ大会参加者募集 函南町スポーツ推進委員会「ニュースポーツ体験
+22341,清水町,静岡県,surveyed,False,False,0,,,39,exhausted,0,0,,,,,
+22342,長泉町,静岡県,surveyed,False,False,0,,,31,exhausted,0,0,,,,,
+22344,小山町,静岡県,surveyed,False,False,0,,,36,exhausted,0,0,,,,,
+22424,吉田町,静岡県,surveyed,True,False,1,organization,facility,58,exhausted,0,0,https://www.town.yoshida.shizuoka.jp/7610.htm,facility,organization,吉田町体育協会/ようこそ吉田町へ,ボール部 12 バスケットボール部 13 なぎなた部 14 グラウンドゴルフ部 15 合気道部 16 パラスポーツ部 ◆活動内容は (1
+22429,川根本町,静岡県,surveyed,True,False,2,facility,facility,38,exhausted,0,0,https://www.town.kawanehon.shizuoka.jp/shisetsu/2/918.html,facility,facility,生涯スポーツ広場/川根本町公式ホームページ,26年04月01日 一級河川 大井川河川敷の芝生広場です。 グランドゴルフやサッカー、イベントに使用できます。(キャンプは禁止) 夜間
+22461,森町,静岡県,no_seed,False,False,0,,,0,,0,0,,,,,
