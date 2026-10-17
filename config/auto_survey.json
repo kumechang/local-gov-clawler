@@ -29,6 +29,20 @@
       "route": "pilot2_fukui",
       "from_route": "redecide_v12_1",
       "max_pages": 200
+    },
+    {
+      "prefecture": "愛知県",
+      "keyword": "grandgolf",
+      "route": "pilot3_aichi",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
+    },
+    {
+      "prefecture": "福井県",
+      "keyword": "grandgolf",
+      "route": "pilot3_fukui",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200
     }
   ]
 }
