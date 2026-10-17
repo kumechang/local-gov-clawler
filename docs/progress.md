@@ -132,5 +132,6 @@
 
 ## 2026-10-17 ワード調査 第3版(D-111)
 - [x] 第2版の結果を判定。本文の取り出しの不具合(58%のページで本文が空に近い)を発見、修正(テスト117件通過)
-- [ ] 実クロール(pilot3_aichi・pilot3_fukui): mainへのマージで自動実行(PR・マージは指示待ち)
+- [x] 実クロール(pilot3): 完了。ワードあり45/71。結果は `docs/reports/survey-grandgolf-pilot3-result.md`(D-112)
+- [ ] 新しく見つかった10件の判断(`data/review/survey_grandgolf_pilot3_spotcheck.md`、8番は否定の文)
 - 第1版・第2版の『ワードなし』は見逃しを多く含む。集計の根拠は第3版以降にする
