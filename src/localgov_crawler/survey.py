@@ -19,7 +19,7 @@ from .municipalities import Municipality
 from .nav import base_host, extract_links, is_same_site, norm_text
 from .pipeline import Config, _Ctx, _now
 
-SURVEY_SCHEMA = 7
+SURVEY_SCHEMA = 8
 
 # 予約システム・ログインが必要なページには入らない(handoff §3、CLAUDE.md)
 RESERVATION_URL = re.compile(r"yoyaku|reserve|rsv|login|logon|signin|/sp/reserve|shisetsu-?yoyaku|k-?system|eshisetsu|e-?shisetsu", re.I)
@@ -99,14 +99,24 @@ class KeywordSpec:
         return [(l, m) for l, m in self.find_lines(text) if not is_negated(l, m.end())]
 
 
-# ワードの直後(同じ文の中)にある否定。『グラウンド・ゴルフではご利用いただけません』のような文は、ワードのある記載として数えない(D-113)
+# ワードにかかる否定(D-113、D-119)。『グラウンド・ゴルフではご利用いただけません』のように、ワードの直後に区切りなしで続く否定だけを数える。
+# 同じ行でも、読点・中点・空白・括弧などで区切られた先の否定(他のスポーツの『使用禁止』など)や、『グラウンド・ゴルフ以外は…』は、ワードの否定ではない。
 NEGATION = re.compile(r"いただけません|できません|できない|使えません|ご遠慮|不可|禁止|対象外|行えません|なれません|お断り")
 NEGATION_WINDOW = 40
+NEGATION_MAX_GAP = 20
+CLAUSE_BREAK = re.compile(r"[、，,;；/／・･()（）「」『』\[\]【】\s]")
+EXCEPT_PREFIX = re.compile(r"^(?:以外|を除|除く|のほか|の他|以外の|のみ)")
 
 
 def is_negated(text: str, end: int) -> bool:
     tail = text[end: end + NEGATION_WINDOW].split("。", 1)[0]
-    return bool(NEGATION.search(tail))
+    if EXCEPT_PREFIX.match(tail):
+        return False
+    m = NEGATION.search(tail)
+    if not m:
+        return False
+    gap = tail[: m.start()]
+    return len(gap) <= NEGATION_MAX_GAP and not CLAUSE_BREAK.search(gap)
 
 
 @dataclass
