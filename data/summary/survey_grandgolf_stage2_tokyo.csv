@@ -1,0 +1,63 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+13101,千代田区,東京都,surveyed,False,False,0,,,142,exhausted,0,0,,,,,
+13102,中央区,東京都,surveyed,True,False,7,event|facility,event,122,exhausted,0,0,https://www.city.chuo.lg.jp/bunkakankou/sports/jigyou/taikai/index.html,event,event,中央区ホームページ/スポーツ大会等,グラウンドゴルフ・ペタンク・ターゲットバードゴルフ講習会
+13103,港区,東京都,surveyed,False,False,0,,,125,exhausted,0,0,,,,,
+13104,新宿区,東京都,surveyed,False,False,0,,,74,exhausted,0,0,,,,,
+13105,文京区,東京都,surveyed,False,False,0,,,162,exhausted,0,0,,,,,
+13106,台東区,東京都,surveyed,False,False,0,,,200,max_pages,0,0,,,,,
+13107,墨田区,東京都,surveyed,True,False,1,event,event,200,max_pages,0,0,https://www.city.sumida.lg.jp/kurashi/sports/shinkou/chottano.html,event,event,区民健康教室「ちょっと楽しいスポーツ教室」 墨田区公式ホームページ,チボールバレー、バドミントン、ラージボール卓球、ミニテニス、グラウンド・ゴルフなどのスポーツを年間15回程度で開催しています。
+13108,江東区,東京都,surveyed,True,False,1,event,event,127,exhausted,0,0,https://www.city.koto.lg.jp/104000/event/nenrinpic_tokyo2028.html,event,event,第39回全国健康福祉祭東京大会(ねんりんピックchoju東京2028)|江東区,グラウンドゴルフ、パドルテニス、ソフトバレーボールなど全20種目
+13109,品川区,東京都,surveyed,True,False,12,event|facility|organization,facility,200,max_pages,0,0,https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-bunka/shisetsu-bunka-sprots/kouenhiroba/hpg000006487.html,facility,facility,しながわ中央公園多目的広場|品川区,※利用可能種目:フットサル、ミニサッカー、陸上競技、グラウンド・ゴルフ 等
+13110,目黒区,東京都,surveyed,True,False,3,event|other,event|facility,200,max_pages,1,0,https://www.city.meguro.tokyo.jp/sports/event/f-event1130.html,event,event,砧野球場・砧サッカー場 グラウンド・ゴルフ教室 | 目黒区,砧野球場・砧サッカー場 グラウンド・ゴルフ教室
+13111,大田区,東京都,surveyed,True,False,1,facility,facility,143,exhausted,0,0,https://www.city.ota.tokyo.jp/shisetsu/sports/oomorifurusatonohamab_tamokuteki.html,facility,facility,大田区ホームページ:大森ふるさとの浜辺公園 多目的スポーツ場,フットサル、タグラグビー、アルティメット、グラウンドゴルフなどでご利用可能です。
+13112,世田谷区,東京都,surveyed,False,False,0,,,191,max_requests,0,0,,,,,
+13113,渋谷区,東京都,surveyed,False,False,0,,,151,exhausted,0,0,,,,,
+13114,中野区,東京都,surveyed,True,False,2,organization,facility,184,exhausted,0,0,https://www.city.tokyo-nakano.lg.jp/machizukuri/kouen/kouensiyou/tamokuteki-riyou.html,facility,organization,中野区立公園多目的運動場の団体利用について | 中野区,野球、少年サッカー、ソフトボール、フットサル、ゲートボール、グラウンドゴルフ、タッチラグビー、フラッグフットボール、アルティメット等
+13115,杉並区,東京都,surveyed,False,False,0,,,88,exhausted,0,0,,,,,
+13116,豊島区,東京都,surveyed,True,False,3,event|organization|other,event|facility,103,exhausted,0,0,https://www.city.toshima.lg.jp/136/bunka/sports/sportsclub/003503.html,facility,organization,豊島区スポーツ推進委員|豊島区公式ホームページ,シニアグラウンド・ゴルフ教室、ウォーキング教室、ボッチャ体験教室、ポールウォーキング
+13117,北区,東京都,surveyed,True,False,5,event|facility|other,event|facility,152,exhausted,0,0,https://www.city.kita.lg.jp/culture-tourism-sports/sports/1010385/1010387/1010388.html,facility,facility,北ノ台スポーツ多目的広場|東京都北区,第一スポーツ広場(ゲートボール・グラウンドゴルフ)
+13118,荒川区,東京都,surveyed,True,False,2,event|facility,event|listing,131,exhausted,0,0,https://www.city.arakawa.tokyo.jp/a017/sport/shisetsuriyou/higashiokuriyou.html,listing,facility,東尾久運動場(庭球場・多目的広場・小広場)の利用案内/荒川区公式サイト,小広場のゲートボール/グラウンド・ゴルフ場を利用する場合は、チーム登録が必要です。
+13119,板橋区,東京都,surveyed,True,False,4,event|facility|other,event|facility,121,exhausted,0,0,https://www.city.itabashi.tokyo.jp/bunka/1005245/okugai/1005266.html,facility,facility,陸上競技場|板橋区公式ホームページ,サッカー、フットサル、ラグビー(※1)、ゲートボール、グラウンドゴルフ他
+13120,練馬区,東京都,surveyed,True,False,4,event|facility|other,event|facility|listing,200,max_pages,0,0,https://www.city.nerima.tokyo.jp/shisetsu/koen/undo/nerima.html,listing,facility,練馬総合運動場公園:練馬区公式ホームページ,(注釈)人工芝グラウンドのみ使用の場合(グラウンド・ゴルフ、ゲートボール、ターゲットバードゴルフ等) 【全面】3時間枠
+13121,足立区,東京都,surveyed,True,False,2,facility|organization,facility,151,exhausted,0,0,https://www.city.adachi.tokyo.jp/sports/kouyaaishou.html,facility,facility,高野スポーツパーク(高野小学校跡地スポーツ施設)がオープンしました!|足立区,コートなら4面取れる大きさです。サッカーやフットサルのほか、グラウンドゴルフや健康体操など、人工芝で行えるスポーツで利用可能です。
+13122,葛飾区,東京都,surveyed,True,True,10,event|facility|organization|other,event|facility,200,max_pages,0,4,https://www.city.katsushika.lg.jp/institution/1030225/1000098/1006942/1018935.html,facility,facility,施設案内 水元総合スポーツセンター多目的広場|葛飾区公式サイト,サッカー、フットサル、少年軟式野球、ラグビー、グラウンドゴルフ等
+13123,江戸川区,東京都,surveyed,True,False,2,organization|other,facility,181,exhausted,0,0,https://www.city.edogawa.tokyo.jp/cgi-bin/event_cal_multi/calendar.cgi?type=4&siteid=5,facility,other,スポーツ情報検索サイト 江戸川区ホームページ,鹿骨1丁目リバーズ(グラウンドゴルフ)
+13201,八王子市,東京都,surveyed,True,False,3,facility,facility,200,max_pages,0,0,https://www.city.hachioji.tokyo.jp/life/010/002/003/004/p012068.html,facility,facility,東京フットボールセンター八王子富士森競技場(富士森公園陸上競技場)|八王子市公式ホームページ,グラウンドゴルフ・ターゲットバードゴルフ(おおむね50人以上の参加者が見込ま
+13202,立川市,東京都,surveyed,True,False,7,facility,facility,200,max_pages,0,0,https://www.city.tachikawa.lg.jp/shisetsu/1008063/1024008.html,facility,facility,泉町野球場|立川市,少年野球・ソフトボール・グラウンドゴルフ等ができる野球場です。
+13203,武蔵野市,東京都,surveyed,False,False,0,,,199,exhausted,0,0,,,,,
+13204,三鷹市,東京都,surveyed,True,False,3,facility|organization,facility|listing,146,exhausted,0,0,https://www.city.mitaka.lg.jp/c_service/016/016518.html,listing,facility,三鷹市 |三鷹市のスポーツ施設で利用可能な種目,ル、バトントワリング、ハンドボール、スポーツチャンバラ、室内グラウンドゴルフ、フロアボール、ボッチャ、タグラグビー、柔道、剣道、なぎなた
+13205,青梅市,東京都,surveyed,False,False,0,,,160,exhausted,0,0,,,,,
+13206,府中市,東京都,surveyed,True,False,8,event|facility|other,facility|listing,200,max_pages,0,0,https://www.city.fuchu.tokyo.jp/event/suport/index.html,listing,other,スポーツ 東京都府中市ホームページ,グラウンドゴルフ大会(押立文化センター)
+13207,昭島市,東京都,surveyed,True,False,2,event|other,event|facility,176,exhausted,0,0,https://www.city.akishima.lg.jp/bunka/sports/1004555/1008047.html,facility,other,親子ふれあいスポーツデー|昭島市公式ホームページ,体力テスト、ストラックアウト(ボール・フライングディスク)、グラウンド・ゴルフ、ボッチャ、モルック
+13208,調布市,東京都,surveyed,True,False,2,facility,facility,100,exhausted,0,0,https://www.city.chofu.lg.jp/040070/p026080.html,facility,facility,調布基地跡地運動広場 | 調布市,軟式・硬式野球、ソフトボール、サッカー、ラクロス、ラグビー、グラウンドゴルフの練習・試合などで使用できます。団体での使用に限ります。
+13209,町田市,東京都,surveyed,True,False,9,facility|organization,event|facility,197,exhausted,0,0,https://www.city.machida.tokyo.jp/bunka/sport/sport/sportshiroba.html,facility,facility,スポーツ広場/町田市ホームページ,グラウンドゴルフ
+13210,小金井市,東京都,surveyed,False,False,0,,,131,exhausted,0,0,,,,,
+13211,小平市,東京都,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+13212,日野市,東京都,surveyed,True,False,6,facility|organization|other,facility,200,max_pages,0,0,https://www.city.hino.lg.jp/shisetsu/sports/ground/1001003.html,facility,facility,施設案内 旭が丘中央公園グラウンド・テニスコート|日野市公式ホームページ,軟式野球、ソフトボール、グラウンドゴルフ
+13213,東村山市,東京都,fetch_failed,False,False,0,,,0,,0,0,,,,,
+13214,国分寺市,東京都,surveyed,True,True,6,event|facility|organization|other,event|facility|listing,107,exhausted,0,1,https://www.city.kokubunji.tokyo.jp/culture-sports-tourism/sports/1002602/1014056.html,listing,facility,グラウンド・ゴルフ競技|国分寺市,グラウンド・ゴルフ競技
+13215,国立市,東京都,surveyed,False,False,0,,,42,exhausted,0,0,,,,,
+13218,福生市,東京都,surveyed,True,False,4,facility,facility|listing,131,exhausted,0,0,https://www.city.fussa.tokyo.jp/map/sports/1001671.html,listing,facility,施設案内 南公園グランド|東京都福生市公式ホームページ,軟式野球、少年軟式野球、ソフトボール、サッカー(小学生)、グラウンドゴルフなど
+13219,狛江市,東京都,surveyed,False,False,0,,,55,exhausted,0,0,,,,,
+13220,東大和市,東京都,surveyed,False,False,0,,,200,max_pages,0,0,,,,,
+13221,清瀬市,東京都,surveyed,False,False,0,,,160,exhausted,0,0,,,,,
+13222,東久留米市,東京都,surveyed,True,False,1,facility,facility,143,exhausted,0,0,https://www.city.higashikurume.lg.jp/shisetsu/sports/hiroba/1003067.html,facility,facility,南町運動広場|東久留米市ホームページ,小学生のサッカーと野球、ゲートボール、グラウンドゴルフ、ターゲットバードゴルフ、ソフトボール
+13223,武蔵村山市,東京都,surveyed,True,False,1,organization,facility,29,exhausted,0,0,https://www.city.musashimurayama.lg.jp/kurashi/taiiku/1021889/index.html,facility,organization,スポーツ推進委員|武蔵村山市 公式ホームページ,心身障害者(児)グラウンド・ゴルフ教室
+13224,多摩市,東京都,surveyed,True,False,4,event|facility|organization|other,event|facility,162,exhausted,0,0,https://www.city.tama.lg.jp/kenkofukushi/1008238/sports/joho/suisin/1018228.html,facility,organization,多摩市スポーツ推進委員協議会とは|多摩市公式ホームページ,Let’s goスポーツ イン ナントヨ グラウンド・ゴルフ
+13225,稲城市,東京都,surveyed,True,True,6,event|facility,event|facility,179,exhausted,0,2,https://www.city.inagi.tokyo.jp/shisetsu/sports/1004857/1004858/1004863.html,facility,facility,複合施設ふれんど平尾(体育館・グラウンド)|稲城市公式ウェブサイト,グラウンドゴルフ、ランニングなど
+13227,羽村市,東京都,surveyed,False,False,0,,,139,exhausted,0,0,,,,,
+13228,あきる野市,東京都,surveyed,True,False,3,facility|organization,facility,136,exhausted,0,0,https://www.city.akiruno.tokyo.jp/0000019288.html,facility,facility,小峰グラウンドソフトボール場(小峰運動公園) | あきる野市,ソフトボール、少年野球、グラウンドゴルフ等グラウンドコンディションに悪影響を及ぼさない範囲の運動で使
+13229,西東京市,東京都,surveyed,True,False,1,facility,facility,200,max_pages,0,0,https://www.city.nishitokyo.lg.jp/sisetu/koen_ryokuti/ball_list.html,facility,facility,ボール遊びのできる公園(一覧) 西東京市Web,者等の健康増進を図るため、ボール遊び広場では、ゲートボール、グランドゴルフ、ペタング等のスポーツについては他の公園利用者と譲り合ってご
+13303,瑞穂町,東京都,surveyed,True,False,3,facility|organization,event|facility,168,exhausted,0,0,https://www.town.mizuho.tokyo.jp/kyoikuiinkai/about/007/002/p010902.html,facility,facility,町営少年サッカー場 | 瑞穂町ホームページ,使用可能競技:少年サッカー、グランドゴルフ
+13305,日の出町,東京都,surveyed,True,False,1,facility,facility,59,exhausted,0,0,https://www.town.hinode.tokyo.jp/0000000146.html,facility,facility,町民グランド | 日の出町ホームページ,多目的グラウンド(野球・ソフトボール・サッカー・グラウンドゴルフ等)
+13307,檜原村,東京都,surveyed,False,False,0,,,26,exhausted,0,0,,,,,
+13308,奥多摩町,東京都,surveyed,False,False,0,,,14,exhausted,0,0,,,,,
+13361,大島町,東京都,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+13362,利島村,東京都,surveyed,False,False,0,,,8,exhausted,0,0,,,,,
+13363,新島村,東京都,surveyed,False,False,0,,,53,exhausted,0,0,,,,,
+13364,神津島村,東京都,surveyed,False,False,0,,,3,exhausted,0,0,,,,,
+13381,三宅村,東京都,surveyed,False,False,0,,,4,exhausted,0,0,,,,,
+13382,御蔵島村,東京都,surveyed,False,False,0,,,2,exhausted,0,0,,,,,
+13401,八丈町,東京都,surveyed,False,False,0,,,40,exhausted,0,0,,,,,
+13402,青ヶ島村,東京都,no_seed,False,False,0,,,0,,0,0,,,,,
+13421,小笠原村,東京都,surveyed,False,False,0,,,12,exhausted,0,0,,,,,
