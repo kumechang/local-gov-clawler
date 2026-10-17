@@ -1,0 +1,16 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+16201,富山市,富山県,surveyed,True,False,1,other,event,200,max_pages,0,0,https://www.city.toyama.lg.jp/bunka/sports/1010573/1018872.html,event,other,富山市民スポーツ・レクリエーション祭|富山市公式ウェブサイト,ビーチボール、フレッシュテニス、グラウンド・ゴルフ、パークゴルフ
+16202,高岡市,富山県,surveyed,True,False,1,facility,facility,48,exhausted,0,0,https://www.city.takaoka.toyama.jp/gyosei/kanko_bunka_sports/sports/5/index.html,facility,facility,公営スポーツ施設/高岡市公式ホームページ,パークゴルフ・グラウンドゴルフ
+16204,魚津市,富山県,surveyed,True,False,2,other,facility,111,exhausted,0,0,https://www.city.uozu.toyama.jp/guide/svGuideDtl.aspx?servno=250&cdkb=ctg&cd=3201&topkb=D,facility,other,ニュースポーツ紹介|魚津市,グラウンドゴルフ (所持数 2セット) ※各8ホール
+16205,氷見市,富山県,surveyed,False,False,0,,,29,exhausted,0,0,,,,,
+16206,滑川市,富山県,surveyed,False,False,0,,,34,exhausted,0,0,,,,,
+16207,黒部市,富山県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+16208,砺波市,富山県,no_seed,False,False,0,,,0,,0,0,,,,,
+16209,小矢部市,富山県,surveyed,True,False,1,other,facility,187,exhausted,0,0,https://www.city.oyabe.toyama.jp/bunkasports/1003093/1003103/1003104.html,facility,other,スポーツ用具の貸し出しについて|小矢部市公式ホームページ,16 グラウンドゴルフ
+16210,南砺市,富山県,surveyed,False,False,0,,,189,exhausted,0,0,,,,,
+16211,射水市,富山県,surveyed,False,False,0,,,80,exhausted,0,0,,,,,
+16321,舟橋村,富山県,surveyed,False,False,0,,,11,exhausted,0,0,,,,,
+16322,上市町,富山県,surveyed,False,False,0,,,54,exhausted,0,0,,,,,
+16323,立山町,富山県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
+16342,入善町,富山県,no_seed,False,False,0,,,0,,0,0,,,,,
+16343,朝日町,富山県,surveyed,False,False,0,,,15,exhausted,0,0,,,,,
