@@ -222,8 +222,8 @@ def test_negated_sentences_are_kept_as_samples_for_review():
 
 def test_negation_is_scoped_to_the_words_own_clause():  # D-119: 同じ行でも、区切りの先の他のスポーツの禁止は無関係
     def neg(t):
-        m = SPEC.find(t)[0]
-        return sv.is_negated(norm := sv.norm_text(t), SPEC.find(norm)[0].end())
+        norm = sv.norm_text(t)
+        return sv.is_negated(norm, SPEC.find(norm)[0].end(), SPEC.find(norm)[0].start())
 
     assert neg("グラウンド・ゴルフではご利用いただけません。")
     assert neg("グラウンドゴルフでの使用はご遠慮ください")
@@ -231,3 +231,42 @@ def test_negation_is_scoped_to_the_words_own_clause():  # D-119: 同じ行でも
     assert not neg("グラウンドゴルフ・サッカー可 野球は禁止")
     assert not neg("グラウンド・ゴルフ以外の使用は禁止です")
     assert not neg("グラウンドゴルフ 可　ゴルフ練習 禁止")
+
+
+def test_descriptive_dekinai_is_not_a_negation():  # 宇部市: 『普段なかなか体験できないスポーツ』
+    def neg(t):
+        norm = sv.norm_text(t)
+        return sv.is_negated(norm, SPEC.find(norm)[0].end(), SPEC.find(norm)[0].start())
+
+    assert not neg("陸上競技場では、モルック、グラウンドゴルフなど普段なかなか体験できないスポーツに挑戦!")
+    assert not neg("雨天時はグラウンドゴルフはできない場合があります")  # 条件つき(D-122)
+    assert neg("グラウンドゴルフは利用できない。")
+
+
+def test_partial_or_unrelated_negations_are_kept_as_hits():  # D-122: 久喜市(曜日限定)・本宮市(受付の話)
+    def neg(t):
+        norm = sv.norm_text(t)
+        m = SPEC.find(norm)[0]
+        return sv.is_negated(norm, m.end(), m.start())
+
+    assert not neg("冬休みおよび土曜日、日曜日、祝日は、グラウンドゴルフの利用はできません。")
+    assert not neg("(グラウンド・ゴルフ場管理棟では受付できません。)")
+    assert neg("グラウンド・ゴルフではご利用いただけません。")  # 豊山町型は従来どおり外す
+    assert neg("グラウンドゴルフは禁止です")
+
+
+def test_export_rows_split_by_kind_and_pdf_only_municipality():
+    s = {
+        "municipality": {"code": "29999", "name": "サンプル市", "prefecture": "奈良県", "official_url": "https://x.jp/"}, "run": {"route": "r", "finished_at": "2026-10-18T00:00:00Z"},
+        "pages": [
+            {"url": "https://x.jp/a", "hit": True, "kind": "facility", "title": "中央運動場", "snippets": ["グラウンド・ゴルフができます"], "link_hits": [], "count": 1, "role": "facility", "via": "運動場"},
+            {"url": "https://x.jp/b", "hit": True, "kind": "event", "title": "第3回大会", "snippets": [], "link_hits": [{"text": "グラウンドゴルフ大会", "url": "u"}], "count": 0, "in_title": True, "role": "event", "via": "大会"},
+            {"url": "https://x.jp/c", "hit": False, "kind": "facility", "title": "なし"},
+        ],
+        "pdf_link_hits": [{"text": "グラウンドゴルフ要項", "url": "https://x.jp/a.pdf", "page": "https://x.jp/c"}],
+    }
+    rows = sv.export_rows(s)
+    assert [r["page_kind"] for r in rows] == ["facility", "event"] and rows[1]["in_title"] == "1" and "グラウンドゴルフ大会" in rows[1]["matched_text"]
+    s2 = {**s, "pages": [s["pages"][2]]}
+    r2 = sv.export_rows(s2)
+    assert len(r2) == 1 and r2[0]["found_via"] == "pdf_link" and r2[0]["page_kind"] == "other"

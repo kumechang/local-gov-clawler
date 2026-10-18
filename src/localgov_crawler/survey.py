@@ -19,7 +19,7 @@ from .municipalities import Municipality
 from .nav import base_host, extract_links, is_same_site, norm_text
 from .pipeline import Config, _Ctx, _now
 
-SURVEY_SCHEMA = 8
+SURVEY_SCHEMA = 9
 
 # 予約システム・ログインが必要なページには入らない(handoff §3、CLAUDE.md)
 RESERVATION_URL = re.compile(r"yoyaku|reserve|rsv|login|logon|signin|/sp/reserve|shisetsu-?yoyaku|k-?system|eshisetsu|e-?shisetsu", re.I)
@@ -96,19 +96,27 @@ class KeywordSpec:
     def find_affirmative(self, text: str) -> list[tuple[str, re.Match]]:
         """否定の文を除いた一致。ワードと**同じ行**で、直後(同じ文の中)に『いただけません・禁止』などがあるときだけ否定とみなす。
         別の行・別の項目(他のスポーツの禁止など)は無関係(D-116)。"""
-        return [(l, m) for l, m in self.find_lines(text) if not is_negated(l, m.end())]
+        return [(l, m) for l, m in self.find_lines(text) if not is_negated(l, m.end(), m.start())]
 
 
 # ワードにかかる否定(D-113、D-119)。『グラウンド・ゴルフではご利用いただけません』のように、ワードの直後に区切りなしで続く否定だけを数える。
 # 同じ行でも、読点・中点・空白・括弧などで区切られた先の否定(他のスポーツの『使用禁止』など)や、『グラウンド・ゴルフ以外は…』は、ワードの否定ではない。
-NEGATION = re.compile(r"いただけません|できません|できない|使えません|ご遠慮|不可|禁止|対象外|行えません|なれません|お断り")
+# 『できない』は、直後が名詞(『体験できないスポーツ』)のときは説明の修飾なので、文を終える形のときだけ数える
+NEGATION = re.compile(r"いただけません|できません|できない(?=$|[。、，,)）\s]|ため|ので|です|ように|場合)|使えません|ご遠慮|不可|禁止|対象外|行えません|なれません|お断り")
 NEGATION_WINDOW = 40
 NEGATION_MAX_GAP = 20
 CLAUSE_BREAK = re.compile(r"[、，,;；/／・･()（）「」『』\[\]【】\s]")
 EXCEPT_PREFIX = re.compile(r"^(?:以外|を除|除く|のほか|の他|以外の|のみ)")
 
 
-def is_negated(text: str, end: int) -> bool:
+# ワードと否定の間(gap)が、この語だけでできているときだけ、ワードそのものの利用の否定とみなす(D-122)。
+# 例: 『ではご利用』『は利用』『での使用は』。『管理棟では受付』(受付の話)や『なかなか体験』(説明)は、含まれない語があるので否定でない。
+GAP_TOKENS = sorted(["利用", "使用", "コース", "など", "場", "で", "は", "も", "に", "を", "の", "と", "ご", "等"], key=len, reverse=True)
+# ワードの前に、曜日・時期・時間などの条件がある否定は、一部の制限(『土日祝は利用できません』)なので、ワードの否定としない
+CONDITION_PREFIX = re.compile(r"土曜|日曜|祝日|平日|休み|休日|夜間|雨天|期間|時間|曜日|冬|夏|以外|日は|時は|の間")
+
+
+def is_negated(text: str, end: int, start: int | None = None) -> bool:
     tail = text[end: end + NEGATION_WINDOW].split("。", 1)[0]
     if EXCEPT_PREFIX.match(tail):
         return False
@@ -116,7 +124,16 @@ def is_negated(text: str, end: int) -> bool:
     if not m:
         return False
     gap = tail[: m.start()]
-    return len(gap) <= NEGATION_MAX_GAP and not CLAUSE_BREAK.search(gap)
+    if len(gap) > NEGATION_MAX_GAP or CLAUSE_BREAK.search(gap):
+        return False
+    rest = gap
+    for tok in GAP_TOKENS:
+        rest = rest.replace(tok, "")
+    if rest:
+        return False
+    if start is not None and CONDITION_PREFIX.search(text[:start].rsplit("。", 1)[-1]):
+        return False
+    return True
 
 
 @dataclass
@@ -425,6 +442,33 @@ def write_survey(root: Path, survey: dict, prefecture_code: str) -> Path:
 def load_surveys(root: Path, keyword: str, route: str) -> list[dict]:
     base = Path(root) / keyword / route
     return [json.loads(p.read_text(encoding="utf-8")) for p in sorted(base.glob("*/*.json"))]
+
+
+EXPORT_COLUMNS = ["prefecture", "municipality_code", "municipality_name", "page_kind", "page_title", "page_url", "matched_text", "match_count", "in_title", "found_via", "via_link_text", "site_url", "survey_route", "surveyed_at"]
+KIND_LABEL = {"facility": "場所(施設)", "event": "イベント", "organization": "団体・クラブ", "other": "その他"}
+
+
+def export_rows(s: dict) -> list[dict]:
+    """ワードのあったページ1件を1行にする(場所・イベント・その他への振り分けは page_kind)。ワードのあったページが無くても、PDFのリンク文言にあれば1行ずつ出す(page_kind=other)。"""
+    m = s["municipality"]
+    rows = []
+    for p in s["pages"]:
+        if not p.get("hit"):
+            continue
+        matched = " / ".join((p.get("snippets") or []) + [l["text"] for l in p.get("link_hits", [])][:2])
+        rows.append({
+            "prefecture": m["prefecture"], "municipality_code": m["code"], "municipality_name": m["name"], "page_kind": p.get("kind", "other"),
+            "page_title": p.get("title", ""), "page_url": p["url"], "matched_text": matched, "match_count": p.get("count", 0), "in_title": "1" if p.get("in_title") else "",
+            "found_via": p.get("role", ""), "via_link_text": p.get("via", ""), "site_url": m["official_url"], "survey_route": s["run"]["route"], "surveyed_at": s["run"]["finished_at"],
+        })
+    if not rows:
+        for l in s.get("pdf_link_hits", []):
+            rows.append({
+                "prefecture": m["prefecture"], "municipality_code": m["code"], "municipality_name": m["name"], "page_kind": "other", "page_title": "(PDFのリンク)",
+                "page_url": l["url"], "matched_text": l["text"], "match_count": 1, "in_title": "", "found_via": "pdf_link", "via_link_text": l.get("page", ""),
+                "site_url": m["official_url"], "survey_route": s["run"]["route"], "surveyed_at": s["run"]["finished_at"],
+            })
+    return rows
 
 
 def survey_rows(surveys: list[dict]) -> list[dict]:
