@@ -19,7 +19,7 @@ from .municipalities import Municipality
 from .nav import base_host, extract_links, is_same_site, norm_text
 from .pipeline import Config, _Ctx, _now
 
-SURVEY_SCHEMA = 8
+SURVEY_SCHEMA = 9
 
 # 予約システム・ログインが必要なページには入らない(handoff §3、CLAUDE.md)
 RESERVATION_URL = re.compile(r"yoyaku|reserve|rsv|login|logon|signin|/sp/reserve|shisetsu-?yoyaku|k-?system|eshisetsu|e-?shisetsu", re.I)
@@ -96,7 +96,7 @@ class KeywordSpec:
     def find_affirmative(self, text: str) -> list[tuple[str, re.Match]]:
         """否定の文を除いた一致。ワードと**同じ行**で、直後(同じ文の中)に『いただけません・禁止』などがあるときだけ否定とみなす。
         別の行・別の項目(他のスポーツの禁止など)は無関係(D-116)。"""
-        return [(l, m) for l, m in self.find_lines(text) if not is_negated(l, m.end())]
+        return [(l, m) for l, m in self.find_lines(text) if not is_negated(l, m.end(), m.start())]
 
 
 # ワードにかかる否定(D-113、D-119)。『グラウンド・ゴルフではご利用いただけません』のように、ワードの直後に区切りなしで続く否定だけを数える。
@@ -109,7 +109,14 @@ CLAUSE_BREAK = re.compile(r"[、，,;；/／・･()（）「」『』\[\]【】
 EXCEPT_PREFIX = re.compile(r"^(?:以外|を除|除く|のほか|の他|以外の|のみ)")
 
 
-def is_negated(text: str, end: int) -> bool:
+# ワードと否定の間(gap)が、この語だけでできているときだけ、ワードそのものの利用の否定とみなす(D-122)。
+# 例: 『ではご利用』『は利用』『での使用は』。『管理棟では受付』(受付の話)や『なかなか体験』(説明)は、含まれない語があるので否定でない。
+GAP_TOKENS = sorted(["利用", "使用", "コース", "など", "場", "で", "は", "も", "に", "を", "の", "と", "ご", "等"], key=len, reverse=True)
+# ワードの前に、曜日・時期・時間などの条件がある否定は、一部の制限(『土日祝は利用できません』)なので、ワードの否定としない
+CONDITION_PREFIX = re.compile(r"土曜|日曜|祝日|平日|休み|休日|夜間|雨天|期間|時間|曜日|冬|夏|以外|日は|時は|の間")
+
+
+def is_negated(text: str, end: int, start: int | None = None) -> bool:
     tail = text[end: end + NEGATION_WINDOW].split("。", 1)[0]
     if EXCEPT_PREFIX.match(tail):
         return False
@@ -117,7 +124,16 @@ def is_negated(text: str, end: int) -> bool:
     if not m:
         return False
     gap = tail[: m.start()]
-    return len(gap) <= NEGATION_MAX_GAP and not CLAUSE_BREAK.search(gap)
+    if len(gap) > NEGATION_MAX_GAP or CLAUSE_BREAK.search(gap):
+        return False
+    rest = gap
+    for tok in GAP_TOKENS:
+        rest = rest.replace(tok, "")
+    if rest:
+        return False
+    if start is not None and CONDITION_PREFIX.search(text[:start].rsplit("。", 1)[-1]):
+        return False
+    return True
 
 
 @dataclass

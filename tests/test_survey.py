@@ -222,8 +222,8 @@ def test_negated_sentences_are_kept_as_samples_for_review():
 
 def test_negation_is_scoped_to_the_words_own_clause():  # D-119: 同じ行でも、区切りの先の他のスポーツの禁止は無関係
     def neg(t):
-        m = SPEC.find(t)[0]
-        return sv.is_negated(norm := sv.norm_text(t), SPEC.find(norm)[0].end())
+        norm = sv.norm_text(t)
+        return sv.is_negated(norm, SPEC.find(norm)[0].end(), SPEC.find(norm)[0].start())
 
     assert neg("グラウンド・ゴルフではご利用いただけません。")
     assert neg("グラウンドゴルフでの使用はご遠慮ください")
@@ -236,8 +236,20 @@ def test_negation_is_scoped_to_the_words_own_clause():  # D-119: 同じ行でも
 def test_descriptive_dekinai_is_not_a_negation():  # 宇部市: 『普段なかなか体験できないスポーツ』
     def neg(t):
         norm = sv.norm_text(t)
-        return sv.is_negated(norm, SPEC.find(norm)[0].end())
+        return sv.is_negated(norm, SPEC.find(norm)[0].end(), SPEC.find(norm)[0].start())
 
     assert not neg("陸上競技場では、モルック、グラウンドゴルフなど普段なかなか体験できないスポーツに挑戦!")
-    assert neg("雨天時はグラウンドゴルフはできない場合があります")
+    assert not neg("雨天時はグラウンドゴルフはできない場合があります")  # 条件つき(D-122)
     assert neg("グラウンドゴルフは利用できない。")
+
+
+def test_partial_or_unrelated_negations_are_kept_as_hits():  # D-122: 久喜市(曜日限定)・本宮市(受付の話)
+    def neg(t):
+        norm = sv.norm_text(t)
+        m = SPEC.find(norm)[0]
+        return sv.is_negated(norm, m.end(), m.start())
+
+    assert not neg("冬休みおよび土曜日、日曜日、祝日は、グラウンドゴルフの利用はできません。")
+    assert not neg("(グラウンド・ゴルフ場管理棟では受付できません。)")
+    assert neg("グラウンド・ゴルフではご利用いただけません。")  # 豊山町型は従来どおり外す
+    assert neg("グラウンドゴルフは禁止です")
