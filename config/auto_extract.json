@@ -31,6 +31,241 @@
       "prefecture": "埼玉県",
       "keyword": "grandgolf",
       "route": "pilot2_saitama"
+    },
+    {
+      "prefecture": "愛知県",
+      "keyword": "grandgolf",
+      "route": "national_aichi"
+    },
+    {
+      "prefecture": "福井県",
+      "keyword": "grandgolf",
+      "route": "national_fukui"
+    },
+    {
+      "prefecture": "三重県",
+      "keyword": "grandgolf",
+      "route": "national_mie"
+    },
+    {
+      "prefecture": "岐阜県",
+      "keyword": "grandgolf",
+      "route": "national_gifu"
+    },
+    {
+      "prefecture": "静岡県",
+      "keyword": "grandgolf",
+      "route": "national_shizuoka"
+    },
+    {
+      "prefecture": "滋賀県",
+      "keyword": "grandgolf",
+      "route": "national_shiga"
+    },
+    {
+      "prefecture": "石川県",
+      "keyword": "grandgolf",
+      "route": "national_ishikawa"
+    },
+    {
+      "prefecture": "富山県",
+      "keyword": "grandgolf",
+      "route": "national_toyama"
+    },
+    {
+      "prefecture": "京都府",
+      "keyword": "grandgolf",
+      "route": "national_kyoto"
+    },
+    {
+      "prefecture": "大阪府",
+      "keyword": "grandgolf",
+      "route": "national_osaka"
+    },
+    {
+      "prefecture": "兵庫県",
+      "keyword": "grandgolf",
+      "route": "national_hyogo"
+    },
+    {
+      "prefecture": "奈良県",
+      "keyword": "grandgolf",
+      "route": "national_nara"
+    },
+    {
+      "prefecture": "和歌山県",
+      "keyword": "grandgolf",
+      "route": "national_wakayama"
+    },
+    {
+      "prefecture": "茨城県",
+      "keyword": "grandgolf",
+      "route": "national_ibaraki"
+    },
+    {
+      "prefecture": "栃木県",
+      "keyword": "grandgolf",
+      "route": "national_tochigi"
+    },
+    {
+      "prefecture": "群馬県",
+      "keyword": "grandgolf",
+      "route": "national_gunma"
+    },
+    {
+      "prefecture": "埼玉県",
+      "keyword": "grandgolf",
+      "route": "national_saitama"
+    },
+    {
+      "prefecture": "千葉県",
+      "keyword": "grandgolf",
+      "route": "national_chiba"
+    },
+    {
+      "prefecture": "東京都",
+      "keyword": "grandgolf",
+      "route": "national_tokyo"
+    },
+    {
+      "prefecture": "神奈川県",
+      "keyword": "grandgolf",
+      "route": "national_kanagawa"
+    },
+    {
+      "prefecture": "北海道",
+      "keyword": "grandgolf",
+      "route": "national_hokkaido"
+    },
+    {
+      "prefecture": "青森県",
+      "keyword": "grandgolf",
+      "route": "national_aomori"
+    },
+    {
+      "prefecture": "岩手県",
+      "keyword": "grandgolf",
+      "route": "national_iwate"
+    },
+    {
+      "prefecture": "宮城県",
+      "keyword": "grandgolf",
+      "route": "national_miyagi"
+    },
+    {
+      "prefecture": "秋田県",
+      "keyword": "grandgolf",
+      "route": "national_akita"
+    },
+    {
+      "prefecture": "山形県",
+      "keyword": "grandgolf",
+      "route": "national_yamagata"
+    },
+    {
+      "prefecture": "福島県",
+      "keyword": "grandgolf",
+      "route": "national_fukushima"
+    },
+    {
+      "prefecture": "山梨県",
+      "keyword": "grandgolf",
+      "route": "national_yamanashi"
+    },
+    {
+      "prefecture": "長野県",
+      "keyword": "grandgolf",
+      "route": "national_nagano"
+    },
+    {
+      "prefecture": "新潟県",
+      "keyword": "grandgolf",
+      "route": "national_niigata"
+    },
+    {
+      "prefecture": "鳥取県",
+      "keyword": "grandgolf",
+      "route": "national_tottori"
+    },
+    {
+      "prefecture": "島根県",
+      "keyword": "grandgolf",
+      "route": "national_shimane"
+    },
+    {
+      "prefecture": "岡山県",
+      "keyword": "grandgolf",
+      "route": "national_okayama"
+    },
+    {
+      "prefecture": "広島県",
+      "keyword": "grandgolf",
+      "route": "national_hiroshima"
+    },
+    {
+      "prefecture": "山口県",
+      "keyword": "grandgolf",
+      "route": "national_yamaguchi"
+    },
+    {
+      "prefecture": "徳島県",
+      "keyword": "grandgolf",
+      "route": "national_tokushima"
+    },
+    {
+      "prefecture": "香川県",
+      "keyword": "grandgolf",
+      "route": "national_kagawa"
+    },
+    {
+      "prefecture": "愛媛県",
+      "keyword": "grandgolf",
+      "route": "national_ehime"
+    },
+    {
+      "prefecture": "高知県",
+      "keyword": "grandgolf",
+      "route": "national_kochi"
+    },
+    {
+      "prefecture": "福岡県",
+      "keyword": "grandgolf",
+      "route": "national_fukuoka"
+    },
+    {
+      "prefecture": "佐賀県",
+      "keyword": "grandgolf",
+      "route": "national_saga"
+    },
+    {
+      "prefecture": "長崎県",
+      "keyword": "grandgolf",
+      "route": "national_nagasaki"
+    },
+    {
+      "prefecture": "熊本県",
+      "keyword": "grandgolf",
+      "route": "national_kumamoto"
+    },
+    {
+      "prefecture": "大分県",
+      "keyword": "grandgolf",
+      "route": "national_oita"
+    },
+    {
+      "prefecture": "宮崎県",
+      "keyword": "grandgolf",
+      "route": "national_miyazaki"
+    },
+    {
+      "prefecture": "鹿児島県",
+      "keyword": "grandgolf",
+      "route": "national_kagoshima"
+    },
+    {
+      "prefecture": "沖縄県",
+      "keyword": "grandgolf",
+      "route": "national_okinawa"
     }
   ]
 }

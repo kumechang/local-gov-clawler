@@ -92,3 +92,36 @@ def test_contact_blocks_are_not_facilities_and_dept_is_cleaned():  # 上里町�
     r = ex.extract_page(html, "サンプル市", SPEC)
     assert [(i["name"], i["address"], i["phone"]) for i in r["items"]] == [("中央運動場", "サンプル市中央1-1", "0742-11-1111")]
     assert r["inquiry"]["phone"] == "0742-99-9999" and r["inquiry"]["dept"] == "スポーツ課 スポーツ施設担当"
+
+
+def test_address_must_start_with_a_municipality_and_not_be_a_sentence():  # v3: 『・』『住』『を有しない者が…』『(代表)』を住所にしない
+    for bad in ["・", "住", "(代表)", "を有しない者が過半数利用する場合は、使用料が2倍になります。", "郵便番号:470-0162", "葛和田サッカー場:"]:
+        assert not ex.looks_like_address(bad), bad
+    for good in ["春日井市美濃町", "深谷市本田501番地先", "埼玉県春日部市牛島626", "〒491-8501 愛知県一宮市本町2丁目5番6号"]:
+        assert ex.looks_like_address(good), good
+
+
+def test_department_heading_with_address_is_not_a_facility():  # 大口町『生涯学習課』
+    html = """<html><head><title>多目的広場/サンプル市</title></head><body><h1>多目的広場</h1>
+    <h2>生涯学習課</h2><dl><dt>所在地</dt><dd>サンプル市下小口六丁目150番地</dd><dt>電話</dt><dd>0587-95-9033</dd></dl></body></html>"""
+    r = ex.extract_page(html, "サンプル市", SPEC)
+    assert all(i["name"] != "生涯学習課" for i in r["items"])
+
+
+def test_trailing_open_parenthesis_is_removed():  # 豊川市『三上町東畑19(』
+    assert ex.clean_address("三上町東畑19(地図)") == "三上町東畑19"
+    assert ex.clean_address("三上町東畑19 (豊川市)") == "三上町東畑19"
+
+
+def test_address_without_a_city_name_in_the_address_field_is_kept():  # 上尾市『西門前580-1』
+    assert ex.clean_address("/西門前580-1、敷地面積/約0.7ヘクタール") == "西門前580-1"
+    assert ex.looks_like_address("/西門前580-1、敷地面積/約0.7ヘクタール")
+    assert ex.clean_address("緑浜町2-3、5-1") == "緑浜町2-3、5-1"  # 複数の地番の読点は切らない
+    assert not ex.looks_like_address("葛和田サッカー場:") and not ex.looks_like_address("住") and not ex.looks_like_address("・")
+
+
+def test_facility_name_is_tidied():
+    assert ex.tidy_name("施設案内 横須賀公園") == "横須賀公園"
+    assert ex.tidy_name("『桶川市新小針領家グラウンド』について") == "桶川市新小針領家グラウンド"
+    assert ex.tidy_name("上平広場の利用について") == "上平広場"
+    assert ex.tidy_name("中央公園グラウンド ナイター") == "中央公園グラウンド ナイター"

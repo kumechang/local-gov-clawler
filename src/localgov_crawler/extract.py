@@ -26,7 +26,7 @@ POSTAL = re.compile(r"(?:〒|郵便番号?[:：]?)\s*\d{3}-\d{4}")
 ADDRESS_KEY = re.compile(r"^(?:所在地|住所|所在|場所|位置|施設所在地|所在地・アクセス|所在地・電話)(?:\s|（.*）|\(.*\))?$")
 PHONE_KEY = re.compile(r"電話|TEL|Tel|tel|連絡先|問い?合わせ|お問合せ")
 NAME_KEY = re.compile(r"^(?:施設名|名称|施設の名称|名前)$")
-CONTACT_HEADING = re.compile(r"お?問い?合わせ|連絡先|担当|^.{1,12}[係課室部班]\\s*(?:\\(.*\\))?$|このページ|この記事")
+CONTACT_HEADING = re.compile(r"お?問い?合わせ|連絡先|担当|^.{1,12}[係課室部班]\s*(?:[(（].*[)）])?$|このページ|この記事")
 GENERIC_HEADING = re.compile(r"^(?:施設概要|施設情報|基本情報|概要|アクセス|お問い合わせ|問い合わせ|利用案内|利用方法|料金|設備|施設の概要|施設案内|ご利用案内|所在地|地図|関連情報|その他|注意事項|備考|利用できる種目|主な設備)$")
 SITE_WORDS = re.compile(r"公式|ホームページ|ウェブサイト|Webサイト|市役所|町役場|村役場|トップページ")
 INQUIRY_MARK = re.compile(r"お?問い?合わせ(?:先)?|担当(?:課|部署)?|連絡先")
@@ -58,6 +58,8 @@ def clean_address(value: str) -> str:
     v = re.sub(r"^〒\s*\d{3}-\d{4}\s*", "", v)
     v = PREFECTURE_PREFIX.sub(lambda m: m.group(0).strip(), v)
     v = ADDRESS_CUT.sub("", v).strip(" 　:：、,")
+    v = re.sub(r"^[/／・:：\s]+", "", v)
+    v = re.split(r"[、,/／]\s*(?:敷地|面積|駐車|広さ|延べ|延床|構造|設備|開設|営業|利用|開館|地図|アクセス)", v)[0]
     tokens = v.split()
     if not tokens:
         return ""
@@ -67,9 +69,28 @@ def clean_address(value: str) -> str:
     return out[:80]
 
 
+ADDRESS_START = re.compile(r"^(?:〒\s*\d{3}-\d{4}\s*)?(?:北海道|東京都|京都府|大阪府|\S{2,3}県)?\S{1,10}?[市区町村郡]")
+
+
 def looks_like_address(v: str) -> bool:
-    """市区町村郡の名前を含む(『クラブハウス』『現場事務所』のような場所の名前は住所でない)。"""
-    return bool(re.search(r"[市区町村郡]", v)) and not re.search(r"クラブハウス|事務所|管理棟|受付|売店", v)
+    """市区町村郡の名前で始まる(都道府県・郵便番号は前にあってよい)。『クラブハウス』『現場事務所』のような場所の名前や、文は住所でない。"""
+    v = norm_text(v)
+    if re.search(r"クラブハウス|事務所|管理棟|受付|売店|郵便番号|。", v):
+        return False
+    if ADDRESS_START.match(v):
+        return True
+    head = re.sub(r"^[/／・:：\s]+", "", v)
+    head = re.split(r"[、,/／]\s*(?:敷地|面積|駐車|広さ|延べ|設備|利用)", head)[0].strip()
+    return bool(re.match(r"^[^\s\d]{1,12}\d+(?:[-－]\d+)*(?:番地?|号)?(?:先|地内)?$", head))  # 『西門前580-1』のように市の名前の無い所在地
+
+
+def tidy_name(name: str) -> str:
+    """施設名の整形: 先頭の『施設案内』、括弧、末尾の『…について』を取る。"""
+    n = norm_text(name)
+    n = re.sub(r"^(?:施設案内|施設情報|施設紹介|施設概要)\s*[:：]?\s*", "", n)
+    n = re.sub(r"[『』「」]", "", n)
+    n = re.sub(r"(?:の利用(?:案内|方法)?について|のご利用について|について|のご案内|の利用案内)$", "", n)
+    return n.strip()[:80]
 
 
 def clean_name(title: str, muni_name: str) -> str:
@@ -225,7 +246,7 @@ def extract_page(html: str, muni_name: str, spec: KeywordSpec | None = None) -> 
     gg = [bool(spec and spec.find_affirmative(it.text)) for it in items] if spec is not None else [False] * len(items)
     return {
         "title": title[:100], "page_name": page_name, "multi_facility": len(items) > 1, "item_source": source,
-        "items": [{"name": it.name or page_name, "address": it.address, "phone": it.phone, "source": it.source, "keyword_in_item": g} for it, g in zip(items, gg)],
+        "items": [{"name": tidy_name(it.name or page_name), "address": it.address, "phone": it.phone, "source": it.source, "keyword_in_item": g} for it, g in zip(items, gg)],
         "inquiry": _inquiry(soup),
     }
 
