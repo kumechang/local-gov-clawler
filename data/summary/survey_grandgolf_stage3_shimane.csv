@@ -1,0 +1,20 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+32201,松江市,島根県,surveyed,True,True,19,facility|other,facility|listing,138,exhausted,0,8,https://www.city.matsue.lg.jp/kanko_bunka_sports/sports/3/index.html,listing,facility,運動施設/松江市ホームページ,鹿島グラウンドゴルフ場
+32202,浜田市,島根県,surveyed,True,False,3,facility,facility|listing,90,exhausted,0,0,https://www.city.hamada.shimane.jp/www/contents/1610955203431/index.html,listing,facility,浜田市スポーツ施設|浜田市,ッカー場1施設、フットサル場2施設、アイススケート場1施設、グラウンドゴルフ場・ゲートボール場2施設、複合施設1施設、となっています。
+32203,出雲市,島根県,surveyed,True,False,10,facility|other,facility|listing,93,exhausted,0,0,https://www.city.izumo.shimane.jp/www/contents/1115027917001/index.html,listing,facility,スポーツ施設一覧 | 出雲市,ニュースポーツ競技場一覧(グラウンドゴルフ・ターゲットバードゴルフなど)
+32204,益田市,島根県,surveyed,False,False,0,,,14,exhausted,0,0,,,,,
+32205,大田市,島根県,surveyed,False,False,0,,,33,exhausted,0,0,,,,,
+32206,安来市,島根県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+32207,江津市,島根県,surveyed,True,False,2,event|other,event|facility,15,exhausted,0,0,https://www.city.gotsu.lg.jp/soshiki/29/15587.html,facility,other,スポーツ用具の貸し出しについて - 江津市ホームページ,グラウンドゴルフ
+32209,雲南市,島根県,surveyed,False,False,0,,,40,exhausted,0,0,,,,,
+32343,奥出雲町,島根県,surveyed,False,False,0,,,6,exhausted,0,0,,,,,
+32386,飯南町,島根県,surveyed,False,False,0,,,24,exhausted,0,0,,,,,
+32441,川本町,島根県,surveyed,False,False,0,,,11,exhausted,0,0,,,,,
+32448,美郷町,島根県,surveyed,False,False,0,,,4,exhausted,0,0,,,,,
+32449,邑南町,島根県,surveyed,False,False,0,,,72,exhausted,0,0,,,,,
+32501,津和野町,島根県,surveyed,False,False,0,,,23,exhausted,0,0,,,,,
+32505,吉賀町,島根県,surveyed,True,False,1,facility,listing,14,exhausted,0,0,https://www.town.yoshika.lg.jp/kurashi/kyouiku/supotsushisetsu/supotsu.html,listing,facility,水とすむまち 吉賀町:スポーツ施設,グラウンドゴルフ場
+32525,海士町,島根県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
+32526,西ノ島町,島根県,surveyed,True,False,1,facility,listing,7,exhausted,0,0,https://www.town.nishinoshima.shimane.jp/bunya/b_kyoiku-bunka/b_koryu/12,listing,facility,公民館・スポーツ施設 | 西ノ島町|島根県隠岐郡,島総合公園内には、野球等を行う多目的広場、テニスコート4面、グラウンドゴルフ場、ターゲットバードゴルフ場、バレーコート2面・バスケットコ
+32527,知夫村,島根県,surveyed,False,False,0,,,12,exhausted,0,0,,,,,
+32528,隠岐の島町,島根県,surveyed,False,False,0,,,41,exhausted,0,0,,,,,
