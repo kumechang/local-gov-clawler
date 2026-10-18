@@ -444,6 +444,33 @@ def load_surveys(root: Path, keyword: str, route: str) -> list[dict]:
     return [json.loads(p.read_text(encoding="utf-8")) for p in sorted(base.glob("*/*.json"))]
 
 
+EXPORT_COLUMNS = ["prefecture", "municipality_code", "municipality_name", "page_kind", "page_title", "page_url", "matched_text", "match_count", "in_title", "found_via", "via_link_text", "site_url", "survey_route", "surveyed_at"]
+KIND_LABEL = {"facility": "場所(施設)", "event": "イベント", "organization": "団体・クラブ", "other": "その他"}
+
+
+def export_rows(s: dict) -> list[dict]:
+    """ワードのあったページ1件を1行にする(場所・イベント・その他への振り分けは page_kind)。ワードのあったページが無くても、PDFのリンク文言にあれば1行ずつ出す(page_kind=other)。"""
+    m = s["municipality"]
+    rows = []
+    for p in s["pages"]:
+        if not p.get("hit"):
+            continue
+        matched = " / ".join((p.get("snippets") or []) + [l["text"] for l in p.get("link_hits", [])][:2])
+        rows.append({
+            "prefecture": m["prefecture"], "municipality_code": m["code"], "municipality_name": m["name"], "page_kind": p.get("kind", "other"),
+            "page_title": p.get("title", ""), "page_url": p["url"], "matched_text": matched, "match_count": p.get("count", 0), "in_title": "1" if p.get("in_title") else "",
+            "found_via": p.get("role", ""), "via_link_text": p.get("via", ""), "site_url": m["official_url"], "survey_route": s["run"]["route"], "surveyed_at": s["run"]["finished_at"],
+        })
+    if not rows:
+        for l in s.get("pdf_link_hits", []):
+            rows.append({
+                "prefecture": m["prefecture"], "municipality_code": m["code"], "municipality_name": m["name"], "page_kind": "other", "page_title": "(PDFのリンク)",
+                "page_url": l["url"], "matched_text": l["text"], "match_count": 1, "in_title": "", "found_via": "pdf_link", "via_link_text": l.get("page", ""),
+                "site_url": m["official_url"], "survey_route": s["run"]["route"], "surveyed_at": s["run"]["finished_at"],
+            })
+    return rows
+
+
 def survey_rows(surveys: list[dict]) -> list[dict]:
     rows = []
     for s in surveys:

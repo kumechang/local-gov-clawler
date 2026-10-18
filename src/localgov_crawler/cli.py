@@ -235,13 +235,41 @@ def cmd_survey_summary(args) -> int:
     return 0
 
 
+def _routes_of(args) -> list[str]:
+    if getattr(args, "routes_file", None):
+        return json.loads(Path(args.routes_file).read_text(encoding="utf-8"))["routes"]
+    return args.routes
+
+
+def cmd_survey_export(args) -> int:
+    """ワード調査の結果を、場所(施設)・イベント・その他のCSVに分けて書き出す。ワードのあったページ1件が1行。"""
+    from . import survey as sv
+    chosen: dict[str, dict] = {}
+    for route in _routes_of(args):
+        for s in sv.load_surveys(Path(args.surveys), args.keyword, route):
+            chosen.setdefault(s["municipality"]["code"], s)
+    groups = {"places": [], "events": [], "others": []}
+    for code in sorted(chosen):
+        for row in sv.export_rows(chosen[code]):
+            groups[{"facility": "places", "event": "events"}.get(row["page_kind"], "others")].append(row)
+    out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
+    for name, rows in groups.items():
+        with open(out / f"{args.keyword}_{name}.csv", "w", encoding="utf-8-sig", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=sv.EXPORT_COLUMNS)
+            w.writeheader()
+            w.writerows(rows)
+        print(f"{args.keyword}_{name}.csv: {len(rows)}行({len({r['municipality_code'] for r in rows})}自治体)")
+    return 0
+
+
 def cmd_survey_national(args) -> int:
     """複数routeのワード調査を1つにまとめる(同じ自治体は、先に指定したrouteの結果を使う)。都道府県別の表も出す。"""
     from collections import Counter
     from . import survey as sv
     chosen: dict[str, dict] = {}
     source: dict[str, str] = {}
-    for route in args.routes:
+    for route in _routes_of(args):
         for s in sv.load_surveys(Path(args.surveys), args.keyword, route):
             code = s["municipality"]["code"]
             if code not in chosen:
@@ -338,9 +366,16 @@ def main(argv: list[str] | None = None) -> int:
 
     sp = sub.add_parser("survey-national")
     sp.add_argument("--surveys", default="data/survey"); sp.add_argument("--keyword", required=True)
-    sp.add_argument("--routes", nargs="+", required=True, help="優先順(先に書いたrouteの結果を使う)")
+    sp.add_argument("--routes", nargs="+", help="優先順(先に書いたrouteの結果を使う)")
+    sp.add_argument("--routes-file", help="routeの優先順を書いたファイル(config/survey_sets/*.json)")
     sp.add_argument("--out", default="data/summary")
     sp.set_defaults(fn=cmd_survey_national)
+
+    sp = sub.add_parser("survey-export")
+    sp.add_argument("--surveys", default="data/survey"); sp.add_argument("--keyword", required=True)
+    sp.add_argument("--routes", nargs="+"); sp.add_argument("--routes-file")
+    sp.add_argument("--out", default="data/export")
+    sp.set_defaults(fn=cmd_survey_export)
 
     sp = sub.add_parser("ward-report")
     sp.add_argument("--master", default=str(mun.DEFAULT_MASTER)); sp.add_argument("--results", default="data/results")
