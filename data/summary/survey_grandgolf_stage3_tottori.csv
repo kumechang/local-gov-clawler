@@ -1,0 +1,20 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+31201,鳥取市,鳥取県,surveyed,True,True,8,event|facility|other,event|facility,135,exhausted,0,1,https://www.city.tottori.lg.jp/page/6155.html,facility,facility,スポーツ施設の利用可能時間等について - 鳥取市公式ウェブサイト(生涯学習・スポーツ課),サッカー場/テニスコート/ゲートボール場/グラウンドゴルフ場
+31202,米子市,鳥取県,surveyed,False,False,0,,,95,exhausted,0,0,,,,,
+31203,倉吉市,鳥取県,surveyed,True,False,6,event|organization,event|facility,89,exhausted,0,0,https://www.city.kurayoshi.lg.jp/3578.htm,facility,organization,倉吉市スポーツ協会/倉吉市公式ウェブサイト,倉吉市グラウンド・ゴルフ協会
+31204,境港市,鳥取県,fetch_failed,False,False,0,,,0,,0,0,,,,,
+31302,岩美町,鳥取県,surveyed,True,False,3,facility,event,44,exhausted,0,0,https://www.iwami.gr.jp/2771.htm,event,facility,岩井グラウンドゴルフ場|岩美町公式サイト,岩井グラウンドゴルフ場
+31325,若桜町,鳥取県,surveyed,True,False,2,facility,facility,10,exhausted,0,0,https://www.town.wakasa.tottori.jp/kanko_bunka_sports/machishuhen_shisetsu/575.html,facility,facility,各種施設/若桜町,八幡広場(グラウンドゴルフ公認コース・芝生広場)
+31328,智頭町,鳥取県,no_seed,False,False,0,,,0,,0,0,,,,,
+31329,八頭町,鳥取県,surveyed,False,False,0,,,93,exhausted,0,0,,,,,
+31364,三朝町,鳥取県,surveyed,True,False,2,facility,facility,57,exhausted,0,0,http://www.town.misasa.tottori.jp/315/319/446/332/1734/2130.html,facility,facility,多目的スポーツ広場 | 鳥取県三朝町役場,グラウンドゴルフ・サッカー・ペタンクなど
+31370,湯梨浜町,鳥取県,surveyed,True,True,18,event|facility|organization|other,event|facility|listing,23,exhausted,1,7,https://www.yurihama.jp/adv/ba.php?id=38,listing,facility,湯梨浜町で生まれたグラウンド・ゴルフ - 湯梨浜町(デジタル・みらい戦略課),グラウンド・ゴルフの誕生
+31371,琴浦町,鳥取県,surveyed,True,False,1,other,event,55,exhausted,0,0,https://www.town.kotoura.tottori.jp/docs/2026042700034/,event,other,【スポーツ】第72回東伯郡民スポーツ・レクリエーション祭について | 鳥取県琴浦町,グラウンド・ゴルフ
+31372,北栄町,鳥取県,surveyed,False,False,0,,,47,exhausted,0,0,,,,,
+31384,日吉津村,鳥取県,surveyed,True,True,4,event|facility|other,event|facility|listing,8,exhausted,0,1,https://www.hiezu.jp/category/%e5%90%84%e8%aa%b2%e4%b8%80%e8%a6%a7/%e7%b7%8f%e5%8b%99%e8%aa%b2%ef%bc%88%e7%b7%8f%e5%8b%99%e5%ae%a4%ef%bc%89/%e6%b5%b7%e6%b5%9c%e9%81%8b%e5%8b%95%e5%85%ac%e5%9c%92/,listing,facility,海浜運動公園 – 日吉津村,]【中止】海浜運動公園スポーツ広場オープンイベント「日吉津村グラウンドゴルフ大会」の開催について第2期日吉津村海浜運動公園再整備事業に係
+31386,大山町,鳥取県,surveyed,True,False,4,event|facility|organization,event|listing,30,exhausted,0,0,https://www.daisen.jp/10/8/e164/c163/,listing,facility,体育施設利用料(商工観光課)|鳥取県大山町,グラウンド・ゴルフ場(8ホール)
+31389,南部町,鳥取県,surveyed,False,False,0,,,51,exhausted,0,0,,,,,
+31390,伯耆町,鳥取県,surveyed,True,False,1,facility,facility,50,exhausted,0,0,https://www.houki-town.jp/new1/18/sougous/1/,facility,facility,施設の概要 | 伯耆町公式ウェブサイト,グラウンドゴルフ場(大山コース・日本海コース 計16ホール)
+31401,日南町,鳥取県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+31402,日野町,鳥取県,surveyed,False,False,0,,,14,exhausted,0,0,,,,,
+31403,江府町,鳥取県,surveyed,False,False,0,,,18,exhausted,0,0,,,,,
