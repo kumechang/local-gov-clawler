@@ -1,0 +1,26 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+05201,秋田市,秋田県,surveyed,True,False,14,facility|other,facility,200,max_pages,0,0,https://www.city.akita.lg.jp/shisetsu/sports-koen/1009703/1006402.html,facility,facility,施設案内 八橋多目的グラウンド|秋田市公式サイト,軟式野球、ソフトボール、陸上競技(投てき)練習、グラウンドゴルフ、ゲートボール
+05202,能代市,秋田県,surveyed,True,False,2,organization,facility,151,exhausted,0,0,https://www.city.noshiro.lg.jp/section/kyoiku/gakushu-sports/sports/11057,facility,organization,能代市内の総合型地域スポーツクラブ - 能代市,・主な種目 グラウンド・ゴルフ、健康体操、ラージボール卓球、太極拳、ミニテニス、バドミント
+05203,横手市,秋田県,surveyed,True,False,15,facility,facility|listing,200,max_pages,0,0,https://www.city.yokote.lg.jp/shisetsu/1001526/index.html,listing,facility,屋外スポーツ施設|横手市公式サイト,赤坂総合公園野球場、運動広場、グラウンド・ゴルフ場(施設情報)
+05204,大館市,秋田県,surveyed,False,False,0,,,32,exhausted,0,0,,,,,
+05206,男鹿市,秋田県,no_seed,False,False,0,,,0,,0,0,,,,,
+05207,湯沢市,秋田県,surveyed,True,False,6,facility|other,facility|listing,99,exhausted,0,0,https://www.city-yuzawa.jp/soshiki/85/481.html,listing,facility,湯沢市総合体育館 - 湯沢市ホームページ,キンボールセット、グラウンドゴルフ、フライングディスク、バウンドテニス、トレーニング用具
+05209,鹿角市,秋田県,fetch_failed,False,False,0,,,0,,0,0,,,,,
+05210,由利本荘市,秋田県,surveyed,True,False,12,facility|organization,facility|listing,200,max_pages,0,0,https://www.city.yurihonjo.lg.jp/shisetsu/1002011/index.html,listing,facility,スポーツ施設|由利本荘市公式ウェブサイト,パークゴルフ場・グランドゴルフ場
+05211,潟上市,秋田県,surveyed,True,False,7,event|facility|organization,event|facility,25,exhausted,0,0,https://www.city.katagami.lg.jp/gyosei/kosodate_kyoiku_bunka/supotsu/1469.html,facility,organization,一般社団法人 潟上市体育協会について/潟上市,潟上市グラウンドゴルフ協会
+05212,大仙市,秋田県,surveyed,True,False,9,event|facility|organization,event|facility|listing,164,exhausted,0,0,https://www.city.daisen.lg.jp/genre/facilities,listing,facility,施設案内 | 大仙市,グラウンドゴルフ
+05213,北秋田市,秋田県,fetch_failed,False,False,0,,,0,,0,0,,,,,
+05214,にかほ市,秋田県,surveyed,True,False,2,facility|organization,event|facility,32,exhausted,0,0,https://www.city.nikaho.akita.jp/gyosei/kanko_bunka_sports/sports/sportsshisetsu/4674.html,facility,facility,スポーツ用具の貸出/にかほ市公式サイト,モルック、ラダーゲッター、グランドゴルフ、ドッチビー、ペタンク、フライングディスク、キンボール、スマ
+05215,仙北市,秋田県,surveyed,True,False,1,other,facility,111,exhausted,0,0,https://www.city.semboku.akita.jp/citizens/12_16.html,facility,other,スポーツ用具の貸出 | 仙北市,グラウンドゴルフ
+05303,小坂町,秋田県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+05327,上小阿仁村,秋田県,surveyed,False,False,0,,,18,exhausted,0,0,,,,,
+05346,藤里町,秋田県,surveyed,False,False,0,,,41,exhausted,0,0,,,,,
+05348,三種町,秋田県,surveyed,True,False,4,facility|organization,facility,39,exhausted,0,0,https://www.town.mitane.akita.jp/kanko_bunka_sports/sports/sportsfacilities/3470.html,facility,facility,ことおか中央公園/秋田県三種町【公式】,",000平方メートルの広さを持つ多目的に利用できる広場です。グラウンドゴルフ、ターゲット・バードゴルフなどのニュースポーツからサッカー、"
+05349,八峰町,秋田県,surveyed,False,False,0,,,9,exhausted,0,0,,,,,
+05361,五城目町,秋田県,surveyed,False,False,0,,,40,exhausted,0,0,,,,,
+05363,八郎潟町,秋田県,surveyed,False,False,0,,,41,exhausted,0,0,,,,,
+05366,井川町,秋田県,surveyed,True,False,1,organization,listing,11,exhausted,0,0,https://www.town.ikawa.akita.jp/page/1313.html,listing,organization,スポーツ施設 - 秋田県井川町公式ホームページ(教育委員会),グラウンドゴルフ場
+05368,大潟村,秋田県,surveyed,False,False,0,,,20,exhausted,0,0,,,,,
+05434,美郷町,秋田県,surveyed,True,False,6,facility|other,facility,62,exhausted,0,0,https://www.town.misato.akita.jp/archive/contents-2613,facility,other,美郷町屋内スポーツ館 | 秋田県美郷町,六郷温泉あったか山のすぐ奥にある山間部のグラウンドゴルフ場です。
+05463,羽後町,秋田県,surveyed,True,False,2,other,facility,69,exhausted,0,0,https://www.town.ugo.lg.jp/life/detail.html?id=375&category_id=106,facility,other,五輪坂スポーツガーデン | 羽後町,グラウンドゴルフを楽しめる施設です。
+05464,東成瀬村,秋田県,surveyed,False,False,0,,,15,exhausted,0,0,,,,,
