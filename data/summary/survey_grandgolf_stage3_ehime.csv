@@ -1,0 +1,21 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+38201,松山市,愛媛県,surveyed,True,False,18,event|facility|other,event|facility|listing,198,exhausted,0,0,https://www.city.matsuyama.ehime.jp/shisetsu/koen/sportssyoukai/sportsshisetsu/index.html,listing,facility,市内スポーツ施設 松山市公式ホームページ PCサイト,グラウンド・ゴルフができる施設
+38202,今治市,愛媛県,surveyed,False,False,0,,,40,exhausted,0,0,,,,,
+38203,宇和島市,愛媛県,no_seed,False,False,0,,,0,,0,0,,,,,
+38204,八幡浜市,愛媛県,surveyed,False,False,0,,,9,exhausted,0,0,,,,,
+38205,新居浜市,愛媛県,surveyed,False,False,0,,,26,exhausted,0,0,,,,,
+38206,西条市,愛媛県,surveyed,True,False,6,event|facility,event|facility|listing,157,exhausted,0,0,https://www.city.saijo.ehime.jp/soshiki/sportskenko/taiikusisetu.html,listing,facility,体育施設・料金一覧 - 愛媛県西条市ホームページ,小松中央公園グラウンドゴルフ場
+38207,大洲市,愛媛県,surveyed,False,False,0,,,90,exhausted,0,0,,,,,
+38210,伊予市,愛媛県,surveyed,False,False,0,,,68,exhausted,0,0,,,,,
+38213,四国中央市,愛媛県,surveyed,False,False,0,,,60,exhausted,0,0,,,,,
+38214,西予市,愛媛県,surveyed,True,False,1,other,event,18,exhausted,0,0,https://www.city.seiyo.ehime.jp/kakuka/seisaku_kikaku/machi/supobun/sports_1/ibenntokaisaiannnai/16003.html,event,other,第23回 西予市民スポーツ祭/西予市,ル(女子)、レクバレー(一般、婦人)、クロッケー、サッカー、グラウンドゴルフ、軟式野球、ソフトバレー(混合フリー)、バスケットボール女子
+38215,東温市,愛媛県,surveyed,False,False,0,,,3,exhausted,0,0,,,,,
+38356,上島町,愛媛県,surveyed,False,False,0,,,39,exhausted,0,0,,,,,
+38386,久万高原町,愛媛県,surveyed,False,False,0,,,29,exhausted,0,0,,,,,
+38401,松前町,愛媛県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
+38402,砥部町,愛媛県,surveyed,True,False,1,facility,facility,19,exhausted,0,0,https://www.town.tobe.ehime.jp/bunka_supotsu/2/2448.html,facility,facility,社会体育施設・学校施設の使用方法/砥部町公式ホームページ,ゆとり公園各施設(多目的広場・体育館・武道場・テニスコート・グラウンドゴルフ場など)を使用したいときは、施設利用予約システムから予約する
+38422,内子町,愛媛県,surveyed,False,False,0,,,76,exhausted,0,0,,,,,
+38442,伊方町,愛媛県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+38484,松野町,愛媛県,surveyed,False,False,0,,,6,exhausted,0,0,,,,,
+38488,鬼北町,愛媛県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+38506,愛南町,愛媛県,surveyed,False,False,0,,,53,exhausted,0,0,,,,,
