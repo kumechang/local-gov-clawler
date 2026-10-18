@@ -154,4 +154,5 @@
 - [x] `extract` / `extract-export`、extract.yml / auto-extract.yml を実装(テスト137件)
 - [x] 試し(愛知・福井・埼玉)第1版: 完了。欠陥4つを見つけて修正(D-125)
 - [x] 第2版(pilot2_*): 完了。残る欠陥3つを修正(第3版、D-126)
-- [ ] ユーザー判断待ち: 15行の確認(`data/review/extract_grandgolf_pilot2_check.md`)。OKなら全国(1,421ページ)へ
+- [x] 15行の確認(D-127): 上尾市の住所だけ×、ほかは○。第3版を作成
+- [ ] 全国(national_*、47都道府県)の実行: mainへのマージで自動実行(PR・マージは指示待ち)

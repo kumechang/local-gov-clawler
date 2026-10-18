@@ -1,0 +1,16 @@
+﻿municipality_name,municipality_code,page_url,address,phone,facility_name,note
+春日井市,23206,https://www.city.kasugai.lg.jp/bunka/sports/1004285.html,ok,ok,ok,
+犬山市,23215,https://www.city.inuyama.aichi.jp/shisetsu/koukyoshisetsu/1001550/index.html,ok,ok,ok,
+豊川市,23207,https://www.city.toyokawa.lg.jp/shisetsu/sports_sushisetsu/16524.html,ok,ok,ok,ユーザーは○。抽出値の住所の末尾に『(』が残っていた→第3版で除去
+半田市,23205,https://www.city.handa.lg.jp/bunka/sports/1002825/1002852.html,ok,ok,ok,
+桶川市,11231,https://www.city.okegawa.lg.jp/shiminkatsudo/sports/supo-tusisetunadonoriyou/3930.html,ok,ok,ok,施設名の『』と『について』は第3版で整形
+西尾市,23213,https://www.city.nishio.aichi.jp/shisetsu/sports/1001573/1003935.html,ok,ok,ok,施設名の先頭『施設案内』は第3版で除去
+江南市,23217,https://www.city.konan.lg.jp/shisetsu/sports/1003407/1003408.html,ok,ok,ok,
+久喜市,11232,https://www.city.kuki.lg.jp/shisei/shisetsu/sports/1006641.html,ok,ok,ok,
+春日部市,11214,https://www.city.kasukabe.lg.jp/benrinavi/shisetsuannai/categorykarasagasu/6/9698.html,ok,ok,ok,
+熊谷市,11202,https://www.city.kumagaya.lg.jp/shisetsu/sports/tonesou.html,ok,ok,ok,ユーザーは○。抽出値の住所が『葛和田サッカー場:』(住所でない)→第3版で住所にしない
+上尾市,11219,https://www.city.ageo.lg.jp/page/071101091901.html,ng(正しくは『西門前580-1』),ok,ok,抽出値『/西門前580-1、敷地面積/約0.7ヘクタール』→第3版で『西門前580-1』に整形
+さいたま市,11100,https://www.city.saitama.lg.jp/004/006/003/003/p038270.html,ok,ok,ok,ユーザーは○。抽出値の住所が『住』(切れ端)→第3版で住所にしない
+知多市,23224,https://www.city.chita.lg.jp/docs/2021070300010/,ok,ok,ok,
+東海市,23222,https://www.city.tokai.aichi.jp/shisetsu/1005662/1002888.html,ok,ok,ok,
+大府市,23223,https://www.city.obu.aichi.jp/shisetsu/bunka_sports/ground/1005203.html,ok,ok,ok,施設名の先頭『施設案内』は第3版で除去

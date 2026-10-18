@@ -111,3 +111,17 @@ def test_department_heading_with_address_is_not_a_facility():  # 大口町『生
 def test_trailing_open_parenthesis_is_removed():  # 豊川市『三上町東畑19(』
     assert ex.clean_address("三上町東畑19(地図)") == "三上町東畑19"
     assert ex.clean_address("三上町東畑19 (豊川市)") == "三上町東畑19"
+
+
+def test_address_without_a_city_name_in_the_address_field_is_kept():  # 上尾市『西門前580-1』
+    assert ex.clean_address("/西門前580-1、敷地面積/約0.7ヘクタール") == "西門前580-1"
+    assert ex.looks_like_address("/西門前580-1、敷地面積/約0.7ヘクタール")
+    assert ex.clean_address("緑浜町2-3、5-1") == "緑浜町2-3、5-1"  # 複数の地番の読点は切らない
+    assert not ex.looks_like_address("葛和田サッカー場:") and not ex.looks_like_address("住") and not ex.looks_like_address("・")
+
+
+def test_facility_name_is_tidied():
+    assert ex.tidy_name("施設案内 横須賀公園") == "横須賀公園"
+    assert ex.tidy_name("『桶川市新小針領家グラウンド』について") == "桶川市新小針領家グラウンド"
+    assert ex.tidy_name("上平広場の利用について") == "上平広場"
+    assert ex.tidy_name("中央公園グラウンド ナイター") == "中央公園グラウンド ナイター"
