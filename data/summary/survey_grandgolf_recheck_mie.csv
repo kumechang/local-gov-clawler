@@ -1,0 +1,30 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+24201,津市,三重県,surveyed,True,False,3,facility|organization,facility,200,max_pages,0,0,https://www.info.city.tsu.mie.jp/kankou_bunka_sports/sports_shinkou/1004414/1004418.html,facility,organization,津市スポーツ協会|津市公式ウェブサイト-Official Website of Tsu City,グラウンドゴルフ
+24202,四日市市,三重県,surveyed,True,False,4,event,event,61,exhausted,0,0,https://www.city.yokkaichi.lg.jp/www/contents/1751268024375/index.html,event,event,第56回四日市市民スポーツフェスタ開催について | 四日市市役所,(1)グラウンド・ゴルフ大会
+24203,伊勢市,三重県,surveyed,True,False,1,organization,facility,148,exhausted,0,0,https://www.city.ise.mie.jp/kyouiku/sports/shinko/club/1001824.html,facility,organization,総合型地域スポーツクラブ一覧|伊勢市公式ホームページ,ッカー、フットサル、野球、ソフトテニス、ソフトバレーボール、グラウンドゴルフ、外国人と遊ぶ教室、大学生と遊ぶ教室、ものづくり、理科工作 
+24204,松阪市,三重県,surveyed,True,False,5,facility|organization,facility,200,max_pages,0,0,https://www.city.matsusaka.mie.jp/site/sports/23.html,facility,facility,阪内川スポーツ公園多目的グラウンド - スポーツ - お肉のまち 松阪市公式ホームページ,じ広さの多目的グラウンドでは、軟式野球をはじめソフトボール、グラウンド・ゴルフ等、幅広くご利用いただけます。​
+24205,桑名市,三重県,surveyed,True,False,5,event|facility,event|facility,130,exhausted,0,0,https://www.city.kuwana.lg.jp/shisetsu/sports/003.html,facility,facility,NTN総合運動公園多目的運動広場/桑名市,陸上競技、グラウンドゴルフにご利用いただけます。
+24207,鈴鹿市,三重県,surveyed,True,True,1,other,facility,122,exhausted,0,1,https://www.city.suzuka.lg.jp/bunka/sports/1003321.html,facility,other,ニュースポーツ用具の貸し出し|鈴鹿市公式ウェブサイト,グラウンド・ゴルフ 貸し出し用具 (PDF 252.5KB)
+24208,名張市,三重県,surveyed,True,False,2,event|facility,event|facility,48,exhausted,0,0,https://www.city.nabari.lg.jp/s062/010/420/201502051839.html,facility,facility,つつじが丘公園|名張市,グラウンドゴルフ場 9ホール
+24209,尾鷲市,三重県,surveyed,False,False,0,,,60,exhausted,0,0,,,,,
+24210,亀山市,三重県,surveyed,False,False,0,,,51,exhausted,0,0,,,,,
+24211,鳥羽市,三重県,surveyed,True,False,1,organization,facility,19,exhausted,0,0,https://www.city.toba.mie.jp/soshiki/k_sports/gyomu/sports/2861.html,facility,organization,鳥羽市体育協会/鳥羽市ホームページ,鳥羽市グラウンドゴルフ協会
+24212,熊野市,三重県,surveyed,False,False,0,,,59,exhausted,0,0,,,,,
+24214,いなべ市,三重県,surveyed,True,False,1,facility,facility,62,exhausted,0,0,https://www.city.inabe.mie.jp/shisetsu/sportsshisetsu/sportsshisetsu/1002767.html,facility,facility,施設案内 大安スポーツ公園運動場|いなべ市公式ウェブサイト,(サッカー、ソフトボール、グランドゴルフ利用可)
+24215,志摩市,三重県,surveyed,False,False,0,,,14,exhausted,0,0,,,,,
+24216,伊賀市,三重県,surveyed,True,False,4,facility|organization,facility|listing,151,exhausted,0,0,https://www.city.iga.lg.jp/0000003163.html,listing,facility,上野運動公園のスポーツ施設 | 三重県伊賀市,少年野球、少年サッカー、グラウンド・ゴルフなどにご利用いただけます。
+24303,木曽岬町,三重県,surveyed,False,False,0,,,27,exhausted,0,0,,,,,
+24324,東員町,三重県,surveyed,True,False,5,event|facility,event|facility|listing,34,exhausted,0,0,https://www.town.toin.lg.jp/bunka_sports/sports/2509.html,listing,facility,体育施設の使用料/東員町ホームページ,グラウンドゴルフ等静的競技で使用するとき
+24341,菰野町,三重県,surveyed,False,False,0,,,57,exhausted,0,0,,,,,
+24343,朝日町,三重県,surveyed,False,False,0,,,11,exhausted,0,0,,,,,
+24344,川越町,三重県,surveyed,True,False,3,event|facility,event,43,exhausted,0,0,https://www.town.kawagoe.mie.jp/bunka_sports_event/index.html,event,event,文化・スポーツ・イベント|三重県川越町公式サイト,おひさま児童館 グラウンドゴルフ
+24441,多気町,三重県,no_seed,False,False,0,,,0,,0,0,,,,,
+24442,明和町,三重県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+24443,大台町,三重県,surveyed,False,False,0,,,67,exhausted,0,0,,,,,
+24461,玉城町,三重県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
+24470,度会町,三重県,surveyed,True,False,1,organization,facility,164,exhausted,0,0,https://www.town.watarai.lg.jp/contents_detail.php?co=kak&frmId=1956,facility,organization,総合型地域スポーツクラブ | 度会町公式ホームページ,グランドゴルフ
+24471,大紀町,三重県,surveyed,False,False,0,,,5,exhausted,0,0,,,,,
+24472,南伊勢町,三重県,surveyed,False,False,0,,,8,exhausted,0,0,,,,,
+24543,紀北町,三重県,surveyed,True,False,2,facility,facility,43,exhausted,0,0,https://www.town.mie-kihoku.lg.jp/2022/08/19/1034/,facility,facility,紀北町スポーツ施設一覧 - 紀北町,・グラウンド(野球、ソフトボール、サッカー、陸上、グラウンドゴルフ)
+24561,御浜町,三重県,surveyed,True,False,1,facility,listing,14,exhausted,0,0,https://www.town.mihama.mie.jp/kanko_bunka_sports/bunka_sports/595.html,listing,facility,体育施設の利用について/御浜町,グラウンドゴルフ場グラウンドゴルフ16コース
+24562,紀宝町,三重県,surveyed,False,False,0,,,12,exhausted,0,0,,,,,
