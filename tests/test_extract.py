@@ -125,3 +125,14 @@ def test_facility_name_is_tidied():
     assert ex.tidy_name("『桶川市新小針領家グラウンド』について") == "桶川市新小針領家グラウンド"
     assert ex.tidy_name("上平広場の利用について") == "上平広場"
     assert ex.tidy_name("中央公園グラウンド ナイター") == "中央公園グラウンド ナイター"
+
+
+def test_tidy_export_fields():
+    from localgov_crawler.extract import keep_item, tidy_export_address, tidy_export_dept
+
+    assert tidy_export_address("階上町大字道仏字天当平1-150(", "階上町") == "階上町大字道仏字天当平1-150"
+    assert tidy_export_address("太田市", "太田市") == ""
+    assert tidy_export_address("西門前580-1", "上尾市") == "西門前580-1"
+    assert tidy_export_dept("栃木市役所 法人番号 6000020092037 適格請求書発行事業者登録番号 T6000020092037") == "栃木市役所"
+    assert not keep_item("階上町 Official Web Site", "", "0178-32-0147")
+    assert not keep_item("お問合せ", "府中市", "")
