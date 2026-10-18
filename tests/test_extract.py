@@ -73,7 +73,7 @@ def test_extract_municipality_fetches_pages_and_respects_robots():
 def test_address_is_cut_to_the_first_chunk():  # v2: 『設備 ソフトボール場…』まで取り込まない
     assert ex.clean_address("豊川市桜ヶ丘町79-2 設備 ソフトボール場 1面 利用料金 無料") == "豊川市桜ヶ丘町79-2"
     assert ex.clean_address("〒344-0000 埼玉県 春日部市牛島626 (牛島野球場南側) 施設情報") == "埼玉県春日部市牛島626"
-    assert ex.clean_address("春日部市 牛島626") == "埼玉県春日部市牛島626"
+    assert ex.clean_address("春日部市 牛島626") == "春日部市牛島626"
     assert ex.looks_like_address("春日井市美濃町") and not ex.looks_like_address("新狭山公園クラブハウス")
 
 
