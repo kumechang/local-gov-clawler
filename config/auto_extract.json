@@ -16,6 +16,21 @@
       "prefecture": "埼玉県",
       "keyword": "grandgolf",
       "route": "pilot_saitama"
+    },
+    {
+      "prefecture": "愛知県",
+      "keyword": "grandgolf",
+      "route": "pilot2_aichi"
+    },
+    {
+      "prefecture": "福井県",
+      "keyword": "grandgolf",
+      "route": "pilot2_fukui"
+    },
+    {
+      "prefecture": "埼玉県",
+      "keyword": "grandgolf",
+      "route": "pilot2_saitama"
     }
   ]
 }
