@@ -263,6 +263,70 @@ def cmd_survey_export(args) -> int:
     return 0
 
 
+def cmd_extract(args) -> int:
+    """ワード調査で見つかった『場所(施設)』のページを取得し直し、施設の名前・住所・電話番号・問い合わせ先を取り出す(D-124)。"""
+    from . import extract as ex
+    from . import survey as sv
+    _, sel = _select(args)
+    spec = sv.KeywordSpec.load(args.keywords)
+    chosen: dict[str, dict] = {}
+    for route in _routes_of(args):
+        for s_ in sv.load_surveys(Path(args.surveys), spec.name, route):
+            chosen.setdefault(s_["municipality"]["code"], s_)
+    pages = {code: [r for r in sv.export_rows(s_) if r["page_kind"] == "facility" and r["found_via"] != "pdf_link"] for code, s_ in chosen.items()}
+    proxy = os.environ.get("CRAWL_PROXY_URL") if args.use_proxy else None
+    contact = os.environ.get("CRAWLER_CONTACT", DEFAULT_CONTACT)
+    cfg = ex.ExtractConfig(route=args.route, max_pages=args.max_pages)
+    out = Path(args.out)
+    todo = [m for m in sel if pages.get(m.code)]
+    lock = threading.Lock()
+    counter = [0]
+
+    def work(group):
+        f = Fetcher(user_agent=build_user_agent(contact), proxy=proxy, min_interval=args.interval)
+        hl = None
+        try:
+            for m in group:
+                fetcher = f
+                if args.headless and chosen[m.code]["run"].get("headless"):
+                    from .headless import HeadlessFetcher, HybridFetcher
+                    hl = hl or HeadlessFetcher(build_user_agent(contact), min_interval=args.interval)
+                    fetcher = HybridFetcher(f, hl)
+                rec = ex.extract_municipality(m, [{"page_url": r["page_url"], "page_title": r["page_title"], "matched_text": r["matched_text"]} for r in pages[m.code]], fetcher, spec, cfg)
+                ex.write_extract(out, rec, m.prefecture_code)
+                with lock:
+                    counter[0] += 1
+                    n = sum(1 for p_ in rec["pages"] if p_.get("items"))
+                    print(f"[{counter[0]}/{len(todo)}] {m.code} {m.name}: {rec['outcome']} pages={len(rec['pages'])} with_items={n} {rec['failure_class']}".strip(), flush=True)
+        finally:
+            f.close()
+            if hl is not None:
+                hl.close()
+
+    with ThreadPoolExecutor(max_workers=args.workers) as exr:
+        for fut in as_completed([exr.submit(work, g) for g in group_by_host(todo)]):
+            fut.result()
+    return 0
+
+
+def cmd_extract_export(args) -> int:
+    from . import extract as ex
+    rows = []
+    for route in args.extract_routes:
+        for rec in ex.load_extracts(Path(args.extracts), args.keyword, route):
+            rows += ex.detail_rows(rec)
+    rows.sort(key=lambda r: (r["municipality_code"], r["page_url"], r["facility_name"]))
+    out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
+    with open(out / f"{args.keyword}_places_detail.csv", "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=ex.DETAIL_COLUMNS)
+        w.writeheader()
+        w.writerows(rows)
+    n = len(rows)
+    print(f"{args.keyword}_places_detail.csv: {n}行({len({r['municipality_code'] for r in rows})}自治体)  住所あり {sum(1 for r in rows if r['address'])}  電話あり {sum(1 for r in rows if r['phone'])}  問い合わせ先の電話あり {sum(1 for r in rows if r['inquiry_phone'])}")
+    return 0
+
+
 def cmd_survey_national(args) -> int:
     """複数routeのワード調査を1つにまとめる(同じ自治体は、先に指定したrouteの結果を使う)。都道府県別の表も出す。"""
     from collections import Counter
@@ -370,6 +434,19 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--routes-file", help="routeの優先順を書いたファイル(config/survey_sets/*.json)")
     sp.add_argument("--out", default="data/summary")
     sp.set_defaults(fn=cmd_survey_national)
+
+    sp = sub.add_parser("extract"); add_select(sp)
+    sp.add_argument("--keywords", required=True); sp.add_argument("--routes", nargs="+"); sp.add_argument("--routes-file")
+    sp.add_argument("--surveys", default="data/survey"); sp.add_argument("--route", default="local", help="この抽出の実行ラベル")
+    sp.add_argument("--out", default="data/extract"); sp.add_argument("--max-pages", type=int, default=60)
+    sp.add_argument("--workers", type=int, default=4); sp.add_argument("--interval", type=float, default=1.0)
+    sp.add_argument("--use-proxy", action="store_true"); sp.add_argument("--headless", action="store_true")
+    sp.set_defaults(fn=cmd_extract)
+
+    sp = sub.add_parser("extract-export")
+    sp.add_argument("--extracts", default="data/extract"); sp.add_argument("--keyword", required=True)
+    sp.add_argument("--extract-routes", nargs="+", required=True); sp.add_argument("--out", default="data/export")
+    sp.set_defaults(fn=cmd_extract_export)
 
     sp = sub.add_parser("survey-export")
     sp.add_argument("--surveys", default="data/survey"); sp.add_argument("--keyword", required=True)

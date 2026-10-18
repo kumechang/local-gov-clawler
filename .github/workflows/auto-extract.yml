@@ -1,0 +1,56 @@
+name: auto-extract
+# mainへのマージで、config/auto_extract.json の対象の施設詳細の取り出しを自動実行する(D-124)。
+# 安全策は auto-crawl と同じ:
+#  - config/auto_extract.json、ワード設定、調査用ワークフローを変更したときだけ動く
+#  - 結果が既にある (keyword, route) は実行しない(新しい route 名にする)
+#  - config の enabled=false、またはコミットメッセージの [skip extract] で止まる
+on:
+  push:
+    branches: [main]
+    paths:
+      - "config/auto_extract.json"
+      - "config/keywords/**"
+      - "config/survey_sets/**"
+      - ".github/workflows/extract.yml"
+      - ".github/workflows/auto-extract.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: auto-extract
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      count: ${{ steps.p.outputs.count }}
+      matrix: ${{ steps.p.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - id: p
+        env:
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+        run: python3 scripts/plan_auto_extract.py
+
+  extract:
+    needs: plan
+    if: ${{ needs.plan.outputs.count != '0' }}
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    uses: ./.github/workflows/extract.yml
+    with:
+      prefecture: ${{ matrix.prefecture }}
+      keyword: ${{ matrix.keyword }}
+      route: ${{ matrix.route }}
+      shards: ${{ matrix.shards }}
+      commit_results: true
+    permissions:
+      contents: write
+    secrets: inherit
