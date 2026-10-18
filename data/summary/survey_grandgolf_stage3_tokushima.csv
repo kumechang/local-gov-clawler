@@ -1,0 +1,25 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+36201,徳島市,徳島県,surveyed,True,True,1,event,event,81,exhausted,0,1,https://www.city.tokushima.tokushima.jp/kurashi/sports/20220822.html,event,event,徳島市民スポ・レクフェスティバル:徳島市公式ウェブサイト,グラウンド・ゴルフ(PDF形式:76KB)
+36202,鳴門市,徳島県,surveyed,False,False,0,,,72,exhausted,0,0,,,,,
+36203,小松島市,徳島県,surveyed,False,False,0,,,51,exhausted,0,0,,,,,
+36204,阿南市,徳島県,surveyed,False,False,0,,,32,exhausted,0,0,,,,,
+36205,吉野川市,徳島県,surveyed,False,False,0,,,31,exhausted,0,0,,,,,
+36206,阿波市,徳島県,surveyed,False,False,0,,,15,exhausted,0,0,,,,,
+36207,美馬市,徳島県,surveyed,True,True,2,facility,facility,27,exhausted,0,3,https://www.city.mima.lg.jp/gyosei/docs/29717.html,facility,facility,スポーツ・社会体育施設 - 【美馬市】行政サイト,グランドゴルフ場
+36208,三好市,徳島県,surveyed,False,False,0,,,32,exhausted,0,0,,,,,
+36301,勝浦町,徳島県,no_seed,False,False,0,,,0,,0,0,,,,,
+36302,上勝町,徳島県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+36321,佐那河内村,徳島県,surveyed,False,False,0,,,5,exhausted,0,0,,,,,
+36341,石井町,徳島県,surveyed,False,False,0,,,18,exhausted,0,0,,,,,
+36342,神山町,徳島県,surveyed,False,False,0,,,32,exhausted,0,0,,,,,
+36368,那賀町,徳島県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
+36383,牟岐町,徳島県,surveyed,False,False,0,,,28,exhausted,0,0,,,,,
+36387,美波町,徳島県,surveyed,False,False,0,,,55,exhausted,0,0,,,,,
+36388,海陽町,徳島県,surveyed,True,False,1,event,event,37,exhausted,0,0,https://www.town.kaiyo.lg.jp/docs/2024012600018/,event,event,行事予定表(2024年2月) | 海陽町,・第2回町長杯グラウンドゴルフ大会【8:30-12:00】
+36401,松茂町,徳島県,surveyed,False,False,0,,,19,exhausted,0,0,,,,,
+36402,北島町,徳島県,surveyed,False,False,0,,,37,exhausted,0,0,,,,,
+36403,藍住町,徳島県,surveyed,False,False,0,,,36,exhausted,0,0,,,,,
+36404,板野町,徳島県,surveyed,False,False,0,,,12,exhausted,0,0,,,,,
+36405,上板町,徳島県,surveyed,False,False,0,,,9,exhausted,0,0,,,,,
+36468,つるぎ町,徳島県,surveyed,False,False,0,,,32,exhausted,0,0,,,,,
+36489,東みよし町,徳島県,surveyed,False,False,0,,,50,exhausted,0,0,,,,,
