@@ -1,0 +1,27 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+45201,宮崎市,宮崎県,surveyed,True,False,3,event|facility,event|facility|listing,75,exhausted,0,0,https://www.city.miyazaki.miyazaki.jp/health/sports/8689.html,listing,facility,高岡町域のスポーツ施設 - 宮崎市 [Miyazaki City],グラウンドゴルフ等
+45202,都城市,宮崎県,surveyed,True,False,8,facility,facility,90,exhausted,0,0,https://www.city.miyakonojo.miyazaki.jp/soshiki/57/2751.html,facility,facility,霧島酒造スポーツランド都城(山之口運動公園)を紹介します - 宮崎県都城市ホームページ,グラウンドゴルフ1面
+45203,延岡市,宮崎県,surveyed,True,False,1,facility,listing,73,exhausted,0,0,https://www.city.nobeoka.miyazaki.jp/site/miryoku/3212.html,listing,facility,西階公園のスポーツ施設 - 延岡市公式ホームページ,※ともに、サッカー、ラグビー、ソフトボール、グラウンドゴルフ対応可​
+45204,日南市,宮崎県,surveyed,True,False,2,facility|organization,facility,48,exhausted,0,0,https://www.city.nichinan.lg.jp/soshikikarasagasu/shogaigakushuka/7/5/3/814.html,facility,facility,北郷多目的運動公園/日南市ホームページ,野球、グラウンドゴルフ など
+45205,小林市,宮崎県,surveyed,True,False,4,event|facility|other,event|facility|sports_nav,83,exhausted,1,0,https://www.city.kobayashi.lg.jp/kanko_bunka_sports/index.html,sports_nav,other,観光・文化・スポーツ/宮崎県小林市公式ホームページ -Kobayashi City-,新市誕生20周年小林市グラウンド・ゴルフ大会参加チーム募集
+45206,日向市,宮崎県,surveyed,True,False,1,event,event,75,exhausted,0,0,https://www.hyugacity.jp/display.php?cont=241216141809,event,event,【参加者募集】第26回宮崎県障がい者スポーツ大会について - 日向市ホームページ - HYUGA CITY,バレーボール、ミニバレーボール、グラウンド・ゴルフ
+45207,串間市,宮崎県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+45208,西都市,宮崎県,surveyed,False,False,0,,,42,exhausted,0,0,,,,,
+45209,えびの市,宮崎県,surveyed,True,False,9,facility,facility|listing,35,exhausted,0,0,https://www.city.ebino.lg.jp/benri_service/shisetsuannai/2895.html,listing,facility,王子原運動公園・野球場/えびの市,グラウンドゴルフ 4ホール
+45341,三股町,宮崎県,surveyed,True,False,2,event|facility,facility|sports_nav,59,exhausted,0,0,https://www.town.mimata.lg.jp/contents/2673.html,sports_nav,event,第26回宮崎県障がい者スポーツ大会について - 三股町公式ホームページ,・グラウンドゴルフ(精神)
+45361,高原町,宮崎県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+45382,国富町,宮崎県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
+45383,綾町,宮崎県,surveyed,False,False,0,,,48,exhausted,0,0,,,,,
+45401,高鍋町,宮崎県,surveyed,True,False,2,event|facility,event|facility,43,exhausted,0,0,https://www.town.takanabe.lg.jp/soshiki/shakaikyoiku/4/1/3/2767.html,facility,facility,高鍋町のスポーツ施設/高鍋町,ソフトボール3面、グラウンドゴルフ3面、サッカー2面、ラグビー1面、駐車場50台
+45402,新富町,宮崎県,surveyed,True,False,1,organization,facility,35,exhausted,0,0,https://www.town.shintomi.lg.jp/soshiki/shogaigakushu/gyomu/sports/2/953.html,facility,organization,スポーツ団体紹介/新富町,グラウンドゴルフ協会
+45403,西米良村,宮崎県,no_seed,False,False,0,,,0,,0,0,,,,,
+45404,木城町,宮崎県,surveyed,True,False,2,event|organization,event|facility,16,exhausted,0,0,https://www.town.kijo.lg.jp/sosikikarasagasu/kyouikuiinkai_kyouikuka/sport/1801.html,facility,organization,木城町スポーツ協会/木城町,木城町グラウンド・ゴルフ協会
+45405,川南町,宮崎県,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
+45406,都農町,宮崎県,surveyed,False,False,0,,,0,exhausted,0,0,,,,,
+45421,門川町,宮崎県,surveyed,False,False,0,,,33,exhausted,0,0,,,,,
+45429,諸塚村,宮崎県,surveyed,False,False,0,,,6,exhausted,0,0,,,,,
+45430,椎葉村,宮崎県,surveyed,False,False,0,,,2,exhausted,0,0,,,,,
+45431,美郷町,宮崎県,surveyed,False,False,0,,,52,exhausted,0,0,,,,,
+45441,高千穂町,宮崎県,surveyed,False,False,0,,,8,exhausted,0,0,,,,,
+45442,日之影町,宮崎県,surveyed,True,False,3,facility,facility,24,exhausted,0,0,https://www.town.hinokage.lg.jp/docs/2016022300088/,facility,facility,日之影中学校体育館 | 日之影町,野球/ソフトボール/ゲートボール/グラウンドゴルフ/サッカー等
+45443,五ヶ瀬町,宮崎県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
