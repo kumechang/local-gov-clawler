@@ -1,0 +1,20 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+35201,下関市,山口県,surveyed,True,False,1,facility,listing,123,exhausted,0,0,https://www.city.shimonoseki.lg.jp/soshiki/66/3725.html,listing,facility,スポーツ施設一覧 - 下関市,施設内容 夜間照明設備、軟式野球/ソフトボール/サッカー/グラウンドゴルフ
+35202,宇部市,山口県,surveyed,True,False,5,event|facility,event|facility|listing,156,exhausted,0,0,https://www.city.ube.yamaguchi.jp/koukyouannai/bunkakyouiku/taiikushisetsu/1009961.html,listing,facility,恩田運動公園多目的グラウンド|宇部市公式ウェブサイト,グラウンドゴルフなど
+35203,山口市,山口県,surveyed,True,False,4,event,event,143,exhausted,0,0,https://www.city.yamaguchi.lg.jp/soshiki/22/200686.html,event,event,令和8年度山口市民スポーツ大会の結果について - 山口市ウェブサイト,■ グラウンド・ゴルフ競技
+35204,萩市,山口県,surveyed,True,False,1,organization,event,56,exhausted,0,0,https://www.city.hagi.lg.jp/soshiki/25/h72963.html,event,organization,ニュースポーツ出前講座 参加団体募集中! - 萩市ホームページ,・グラウンド・ゴルフ
+35206,防府市,山口県,surveyed,True,False,1,event,event,90,exhausted,0,0,https://www.city.hofu.yamaguchi.jp/soshiki/41/spofes2026.html,event,event,ほうふスポーツフェスタ2026(スポーツ振興くじ助成事業)を開催します! - 防府市公式ホームページ,​​ [ブース] 陸上競技/グラウンドゴルフ/ペタンク/モルック​​
+35207,下松市,山口県,surveyed,True,False,1,other,facility,68,exhausted,0,0,https://www.city.kudamatsu.lg.jp/chiiki/sports/newsports.html,facility,other,山口県下松市/ニュースポーツ,グラウンド・ゴルフ(屋外用)
+35208,岩国市,山口県,surveyed,True,False,3,facility,facility|listing,62,exhausted,0,0,https://www.city.iwakuni.lg.jp/life/4/27/188/,listing,facility,運動施設 - 岩国市,玖珂運動総合公園 グラウンドゴルフ場
+35210,光市,山口県,surveyed,True,False,3,facility|organization,facility,52,exhausted,0,0,https://www.city.hikari.lg.jp/soshiki/9/taiiku/taiikusisetusyoukai/1953.html,facility,facility,DS Life Design 大和パーク(大和総合運動公園)/光市,テニスコート 4面、グラウンドゴルフ場、屋外バスケットボールコート
+35211,長門市,山口県,surveyed,True,False,2,facility,event|facility,66,exhausted,0,0,https://www.city.nagato.yamaguchi.jp/soshiki/73/17920.html,facility,facility,ながとスポーツ公園 - 長門市ホームページ,園内にはサッカー等ができる多目的広場、ジョギングコース、グラウンドゴルフコースを整備しています。
+35212,柳井市,山口県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+35213,美祢市,山口県,surveyed,True,False,2,event,event,16,exhausted,0,0,https://www2.city.mine.lg.jp/soshiki/sogoseisakubu/suishinshitsu/event_boshu/event_calendar_schedule/reiwa8_1/13678.html,event,event,イベントあり(2026年10月)/美祢市ホームページ,豊田前町民親睦グラウンドゴルフ大会(豊田前小学校グラウンド/8:30~12:00)
+35215,周南市,山口県,surveyed,True,False,2,event|facility,event|facility,102,exhausted,0,0,https://www.city.shunan.lg.jp/soshiki/16/145269.html,facility,facility,「レイズネクスト周南総合競技場」リニューアルオープン - 山口県周南市,など、多くの方が陸上競技、ラグビー、サッカー、ウォーキング、グラウンドゴルフなど、様々な種目を楽しまれました。
+35216,山陽小野田市,山口県,surveyed,True,False,3,organization|other,facility,164,exhausted,0,0,https://www.city.sanyo-onoda.lg.jp/site/sports/sanyoonoda-sportassociation.html,facility,organization,山陽小野田市スポーツ協会とは - 山口県山陽小野田市公式ホームページ,グラウンド・ゴルフ協会
+35305,周防大島町,山口県,surveyed,True,False,1,facility,listing,30,exhausted,0,0,https://www.town.suo-oshima.lg.jp/soshiki/27/2101.html,listing,facility,スポーツ施設の利用について - 周防大島町公式ホームページ,野球、ソフトボール、サッカー、グラウンドゴルフ、マリンスポーツなど
+35321,和木町,山口県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+35341,上関町,山口県,surveyed,False,False,0,,,34,exhausted,0,0,,,,,
+35343,田布施町,山口県,surveyed,True,False,1,organization,facility,69,exhausted,0,0,https://www.town.tabuse.lg.jp/soshiki/25/2211.html,facility,organization,田布施体育協会 - 田布施町役場(スポーツセンター),グラウンドゴルフ協会
+35344,平生町,山口県,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
+35502,阿武町,山口県,surveyed,False,False,0,,,8,exhausted,0,0,,,,,
