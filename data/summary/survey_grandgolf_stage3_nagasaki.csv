@@ -1,0 +1,22 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+42201,長崎市,長崎県,surveyed,True,False,5,facility|organization|other,event|facility,200,max_pages,0,0,https://www.city.nagasaki.lg.jp/page/83819.html,facility,other,ニュースポーツ用具の貸出について - 長崎市ウェブサイト(スポーツ振興課),・グラウンドゴルフ
+42202,佐世保市,長崎県,no_seed,False,False,0,,,0,,0,0,,,,,
+42203,島原市,長崎県,surveyed,False,False,0,,,36,exhausted,0,0,,,,,
+42204,諫早市,長崎県,surveyed,False,False,0,,,151,exhausted,0,0,,,,,
+42205,大村市,長崎県,surveyed,True,True,8,event|facility,event|listing,141,exhausted,0,6,https://www.city.omura.nagasaki.jp/kouhou/shise/shokai/shisetsu/bunka/27.html,listing,facility,大村市/大村市総合運動公園,(2)グラウンドゴルフ場
+42207,平戸市,長崎県,surveyed,False,False,0,,,57,exhausted,0,0,,,,,
+42208,松浦市,長崎県,surveyed,False,False,0,,,15,exhausted,0,0,,,,,
+42209,対馬市,長崎県,surveyed,False,False,0,,,32,exhausted,0,0,,,,,
+42210,壱岐市,長崎県,surveyed,True,False,1,facility,facility,33,exhausted,0,0,https://www.city.iki.nagasaki.jp/soshiki/bunkasportssinkou/sport_facility/4203.html,facility,facility,全天候型多目的施設/壱岐市,ゲートボールコート(4面)、グランドゴルフ、各種イベント 他
+42211,五島市,長崎県,surveyed,False,False,0,,,56,exhausted,0,0,,,,,
+42212,西海市,長崎県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
+42213,雲仙市,長崎県,surveyed,True,False,4,organization|other,facility|listing,87,exhausted,0,0,https://www.city.unzen.nagasaki.jp/list00121.html,listing,other,スポーツ振興 / 雲仙市,雲仙市みずほすこやかランド グラウンド・ゴルフ場が日本グラウンド・ゴルフ協会認定コースになりました!
+42214,南島原市,長崎県,surveyed,True,False,1,facility,facility,102,exhausted,0,0,https://www.city.minamishimabara.lg.jp/kiji0034195/index.html,facility,facility,口之津運動広場 / 長崎県南島原市公式ホームページ くらし・手続き 子育て・教育 健康・福祉 観光・移住 しごと・産業 市政情報 行政トップへ戻る,グランドゴルフコート 1面
+42307,長与町,長崎県,surveyed,True,False,2,facility,event|facility,141,exhausted,0,0,https://webtown.nagayo.jp/dynamic/info/pub/detail.aspx?c_id=29&id=42&scfm1=2,facility,facility,施設情報 / 長与町ホームページ,・利用目的:ターゲットバードゴルフ・グラウンドゴルフ 他
+42308,時津町,長崎県,surveyed,False,False,0,,,32,exhausted,0,0,,,,,
+42321,東彼杵町,長崎県,surveyed,False,False,0,,,21,exhausted,0,0,,,,,
+42322,川棚町,長崎県,surveyed,False,False,0,,,20,exhausted,0,0,,,,,
+42323,波佐見町,長崎県,surveyed,False,False,0,,,68,exhausted,0,0,,,,,
+42383,小値賀町,長崎県,no_seed,False,False,0,,,0,,0,0,,,,,
+42391,佐々町,長崎県,surveyed,False,False,0,,,57,exhausted,0,0,,,,,
+42411,新上五島町,長崎県,surveyed,True,False,3,event|other,event|facility,159,exhausted,0,0,https://official.shinkamigoto.net/goto_kurashi.php?wcid=i00003,facility,other,健康・福祉 | くらしの情報 | 新上五島町公式サイト | 長崎県 五島列島 しんかみごとうちょう,第15回 町長杯グラウンド・ゴルフ大会を開催しました。
