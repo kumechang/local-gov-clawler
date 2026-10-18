@@ -1,0 +1,31 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+15100,新潟市,新潟県,surveyed,False,False,0,,,108,exhausted,0,0,,,,,
+15202,長岡市,新潟県,surveyed,True,False,6,facility,event|facility,124,exhausted,0,0,https://www.city.nagaoka.niigata.jp/shisetsu/sports/mishima-yakyuu.html,facility,facility,三島野球場,西山丘陵の麓にある野球場で、野球・ソフトボール・グランドゴルフなどができます。
+15204,三条市,新潟県,surveyed,False,False,0,,,80,exhausted,0,0,,,,,
+15205,柏崎市,新潟県,surveyed,True,True,27,event|facility|organization|other,event|facility|listing,151,exhausted,0,4,https://www.city.kashiwazaki.lg.jp/kanko_bunka_sports/sports/index.html,listing,other,スポーツ/柏崎市公式ホームページ,グラウンドゴルフ
+15206,新発田市,新潟県,surveyed,True,True,1,event,event,90,exhausted,0,1,https://www.city.shibata.lg.jp/event/suports/1007660.html,event,event,市民総合スポーツ大会出場者募集|新潟県新発田市公式ホームページ,グラウンド・ゴルフ 要項 (PDF 156.3 KB)
+15208,小千谷市,新潟県,surveyed,True,False,1,facility,event,138,exhausted,0,0,https://www.city.ojiya.niigata.jp/soshiki/bunkasports/soutai-yougukasidasi.html,event,facility,総合体育館の用具を貸し出します - 小千谷市ホームページ,グラウンドゴルフ
+15209,加茂市,新潟県,surveyed,True,True,10,event|facility,event|facility|listing,102,exhausted,0,1,https://www.city.kamo.niigata.jp/shisetsu/list/facility08_11/,listing,facility,リバーサイド加茂グラウンド・ゴルフコース - 新潟県加茂市,ホーム›施設案内›施設一覧›リバーサイド加茂グラウンド・ゴルフコース
+15210,十日町市,新潟県,surveyed,True,False,2,facility|other,event|facility,51,exhausted,0,0,https://www.city.tokamachi.lg.jp/kanko_bunka_sports/sports_undo/sportsshisetsu_setsubi/2133.html,facility,facility,吉田クロスカントリー競技場多目的広場(夏季利用)/十日町市,自然の中でのトレーニング、ゲートボールやグラウンドゴルフなどスポーツ目的だけでなく、ピクニックやお散歩、お子さんたち
+15211,見附市,新潟県,surveyed,True,False,1,organization,event,170,exhausted,0,0,https://www.city.mitsuke.niigata.jp/soshiki/4/2516.html,event,organization,見附市スポーツ協会 - 見附市ホームページ,ー協会、卓球連盟、サッカー協会、テニス協会、ボウリング協会、グラウンドゴルフ協会、居合道協会、ゲートボール協会、中学校体育連盟、小学校体
+15212,村上市,新潟県,surveyed,False,False,0,,,32,exhausted,0,0,,,,,
+15213,燕市,新潟県,surveyed,False,False,0,,,79,exhausted,0,0,,,,,
+15216,糸魚川市,新潟県,surveyed,True,True,4,facility|other,event|facility|listing,60,exhausted,0,1,https://www.city.itoigawa.lg.jp/page/2348.html,listing,facility,糸魚川市内体育施設の案内 - 糸魚川市ホームページ(スポーツ振興係),グラウンド・ゴルフ場
+15217,妙高市,新潟県,surveyed,False,False,0,,,90,exhausted,0,0,,,,,
+15218,五泉市,新潟県,surveyed,False,False,0,,,31,exhausted,0,0,,,,,
+15222,上越市,新潟県,surveyed,True,False,1,other,facility,137,exhausted,0,0,https://www.city.joetsu.niigata.jp/soshiki/sports/joetsu-newsports2019.html,facility,other,ニュースポーツとは - 上越市ホームページ,グラウンド・ゴルフ
+15223,阿賀野市,新潟県,surveyed,False,False,0,,,53,exhausted,0,0,,,,,
+15224,佐渡市,新潟県,surveyed,False,False,0,,,27,exhausted,0,0,,,,,
+15225,魚沼市,新潟県,surveyed,False,False,0,,,183,exhausted,0,0,,,,,
+15226,南魚沼市,新潟県,surveyed,False,False,0,,,9,exhausted,0,0,,,,,
+15227,胎内市,新潟県,surveyed,False,False,0,,,18,exhausted,0,0,,,,,
+15307,聖籠町,新潟県,surveyed,False,False,0,,,34,exhausted,0,0,,,,,
+15342,弥彦村,新潟県,surveyed,False,False,0,,,42,exhausted,0,0,,,,,
+15361,田上町,新潟県,surveyed,False,False,0,,,8,exhausted,0,0,,,,,
+15385,阿賀町,新潟県,surveyed,False,False,0,,,26,exhausted,0,0,,,,,
+15405,出雲崎町,新潟県,surveyed,False,False,0,,,15,exhausted,0,0,,,,,
+15461,湯沢町,新潟県,surveyed,True,False,1,facility,facility,10,exhausted,0,0,https://www.town.yuzawa.lg.jp/kurashinojoho/kyoiku_bunka_sports/1/3471.html,facility,facility,湯沢中央公園/湯沢町公式ホームページ,グラウンドゴルフ
+15482,津南町,新潟県,surveyed,True,False,1,other,facility,22,exhausted,0,0,https://www.town.tsunan.niigata.jp/site/kyoiku/sports-koshu.html,facility,other,スポーツ出前講習 - 津南町ホームページ,ことを目的に、生涯スポーツの推進に努めています。キンボール、グラウンドゴルフ、ディスゲッターなど希望するニュースポーツを持ってスポーツ推
+15504,刈羽村,新潟県,fetch_failed,False,False,0,,,0,,0,0,,,,,
+15581,関川村,新潟県,surveyed,False,False,0,,,37,exhausted,0,0,,,,,
+15586,粟島浦村,新潟県,surveyed,False,False,0,,,4,exhausted,0,0,,,,,
