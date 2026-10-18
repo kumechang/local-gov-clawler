@@ -235,6 +235,45 @@ def cmd_survey_summary(args) -> int:
     return 0
 
 
+def cmd_survey_national(args) -> int:
+    """複数routeのワード調査を1つにまとめる(同じ自治体は、先に指定したrouteの結果を使う)。都道府県別の表も出す。"""
+    from collections import Counter
+    from . import survey as sv
+    chosen: dict[str, dict] = {}
+    source: dict[str, str] = {}
+    for route in args.routes:
+        for s in sv.load_surveys(Path(args.surveys), args.keyword, route):
+            code = s["municipality"]["code"]
+            if code not in chosen:
+                chosen[code], source[code] = s, route
+    rows = sv.survey_rows(list(chosen.values()))
+    for r in rows:
+        r["route"] = source[r["municipality_code"]]
+    out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
+    stem = f"survey_{args.keyword}_national"
+    rows.sort(key=lambda r: r["municipality_code"])
+    with open(out / f"{stem}.csv", "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        w.writeheader()
+        w.writerows(rows)
+    by_pref: dict[str, list[dict]] = {}
+    for r in rows:
+        by_pref.setdefault(r["prefecture"], []).append(r)
+    lines = [f"# ワード調査 全国まとめ (keyword: {args.keyword})", "", f"- 対象: {len(rows)}自治体(政令市の区を除く)",
+             f"- 調査できた: {sum(1 for r in rows if r['outcome'] == 'surveyed')}", f"- ワードがあった: {sum(1 for r in rows if r['found'])}",
+             "- outcome別: " + "、".join(f"{k} {v}" for k, v in sorted(Counter(r["outcome"] for r in rows).items())), "",
+             "| 都道府県 | 対象 | 調査できた | ワードあり | 割合(調査できた中) | 入口なし | 取得失敗 |", "|---|---|---|---|---|---|---|"]
+    for pref, rs in by_pref.items():
+        sv_n = sum(1 for r in rs if r["outcome"] == "surveyed")
+        f_n = sum(1 for r in rs if r["found"])
+        lines.append(f"| {pref} | {len(rs)} | {sv_n} | {f_n} | {f_n / sv_n:.0%} |" .replace("| |", "| - |") if sv_n else f"| {pref} | {len(rs)} | 0 | 0 | - |")
+        lines[-1] += f" {sum(1 for r in rs if r['outcome'] == 'no_seed')} | {sum(1 for r in rs if r['outcome'] == 'fetch_failed')} |"
+    (out / f"{stem}.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print("\n".join(lines[:8]))
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="localgov-crawler")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -296,6 +335,12 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--surveys", default="data/survey"); sp.add_argument("--keyword", required=True); sp.add_argument("--route", required=True)
     sp.add_argument("--out", default="data/summary")
     sp.set_defaults(fn=cmd_survey_summary)
+
+    sp = sub.add_parser("survey-national")
+    sp.add_argument("--surveys", default="data/survey"); sp.add_argument("--keyword", required=True)
+    sp.add_argument("--routes", nargs="+", required=True, help="優先順(先に書いたrouteの結果を使う)")
+    sp.add_argument("--out", default="data/summary")
+    sp.set_defaults(fn=cmd_survey_national)
 
     sp = sub.add_parser("ward-report")
     sp.add_argument("--master", default=str(mun.DEFAULT_MASTER)); sp.add_argument("--results", default="data/results")

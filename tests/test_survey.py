@@ -231,3 +231,13 @@ def test_negation_is_scoped_to_the_words_own_clause():  # D-119: 同じ行でも
     assert not neg("グラウンドゴルフ・サッカー可 野球は禁止")
     assert not neg("グラウンド・ゴルフ以外の使用は禁止です")
     assert not neg("グラウンドゴルフ 可　ゴルフ練習 禁止")
+
+
+def test_descriptive_dekinai_is_not_a_negation():  # 宇部市: 『普段なかなか体験できないスポーツ』
+    def neg(t):
+        norm = sv.norm_text(t)
+        return sv.is_negated(norm, SPEC.find(norm)[0].end())
+
+    assert not neg("陸上競技場では、モルック、グラウンドゴルフなど普段なかなか体験できないスポーツに挑戦!")
+    assert neg("雨天時はグラウンドゴルフはできない場合があります")
+    assert neg("グラウンドゴルフは利用できない。")
