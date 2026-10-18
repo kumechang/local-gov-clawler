@@ -1,0 +1,34 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+03201,盛岡市,岩手県,surveyed,True,False,1,facility,facility,200,max_pages,0,0,https://www.city.morioka.iwate.jp/kanko_sports_bunka/rkeishi_bunkazai/shiwajou/1009509.html,facility,facility,園内案内 志波城跡・志波城古代公園|盛岡市公式ホームページ,、映画やテレビ番組撮影、コンサート、球技大会、ゲートボール、グラウンドゴルフ、ウォーキング大会、マラソン大会、星空観察会、自然観察会、防
+03202,宮古市,岩手県,surveyed,False,False,0,,,74,exhausted,0,0,,,,,
+03203,大船渡市,岩手県,surveyed,False,False,0,,,87,exhausted,0,0,,,,,
+03205,花巻市,岩手県,surveyed,True,False,1,facility,facility,91,exhausted,0,0,https://www.city.hanamaki.iwate.jp/bunkasports/sports/1019891/shisetsu/1001953.html,facility,facility,種目別スポーツ施設一覧|花巻市,グラウンドゴルフ一覧 (Excel 27.5KB)
+03206,北上市,岩手県,surveyed,False,False,0,,,109,exhausted,0,0,,,,,
+03207,久慈市,岩手県,fetch_failed,False,False,0,,,0,,0,0,,,,,
+03208,遠野市,岩手県,surveyed,False,False,0,,,107,exhausted,0,0,,,,,
+03209,一関市,岩手県,surveyed,True,False,3,event|facility,event|facility,117,exhausted,0,0,https://www.city.ichinoseki.iwate.jp/archive/contents-101645,facility,facility,藤沢地域のスポーツ施設 | 一関市ホームページ,野球、ソフトボール、グラウンド・ゴルフなどの雨天練習場としても利用できます。
+03210,陸前高田市,岩手県,surveyed,False,False,0,,,36,exhausted,0,0,,,,,
+03211,釜石市,岩手県,surveyed,False,False,0,,,80,exhausted,0,0,,,,,
+03213,二戸市,岩手県,surveyed,False,False,0,,,28,exhausted,0,0,,,,,
+03214,八幡平市,岩手県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+03215,奥州市,岩手県,surveyed,True,True,7,event|facility|organization|other,event|facility,81,exhausted,0,4,https://www.city.oshu.iwate.jp/kanko_bunka_sports/sports/2/2/9276.html,facility,facility,旧東水沢中学校運動場/奥州市公式ホームページ,グラウンドゴルフ
+03216,滝沢市,岩手県,surveyed,True,False,1,other,facility,32,exhausted,0,0,https://www.city.takizawa.iwate.jp/kurashi/manabu-atsumaru/sport-suishin,facility,other,スポーツ推進 | 滝沢市,から高齢者まで全世代の参加者延べ800人が5競技(マラソン、グラウンド・ゴルフ、ゲートボール、野球、テニス)とニュースポーツ体験会などを楽
+03301,雫石町,岩手県,surveyed,False,False,0,,,40,exhausted,0,0,,,,,
+03302,葛巻町,岩手県,surveyed,False,False,0,,,9,exhausted,0,0,,,,,
+03303,岩手町,岩手県,surveyed,True,False,2,facility,facility,63,exhausted,0,0,https://town.iwate.iwate.jp/town/accessmap/tamokuteki/?v=cat-accessmap&w=culture-map&x=culture-map,facility,facility,多目的グラウンド | 【岩手町】公式ウェブサイト,高麗芝の天然芝広場です。グラウンドゴルフなどニュースポーツに最適です。
+03321,紫波町,岩手県,surveyed,True,False,2,facility,listing,26,exhausted,0,0,https://www.town.shiwa.iwate.jp/soshiki/5/2_3/821.html,listing,facility,紫波町多目的スポーツ施設(サン・ビレッジ紫波)|スポーツ|生涯学習課|組織から探す|紫波町役場,フットサル、テニス、ゲートボール、グラウンドゴルフなど様々なスポーツで使用可能です。
+03322,矢巾町,岩手県,surveyed,False,False,0,,,91,exhausted,0,0,,,,,
+03366,西和賀町,岩手県,surveyed,False,False,0,,,24,exhausted,0,0,,,,,
+03381,金ケ崎町,岩手県,surveyed,True,True,1,event,event,26,exhausted,0,2,https://www.town.kanegasaki.iwate.jp/articles/2026061500035/,event,event,令和8年度金ケ崎町スポーツ大会の開催について | 金ケ崎町役場,グラウンド・ゴルフ大会
+03402,平泉町,岩手県,no_seed,False,False,0,,,0,,0,0,,,,,
+03441,住田町,岩手県,surveyed,False,False,0,,,23,exhausted,0,0,,,,,
+03461,大槌町,岩手県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+03482,山田町,岩手県,surveyed,False,False,0,,,38,exhausted,0,0,,,,,
+03483,岩泉町,岩手県,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
+03484,田野畑村,岩手県,surveyed,False,False,0,,,22,exhausted,0,0,,,,,
+03485,普代村,岩手県,surveyed,False,False,0,,,4,exhausted,0,0,,,,,
+03501,軽米町,岩手県,surveyed,False,False,0,,,46,exhausted,0,0,,,,,
+03503,野田村,岩手県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
+03506,九戸村,岩手県,surveyed,True,False,1,facility,listing,19,exhausted,0,0,https://www.vill.kunohe.iwate.jp/docs/221.html,listing,facility,九戸村総合運動場 - 九戸村,※グラウンドゴルフ場として使用していますが、その他屋外での運動にも使用できます
+03507,洋野町,岩手県,surveyed,False,False,0,,,36,exhausted,0,0,,,,,
+03524,一戸町,岩手県,surveyed,False,False,0,,,28,exhausted,0,0,,,,,
