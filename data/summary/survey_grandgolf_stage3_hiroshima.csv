@@ -1,0 +1,24 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+34100,広島市,広島県,surveyed,False,False,0,,,162,exhausted,0,0,,,,,
+34202,呉市,広島県,surveyed,False,False,0,,,44,exhausted,0,0,,,,,
+34203,竹原市,広島県,surveyed,True,True,1,organization,facility,104,exhausted,0,1,https://www.city.takehara.lg.jp/kanko_bunka_sports/10/sports/5501.html,facility,organization,竹原市スポーツ協会/竹原市,竹原市グラウンド・ゴルフ協会(PDFファイル:278.5KB)
+34204,三原市,広島県,surveyed,True,False,6,event|facility|organization,event|facility|listing,65,exhausted,0,0,https://www.city.mihara.hiroshima.jp/life/5/34/164/,listing,facility,スポーツ施設 - 三原市ホームページ,2025年2月26日更新北方グラウンドゴルフ場
+34205,尾道市,広島県,surveyed,True,False,10,facility|organization|other,facility|listing,65,exhausted,0,0,https://www.city.onomichi.hiroshima.jp/site/kyoiku/8764.html,listing,organization,スポーツ施設一覧 - 教育委員会 - 尾道市ホームページ,御調グラウンド・ゴルフ場
+34207,福山市,広島県,surveyed,True,False,6,facility|other,facility|listing,151,exhausted,0,0,https://www.city.fukuyama.hiroshima.jp/site/sports/5944.html,listing,facility,スポーツ・公園施設等 - 福山市ホームページ,グラウンド・ゴルフ場
+34208,府中市,広島県,surveyed,True,False,1,facility,listing,36,exhausted,0,0,https://www.city.fuchu.hiroshima.jp/bunka_sports/sports/7613.html,listing,facility,上下運動公園人工芝グラウンド OPEN!/広島県府中市,グラウンドゴルフ、くつ飛ばし、だるまさんがころんだ
+34209,三次市,広島県,surveyed,True,False,1,facility,facility,49,exhausted,0,0,https://www.city.miyoshi.hiroshima.jp/soshiki/9/1438.html,facility,facility,みよし運動公園陸上競技場 - 三次市ホームページ,また、インフィールドでは、サッカーやグラウンド・ゴルフなども実施が可能で、幅ひろくご利用いただけます。
+34210,庄原市,広島県,surveyed,True,True,1,other,facility,36,exhausted,0,1,https://www.city.shobara.hiroshima.jp/main/education/post_224.html,facility,other,ニュースポーツ用具の利用について | 広島県庄原市のホームページへようこそ,グラウンド・ゴルフ【PDF:32.9KB】
+34211,大竹市,広島県,surveyed,True,False,1,organization,event,33,exhausted,0,0,https://www.city.otake.hiroshima.jp/soshiki/kyoikuiinkai/shogai/1/6477.html,event,organization,スポーツ推進委員~スポーツでまちを盛り上げる!~/大竹市ホームページ,市民ラージボール卓球大会、市民グラウンドゴルフ大会、市民インドアモルック大会、各地区健康づくり事業、「スポ
+34212,東広島市,広島県,surveyed,True,False,3,facility,facility,166,exhausted,0,0,https://www.city.higashihiroshima.lg.jp/shisetsu/koen/7541.html,facility,facility,東広島運動公園(体育館、創建ホーム東広島スポーツパーク(陸上競技場)、多目的広場、テニスコート)/東広島市ホームページ,グラウンド・ゴルフ場
+34213,廿日市市,広島県,surveyed,True,False,3,event|facility,event|facility|listing,58,exhausted,0,0,https://www.city.hatsukaichi.hiroshima.jp/soshiki/127/12230.html,listing,facility,スポーツ・レクリエーション施設 - 広島県廿日市市(はつかいち)けん玉発祥・宮島のあるまち(スポーツ推進課),宮浜温泉グラウンドゴルフ場
+34214,安芸高田市,広島県,surveyed,False,False,0,,,59,exhausted,0,0,,,,,
+34215,江田島市,広島県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
+34302,府中町,広島県,surveyed,False,False,0,,,108,exhausted,0,0,,,,,
+34304,海田町,広島県,surveyed,False,False,0,,,23,exhausted,0,0,,,,,
+34307,熊野町,広島県,fetch_failed,False,False,0,,,0,,0,0,,,,,
+34309,坂町,広島県,surveyed,True,False,4,event|facility|organization,event|facility,94,exhausted,0,0,https://www.town.saka.lg.jp/2023/09/26/%e3%83%ad%e3%82%b8%e3%82%b3%e3%83%a0%e3%82%b0%e3%83%a9%e3%82%a6%e3%83%b3%e3%83%89%ef%bc%88%e5%8c%97%e6%96%b0%e5%9c%b0%e8%8a%9d%e3%82%b0%e3%83%a9%e3%82%a6%e3%83%b3%e3%83%89%ef%bc%89/,facility,facility,ロジコムグラウンド(芝グラウンド) – 広島県 坂町役場 ホームページ,※芝グラウンドで行える競技はグラウンド・ゴルフのみとなっております。
+34368,安芸太田町,広島県,surveyed,True,False,1,organization,facility,47,exhausted,0,0,https://www.akiota.jp/site/kyoiku/1393.html,facility,organization,安芸太田町体育協会情報 - 安芸太田町公式サイト,グラウンド・ゴルフ部
+34369,北広島町,広島県,surveyed,True,False,2,facility,facility,98,exhausted,0,0,https://www.town.kitahiroshima.lg.jp/site/sports/30777.html,facility,facility,大朝グラウンド人工芝整備事業 - 北広島町ホームページ,サッカー教室や、野球ミニゲーム、グランドゴルフなど、多種多様なスポーツを楽しみました!
+34431,大崎上島町,広島県,surveyed,False,False,0,,,6,exhausted,0,0,,,,,
+34462,世羅町,広島県,surveyed,False,False,0,,,2,exhausted,0,0,,,,,
+34545,神石高原町,広島県,surveyed,True,False,2,facility,facility,48,exhausted,0,0,https://www.jinsekigun.jp/town/formation/mirai/g376/main-sisetu/,facility,facility,主な施設の使用申込・お問い合わせ先 | 広島県・神石郡 神石高原町(じんせきこうげんちょう)行政サイト,グラウンドゴルフ場
