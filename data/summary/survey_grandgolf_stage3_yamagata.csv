@@ -1,0 +1,36 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+06201,山形市,山形県,surveyed,True,False,6,facility|other,facility|listing,108,exhausted,0,0,https://www.city.yamagata-yamagata.lg.jp/shisetsu/bunkasports/sports/index.html,listing,facility,スポーツ施設|山形市公式ホームページ,グラウンド・ゴルフ場
+06202,米沢市,山形県,surveyed,False,False,0,,,71,exhausted,0,0,,,,,
+06203,鶴岡市,山形県,surveyed,True,False,13,facility|organization,facility|listing,129,exhausted,0,0,https://www.city.tsuruoka.lg.jp/bunka/sports/sports-shisetsu/index.html,listing,facility,体育施設 鶴岡市,鶴岡市グラウンド・ゴルフ場
+06204,酒田市,山形県,surveyed,False,False,0,,,128,exhausted,0,0,,,,,
+06205,新庄市,山形県,surveyed,False,False,0,,,30,exhausted,0,0,,,,,
+06206,寒河江市,山形県,surveyed,False,False,0,,,78,exhausted,0,0,,,,,
+06207,上山市,山形県,surveyed,False,False,0,,,12,exhausted,0,0,,,,,
+06208,村山市,山形県,surveyed,True,False,2,facility|other,facility|listing,46,exhausted,0,0,https://www.city.murayama.lg.jp/kurashi/sports_yoka/sports/sports_shisetsu.html,listing,facility,村山市スポーツ施設 村山市,金谷グラウンドゴルフ場
+06209,長井市,山形県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+06210,天童市,山形県,surveyed,True,False,5,facility|organization|other,facility|sports_nav,31,exhausted,0,0,https://www.city.tendo.yamagata.jp/lifeinfo/sports/index.html,sports_nav,other,山形県天童市/スポーツ・文化,グラウンドゴルフ場
+06211,東根市,山形県,surveyed,False,False,0,,,23,exhausted,0,0,,,,,
+06212,尾花沢市,山形県,surveyed,True,False,6,event,event,37,exhausted,0,0,https://www.city.obanazawa.yamagata.jp/kosodate-bunka/sports/sports-info/3001,event,event,第54回 尾花沢市民総合スポーツ大会 | 尾花沢市,(10)グラウンド・ゴルフ(11)ソフトバレー (12)パークゴルフ
+06213,南陽市,山形県,surveyed,True,False,2,facility,facility,19,exhausted,0,0,http://www.city.nanyo.yamagata.jp/taiikusisetu/409,facility,facility,南陽市中央花公園 南陽市,グランドゴルフ場
+06301,山辺町,山形県,surveyed,False,False,0,,,20,exhausted,0,0,,,,,
+06302,中山町,山形県,surveyed,True,False,12,event|facility|organization|other,event|facility|listing,44,exhausted,0,0,https://www.town.nakayama.yamagata.jp/kanko_bunka/sports/supotsushisetsu/index.html,listing,facility,スポーツ施設/『いも煮会発祥のまち』山形県中山町ホームページ,最上川中山緑地グラウンド・ゴルフ場(ひまわりグラウンド・ゴルフ場)の利用再開について
+06321,河北町,山形県,surveyed,False,False,0,,,42,exhausted,0,0,,,,,
+06322,西川町,山形県,surveyed,True,False,1,event,event,40,exhausted,0,0,https://www.town.nishikawa.yamagata.jp/site/aibe/5230.html,event,event,スポーツ教室で頭と身体を動かそう! - 交流センターあいべ - 西川町ホームページ,天気の良い日はグラウンドゴルフやウォーキング、雪や雨の日は体育館で卓球を楽しんでいます。
+06323,朝日町,山形県,no_seed,False,False,0,,,0,,0,0,,,,,
+06324,大江町,山形県,surveyed,False,False,0,,,26,exhausted,0,0,,,,,
+06341,大石田町,山形県,surveyed,False,False,0,,,30,exhausted,0,0,,,,,
+06361,金山町,山形県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+06362,最上町,山形県,no_seed,False,False,0,,,0,,0,0,,,,,
+06363,舟形町,山形県,surveyed,False,False,0,,,22,exhausted,0,0,,,,,
+06364,真室川町,山形県,surveyed,True,False,2,facility|organization,facility|listing,7,exhausted,0,0,https://www.town.mamurogawa.yamagata.jp/kurashi_tetsuzuki/shogai/1901.html,listing,facility,社会教育施設・社会体育施設/真室川町公式ホームページ,町民グラウンドゴルフ場
+06365,大蔵村,山形県,surveyed,False,False,0,,,40,exhausted,0,0,,,,,
+06366,鮭川村,山形県,surveyed,False,False,0,,,10,exhausted,0,0,,,,,
+06367,戸沢村,山形県,surveyed,False,False,0,,,29,exhausted,0,0,,,,,
+06381,高畠町,山形県,surveyed,False,False,0,,,20,exhausted,0,0,,,,,
+06382,川西町,山形県,surveyed,False,False,0,,,34,exhausted,0,0,,,,,
+06401,小国町,山形県,surveyed,False,False,0,,,57,exhausted,0,0,,,,,
+06402,白鷹町,山形県,surveyed,True,False,1,event,event,39,exhausted,0,0,https://www.town.shirataka.lg.jp/1598.htm,event,event,週間行事|白鷹町,白鷹町長杯町民グラウンドゴルフ大会
+06403,飯豊町,山形県,surveyed,True,False,1,facility,facility,27,exhausted,0,0,https://www.town.iide.yamagata.jp/007/spocen-annai.html,facility,facility,山形県飯豊町/町民スポーツセンターのご案内,雨や雪の日でも快適に野球・サッカー・グラウンドゴルフなどさまざまなスポーツ活動が可能です。グラウンドゴルフのクラ
+06426,三川町,山形県,surveyed,True,False,1,facility,facility,23,exhausted,0,0,https://www.town.mikawa.yamagata.jp/kurashi/park/parkguide.html,facility,facility,公園ガイド:三川町公式サイト,三川町では、これまで「赤川河川緑地」を整備し、主にグラウンドゴルフなどのスポーツやレクリエーション、文化活動などの活動の場とし
+06428,庄内町,山形県,surveyed,True,False,5,facility,facility|listing,60,exhausted,0,0,https://www.town.shonai.lg.jp/sportskouen/shisetsu/ichiran.html,listing,facility,町内体育施設一覧:庄内町公式ホームページ 町内体育施設一覧 Facilities,庄内町笠山グラウンドゴルフ場
+06461,遊佐町,山形県,surveyed,True,False,3,facility,facility|listing,39,exhausted,0,0,https://www.town.yuza.yamagata.jp/archive/contents-284,listing,facility,遊佐町総合運動公園「鳥海パノラマパーク」 | 遊佐町公式サイト,レクリエーション用具として、グラウンドゴルフ用具の無料貸出を行っています。貸出をご希望の方は、隣接する稲
