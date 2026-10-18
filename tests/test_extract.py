@@ -68,3 +68,27 @@ def test_extract_municipality_fetches_pages_and_respects_robots():
     rec = ex.extract_municipality(M, pages, make_fetcher(routes), SPEC, ex.ExtractConfig(route="t"))
     assert rec["outcome"] == "extracted" and rec["pages"][0]["items"][0]["phone"] == "0742-11-1111"
     assert rec["pages"][1]["error_class"] == "robots_disallowed" and "items" not in rec["pages"][1] and rec["pages"][2]["status"] == 404
+
+
+def test_address_is_cut_to_the_first_chunk():  # v2: 『設備 ソフトボール場…』まで取り込まない
+    assert ex.clean_address("豊川市桜ヶ丘町79-2 設備 ソフトボール場 1面 利用料金 無料") == "豊川市桜ヶ丘町79-2"
+    assert ex.clean_address("〒344-0000 埼玉県 春日部市牛島626 (牛島野球場南側) 施設情報") == "埼玉県春日部市牛島626"
+    assert ex.clean_address("春日部市 牛島626") == "埼玉県春日部市牛島626"
+    assert ex.looks_like_address("春日井市美濃町") and not ex.looks_like_address("新狭山公園クラブハウス")
+
+
+def test_table_column_that_is_not_an_address_is_ignored():  # 狭山市: 『場所』の列が管理事務所の名前
+    html = """<html><head><title>野球場|サンプル市</title></head><body><h1>野球場</h1><table>
+    <tr><th>施設名</th><th>場所</th></tr><tr><td>テニスコート</td><td>新狭山公園クラブハウス</td></tr></table></body></html>"""
+    r = ex.extract_page(html, "サンプル市", SPEC)
+    assert all(not i["address"] for i in r["items"])
+
+
+def test_contact_blocks_are_not_facilities_and_dept_is_cleaned():  # 上里町・坂戸市・熊谷市
+    html = """<html><head><title>中央運動場|サンプル市</title></head><body><h1>中央運動場</h1>
+    <table><tr><th>所在地</th><td>サンプル市中央1-1</td></tr><tr><th>電話</th><td>0742-11-1111</td></tr></table>
+    <h2>このページに関するお問い合わせ先</h2><dl><dt>担当</dt><dd>スポーツ課</dd><dt>電話</dt><dd>0742-99-9999</dd></dl>
+    <div>お問い合わせ スポーツ課 スポーツ施設担当 所在地:〒344-8577 サンプル市中央7-2-1 電話 0742-99-9999</div></body></html>"""
+    r = ex.extract_page(html, "サンプル市", SPEC)
+    assert [(i["name"], i["address"], i["phone"]) for i in r["items"]] == [("中央運動場", "サンプル市中央1-1", "0742-11-1111")]
+    assert r["inquiry"]["phone"] == "0742-99-9999" and r["inquiry"]["dept"] == "スポーツ課 スポーツ施設担当"

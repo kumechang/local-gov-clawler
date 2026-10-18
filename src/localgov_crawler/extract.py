@@ -26,6 +26,7 @@ POSTAL = re.compile(r"(?:〒|郵便番号?[:：]?)\s*\d{3}-\d{4}")
 ADDRESS_KEY = re.compile(r"^(?:所在地|住所|所在|場所|位置|施設所在地|所在地・アクセス|所在地・電話)(?:\s|（.*）|\(.*\))?$")
 PHONE_KEY = re.compile(r"電話|TEL|Tel|tel|連絡先|問い?合わせ|お問合せ")
 NAME_KEY = re.compile(r"^(?:施設名|名称|施設の名称|名前)$")
+CONTACT_HEADING = re.compile(r"お?問い?合わせ|連絡先|担当|^.{1,12}[係課室部班]\\s*(?:\\(.*\\))?$|このページ|この記事")
 GENERIC_HEADING = re.compile(r"^(?:施設概要|施設情報|基本情報|概要|アクセス|お問い合わせ|問い合わせ|利用案内|利用方法|料金|設備|施設の概要|施設案内|ご利用案内|所在地|地図|関連情報|その他|注意事項|備考|利用できる種目|主な設備)$")
 SITE_WORDS = re.compile(r"公式|ホームページ|ウェブサイト|Webサイト|市役所|町役場|村役場|トップページ")
 INQUIRY_MARK = re.compile(r"お?問い?合わせ(?:先)?|担当(?:課|部署)?|連絡先")
@@ -48,15 +49,27 @@ def find_phones(text: str) -> list[str]:
     return out
 
 
+PREFECTURE_PREFIX = re.compile(r"^(?:北海道|東京都|京都府|大阪府|\S{2,3}県)\s*")
+
+
 def clean_address(value: str) -> str:
+    """住所の値から、郵便番号・都道府県の前置き・続く説明(設備・料金・地図など)を落とし、最初の1まとまりにする。"""
     v = norm_text(value)
     v = re.sub(r"^〒\s*\d{3}-\d{4}\s*", "", v)
+    v = PREFECTURE_PREFIX.sub(lambda m: m.group(0).strip(), v)
     v = ADDRESS_CUT.sub("", v).strip(" 　:：、,")
-    return v[:120]
+    tokens = v.split()
+    if not tokens:
+        return ""
+    out = tokens[0]
+    if len(tokens) > 1 and not re.search(r"\d", out) and re.search(r"\d", tokens[1]) and len(out) <= 12 and not re.search(r"設備|料金|利用|施設", tokens[1]):
+        out += tokens[1]  # 『春日部市 牛島626』のように途中で空白が入る住所
+    return out[:80]
 
 
 def looks_like_address(v: str) -> bool:
-    return bool(re.search(r"[市区町村郡]", v) and re.search(r"\d", v)) or bool(re.search(r"(?:丁目|番地|番\d|-\d)", v))
+    """市区町村郡の名前を含む(『クラブハウス』『現場事務所』のような場所の名前は住所でない)。"""
+    return bool(re.search(r"[市区町村郡]", v)) and not re.search(r"クラブハウス|事務所|管理棟|受付|売店", v)
 
 
 def clean_name(title: str, muni_name: str) -> str:
@@ -107,7 +120,7 @@ def _table_items(soup: BeautifulSoup, spec: KeywordSpec | None) -> list[_Item]:
                 continue
             g = lambda k: cells[idx[k]] if idx[k] is not None and idx[k] < len(cells) else ""
             phones = find_phones(g("phone")) if idx["phone"] is not None else find_phones(" ".join(cells))
-            addr = clean_address(g("address")) if idx["address"] is not None else ""
+            addr = clean_address(g("address")) if idx["address"] is not None and looks_like_address(g("address")) else ""
             items.append(_Item(name=g("name")[:80], address=addr, phone=phones[0] if phones else "", source="table_row", text=" ".join(cells)))
     return items
 
@@ -142,6 +155,8 @@ def _kv_items(pairs: list[tuple[str, str, str]], page_name: str) -> list[_Item]:
     by_heading: dict[str, _Item] = {}
     order: list[str] = []
     for key, value, heading in pairs:
+        if CONTACT_HEADING.search(heading) or CONTACT_HEADING.search(key) and not ADDRESS_KEY.match(key) and not PHONE_KEY.search(key):
+            continue  # 問い合わせ先の欄は施設ではない(問い合わせ先として別に取る)
         item = by_heading.get(heading)
         if item is None:
             name = page_name if (not heading or GENERIC_HEADING.match(heading) or heading == page_name) else heading
@@ -170,7 +185,8 @@ def _inquiry(soup: BeautifulSoup) -> dict:
         if not phones:
             continue
         dept = re.sub(r"^(?:お?問い?合わせ(?:先)?|担当(?:課|部署)?|連絡先)\s*[:：]?\s*", "", t.split(phones[0].split("-")[0])[0]).strip(" :：　")
-        dept = re.sub(r"\s*(?:電話|TEL|Tel).*$", "", dept).strip()
+        dept = re.sub(r"\s*(?:電話|TEL|Tel|FAX|ファックス|所在地|住所|〒|メール|E-?mail|\d{3}-\d{4}).*$", "", dept).strip()
+        dept = re.sub(r"^(?:このページ(?:に関する|について)?|この記事(?:に関する|について)?)\s*(?:お?問い?合わせ(?:先)?)?\s*", "", dept).strip(" :：　")
         best = {"dept": dept[:60], "phone": phones[0]}
     return best
 
