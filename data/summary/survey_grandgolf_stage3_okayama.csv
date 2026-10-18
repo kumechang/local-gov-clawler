@@ -1,0 +1,28 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+33100,岡山市,岡山県,surveyed,True,False,9,facility,facility,200,max_pages,0,0,https://www.city.okayama.jp/shisei/0000013484.html,facility,facility,建部町総合スポーツセンター案内 | 岡山市,グラウンド・ゴルフ場(建部町総合スポーツセンター)
+33202,倉敷市,岡山県,surveyed,True,False,4,facility|other,facility|listing,147,exhausted,0,0,https://www.city.kurashiki.okayama.jp/culture/sports/1005100/index.html,listing,facility,スポーツ施設|倉敷市公式ホームページ,倉敷市グラウンド・ゴルフ場
+33203,津山市,岡山県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+33204,玉野市,岡山県,surveyed,False,False,0,,,30,exhausted,0,0,,,,,
+33205,笠岡市,岡山県,surveyed,True,False,2,event|organization,event|facility,64,exhausted,0,0,https://www.city.kasaoka.okayama.jp/soshiki/44/2561.html,facility,organization,笠岡市スポーツ協会 - 笠岡市ホームページ,グラウンド・ゴルフ
+33207,井原市,岡山県,surveyed,True,False,6,facility|other,facility|listing,123,exhausted,0,0,https://www.city.ibara.okayama.jp/life/6/31/134/,listing,facility,スポーツ施設 - 井原市役所,2024年4月1日更新井原市グラウンド・ゴルフ場
+33208,総社市,岡山県,surveyed,True,False,6,facility|other,facility|listing,72,exhausted,0,0,https://www.city.soja.okayama.jp/life/4/24/108/,listing,other,スポーツ - 総社市ホームページ,2025年11月25日更新グラウンドゴルフコース案内
+33209,高梁市,岡山県,surveyed,True,False,5,facility|organization|other,facility|listing,38,exhausted,0,0,https://www.city.takahashi.lg.jp/site/kyouikuiinkai/list141-524.html,listing,organization,体育施設に関すること - 高梁市教育委員会 - 高梁市公式ホームページ,2023年11月15日更新有漢スポーツパーク/グラウンドゴルフ場
+33210,新見市,岡山県,surveyed,True,False,4,facility,facility|listing,57,exhausted,0,0,https://www.city.niimi.okayama.jp/kurashi/kurashi_detail/index/1103,listing,facility,【各種様式】生涯学習課(体育施設関係) | くらしのガイド | 新見市 | 岡山県新見市 公式ホームページ,新見ピオーネ球場、多目的広場、ゲートボール場、グラウンドゴルフ場、管理棟会議室 等
+33211,備前市,岡山県,surveyed,False,False,0,,,75,exhausted,0,0,,,,,
+33212,瀬戸内市,岡山県,surveyed,False,False,0,,,28,exhausted,0,0,,,,,
+33213,赤磐市,岡山県,surveyed,True,False,1,other,event,17,exhausted,0,0,https://www.city.akaiwa.lg.jp/annai/kyouikuiinkai/sportsshinkou/kosodate-sports/sports/sports/index.html,event,other,スポーツ/赤磐市,赤磐市グラウンド・ゴルフ場
+33214,真庭市,岡山県,surveyed,True,True,2,facility,facility,54,exhausted,0,1,https://www.city.maniwa.lg.jp/soshiki/60/2667.html,facility,facility,湯原温泉スポーツ公園 - 真庭市公式ホームページ,湯原温泉スポーツ公園は、野球場、グラウンドゴルフ場、屋内ゲートボール場を備え、湯原クライミングセンター(ボル
+33215,美作市,岡山県,surveyed,False,False,0,,,9,exhausted,0,0,,,,,
+33216,浅口市,岡山県,surveyed,True,False,1,facility,facility,71,exhausted,0,0,https://www.city.asakuchi.lg.jp/page/2561.html,facility,facility,三ツ山スポーツ公園 - 浅口市公式ホームページ(寄島分室),調和した緑豊かなスポーツ公園。多目的広場、多目的シェルター、グラウンドゴルフ場、子ども広場等が整備されています。なお、グラウンドゴルフ場
+33346,和気町,岡山県,surveyed,True,False,2,facility,facility|listing,29,exhausted,0,0,https://www.town.wake.lg.jp/kanko_bunka_sports/wakecho_shisetsu/1273.html,listing,facility,和気ドーム(屋根付き多目的グラウンド)/和気町ホームページ,",200平米(70メートル×60メートル)あり、フットサル、グラウンドゴルフなら2面確保できます。(注意:多目的グラウンドのため、多少の"
+33423,早島町,岡山県,surveyed,True,False,7,facility,facility|listing,38,exhausted,0,0,https://www.town.hayashima.lg.jp/kanko_bunka_sports/shisetsu/2/index.html,listing,facility,スポーツ施設/早島町ホームページ,矢尾グラウンド・ゴルフ場の利用
+33445,里庄町,岡山県,surveyed,False,False,0,,,29,exhausted,0,0,,,,,
+33461,矢掛町,岡山県,surveyed,False,False,0,,,0,exhausted,0,0,,,,,
+33586,新庄村,岡山県,surveyed,False,False,0,,,2,exhausted,0,0,,,,,
+33606,鏡野町,岡山県,surveyed,False,False,0,,,62,exhausted,0,0,,,,,
+33622,勝央町,岡山県,surveyed,True,False,1,organization,listing,66,exhausted,0,0,https://www.town.shoo.lg.jp/site/kyoiku/1185.html,listing,organization,勝央町緑地運動公園及び体育施設のご案内 - 勝央町教育委員会 - 勝央町ホームページ(教育振興部),グラウンドゴルフ場
+33623,奈義町,岡山県,surveyed,True,False,3,facility|organization,facility|sports_nav,29,exhausted,0,0,https://www.town.nagi.okayama.jp/gyousei/koukyou_shisetsu/sougou_undoukouen.html,sports_nav,facility,奈義町/奈義町総合運動公園(B&G海洋センター),グラウンドゴルフ場
+33643,西粟倉村,岡山県,no_seed,False,False,0,,,0,,0,0,,,,,
+33663,久米南町,岡山県,surveyed,True,False,1,facility,listing,22,exhausted,0,0,https://www.town.kumenan.lg.jp/shisetsu/sports-park.html,listing,facility,久米南町/久米南町民運動公園 たくさんの 笑顔と元気 久米南町 岡山県久米郡 久米南町ウェブサイト,グラウンドゴルフ場
+33666,美咲町,岡山県,surveyed,False,False,0,,,6,exhausted,0,0,,,,,
+33681,吉備中央町,岡山県,surveyed,True,False,2,facility|other,facility,32,exhausted,0,0,https://www.town.kibichuo.lg.jp/site/kanko/5313.html,facility,facility,かもがわ総合スポーツ公園 - 吉備中央町ホームページ,多目的広場・野球場、テニス場、グラウンドゴルフ場、体育館を整備しています。平成17年には 第60回国民体育
