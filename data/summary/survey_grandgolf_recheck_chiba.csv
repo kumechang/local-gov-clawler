@@ -1,0 +1,55 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+12100,千葉市,千葉県,surveyed,True,False,8,facility|other,event|facility|listing,200,max_pages,0,0,https://www.city.chiba.jp/shimin/seikatsubunka/sports/sisetunoriyou.html,listing,facility,千葉市:スポーツ施設の利用,中田スポーツセンター(グラウンドゴルフ場)
+12202,銚子市,千葉県,surveyed,True,True,4,event|facility|organization,event|facility,69,exhausted,0,1,https://www.city.choshi.chiba.jp/edu/sg-guide/page210016.html,facility,facility,豊里台多目的スポーツ広場|銚子市,グラウンドゴルフ ほか
+12203,市川市,千葉県,surveyed,True,False,11,event|facility|organization|other,event|facility|listing,195,exhausted,0,0,https://www.city.ichikawa.lg.jp/page/2841.html,listing,facility,スポーツ施設一覧 - 市川市公式Webサイト(スポーツ施設課),グラウンドゴルフ等
+12204,船橋市,千葉県,surveyed,True,False,6,facility,facility,200,max_pages,0,0,https://www.city.funabashi.lg.jp/shisetsu/sportsshisetu/0001/0012/0001/p000000.html,facility,facility,行田運動広場|船橋市公式ホームページ,グラウンドゴルフ
+12205,館山市,千葉県,surveyed,True,False,5,facility|organization|other,event|facility,91,exhausted,0,0,https://www.city.tateyama.chiba.jp/sports/page100024.html,facility,facility,福原有信パーク館山(市営出野尾多目的広場)【地図】 | 館山市役所,グラウンドゴルフ/3面
+12206,木更津市,千葉県,surveyed,True,False,2,other,event|facility,156,exhausted,0,0,https://www.city.kisarazu.lg.jp/kanko_bunka_sports/sports/sportsshinko/5281.html,facility,other,スポーツ用具の貸出/木更津市,故障がないか確認し、手入れをしてから返却してください。グラウンド・ゴルフのスティックセットについては、スティックを元のケースに収納し
+12207,松戸市,千葉県,surveyed,True,False,7,facility|organization,event|facility,200,max_pages,0,0,https://www.city.matsudo.chiba.jp/shisetsu-guide/sports/sendabori_sports.html,facility,facility,千駄堀多目的スポーツ広場|松戸市,B・C・D面 グラウンド・ゴルフ、少年野球、ソフトボール、ターゲットバードゴルフ 等
+12208,野田市,千葉県,surveyed,True,True,4,facility,facility,78,exhausted,0,2,https://www.city.noda.chiba.jp/shisetsu/kouen/1050211.html,facility,facility,野田市営関宿スポーツパーク|野田市ホームページ,少年野球、ソフトボール、少年サッカー、フットサル、グラウンドゴルフ等に利用できるほか、バスケットゴール(ジュニア用)も1台設置
+12210,茂原市,千葉県,surveyed,True,False,1,organization,facility,59,exhausted,0,0,https://www.city.mobara.chiba.jp/0000000660.html,facility,organization,茂原市スポーツ協会加盟団体 | 千葉県茂原市の公式サイトへようこそ!,グラウンド・ゴルフ協会
+12211,成田市,千葉県,surveyed,False,False,0,,,121,exhausted,0,0,,,,,
+12212,佐倉市,千葉県,surveyed,True,False,1,facility,facility,25,exhausted,0,0,https://www.city.sakura.lg.jp/soshiki/shogaisportska/oshirase/21819.html,facility,facility,西志津スポーツ等多目的施設用地について/佐倉市|佐倉で才能が開花する,現在は、ラジオ体操やグラウンドゴルフ、河津桜まつりなどで利用されています。
+12213,東金市,千葉県,surveyed,False,False,0,,,42,exhausted,0,0,,,,,
+12215,旭市,千葉県,surveyed,True,False,1,facility,facility,67,exhausted,0,0,https://www.city.asahi.lg.jp/soshiki/30/17352.html,facility,facility,しおさいスタジアム(旭市サッカー場) - 旭市公式ホームページ,ご利用はサッカーやフットサルだけでなく、グラウンドゴルフや屋外ヨガ等の
+12216,習志野市,千葉県,surveyed,True,True,1,facility,facility,86,exhausted,0,1,https://www.city.narashino.lg.jp/kurashi/sports/shisetsu_kashidashi/640220150108140433756.html,facility,facility,ニュースポーツ用具を貸し出しします!/習志野市ホームページ,子どもから大人まで大人気『グラウンドゴルフ』
+12217,柏市,千葉県,surveyed,True,True,2,organization,facility,99,exhausted,0,2,https://www.city.kashiwa.lg.jp/sports/region/sports/1211.html,facility,organization,総合型地域スポーツクラブ 高田倶楽部 | 柏市,グラウンドゴルフ
+12218,勝浦市,千葉県,surveyed,False,False,0,,,37,exhausted,0,0,,,,,
+12219,市原市,千葉県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+12220,流山市,千葉県,surveyed,True,False,1,other,facility,144,exhausted,0,0,https://www.city.nagareyama.chiba.jp/life/1001505/1001626/1030696.html,facility,other,軽スポーツ(ユニバーサルスポーツ)用具の貸出し|流山市,グランドゴルフ
+12221,八千代市,千葉県,surveyed,True,False,7,facility|organization|other,event|facility,154,exhausted,0,0,https://www.city.yachiyo.lg.jp/soshiki/79/4784.html,facility,facility,上高野多目的グラウンド - 八千代市公式ホームページ,少年野球、ソフトボール、少年サッカー、グラウンドゴルフ、ゲートゴルフ等
+12222,我孫子市,千葉県,surveyed,False,False,0,,,132,exhausted,0,0,,,,,
+12223,鴨川市,千葉県,surveyed,True,False,2,event|other,facility,157,exhausted,0,0,https://www.city.kamogawa.lg.jp/life/4/20/120/,facility,other,市内のスポーツニュース等 - 鴨川市公式ホームページ,2022年7月14日更新市長杯争奪グラウンド・ゴルフ大会が開催!
+12224,鎌ケ谷市,千葉県,surveyed,True,False,4,facility|organization,facility|listing,134,exhausted,0,0,https://www.city.kamagaya.chiba.jp/sisetsu/sports-shisetsu/karuizawagr.html,listing,facility,軽井沢多目的グラウンド|鎌ケ谷市ホームページ,少年野球、ソフトボール、少年サッカー、軽スポーツ(グラウンド・ゴルフ等)等
+12225,君津市,千葉県,surveyed,True,False,3,event|other,event,51,exhausted,0,0,https://www.city.kimitsu.lg.jp/site/kanko/2201.html,event,event,遊ぶ・体験 - 君津市公式ホームページ,君津グラウンド・ゴルフ場
+12226,富津市,千葉県,surveyed,True,True,6,event|organization,event|facility|sports_nav,128,exhausted,0,1,https://www.city.futtsu.lg.jp/0000008549.html,sports_nav,event,富津市ふれあいスポーツフェスタ2026 | 富津市,グラウンド・ゴルフ
+12227,浦安市,千葉県,surveyed,False,False,0,,,159,exhausted,0,0,,,,,
+12228,四街道市,千葉県,surveyed,True,False,2,facility,facility|listing,101,exhausted,0,0,https://www.city.yotsukaido.chiba.jp/kurashi/shisetsu/sports/tamokutekiundouzyo.html,listing,facility,四街道総合公園多目的運動場 四街道市,陸上競技(400メートルトラック7コース)、サッカー1面、グラウンドゴルフ等
+12229,袖ケ浦市,千葉県,surveyed,True,False,2,event|facility,event|facility,136,exhausted,0,0,https://www.city.sodegaura.lg.jp/soshiki/sports/nagauraunndouhiroba.html,facility,facility,長浦運動広場施設案内 - 袖ケ浦市公式ホームページ(スポーツ振興課),ペタンク、グランドゴルフに利用
+12230,八街市,千葉県,surveyed,False,False,0,,,42,exhausted,0,0,,,,,
+12231,印西市,千葉県,surveyed,True,False,1,facility,facility,95,exhausted,0,0,http://www.city.inzai.lg.jp/0000000606.html,facility,facility,印西市都市公園での手続き | 印西市ホームページ,行事(夏まつり、防災訓練等)、コマーシャル撮影、物品の販売、グランドゴルフ等
+12232,白井市,千葉県,surveyed,True,False,7,facility|organization|other,event|facility,87,exhausted,0,0,https://www.city.shiroi.chiba.jp/manabu/sports/s02/1421729522274.html,facility,other,出前スポーツ/白井市,グラウンドゴルフ
+12233,富里市,千葉県,surveyed,False,False,0,,,117,exhausted,0,0,,,,,
+12234,南房総市,千葉県,surveyed,False,False,0,,,50,exhausted,0,0,,,,,
+12235,匝瑳市,千葉県,surveyed,False,False,0,,,36,exhausted,0,0,,,,,
+12236,香取市,千葉県,surveyed,True,False,5,event|facility|organization,event|facility,161,exhausted,0,0,https://www.city.katori.lg.jp/shisetsu/sport_koen/sport/s_hiroba.html,facility,facility,与田浦運動広場:香取市ウェブサイト,少年サッカーの元気な歓声が上がっています。平日は、はつらつとグランドゴルフが行われているなど、身近な運動広場として親しまれています。
+12237,山武市,千葉県,surveyed,True,False,1,organization,facility,59,exhausted,0,0,https://www.city.sammu.lg.jp/kyouiku/sports-shisetsu/shisetsu-sammu-kouen/page001816.html,facility,organization,さんぶの森ふれあい公園 多目的広場 | 山武市教育委員会 | 山武市公式ホームページ,サッカー・グラウンドゴルフなどに利用できる多目的運動場です。
+12238,いすみ市,千葉県,surveyed,False,False,0,,,22,exhausted,0,0,,,,,
+12239,大網白里市,千葉県,surveyed,True,False,1,event,event,52,exhausted,0,0,https://www.city.oamishirasato.lg.jp/0000013983.html,event,event,2024年度「第75回山武郡市民スポーツ大会」について | 大網白里市,▼第3位=バスケットボール男子、ソフトボール男子、グラウンドゴルフ
+12322,酒々井町,千葉県,surveyed,False,False,0,,,40,exhausted,0,0,,,,,
+12329,栄町,千葉県,surveyed,False,False,0,,,65,exhausted,0,0,,,,,
+12342,神崎町,千葉県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
+12347,多古町,千葉県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+12349,東庄町,千葉県,surveyed,True,False,3,facility|other,facility,64,exhausted,0,0,https://www.town.tohnosho.chiba.jp/soshiki/machikominkan/gyomu/tonoshomachinoshisetsu/710.html,facility,facility,東庄町スポーツ広場/東庄町,グラウンドゴルフ8ホール
+12403,九十九里町,千葉県,surveyed,True,False,1,facility,facility,29,exhausted,0,0,https://www.town.kujukuri.chiba.jp/0000000042.html,facility,facility,野球場 | 九十九里町ホームページ,グラウンドゴルフ
+12409,芝山町,千葉県,surveyed,True,False,1,event,event,71,exhausted,0,0,https://www.town.shibayama.lg.jp/0000006566.html,event,event,第4回芝山スポーツフェスティバルを開催します! | 千葉県芝山町ホームページ,しカンカン50m走」「野菜詰め放題競争」「スリッパ飛ばし」「グラウンドゴルフ・ニアピンコンテスト」
+12410,横芝光町,千葉県,surveyed,True,False,2,facility,facility,57,exhausted,0,0,https://www.town.yokoshibahikari.chiba.jp/soshiki/14/1059.html,facility,facility,ふれあい坂田池公園 - 横芝光町公式ホームページ,※興業、競技会、展示会、集会、スポーツ(グランドゴルフ、ゲートボール等)、学校行事(遠足等)、その他で独占的に使用
+12421,一宮町,千葉県,surveyed,False,False,0,,,31,exhausted,0,0,,,,,
+12422,睦沢町,千葉県,surveyed,False,False,0,,,18,exhausted,0,0,,,,,
+12423,長生村,千葉県,surveyed,False,False,0,,,43,exhausted,0,0,,,,,
+12424,白子町,千葉県,surveyed,False,False,0,,,28,exhausted,0,0,,,,,
+12426,長柄町,千葉県,surveyed,False,False,0,,,4,exhausted,0,0,,,,,
+12427,長南町,千葉県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+12441,大多喜町,千葉県,surveyed,True,False,1,facility,facility,18,exhausted,0,0,https://www.town.otaki.chiba.jp/soshiki/shougaigakusyu/1/1/2/583.html,facility,facility,大多喜町のスポーツ施設/大多喜町公式ホームページ,サッカーや少年野球、グラウンドゴルフ、キックベース、運動会など多目的に利用できるグランドです。
+12443,御宿町,千葉県,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
+12463,鋸南町,千葉県,surveyed,False,False,0,,,29,exhausted,0,0,,,,,
