@@ -1,0 +1,44 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+46201,鹿児島市,鹿児島県,surveyed,True,False,8,facility,facility|listing,200,max_pages,0,0,https://www.city.kagoshima.lg.jp/sports/shisetsu/kanko/044.html,listing,facility,郡山総合運動場|鹿児島市,、多目的広場、砂入り人工芝テニスコート6面(照明設備あり)、グランドゴルフ場
+46203,鹿屋市,鹿児島県,surveyed,True,True,24,event|facility,event|facility|listing,196,max_requests,0,1,https://www.city.kanoya.lg.jp/kouhou/shisetsu/sports/index.html,listing,facility,スポーツ施設/鹿屋市,かのやグラウンド・ゴルフ場
+46204,枕崎市,鹿児島県,surveyed,False,False,0,,,53,exhausted,0,0,,,,,
+46206,阿久根市,鹿児島県,surveyed,True,False,2,facility,facility,65,exhausted,0,0,https://www.city.akune.lg.jp/soshikikarasagasu/sportssuishinka/sportsgakari/2/1/539.html,facility,facility,総合運動公園 多目的運動広場/阿久根市,ソフトボール2面(サッカー、ラグビー、グラウンドゴルフ兼用)
+46208,出水市,鹿児島県,surveyed,True,False,1,organization,facility,23,exhausted,0,0,https://www.city.kagoshima-izumi.lg.jp/page/page_00718.html,facility,organization,総合型コミュニティスポーツクラブ いずみわくわく夢クラブ|鹿児島県出水市 みんなでつくる活力都市 住みたいまち 出水市,グラウンド・ゴルフ
+46210,指宿市,鹿児島県,no_seed,False,False,0,,,0,,0,0,,,,,
+46213,西之表市,鹿児島県,no_seed,False,False,0,,,0,,0,0,,,,,
+46214,垂水市,鹿児島県,surveyed,True,True,6,facility,facility|listing,75,exhausted,1,1,https://www.city.tarumizu.lg.jp/bunka/kurashi/kosodate/undokoen/sisetu/guraunndogoruhujyou.html,listing,facility,鹿児島県垂水市/中央地区多目的広場兼グラウンドゴルフ場,・イベント) > 社会体育施設情報 > 中央地区多目的広場兼グラウンドゴルフ場
+46215,薩摩川内市,鹿児島県,surveyed,True,False,5,event|facility|other,event|facility|listing,41,exhausted,0,0,https://www.city.satsumasendai.lg.jp/kanko_bunka_sports/sports/index.html,listing,other,スポーツ/薩摩川内市,樋脇グラウンド・ゴルフ場が利用者30万人を達成しました
+46216,日置市,鹿児島県,surveyed,True,True,5,facility|other,facility|listing,128,exhausted,0,2,https://www.city.hioki.kagoshima.jp/sposhin/shisetsu/taiku/021.html,listing,facility,日置市伊集院総合運動公園グラウンドゴルフ場|鹿児島県日置市, 公共施設等 > 社会体育施設 > 日置市伊集院総合運動公園グラウンドゴルフ場
+46217,曽於市,鹿児島県,surveyed,True,False,2,event|facility,facility|listing,61,exhausted,0,0,https://www.city.soo.kagoshima.jp/kurashi/koukyousisetu/unndoushisetu/unndousisetuich.html,listing,facility,運動施設一覧|くらしの情報|曽於市,新地公園グラウンド・ゴルフ場
+46218,霧島市,鹿児島県,surveyed,True,False,24,facility,facility|listing,200,max_pages,0,0,https://www.city-kirishima.jp/hisyokouhou/shisetsu/sports/index.html,listing,facility,鹿児島県霧島市|スポーツ,溝辺グラウンドゴルフ場
+46219,いちき串木野市,鹿児島県,surveyed,True,False,1,organization,facility,96,exhausted,0,0,https://www.city.ichikikushikino.lg.jp/sport1/sports_kyoukai.html,facility,organization,いちき串木野市/いちき串木野市スポーツ協会,(19)グラウンドゴルフ
+46220,南さつま市,鹿児島県,surveyed,True,False,5,event|facility,event|facility,128,exhausted,0,0,https://www.city.minamisatsuma.lg.jp/living/kyoiku-bunka-sports/taiku-kouen/e018055.html,facility,facility,加世田運動公園 | 南さつま市,400m×8レーン(第4種ライト公認)、サッカー使用可、グラウンドゴルフ使用可
+46221,志布志市,鹿児島県,surveyed,True,False,4,event|organization|other,event,49,exhausted,0,0,https://www.city.shibushi.lg.jp/life/3/21/90/,event,event,イベント・アクティビティ - 志布志市公式ホームページ,2021年10月11日更新志布志市地域女性団体連絡協議会グラウンド・ゴルフ大会を開催
+46222,奄美市,鹿児島県,surveyed,True,False,2,facility,facility|listing,40,exhausted,0,0,https://www.city.amami.lg.jp/shisetsu/leisure/index.html,listing,facility,レジャー・スポーツ施設/鹿児島県奄美市,あやまる岬多目的広場(グラウンドゴルフ場)
+46223,南九州市,鹿児島県,surveyed,True,False,3,facility|organization,facility|listing,118,exhausted,0,0,https://www.city.minamikyushu.lg.jp/sport_bunka_kyoiku/koen_taiikushisetsu/6592.html,listing,facility,南九州市体育施設利用案内/南九州市,グラウンド・ゴルフ1面
+46224,伊佐市,鹿児島県,surveyed,False,False,0,,,23,exhausted,0,0,,,,,
+46225,姶良市,鹿児島県,surveyed,True,False,4,facility,facility,87,exhausted,0,0,https://www.city.aira.lg.jp/sports/kajikiundoujyou.html,facility,facility,姶良市/加治木運動場,グラウンド・ゴルフなど
+46303,三島村,鹿児島県,surveyed,False,False,0,,,4,exhausted,0,0,,,,,
+46304,十島村,鹿児島県,surveyed,False,False,0,,,12,exhausted,0,0,,,,,
+46392,さつま町,鹿児島県,surveyed,False,False,0,,,23,exhausted,0,0,,,,,
+46404,長島町,鹿児島県,surveyed,False,False,0,,,30,exhausted,0,0,,,,,
+46452,湧水町,鹿児島県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+46468,大崎町,鹿児島県,surveyed,True,False,2,facility|organization,facility|listing,30,exhausted,0,0,http://www.town.kagoshima-osaki.lg.jp/kh_shougaisports/kyoiku-bunka/shiyoryo/taikukan.html,listing,facility,体育施設・総合体育館|鹿児島県大崎町,グラウンドゴルフ用クラブ
+46482,東串良町,鹿児島県,surveyed,True,False,3,event|other,event|facility|listing,20,exhausted,1,0,https://www.higashikushira.com/categories/event/sports/,listing,other,スポーツ | 東串良町,マルマリンカップ(グラウンドゴルフ)開催について(2025年08月12日 企画課)
+46490,錦江町,鹿児島県,surveyed,True,False,1,event,listing,14,exhausted,0,0,http://www.town.kinko.lg.jp/syogai-h/sports_festa.html,listing,event,錦江町/錦江町スポーツフェスタ,競技別のスポーツ・レクリエーション大会も開催しています。グラウンド・ゴルフ、バトミントン、ソフトテニス、バレーボール、卓球、ソフトボー
+46491,南大隅町,鹿児島県,surveyed,False,False,0,,,10,exhausted,0,0,,,,,
+46492,肝付町,鹿児島県,no_seed,False,False,0,,,0,,0,0,,,,,
+46501,中種子町,鹿児島県,surveyed,True,False,1,facility,facility,43,exhausted,0,0,http://town.nakatane.kagoshima.jp/taiku/kyoiku-bunka/sports/shisetsu/yakyujo.html,facility,facility,野球場|鹿児島県中種子町,ランニングコースとしても利用できます。スタンド後部は芝生で、グラウンドゴルフコースになっています。
+46502,南種子町,鹿児島県,surveyed,True,False,1,other,listing,15,exhausted,0,0,http://www.town.minamitane.kagoshima.jp/education/sports.html,listing,other,スポーツ活動 南種子町役場|鹿児島|種子島,・バドミントン ・ゴルフ ・柔道 ・相撲 ・ソフトテニス ・グラウンドゴルフ ・バスケットボール ・サーフィン
+46505,屋久島町,鹿児島県,surveyed,False,False,0,,,8,exhausted,0,0,,,,,
+46523,大和村,鹿児島県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
+46524,宇検村,鹿児島県,surveyed,True,False,2,facility,facility,16,exhausted,0,0,http://www.uken.net/kouhoutoukei/shisetsu/kyoiku/index.html,facility,facility,教育・文化・スポーツ施設|鹿児島県宇検村,グランドゴルフ場
+46525,瀬戸内町,鹿児島県,surveyed,True,False,2,event,event,72,exhausted,0,0,https://www.town.setouchi.lg.jp/syakyou/spofes.html,event,event,瀬戸内町/町制施行70周年記念第2回せとうちスポーツフェスティバル2026,グラウンド・ゴルフ
+46527,龍郷町,鹿児島県,surveyed,False,False,0,,,20,exhausted,0,0,,,,,
+46529,喜界町,鹿児島県,surveyed,True,False,5,event|organization,event,40,exhausted,0,0,http://www.town.kikai.lg.jp/cgi-bin/event_cal_multi/calendar.cgi,event,event,イベントカレンダー|鹿児島県喜界町,年代別大会【グラウンドゴルフ協会】
+46530,徳之島町,鹿児島県,surveyed,False,False,0,,,43,exhausted,0,0,,,,,
+46531,天城町,鹿児島県,surveyed,True,False,1,facility,facility,72,exhausted,0,0,https://www.town.amagi.lg.jp/docs/628.html,facility,facility,令和元年度高齢者学級・中央女性学級合同グランドゴルフ - 天城町,中央女性学級の合同グランドゴルフを行いました\(^o^)/
+46532,伊仙町,鹿児島県,surveyed,False,False,0,,,59,exhausted,0,0,,,,,
+46533,和泊町,鹿児島県,surveyed,False,False,0,,,21,exhausted,0,0,,,,,
+46534,知名町,鹿児島県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
+46535,与論町,鹿児島県,surveyed,False,False,0,,,31,exhausted,0,0,,,,,
