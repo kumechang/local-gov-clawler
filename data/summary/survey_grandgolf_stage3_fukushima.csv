@@ -1,0 +1,60 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+07201,福島市,福島県,surveyed,False,False,0,,,99,exhausted,0,0,,,,,
+07202,会津若松市,福島県,surveyed,True,False,2,event|organization,event|facility,57,exhausted,0,0,https://www.city.aizuwakamatsu.fukushima.jp/docs/2015062600028/,facility,organization,会津若松市スポーツ協会 | 会津若松市,会津若松市グラウンド・ゴルフ協会
+07203,郡山市,福島県,surveyed,True,False,18,facility|organization|other,facility,200,max_pages,0,0,https://www.city.koriyama.lg.jp/soshiki/44/50244.html,facility,facility,白岩運動広場 - 郡山市公式ウェブサイト,グラウンドゴルフ 等
+07204,いわき市,福島県,surveyed,True,False,1,other,facility,195,exhausted,0,0,https://www.city.iwaki.lg.jp/www/contents/1592441487803/index.html,facility,other,ニュースポーツ用具の貸出しについて|いわき市役所,グラウンド・ゴルフ、ターゲットバードゴルフ、スナッグゴルフ、スカットボール
+07205,白河市,福島県,surveyed,True,False,2,event,event,76,exhausted,0,0,https://www.city.shirakawa.fukushima.jp/page/page009084.html,event,event,しらかわスポーツ祭2026 開催 | 白河市公式ホームページ,グラウンドゴルフ
+07207,須賀川市,福島県,surveyed,True,True,2,event|organization,event|facility,123,exhausted,0,1,https://www.city.sukagawa.fukushima.jp/bunka_sports/sports/1014272/1007542.html,facility,organization,須賀川市スポーツ協会加盟団体一覧/須賀川市公式ホームページ,須賀川グラウンドゴルフ協会
+07208,喜多方市,福島県,surveyed,True,False,1,organization,facility,44,exhausted,0,0,https://www.city.kitakata.fukushima.jp/soshiki/syougaku/1028.html,facility,organization,やまとスポーツクラブ - 喜多方市ホームページ(生涯学習課),グラウンドゴルフ教室
+07209,相馬市,福島県,surveyed,False,False,0,,,32,exhausted,0,0,,,,,
+07210,二本松市,福島県,surveyed,False,False,0,,,77,exhausted,0,0,,,,,
+07211,田村市,福島県,surveyed,False,False,0,,,54,exhausted,0,0,,,,,
+07212,南相馬市,福島県,surveyed,True,False,1,facility,event,103,exhausted,0,0,https://www.city.minamisoma.lg.jp/portal/culture/sports/2/5160.html,event,facility,真野交流センター/南相馬市公式ウェブサイト -Minamisoma City-,野球・サッカー・ソフトボール・グラウンドゴルフなどにご利用ください。
+07213,伊達市,福島県,surveyed,False,False,0,,,49,exhausted,0,0,,,,,
+07214,本宮市,福島県,surveyed,True,False,1,facility,facility,117,exhausted,0,0,https://www.city.motomiya.lg.jp/map/66.html,facility,facility,恵向公園 - 本宮市公式ホームページ,恵向公園は、公園北側のファミリーエリアと南側のグラウンド・ゴルフ場にエリアが分かれています。
+07301,桑折町,福島県,surveyed,False,False,0,,,29,exhausted,0,0,,,,,
+07303,国見町,福島県,surveyed,False,False,0,,,15,exhausted,0,0,,,,,
+07308,川俣町,福島県,surveyed,False,False,0,,,68,exhausted,0,0,,,,,
+07322,大玉村,福島県,surveyed,False,False,0,,,28,exhausted,0,0,,,,,
+07342,鏡石町,福島県,surveyed,False,False,0,,,29,exhausted,0,0,,,,,
+07344,天栄村,福島県,surveyed,False,False,0,,,36,exhausted,0,0,,,,,
+07362,下郷町,福島県,surveyed,False,False,0,,,6,exhausted,0,0,,,,,
+07364,檜枝岐村,福島県,surveyed,False,False,0,,,15,exhausted,0,0,,,,,
+07367,只見町,福島県,surveyed,False,False,0,,,4,exhausted,0,0,,,,,
+07368,南会津町,福島県,surveyed,False,False,0,,,8,exhausted,0,0,,,,,
+07402,北塩原村,福島県,surveyed,False,False,0,,,41,exhausted,0,0,,,,,
+07405,西会津町,福島県,surveyed,False,False,0,,,18,exhausted,0,0,,,,,
+07407,磐梯町,福島県,surveyed,True,False,1,event,event,23,exhausted,0,0,https://www.town.bandai.fukushima.jp/site/bunka-sports/bandaispofes2026_event.html,event,event,磐梯町スポーツフェスティバル2026を開催します! - 文化・スポーツ・観光 - 磐梯町ホームページ(文化生涯学習課),グラウンドゴルフのホールポストを狙ってナイスショット!ホールインワンを目指そ
+07408,猪苗代町,福島県,surveyed,False,False,0,,,10,exhausted,0,0,,,,,
+07421,会津坂下町,福島県,surveyed,True,False,2,organization|other,facility|listing,34,exhausted,0,0,https://www.town.aizubange.fukushima.jp/soshiki/30/11789.html,listing,other,スポーツ・レクリエーション - 会津坂下町,グラウンドゴルフ
+07422,湯川村,福島県,surveyed,False,False,0,,,20,exhausted,0,0,,,,,
+07423,柳津町,福島県,surveyed,False,False,0,,,11,exhausted,0,0,,,,,
+07444,三島町,福島県,surveyed,False,False,0,,,35,exhausted,0,0,,,,,
+07445,金山町,福島県,surveyed,True,False,1,facility,listing,18,exhausted,0,0,https://www.town.kaneyama.fukushima.jp/soshiki/32/taiiku-shisetsu.html,listing,facility,社会体育施設 - 福島県金山町公式ホームページ 自然の恵みと笑顔あふれる かねやま,金山町営グラウンド・ゴルフ場
+07446,昭和村,福島県,surveyed,False,False,0,,,4,exhausted,0,0,,,,,
+07447,会津美里町,福島県,surveyed,False,False,0,,,45,exhausted,0,0,,,,,
+07461,西郷村,福島県,surveyed,True,False,3,facility|organization,facility|listing,37,exhausted,0,0,https://www.vill.nishigo.fukushima.jp/kanko_bunka_sports/sports/4950.html,listing,organization,スポーツに参加したい・学びたい(団体・クラブ・サークル活動)/西郷村,グラウンド・ゴルフ
+07464,泉崎村,福島県,surveyed,False,False,0,,,44,exhausted,0,0,,,,,
+07465,中島村,福島県,surveyed,False,False,0,,,14,exhausted,0,0,,,,,
+07466,矢吹町,福島県,surveyed,False,False,0,,,74,exhausted,0,0,,,,,
+07481,棚倉町,福島県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+07482,矢祭町,福島県,surveyed,False,False,0,,,39,exhausted,0,0,,,,,
+07483,塙町,福島県,surveyed,False,False,0,,,6,exhausted,0,0,,,,,
+07484,鮫川村,福島県,surveyed,True,False,1,organization,facility,14,exhausted,0,0,https://www.vill.samegawa.fukushima.jp/kosodate-kyoiku/sports/sports-dantai/page001063.html,facility,organization,特定非営利活動法人さめがわスポーツクラブ | 鮫川村公式ホームページ,・グラウンドゴルフ教室
+07501,石川町,福島県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+07502,玉川村,福島県,surveyed,False,False,0,,,27,exhausted,0,0,,,,,
+07503,平田村,福島県,surveyed,False,False,0,,,10,exhausted,0,0,,,,,
+07504,浅川町,福島県,surveyed,False,False,0,,,14,exhausted,0,0,,,,,
+07505,古殿町,福島県,surveyed,False,False,0,,,14,exhausted,0,0,,,,,
+07521,三春町,福島県,surveyed,True,True,3,facility|organization|other,facility|listing,31,exhausted,0,1,https://www.town.miharu.fukushima.jp/soshiki/12/taiikusisetubihinn.html,listing,facility,体育施設備品について | 三春町公式ホームページ【福島県三春町】Miharu Town,グラウンドゴルフ
+07522,小野町,福島県,no_seed,False,False,0,,,0,,0,0,,,,,
+07541,広野町,福島県,surveyed,True,False,2,event,event,51,exhausted,0,0,https://www.town.hirono.fukushima.jp/kankousports/sports/1001783/1004589.html,event,event,スポーツ教室案内|広野町公式ウェブサイト,グラウンドゴルフ部
+07542,楢葉町,福島県,surveyed,False,False,0,,,22,exhausted,0,0,,,,,
+07543,富岡町,福島県,surveyed,False,False,0,,,46,exhausted,0,0,,,,,
+07544,川内村,福島県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+07545,大熊町,福島県,surveyed,False,False,0,,,22,exhausted,0,0,,,,,
+07546,双葉町,福島県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+07547,浪江町,福島県,surveyed,True,False,1,other,event,73,exhausted,0,0,https://www.town.namie.fukushima.jp/soshiki/35/44673.html,event,other,【ソシオグリーンパーク請戸】パークゴルフをはじめ、スポーツやレクリエーションを楽しめます! - 浪江町ホームページ,グラウンドゴルフ 1コース
+07548,葛尾村,福島県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+07561,新地町,福島県,surveyed,False,False,0,,,21,exhausted,0,0,,,,,
+07564,飯舘村,福島県,surveyed,True,False,1,facility,facility,25,exhausted,0,0,https://www.vill.iitate.fukushima.jp/site/sportspark/3435.html,facility,facility,施設紹介 - 飯舘村ホームページ,入り人口芝のテニスコート2面/フットサル1面、ゲートボール、グラウンドゴルフ、キャッチボールなど、様々な球技やランニングも可能。※バッテ
