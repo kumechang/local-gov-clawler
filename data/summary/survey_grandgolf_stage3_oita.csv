@@ -1,0 +1,19 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+44201,大分市,大分県,surveyed,True,False,1,facility,facility,98,exhausted,0,0,https://www.city.oita.oita.jp/o044/tobukominkanshisetu.html,facility,facility,大分市/施設情報【大分東部公民館】,グラウンドゴルフ、ゲートボール、小学生サッカー等に午後7時まで利用できます。
+44202,別府市,大分県,surveyed,True,False,2,facility,event|facility,158,exhausted,0,0,https://www.city.beppu.oita.jp/sisetu/supootu/02sports_02-03jissouji.html,facility,facility,実相寺多目的グラウンド・実相寺中央公園管理棟|別府市,ラグビー、サッカー、ゲートボール、グラウンドゴルフ等
+44203,中津市,大分県,surveyed,True,False,2,event,event,76,exhausted,0,0,https://www.city-nakatsu.jp/doc/2026090800021/,event,event,第79回大分県民スポーツ大会が行われました。 | 大分県中津市,グラウンド・ゴルフ競技
+44204,日田市,大分県,surveyed,True,False,7,facility,facility,66,exhausted,0,0,https://www.city.hita.oita.jp/site/sports/1855.html,facility,facility,天瀬総合グラウンド - スポーツ施設 - 日田市(文化スポーツ振興課),ックがあり、陸上競技を始めサッカー・ソフトボール・軟式野球・グラウンドゴルフなど、様々なスポーツに利用されています。
+44205,佐伯市,大分県,surveyed,False,False,0,,,109,exhausted,0,0,,,,,
+44206,臼杵市,大分県,surveyed,False,False,0,,,14,exhausted,0,0,,,,,
+44207,津久見市,大分県,surveyed,False,False,0,,,27,exhausted,0,0,,,,,
+44208,竹田市,大分県,surveyed,False,False,0,,,77,exhausted,0,0,,,,,
+44209,豊後高田市,大分県,surveyed,True,False,2,event|facility,event|facility,42,exhausted,0,0,https://www.city.bungotakada.oita.jp/soshiki/29/1913.html,facility,facility,丘の公園スポーツ広場(トラック・フィールド) - 豊後高田市ホームページ,フィールドは、サッカーやゲートボール、グラウンドゴルフなどにも活用できます!
+44210,杵築市,大分県,surveyed,False,False,0,,,33,exhausted,0,0,,,,,
+44211,宇佐市,大分県,surveyed,True,False,8,event|facility|organization|other,event|facility|listing,83,exhausted,0,0,https://www.city.usa.oita.jp/sougo/bunka_sports_shogai/sports/11649.html,listing,facility,スポーツ施設/宇佐市,はちまんの郷グラウンド・ゴルフ場
+44212,豊後大野市,大分県,surveyed,True,False,2,event,event,63,exhausted,0,0,https://www.bungo-ohno.jp/article/2023082900134/,event,event,第76回大分県民スポーツ大会 豊後大野市 躍進1位!! | 豊後大野市,グラウンド・ゴルフ競技
+44213,由布市,大分県,surveyed,False,False,0,,,29,exhausted,0,0,,,,,
+44214,国東市,大分県,surveyed,False,False,0,,,124,exhausted,0,0,,,,,
+44322,姫島村,大分県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
+44341,日出町,大分県,surveyed,False,False,0,,,23,exhausted,0,0,,,,,
+44461,九重町,大分県,surveyed,False,False,0,,,26,exhausted,0,0,,,,,
+44462,玖珠町,大分県,surveyed,True,False,2,facility,facility,34,exhausted,0,0,https://www.town.kusu.oita.jp/soshiki/shakaikyoikuka/sports/3/1328.html,facility,facility,多目的グラウンド/玖珠町,少年サッカー、少年ラグビー、一般ソフトボール、ゲートボール、グラウンドゴルフ等の試合や練習に利用
