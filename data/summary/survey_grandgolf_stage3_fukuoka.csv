@@ -1,0 +1,61 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+40100,北九州市,福岡県,surveyed,False,False,0,,,123,exhausted,0,0,,,,,
+40130,福岡市,福岡県,surveyed,True,True,2,facility,facility,176,exhausted,0,1,https://www.city.fukuoka.lg.jp/kankyo/k-seisaku/genre/07.html,facility,facility,福岡市 環境局の施設,久山グラウンドゴルフ場
+40202,大牟田市,福岡県,surveyed,False,False,0,,,185,exhausted,0,0,,,,,
+40203,久留米市,福岡県,surveyed,True,False,16,event|facility|organization|other,event|facility,200,max_pages,0,0,https://www.city.kurume.fukuoka.jp/1060manabi/2040sports/3010shisetsu/4100ground/index.html,facility,facility,久留米市:多目的グラウンド,多目的グラウンド(少年野球、サッカー、ラグビー、グラウンドゴルフなど)
+40204,直方市,福岡県,fetch_failed,False,False,0,,,0,,0,0,,,,,
+40205,飯塚市,福岡県,surveyed,True,True,5,event|facility,event|facility|listing,93,exhausted,0,2,https://www.city.iizuka.lg.jp/life/6/37/133/,listing,facility,グラウンド・スポーツ施設 - 飯塚市,2026年2月25日更新飯塚市グラウンドゴルフ場
+40206,田川市,福岡県,no_seed,False,False,0,,,0,,0,0,,,,,
+40207,柳川市,福岡県,surveyed,False,False,0,,,74,exhausted,0,0,,,,,
+40210,八女市,福岡県,surveyed,False,False,0,,,22,exhausted,0,0,,,,,
+40211,筑後市,福岡県,surveyed,True,False,1,event,event,45,exhausted,0,0,https://www.city.chikugo.lg.jp/kanko/_6107/_30709/_18623.html,event,event,第39回ちっごスポーツフェスティバル参加者募集|筑後市公式ホームページ,「グラウンドゴルフ大会」・「市民健康ウォーク(ウォーキング)大会」・「ダブルス
+40212,大川市,福岡県,surveyed,True,False,1,organization,facility,13,exhausted,0,0,http://www.city.okawa.fukuoka.jp/s066/010/010/20160704154654.html,facility,organization,大川市スポーツ協会 - 大川市,グラウンドゴルフ部
+40213,行橋市,福岡県,surveyed,True,False,1,event,event,56,exhausted,0,0,https://www.city.yukuhashi.fukuoka.jp/site/kennsinn/19621.html,event,event,『健康づくり友の会』会員募集! - 健康づくり - 行橋市ホームページ,健康づくり友の会はウォーキングや健康体操、グランドゴルフやダーツなどの軽スポーツを通して、行橋市民の健康づくりをサポ
+40214,豊前市,福岡県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+40215,中間市,福岡県,surveyed,False,False,0,,,54,exhausted,0,0,,,,,
+40216,小郡市,福岡県,surveyed,True,False,1,facility,facility,86,exhausted,0,0,https://www.city.ogori.fukuoka.jp/197/797/2204,facility,facility,公園管理 :: 小郡市役所,公園を遠足やグラウンドゴルフなどで団体利用する際には混雑緩和のため、利用調整を行いますの
+40217,筑紫野市,福岡県,surveyed,True,False,2,facility,facility,61,exhausted,0,0,https://www.city.chikushino.fukuoka.jp/soshiki/15/3523.html,facility,facility,カミーリヤ施設概要&トップメニュー - 筑紫野市ホームページ,健康づくりを楽しめる1周400メートルのウォーキングコース、グラウンドゴルフやゲートボールが楽しめる多目的コートなどがあります。
+40218,春日市,福岡県,surveyed,True,False,3,event|facility|other,event|facility,88,exhausted,0,0,https://www.city.kasuga.fukuoka.jp/shisetsu/bunka/sports/1012991.html,facility,facility,施設案内 春日西多目的広場公園多目的広場|春日市,また、少年ソフトボールやグラウンド・ゴルフなど、多目的広場全面の占有利用(有料、要予約)も可能です。5
+40219,大野城市,福岡県,surveyed,True,False,1,organization,event,55,exhausted,0,0,https://www.city.onojo.fukuoka.jp/kiji0036571/index.html,event,organization,スポーツ・レクリエーション関係団体 / 大野城市役所公式ホームページ,グラウンドゴルフ協会
+40220,宗像市,福岡県,surveyed,False,False,0,,,164,exhausted,0,0,,,,,
+40221,太宰府市,福岡県,surveyed,True,False,3,facility,facility,74,exhausted,0,0,https://www.city.dazaifu.lg.jp/soshiki/31/1932.html,facility,facility,太宰府少年スポーツ公園 - 福岡県太宰府市公式ホームページ,利用可能競技:少年ソフトボール、グラウンドゴルフ、レクリエーション活動、その他体育活動(少年スポーツ使用可)
+40223,古賀市,福岡県,surveyed,False,False,0,,,9,exhausted,0,0,,,,,
+40224,福津市,福岡県,surveyed,False,False,0,,,21,exhausted,0,0,,,,,
+40225,うきは市,福岡県,surveyed,False,False,0,,,77,exhausted,0,0,,,,,
+40226,宮若市,福岡県,surveyed,True,False,1,facility,listing,87,exhausted,0,0,https://www.city.miyawaka.lg.jp/kiji003444498/index.html,listing,facility,西鞍の丘総合運動公園(乙野) / 宮若市,運動に限らず、「芝生フィールド」では天然芝の中で、サッカー・グラウンドゴルフなどができ、多目的広場では、軟式野球、サッカー、ソフトボール
+40227,嘉麻市,福岡県,surveyed,False,False,0,,,33,exhausted,0,0,,,,,
+40228,朝倉市,福岡県,surveyed,True,False,1,organization,facility,59,exhausted,0,0,https://www.city.asakura.lg.jp/soshiki/33/2598.html,facility,organization,【朝倉市体育協会】加盟団体の紹介 - 朝倉市(文化・生涯学習課),・グラウンドゴルフ協会
+40229,みやま市,福岡県,surveyed,True,True,1,event,event,21,exhausted,0,2,https://www.city.miyama.lg.jp/s049/20260908112640.html,event,event,みやま市民スポーツ大会参加者募集|みやま市,グラウンドゴルフ(1チーム6人、先着30チームまで)
+40230,糸島市,福岡県,surveyed,True,False,2,facility,facility|listing,66,exhausted,0,0,https://www.city.itoshima.lg.jp/s032/020/010/20230206171156.html,listing,facility,体育施設一覧 - 糸島市,グラウンドゴルフなど
+40231,那珂川市,福岡県,surveyed,True,False,1,organization,facility,39,exhausted,0,0,https://www.city.nakagawa.lg.jp/soshiki/39/taikyou.html,facility,organization,那珂川市体育協会 - 那珂川市ホームページ(スポーツ課),う会、ソフトテニス、卓球、バスケットボール、弓道、サッカー、グランドゴルフ、サイクルスポーツ、ボウリングの19加盟競技団体で構成されて
+40341,宇美町,福岡県,no_seed,False,False,0,,,0,,0,0,,,,,
+40342,篠栗町,福岡県,surveyed,False,False,0,,,6,exhausted,0,0,,,,,
+40343,志免町,福岡県,surveyed,True,True,1,other,facility,44,exhausted,0,1,https://www.town.shime.lg.jp/soshiki/12/newsports.html,facility,other,軽スポーツを貸出しています - 志免町ホームページ,グラウンドゴルフ
+40344,須恵町,福岡県,surveyed,True,False,3,facility,facility|listing,37,exhausted,0,0,https://www.town.sue.fukuoka.jp/kanko_bunka_sports/shisetsu/4/2529.html,listing,facility,須恵町運動公園若杉の森(多目的グラウンド)/須恵町,サッカー、グラウンドゴルフ、その他レクリエーション
+40345,新宮町,福岡県,surveyed,False,False,0,,,57,exhausted,0,0,,,,,
+40348,久山町,福岡県,surveyed,False,False,0,,,8,exhausted,0,0,,,,,
+40349,粕屋町,福岡県,surveyed,True,False,1,facility,listing,65,exhausted,0,0,https://www.town.kasuya.fukuoka.jp/s038/010/010/020/20191128230123.html,listing,facility,社会体育施設|粕屋町,ソフトボール(ジュニア、女性)、陸上、グラウンドゴルフ等
+40381,芦屋町,福岡県,surveyed,True,False,1,facility,listing,11,exhausted,0,0,https://www.town.ashiya.lg.jp/soshiki/16/2449.html,listing,facility,芦屋町総合運動公園ご利用案内 - 芦屋町,用途:サッカー、少年野球(軟式)、グラウンドゴルフなど
+40382,水巻町,福岡県,surveyed,False,False,0,,,45,exhausted,0,0,,,,,
+40383,岡垣町,福岡県,surveyed,True,False,1,facility,facility,41,exhausted,0,0,https://www.town.okagaki.lg.jp/s035/100/060/020/040/201502050191.html,facility,facility,町民総合グラウンド - 岡垣町,める町民いこいの場。子どもからお年寄りまで誰でも気軽にできるグラウンドゴルフやペタンクも人気です。
+40384,遠賀町,福岡県,surveyed,True,False,3,event|other,event|facility|listing,88,exhausted,0,0,https://www.town.onga.lg.jp/life/3/13/158/,listing,other,スポーツ - 遠賀町公式ホームページ,2026年9月24日更新第35回遠賀町グラウンドゴルフ大会 出場者募集
+40401,小竹町,福岡県,fetch_failed,False,False,0,,,0,,0,0,,,,,
+40402,鞍手町,福岡県,surveyed,False,False,0,,,21,exhausted,0,0,,,,,
+40421,桂川町,福岡県,surveyed,True,False,6,facility,facility|listing,27,exhausted,0,0,https://www.town.keisen.fukuoka.jp/shisetsu/taiiku.php,listing,facility,体育施設-施設案内-福岡県嘉穂郡桂川町公式ホームページ,グラウンド・ゴルフ場
+40447,筑前町,福岡県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+40448,東峰村,福岡県,no_seed,False,False,0,,,0,,0,0,,,,,
+40503,大刀洗町,福岡県,surveyed,True,False,4,event|organization,event|facility,109,exhausted,0,0,https://www.town.tachiarai.fukuoka.jp/kiji003349/index.html,facility,organization,大刀洗町体育協会 / 大刀洗町公式サイト,グラウンド・ゴルフ部
+40522,大木町,福岡県,surveyed,True,False,1,facility,facility,20,exhausted,0,0,http://www.town.ooki.lg.jp/soshiki/chiiki/kyoudou/sisetu/sisetu/shisetu/4555.html,facility,facility,大木町みんなの広場/大木町,ランニング、ジョギング、グラウンドゴルフなど(ナイター設備あり)
+40544,広川町,福岡県,surveyed,True,False,1,organization,facility,13,exhausted,0,0,https://www.town.hirokawa.fukuoka.jp/kanko_bunka_sports/sports/2028.html,facility,organization,広川町スポーツ協会/広川町,グラウンドゴルフ部
+40601,香春町,福岡県,surveyed,True,False,1,organization,facility,36,exhausted,0,0,https://www.town.kawara.fukuoka.jp/s032/030/020/030/20190619164924.html,facility,organization,スポーツクラブかわら|福岡県香春町,居合道・卓球・野球・グラウンドゴルフ・サッカー・インディアカ・ニュースポーツ
+40602,添田町,福岡県,surveyed,True,False,1,facility,listing,36,exhausted,0,0,https://www.town.soeda.fukuoka.jp/page/3426.html,listing,facility,スポーツ施設案内 - 添田町公式ホームページ(社会教育課),グラウンドゴルフ場
+40604,糸田町,福岡県,surveyed,False,False,0,,,15,exhausted,0,0,,,,,
+40605,川崎町,福岡県,surveyed,True,False,2,facility,sports_nav,54,exhausted,0,0,https://www.town-kawasaki.com/machiannai/shisetsu/771,sports_nav,facility,川崎町三井運動公園 | ReBorn!KAWASAKIMACHI:福岡県田川郡川崎町 川崎町のご案内,野球・ソフトボール・グラウンドゴルフなど
+40608,大任町,福岡県,surveyed,False,False,0,,,36,exhausted,0,0,,,,,
+40609,赤村,福岡県,surveyed,False,False,0,,,5,exhausted,0,0,,,,,
+40610,福智町,福岡県,surveyed,True,False,3,facility,facility|listing,29,exhausted,0,0,https://www.town.fukuchi.lg.jp/soshiki/gakushu/syakaitaiiku/shisetsu/166.html,listing,facility,グラウンド/福智町,グラウンドゴルフ、ソフトボール、軟式野球(硬式野球不可)、ウォーキングなどで
+40621,苅田町,福岡県,surveyed,False,False,0,,,45,exhausted,0,0,,,,,
+40625,みやこ町,福岡県,surveyed,True,False,7,facility,facility|listing,34,exhausted,0,0,https://www.town.miyako.lg.jp/genre/0010/0021/0008-4.html,listing,facility,スポーツ施設 - みやこ町役場,みやこ町犀川運動公園グラウンドゴルフ場 2022年4月11日
+40642,吉富町,福岡県,surveyed,False,False,0,,,10,exhausted,0,0,,,,,
+40646,上毛町,福岡県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
+40647,築上町,福岡県,surveyed,False,False,0,,,75,exhausted,0,0,,,,,
