@@ -151,5 +151,5 @@
 - [x] グラウンドゴルフの結果を場所・イベント・その他のCSVに保存(D-123、`data/export/`)
 
 ## 2026-10-18 施設詳細の取り出し(D-124)
-- [x] `extract` / `extract-export`、extract.yml / auto-extract.yml を実装(テスト135件)
+- [x] `extract` / `extract-export`、extract.yml / auto-extract.yml を実装(テスト137件)
 - [ ] 試し(愛知・福井・埼玉): mainへのマージで自動実行(PR・マージは指示待ち)。結果の確認後に全国へ
