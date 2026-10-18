@@ -1,0 +1,46 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+43100,熊本市,熊本県,surveyed,True,True,3,event|facility|other,event|facility,75,exhausted,0,1,https://www.city.kumamoto.jp/kiji00324574/index.html,facility,facility,スポーツ振興課所管の施設(グラウンド) / 熊本市公式サイト,キッズサッカー、グラウンドゴルフ
+43202,八代市,熊本県,no_seed,False,False,0,,,0,,0,0,,,,,
+43203,人吉市,熊本県,surveyed,False,False,0,,,20,exhausted,0,0,,,,,
+43204,荒尾市,熊本県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
+43205,水俣市,熊本県,surveyed,True,False,1,facility,facility,71,max_requests,0,0,https://www.city.minamata.lg.jp/sports/list01285.html,facility,facility,スポーツ施設 / スポーツサイト / 水俣市,面のテニスコート、ソフトボールの4面同時利用や、陸上競技場やグランドゴルフ場を豊富に備えた自然に囲まれたオールインワンの野外スポーツパ
+43206,玉名市,熊本県,surveyed,True,False,11,facility,facility|listing,127,exhausted,0,0,https://www.city.tamana.lg.jp/q/list/414.html,listing,facility,文化・スポーツ施設|玉名市,天水町にある多目的グラウンドです。グラウンドゴルフや少年野球...
+43208,山鹿市,熊本県,surveyed,True,True,1,organization,event,72,exhausted,0,1,https://www.city.yamaga.kumamoto.jp/kiji0032525/index.html,event,organization,スポーツ広報(山鹿市スポーツ推進委員協議会) / 山鹿市,三岳地区グラウンドゴルフ大会、ウォーキング大会(PDF:713.3キロバイト) ※2
+43210,菊池市,熊本県,surveyed,True,False,6,event|facility,event|facility,102,exhausted,0,0,https://www.city.kikuchi.lg.jp/article/view/1021/1200.html,facility,facility,菊池市営グラウンド|菊池市公式ウェブサイト,グラウンドゴルフで利用の場合は、1コース1時間100円とします。
+43211,宇土市,熊本県,surveyed,False,False,0,,,72,exhausted,0,0,,,,,
+43212,上天草市,熊本県,surveyed,True,False,6,facility,facility,63,exhausted,0,0,https://www.city.kamiamakusa.kumamoto.jp/q/aview/342/13300.html,facility,facility,上天草市大矢野総合スポーツ公園|上天草市,グラウンド:野球、ソフトボール、サッカー、グラウンドゴルフなど
+43213,宇城市,熊本県,surveyed,True,False,3,facility,facility,73,exhausted,0,0,https://www.city.uki.kumamoto.jp/gyousei/shisetsu/shogaisports/2010441,facility,facility,市内運動施設一覧 / 宇城市,宇城市松橋グランドゴルフ場
+43214,阿蘇市,熊本県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+43215,天草市,熊本県,no_seed,False,False,0,,,0,,0,0,,,,,
+43216,合志市,熊本県,surveyed,True,False,1,facility,facility,106,exhausted,0,0,https://www.city.koshi.lg.jp/kiji00322775/index.html,facility,facility,須屋浄化センター跡地が利用できます / 合志市ホームページ,地域イベント、グラウンドゴルフ、ゲートボールなど
+43348,美里町,熊本県,surveyed,False,False,0,,,19,exhausted,0,0,,,,,
+43364,玉東町,熊本県,surveyed,False,False,0,,,85,exhausted,0,0,,,,,
+43367,南関町,熊本県,surveyed,False,False,0,,,29,exhausted,0,0,,,,,
+43368,長洲町,熊本県,surveyed,False,False,0,,,4,exhausted,0,0,,,,,
+43369,和水町,熊本県,surveyed,False,False,0,,,48,exhausted,0,0,,,,,
+43403,大津町,熊本県,surveyed,True,False,3,facility|other,facility,45,exhausted,0,0,https://www.town.ozu.kumamoto.jp/page/1368.html,facility,facility,公園の紹介 - 大津町ホームページ(都市計画課),動公園です。幼時から高齢者まで幅広い年代の人々に、サッカー・グラウンドゴルフ・バスケットボール・バレーボール・バドミントン・弓道など多種
+43404,菊陽町,熊本県,surveyed,False,False,0,,,93,exhausted,0,0,,,,,
+43423,南小国町,熊本県,fetch_failed,False,False,0,,,0,,0,0,,,,,
+43424,小国町,熊本県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
+43425,産山村,熊本県,surveyed,False,False,0,,,14,exhausted,0,0,,,,,
+43428,高森町,熊本県,surveyed,True,False,1,organization,facility,37,exhausted,0,0,https://www.town.kumamoto-takamori.lg.jp/site/kyoiku-blog/5991.html,facility,organization,多目的広場「つくしまつもと」オープン - 教育委員会ブログ - 高森町ホームページ(教育委員会事務局),込んだ小学生から高齢者までの約120名が、スポーツ交流としてグランドゴルフを行いました。​
+43432,西原村,熊本県,surveyed,False,False,0,,,56,exhausted,0,0,,,,,
+43433,南阿蘇村,熊本県,no_seed,False,False,0,,,0,,0,0,,,,,
+43441,御船町,熊本県,surveyed,False,False,0,,,41,exhausted,0,0,,,,,
+43442,嘉島町,熊本県,surveyed,True,False,8,facility,facility,41,exhausted,0,0,https://www.town.kumamoto-kashima.lg.jp/q/list/253.html,facility,facility,公園|嘉島町,川敷の蓍町橋下流にあり、芝生に覆われた公園です。多目的広場、グラウンドゴルフ場(8ホール×3...
+43443,益城町,熊本県,surveyed,False,False,0,,,88,exhausted,0,0,,,,,
+43444,甲佐町,熊本県,surveyed,False,False,0,,,20,exhausted,0,0,,,,,
+43447,山都町,熊本県,surveyed,True,False,1,facility,facility,69,exhausted,0,0,https://www.town.kumamoto-yamato.lg.jp/kiji0039817/index.html,facility,facility,【山都町運動公園「サッカー場」及び「ちびっこ運動広場」の供用開始について(生涯学習課)】 / 山都町,グラウンドゴルフ
+43468,氷川町,熊本県,surveyed,False,False,0,,,51,exhausted,0,0,,,,,
+43482,芦北町,熊本県,surveyed,True,False,1,facility,facility,17,exhausted,0,0,https://www.town.ashikita.lg.jp/kosodate_kyoiku/sports/shisetsu/2009216,facility,facility,芦北町営岩崎グラウンド / 芦北町,グラウンドゴルフ
+43484,津奈木町,熊本県,surveyed,True,False,3,event,event,39,exhausted,0,0,https://www.town.tsunagi.lg.jp/hpkiji/pub/List.aspx?c_id=3&class_set_id=1&class_id=587,event,event,イベント情報 / 津奈木町,南興 K.K 杯グランドゴルフ大会
+43501,錦町,熊本県,surveyed,True,False,5,event|other,broad|event|facility|sports_nav,51,exhausted,0,0,https://www.town.kumamoto-nishiki.lg.jp/default.html,broad,other,錦町,第12回分館対抗グラウンド・ゴルフ大会の開催について
+43505,多良木町,熊本県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+43506,湯前町,熊本県,surveyed,False,False,0,,,48,exhausted,0,0,,,,,
+43507,水上村,熊本県,surveyed,False,False,0,,,34,exhausted,0,0,,,,,
+43510,相良村,熊本県,no_seed,False,False,0,,,0,,0,0,,,,,
+43511,五木村,熊本県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+43512,山江村,熊本県,surveyed,False,False,0,,,23,exhausted,0,0,,,,,
+43513,球磨村,熊本県,no_seed,False,False,0,,,0,,0,0,,,,,
+43514,あさぎり町,熊本県,surveyed,True,False,1,facility,listing,55,exhausted,0,0,https://www.town.asagiri.lg.jp/kiji003160/index.html,listing,facility,免田地区体育施設(あさぎり町生涯学習センター内) / 熊本県あさぎり町公式サイト,サッカーやグラウンドゴルフなどの利用が可能です。
+43531,苓北町,熊本県,surveyed,False,False,0,,,55,exhausted,0,0,,,,,
