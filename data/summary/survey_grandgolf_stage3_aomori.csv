@@ -1,0 +1,41 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+02201,青森市,青森県,surveyed,False,False,0,,,100,exhausted,0,0,,,,,
+02202,弘前市,青森県,surveyed,True,False,1,facility,facility,101,exhausted,0,0,https://www.city.hirosaki.aomori.jp/gaiyou/shisetsu/2014-1201-1339-golf.html,facility,facility,岩木川市民ゴルフ場 - 弘前市,ニュースポーツとはスナッグゴルフ、グラウンドゴルフ、ターゲットバードゴルフ等をいう。
+02203,八戸市,青森県,surveyed,True,False,3,event|organization,event|facility,200,max_pages,0,0,https://www.city.hachinohe.aomori.jp/bunka_sports/sports/8435.html,facility,organization,八戸市スポーツ推進委員・八戸市スポーツ協会加盟団体/八戸市,八戸市グラウンド・ゴルフ協会
+02204,黒石市,青森県,surveyed,True,False,1,facility,facility,59,exhausted,0,0,https://www.city.kuroishi.aomori.jp/shisei/facility/facility/sports-park.html,facility,facility,黒石運動公園 - 黒石市,教室のほか、各スポーツ団体による大会を開催しています。また、グランドゴルフ、ペタンク、ターゲットバードゴルフなど軽スポーツの大会も定期
+02205,五所川原市,青森県,surveyed,False,False,0,,,26,exhausted,0,0,,,,,
+02206,十和田市,青森県,surveyed,True,False,1,facility,listing,86,exhausted,0,0,https://www.city.towada.lg.jp/shisei/shisetsu/okunai.html,listing,facility,十和田市屋内グラウンド|青森県十和田市 十和田市屋内グラウンド「こまかいどーむ」,サッカー、フットサル、野球、ソフトボール、ゲートボール、グランドゴルフ、体操、ジョギング、軽スポーツなど(人工芝を傷めないスポーツ
+02207,三沢市,青森県,surveyed,False,False,0,,,35,exhausted,0,0,,,,,
+02208,むつ市,青森県,surveyed,True,False,5,event|organization|other,event|facility,191,exhausted,0,0,https://www.city.mutsu.lg.jp/bunka/sports/event/aomorikentaiikukourousya.html,facility,organization,青森県体育功労者等表彰|観光・文化・スポーツ|むつ市,【青森県スポーツ・レクリエーション奨励賞】 藤田 英征(むつグラウンド・ゴルフ協会)
+02209,つがる市,青森県,surveyed,False,False,0,,,99,exhausted,0,0,,,,,
+02210,平川市,青森県,surveyed,True,False,3,event|facility|organization,event,66,exhausted,0,0,https://www.city.hirakawa.lg.jp/kokuspohirakawa/index.html,event,organization,青の煌めきあおもり国スポ 平川市実行委員会|平川市,2026年09月10日【公開競技】グラウンド・ゴルフ
+02301,平内町,青森県,surveyed,False,False,0,,,27,exhausted,0,0,,,,,
+02303,今別町,青森県,surveyed,False,False,0,,,15,exhausted,0,0,,,,,
+02304,蓬田村,青森県,surveyed,False,False,0,,,28,exhausted,0,0,,,,,
+02307,外ヶ浜町,青森県,surveyed,False,False,0,,,22,exhausted,0,0,,,,,
+02321,鰺ヶ沢町,青森県,surveyed,False,False,0,,,26,exhausted,0,0,,,,,
+02323,深浦町,青森県,surveyed,False,False,0,,,27,exhausted,0,0,,,,,
+02343,西目屋村,青森県,surveyed,False,False,0,,,6,exhausted,0,0,,,,,
+02361,藤崎町,青森県,surveyed,False,False,0,,,51,exhausted,0,0,,,,,
+02362,大鰐町,青森県,surveyed,False,False,0,,,31,exhausted,0,0,,,,,
+02367,田舎館村,青森県,surveyed,False,False,0,,,14,exhausted,0,0,,,,,
+02381,板柳町,青森県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
+02384,鶴田町,青森県,surveyed,False,False,0,,,28,exhausted,0,0,,,,,
+02387,中泊町,青森県,surveyed,True,False,8,event|facility,event|facility,58,exhausted,0,0,https://www.town.nakadomari.lg.jp/kanko_bunka_sports/sports/taiikushisetsu/1/1859.html,facility,facility,主競技場(メインアリーナ)/青森県中泊町,レーボール・バドミントン・テニス・柔道・剣道・ゲートボール・グラウンドゴルフ等が可能です。また、集会や冠婚葬祭等にも利用できます。
+02401,野辺地町,青森県,surveyed,False,False,0,,,14,exhausted,0,0,,,,,
+02402,七戸町,青森県,surveyed,False,False,0,,,2,exhausted,0,0,,,,,
+02405,六戸町,青森県,surveyed,True,False,1,organization,facility,43,exhausted,0,0,https://www.town.rokunohe.aomori.jp/docs/2023080800001/,facility,organization,六戸町スポーツ協会 | 六戸町,グラウンド・ゴルフ協会
+02406,横浜町,青森県,surveyed,False,False,0,,,11,exhausted,0,0,,,,,
+02408,東北町,青森県,surveyed,False,False,0,,,24,exhausted,0,0,,,,,
+02411,六ヶ所村,青森県,surveyed,False,False,0,,,38,exhausted,0,0,,,,,
+02412,おいらせ町,青森県,surveyed,True,True,1,organization,facility,80,exhausted,0,1,https://www.town.oirase.aomori.jp/soshiki/2220/supokyou.html,facility,organization,おいらせ町スポーツ協会加盟協会 - おいらせ町ホームページ,グラウンド・ゴルフ協会 [PDFファイル/385KB]
+02423,大間町,青森県,surveyed,False,False,0,,,21,exhausted,0,0,,,,,
+02424,東通村,青森県,surveyed,False,False,0,,,23,exhausted,0,0,,,,,
+02425,風間浦村,青森県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
+02426,佐井村,青森県,surveyed,False,False,0,,,5,exhausted,0,0,,,,,
+02441,三戸町,青森県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+02442,五戸町,青森県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+02443,田子町,青森県,surveyed,False,False,0,,,28,exhausted,0,0,,,,,
+02445,南部町,青森県,no_seed,False,False,0,,,0,,0,0,,,,,
+02446,階上町,青森県,surveyed,True,False,4,facility,facility|listing,47,exhausted,0,0,"https://www.town.hashikami.lg.jp/index.cfm/10,0,55,143,html",listing,facility,町民体育館 - 階上町 Official Web Site,グラウンドゴルフ、インディアカ、ユニホック他
+02450,新郷村,青森県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
