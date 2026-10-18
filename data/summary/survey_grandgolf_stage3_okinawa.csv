@@ -1,0 +1,42 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+47201,那覇市,沖縄県,surveyed,False,False,0,,,105,exhausted,0,0,,,,,
+47205,宜野湾市,沖縄県,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
+47207,石垣市,沖縄県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
+47208,浦添市,沖縄県,surveyed,True,False,2,event|facility,event|facility,151,exhausted,0,0,https://www.city.urasoe.lg.jp/doc/2025030500083/,facility,facility,浦添ふ頭南緑地(A)多目的広場の優先利用について | 浦添市,【多目的広場B】少年野球、サッカー、ソフトボール、グラウンドゴルフ等
+47209,名護市,沖縄県,surveyed,False,False,0,,,34,exhausted,0,0,,,,,
+47210,糸満市,沖縄県,surveyed,False,False,0,,,43,exhausted,0,0,,,,,
+47211,沖縄市,沖縄県,surveyed,True,False,1,other,facility,108,exhausted,0,0,https://www.city.okinawa.okinawa.jp/k030/sportsbunka/sports/sportssuishin/168.html,facility,other,社会体育用品の貸出しについて | 沖縄市役所,沖縄市立総合運動場指定管理者において、グラウンドゴルフや5色綱引き、ドッチビー、カローリング等、社会体育用品(ニュ
+47212,豊見城市,沖縄県,surveyed,False,False,0,,,33,exhausted,0,0,,,,,
+47213,うるま市,沖縄県,surveyed,False,False,0,,,70,exhausted,0,0,,,,,
+47214,宮古島市,沖縄県,surveyed,False,False,0,,,31,exhausted,0,0,,,,,
+47215,南城市,沖縄県,no_seed,False,False,0,,,0,,0,0,,,,,
+47301,国頭村,沖縄県,surveyed,False,False,0,,,18,exhausted,0,0,,,,,
+47302,大宜味村,沖縄県,surveyed,False,False,0,,,8,exhausted,0,0,,,,,
+47303,東村,沖縄県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+47306,今帰仁村,沖縄県,no_seed,False,False,0,,,0,,0,0,,,,,
+47308,本部町,沖縄県,surveyed,False,False,0,,,12,exhausted,0,0,,,,,
+47311,恩納村,沖縄県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+47313,宜野座村,沖縄県,surveyed,False,False,0,,,21,exhausted,0,0,,,,,
+47314,金武町,沖縄県,surveyed,True,False,1,facility,facility,27,exhausted,0,0,https://www.town.kin.okinawa.jp/shisetsuosagasu/684.html,facility,facility,金武町の公園/金武町 Official Site,遊具わきの広場では、野球・グラウンドゴルフ等が楽しめます。
+47315,伊江村,沖縄県,surveyed,False,False,0,,,29,exhausted,0,0,,,,,
+47324,読谷村,沖縄県,surveyed,False,False,0,,,61,exhausted,0,0,,,,,
+47325,嘉手納町,沖縄県,surveyed,True,False,2,facility,facility|sports_nav,130,exhausted,0,0,https://www.town.kadena.okinawa.jp/facility/shi69.html,sports_nav,facility,嘉手納町スポーツドーム | 沖縄県嘉手納町(かでな町),フットサル、ソフトボール、野球、グラウンドゴルフやウォーキング、運動会、各種レクリエーションなどで利用されて
+47326,北谷町,沖縄県,surveyed,False,False,0,,,63,exhausted,0,0,,,,,
+47327,北中城村,沖縄県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+47328,中城村,沖縄県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+47329,西原町,沖縄県,surveyed,False,False,0,,,44,exhausted,0,0,,,,,
+47348,与那原町,沖縄県,surveyed,False,False,0,,,24,exhausted,0,0,,,,,
+47350,南風原町,沖縄県,surveyed,True,False,1,event,event,119,exhausted,0,0,https://www.town.haebaru.lg.jp/soshiki/17/3358.html,event,event,第23回南風原町シニアスポーツ大会結果報告! - 南風原町ホームページ(教育総務課),27年5月15日(金曜日)午前9時より黄金森公園陸上競技場(グランドゴルフ)、花・水・緑の大回廊公園(ペタンク)にて第23回南風原町シ
+47353,渡嘉敷村,沖縄県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+47354,座間味村,沖縄県,surveyed,False,False,0,,,11,exhausted,0,0,,,,,
+47355,粟国村,沖縄県,surveyed,False,False,0,,,4,exhausted,0,0,,,,,
+47356,渡名喜村,沖縄県,surveyed,False,False,0,,,5,exhausted,0,0,,,,,
+47357,南大東村,沖縄県,surveyed,True,False,1,facility,facility,45,exhausted,0,0,https://www.vill.minamidaito.okinawa.jp/page/567.html,facility,facility,ふれあい広場 - 南大東村ホームページ(総務課),り、産業祭り・納涼祭りのイベント会場、豊年祭の演芸会場の他、グラウンドゴルフなど村民の憩いの場として利用されています。
+47358,北大東村,沖縄県,surveyed,True,False,1,facility,listing,7,exhausted,0,0,https://vill.kitadaito.okinawa.jp/mokuteki/shisetsu/sougoundoukouen.html,listing,facility,総合運動公園 | 北大東村,グラウンドゴルフ場
+47359,伊平屋村,沖縄県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
+47360,伊是名村,沖縄県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+47361,久米島町,沖縄県,surveyed,False,False,0,,,67,exhausted,0,0,,,,,
+47362,八重瀬町,沖縄県,surveyed,False,False,0,,,26,exhausted,0,0,,,,,
+47375,多良間村,沖縄県,surveyed,False,False,0,,,6,exhausted,0,0,,,,,
+47381,竹富町,沖縄県,surveyed,False,False,0,,,8,exhausted,0,0,,,,,
+47382,与那国町,沖縄県,surveyed,False,False,0,,,63,exhausted,0,0,,,,,
