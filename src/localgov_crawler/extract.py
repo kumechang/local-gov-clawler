@@ -18,7 +18,7 @@ from .nav import base_host, is_same_site, norm_text
 from .pipeline import Config, _Ctx, _now
 from .survey import KeywordSpec
 
-EXTRACT_SCHEMA = 1
+EXTRACT_SCHEMA = 2
 
 # 電話番号: 市外局番から始まる10〜11桁(NFKC正規化後)。郵便番号(〒・郵便の直後)は除く
 PHONE = re.compile(r"(?<![\d-])(0\d{1,4})[-(（)）\s]{1,2}(\d{1,4})[-)）\s]{1,2}(\d{3,4})(?![\d-])")
@@ -196,6 +196,17 @@ def _kv_items(pairs: list[tuple[str, str, str]], page_name: str) -> list[_Item]:
     return [by_heading[h] for h in order if by_heading[h].ok()]
 
 
+def _evidence(text: str, spec: KeywordSpec | None) -> str:
+    """ワードのある文の前後(確認用。HTML原本ではなく短い文だけ)。"""
+    if spec is None:
+        return ""
+    t = norm_text(text)
+    ms = spec.find(t)
+    if not ms:
+        return ""
+    return t[max(0, ms[0].start() - 40): ms[0].end() + 40]
+
+
 def _inquiry(soup: BeautifulSoup) -> dict:
     """ページの『お問い合わせ先』の欄(担当課と電話番号)。ページの最後のほうにあるものを採る。"""
     best: dict = {}
@@ -249,7 +260,7 @@ def extract_page(html: str, muni_name: str, spec: KeywordSpec | None = None) -> 
     gg = [bool(spec and spec.find_affirmative(it.text)) for it in items] if spec is not None else [False] * len(items)
     return {
         "title": title[:100], "page_name": page_name, "multi_facility": len(items) > 1, "item_source": source,
-        "items": [{"name": tidy_name(it.name or page_name), "address": it.address, "phone": it.phone, "source": it.source, "keyword_in_item": g} for it, g in zip(items, gg)],
+        "items": [{"name": tidy_name(it.name or page_name), "address": it.address, "phone": it.phone, "source": it.source, "keyword_in_item": g, "evidence": _evidence(it.text, spec) if g else ""} for it, g in zip(items, gg)],
         "inquiry": _inquiry(soup),
     }
 
@@ -343,7 +354,7 @@ def keep_item(name: str, address: str, phone: str) -> bool:
 
 
 DETAIL_COLUMNS = ["prefecture", "municipality_code", "municipality_name", "facility_name", "address", "phone", "inquiry_dept", "inquiry_phone",
-                  "page_title", "page_url", "multi_facility", "keyword_in_item", "matched_text", "item_source", "site_url", "extract_route", "extracted_at"]
+                  "page_title", "page_url", "multi_facility", "keyword_in_item", "keyword_evidence", "matched_text", "item_source", "site_url", "extract_route", "extracted_at"]
 
 
 def detail_rows(rec: dict) -> list[dict]:
@@ -376,7 +387,7 @@ def detail_rows(rec: dict) -> list[dict]:
             rows.append({
                 "prefecture": m["prefecture"], "municipality_code": m["code"], "municipality_name": m["name"], "facility_name": i["name"], "address": tidy_export_address(i["address"], m["name"]),
                 "phone": i["phone"], "inquiry_dept": tidy_export_dept(inq.get("dept", "")), "inquiry_phone": inq.get("phone", ""), "page_title": pg["title"], "page_url": pg["page_url"],
-                "multi_facility": "1" if pg["multi_facility"] else "", "keyword_in_item": "1" if i["keyword_in_item"] else "", "matched_text": pg.get("matched_text", ""),
+                "multi_facility": "1" if pg["multi_facility"] else "", "keyword_in_item": "1" if i["keyword_in_item"] else "", "keyword_evidence": i.get("evidence", ""), "matched_text": pg.get("matched_text", ""),
                 "item_source": i["source"], "site_url": m["official_url"], "extract_route": rec["run"]["route"], "extracted_at": rec["run"]["finished_at"],
             })
     return rows
