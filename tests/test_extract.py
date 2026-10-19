@@ -176,3 +176,27 @@ def test_phone_with_dash_variants_and_office_name():
     assert find_phones("TEL 0296ー88ー3111") == ["0296-88-3111"]
     assert find_phones("郵便番号 311-4402 電話 029-288-3111") == ["029-288-3111"]
     assert not keep_item("東員町役場", "三重県員弁郡東員町大字山田1600番地", "0594-86-2800")
+
+
+def test_inquiry_by_heading_bullet_items_and_name_only_table():
+    from localgov_crawler.extract import extract_page
+
+    h = ("<html><body><main><h1>東公園グラウンドの施設案内</h1><table><tr><td>所在地</td><td>福井市豊島2丁目5-26</td></tr>"
+         "<tr><td>施設概要</td><td>グラウンドゴルフなど</td></tr></table>"
+         "<h3>お問い合わせ先</h3><p>商工労働部観光文化スポーツ局 <a href='#'>スポーツ課</a><br><span>電話番号 </span>0776-20-5355 ｜ FAX 0776-20-5670<br>〒910-0004 福井市宝永2丁目4番10号</p>"
+         "</main></body></html>")
+    pg = extract_page(h, "福井市", SPEC)
+    assert pg["inquiry"] == {"dept": "商工労働部観光文化スポーツ局 スポーツ課", "phone": "0776-20-5355"}
+
+    h = ("<html><body><h1>スポーツ施設</h1><h2>グラウンドゴルフ場</h2><p>・蔵木グラウンドゴルフ場吉賀町蔵木６０-２</p><p>　コース：８ホール</p><p>　【問い合わせ】電話0856-77-0633</p>"
+         "<p>・大野原グラウンドゴルフ場吉賀町大野原９６９</p><p>　【問い合わせ】電話0856-79-2330</p></body></html>")
+    pg = extract_page(h, "吉賀町", SPEC)
+    assert [(i["name"], i["address"], i["phone"]) for i in pg["items"]] == [
+        ("蔵木グラウンドゴルフ場", "吉賀町蔵木60-2", "0856-77-0633"), ("大野原グラウンドゴルフ場", "吉賀町大野原969", "0856-79-2330")]
+
+    h = ("<html><body><h1>スポーツ施設(市町村別)</h1><table><caption>御代田町のスポーツ施設</caption><tr><th>名称</th><th>種別</th><th>内容</th></tr>"
+         "<tr><td>やまゆり公園マレットゴルフ場</td><td>マレットゴルフ場</td><td>36ホール</td></tr>"
+         "<tr><td>やまゆり公園グラウンドゴルフ場</td><td>グラウンドゴルフ場</td><td></td></tr></table></body></html>")
+    pg = extract_page(h, "佐久市", SPEC)
+    flags = {i["name"]: i["keyword_in_item"] for i in pg["items"]}
+    assert flags == {"やまゆり公園マレットゴルフ場": False, "やまゆり公園グラウンドゴルフ場": True}
