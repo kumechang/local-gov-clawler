@@ -200,3 +200,14 @@ def test_inquiry_by_heading_bullet_items_and_name_only_table():
     pg = extract_page(h, "佐久市", SPEC)
     flags = {i["name"]: i["keyword_in_item"] for i in pg["items"]}
     assert flags == {"やまゆり公園マレットゴルフ場": False, "やまゆり公園グラウンドゴルフ場": True}
+
+
+def test_bullet_needs_facility_suffix_and_name_only_table_is_a_last_resort():
+    from localgov_crawler.extract import extract_page
+
+    h = "<html><body><h1>野球場</h1><h2>運営</h2><p>・施設の管理運営・スポーツ教室豊中市服部寿町4-7</p><p>電話 06-6858-5050</p></body></html>"
+    assert not [i for i in extract_page(h, "豊中市", SPEC)["items"] if i["source"] == "bullet"]
+    h = ("<html><body><h1>公園</h1><table><tr><th>名称</th><th>種別</th></tr><tr><td>A広場</td><td>広場</td></tr></table>"
+         "<table><tr><th>所在地</th><td>丹波市山南町和田338</td></tr><tr><th>電話</th><td>0795-76-1345</td></tr></table></body></html>")
+    pg = extract_page(h, "丹波市", SPEC)
+    assert [(i["name"], i["address"], i["source"]) for i in pg["items"]] == [("公園", "丹波市山南町和田338", "kv+text_phone")] or all(i["source"] != "table_name" for i in pg["items"])
