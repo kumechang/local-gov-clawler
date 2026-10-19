@@ -167,3 +167,12 @@ def test_page_level_text_row_dropped_when_specific_row_exists():
     assert [r["facility_name"] for r in rows] == ["高松グラウンド・ゴルフ場"]
     rows = detail_rows({"municipality": m, "run": {"route": "t", "finished_at": ""}, "pages": [cat]})
     assert len(rows) == 1  # 別に施設の行が無ければ、そのまま残す
+
+
+def test_phone_with_dash_variants_and_office_name():
+    from localgov_crawler.extract import find_phones, keep_item
+
+    assert find_phones("電話番号：0296‐88‐3111 ファクス番号：0296−88−3253") == ["0296-88-3111", "0296-88-3253"]
+    assert find_phones("TEL 0296ー88ー3111") == ["0296-88-3111"]
+    assert find_phones("郵便番号 311-4402 電話 029-288-3111") == ["029-288-3111"]
+    assert not keep_item("東員町役場", "三重県員弁郡東員町大字山田1600番地", "0594-86-2800")

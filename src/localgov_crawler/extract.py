@@ -14,11 +14,20 @@ from . import __version__
 from .fetcher import Fetcher
 from .html import decode_bytes, parse_html
 from .municipalities import Municipality
-from .nav import base_host, is_same_site, norm_text
+from .nav import base_host, is_same_site
+from .nav import norm_text as _norm_text
 from .pipeline import Config, _Ctx, _now
 from .survey import KeywordSpec
 
-EXTRACT_SCHEMA = 2
+EXTRACT_SCHEMA = 3
+
+# 数字の間のハイフンの別字(‐ ‑ ‒ – — ― − ー など)は『-』にそろえる。そろえないと『0296‐88‐3111』が電話番号として読めない(D-132)
+DASHES = re.compile(r"(?<=\d)[\u2010-\u2015\u2212\u30fc\uff70\u2043](?=\d)")
+
+
+def norm_text(s: str) -> str:
+    return DASHES.sub("-", _norm_text(s))
+
 
 # 電話番号: 市外局番から始まる10〜11桁(NFKC正規化後)。郵便番号(〒・郵便の直後)は除く
 PHONE = re.compile(r"(?<![\d-])(0\d{1,4})[-(（)）\s]{1,2}(\d{1,4})[-)）\s]{1,2}(\d{3,4})(?![\d-])")
@@ -325,7 +334,7 @@ def load_extracts(root: Path, keyword: str, route: str) -> list[dict]:
 
 # 施設の行として残すか(D-128)。ページの端の欄(バナー広告・おすすめ・電話/FAX・同じ分類から探す)や、料金表の数字・時間の行を、施設として出さない
 FACILITY_WORDS = re.compile(r"施設|公園|運動場|運動広場|広場|体育館|体育|センター|グラウンド|グランド|コート|プール|競技場|野球場|球場|ゴルフ場|ひろば|スタジアム|アリーナ|武道館|ホール|会館|スポーツ|緑地|河川敷|サッカー場|テニス|多目的|運動|フィールド|パーク|ドーム|道場|ゲートボール|ペタンク|クラブハウス")
-NOISE_NAME = re.compile(r"^[\d\s:~～\-－/.,、()（）時分円回]+$|バナー|広告|AI\(|おすすめ|同じ分類|関連|ページ|電話|FAX|ＦＡＸ|メール|ホーム|トップ|サイトマップ|アクセス|地図|アンケート|ご意見|お知らせ|新着|ランキング|ログイン|使用料|料金|主催|場合|申込|申請|様式|ダウンロード|連絡先|お問い?合わせ|お問合せ|Official|法人番号")
+NOISE_NAME = re.compile(r"^[\d\s:~～\-－/.,、()（）時分円回]+$|バナー|広告|AI\(|おすすめ|同じ分類|関連|ページ|電話|FAX|ＦＡＸ|メール|ホーム|トップ|サイトマップ|アクセス|地図|アンケート|ご意見|お知らせ|新着|ランキング|ログイン|使用料|料金|主催|場合|申込|申請|様式|ダウンロード|連絡先|お問い?合わせ|お問合せ|Official|法人番号|役場$|役所$|庁舎$")
 GENERIC_NAMES = {"", "公営スポーツ施設", "観光施設", "スポーツ施設一覧", "体育施設一覧", "運動施設一覧", "スポーツ施設", "体育施設", "運動施設", "施設案内", "施設一覧", "公園", "スポーツ", "体育館", "運動場", "広場", "施設&マップ", "公共施設"}
 
 
