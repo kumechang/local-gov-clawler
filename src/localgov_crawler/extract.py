@@ -145,7 +145,15 @@ def _table_items(soup: BeautifulSoup, spec: KeywordSpec | None) -> list[_Item]:
                 idx["address"] = i
             elif idx["phone"] is None and re.search(r"電話|TEL|連絡先|問い?合わせ", h, re.I):
                 idx["phone"] = i
-        if idx["name"] is None or (idx["address"] is None and idx["phone"] is None):
+        if idx["name"] is None:
+            continue
+        if idx["address"] is None and idx["phone"] is None:
+            # 住所・電話の列が無い施設の表(名称・種別・内容など): 施設名だけの行にする(ページ下の市役所の住所を施設の住所にしないため)
+            if re.search(r"^(?:施設名|名称|名前)$", head[idx["name"]]) and not any(re.search(r"料金|使用料|区分|時間|円", h) for h in head):
+                for tr in rows[1:]:
+                    cells = _cells(tr)
+                    if len(cells) >= 2 and cells[idx["name"]]:
+                        items.append(_Item(name=cells[idx["name"]][:80], source="table_name", text=" ".join(cells) + " " + caption))
             continue
         for tr in rows[1:]:
             cells = _cells(tr)
@@ -155,7 +163,8 @@ def _table_items(soup: BeautifulSoup, spec: KeywordSpec | None) -> list[_Item]:
             phones = find_phones(g("phone")) if idx["phone"] is not None else find_phones(" ".join(cells))
             addr = clean_address(g("address")) if idx["address"] is not None and looks_like_address(g("address")) else ""
             items.append(_Item(name=g("name")[:80], address=addr, phone=phones[0] if phones else "", source="table_row", text=" ".join(cells) + " " + caption))
-    return items
+    with_data = {i.name for i in items if i.source == "table_row"}
+    return [i for i in items if i.source != "table_name" or i.name not in with_data]  # 別の表に住所・電話つきの同じ施設の行があれば、施設名だけの行は出さない
 
 
 def _kv_pairs(soup: BeautifulSoup) -> list[tuple[str, str, str]]:
@@ -216,6 +225,64 @@ def _evidence(text: str, spec: KeywordSpec | None) -> str:
     return t[max(0, ms[0].start() - 40): ms[0].end() + 40]
 
 
+INQUIRY_HEADING = re.compile(r"^(?:このページに関する)?(?:お?問い?合わせ(?:先)?|問合せ先?|連絡先)$")
+
+
+BULLET = re.compile(r"^[・●■◆▼▽○◎※]\s*")
+
+
+def _bullet_items(soup: BeautifulSoup, muni_name: str) -> list[_Item]:
+    """『・蔵木グラウンドゴルフ場吉賀町蔵木60-2』のように、施設名の直後に市区町村名から始まる所在地が続く箇条書き。次の【問い合わせ】の電話をその施設の電話にする。"""
+    items: list[_Item] = []
+    cur: _Item | None = None
+    for el in soup.find_all(["h2", "h3", "h4", "p", "li"]):
+        if el.find(["p", "li", "div", "table", "ul"]):
+            continue
+        t = norm_text(el.get_text(" "))
+        if el.name in ("h2", "h3", "h4"):
+            cur = None
+            continue
+        if BULLET.match(t) and muni_name and muni_name in t[1:]:
+            body = BULLET.sub("", t)
+            name, _, rest = body.partition(muni_name)
+            addr = clean_address(muni_name + rest)
+            if len(name) >= 2 and FACILITY_WORDS.search(name) and looks_like_address(addr):
+                cur = _Item(name=name.strip()[:80], address=addr, source="bullet", text=name)
+                items.append(cur)
+                continue
+        if cur is not None:
+            if BULLET.match(t):
+                cur = None
+                continue
+            cur.text += " " + t
+            ph = find_phones(t)
+            if ph and not cur.phone:
+                cur.phone = ph[0]
+    return [i for i in items if i.ok()]
+
+
+def _inquiry_by_heading(soup: BeautifulSoup) -> dict:
+    """『お問い合わせ先』の見出し(h2〜h5・dt)の直後の要素に、担当課と電話番号がある型(福井市など)。ヘッダ・フッタ・ナビの中は除く。"""
+    best: dict = {}
+    for h in soup.find_all(["h2", "h3", "h4", "h5", "dt"]):
+        if h.find_parent(["header", "footer", "nav"]) is not None:
+            continue
+        if not INQUIRY_HEADING.match(norm_text(h.get_text(" "))):
+            continue
+        parts: list[str] = []
+        sib = h.find_next_sibling()
+        while sib is not None and len(parts) < 3 and sib.name not in ("h1", "h2", "h3", "h4", "h5", "dt"):
+            parts.append(norm_text(sib.get_text(" ")))
+            sib = sib.find_next_sibling()
+        t = " ".join(parts)[:300]
+        phones = find_phones(t)
+        if not phones:
+            continue
+        dept = re.split(r"電話|TEL|Tel|ＴＥＬ|tel|FAX|ファ[ック]|〒|\d{2,5}-\d", t)[0].strip(" :：　／/")
+        best = {"dept": dept[:60], "phone": phones[0]}
+    return best
+
+
 def _inquiry(soup: BeautifulSoup) -> dict:
     """ページの『お問い合わせ先』の欄(担当課と電話番号)。ページの最後のほうにあるものを採る。"""
     best: dict = {}
@@ -232,7 +299,7 @@ def _inquiry(soup: BeautifulSoup) -> dict:
         dept = re.sub(r"\s*(?:電話|TEL|Tel|FAX|ファックス|所在地|住所|〒|メール|E-?mail|\d{3}-\d{4}).*$", "", dept).strip()
         dept = re.sub(r"^(?:このページ(?:に関する|について)?|この記事(?:に関する|について)?)\s*(?:お?問い?合わせ(?:先)?)?\s*", "", dept).strip(" :：　")
         best = {"dept": dept[:60], "phone": phones[0]}
-    return best
+    return best or _inquiry_by_heading(soup)  # 1要素に担当課と電話がまとまっていない型(見出しの次の段落)は、見出しから取る
 
 
 def extract_page(html: str, muni_name: str, spec: KeywordSpec | None = None) -> dict:
@@ -246,6 +313,9 @@ def extract_page(html: str, muni_name: str, spec: KeywordSpec | None = None) -> 
     if not items:
         items = _kv_items(_kv_pairs(soup), page_name)
         source = "kv"
+    if not items:
+        items = _bullet_items(soup, muni_name)
+        source = "bullet"
     if not items:
         text = norm_text(soup.get_text(" "))
         phones = find_phones(text)
@@ -378,7 +448,7 @@ def detail_rows(rec: dict) -> list[dict]:
     for pg in rec["pages"]:
         if "items" not in pg:
             continue
-        items = [i for i in pg["items"] if keep_item(i["name"], i["address"], i["phone"])]
+        items = [i for i in pg["items"] if keep_item(i["name"], i["address"], i["phone"]) and not (i["source"] == "table_name" and not i["keyword_in_item"])]
         if has_specific:
             items = [i for i in items if not (i["source"] == "text" and i["name"] == tidy_name(pg["page_name"]) and not i["keyword_in_item"])]
         if pg["multi_facility"] and any(i["keyword_in_item"] for i in items):
