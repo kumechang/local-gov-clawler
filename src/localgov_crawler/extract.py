@@ -126,7 +126,7 @@ def _cells(tr) -> list[str]:
     return [norm_text(c.get_text(" ")) for c in tr.find_all(["th", "td"])]
 
 
-def _table_items(soup: BeautifulSoup, spec: KeywordSpec | None) -> list[_Item]:
+def _table_items(soup: BeautifulSoup, spec: KeywordSpec | None, name_only: bool = False) -> list[_Item]:
     """見出しの行に『施設名』『住所/所在地』『電話』がある一覧表。1行を1施設にする。"""
     items: list[_Item] = []
     for table in soup.find_all("table"):
@@ -148,12 +148,13 @@ def _table_items(soup: BeautifulSoup, spec: KeywordSpec | None) -> list[_Item]:
         if idx["name"] is None:
             continue
         if idx["address"] is None and idx["phone"] is None:
-            # 住所・電話の列が無い施設の表(名称・種別・内容など): 施設名だけの行にする(ページ下の市役所の住所を施設の住所にしないため)
-            if re.search(r"^(?:施設名|名称|名前)$", head[idx["name"]]) and not any(re.search(r"料金|使用料|区分|時間|円", h) for h in head):
+            # 住所・電話の列が無い施設の表(名称・種別・内容など): 施設名だけの行にする(ページ下の市役所の住所を施設の住所にしないため)。
+            # 見出し+値・箇条書きで施設が取れないときだけ使う(name_only=True。先に使うと、住所つきの行を隠してしまう: D-134)
+            if name_only and re.search(r"^(?:施設名|名称|名前)$", head[idx["name"]]) and not any(re.search(r"料金|使用料|区分|時間|円", h) for h in head):
                 for tr in rows[1:]:
                     cells = _cells(tr)
                     if len(cells) >= 2 and cells[idx["name"]]:
-                        items.append(_Item(name=cells[idx["name"]][:80], source="table_name", text=" ".join(cells) + " " + caption))
+                        items.append(_Item(name=cells[idx["name"]][:80], source="table_name", text=" ".join(cells)))  # 表の見出しのワードは引き継がない(表の全行がワードありになるため)
             continue
         for tr in rows[1:]:
             cells = _cells(tr)
@@ -163,8 +164,7 @@ def _table_items(soup: BeautifulSoup, spec: KeywordSpec | None) -> list[_Item]:
             phones = find_phones(g("phone")) if idx["phone"] is not None else find_phones(" ".join(cells))
             addr = clean_address(g("address")) if idx["address"] is not None and looks_like_address(g("address")) else ""
             items.append(_Item(name=g("name")[:80], address=addr, phone=phones[0] if phones else "", source="table_row", text=" ".join(cells) + " " + caption))
-    with_data = {i.name for i in items if i.source == "table_row"}
-    return [i for i in items if i.source != "table_name" or i.name not in with_data]  # 別の表に住所・電話つきの同じ施設の行があれば、施設名だけの行は出さない
+    return items
 
 
 def _kv_pairs(soup: BeautifulSoup) -> list[tuple[str, str, str]]:
@@ -228,6 +228,7 @@ def _evidence(text: str, spec: KeywordSpec | None) -> str:
 INQUIRY_HEADING = re.compile(r"^(?:このページに関する)?(?:お?問い?合わせ(?:先)?|問合せ先?|連絡先)$")
 
 
+FACILITY_SUFFIX = re.compile(r"(?:場|館|公園|広場|センター|グラウンド|グランド|コート|プール|ホール|会館|道場|ドーム|アリーナ|スタジアム|ひろば|緑地|体育施設)$")
 BULLET = re.compile(r"^[・●■◆▼▽○◎※]\s*")
 
 
@@ -246,7 +247,7 @@ def _bullet_items(soup: BeautifulSoup, muni_name: str) -> list[_Item]:
             body = BULLET.sub("", t)
             name, _, rest = body.partition(muni_name)
             addr = clean_address(muni_name + rest)
-            if len(name) >= 2 and FACILITY_WORDS.search(name) and looks_like_address(addr):
+            if 2 <= len(name) <= 30 and FACILITY_SUFFIX.search(name.strip()) and looks_like_address(addr):
                 cur = _Item(name=name.strip()[:80], address=addr, source="bullet", text=name)
                 items.append(cur)
                 continue
@@ -317,6 +318,9 @@ def extract_page(html: str, muni_name: str, spec: KeywordSpec | None = None) -> 
         items = _bullet_items(soup, muni_name)
         source = "bullet"
     if not items:
+        items = _table_items(soup, spec, name_only=True)
+        source = "table"
+    if not items:
         text = norm_text(soup.get_text(" "))
         phones = find_phones(text)
         addr = ""
@@ -325,7 +329,7 @@ def extract_page(html: str, muni_name: str, spec: KeywordSpec | None = None) -> 
             addr = clean_address(m.group(1))
         if addr or phones:
             items = [_Item(name=page_name, address=addr, phone=phones[0] if phones else "", source="text", text=text[:400])]
-    if len(items) == 1 and not items[0].phone:  # 1施設のページで、施設の欄に電話が無ければ、『電話』『問い合わせ』などの語のある文の電話番号を使う
+    if len(items) == 1 and not items[0].phone and items[0].source != "table_name":  # 1施設のページで、施設の欄に電話が無ければ、『電話』『問い合わせ』などの語のある文の電話番号を使う
         for el in soup.find_all(["p", "li", "dd", "td", "div", "span"]):
             if el.find(["p", "li", "div", "table"]):
                 continue
