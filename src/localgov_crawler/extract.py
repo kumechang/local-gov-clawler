@@ -125,6 +125,9 @@ def _table_items(soup: BeautifulSoup, spec: KeywordSpec | None) -> list[_Item]:
         if len(rows) < 2:
             continue
         head = _cells(rows[0])
+        cap = table.find("caption")
+        h = table.find_previous(["h1", "h2", "h3", "h4"])
+        caption = norm_text((cap or h).get_text(" ")) if (cap or h) else ""  # 表の見出し(例: 『ニュースポーツ競技場一覧(グラウンドゴルフ…)』)にワードがあれば、その表の施設はワードありとする
         idx = {"name": None, "address": None, "phone": None}
         for i, h in enumerate(head):
             if idx["name"] is None and re.search(r"施設名|名称|名前|施設", h):
@@ -142,7 +145,7 @@ def _table_items(soup: BeautifulSoup, spec: KeywordSpec | None) -> list[_Item]:
             g = lambda k: cells[idx[k]] if idx[k] is not None and idx[k] < len(cells) else ""
             phones = find_phones(g("phone")) if idx["phone"] is not None else find_phones(" ".join(cells))
             addr = clean_address(g("address")) if idx["address"] is not None and looks_like_address(g("address")) else ""
-            items.append(_Item(name=g("name")[:80], address=addr, phone=phones[0] if phones else "", source="table_row", text=" ".join(cells)))
+            items.append(_Item(name=g("name")[:80], address=addr, phone=phones[0] if phones else "", source="table_row", text=" ".join(cells) + " " + caption))
     return items
 
 
@@ -346,10 +349,18 @@ DETAIL_COLUMNS = ["prefecture", "municipality_code", "municipality_name", "facil
 def detail_rows(rec: dict) -> list[dict]:
     m = rec["municipality"]
     rows = []
+    # 同じ自治体に、ワードのある施設の行(見出し+値・表で、住所つき)が別のページにあるとき、ページ名そのままの本文由来の行(市の代表電話など)は出さない
+    has_specific = any(
+        i["keyword_in_item"] and i["address"] and i["source"] != "text"
+        for pg in rec["pages"] for i in pg.get("items", [])
+    )
+    seen: set[tuple] = set()
     for pg in rec["pages"]:
         if "items" not in pg:
             continue
         items = [i for i in pg["items"] if keep_item(i["name"], i["address"], i["phone"])]
+        if has_specific:
+            items = [i for i in items if not (i["source"] == "text" and i["name"] == tidy_name(pg["page_name"]) and not i["keyword_in_item"])]
         if pg["multi_facility"] and any(i["keyword_in_item"] for i in items):
             items = [i for i in items if i["keyword_in_item"]]  # 一覧のページは、ワードのある施設の行だけにする
         inq = pg.get("inquiry") or {}
@@ -358,6 +369,10 @@ def detail_rows(rec: dict) -> list[dict]:
                 continue  # 施設の行が1つも無いページ(お知らせ・手続き・ページの端の欄だけ)は出さない
             items = [{"name": pg["page_name"], "address": "", "phone": "", "source": "none", "keyword_in_item": False}]
         for i in items:
+            key = (pg["page_url"], i["name"], i["address"], i["phone"])
+            if key in seen:
+                continue  # 同じページに同じ施設の行が重なって出るもの(同じ表が複数ある)は1行にする
+            seen.add(key)
             rows.append({
                 "prefecture": m["prefecture"], "municipality_code": m["code"], "municipality_name": m["name"], "facility_name": i["name"], "address": tidy_export_address(i["address"], m["name"]),
                 "phone": i["phone"], "inquiry_dept": tidy_export_dept(inq.get("dept", "")), "inquiry_phone": inq.get("phone", ""), "page_title": pg["title"], "page_url": pg["page_url"],
