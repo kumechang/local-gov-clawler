@@ -18,7 +18,7 @@ from .nav import base_host, is_same_site, norm_text
 from .pipeline import Config, _Ctx, _now
 from .survey import KeywordSpec
 
-EXTRACT_SCHEMA = 1
+EXTRACT_SCHEMA = 2
 
 # 電話番号: 市外局番から始まる10〜11桁(NFKC正規化後)。郵便番号(〒・郵便の直後)は除く
 PHONE = re.compile(r"(?<![\d-])(0\d{1,4})[-(（)）\s]{1,2}(\d{1,4})[-)）\s]{1,2}(\d{3,4})(?![\d-])")
@@ -125,6 +125,9 @@ def _table_items(soup: BeautifulSoup, spec: KeywordSpec | None) -> list[_Item]:
         if len(rows) < 2:
             continue
         head = _cells(rows[0])
+        cap = table.find("caption")
+        h = table.find_previous(["h1", "h2", "h3", "h4"])
+        caption = norm_text((cap or h).get_text(" ")) if (cap or h) else ""  # 表の見出し(例: 『ニュースポーツ競技場一覧(グラウンドゴルフ…)』)にワードがあれば、その表の施設はワードありとする
         idx = {"name": None, "address": None, "phone": None}
         for i, h in enumerate(head):
             if idx["name"] is None and re.search(r"施設名|名称|名前|施設", h):
@@ -142,7 +145,7 @@ def _table_items(soup: BeautifulSoup, spec: KeywordSpec | None) -> list[_Item]:
             g = lambda k: cells[idx[k]] if idx[k] is not None and idx[k] < len(cells) else ""
             phones = find_phones(g("phone")) if idx["phone"] is not None else find_phones(" ".join(cells))
             addr = clean_address(g("address")) if idx["address"] is not None and looks_like_address(g("address")) else ""
-            items.append(_Item(name=g("name")[:80], address=addr, phone=phones[0] if phones else "", source="table_row", text=" ".join(cells)))
+            items.append(_Item(name=g("name")[:80], address=addr, phone=phones[0] if phones else "", source="table_row", text=" ".join(cells) + " " + caption))
     return items
 
 
@@ -191,6 +194,17 @@ def _kv_items(pairs: list[tuple[str, str, str]], page_name: str) -> list[_Item]:
                 item.phone = ph[0]
         item.text += f" {key} {value}"
     return [by_heading[h] for h in order if by_heading[h].ok()]
+
+
+def _evidence(text: str, spec: KeywordSpec | None) -> str:
+    """ワードのある文の前後(確認用。HTML原本ではなく短い文だけ)。"""
+    if spec is None:
+        return ""
+    t = norm_text(text)
+    ms = spec.find(t)
+    if not ms:
+        return ""
+    return t[max(0, ms[0].start() - 40): ms[0].end() + 40]
 
 
 def _inquiry(soup: BeautifulSoup) -> dict:
@@ -246,7 +260,7 @@ def extract_page(html: str, muni_name: str, spec: KeywordSpec | None = None) -> 
     gg = [bool(spec and spec.find_affirmative(it.text)) for it in items] if spec is not None else [False] * len(items)
     return {
         "title": title[:100], "page_name": page_name, "multi_facility": len(items) > 1, "item_source": source,
-        "items": [{"name": tidy_name(it.name or page_name), "address": it.address, "phone": it.phone, "source": it.source, "keyword_in_item": g} for it, g in zip(items, gg)],
+        "items": [{"name": tidy_name(it.name or page_name), "address": it.address, "phone": it.phone, "source": it.source, "keyword_in_item": g, "evidence": _evidence(it.text, spec) if g else ""} for it, g in zip(items, gg)],
         "inquiry": _inquiry(soup),
     }
 
@@ -309,27 +323,71 @@ def load_extracts(root: Path, keyword: str, route: str) -> list[dict]:
     return [json.loads(p.read_text(encoding="utf-8")) for p in sorted(base.glob("*/*.json"))]
 
 
+# 施設の行として残すか(D-128)。ページの端の欄(バナー広告・おすすめ・電話/FAX・同じ分類から探す)や、料金表の数字・時間の行を、施設として出さない
+FACILITY_WORDS = re.compile(r"施設|公園|運動場|運動広場|広場|体育館|体育|センター|グラウンド|グランド|コート|プール|競技場|野球場|球場|ゴルフ場|ひろば|スタジアム|アリーナ|武道館|ホール|会館|スポーツ|緑地|河川敷|サッカー場|テニス|多目的|運動|フィールド|パーク|ドーム|道場|ゲートボール|ペタンク|クラブハウス")
+NOISE_NAME = re.compile(r"^[\d\s:~～\-－/.,、()（）時分円回]+$|バナー|広告|AI\(|おすすめ|同じ分類|関連|ページ|電話|FAX|ＦＡＸ|メール|ホーム|トップ|サイトマップ|アクセス|地図|アンケート|ご意見|お知らせ|新着|ランキング|ログイン|使用料|料金|主催|場合|申込|申請|様式|ダウンロード|連絡先|お問い?合わせ|お問合せ|Official|法人番号")
+GENERIC_NAMES = {"", "公営スポーツ施設", "観光施設", "スポーツ施設一覧", "体育施設一覧", "運動施設一覧", "スポーツ施設", "体育施設", "運動施設", "施設案内", "施設一覧", "公園", "スポーツ", "体育館", "運動場", "広場", "施設&マップ", "公共施設"}
+
+
+def tidy_export_address(address: str, municipality: str = "") -> str:
+    """書き出し時の住所の整形: 閉じていない括弧から後ろを落とし、市区町村の名前だけ(番地なし)のものは住所としない。"""
+    a = norm_text(address)
+    a = re.sub(r"[(（\[【][^)）\]】]*$", "", a).strip(" 　,、")
+    if a and a == municipality:
+        return ""
+    return a
+
+
+def tidy_export_dept(dept: str) -> str:
+    """問い合わせ先の担当課に、ページ下の事業者情報(法人番号・適格請求書)が混ざったものを落とす。"""
+    return re.sub(r"\s*(?:法人番号|適格請求書).*$", "", norm_text(dept)).strip()
+
+
+def keep_item(name: str, address: str, phone: str) -> bool:
+    """施設の行として残すか。名前が施設らしい(施設を表す語を含み、端の欄や料金表の語を含まない)か、住所のある行だけ。"""
+    n = norm_text(name)
+    if NOISE_NAME.search(n):
+        return False
+    if address and n not in GENERIC_NAMES:
+        return True
+    return n not in GENERIC_NAMES and bool(FACILITY_WORDS.search(n))
+
+
 DETAIL_COLUMNS = ["prefecture", "municipality_code", "municipality_name", "facility_name", "address", "phone", "inquiry_dept", "inquiry_phone",
-                  "page_title", "page_url", "multi_facility", "keyword_in_item", "matched_text", "item_source", "site_url", "extract_route", "extracted_at"]
+                  "page_title", "page_url", "multi_facility", "keyword_in_item", "keyword_evidence", "matched_text", "item_source", "site_url", "extract_route", "extracted_at"]
 
 
 def detail_rows(rec: dict) -> list[dict]:
     m = rec["municipality"]
     rows = []
+    # 同じ自治体に、ワードのある施設の行(見出し+値・表で、住所つき)が別のページにあるとき、ページ名そのままの本文由来の行(市の代表電話など)は出さない
+    has_specific = any(
+        i["keyword_in_item"] and i["address"] and i["source"] != "text"
+        for pg in rec["pages"] for i in pg.get("items", [])
+    )
+    seen: set[tuple] = set()
     for pg in rec["pages"]:
         if "items" not in pg:
             continue
-        items = pg["items"]
+        items = [i for i in pg["items"] if keep_item(i["name"], i["address"], i["phone"])]
+        if has_specific:
+            items = [i for i in items if not (i["source"] == "text" and i["name"] == tidy_name(pg["page_name"]) and not i["keyword_in_item"])]
         if pg["multi_facility"] and any(i["keyword_in_item"] for i in items):
             items = [i for i in items if i["keyword_in_item"]]  # 一覧のページは、ワードのある施設の行だけにする
         inq = pg.get("inquiry") or {}
         if not items:
+            if pg["items"] or not keep_item(pg["page_name"], "", ""):
+                continue  # 施設の行が1つも無いページ(お知らせ・手続き・ページの端の欄だけ)は出さない
             items = [{"name": pg["page_name"], "address": "", "phone": "", "source": "none", "keyword_in_item": False}]
         for i in items:
+            key = (pg["page_url"], i["name"], i["address"], i["phone"])
+            if key in seen:
+                continue  # 同じページに同じ施設の行が重なって出るもの(同じ表が複数ある)は1行にする
+            seen.add(key)
             rows.append({
-                "prefecture": m["prefecture"], "municipality_code": m["code"], "municipality_name": m["name"], "facility_name": i["name"], "address": i["address"],
-                "phone": i["phone"], "inquiry_dept": inq.get("dept", ""), "inquiry_phone": inq.get("phone", ""), "page_title": pg["title"], "page_url": pg["page_url"],
-                "multi_facility": "1" if pg["multi_facility"] else "", "keyword_in_item": "1" if i["keyword_in_item"] else "", "matched_text": pg.get("matched_text", ""),
+                "prefecture": m["prefecture"], "municipality_code": m["code"], "municipality_name": m["name"], "facility_name": i["name"], "address": tidy_export_address(i["address"], m["name"]),
+                "phone": i["phone"], "inquiry_dept": tidy_export_dept(inq.get("dept", "")), "inquiry_phone": inq.get("phone", ""), "page_title": pg["title"], "page_url": pg["page_url"],
+                "multi_facility": "1" if pg["multi_facility"] else "", "keyword_in_item": "1" if i["keyword_in_item"] else "", "keyword_evidence": i.get("evidence", ""), "matched_text": pg.get("matched_text", ""),
                 "item_source": i["source"], "site_url": m["official_url"], "extract_route": rec["run"]["route"], "extracted_at": rec["run"]["finished_at"],
             })
     return rows

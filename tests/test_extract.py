@@ -125,3 +125,45 @@ def test_facility_name_is_tidied():
     assert ex.tidy_name("『桶川市新小針領家グラウンド』について") == "桶川市新小針領家グラウンド"
     assert ex.tidy_name("上平広場の利用について") == "上平広場"
     assert ex.tidy_name("中央公園グラウンド ナイター") == "中央公園グラウンド ナイター"
+
+
+def test_tidy_export_fields():
+    from localgov_crawler.extract import keep_item, tidy_export_address, tidy_export_dept
+
+    assert tidy_export_address("階上町大字道仏字天当平1-150(", "階上町") == "階上町大字道仏字天当平1-150"
+    assert tidy_export_address("太田市", "太田市") == ""
+    assert tidy_export_address("西門前580-1", "上尾市") == "西門前580-1"
+    assert tidy_export_dept("栃木市役所 法人番号 6000020092037 適格請求書発行事業者登録番号 T6000020092037") == "栃木市役所"
+    assert not keep_item("階上町 Official Web Site", "", "0178-32-0147")
+    assert not keep_item("お問合せ", "府中市", "")
+
+
+def test_table_caption_keyword_and_dedupe():
+    from localgov_crawler.extract import detail_rows, extract_page
+    spec = SPEC
+    html = ("<html><body><h1>スポーツ施設</h1><h2>ニュースポーツ競技場一覧(グラウンドゴルフなど)</h2>"
+            "<table><tr><th>施設名</th><th>住所</th><th>電話</th></tr>"
+            "<tr><td>南部ふるさと広場</td><td>野尻町1373-6</td><td>0853-48-0001</td></tr></table>"
+            "<h2>体育館</h2><table><tr><th>施設名</th><th>住所</th><th>電話</th></tr>"
+            "<tr><td>出雲体育館</td><td>出雲市今市町1</td><td>0853-21-0001</td></tr></table></body></html>")
+    pg = extract_page(html, "出雲市", spec)
+    flags = {i["name"]: i["keyword_in_item"] for i in pg["items"]}
+    assert flags["南部ふるさと広場"] and not flags["出雲体育館"]
+    rec = {"municipality": {"prefecture": "島根県", "code": "32203", "name": "出雲市", "official_url": ""}, "run": {"route": "t", "finished_at": ""},
+           "pages": [{**pg, "page_url": "u", "title": "t", "matched_text": ""}, {**pg, "page_url": "u", "title": "t", "matched_text": ""}]}
+    rows = detail_rows(rec)
+    assert len(rows) == 1 and rows[0]["facility_name"] == "南部ふるさと広場"
+
+
+def test_page_level_text_row_dropped_when_specific_row_exists():
+    from localgov_crawler.extract import detail_rows
+
+    m = {"prefecture": "石川県", "code": "17210", "name": "かほく市", "official_url": ""}
+    cat = {"page_url": "a", "title": "t", "page_name": "スポーツ・レジャー施設", "multi_facility": False, "matched_text": "",
+           "items": [{"name": "スポーツ・レジャー施設", "address": "", "phone": "076-283-1111", "source": "text", "keyword_in_item": False}]}
+    det = {"page_url": "b", "title": "t", "page_name": "高松グラウンド・ゴルフ場", "multi_facility": False, "matched_text": "",
+           "items": [{"name": "高松グラウンド・ゴルフ場", "address": "かほく市二ツ屋マ1番地", "phone": "076-281-3751", "source": "kv", "keyword_in_item": True}]}
+    rows = detail_rows({"municipality": m, "run": {"route": "t", "finished_at": ""}, "pages": [cat, det]})
+    assert [r["facility_name"] for r in rows] == ["高松グラウンド・ゴルフ場"]
+    rows = detail_rows({"municipality": m, "run": {"route": "t", "finished_at": ""}, "pages": [cat]})
+    assert len(rows) == 1  # 別に施設の行が無ければ、そのまま残す
