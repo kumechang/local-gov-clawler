@@ -26,9 +26,9 @@
 - 否定の記載(『グラウンド・ゴルフではご利用いただけません』など)は除いている(`docs/decisions.md` D-113, D-116, D-119, D-122)。
 - 愛知県・福井県は、別の入口とヘッドレス取得が入る前の結果。
 
-## 施設詳細(第3版、2026-10-19)
-- `grandgolf_places_detail.csv`: 場所のページの施設の行すべて(1,378行・400自治体)。
-- `grandgolf_places_detail_complete.csv`: 上のうち、住所があり、施設か問い合わせ先の電話がある行(702行・222自治体)。
-- `grandgolf_places_detail_keyword.csv`: 上の全体のうち、**その施設の記述にグラウンドゴルフがある行**(`keyword_in_item=1`、508行・155自治体)。`keyword_evidence` に根拠の文がある。
-- `grandgolf_places_detail_keyword_complete.csv`: 上のうち住所と電話のある行(365行・103自治体)。
+## 施設詳細(第5版、2026-10-19)
+- `grandgolf_places_detail.csv`: 場所のページの施設の行すべて(1,397行・399自治体)。`item_source` が `table_name` の行は、施設名だけ(住所・電話なし)。
+- `grandgolf_places_detail_complete.csv`: 上のうち、住所があり、施設か問い合わせ先の電話がある行(709行・223自治体)。
+- `grandgolf_places_detail_keyword.csv`: 上の全体のうち、**その施設の記述にグラウンドゴルフがある行**(`keyword_in_item=1`、543行・163自治体)。`keyword_evidence` に根拠の文がある。
+- `grandgolf_places_detail_keyword_complete.csv`: 上のうち住所と電話のある行(376行・106自治体)。
 - `keyword_in_item` が空の行は、ページにはグラウンドゴルフの記述があるが、その行の施設の記述では確認できなかったもの(ページ全体の施設や、複数施設のページの別の施設を含む)。
