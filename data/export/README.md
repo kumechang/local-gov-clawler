@@ -32,3 +32,4 @@
 - `grandgolf_places_detail_keyword.csv`: 上の全体のうち、**その施設の記述にグラウンドゴルフがある行**(`keyword_in_item=1`、543行・163自治体)。`keyword_evidence` に根拠の文がある。
 - `grandgolf_places_detail_keyword_complete.csv`: 上のうち住所と電話のある行(376行・106自治体)。
 - `keyword_in_item` が空の行は、ページにはグラウンドゴルフの記述があるが、その行の施設の記述では確認できなかったもの(ページ全体の施設や、複数施設のページの別の施設を含む)。
+- `grandgolf_facilities_all.csv`(2026-10-20): **住所・電話の有無にかかわらず、グラウンドゴルフの施設すべて**(862行・361自治体)。`grandgolf_basis` が『施設の記述にワードあり』(431行)か『ページにワードあり(1施設のページ)』(431行)。複数施設のページで、その行の施設の記述にワードが無い行(別の施設)は含まない。ページ単位の一覧(487自治体)は `grandgolf_places.csv`。
