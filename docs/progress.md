@@ -173,3 +173,4 @@
 - [x] 第5版の実行・判定(D-135)。CSVを第5版に置き換え
 - [ ] ユーザー判断待ち: 新15行の確認(`data/ground_truth/extract_grandgolf_v5_sample.csv`)、北海道の1%、次のワード
 - [x] 2026-10-20: 住所+電話ありのCSV、全施設のCSV(`grandgolf_facilities_all.csv`)を作成
+- [x] ユーザー補完CSVの照合と掲載(D-136): 掲載版1,006行、未掲載100行(`grandgolf_facilities_to_check.csv`)

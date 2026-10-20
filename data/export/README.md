@@ -33,3 +33,8 @@
 - `grandgolf_places_detail_keyword_complete.csv`: 上のうち住所と電話のある行(376行・106自治体)。
 - `keyword_in_item` が空の行は、ページにはグラウンドゴルフの記述があるが、その行の施設の記述では確認できなかったもの(ページ全体の施設や、複数施設のページの別の施設を含む)。
 - `grandgolf_facilities_all.csv`(2026-10-20): **住所・電話の有無にかかわらず、グラウンドゴルフの施設すべて**(862行・361自治体)。`grandgolf_basis` が『施設の記述にワードあり』(431行)か『ページにワードあり(1施設のページ)』(431行)。複数施設のページで、その行の施設の記述にワードが無い行(別の施設)は含まない。ページ単位の一覧(487自治体)は `grandgolf_places.csv`。
+
+## ユーザー補完の照合(2026-10-20、D-136)
+- `grandgolf_facilities_verified.csv`: **掲載版**。`grandgolf_facilities_all.csv`(自動抽出862行)に、ユーザーが補完した施設のうち**元ページで確認できたもの**を加えた(1,006行・412自治体)。`data_source` は『自動抽出』『ユーザー補完』。`verification` に、ページで確認できた項目(住所・電話)を書いた。`contact_phone` は、施設の電話があればそれ、無ければ問い合わせ先の電話(`contact_phone_kind` に種別)。
+- `grandgolf_facilities_to_check.csv`: **掲載しなかったもの**(100行)と理由。元ページを取得できない、施設名の近くにグラウンドゴルフの記述がない、補完した住所・電話が元ページで確認できない、のいずれか。
+- 元のユーザー補完CSVは `data/input/grandgolf_facilities_merged_enriched_20261020.csv`。

@@ -126,3 +126,4 @@
 - 「crawlを実行した結果を見て」(施設詳細 第5版、2026-10-19)→ 事前基準で判定して報告、新しい15行の確認を貼り付け。D-135。
 - 「住所と電話が取れていない施設も含めて全てのグラウンドゴルフの施設をCSVにして」(2026-10-20)→ `data/export/grandgolf_facilities_all.csv`(862行・361自治体)を作成。
 - 「いったんここまでで、電話番号と住所が取れている施設をCSVで出してくれる?」(2026-10-20)→ `grandgolf_places_detail_keyword_complete.csv`(376行)と `..._complete.csv`(709行)を送付。
+- 「(grandgolf_facilities_merged_enriched.csv)未記載のデータを補完したけど、確認して掲載できるものは掲載して」(2026-10-20)→ 補完の228行(Web補完71・未補完157)と、問い合わせ電話の転記118行を、元ページを取り直して照合。確認できたものを `grandgolf_facilities_verified.csv` に掲載。D-136。
