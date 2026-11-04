@@ -148,7 +148,7 @@ def _first(pairs: list[tuple[str, str, str]], name: str) -> str:
 LABEL_LINE = re.compile(
     r"^(?P<label>日時|開催日時|開催日|開催期日|日程|期日|実施日|開催期間|とき|大会日|会場|開催場所|開催会場|実施場所|場所|ところ|主催|主管|共催|実施主体|対象|参加資格|参加対象|"
     r"参加費|参加料|費用|会費|参加方法|申込方法|申込み方法|申し込み方法|申込|申し込み|申込み|参加申込|申込期間|申込期限|申込締切|申込み期限|締切|〆切|受付期間|応募期限)"
-    r"(?:[:：]|\s|$|[（(])\s*(?P<rest>.*)$"
+    r"(?:[\]】)）][:：\s]*|[:：]|\s|$|[（(])\s*(?P<rest>.*)$"
 )
 NUMBERING = re.compile(r"^[■●◆▼▽○◎・\[【(（]*\s*(?:[\d]{1,2}[、，.．)）]?\s*)?")
 SKIP_DATE_LINE = re.compile(r"更新日|最終更新|公開日|掲載日|作成日|ページID|ページ番号|お問い?合わせ|問合せ")
@@ -183,6 +183,52 @@ def _labeled_lines(body: str) -> dict[str, str]:
         if rest:
             out[name] = re.split(r"\s*※", rest)[0].strip()[:160]
     return out
+
+
+COL_ROLES = [
+    ("month", re.compile(r"^月$")), ("day", re.compile(r"^日$")),
+    ("deadline", re.compile(r"申込締切|締切|〆切|申込期限|申込期間")),
+    ("date", re.compile(r"月日|日付|日\(曜日\)|日（曜日）|実施日|開催日|日程|期日|日時|開催期間")),
+    ("venue", re.compile(r"会場|場所|開催場所")),
+    ("name", re.compile(r"事業名|大会名|行事名|イベント名|イベント\(内容\)|イベント（内容）|名称|行事|種目|内容|事業")),
+    ("fee", re.compile(r"参加費|参加料|費用|会費")), ("target", re.compile(r"対象|参加資格")), ("entry", re.compile(r"申込方法|申込|申し込み")),
+]
+
+
+def _table_header(rows) -> tuple[int | None, dict[int, str]]:
+    """表の見出し行(先頭の3行まで)を探し、列ごとの役割(日付・会場・名称など)を返す。役割が2つ以上ある行を見出しとする。"""
+    for hi, tr in enumerate(rows[:3]):
+        head = [re.sub(r"\s", "", norm_text(c.get_text(" "))) for c in tr.find_all(["th", "td"])]
+        if len(head) < 3:
+            continue
+        roles: dict[int, str] = {}
+        used: set[str] = set()
+        for i, h in enumerate(head):
+            for name, pat in COL_ROLES:
+                if name not in used and pat.search(h):
+                    roles[i] = name
+                    used.add(name)
+                    break
+        if len(used) >= 2 and ("name" in used or "date" in used or "month" in used):
+            return hi, {i: roles.get(i, "") for i in range(len(head))}
+    return None, {}
+
+
+def _calendar_date(lines: list[str], i: int, ctx: int | None) -> str:
+    """『31日』『土曜日』のように日付が別の行にあるカレンダーで、直前の『2026年10月』と日の行から日付の文を作る。"""
+    day = ""
+    for j in range(i, max(-1, i - 4), -1):
+        m = re.match(r"^(\d{1,2})\s*日$", lines[j])
+        if m:
+            day = m.group(1)
+            break
+    if not day:
+        return ""
+    for j in range(i, max(-1, i - 80), -1):
+        m = re.search(r"(20\d\d)\s*年\s*(\d{1,2})\s*月", lines[j])
+        if m:
+            return f"{m.group(1)}年{m.group(2)}月{day}日"
+    return ""
 
 
 def _cell_values(cells: list[str], head: list[str]) -> dict[str, str]:
@@ -233,23 +279,40 @@ def extract_events(html: str, muni_name: str, spec: KeywordSpec, survey_title: s
 
     page_fields = fields_from({k: _first(pairs, k) or labeled.get(k, "") for k in ("date", "venue", "organizer", "target", "fee", "entry", "deadline")})
 
-    # 表: グラウンドゴルフの語を含む行を、1イベントにする(見出し行の列名から日時・会場などを取る)
+    # 表: グラウンドゴルフの語を含む行を、1イベントにする(見出し行の列名から日時・会場などを取る。月・日が別の列、行の結合で先頭の列が省かれる表にも対応)
     tables_used = False
     for table in soup.find_all("table"):
         rows = table.find_all("tr")
         if len(rows) < 2:
             continue
-        head = [norm_text(c.get_text(" ")) for c in rows[0].find_all(["th", "td"])]
-        if len(head) < 3:
+        hi, roles = _table_header(rows)
+        if hi is None:
             continue
-        for tr in rows[1:]:
+        head_n = len(roles)
+        carried: list[str] = []
+        for tr in rows[hi + 1:]:
             cells = [norm_text(c.get_text(" ")) for c in tr.find_all(["th", "td"])]
+            if not cells:
+                continue
+            if len(cells) < head_n and carried:
+                lead = [i for i in range(head_n) if roles.get(i) in ("month", "date", "day")]
+                missing = head_n - len(cells)
+                if lead and lead == list(range(len(lead))) and missing <= len(lead):
+                    cells = carried[:missing] + cells  # 結合された先頭の列(月・日付)は、前の行の値
+            if len(cells) == head_n:
+                carried = cells[:]
             row_text = " ".join(cells)
             if not spec.find_affirmative(row_text):
                 continue
-            vals = _cell_values(cells, head)
-            name_cell = next((c for h, c in zip(head, cells) if re.search(r"大会名|行事名|イベント名|名称|種目|事業名|名前", h) and c), "")
-            events.append(_make(base, source="table_row", event_name=(name_cell or row_text)[:100], **{"_f": vals}, evidence=_evidence(row_text, spec)))
+            vals: dict[str, str] = {}
+            for i, c in enumerate(cells[:head_n]):
+                r_ = roles.get(i)
+                if r_ and c and r_ not in vals:
+                    vals[r_] = c[:160]
+            if vals.get("month") and vals.get("day"):
+                vals["date"] = f"{vals['month']}月{vals['day']}日" if not vals["day"].endswith("日") else f"{vals['month']}月{vals['day']}"
+            name_cell = vals.get("name") or next((c for c in cells if spec.find(c)), row_text)
+            events.append(_make(base, source="table_row", event_name=name_cell[:100], **{"_f": {k: vals.get(k, "") for k in ("date", "venue", "target", "fee", "entry", "deadline")}}, evidence=_evidence(row_text, spec)))
             tables_used = True
 
     if not tables_used:
@@ -262,7 +325,7 @@ def extract_events(html: str, muni_name: str, spec: KeywordSpec, survey_title: s
                 if not spec.find_affirmative(l) or len(l) > 220 or l[:60] in seen:
                     continue
                 seen.add(l[:60])
-                near = l if parse_dates(l, ctx) else " ".join(lines[max(0, i - 2): i + 1])
+                near = l if parse_dates(l, ctx) else (_calendar_date(lines, i, ctx) or " ".join(lines[max(0, i - 2): i + 1]))
                 events.append(_make(base, source="line", event_name=_line_name(l, spec, page_name), **{"_f": {"date": near}}, evidence=_evidence(l, spec)))
                 if len(events) >= 12:
                     break

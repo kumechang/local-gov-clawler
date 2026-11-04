@@ -62,10 +62,30 @@ def test_events_workflows_are_wired():
     mod = importlib.util.module_from_spec(mod_spec)
     mod_spec.loader.exec_module(mod)
     cfg = json.loads((ROOT / "config" / "auto_events.json").read_text(encoding="utf-8"))
-    assert len(cfg["targets"]) == 47 and all(t["route"].startswith("ev1_") for t in cfg["targets"])
+    assert sum(1 for t in cfg["targets"] if t["route"].startswith("ev1_")) == 47 and sum(1 for t in cfg["targets"] if t["route"].startswith("ev2_")) == 44
     for n in ("events", "auto-events"):
         yaml.safe_load((ROOT / f".github/workflows/{n}.yml").read_text(encoding="utf-8"))
     ex = (ROOT / ".github/workflows/events.yml").read_text(encoding="utf-8")
     assert "events-${{ inputs.keyword }}-${{ inputs.route }}-${{ matrix.shard }}" in ex and "events-export" in ex and "data/events" in ex
     auto = yaml.safe_load((ROOT / ".github/workflows/auto-events.yml").read_text(encoding="utf-8"))
     assert auto["jobs"]["events"]["uses"] == "./.github/workflows/events.yml"
+
+
+def test_bracket_labels_and_calendar_tables():
+    f = ev._labeled_lines("【開催日】令和8年11月14日(土曜)\n【場所】矢本西小学校校庭\n【参加費】1チーム 1,000円\n【申込期間】令和8年10月5日～11月6日※予定\n【主催】東松島市教育委員会")
+    assert f["venue"] == "矢本西小学校校庭" and f["fee"].startswith("1チーム") and f["deadline"] == "令和8年10月5日~11月6日" and f["organizer"] == "東松島市教育委員会"
+
+    # 月・日が別の列で、結合された行は先頭の月が省かれる表(中之条町)
+    h = ("<html><head><title>スポーツ行事一覧(令和5年度)</title></head><body><main><h1>スポーツ行事一覧(令和5年度)</h1><table>"
+         "<tr><th>月</th><th>日</th><th>行事名</th><th>会場</th></tr>"
+         "<tr><td>6</td><td>4</td><td>第34回地区グラウンドゴルフ大会</td><td>町民運動場</td></tr>"
+         "<tr><td>11</td><td>ソフトテニス大会</td><td>テニスコート</td></tr>"
+         "<tr><td>5</td><td>第8回名久田地区グラウンドゴルフ大会</td><td>ふれあい広場</td></tr></table></main></body></html>")
+    r = ev.extract_events(h, "中之条町", SPEC)
+    assert [(e["event_name"], e["date_start"], e["venue"]) for e in r["events"]] == [("第34回地区グラウンドゴルフ大会", "2023-06-04", "町民運動場"), ("第8回名久田地区グラウンドゴルフ大会", "2023-06-05", "ふれあい広場")]
+
+    # 日付が『31日』と『土曜日』の別の行にあるカレンダー(高浜町)
+    h = ("<html><head><title>くらし・イベントカレンダー</title></head><body><main><h1>イベントカレンダー</h1><p>2026年10月のカレンダー</p><p>24日</p><p>土曜日</p><p>ヨガ教室</p>"
+         "<p>31日</p><p>土曜日</p><p>第6回高浜町グラウンド・ゴルフ大会の開催について</p></main></body></html>")
+    r = ev.extract_events(h, "高浜町", SPEC)
+    assert [(e["event_name"], e["date_start"]) for e in r["events"]] == [("第6回高浜町グラウンド・ゴルフ大会の開催について", "2026-10-31")]
