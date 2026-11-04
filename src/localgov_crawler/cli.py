@@ -16,6 +16,10 @@ from .fetcher import DEFAULT_CONTACT, Fetcher, build_user_agent
 from .pipeline import Config, analyze
 
 
+# PDF由来の行(PDFのリンク・PDFの本文)は、HTMLとして取得し直す抽出(施設・イベント)の対象にしない(D-154)
+PDF_FOUND_VIA = ("pdf", "pdf_link")
+
+
 def _shard(arg: str | None):
     if not arg:
         return None
@@ -273,7 +277,7 @@ def cmd_extract(args) -> int:
     for route in _routes_of(args):
         for s_ in sv.load_surveys(Path(args.surveys), spec.name, route):
             chosen.setdefault(s_["municipality"]["code"], s_)
-    pages = {code: [r for r in sv.export_rows(s_) if r["page_kind"] == "facility" and r["found_via"] != "pdf_link"] for code, s_ in chosen.items()}
+    pages = {code: [r for r in sv.export_rows(s_) if r["page_kind"] == "facility" and r["found_via"] not in PDF_FOUND_VIA] for code, s_ in chosen.items()}
     proxy = os.environ.get("CRAWL_PROXY_URL") if args.use_proxy else None
     contact = os.environ.get("CRAWLER_CONTACT", DEFAULT_CONTACT)
     cfg = ex.ExtractConfig(route=args.route, max_pages=args.max_pages)
@@ -341,7 +345,7 @@ def cmd_events(args) -> int:
             chosen.setdefault(code, s_)
             # 複数のrouteの『イベント』のページを合わせる(同じURLは1つ。探索と、ワード調査のついでに見つけたページの両方を取り出す)
             for r in sv.export_rows(s_):
-                if r["page_kind"] == "event" and r["found_via"] != "pdf_link":
+                if r["page_kind"] == "event" and r["found_via"] not in PDF_FOUND_VIA:
                     pages.setdefault(code, {}).setdefault(r["page_url"], r)
     pages = {code: list(rs.values()) for code, rs in pages.items()}
     proxy = os.environ.get("CRAWL_PROXY_URL") if args.use_proxy else None

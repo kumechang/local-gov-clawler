@@ -109,3 +109,12 @@ GitHub Actions: `crawl` ワークフローを手動実行(`.github/workflows/cra
 
 ## ワード調査(D-106/D-107)
 `localgov-crawler survey --from-route <ハブ判定のroute> --keywords config/keywords/<名前>.json --route <実行ラベル>`。入口(確定ページ・上位候補・ナビのスポーツ/イベント)から同じサイトを2階層まで、取得は1自治体200ページまで。結果は `data/survey/<keyword>/<route>/<都道府県>/<自治体>.json`(1行JSON)。主な項目: `found`(ワードがあったか)、`hit_roles`、`pages[]`(url・role・hit・snippets)、`nav_hits`、`pdf_link_hits`、`outcome`(surveyed / no_seed / no_url / fetch_failed)。集計は `survey-summary`(`data/summary/survey_<keyword>_<route>.{csv,md}`)。
+
+## 全国の週次バッチ(D-154)
+
+- `.github/workflows/weekly-batch.yml`: 毎週土曜6時JST(cron `0 21 * * 5`)と手動実行。定期実行はmainで動く。
+- 県ごとに `weekly-prefecture.yml`: ワード調査(PDF+OCR、`weekly_pdf_<県>`)・イベント専用の探索(`weekly_ev_<県>`)→施設の詳細(`weekly_<県>`)・イベントの詳細(`weekly_<県>`)。結果は毎週同じroute名で上書きし、gitに履歴が残る。
+- 出力: `data/survey/<keyword>/weekly_*`、`data/extract/<keyword>/weekly_*`、`data/events/<keyword>/weekly_*`、全国のCSV `data/export/weekly/`、レポート `data/summary/weekly/latest.md`。
+- 設定: `config/weekly_batch.json`(県・シャード・上限ページ・止めるスイッチ)、入力の一覧 `config/survey_sets/weekly_facility.json`・`weekly_events.json`。
+- 施設・イベントの取り出しは、PDF由来の行(`found_via` が `pdf`/`pdf_link`)を対象にしない(PDFの中のイベント・施設の取り出しは未対応)。
+- 別のワードで回すときは `config/weekly_batch.json` の `keyword` を変える(ワード設定 `config/keywords/<名前>.json` が必要。route名は同じなので、前のワードの結果は `data/*/<旧keyword>/` に残る)。

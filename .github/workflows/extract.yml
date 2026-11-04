@@ -16,6 +16,9 @@ on:
       shards:
         type: string
         default: "1"
+      survey_set:
+        type: string
+        default: ""
       commit_results:
         type: boolean
         default: false
@@ -33,6 +36,9 @@ on:
       shards:
         description: シャード数
         default: "1"
+      survey_set:
+        description: 対象ページを取るワード調査のrouteの一覧(config/survey_sets/<名前>.json)。空ならワードの設定名と同じ
+        default: ""
       commit_results:
         description: 結果とサマリをこのブランチへコミットする
         type: boolean
@@ -78,11 +84,12 @@ jobs:
         env:
           PREFECTURE: ${{ inputs.prefecture }}
           KEYWORD: ${{ inputs.keyword }}
+          SURVEY_SET: ${{ inputs.survey_set }}
           ROUTE: ${{ inputs.route }}
           TOTAL: ${{ inputs.shards }}
           SHARD: ${{ matrix.shard }}
         run: |
-          args=(extract --scope municipality --keywords "config/keywords/$KEYWORD.json" --routes-file "config/survey_sets/$KEYWORD.json" --route "$ROUTE" --shard "$SHARD/$TOTAL" --out out/extract --headless)
+          args=(extract --scope municipality --keywords "config/keywords/$KEYWORD.json" --routes-file "config/survey_sets/${SURVEY_SET:-$KEYWORD}.json" --route "$ROUTE" --shard "$SHARD/$TOTAL" --out out/extract --headless)
           if [ -n "$PREFECTURE" ]; then args+=(--prefecture "$PREFECTURE"); fi
           localgov-crawler "${args[@]}"
       - uses: actions/upload-artifact@v4

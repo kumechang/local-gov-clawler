@@ -25,7 +25,7 @@ def test_extract_workflows_are_wired():
         yaml.safe_load((ROOT / f".github/workflows/{n}.yml").read_text(encoding="utf-8"))
     ex = (ROOT / ".github/workflows/extract.yml").read_text(encoding="utf-8")
     assert "extract-${{ inputs.keyword }}-${{ inputs.route }}-${{ matrix.shard }}" in ex and "pattern: extract-${{ inputs.keyword }}-${{ inputs.route }}-*" in ex
-    assert "config/survey_sets/$KEYWORD.json" in ex and "--headless" in ex
+    assert "config/survey_sets/${SURVEY_SET:-$KEYWORD}.json" in ex and "--headless" in ex
     auto = yaml.safe_load((ROOT / ".github/workflows/auto-extract.yml").read_text(encoding="utf-8"))
     assert auto["jobs"]["extract"]["uses"] == "./.github/workflows/extract.yml"
     assert (ROOT / "config/survey_sets/grandgolf.json").exists() and (ROOT / "config/auto_extract.json").exists()

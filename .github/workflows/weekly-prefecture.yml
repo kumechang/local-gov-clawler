@@ -1,0 +1,99 @@
+name: weekly-prefecture
+# 毎週の自動実行(weekly-batch.yml)の、1県ぶんの流れ(D-154)。
+#   ワード調査(PDF+OCR) ┐
+#                       ├→ イベントの詳細
+#   ワード調査(イベント探索) ┘
+#   ワード調査(PDF+OCR) → 施設の詳細
+# どの段階も、結果は呼び出し元のブランチ(定期実行ならmain)へコミットする。
+on:
+  workflow_call:
+    inputs:
+      prefecture:
+        type: string
+        required: true
+      keyword:
+        type: string
+        required: true
+      from_route:
+        type: string
+        required: true
+      shards:
+        type: string
+        default: "1"
+      facility_route:
+        type: string
+        required: true
+      event_route:
+        type: string
+        required: true
+      detail_route:
+        type: string
+        required: true
+      facility_max_pages:
+        type: string
+        default: "200"
+      event_max_pages:
+        type: string
+        default: "300"
+
+permissions:
+  contents: read
+
+jobs:
+  survey_facility:
+    uses: ./.github/workflows/survey.yml
+    with:
+      prefecture: ${{ inputs.prefecture }}
+      keyword: ${{ inputs.keyword }}
+      route: ${{ inputs.facility_route }}
+      from_route: ${{ inputs.from_route }}
+      shards: ${{ inputs.shards }}
+      max_pages: ${{ inputs.facility_max_pages }}
+      read_pdf: "1"
+      ocr_pdf: "1"
+      commit_results: true
+    permissions:
+      contents: write
+
+  survey_event:
+    uses: ./.github/workflows/survey.yml
+    with:
+      prefecture: ${{ inputs.prefecture }}
+      keyword: ${{ inputs.keyword }}
+      route: ${{ inputs.event_route }}
+      from_route: ${{ inputs.from_route }}
+      shards: ${{ inputs.shards }}
+      max_pages: ${{ inputs.event_max_pages }}
+      event_focus: "1"
+      commit_results: true
+    permissions:
+      contents: write
+
+  extract:
+    needs: survey_facility
+    if: ${{ !cancelled() && needs.survey_facility.result == 'success' }}
+    uses: ./.github/workflows/extract.yml
+    with:
+      prefecture: ${{ inputs.prefecture }}
+      keyword: ${{ inputs.keyword }}
+      route: ${{ inputs.detail_route }}
+      survey_set: weekly_facility
+      shards: "1"
+      commit_results: true
+    permissions:
+      contents: write
+
+  events:
+    needs: [survey_facility, survey_event]
+    # どちらかの調査が終われば取り出す(片方が落ちても、もう片方のぶんは取り出す)
+    if: ${{ !cancelled() && (needs.survey_facility.result == 'success' || needs.survey_event.result == 'success') }}
+    uses: ./.github/workflows/events.yml
+    with:
+      prefecture: ${{ inputs.prefecture }}
+      keyword: ${{ inputs.keyword }}
+      route: ${{ inputs.detail_route }}
+      survey_set: weekly_events
+      shards: "1"
+      commit_results: true
+    permissions:
+      contents: write
