@@ -349,3 +349,23 @@ def test_image_only_pdf_is_read_by_ocr_when_enabled(monkeypatch):
     off = sv.survey_municipality(M, r, make_fetcher(routes), spec, sv.SurveyConfig(route="t", retry_wait=0, read_pdf=True))
     pdf = [p for p in off["pages"] if p["role"] == "pdf"][0]
     assert not pdf["hit"] and pdf["error_class"] == "pdf_no_text"  # 既定ではOCRしない
+
+
+def test_pdfium_is_serialized_across_threads(monkeypatch):
+    # PDFiumは複数のスレッドから同時に呼ぶと落ちる(D-152)。ロックの中でだけ呼ばれることを確かめる
+    import threading
+    state = {"inside": 0, "max": 0}
+
+    def fake_locked(body, max_pages):
+        state["inside"] += 1
+        state["max"] = max(state["max"], state["inside"])
+        import time
+        time.sleep(0.02)
+        state["inside"] -= 1
+        return "グラウンドゴルフ場があります。" * 3, 1
+
+    monkeypatch.setattr(sv, "_read_pdfium_locked", fake_locked)
+    ts = [threading.Thread(target=lambda: sv._read_pdfium(b"x", 3)) for _ in range(6)]
+    [t.start() for t in ts]
+    [t.join() for t in ts]
+    assert state["max"] == 1

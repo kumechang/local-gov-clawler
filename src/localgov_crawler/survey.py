@@ -6,6 +6,7 @@ from __future__ import annotations
 import heapq
 import json
 import re
+import threading
 from dataclasses import dataclass, field
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -354,7 +355,16 @@ PDF_OTHER_DOC = re.compile(r"議事録|会議録|議事概要|計画|報告書|�
 PDF_SPORTS_ROLES = ("listing", "sports_nav", "facility", "event")
 
 
+# PDFium(pypdfium2)は複数のスレッドから同時に呼ぶとプロセスごと落ちる(愛知・埼玉の試しで『Trace/breakpoint trap』、D-152)ので、PDFiumを使う所は1つずつにする
+_PDFIUM_LOCK = threading.RLock()
+
+
 def _read_pdfium(body: bytes, max_pages: int) -> tuple[str, int]:
+    with _PDFIUM_LOCK:
+        return _read_pdfium_locked(body, max_pages)
+
+
+def _read_pdfium_locked(body: bytes, max_pages: int) -> tuple[str, int]:
     import pypdfium2 as pdfium
     doc = pdfium.PdfDocument(body)
     try:
@@ -453,12 +463,13 @@ def ocr_pdf_text(body: bytes, max_pages: int = OCR_MAX_PAGES, dpi: int = OCR_DPI
         import pypdfium2 as pdfium
     except ImportError:
         return "", [], 0
-    doc = pdfium.PdfDocument(body)
-    try:
-        n = len(doc)
-        images = [doc[i].render(scale=dpi / 72).to_pil().convert("L") for i in range(min(n, max_pages))]
-    finally:
-        doc.close()
+    with _PDFIUM_LOCK:
+        doc = pdfium.PdfDocument(body)
+        try:
+            n = len(doc)
+            images = [doc[i].render(scale=dpi / 72).to_pil().convert("L") for i in range(min(n, max_pages))]
+        finally:
+            doc.close()
     texts: list[str] = []
     used: list[str] = []
     for name, fn in OCR_ENGINES:

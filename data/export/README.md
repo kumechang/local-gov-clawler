@@ -44,3 +44,7 @@
 - `grandgolf_events_detail_in_period.csv`: 令和7年度以降の行(212行・132自治体)。
 - `grandgolf_events_detail_gg_only.csv`: グラウンドゴルフ専用で期間外を除く行(51行)。
 - 範囲外: ワード調査が到達しなかったイベントのページ、PDFの中身、JavaScriptで描画するカレンダーの日付。
+
+## 新しく見つかった施設のページ・イベント(2026-11-04)
+- `grandgolf_events_detail.csv` / `..._in_period.csv` / `..._gg_only.csv`: イベントの詳細(ev4。791行・302自治体、令和7年度以降 387行、専用(期間外を除く)118行)。
+- `grandgolf_new_facility_pages.csv`: **これまでの施設のページ一覧(`grandgolf_places.csv`)に無かった、グラウンドゴルフの記載のある施設のページ**(イベント専用の探索 evd1 と、PDFの試し pdf4 で見つかったもの)。ページ単位で、施設名・住所・電話の取り出しはまだ。`found_via` は見つけた経路、`facility_like_title` は題名が施設らしいもの、`new_municipality` は従来の一覧に無かった自治体。
