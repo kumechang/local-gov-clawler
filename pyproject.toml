@@ -16,7 +16,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest>=8", "pyyaml>=6"]
 headless = ["playwright>=1.40"]
-pdf = ["pypdf>=4"]
+pdf = ["pypdfium2>=4", "pypdf>=4"]
 
 [project.scripts]
 localgov-crawler = "localgov_crawler.cli:main"

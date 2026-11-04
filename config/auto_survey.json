@@ -821,6 +821,33 @@
       "from_route": "redecide_v12_1",
       "max_pages": 200,
       "read_pdf": "1"
+    },
+    {
+      "prefecture": "愛知県",
+      "keyword": "grandgolf",
+      "route": "pdf4_aichi",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200,
+      "read_pdf": "1",
+      "ocr_pdf": "1"
+    },
+    {
+      "prefecture": "福井県",
+      "keyword": "grandgolf",
+      "route": "pdf4_fukui",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200,
+      "read_pdf": "1",
+      "ocr_pdf": "1"
+    },
+    {
+      "prefecture": "埼玉県",
+      "keyword": "grandgolf",
+      "route": "pdf4_saitama",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200,
+      "read_pdf": "1",
+      "ocr_pdf": "1"
     }
   ]
 }

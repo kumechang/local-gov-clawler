@@ -28,6 +28,9 @@ on:
       read_pdf:
         type: string
         default: ""
+      ocr_pdf:
+        type: string
+        default: ""
       commit_results:
         type: boolean
         default: false
@@ -56,6 +59,9 @@ on:
         default: ""
       read_pdf:
         description: 空でなければ、スポーツ関連のページから出るPDFを読む(D-144)
+        default: ""
+      ocr_pdf:
+        description: 空でなければ、画像だけのPDFをOCRで読む(D-149。read_pdf が前提)
         default: ""
       commit_results:
         description: 結果とサマリをこのブランチへコミットする
@@ -96,6 +102,12 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -e ".[headless,pdf]"
+      - name: install OCR (tesseract 日本語 + RapidOCR)
+        if: ${{ inputs.ocr_pdf != '' }}
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q tesseract-ocr tesseract-ocr-jpn
+          pip install "rapidocr>=3" onnxruntime
       - name: install chromium (JS描画のサイト用)
         run: python -m playwright install --with-deps chromium
       - name: survey
@@ -107,6 +119,7 @@ jobs:
           MAX_PAGES: ${{ inputs.max_pages }}
           EVENT_FOCUS: ${{ inputs.event_focus }}
           READ_PDF: ${{ inputs.read_pdf }}
+          OCR_PDF: ${{ inputs.ocr_pdf }}
           TOTAL: ${{ inputs.shards }}
           SHARD: ${{ matrix.shard }}
         run: |
@@ -114,6 +127,7 @@ jobs:
           if [ -n "$PREFECTURE" ]; then args+=(--prefecture "$PREFECTURE"); fi
           if [ -n "$EVENT_FOCUS" ]; then args+=(--event-focus); fi
           if [ -n "$READ_PDF" ]; then args+=(--read-pdf); fi
+          if [ -n "$OCR_PDF" ]; then args+=(--ocr-pdf); fi
           localgov-crawler "${args[@]}"
       - uses: actions/upload-artifact@v4
         with:

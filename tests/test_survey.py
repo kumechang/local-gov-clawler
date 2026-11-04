@@ -309,3 +309,43 @@ def test_survey_reads_pdfs_from_sports_pages_only(monkeypatch):
     assert len(rows) == 1 and rows[0]["page_kind"] == "facility"
     off = sv.survey_municipality(M, r, make_fetcher(routes), SPEC, sv.SurveyConfig(route="t", retry_wait=0))
     assert not [p for p in off["pages"] if p["role"] == "pdf"]  # 既定ではPDFを読まない
+
+
+def test_pdf_readers_fall_back_in_order(monkeypatch):
+    def first(body, max_pages):
+        raise RuntimeError("broken")
+
+    def second(body, max_pages):
+        return "グラウンドゴルフ場が1か所あります。\r\n平成大橋上流右岸広場にあります。", 3
+
+    monkeypatch.setattr(sv, "PDF_READERS", (("a", first), ("b", second)))
+    text, pages, state = sv.pdf_text(b"x")
+    assert state == "ok" and pages == 3 and "\r" not in text and text.split("\n")[0].startswith("グラウンドゴルフ")
+    monkeypatch.setattr(sv, "PDF_READERS", (("a", first),))
+    assert sv.pdf_text(b"x")[2] == "error"
+    monkeypatch.setattr(sv, "PDF_READERS", (("a", lambda b, m: ("", 2)),))
+    assert sv.pdf_text(b"x") == ("", 2, "no_text")
+
+    def missing(body, max_pages):
+        raise ImportError("no module")
+
+    monkeypatch.setattr(sv, "PDF_READERS", (("a", missing),))
+    assert sv.pdf_text(b"x")[2] == "no_reader"
+
+
+def test_image_only_pdf_is_read_by_ocr_when_enabled(monkeypatch):
+    spec = sv.KeywordSpec("grandgolf", "グラウンドゴルフ", [__import__("re").compile(r"グラウ?ンド[\s・･\-ー]*ゴルフ")], [__import__("re").compile(r"グ?ラウ?ン[ドト][\s・･\-ー]*[ゴコ][ルレ]フ")])
+    monkeypatch.setattr(sv, "pdf_text", lambda body, max_pages=30: ("", 1, "no_text"))
+    monkeypatch.setattr(sv, "ocr_pdf_text", lambda body, **kw: ("葛飾区グラント・コルフ協会\n活動場所 柴又公園", ["tesseract"], 1))  # 『ド』が『ト』に誤読された文字
+    routes = {
+        "/robots.txt": (404, "text/plain", ""),
+        "/sports/": page("スポーツ施設", '<a href="/doc/kyokai.pdf">協会のチラシ</a>'),
+        "/doc/kyokai.pdf": (200, "application/pdf", "%PDF-scan"),
+    }
+    r = result(cands=[("スポーツ施設", "https://www.city.example.jp/sports/")])
+    on = sv.survey_municipality(M, r, make_fetcher(routes), spec, sv.SurveyConfig(route="t", retry_wait=0, read_pdf=True, ocr_pdf=True))
+    pdf = [p for p in on["pages"] if p["role"] == "pdf"][0]
+    assert pdf["hit"] and pdf["ocr"] and pdf["pdf_state"] == "ocr" and pdf["ocr_engines"] == ["tesseract"] and "柴又公園" in pdf["snippets"][0] + "柴又公園"
+    off = sv.survey_municipality(M, r, make_fetcher(routes), spec, sv.SurveyConfig(route="t", retry_wait=0, read_pdf=True))
+    pdf = [p for p in off["pages"] if p["role"] == "pdf"][0]
+    assert not pdf["hit"] and pdf["error_class"] == "pdf_no_text"  # 既定ではOCRしない

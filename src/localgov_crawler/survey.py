@@ -68,11 +68,20 @@ class KeywordSpec:
     name: str
     label: str
     patterns: list[re.Pattern]
+    ocr_patterns: list[re.Pattern] = field(default_factory=list)  # OCRの文字の崩れ(1字の誤り)を許す、ゆるいパターン(D-149)
 
     @classmethod
     def load(cls, path: str | Path) -> "KeywordSpec":
         d = json.loads(Path(path).read_text(encoding="utf-8"))
-        return cls(d["name"], d.get("label", d["name"]), [re.compile(p) for p in d["patterns"]])
+        return cls(d["name"], d.get("label", d["name"]), [re.compile(p) for p in d["patterns"]], [re.compile(p) for p in d.get("ocr_patterns", [])])
+
+    def find_ocr(self, text: str) -> list[re.Match]:
+        """OCRの文字に当てる。通常のパターンに加えて、ゆるいパターン(ocr_patterns)でも探す。"""
+        t = norm_text(text)
+        out = self.find(t)
+        for p in self.ocr_patterns:
+            out += list(p.finditer(t))
+        return sorted(out, key=lambda m: m.start())
 
     def find(self, text: str) -> list[re.Match]:
         t = norm_text(text)
@@ -145,6 +154,7 @@ class SurveyConfig:
     max_event_pages: int = 80  # イベントのページ(月次の一覧など)で上限を使い切らないための枠
     event_focus: bool = False  # イベント専用の探索(D-141): イベント・お知らせ・カレンダーを入口にし、イベントのページを優先してたどる
     read_pdf: bool = False  # スポーツ関連のページから出るPDFを読む(D-144)
+    ocr_pdf: bool = False  # 画像だけのPDFをOCRで読む(D-149。read_pdf が前提)
     max_pdfs: int = 20  # 1自治体で読むPDFの数
     pdf_max_pages: int = 30  # 1つのPDFで読むページ数
     snippet_chars: int = 30
@@ -205,6 +215,11 @@ def match_keys(spec: KeywordSpec, text: str, limit: int = 5, affirmative: bool =
 def snippets(spec: KeywordSpec, text: str, chars: int = 30, limit: int = 3, affirmative: bool = False) -> list[str]:
     pairs = spec.find_affirmative(text) if affirmative else spec.find_lines(text)
     return [line[max(0, m.start() - chars): m.end() + chars] for line, m in pairs[:limit]]
+
+
+def _ocr_snippets(spec: KeywordSpec, text: str, chars: int = 30, limit: int = 3) -> list[str]:
+    t = norm_text(text)
+    return [t[max(0, m.start() - chars): m.end() + chars] for m in spec.find_ocr(t)[:limit]]
 
 
 def seeds_from_result(result: dict, max_seeds: int = 12) -> list[dict]:
@@ -339,23 +354,126 @@ PDF_OTHER_DOC = re.compile(r"議事録|会議録|議事概要|計画|報告書|�
 PDF_SPORTS_ROLES = ("listing", "sports_nav", "facility", "event")
 
 
+def _read_pdfium(body: bytes, max_pages: int) -> tuple[str, int]:
+    import pypdfium2 as pdfium
+    doc = pdfium.PdfDocument(body)
+    try:
+        n = len(doc)
+        parts = []
+        for i in range(min(n, max_pages)):
+            page = doc[i]
+            tp = page.get_textpage()
+            parts.append(tp.get_text_range())
+            tp.close()
+            page.close()
+        return "\n".join(parts), n
+    finally:
+        doc.close()
+
+
+def _read_pypdf(body: bytes, max_pages: int) -> tuple[str, int]:
+    import io
+
+    import pypdf
+    reader = pypdf.PdfReader(io.BytesIO(body))
+    if reader.is_encrypted:
+        raise ValueError("encrypted")
+    return "\n".join((pg.extract_text() or "") for pg in reader.pages[:max_pages]), len(reader.pages)
+
+
+# PDFの読み取り器(D-147)。日本語の自治体PDF 53件で比べた結果、pypdfium2(PDFium)が最も速く、ワードの検出も最も多かった。
+# pypdfium2 を先に使い、読めない・文字が取れないときだけ pypdf で読み直す(どちらも無ければ no_reader)。
+PDF_READERS = (("pypdfium2", _read_pdfium), ("pypdf", _read_pypdf))
+
+
 def pdf_text(body: bytes, max_pages: int = 30) -> tuple[str, int, str]:
     """PDFの本文(ページ内の改行は残す)・ページ数・状態(ok / no_text / error / no_reader)。画像だけのPDFは no_text。"""
-    import io
-    try:
-        import pypdf
-    except ImportError:
+    available = False
+    pages = 0
+    for _name, reader in PDF_READERS:
+        try:
+            raw, n = reader(body, max_pages)
+        except ImportError:
+            continue
+        except Exception:
+            available = True
+            continue
+        available = True
+        pages = max(pages, n)
+        text = "\n".join(norm_text(l) for l in raw.replace("\r\n", "\n").replace("\r", "\n").split("\n") if norm_text(l))
+        if len(text) >= 20:
+            return text, pages, "ok"
+    if not available:
         return "", 0, "no_reader"
+    return "", pages, ("no_text" if pages else "error")
+
+
+# 画像だけのPDFをOCRで読む(D-149)
+OCR_MAX_PAGES = 6
+OCR_DPI = 200
+_RAPID = {"engine": None, "lock": None}
+
+
+def _ocr_tesseract(img) -> str:
+    import shutil
+    import subprocess
+    import tempfile
+    exe = shutil.which("tesseract")
+    if not exe:
+        raise ImportError("tesseract")
+    with tempfile.TemporaryDirectory() as td:
+        path = f"{td}/p.png"
+        img.save(path)
+        out = subprocess.run([exe, path, "stdout", "-l", "jpn", "--psm", "3"], capture_output=True, timeout=180, env={"OMP_THREAD_LIMIT": "1", "PATH": "/usr/bin:/bin:/usr/local/bin"})
+        return out.stdout.decode("utf-8", "replace")
+
+
+def _ocr_rapidocr(img) -> str:
+    import threading
+
+    import numpy as np
+    from rapidocr import LangRec, ModelType, OCRVersion, RapidOCR
+    if _RAPID["engine"] is None:
+        _RAPID["lock"] = _RAPID["lock"] or threading.Lock()
+        mt = ModelType.MOBILE
+        _RAPID["engine"] = RapidOCR(params={"Det.ocr_version": OCRVersion.PPOCRV5, "Det.model_type": mt, "Rec.ocr_version": OCRVersion.PPOCRV5, "Rec.lang_type": LangRec.CH, "Rec.model_type": mt})
+    with _RAPID["lock"]:
+        r = _RAPID["engine"](np.asarray(img.convert("RGB")))
+    return "\n".join(r.txts) if r is not None and r.txts else ""
+
+
+# OCRエンジン。日本語の自治体PDFのページ画像20ページで比べた(D-149): Tesseract(標準=fast)は速く(約1秒/ページ)、低解像度でも頑健。
+# RapidOCR(PP-OCRv5)はきれいな画像で最も正確。両方で読んで合わせる(どちらかが無くても動く)。
+OCR_ENGINES = (("tesseract", _ocr_tesseract), ("rapidocr", _ocr_rapidocr))
+
+
+def ocr_pdf_text(body: bytes, max_pages: int = OCR_MAX_PAGES, dpi: int = OCR_DPI) -> tuple[str, list[str], int]:
+    """画像だけのPDFの先頭 max_pages ページを画像にしてOCRで読む。(本文, 使ったエンジン, ページ数)。エンジンが1つも無ければ本文は空、エンジンは空。"""
     try:
-        reader = pypdf.PdfReader(io.BytesIO(body))
-        if reader.is_encrypted:
-            return "", len(reader.pages), "error"
-        pages = reader.pages[:max_pages]
-        text = "\n".join((pg.extract_text() or "") for pg in pages)
-    except Exception:
-        return "", 0, "error"
-    text = "\n".join(norm_text(l) for l in text.split("\n") if norm_text(l))
-    return text, len(reader.pages), ("ok" if len(text) >= 20 else "no_text")
+        import pypdfium2 as pdfium
+    except ImportError:
+        return "", [], 0
+    doc = pdfium.PdfDocument(body)
+    try:
+        n = len(doc)
+        images = [doc[i].render(scale=dpi / 72).to_pil().convert("L") for i in range(min(n, max_pages))]
+    finally:
+        doc.close()
+    texts: list[str] = []
+    used: list[str] = []
+    for name, fn in OCR_ENGINES:
+        parts, ok = [], False
+        for img in images:
+            try:
+                parts.append(fn(img))
+                ok = True
+            except Exception:  # エンジンが無い(ImportError)・読み取りに失敗: そのエンジンは飛ばす
+                continue
+        if ok:
+            used.append(name)
+            texts.append("\n".join(parts))
+    merged = "\n".join(norm_text(l) for t in texts for l in t.replace("\r", "\n").split("\n") if norm_text(l))
+    return merged, used, n
 
 
 def classify_pdf(title: str, link_text: str, url: str) -> str:
@@ -523,7 +641,13 @@ def _read_pdfs(pdf_queue: dict, ctx: _Ctx, spec: KeywordSpec, cfg: SurveyConfig,
             out["pages"].append(page)
             continue
         text, npages, state = pdf_text(res.body, cfg.pdf_max_pages)
-        page["pdf_pages"], page["pdf_state"] = npages, state
+        ocr = False
+        if state == "no_text" and cfg.ocr_pdf:
+            otext, used, _n = ocr_pdf_text(res.body)
+            if used and otext:
+                text, state, ocr = otext, "ok", True
+                page["ocr_engines"] = used
+        page["pdf_pages"], page["pdf_state"] = npages, ("ocr" if ocr else state)
         if state != "ok":
             page["error_class"] = f"pdf_{state}"
             out["pages"].append(page)
@@ -531,12 +655,13 @@ def _read_pdfs(pdf_queue: dict, ctx: _Ctx, spec: KeywordSpec, cfg: SurveyConfig,
         fname = unquote(urlsplit(url).path.rsplit("/", 1)[-1])
         first = next((l for l in text.split("\n") if len(l) >= 4), "")[:60]
         title = link_text or first or fname
-        hits_b = spec.find_affirmative(text)
-        all_pairs = spec.find_lines(text)
+        hits_b = spec.find_affirmative(text) if not ocr else [(text[:0], m) for m in spec.find_ocr(text)]  # OCRの文は、否定の判定をしない(文字が崩れるため)
+        all_pairs = spec.find_lines(text) if not ocr else hits_b
         affirmed = {(l, m.start()) for l, m in hits_b}
         page.update(title=title[:80], kind=classify_pdf(f"{title} {first}", link_text, url), text_len=len(text), hit=bool(hits_b), count=len(hits_b), negated=len(all_pairs) - len(hits_b),
                     negated_samples=[l[max(0, m.start() - 20): m.end() + 60] for l, m in all_pairs if (l, m.start()) not in affirmed][:2], in_title=bool(spec.in_text(title)),
-                    snippets=snippets(spec, text, cfg.snippet_chars, affirmative=True), keys=match_keys(spec, text, affirmative=True), link_hits=[])
+                    snippets=(snippets(spec, text, cfg.snippet_chars, affirmative=True) if not ocr else _ocr_snippets(spec, text, cfg.snippet_chars)),
+                    keys=(match_keys(spec, text, affirmative=True) if not ocr else sorted({m.group(0) for m in spec.find_ocr(text)})[:5]), link_hits=[], ocr=ocr)
         out["pages"].append(page)
 
 
