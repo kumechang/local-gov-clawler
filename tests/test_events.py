@@ -114,11 +114,11 @@ def test_event_focus_seeds_priority_and_pager():
     assert sv._priority("event", 1, "第5回○○大会", SPEC, True) == (1, 1) and sv._priority("event", 1, "第5回○○大会", SPEC) == (3, 1)
 
 
-def test_pdf_pilot_is_wired():
+def test_pdf_reading_is_wired_but_hokkaido_pilot_is_not_scheduled():
     cfg = json.loads((ROOT / "config" / "auto_survey.json").read_text(encoding="utf-8"))
-    pdf = [t for t in cfg["targets"] if t.get("read_pdf")]
-    assert [t["route"] for t in pdf] == ["pdf1_hokkaido", "pdf3_hokkaido"] and all(t["prefecture"] == "北海道" for t in pdf)
-    assert "--read-pdf" in (ROOT / ".github/workflows/survey.yml").read_text(encoding="utf-8")
+    assert [t["route"] for t in cfg["targets"] if t.get("read_pdf")] == ["pdf1_hokkaido"]  # 実行済み。pdf3(OCR)はユーザー判断で実行しない(D-150)
+    yml = (ROOT / ".github/workflows/survey.yml").read_text(encoding="utf-8")
+    assert "--read-pdf" in yml and "--ocr-pdf" in yml and "tesseract-ocr-jpn" in yml
     assert "pypdfium2" in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
 
 
