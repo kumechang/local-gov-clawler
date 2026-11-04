@@ -1,0 +1,21 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+41201,佐賀市,佐賀県,surveyed,True,True,5,event|facility|other,event|facility,67,exhausted,0,3,https://www.city.saga.lg.jp/bunka-sports/sports/3/7739.html,event,event,【R8.8.3競技結果更新】第79回佐賀市民スポーツ大会について/佐賀市公式ホームページ,15.グラウンド・ゴルフ (PDFファイル: 41.0KB)
+41202,唐津市,佐賀県,surveyed,True,True,7,event|facility|other,event|facility|listing,300,max_pages,0,1,https://www.city.karatsu.lg.jp/life/8/58/316/,listing,facility,スポーツ施設(施設案内) - 唐津市ホームページ,2024年3月1日更新唐津市相知天徳の丘運動公園グラウンド・ゴルフ場
+41203,鳥栖市,佐賀県,surveyed,True,True,16,event|facility|organization|other,event,238,exhausted,0,1,https://www.city.tosu.lg.jp/soshiki/12/28291.html,event,organization,鳥栖市ホームページ - 鳥栖市スポーツ協会,鳥栖市グラウンド・ゴルフ協会
+41204,多久市,佐賀県,surveyed,True,False,11,event|facility|other,event,150,exhausted,0,0,https://www.city.taku.lg.jp/life/2/70/215/,event,event,イベント・お知らせ - 多久市ホームページ,多久市グリーンパーク オープニング記念 多久市民グラウンド・ゴルフ大会が開催されました
+41205,伊万里市,佐賀県,surveyed,True,False,6,event|facility|other,event|facility|listing,259,exhausted,0,0,https://www.city.imari.lg.jp/23841.htm,listing,facility,体育施設使用料/伊万里市,伊万里松浦グラウンド・ゴルフ場
+41206,武雄市,佐賀県,no_seed,False,False,0,,,0,,0,0,,,,,
+41207,鹿島市,佐賀県,surveyed,True,True,6,event|facility|other,event|facility|listing,111,exhausted,0,1,https://www.city.saga-kashima.lg.jp/main/33459.html,listing,facility,グラウンド・ゴルフ(公開競技) | 鹿島市[佐賀県],
+41208,小城市,佐賀県,surveyed,True,False,3,event|facility,event|facility,83,exhausted,0,0,https://www.city.ogi.lg.jp/main/5454.html,facility,facility,小城市:牛津運動公園,なお、グラウンドゴルフなどでも利用されています。
+41209,嬉野市,佐賀県,surveyed,True,False,3,event|facility,event|listing,124,exhausted,0,0,https://www.city.ureshino.lg.jp/shisetsu/miyuki.html,listing,facility,嬉野市|嬉野総合運動公園(みゆき公園),みゆきグラウンド・ゴルフ場
+41210,神埼市,佐賀県,surveyed,True,False,1,facility,listing,105,exhausted,0,0,https://www.city.kanzaki.saga.jp/main/457.html,listing,facility,グラウンド|神埼市,グラウンドゴルフ
+41327,吉野ヶ里町,佐賀県,surveyed,True,False,1,facility,facility,29,exhausted,0,0,https://www.town.yoshinogari.lg.jp/lifeinfo/shisetsu/968.html,facility,facility,スポーツを楽しむなら/吉野ヶ里町,備品貸出:グランドゴルフ、モルック、いごてだま など
+41341,基山町,佐賀県,surveyed,True,False,3,facility|other,event,91,exhausted,0,0,https://www.town.kiyama.lg.jp/kiji0036381/index.html,event,other,基山町軽スポーツ普及応援金の申請受付を開始します。 / 基山町,・グラウンドゴルフ ・ミニバレーボール ・ラージボール卓球 ・太極拳 ・ターゲ
+41345,上峰町,佐賀県,surveyed,True,True,3,event|facility,event,60,exhausted,0,1,https://www.town.kamimine.lg.jp/kiji0031445/index.html,event,event,(10月6日更新)第78回県民スポーツ大会のご案内について / 上峰町ホームページ,・グラウンドゴルフ(一般男女混成)
+41346,みやき町,佐賀県,surveyed,True,False,2,facility,facility|listing,61,exhausted,0,0,https://www.town.miyaki.lg.jp/kanko/shisetsu/_1279.html,listing,facility,みやき町 町内スポーツ施設について,グラウンドゴルフ、サッカーほか
+41387,玄海町,佐賀県,surveyed,False,False,0,,,72,exhausted,0,0,,,,,
+41401,有田町,佐賀県,surveyed,False,False,0,,,71,exhausted,0,0,,,,,
+41423,大町町,佐賀県,surveyed,False,False,0,,,74,exhausted,0,0,,,,,
+41424,江北町,佐賀県,surveyed,False,False,0,,,94,exhausted,0,0,,,,,
+41425,白石町,佐賀県,surveyed,True,False,2,facility|organization,event|listing,32,exhausted,0,0,https://www.town.shiroishi.lg.jp/jyuumin/shisetsu/_1743.html,listing,facility,白石町ホームページ |スポーツ施設,子供用の遊具があるわんぱく広場や芝生でグラウンドゴルフなどができるイベント広場があります。また、公園のシンボルであ
+41441,太良町,佐賀県,surveyed,False,False,0,,,98,exhausted,0,0,,,,,
