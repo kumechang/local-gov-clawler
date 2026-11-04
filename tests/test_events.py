@@ -120,3 +120,31 @@ def test_pdf_pilot_is_wired():
     assert [t["route"] for t in pdf] == ["pdf1_hokkaido"] and pdf[0]["prefecture"] == "北海道"
     assert "--read-pdf" in (ROOT / ".github/workflows/survey.yml").read_text(encoding="utf-8")
     assert "pypdf" in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+
+
+def test_calendar_with_day_headers_site_name_title_and_numbered_values():
+    # 日付の見出し(『21日』『土曜日』)の下にイベントが並ぶ月間カレンダー(福山市・さつま町)。場所の値のグラウンドゴルフ場は、イベントにしない
+    lines = ["2026年", "(令和", "8年)", "11月", "のカレンダー", "20日", "金曜", "税の相談会", "21日", "土曜日", "沼隈グラウンド・ゴルフ交歓会", "催し・講座スポーツ", "時間", "午前8時30分~正午", "場所", "沼隈グラウンド・ゴルフ場",
+             "沼隈グラウンド・ゴルフ交歓会", "催し・講座スポーツ", "時間", "午前8時30分~正午", "場所", "沼隈グラウンド・ゴルフ場", "22日", "日曜日", "ウォーキング"]
+    evs = ev.calendar_events(lines, SPEC, {}, "イベントカレンダー", 2026)
+    assert [(e["event_name"], e["_f"]["date"], e["_f"]["venue"]) for e in evs] == [("沼隈グラウンド・ゴルフ交歓会", "2026年11月21日", "沼隈グラウンド・ゴルフ場")]
+
+    # 題名・h1が自治体のサイト名のとき、本文の見出し(h2)をイベント名にする(吉川市)
+    h = ("<html><head><title>吉川市公式ホームページ</title></head><body><h1>吉川市公式ホームページ</h1><h2>Group NAV</h2><main><h2>第11回グラウンドゴルフ大会参加者募集中</h2>"
+         "<p>日時 2026年11月22日(日曜日)</p><p>場所 吉川運動公園</p></main></body></html>")
+    r = ev.extract_events(h, "吉川市", SPEC)
+    assert r["events"][0]["event_name"] == "第11回グラウンドゴルフ大会参加者募集中" and r["events"][0]["date_start"] == "2026-11-22"
+
+    # 項目の値は、次の項目の番号(『3.参加人数』)から後ろを落とす(藤岡市)
+    assert ev._clean_value("保美憩いの広場 3.参加人数 25名") == "保美憩いの広場"
+    assert ev._clean_value("市民体育館 1-2-3 ※雨天中止") == "市民体育館 1-2-3"
+
+
+def test_ev4_reextracts_all_event_pages():
+    cfg = json.loads((ROOT / "config" / "auto_events.json").read_text(encoding="utf-8"))
+    ev4 = [t for t in cfg["targets"] if t["route"].startswith("ev4_")]
+    assert len(ev4) == 44 and all(t["survey_set"] == "grandgolf_events_all" for t in ev4)
+    allset = json.loads((ROOT / "config" / "survey_sets" / "grandgolf_events_all.json").read_text(encoding="utf-8"))["routes"]
+    ev = json.loads((ROOT / "config" / "survey_sets" / "grandgolf_events.json").read_text(encoding="utf-8"))["routes"]
+    base = json.loads((ROOT / "config" / "survey_sets" / "grandgolf.json").read_text(encoding="utf-8"))["routes"]
+    assert allset == ev + base

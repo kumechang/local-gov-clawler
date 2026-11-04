@@ -199,3 +199,5 @@
 - [ ] 北海道の試し(pdf1_hokkaido): mainへのマージで自動実行(PR・マージは指示待ち)
 - [x] イベントの取り出し ev3 の実行・判定(D-145)。CSV3種を更新(799行・303自治体)
 - [ ] ユーザー判断待ち: イベント15行(ev3)の確認(`data/ground_truth/events_grandgolf_ev3_sample.csv`)
+- [x] イベント15行(ev3)の確認(D-146): 全体OK、修正3点を反映。ev4(`ev4_*`)を設定
+- [ ] PR・マージ: ユーザーの指示で、修正がそろってからまとめて(ev4とPDFの試しpdf1_hokkaido)

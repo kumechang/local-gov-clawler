@@ -130,6 +130,28 @@ def kind_of(title: str, body_gg_in_title: bool) -> str:
     return "その他(ワードの記載あり)"
 
 
+SITE_NAME_LIKE = re.compile(r"公式|ホームページ|ウェブサイト|Webサイト|トップ|HOME", re.I)
+GENERIC_NAME = re.compile(r"^(?:イベント|お知らせ|カレンダー|イベントカレンダー|新着情報|スポーツ|ニュース|トップページ)$")
+GENERIC_H2 = re.compile(r"NAV|BreadCrumb|Navigation|ナビ|メニュー|サイト|カテゴリー|関連|フッター|検索|学ぶ|楽しむ|スポーツ$|お問い?合わせ|更新日", re.I)
+
+
+def page_name_of(soup: BeautifulSoup, raw_title: str, h1t: str, muni_name: str, survey_title: str, spec: KeywordSpec) -> str:
+    """イベント名。h1が自治体名・サイト名のとき(吉川市)は、本文の見出し(h2・h3)からイベントらしいものを選ぶ。"""
+    def site_like(t: str) -> bool:
+        t = norm_text(t)
+        return not t or t == muni_name or bool(GENERIC_NAME.match(t)) or (muni_name in t and bool(SITE_NAME_LIKE.search(t))) or len(clean_event_name(t, muni_name)) < 3
+
+    first = clean_event_name(h1t if h1t and not site_like(h1t) else (raw_title or survey_title), muni_name)
+    if not site_like(first):
+        return first
+    heads = [norm_text(h.get_text(" ")) for h in soup.find_all(["h2", "h3"])]
+    heads = [t for t in heads if 4 <= len(t) <= 60 and not GENERIC_H2.search(t)]
+    for t in heads:
+        if spec.in_text(t) or re.search(r"大会|教室|体験|募集|開催|イベント|交流|フェスタ|祭", t):
+            return clean_event_name(t, muni_name)
+    return first or clean_event_name(survey_title, muni_name)
+
+
 def clean_event_name(title: str, muni_name: str) -> str:
     n = norm_text(title)
     n = re.split(r"\s*[|｜]\s*|\s+-\s+|\s+–\s+|:\s*" + re.escape(muni_name), n)[0]
@@ -141,8 +163,15 @@ def clean_event_name(title: str, muni_name: str) -> str:
 def _first(pairs: list[tuple[str, str, str]], name: str) -> str:
     for k, v, _ in pairs:
         if _label_of(k) == name and v:
-            return norm_text(v)[:160]
+            return _clean_value(norm_text(v))
     return ""
+
+
+def _clean_value(v: str) -> str:
+    """項目の値を整える: 注記(※)と、次の項目の番号(『3.参加人数』)から後ろを落とす。"""
+    v = re.split(r"\s*※", v)[0]
+    v = re.split(r"\s+\d{1,2}\s*[.．、)）]\s*[^\d\s]", v)[0]
+    return v.strip()[:160]
 
 
 LABEL_LINE = re.compile(
@@ -181,7 +210,7 @@ def _labeled_lines(body: str) -> dict[str, str]:
                 nxt.append(norm_text(l2))
             rest = " ".join(nxt)
         if rest:
-            out[name] = re.split(r"\s*※", rest)[0].strip()[:160]
+            out[name] = _clean_value(rest)
     return out
 
 
@@ -231,6 +260,67 @@ def _calendar_date(lines: list[str], i: int, ctx: int | None) -> str:
     return ""
 
 
+WEEKDAY_LINE = re.compile(r"^[日月火水木金土]曜(?:日)?$")
+DAY_LINE = re.compile(r"^(\d{1,2})\s*日?$")
+MONTH_CTX = re.compile(r"^(20\d\d)\s*年(?:\s*[(（][^)）]*[)）])?\s*(\d{1,2})\s*月(?!\s*\d)")
+CAL_LABEL = re.compile(r"^(日|時間|場所|会場)$")
+
+
+def _month_context(lines: list[str], i: int) -> tuple[int, int] | None:
+    """行 i より前で最も近い『2026年11月』(『2026年』『(令和8年)11月』が別の行でもよい)。"""
+    for j in range(i, max(-1, i - 400), -1):
+        m = MONTH_CTX.match(" ".join(lines[j: j + 4]))
+        if m:
+            return int(m.group(1)), int(m.group(2))
+    return None
+
+
+def calendar_events(lines: list[str], spec: KeywordSpec, base: dict, page_name: str, ctx_year: int | None = None) -> list[dict]:
+    """カレンダー・予定表(日付の見出しの行の下にイベントが並ぶ型。福山市・さつま町)から、グラウンドゴルフのイベントを取る。
+    日付=直前の『N日(+曜日)』の行と、直前の『2026年11月』。期間の『日』、『時間』『場所』の項目があれば取る。同じイベントは1つ。"""
+    events: list[dict] = []
+    seen: set[tuple] = set()
+    day = None
+    for i, l in enumerate(lines):
+        m = DAY_LINE.match(l)
+        if m and i + 1 < len(lines) and WEEKDAY_LINE.match(lines[i + 1]):
+            day = int(m.group(1))
+            continue
+        if not spec.find_affirmative(l) or len(l) > 120 or CAL_LABEL.match(l):
+            continue
+        if i > 0 and CAL_LABEL.match(lines[i - 1]) and lines[i - 1] in ("場所", "会場"):
+            continue  # 『場所』の値(会場名にグラウンドゴルフ場が入る)は、イベントの名前ではない
+        info: dict[str, str] = {}
+        j = i + 1
+        while j < min(i + 10, len(lines)):
+            if DAY_LINE.match(lines[j]) and j + 1 < len(lines) and WEEKDAY_LINE.match(lines[j + 1]):
+                break
+            if CAL_LABEL.match(lines[j]) and j + 1 < len(lines):
+                info.setdefault(lines[j], lines[j + 1])
+                j += 2
+                continue
+            if j > i + 1 and not CALENDAR_CATEGORY.search(lines[j]) and lines[j] not in info.values() and not CAL_LABEL.match(lines[j - 1] if j else ""):
+                break  # 次のイベントの題名
+            j += 1
+        date_text = info.get("日", "")
+        ctx = _month_context(lines, i)
+        if not date_text and day and ctx:
+            date_text = f"{ctx[0]}年{ctx[1]}月{day}日"
+        if not date_text:  # 日付の見出しの型でないカレンダー: 同じ行、無ければ直前の2行の日付
+            date_text = l if parse_dates(l, ctx_year) else " ".join(lines[max(0, i - 2): i + 1])
+        key = (l[:60], date_text, info.get("場所", ""))
+        if key in seen:
+            continue
+        seen.add(key)
+        events.append(_make(base, source="line", event_name=_line_name(l, spec, page_name), **{"_f": {"date": date_text, "venue": info.get("場所", info.get("会場", ""))}}, evidence=_evidence(l, spec)))
+        if len(events) >= 30:
+            break
+    return events
+
+
+CALENDAR_CATEGORY = re.compile(r"^(?:催し|講座|スポーツ|募集|お知らせ|子育て|シニア|文化施設|健康|医療|福祉|相談|その他)")
+
+
 def _cell_values(cells: list[str], head: list[str]) -> dict[str, str]:
     out: dict[str, str] = {}
     for h, c in zip(head, cells):
@@ -263,7 +353,7 @@ def extract_events(html: str, muni_name: str, spec: KeywordSpec, survey_title: s
     title, body = page_text(soup)
     pairs = _kv_pairs(soup)
     labeled = _labeled_lines(body)
-    page_name = clean_event_name(h1t if h1t and h1t != muni_name else (raw_title or survey_title), muni_name)
+    page_name = page_name_of(soup, raw_title, h1t, muni_name, survey_title, spec)
     gg_title = bool(spec.find_affirmative(f"{raw_title} {h1t}"))
     kind = kind_of(f"{raw_title} {h1t}", gg_title)
     ctx = context_year(f"{raw_title} {h1t} {body[:400]}")
@@ -320,9 +410,10 @@ def extract_events(html: str, muni_name: str, spec: KeywordSpec, survey_title: s
         if kind == "カレンダー・予定表":
             # カレンダー・予定表は、グラウンドゴルフの語を含む行を1イベントにする(同じ行、無ければ直前の行の日付を日付とする)
             lines = [norm_text(l) for l in body.split("\n") if norm_text(l)]
+            events.extend(calendar_events(lines, spec, base, page_name, ctx))
             seen: set[str] = set()
             for i, l in enumerate(lines):
-                if not spec.find_affirmative(l) or len(l) > 220 or l[:60] in seen:
+                if events or not spec.find_affirmative(l) or len(l) > 220 or l[:60] in seen:
                     continue
                 seen.add(l[:60])
                 near = l if parse_dates(l, ctx) else (_calendar_date(lines, i, ctx) or " ".join(lines[max(0, i - 2): i + 1]))

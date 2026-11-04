@@ -705,6 +705,270 @@
       "keyword": "grandgolf",
       "route": "ev3_yamanashi",
       "survey_set": "grandgolf_events"
+    },
+    {
+      "prefecture": "愛知県",
+      "keyword": "grandgolf",
+      "route": "ev4_aichi",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "秋田県",
+      "keyword": "grandgolf",
+      "route": "ev4_akita",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "青森県",
+      "keyword": "grandgolf",
+      "route": "ev4_aomori",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "千葉県",
+      "keyword": "grandgolf",
+      "route": "ev4_chiba",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "愛媛県",
+      "keyword": "grandgolf",
+      "route": "ev4_ehime",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "福井県",
+      "keyword": "grandgolf",
+      "route": "ev4_fukui",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "福岡県",
+      "keyword": "grandgolf",
+      "route": "ev4_fukuoka",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "福島県",
+      "keyword": "grandgolf",
+      "route": "ev4_fukushima",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "岐阜県",
+      "keyword": "grandgolf",
+      "route": "ev4_gifu",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "群馬県",
+      "keyword": "grandgolf",
+      "route": "ev4_gunma",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "広島県",
+      "keyword": "grandgolf",
+      "route": "ev4_hiroshima",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "兵庫県",
+      "keyword": "grandgolf",
+      "route": "ev4_hyogo",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "茨城県",
+      "keyword": "grandgolf",
+      "route": "ev4_ibaraki",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "石川県",
+      "keyword": "grandgolf",
+      "route": "ev4_ishikawa",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "岩手県",
+      "keyword": "grandgolf",
+      "route": "ev4_iwate",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "香川県",
+      "keyword": "grandgolf",
+      "route": "ev4_kagawa",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "鹿児島県",
+      "keyword": "grandgolf",
+      "route": "ev4_kagoshima",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "神奈川県",
+      "keyword": "grandgolf",
+      "route": "ev4_kanagawa",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "高知県",
+      "keyword": "grandgolf",
+      "route": "ev4_kochi",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "熊本県",
+      "keyword": "grandgolf",
+      "route": "ev4_kumamoto",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "京都府",
+      "keyword": "grandgolf",
+      "route": "ev4_kyoto",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "三重県",
+      "keyword": "grandgolf",
+      "route": "ev4_mie",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "宮城県",
+      "keyword": "grandgolf",
+      "route": "ev4_miyagi",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "宮崎県",
+      "keyword": "grandgolf",
+      "route": "ev4_miyazaki",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "長崎県",
+      "keyword": "grandgolf",
+      "route": "ev4_nagasaki",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "奈良県",
+      "keyword": "grandgolf",
+      "route": "ev4_nara",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "新潟県",
+      "keyword": "grandgolf",
+      "route": "ev4_niigata",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "大分県",
+      "keyword": "grandgolf",
+      "route": "ev4_oita",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "岡山県",
+      "keyword": "grandgolf",
+      "route": "ev4_okayama",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "沖縄県",
+      "keyword": "grandgolf",
+      "route": "ev4_okinawa",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "大阪府",
+      "keyword": "grandgolf",
+      "route": "ev4_osaka",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "佐賀県",
+      "keyword": "grandgolf",
+      "route": "ev4_saga",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "埼玉県",
+      "keyword": "grandgolf",
+      "route": "ev4_saitama",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "滋賀県",
+      "keyword": "grandgolf",
+      "route": "ev4_shiga",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "島根県",
+      "keyword": "grandgolf",
+      "route": "ev4_shimane",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "静岡県",
+      "keyword": "grandgolf",
+      "route": "ev4_shizuoka",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "栃木県",
+      "keyword": "grandgolf",
+      "route": "ev4_tochigi",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "徳島県",
+      "keyword": "grandgolf",
+      "route": "ev4_tokushima",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "東京都",
+      "keyword": "grandgolf",
+      "route": "ev4_tokyo",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "鳥取県",
+      "keyword": "grandgolf",
+      "route": "ev4_tottori",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "和歌山県",
+      "keyword": "grandgolf",
+      "route": "ev4_wakayama",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "山形県",
+      "keyword": "grandgolf",
+      "route": "ev4_yamagata",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "山口県",
+      "keyword": "grandgolf",
+      "route": "ev4_yamaguchi",
+      "survey_set": "grandgolf_events_all"
+    },
+    {
+      "prefecture": "山梨県",
+      "keyword": "grandgolf",
+      "route": "ev4_yamanashi",
+      "survey_set": "grandgolf_events_all"
     }
   ]
 }
