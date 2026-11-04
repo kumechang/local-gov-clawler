@@ -50,6 +50,7 @@ jobs:
       keyword: ${{ matrix.keyword }}
       route: ${{ matrix.route }}
       shards: ${{ matrix.shards }}
+      survey_set: ${{ matrix.survey_set }}
       commit_results: true
     permissions:
       contents: write

@@ -89,3 +89,26 @@ def test_bracket_labels_and_calendar_tables():
          "<p>31日</p><p>土曜日</p><p>第6回高浜町グラウンド・ゴルフ大会の開催について</p></main></body></html>")
     r = ev.extract_events(h, "高浜町", SPEC)
     assert [(e["event_name"], e["date_start"]) for e in r["events"]] == [("第6回高浜町グラウンド・ゴルフ大会の開催について", "2026-10-31")]
+
+
+def test_event_focus_exploration_is_wired():
+    cfg = json.loads((ROOT / "config" / "auto_survey.json").read_text(encoding="utf-8"))
+    evd = [t for t in cfg["targets"] if t["route"].startswith("evd1_")]
+    assert len(evd) == 47 and all(t["event_focus"] == "1" and t["max_pages"] == 300 for t in evd)
+    sets = json.loads((ROOT / "config" / "survey_sets" / "grandgolf_events.json").read_text(encoding="utf-8"))
+    assert sets["routes"] == [t["route"] for t in evd]
+    sv_yml = (ROOT / ".github/workflows/survey.yml").read_text(encoding="utf-8")
+    assert "--event-focus" in sv_yml and "EVENT_FOCUS" in sv_yml
+    assert "survey_set" in (ROOT / ".github/workflows/events.yml").read_text(encoding="utf-8")
+
+
+def test_event_focus_seeds_priority_and_pager():
+    seeds = sv.event_focus_seeds({"nav_links": [
+        {"text": "イベントカレンダー", "url": "https://x/cal", "same_site": True, "is_pdf": False},
+        {"text": "新着情報", "url": "https://x/news", "same_site": True, "is_pdf": False},
+        {"text": "施設予約", "url": "https://x/yoyaku", "same_site": True, "is_pdf": False},
+    ]})
+    assert [s["url"] for s in seeds] == ["https://x/cal", "https://x/news"] and all(s["role"] == "event" for s in seeds)
+    assert sv._child_role("event", "次の月", SPEC, event_focus=True) == "event" and sv._child_role("event", "次の月", SPEC) is None
+    assert sv._child_role("event", "ご利用案内", SPEC, event_focus=True) is None
+    assert sv._priority("event", 1, "第5回○○大会", SPEC, True) == (1, 1) and sv._priority("event", 1, "第5回○○大会", SPEC) == (3, 1)
