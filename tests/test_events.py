@@ -62,7 +62,7 @@ def test_events_workflows_are_wired():
     mod = importlib.util.module_from_spec(mod_spec)
     mod_spec.loader.exec_module(mod)
     cfg = json.loads((ROOT / "config" / "auto_events.json").read_text(encoding="utf-8"))
-    assert sum(1 for t in cfg["targets"] if t["route"].startswith("ev1_")) == 47 and sum(1 for t in cfg["targets"] if t["route"].startswith("ev2_")) == 44
+    assert sum(1 for t in cfg["targets"] if t["route"].startswith("ev1_")) == 44 and sum(1 for t in cfg["targets"] if t["route"].startswith("ev2_")) == 44
     for n in ("events", "auto-events"):
         yaml.safe_load((ROOT / f".github/workflows/{n}.yml").read_text(encoding="utf-8"))
     ex = (ROOT / ".github/workflows/events.yml").read_text(encoding="utf-8")

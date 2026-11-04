@@ -38,11 +38,6 @@
       "route": "ev1_ishikawa"
     },
     {
-      "prefecture": "富山県",
-      "keyword": "grandgolf",
-      "route": "ev1_toyama"
-    },
-    {
       "prefecture": "京都府",
       "keyword": "grandgolf",
       "route": "ev1_kyoto"
@@ -103,11 +98,6 @@
       "route": "ev1_kanagawa"
     },
     {
-      "prefecture": "北海道",
-      "keyword": "grandgolf",
-      "route": "ev1_hokkaido"
-    },
-    {
       "prefecture": "青森県",
       "keyword": "grandgolf",
       "route": "ev1_aomori"
@@ -141,11 +131,6 @@
       "prefecture": "山梨県",
       "keyword": "grandgolf",
       "route": "ev1_yamanashi"
-    },
-    {
-      "prefecture": "長野県",
-      "keyword": "grandgolf",
-      "route": "ev1_nagano"
     },
     {
       "prefecture": "新潟県",

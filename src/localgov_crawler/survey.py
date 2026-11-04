@@ -366,10 +366,16 @@ def classify_pdf(title: str, link_text: str, url: str) -> str:
     return classify_page(t, url)
 
 
+PDF_RELATED = re.compile(r"ゴルフ|ゲートボール|ペタンク|マレット|グラウンド|グランド")
+
+
 def _pdf_priority(text: str, url: str, spec: KeywordSpec) -> int:
+    """0=ワード・関連競技(ゴルフなど)を含む、1=施設・一覧・案内など、2=その他、3=計画・議事録・条例・表彰など(読んでも施設・イベントの記述は少ない)。"""
     t = f"{norm_text(text)} {url}"
-    if spec.in_text(t):
+    if spec.in_text(t) or PDF_RELATED.search(t):
         return 0
+    if PDF_OTHER_DOC.search(t) or re.search(r"表彰|受賞|懇話会|名簿|規則|条例", t):
+        return 3
     return 1 if PDF_WORTHY.search(t) else 2
 
 

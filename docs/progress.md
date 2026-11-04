@@ -197,3 +197,5 @@
 - [ ] 後始末(ev3の完了後): `config/auto_events.json` から、イベントのページが無い3ルート(ev1_toyama・ev1_hokkaido・ev1_nagano)を外す(マージのたびに空実行され、北海道のmergeが失敗するため)
 - [x] PDFを読む調査の実装(D-144)。テスト162件通過。旭川市で実サイトの動作確認中
 - [ ] 北海道の試し(pdf1_hokkaido): mainへのマージで自動実行(PR・マージは指示待ち)
+- [x] イベントの取り出し ev3 の実行・判定(D-145)。CSV3種を更新(799行・303自治体)
+- [ ] ユーザー判断待ち: イベント15行(ev3)の確認(`data/ground_truth/events_grandgolf_ev3_sample.csv`)
