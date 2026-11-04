@@ -127,3 +127,4 @@
 - 「住所と電話が取れていない施設も含めて全てのグラウンドゴルフの施設をCSVにして」(2026-10-20)→ `data/export/grandgolf_facilities_all.csv`(862行・361自治体)を作成。
 - 「いったんここまでで、電話番号と住所が取れている施設をCSVで出してくれる?」(2026-10-20)→ `grandgolf_places_detail_keyword_complete.csv`(376行)と `..._complete.csv`(709行)を送付。
 - 「(grandgolf_facilities_merged_enriched.csv)未記載のデータを補完したけど、確認して掲載できるものは掲載して」(2026-10-20)→ 補完の228行(Web補完71・未補完157)と、問い合わせ電話の転記118行を、元ページを取り直して照合。確認できたものを `grandgolf_facilities_verified.csv` に掲載。D-136。
+- 「今度は各市区町村で開催しているグランドゴルフのイベントを調査したいんだ。」(2026-11-04)→ 既存のイベント候補(`data/export/grandgolf_events.csv`、419ページ・208自治体)をもとに、イベントの調査を設計する。範囲(どこまでをイベントとするか・取り出す項目・期間)をユーザーに確認中。
