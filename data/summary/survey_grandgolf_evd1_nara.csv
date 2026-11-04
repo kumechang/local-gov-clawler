@@ -1,0 +1,40 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+29201,奈良市,奈良県,surveyed,False,False,0,,,300,max_pages,0,0,,,,,
+29202,大和高田市,奈良県,surveyed,False,False,0,,,49,exhausted,0,0,,,,,
+29203,大和郡山市,奈良県,surveyed,True,False,5,event|facility|other,event|facility,90,exhausted,0,0,https://www.city.yamatokoriyama.lg.jp/kanko_bunka_sports/sports/sportsshisetsu/9397.html,facility,facility,大和郡山市西池グラウンド/大和郡山市,、ソフトボール(1面)、サッカー(1面)、ラグビー(1面)、グラウンドゴルフ(3面)、ゲートボール(7面)、レクリエーション、運動会、軽
+29204,天理市,奈良県,surveyed,True,True,4,facility,event|facility|listing,61,exhausted,0,1,https://www.city.tenri.nara.jp/shisetsu/sportsshisetsu/index.html,listing,facility,スポーツ施設/天理市,グラウンド・ゴルフ場
+29205,橿原市,奈良県,surveyed,True,False,1,other,facility,118,exhausted,0,0,https://www.city.kashihara.nara.jp/kanko_bunka_sports/sports/5/10674.html,facility,other,ニュースポーツ用具レンタル/橿原市公式ホームページ,2.グラウンドゴルフ(公益財団法人日本グラウンド・ゴルフ協会ホームページ)(外部
+29206,桜井市,奈良県,surveyed,False,False,0,,,10,exhausted,0,0,,,,,
+29207,五條市,奈良県,surveyed,False,False,0,,,48,exhausted,0,0,,,,,
+29208,御所市,奈良県,surveyed,True,False,1,event,event,136,exhausted,0,0,https://www.city.gose.nara.jp/0000003746.html,event,event,御所スポーツフェスティバル2026 | 御所市,ディスク、キンボール、ボッチャ、モルック、キックターゲット、グラウンド・ゴルフ、フライトドローン、ヨガ(内容は変更になる場合があります。)
+29209,生駒市,奈良県,surveyed,True,False,1,event,event,258,exhausted,0,0,https://www.city.ikoma.lg.jp/0000036815.html,event,event,いこまスポーツの日を開催します | 生駒市公式ホームページ,ボッチャや卓球、グラウンド・ゴルフ、ストライクアウトなどが体験できます。
+29210,香芝市,奈良県,surveyed,False,False,0,,,134,exhausted,0,0,,,,,
+29211,葛城市,奈良県,surveyed,True,False,1,facility,listing,50,exhausted,0,0,https://www.city.katsuragi.nara.jp/kanko_bunka_sports/sports/5796.html,listing,facility,屋敷山公園内 体育施設情報/葛城市,野球場1面(ソフトボール、少年野球またはグラウンドゴルフに限る)
+29212,宇陀市,奈良県,surveyed,True,False,9,facility,event|facility,202,exhausted,0,0,https://www.city.uda.lg.jp/soshiki/30/,event,facility,公園課 - 宇陀市公式ホームページ,心の森総合福祉公園グラウンド・ゴルフ場
+29322,山添村,奈良県,no_seed,False,False,0,,,0,,0,0,,,,,
+29342,平群町,奈良県,surveyed,False,False,0,,,53,exhausted,0,0,,,,,
+29343,三郷町,奈良県,surveyed,True,False,1,facility,event,113,exhausted,0,0,https://www.town.sango.nara.jp/soshiki/27/2110.html,event,facility,三郷中央公園多目的広場 - 三郷町公式ホームページ,三郷中央公園多目的広場は、グラウンドゴルフやサッカー、野球などのスポーツのほか、ジョギングやキャッチボ
+29344,斑鳩町,奈良県,surveyed,False,False,0,,,157,exhausted,0,0,,,,,
+29345,安堵町,奈良県,surveyed,True,False,1,organization,event,125,exhausted,0,0,https://www.town.ando.nara.jp/0000002906.html,event,organization,安堵町スポーツ協会秋季大会の中止について | 安堵町役場,・第29回グラウンドゴルフ大会
+29361,川西町,奈良県,surveyed,False,False,0,,,75,exhausted,0,0,,,,,
+29362,三宅町,奈良県,surveyed,False,False,0,,,33,exhausted,0,0,,,,,
+29363,田原本町,奈良県,surveyed,True,True,4,event|facility,event|facility|listing,78,exhausted,0,1,https://www.town.tawaramoto.nara.jp/gyosei/shisetsu/sport/index.html,listing,facility,スポーツ施設/田原本町,グラウンドゴルフ場
+29385,曽爾村,奈良県,surveyed,True,False,1,facility,event,16,exhausted,0,0,https://www.vill.soni.nara.jp/info/19,event,facility,奈良県曽爾村 奈良県曽爾村 曽爾村健民運動場,野球・サッカー・グランドゴルフ等に利用でき、ナイター照明完備
+29386,御杖村,奈良県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
+29401,高取町,奈良県,surveyed,False,False,0,,,60,exhausted,0,0,,,,,
+29402,明日香村,奈良県,surveyed,False,False,0,,,15,exhausted,0,0,,,,,
+29424,上牧町,奈良県,surveyed,False,False,0,,,23,exhausted,0,0,,,,,
+29425,王寺町,奈良県,surveyed,True,False,1,event,event,76,exhausted,0,0,https://www.town.oji.nara.jp/kakuka/kyoikuiinkai/syogaigakusyu/event/oji_sports7_1/11822.html,event,event,第3回王寺町スポーツフェスティバルを開催します/王寺町,種目:ソフトボールスピードガン測定、昔あそびコーナー、グラウンド・ゴルフ、だるころ、太極拳、少年野球、けん玉、ターゲット・バードゴル
+29426,広陵町,奈良県,surveyed,False,False,0,,,57,exhausted,0,0,,,,,
+29427,河合町,奈良県,surveyed,True,False,6,event,event,41,exhausted,0,0,https://www.town.kawai.nara.jp/taiiku/2/9/7810.html,event,event,(R8)第33回町長杯争奪町民遊ゆうスポーツフェスティバル/河合町,【10月13日開催】グラウンド・ゴルフ(総合グラウンド)
+29441,吉野町,奈良県,surveyed,False,False,0,,,35,exhausted,0,0,,,,,
+29442,大淀町,奈良県,surveyed,False,False,0,,,129,exhausted,0,0,,,,,
+29443,下市町,奈良県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+29444,黒滝村,奈良県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+29446,天川村,奈良県,surveyed,False,False,0,,,11,exhausted,0,0,,,,,
+29447,野迫川村,奈良県,surveyed,False,False,0,,,21,exhausted,0,0,,,,,
+29449,十津川村,奈良県,surveyed,False,False,0,,,10,exhausted,0,0,,,,,
+29450,下北山村,奈良県,surveyed,False,False,0,,,70,exhausted,0,0,,,,,
+29451,上北山村,奈良県,surveyed,False,False,0,,,8,exhausted,0,0,,,,,
+29452,川上村,奈良県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
+29453,東吉野村,奈良県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
