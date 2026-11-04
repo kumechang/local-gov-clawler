@@ -270,3 +270,42 @@ def test_export_rows_split_by_kind_and_pdf_only_municipality():
     s2 = {**s, "pages": [s["pages"][2]]}
     r2 = sv.export_rows(s2)
     assert len(r2) == 1 and r2[0]["found_via"] == "pdf_link" and r2[0]["page_kind"] == "other"
+
+
+def test_pdf_text_states_and_classification():
+    import io
+
+    import pypdf
+    assert sv.pdf_text(b"not a pdf")[2] == "error"
+    w = pypdf.PdfWriter()
+    w.add_blank_page(width=200, height=200)
+    buf = io.BytesIO()
+    w.write(buf)
+    text, pages, state = sv.pdf_text(buf.getvalue())
+    assert state == "no_text" and pages == 1  # 画像だけ・白紙のPDFは no_text
+    assert sv.classify_pdf("令和8年度 スポーツ推進計画", "計画", "") == "other"
+    assert sv.classify_pdf("市内パークゴルフ場 施設一覧", "施設一覧", "") == "facility"
+    assert sv.classify_pdf("第5回グラウンドゴルフ大会 開催要項", "要項", "") == "event"
+
+
+def test_survey_reads_pdfs_from_sports_pages_only(monkeypatch):
+    pdf_hit = "市内パークゴルフ場\n平成大橋上流右岸広場 パークゴルフ場1 グラウンドゴルフ場1\n"
+    monkeypatch.setattr(sv, "pdf_text", lambda body, max_pages=30: (pdf_hit if body == b"%PDF-hit" else "関係のない計画\n" * 5, 2, "ok"))
+    routes = {
+        "/robots.txt": (404, "text/plain", ""),
+        "/sports/": page("スポーツ施設", '<a href="/f/1">中央運動場</a><a href="/doc/shisetsu.pdf">施設一覧(PDF)</a><a href="/doc/keikaku.pdf">スポーツ推進計画</a>', '<nav><a href="/nav.pdf">広報</a></nav>'),
+        "/f/1": page("中央運動場", "<p>野球ができます。</p>"),
+        "/doc/shisetsu.pdf": (200, "application/pdf", "%PDF-hit"),
+        "/doc/keikaku.pdf": (200, "application/pdf", "%PDF-other"),
+        "/nav.pdf": (200, "application/pdf", "%PDF-hit"),
+    }
+    r = result(cands=[("スポーツ施設", "https://www.city.example.jp/sports/")])
+    out = sv.survey_municipality(M, r, make_fetcher(routes), SPEC, sv.SurveyConfig(route="t", retry_wait=0, read_pdf=True))
+    pdfs = {p["url"].rsplit("/", 1)[-1]: p for p in out["pages"] if p["role"] == "pdf"}
+    assert set(pdfs) == {"shisetsu.pdf", "keikaku.pdf"}  # ナビのPDFは読まない
+    assert pdfs["shisetsu.pdf"]["hit"] and pdfs["shisetsu.pdf"]["kind"] == "facility" and pdfs["shisetsu.pdf"]["via"] == "pdf_text" and "グラウンドゴルフ" in pdfs["shisetsu.pdf"]["snippets"][0]
+    assert not pdfs["keikaku.pdf"]["hit"] and out["found"]
+    rows = [r_ for r_ in sv.export_rows(out) if r_["found_via"] == "pdf"]
+    assert len(rows) == 1 and rows[0]["page_kind"] == "facility"
+    off = sv.survey_municipality(M, r, make_fetcher(routes), SPEC, sv.SurveyConfig(route="t", retry_wait=0))
+    assert not [p for p in off["pages"] if p["role"] == "pdf"]  # 既定ではPDFを読まない

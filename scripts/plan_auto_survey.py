@@ -23,7 +23,7 @@ def plan(config_path: str, survey_dir: str, commit_message: str) -> tuple[list[d
             continue
         targets.append({
             "prefecture": t.get("prefecture", ""), "keyword": keyword, "route": route,
-            "from_route": t.get("from_route", "redecide_v12_1"), "shards": str(t.get("shards", 1)), "max_pages": str(t.get("max_pages", 200)), "event_focus": str(t.get("event_focus", "")),
+            "from_route": t.get("from_route", "redecide_v12_1"), "shards": str(t.get("shards", 1)), "max_pages": str(t.get("max_pages", 200)), "event_focus": str(t.get("event_focus", "")), "read_pdf": str(t.get("read_pdf", "")),
         })
     return targets, notes
 
@@ -32,7 +32,7 @@ def main() -> int:
     targets, notes = plan("config/auto_survey.json", "data/survey", os.environ.get("COMMIT_MESSAGE", ""))
     out = os.environ.get("GITHUB_OUTPUT")
     # 対象が0件でも、matrix が空にならないようダミーを入れる(実行は count の if で止める)
-    matrix = {"include": targets or [{"prefecture": "none", "keyword": "none", "route": "none", "from_route": "none", "shards": "1", "max_pages": "1", "event_focus": ""}]}
+    matrix = {"include": targets or [{"prefecture": "none", "keyword": "none", "route": "none", "from_route": "none", "shards": "1", "max_pages": "1", "event_focus": "", "read_pdf": ""}]}
     lines = [f"count={len(targets)}", "matrix=" + json.dumps(matrix, ensure_ascii=False)]
     if out:
         with open(out, "a", encoding="utf-8") as f:

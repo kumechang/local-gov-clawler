@@ -144,12 +144,15 @@ class SurveyConfig:
     max_seeds: int = 12
     max_event_pages: int = 80  # イベントのページ(月次の一覧など)で上限を使い切らないための枠
     event_focus: bool = False  # イベント専用の探索(D-141): イベント・お知らせ・カレンダーを入口にし、イベントのページを優先してたどる
+    read_pdf: bool = False  # スポーツ関連のページから出るPDFを読む(D-144)
+    max_pdfs: int = 20  # 1自治体で読むPDFの数
+    pdf_max_pages: int = 30  # 1つのPDFで読むページ数
     snippet_chars: int = 30
     retry_wait: float = 2.0
     max_requests: int = field(default=0)  # 0なら max_pages + 8 にする
 
     def pipeline_config(self) -> Config:
-        return Config(route=self.route, max_requests=self.max_requests or self.max_pages + 8, retry_wait=self.retry_wait)
+        return Config(route=self.route, max_requests=self.max_requests or self.max_pages + 8 + (self.max_pdfs if self.read_pdf else 0), retry_wait=self.retry_wait)
 
 
 def _text_len(tag) -> int:
@@ -330,6 +333,52 @@ def _priority(role: str, depth: int, text: str, spec: KeywordSpec, event_focus: 
     return 2, depth
 
 
+# PDFを読む(D-144)
+PDF_WORTHY = re.compile(r"施設|一覧|案内|利用|大会|要項|スポーツ|体育|公園|パークゴルフ|ゴルフ|マップ|パンフ|ガイド|運動|広場|グラウンド|グランド|コート|イベント|教室|行事|日程|カレンダー", re.I)
+PDF_OTHER_DOC = re.compile(r"議事録|会議録|議事概要|計画|報告書|答申|決算|予算|条例|規則|要綱|入札|公告|広報|通知|統計|アンケート|調査")
+PDF_SPORTS_ROLES = ("listing", "sports_nav", "facility", "event")
+
+
+def pdf_text(body: bytes, max_pages: int = 30) -> tuple[str, int, str]:
+    """PDFの本文(ページ内の改行は残す)・ページ数・状態(ok / no_text / error / no_reader)。画像だけのPDFは no_text。"""
+    import io
+    try:
+        import pypdf
+    except ImportError:
+        return "", 0, "no_reader"
+    try:
+        reader = pypdf.PdfReader(io.BytesIO(body))
+        if reader.is_encrypted:
+            return "", len(reader.pages), "error"
+        pages = reader.pages[:max_pages]
+        text = "\n".join((pg.extract_text() or "") for pg in pages)
+    except Exception:
+        return "", 0, "error"
+    text = "\n".join(norm_text(l) for l in text.split("\n") if norm_text(l))
+    return text, len(reader.pages), ("ok" if len(text) >= 20 else "no_text")
+
+
+def classify_pdf(title: str, link_text: str, url: str) -> str:
+    """PDFの種類。計画・議事録・条例などは『その他』にする(施設・イベントの記述ではないため)。それ以外は題名・リンクの文字・URLで分ける。"""
+    t = norm_text(f"{title} {link_text}")
+    if PDF_OTHER_DOC.search(t) and not EVENT_STRONG.search(t):
+        return "other"
+    return classify_page(t, url)
+
+
+PDF_RELATED = re.compile(r"ゴルフ|ゲートボール|ペタンク|マレット|グラウンド|グランド")
+
+
+def _pdf_priority(text: str, url: str, spec: KeywordSpec) -> int:
+    """0=ワード・関連競技(ゴルフなど)を含む、1=施設・一覧・案内など、2=その他、3=計画・議事録・条例・表彰など(読んでも施設・イベントの記述は少ない)。"""
+    t = f"{norm_text(text)} {url}"
+    if spec.in_text(t) or PDF_RELATED.search(t):
+        return 0
+    if PDF_OTHER_DOC.search(t) or re.search(r"表彰|受賞|懇話会|名簿|規則|条例", t):
+        return 3
+    return 1 if PDF_WORTHY.search(t) else 2
+
+
 def survey_municipality(m: Municipality, result: dict | None, fetcher: Fetcher, spec: KeywordSpec, cfg: SurveyConfig) -> dict:
     started = _now()
     out: dict = {
@@ -396,6 +445,7 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
         push(sd["url"], sd["role"], 0, "seed", sd.get("text", ""), cfg.seed_depth + (1 if sd["role"] == "broad" or sd.get("source") == "fallback" else 0))
     fetched = 0
     event_pages = 0
+    pdf_queue: dict[str, tuple] = {}
     stopped = "exhausted"
     while heap:
         if fetched >= cfg.max_pages:
@@ -433,6 +483,8 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
         for l in links:
             if l.is_pdf and spec.in_text(l.text) and len(out["pdf_link_hits"]) < 20:
                 out["pdf_link_hits"].append({"text": l.text[:80], "url": l.url, "page": url})
+            if cfg.read_pdf and l.is_pdf and l.same_site and role in PDF_SPORTS_ROLES and l.region not in ("nav", "header", "footer") and l.url not in pdf_queue and not RESERVATION_URL.search(l.url):
+                pdf_queue[l.url] = (_pdf_priority(l.text, l.url, spec), len(pdf_queue), norm_text(l.text)[:80], url)
         if depth >= maxd:
             continue
         for l in links:
@@ -444,9 +496,48 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
             queued.add(l.url)
             push(l.url, child, depth + 1, norm_text(l.text)[:40], norm_text(l.text), maxd)
     _drop_boilerplate(out["pages"], fetched)
+    if cfg.read_pdf and pdf_queue and stopped != "max_requests":
+        _read_pdfs(pdf_queue, ctx, spec, cfg, out, site_host)
     out["outcome"] = "surveyed"
     out["stopped"] = stopped
     out["pages_fetched"] = fetched
+
+
+def _read_pdfs(pdf_queue: dict, ctx: _Ctx, spec: KeywordSpec, cfg: SurveyConfig, out: dict, site_host: str) -> None:
+    """スポーツ関連のページから出ていたPDFを、優先順位の高い順に最大 max_pdfs 件読む(D-144)。PDFは保存せず、ワードの前後の短い文だけ記録する。"""
+    from urllib.parse import unquote
+    n = 0
+    for url, (prio, _, link_text, parent) in sorted(pdf_queue.items(), key=lambda kv: kv[1][:2]):
+        if n >= cfg.max_pdfs:
+            break
+        n += 1
+        res = ctx.get(url)
+        page = {"url": url, "role": "pdf", "depth": 0, "via": "pdf_text", "status": res.status, "error_class": res.error_class, "hit": False, "parent": parent, "link_text": link_text}
+        if res.error_class == "budget_exceeded":
+            break
+        if not res.ok or not is_same_site(res.final_url, site_host):
+            out["pages"].append(page)
+            continue
+        if res.truncated:
+            page["error_class"] = "pdf_too_large"
+            out["pages"].append(page)
+            continue
+        text, npages, state = pdf_text(res.body, cfg.pdf_max_pages)
+        page["pdf_pages"], page["pdf_state"] = npages, state
+        if state != "ok":
+            page["error_class"] = f"pdf_{state}"
+            out["pages"].append(page)
+            continue
+        fname = unquote(urlsplit(url).path.rsplit("/", 1)[-1])
+        first = next((l for l in text.split("\n") if len(l) >= 4), "")[:60]
+        title = link_text or first or fname
+        hits_b = spec.find_affirmative(text)
+        all_pairs = spec.find_lines(text)
+        affirmed = {(l, m.start()) for l, m in hits_b}
+        page.update(title=title[:80], kind=classify_pdf(f"{title} {first}", link_text, url), text_len=len(text), hit=bool(hits_b), count=len(hits_b), negated=len(all_pairs) - len(hits_b),
+                    negated_samples=[l[max(0, m.start() - 20): m.end() + 60] for l, m in all_pairs if (l, m.start()) not in affirmed][:2], in_title=bool(spec.in_text(title)),
+                    snippets=snippets(spec, text, cfg.snippet_chars, affirmative=True), keys=match_keys(spec, text, affirmative=True), link_hits=[])
+        out["pages"].append(page)
 
 
 def _drop_boilerplate(pages: list[dict], fetched: int) -> None:

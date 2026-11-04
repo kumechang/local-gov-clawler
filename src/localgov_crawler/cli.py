@@ -183,13 +183,13 @@ def cmd_survey(args) -> int:
     stored = {r["municipality"]["code"]: r for r in store.load_results(Path(args.results), args.from_route)}
     proxy = os.environ.get("CRAWL_PROXY_URL") if args.use_proxy else None
     contact = os.environ.get("CRAWLER_CONTACT", DEFAULT_CONTACT)
-    cfg = sv.SurveyConfig(route=args.route, max_pages=args.max_pages, seed_depth=args.depth + (1 if args.event_focus else 0), event_focus=args.event_focus, max_event_pages=args.max_pages if args.event_focus else 80)
+    cfg = sv.SurveyConfig(route=args.route, max_pages=args.max_pages, seed_depth=args.depth + (1 if args.event_focus else 0), event_focus=args.event_focus, max_event_pages=args.max_pages if args.event_focus else 80, read_pdf=args.read_pdf)
     out = Path(args.out)
     lock = threading.Lock()
     counter = [0]
 
     def work(group):
-        f = Fetcher(user_agent=build_user_agent(contact), proxy=proxy, min_interval=args.interval)
+        f = Fetcher(user_agent=build_user_agent(contact), proxy=proxy, min_interval=args.interval, max_bytes=8_000_000 if args.read_pdf else 5_000_000)
         hl = None
         try:
             for m in group:
@@ -334,10 +334,16 @@ def cmd_events(args) -> int:
     _, sel = _select(args)
     spec = sv.KeywordSpec.load(args.keywords)
     chosen: dict[str, dict] = {}
+    pages: dict[str, dict[str, dict]] = {}
     for route in _routes_of(args):
         for s_ in sv.load_surveys(Path(args.surveys), spec.name, route):
-            chosen.setdefault(s_["municipality"]["code"], s_)
-    pages = {code: [r for r in sv.export_rows(s_) if r["page_kind"] == "event" and r["found_via"] != "pdf_link"] for code, s_ in chosen.items()}
+            code = s_["municipality"]["code"]
+            chosen.setdefault(code, s_)
+            # 複数のrouteの『イベント』のページを合わせる(同じURLは1つ。探索と、ワード調査のついでに見つけたページの両方を取り出す)
+            for r in sv.export_rows(s_):
+                if r["page_kind"] == "event" and r["found_via"] != "pdf_link":
+                    pages.setdefault(code, {}).setdefault(r["page_url"], r)
+    pages = {code: list(rs.values()) for code, rs in pages.items()}
     proxy = os.environ.get("CRAWL_PROXY_URL") if args.use_proxy else None
     contact = os.environ.get("CRAWLER_CONTACT", DEFAULT_CONTACT)
     cfg = evm.EventsConfig(route=args.route, max_pages=args.max_pages)
@@ -485,6 +491,7 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--workers", type=int, default=4); sp.add_argument("--interval", type=float, default=1.0)
     sp.add_argument("--use-proxy", action="store_true")
     sp.add_argument("--headless", action="store_true", help="JS描画のサイト(needs_headless)をヘッドレスブラウザで取得する(要 playwright)")
+    sp.add_argument("--read-pdf", action="store_true", help="スポーツ関連のページから出るPDFを読む(D-144。要 pypdf)")
     sp.add_argument("--event-focus", action="store_true", help="イベント専用の探索(D-141): イベント・お知らせ・カレンダーを入口にし、イベントのページを優先する")
     sp.set_defaults(fn=cmd_survey)
 

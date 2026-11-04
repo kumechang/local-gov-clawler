@@ -25,6 +25,9 @@ on:
       event_focus:
         type: string
         default: ""
+      read_pdf:
+        type: string
+        default: ""
       commit_results:
         type: boolean
         default: false
@@ -50,6 +53,9 @@ on:
         default: "200"
       event_focus:
         description: 空でなければ、イベント専用の探索(D-141)
+        default: ""
+      read_pdf:
+        description: 空でなければ、スポーツ関連のページから出るPDFを読む(D-144)
         default: ""
       commit_results:
         description: 結果とサマリをこのブランチへコミットする
@@ -89,7 +95,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -e ".[headless]"
+      - run: pip install -e ".[headless,pdf]"
       - name: install chromium (JS描画のサイト用)
         run: python -m playwright install --with-deps chromium
       - name: survey
@@ -100,12 +106,14 @@ jobs:
           FROM_ROUTE: ${{ inputs.from_route }}
           MAX_PAGES: ${{ inputs.max_pages }}
           EVENT_FOCUS: ${{ inputs.event_focus }}
+          READ_PDF: ${{ inputs.read_pdf }}
           TOTAL: ${{ inputs.shards }}
           SHARD: ${{ matrix.shard }}
         run: |
           args=(survey --scope municipality --keywords "config/keywords/$KEYWORD.json" --route "$ROUTE" --from-route "$FROM_ROUTE" --max-pages "$MAX_PAGES" --shard "$SHARD/$TOTAL" --out out/survey --headless)
           if [ -n "$PREFECTURE" ]; then args+=(--prefecture "$PREFECTURE"); fi
           if [ -n "$EVENT_FOCUS" ]; then args+=(--event-focus); fi
+          if [ -n "$READ_PDF" ]; then args+=(--read-pdf); fi
           localgov-crawler "${args[@]}"
       - uses: actions/upload-artifact@v4
         with:
