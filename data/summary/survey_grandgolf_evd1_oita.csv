@@ -1,0 +1,19 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+44201,大分市,大分県,surveyed,False,False,0,,,292,exhausted,0,0,,,,,
+44202,別府市,大分県,surveyed,True,False,3,event|facility,event,236,exhausted,0,0,https://www.city.beppu.oita.jp/sisetu/supootu/02sports_02-03jissouji.html,event,facility,実相寺多目的グラウンド・実相寺中央公園管理棟|別府市,ラグビー、サッカー、ゲートボール、グラウンドゴルフ等
+44203,中津市,大分県,surveyed,True,False,5,event|organization|other,event,285,exhausted,0,0,https://www.city-nakatsu.jp/categories/infokubun/topics/more@docs_1_image.html,event,other,トピックス | 大分県中津市,第6回「いつも心に交通安全」グラウンド・ゴルフ大会が開催されました2026年10月29日耶馬溪総務・住民課
+44204,日田市,大分県,surveyed,True,True,10,event|facility,event|facility,160,exhausted,0,1,https://www.city.hita.oita.jp/site/sports/1855.html,facility,facility,天瀬総合グラウンド - スポーツ施設 - 日田市(文化スポーツ振興課),ックがあり、陸上競技を始めサッカー・ソフトボール・軟式野球・グラウンドゴルフなど、様々なスポーツに利用されています。
+44205,佐伯市,大分県,surveyed,False,False,0,,,226,exhausted,0,0,,,,,
+44206,臼杵市,大分県,surveyed,False,False,0,,,60,exhausted,0,0,,,,,
+44207,津久見市,大分県,surveyed,True,False,5,event|organization|other,event,300,max_pages,0,0,https://www.city.tsukumi.oita.jp/soshiki/list6-10.html,event,other,つくみフォトニュース - 津久見市公式ホームページ,2019年2月26日更新子どもたちのために グラウンド・ゴルフ協会から贈呈
+44208,竹田市,大分県,surveyed,True,False,4,event,event,129,exhausted,0,0,https://www.city.taketa.oita.jp/manabi_sports/supo-tsushinkou/supo-tdukyoukai/ooitakennminnsupo-tsutaikai/10188.html,event,event,第77回大分県民スポーツ大会 竹田市選手団結団式/竹田市,選手団を代表して、グラウンドゴルフ競技 衛藤 頼光選手から力強い選手宣誓が行われました。
+44209,豊後高田市,大分県,surveyed,True,False,7,event|facility|organization,event|facility,249,exhausted,0,0,https://www.city.bungotakada.oita.jp/site/dekigoto/45290.html,event,event,秋の一大イベントで今年も大盛況!~豊後高田よっちょくれ祭りが開催されました~ - 今日の出来事 - 豊後高田市ホームページ,イベント会場横の旧真玉小グラウンドでは市長杯グラウンドゴルフ大会が行われました。
+44210,杵築市,大分県,surveyed,False,False,0,,,62,exhausted,0,0,,,,,
+44211,宇佐市,大分県,surveyed,True,True,10,event|facility|organization|other,event|facility|listing,151,exhausted,0,1,https://www.city.usa.oita.jp/sougo/bunka_sports_shogai/sports/11649.html,listing,facility,スポーツ施設/宇佐市,はちまんの郷グラウンド・ゴルフ場
+44212,豊後大野市,大分県,surveyed,True,False,2,event,event,116,exhausted,0,0,https://www.bungo-ohno.jp/docs/2025021200015/,event,event,(競技記録掲載)第79回大分県民スポーツ大会 豊後大野市総合11位C部2位(総合得点170点) | 豊後大野市,グラウンド・ゴルフ
+44213,由布市,大分県,surveyed,True,False,1,other,event,130,exhausted,0,0,https://www.city.yufu.oita.jp/newly/article_81779,event,other,大分県由布市|公式ホームページ 由布市は地域自治を大切にした 住み良さ日本一のまちをめざします!,グラウンドゴルフ(自治区対抗)
+44214,国東市,大分県,surveyed,False,False,0,,,237,exhausted,0,0,,,,,
+44322,姫島村,大分県,surveyed,False,False,0,,,40,exhausted,0,0,,,,,
+44341,日出町,大分県,surveyed,False,False,0,,,79,exhausted,0,0,,,,,
+44461,九重町,大分県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+44462,玖珠町,大分県,surveyed,True,False,2,facility,facility,59,exhausted,0,0,https://www.town.kusu.oita.jp/soshiki/shakaikyoikuka/sports/3/1328.html,facility,facility,多目的グラウンド/玖珠町,少年サッカー、少年ラグビー、一般ソフトボール、ゲートボール、グラウンドゴルフ等の試合や練習に利用
