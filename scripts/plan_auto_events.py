@@ -21,7 +21,7 @@ def plan(config_path: str, survey_dir: str, commit_message: str) -> tuple[list[d
         if (Path(survey_dir) / keyword / route).exists():
             notes.append(f"keyword={keyword} route={route}: 結果が既にあるため実行しない(上書き防止。新しい route 名にすること)")
             continue
-        targets.append({"prefecture": t.get("prefecture", ""), "keyword": keyword, "route": route, "shards": str(t.get("shards", 1))})
+        targets.append({"prefecture": t.get("prefecture", ""), "keyword": keyword, "route": route, "shards": str(t.get("shards", 1)), "survey_set": t.get("survey_set", "")})
     return targets, notes
 
 
@@ -29,7 +29,7 @@ def main() -> int:
     targets, notes = plan("config/auto_events.json", "data/events", os.environ.get("COMMIT_MESSAGE", ""))
     out = os.environ.get("GITHUB_OUTPUT")
     # 対象が0件でも、matrix が空にならないようダミーを入れる(実行は count の if で止める)
-    matrix = {"include": targets or [{"prefecture": "none", "keyword": "none", "route": "none", "shards": "1"}]}
+    matrix = {"include": targets or [{"prefecture": "none", "keyword": "none", "route": "none", "shards": "1", "survey_set": ""}]}
     lines = [f"count={len(targets)}", "matrix=" + json.dumps(matrix, ensure_ascii=False)]
     if out:
         with open(out, "a", encoding="utf-8") as f:

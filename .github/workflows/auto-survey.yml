@@ -51,6 +51,7 @@ jobs:
       from_route: ${{ matrix.from_route }}
       shards: ${{ matrix.shards }}
       max_pages: ${{ matrix.max_pages }}
+      event_focus: ${{ matrix.event_focus }}
       commit_results: true
     permissions:
       contents: write

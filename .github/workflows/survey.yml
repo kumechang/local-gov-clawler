@@ -22,6 +22,9 @@ on:
       max_pages:
         type: string
         default: "200"
+      event_focus:
+        type: string
+        default: ""
       commit_results:
         type: boolean
         default: false
@@ -45,6 +48,9 @@ on:
       max_pages:
         description: 1自治体あたり取得するページ数の上限
         default: "200"
+      event_focus:
+        description: 空でなければ、イベント専用の探索(D-141)
+        default: ""
       commit_results:
         description: 結果とサマリをこのブランチへコミットする
         type: boolean
@@ -93,11 +99,13 @@ jobs:
           ROUTE: ${{ inputs.route }}
           FROM_ROUTE: ${{ inputs.from_route }}
           MAX_PAGES: ${{ inputs.max_pages }}
+          EVENT_FOCUS: ${{ inputs.event_focus }}
           TOTAL: ${{ inputs.shards }}
           SHARD: ${{ matrix.shard }}
         run: |
           args=(survey --scope municipality --keywords "config/keywords/$KEYWORD.json" --route "$ROUTE" --from-route "$FROM_ROUTE" --max-pages "$MAX_PAGES" --shard "$SHARD/$TOTAL" --out out/survey --headless)
           if [ -n "$PREFECTURE" ]; then args+=(--prefecture "$PREFECTURE"); fi
+          if [ -n "$EVENT_FOCUS" ]; then args+=(--event-focus); fi
           localgov-crawler "${args[@]}"
       - uses: actions/upload-artifact@v4
         with:

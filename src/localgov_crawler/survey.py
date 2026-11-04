@@ -143,6 +143,7 @@ class SurveyConfig:
     seed_depth: int = 2  # 入口から何階層たどるか(施設詳細・イベントとも)
     max_seeds: int = 12
     max_event_pages: int = 80  # イベントのページ(月次の一覧など)で上限を使い切らないための枠
+    event_focus: bool = False  # イベント専用の探索(D-141): イベント・お知らせ・カレンダーを入口にし、イベントのページを優先してたどる
     snippet_chars: int = 30
     retry_wait: float = 2.0
     max_requests: int = field(default=0)  # 0なら max_pages + 8 にする
@@ -234,6 +235,32 @@ def seeds_from_result(result: dict, max_seeds: int = 12) -> list[dict]:
     return sorted(seeds, key=lambda s: order[s["role"]])[:max_seeds]
 
 
+# イベント専用の探索の入口(D-141): イベント・行事・カレンダー・催し、スポーツ関連のお知らせ・新着
+EVENT_FOCUS_ENTRANCE = re.compile(r"イベント|行事|カレンダー|催し|大会|スケジュール|新着|お知らせ|ニュース|広報|スポーツ")
+PAGER = re.compile(r"^(?:次|前|翌|先|前の|次の)(?:へ|ページ|月|の月|週|のページ)|^(?:次|前)$|^\d{1,2}$|^[<>＜＞«»‹›]+$|^(?:次へ|前へ)")
+
+
+def event_focus_seeds(result: dict, max_seeds: int = 12) -> list[dict]:
+    """イベント専用の探索の入口: ナビのイベント・行事・カレンダー・お知らせ。スポーツの入口(一覧)も、その先のイベントのために加える。"""
+    seeds: list[dict] = []
+    seen: set[str] = set()
+
+    def add(url: str, role: str, source: str, text: str = "") -> None:
+        if url and url not in seen and not RESERVATION_URL.search(url):
+            seen.add(url)
+            seeds.append({"url": url, "role": role, "source": source, "text": text})
+
+    nav = [l for l in result.get("nav_links", []) if l.get("same_site") and not l.get("is_pdf")]
+    for l in nav:
+        t = norm_text(l["text"])
+        if 0 < len(t) <= 24 and EVENT_FOCUS_ENTRANCE.search(t) and not RESERVATION_TEXT.search(t):
+            add(l["url"], "event", "nav", t)
+    for sd in seeds_from_result(result, max_seeds):
+        add(sd["url"], "event" if sd["role"] == "event" else sd["role"], sd["source"], sd.get("text", ""))
+    order = {"event": 0, "sports_nav": 1, "listing": 2}
+    return sorted(seeds, key=lambda x: order.get(x["role"], 3))[:max_seeds]
+
+
 BROAD_NAV = re.compile(r"サイトマップ|サイト内の?案内|文化|生涯学習|学習|教育|くらし|暮らし|生活|施設|市民|町民|村民|観光|イベント|行事|健康|レクリエーション|分野|目的|各課")
 
 
@@ -267,9 +294,13 @@ def fallback_seeds(links: list[dict], max_seeds: int = 12) -> list[dict]:
     return seeds[:max_seeds]
 
 
-def _child_role(parent_role: str, text: str, spec: KeywordSpec) -> str | None:
+def _child_role(parent_role: str, text: str, spec: KeywordSpec, event_focus: bool = False) -> str | None:
     """リンクをたどるか・たどるならどの役割か。たどらないなら None。"""
     t = norm_text(text)
+    if event_focus and parent_role == "event" and len(t) <= 60 and not RESERVATION_TEXT.search(t):
+        if spec.in_text(t) or EVENT_LINK.search(t) or FOLLOW_SPORTS.search(t) or PAGER.search(t):
+            return "event"  # イベント専用の探索: 一覧のページ送り(次へ・前月・番号)と、イベントらしいリンクをたどる
+        return None
     if len(t) > 60 or RESERVATION_TEXT.search(t) or hub.STRONG_NEWS.search(t) and not EVENT_LINK.search(t):
         return None
     if parent_role == "broad" and hub.SPORTS_WORD.search(t) and not spec.in_text(t):
@@ -285,10 +316,13 @@ def _child_role(parent_role: str, text: str, spec: KeywordSpec) -> str | None:
     return None
 
 
-def _priority(role: str, depth: int, text: str, spec: KeywordSpec) -> tuple[int, int]:
-    """小さいほど先に取得する。0=ワードを含むリンク、1=一覧・スポーツの入口・施設名、2=その他のスポーツ関連、3=イベント。"""
+def _priority(role: str, depth: int, text: str, spec: KeywordSpec, event_focus: bool = False) -> tuple[int, int]:
+    """小さいほど先に取得する。0=ワードを含むリンク、1=一覧・スポーツの入口・施設名、2=その他のスポーツ関連、3=イベント。
+    イベント専用の探索(event_focus)では、イベントを1にして、ページ送りより先に取る。"""
     if spec.in_text(text):
         return 0, depth
+    if event_focus and role == "event":
+        return 1, depth
     if role in ("listing", "sports_nav") or (role == "facility" and hub.facility_head(text)):
         return 1, depth
     if role == "event":
@@ -324,7 +358,7 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
         out["outcome"] = "no_url" if not m.url else "no_seed"
         return
     out["nav_hits"] = [{"text": l["text"], "url": l["url"]} for l in result.get("nav_links", []) if spec.in_text(l["text"]) and l.get("same_site")][:20]
-    seeds = seeds_from_result(result, cfg.max_seeds)
+    seeds = event_focus_seeds(result, cfg.max_seeds) if cfg.event_focus else seeds_from_result(result, cfg.max_seeds)
     out["seed_mode"] = "normal"
     robots = ctx.load_robots(m.url)
     if robots.unreachable:
@@ -354,7 +388,7 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
     def push(url: str, role: str, depth: int, via: str, text: str, maxd: int) -> None:
         nonlocal seq
         seq += 1
-        cls, d = _priority(role, depth, text or via, spec)
+        cls, d = _priority(role, depth, text or via, spec, cfg.event_focus)
         heapq.heappush(heap, (cls, d, seq, url, role, depth, via, maxd))
 
     queued = {s["url"] for s in seeds}
@@ -404,7 +438,7 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
         for l in links:
             if not l.same_site or l.is_pdf or l.url in queued or RESERVATION_URL.search(l.url) or l.region in ("footer",):
                 continue
-            child = _child_role(role, l.text, spec)
+            child = _child_role(role, l.text, spec, cfg.event_focus)
             if child is None:
                 continue
             queued.add(l.url)
