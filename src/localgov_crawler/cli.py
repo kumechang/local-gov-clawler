@@ -183,7 +183,7 @@ def cmd_survey(args) -> int:
     stored = {r["municipality"]["code"]: r for r in store.load_results(Path(args.results), args.from_route)}
     proxy = os.environ.get("CRAWL_PROXY_URL") if args.use_proxy else None
     contact = os.environ.get("CRAWLER_CONTACT", DEFAULT_CONTACT)
-    cfg = sv.SurveyConfig(route=args.route, max_pages=args.max_pages, seed_depth=args.depth + (1 if args.event_focus else 0), event_focus=args.event_focus, max_event_pages=args.max_pages if args.event_focus else 80, read_pdf=args.read_pdf)
+    cfg = sv.SurveyConfig(route=args.route, max_pages=args.max_pages, seed_depth=args.depth + (1 if args.event_focus else 0), event_focus=args.event_focus, max_event_pages=args.max_pages if args.event_focus else 80, read_pdf=args.read_pdf, ocr_pdf=args.ocr_pdf)
     out = Path(args.out)
     lock = threading.Lock()
     counter = [0]
@@ -491,6 +491,7 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--workers", type=int, default=4); sp.add_argument("--interval", type=float, default=1.0)
     sp.add_argument("--use-proxy", action="store_true")
     sp.add_argument("--headless", action="store_true", help="JS描画のサイト(needs_headless)をヘッドレスブラウザで取得する(要 playwright)")
+    sp.add_argument("--ocr-pdf", action="store_true", help="画像だけのPDFをOCRで読む(D-149。--read-pdf が前提。tesseract か rapidocr が必要)")
     sp.add_argument("--read-pdf", action="store_true", help="スポーツ関連のページから出るPDFを読む(D-144。要 pypdfium2 か pypdf)")
     sp.add_argument("--event-focus", action="store_true", help="イベント専用の探索(D-141): イベント・お知らせ・カレンダーを入口にし、イベントのページを優先する")
     sp.set_defaults(fn=cmd_survey)

@@ -117,7 +117,7 @@ def test_event_focus_seeds_priority_and_pager():
 def test_pdf_pilot_is_wired():
     cfg = json.loads((ROOT / "config" / "auto_survey.json").read_text(encoding="utf-8"))
     pdf = [t for t in cfg["targets"] if t.get("read_pdf")]
-    assert [t["route"] for t in pdf] == ["pdf1_hokkaido", "pdf2_hokkaido"] and all(t["prefecture"] == "北海道" for t in pdf)
+    assert [t["route"] for t in pdf] == ["pdf1_hokkaido", "pdf3_hokkaido"] and all(t["prefecture"] == "北海道" for t in pdf)
     assert "--read-pdf" in (ROOT / ".github/workflows/survey.yml").read_text(encoding="utf-8")
     assert "pypdfium2" in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
 

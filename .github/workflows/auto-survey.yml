@@ -53,6 +53,7 @@ jobs:
       max_pages: ${{ matrix.max_pages }}
       event_focus: ${{ matrix.event_focus }}
       read_pdf: ${{ matrix.read_pdf }}
+      ocr_pdf: ${{ matrix.ocr_pdf }}
       commit_results: true
     permissions:
       contents: write
