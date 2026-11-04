@@ -1,0 +1,43 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+21201,岐阜市,岐阜県,surveyed,True,False,5,facility|organization|other,event,300,max_pages,0,0,https://www.city.gifu.lg.jp/info/shisetsu/1009640/1009641/1009645.html,event,facility,岐阜市南部スポーツセンター 施設案内|岐阜市公式ホームページ-Gifu city,※グラウンド・ゴルフ場については関連情報をご覧ください。
+21202,大垣市,岐阜県,surveyed,True,False,1,facility,event,295,exhausted,0,0,https://www.city.ogaki.lg.jp/0000009551.html,event,facility,大垣市かみいしづ緑の村公園・大垣市山村体験宿泊施設奥養老 | 大垣市公式ホームページ/水の都おおがき,グラウンドゴルフ
+21203,高山市,岐阜県,surveyed,True,False,4,facility|other,event|facility,288,exhausted,0,0,https://www.city.takayama.lg.jp/shisetsu/1004139/1000043/1001720.html,facility,facility,施設案内 大八グラウンド|高山市,また、サッカーだけでなく、幼児の運動会やグラウンドゴルフ、イベントや交流の場としてご利用ください。
+21204,多治見市,岐阜県,surveyed,True,False,1,facility,facility,161,exhausted,0,0,https://www.city.tajimi.lg.jp/kanko_bunka_sports/sports/1006736/1010517.html,facility,facility,市民広場(星ケ台競技場)無料開放(朝の部)|多治見市公式ホームページ,グラウンドゴルフ、ペタング、モルック、輪投げなど軽スポーツを無料で体験できま
+21205,関市,岐阜県,surveyed,True,False,2,facility,event,300,max_pages,0,0,https://www.city.seki.lg.jp/0000004410.html,event,facility,中池かわせみスタジアム(陸上競技場) | 関市役所公式ホームページ,を1周することができます。また、サッカー1面、ラグビー1面、グラウンドゴルフの利用もできます。
+21206,中津川市,岐阜県,surveyed,True,False,1,facility,facility,144,exhausted,0,0,https://www.city.nakatsugawa.lg.jp/tcs/facility/1/4350.html,facility,facility,マレットゴルフ場、ゲートボール場/中津川市,福岡グラウンドゴルフ場
+21207,美濃市,岐阜県,surveyed,False,False,0,,,63,exhausted,0,0,,,,,
+21208,瑞浪市,岐阜県,surveyed,False,False,0,,,150,exhausted,0,0,,,,,
+21209,羽島市,岐阜県,surveyed,True,False,2,event|facility,event|facility,128,exhausted,0,0,https://www.city.hashima.lg.jp/6090.html,event,event,ファミリースポーツ広場2026を開催/羽島市公式Webサイト,ボッチャ、ふらば~る、ラダーゲッター、ソフトダーツ、グラウンド・ゴルフ(雨天中止)
+21210,恵那市,岐阜県,surveyed,False,False,0,,,153,exhausted,0,0,,,,,
+21211,美濃加茂市,岐阜県,surveyed,False,False,0,,,156,exhausted,0,0,,,,,
+21212,土岐市,岐阜県,surveyed,True,True,9,event|organization|other,event,234,exhausted,0,1,https://www.city.toki.lg.jp/kanko/sports/1006956.html,event,other,ニュースポーツの紹介|土岐市公式ウェブサイト,グラウンドゴルフ
+21213,各務原市,岐阜県,fetch_failed,False,False,0,,,0,,0,0,,,,,
+21214,可児市,岐阜県,surveyed,True,True,3,event|facility|other,event|facility,232,exhausted,0,1,https://www.city.kani.lg.jp/23931.htm,event,event,行事・イベント予定/可児市,■帷子グラウンドゴルフ大会
+21215,山県市,岐阜県,surveyed,False,False,0,,,18,exhausted,0,0,,,,,
+21216,瑞穂市,岐阜県,surveyed,True,False,1,other,facility,149,exhausted,0,0,https://www.city.mizuho.lg.jp/2218.htm,facility,other,スポーツ用具の借用申込み/瑞穂市,グラウンドゴルフ
+21217,飛騨市,岐阜県,surveyed,True,True,4,event|facility|other,event|facility,300,max_pages,0,1,https://www.city.hida.gifu.jp/soshiki/12/64277.html,event,event,飛騨市長杯争奪 軽スポーツ大会 - 飛騨市公式ウェブサイト,第21回 飛騨市長杯争奪 グラウンド・ゴルフ大会
+21218,本巣市,岐阜県,surveyed,True,False,1,organization,event,169,exhausted,0,0,https://www.city.motosu.lg.jp/0000001120.html,event,organization,本巣市スポーツ協会ガイド | 本巣市,グラウンドゴルフ
+21219,郡上市,岐阜県,surveyed,False,False,0,,,22,exhausted,0,0,,,,,
+21220,下呂市,岐阜県,surveyed,True,False,1,facility,event,162,exhausted,0,0,https://www.city.gero.lg.jp/soshiki/59/1606.html,event,facility,飛騨川公園 - 下呂市ホームページ,グラウンドゴルフ
+21221,海津市,岐阜県,surveyed,True,False,22,facility|organization,facility|listing,156,exhausted,0,0,https://www.city.kaizu.lg.jp/kurashi/category/1-8-4-0-0-0-0-0-0-0.html,listing,facility,体育施設 | 海津市,南濃グラウンド・ゴルフ場
+21302,岐南町,岐阜県,surveyed,False,False,0,,,90,exhausted,0,0,,,,,
+21303,笠松町,岐阜県,surveyed,True,True,24,event|other,event|facility,300,max_pages,0,2,https://www.town.kasamatsu.gifu.jp/category/bunya/sports_bunka_kanko/,event,other,スポーツ・文化・観光 | 笠松町 笠松町 KASAMATSU,第44回 町民・交流グラウンド・ゴルフ大会開催のお知らせ (2026年08月26日 教育文化課)
+21341,養老町,岐阜県,surveyed,False,False,0,,,88,exhausted,0,0,,,,,
+21361,垂井町,岐阜県,surveyed,False,False,0,,,132,exhausted,0,0,,,,,
+21362,関ケ原町,岐阜県,surveyed,False,False,0,,,40,exhausted,0,0,,,,,
+21381,神戸町,岐阜県,surveyed,True,False,1,organization,facility,38,exhausted,0,0,https://www.town.godo.gifu.jp/life/sho_supo/sho_supo12.html,facility,organization,神戸町スポーツ協会 | 岐阜県安八郡神戸町公式ホームページ,・空手協会・ソフトテニス協会・柔道協会・走ろう会・野歩路会・グラウンドゴルフ協会・綱引協会・ソフトバレーボール協会・インディアカ協会
+21382,輪之内町,岐阜県,surveyed,False,False,0,,,67,exhausted,0,0,,,,,
+21383,安八町,岐阜県,surveyed,False,False,0,,,136,exhausted,0,0,,,,,
+21401,揖斐川町,岐阜県,surveyed,True,False,1,organization,facility,59,exhausted,0,0,https://www.town.ibigawa.lg.jp/page/1047.html,facility,organization,揖斐川町体育協会 - 揖斐川町公式ホームページへようこそ(社会教育課),グランドゴルフ
+21403,大野町,岐阜県,surveyed,True,False,2,facility|organization,event|listing,56,exhausted,0,0,https://www.town-ono.jp/0000000416.html,listing,facility,大野町運動公園 | 大野町,縦約130m、横約140mの広さで、サッカー、ソフトボール、グラウンドゴルフなど多くのスポーツが楽しめる多目的運動場です。
+21404,池田町,岐阜県,surveyed,True,False,5,facility,event,88,exhausted,0,0,https://www.town.gifu-ikeda.lg.jp/0000002879.html,event,facility,「池田公園人工芝グラウンド」オープニングセレモニーを行いました | 岐阜県揖斐郡池田町,長とサッカー少年団団員らによる「キックインセレモニー」と地元グラウンドゴルフ愛好団体らによる「ホールポストインセレモニー」を行い、完成を
+21421,北方町,岐阜県,surveyed,False,False,0,,,24,exhausted,0,0,,,,,
+21501,坂祝町,岐阜県,surveyed,False,False,0,,,5,exhausted,0,0,,,,,
+21502,富加町,岐阜県,surveyed,True,False,1,facility,listing,73,exhausted,0,0,https://www.town.tomika.gifu.jp/docs/227.html,listing,facility,半布ヶ丘グラウンド - 富加町,野球、ソフトボール、グラウンドゴルフなどができます。
+21503,川辺町,岐阜県,surveyed,True,False,1,facility,event,67,exhausted,0,0,https://www.kawabe-gifu.jp/?page_id=51512,event,facility,公園紹介サイト – 川辺町ホームページ,公園内でゲートボール、グラウンドゴルフなどをしていいですか。
+21504,七宗町,岐阜県,surveyed,False,False,0,,,2,exhausted,0,0,,,,,
+21505,八百津町,岐阜県,surveyed,True,False,1,facility,facility,63,exhausted,0,0,https://www.town.yaotsu.lg.jp/1504.htm,facility,facility,蘇水公園/八百津町,※サッカーをはじめ、グラウンドゴルフやソフトボールなど地域行事や各種イベントにご利用ください。
+21506,白川町,岐阜県,surveyed,False,False,0,,,45,exhausted,0,0,,,,,
+21507,東白川村,岐阜県,surveyed,False,False,0,,,10,exhausted,0,0,,,,,
+21521,御嵩町,岐阜県,surveyed,False,False,0,,,75,exhausted,0,0,,,,,
+21604,白川村,岐阜県,surveyed,False,False,0,,,2,exhausted,0,0,,,,,
