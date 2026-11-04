@@ -491,7 +491,7 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--workers", type=int, default=4); sp.add_argument("--interval", type=float, default=1.0)
     sp.add_argument("--use-proxy", action="store_true")
     sp.add_argument("--headless", action="store_true", help="JS描画のサイト(needs_headless)をヘッドレスブラウザで取得する(要 playwright)")
-    sp.add_argument("--read-pdf", action="store_true", help="スポーツ関連のページから出るPDFを読む(D-144。要 pypdf)")
+    sp.add_argument("--read-pdf", action="store_true", help="スポーツ関連のページから出るPDFを読む(D-144。要 pypdfium2 か pypdf)")
     sp.add_argument("--event-focus", action="store_true", help="イベント専用の探索(D-141): イベント・お知らせ・カレンダーを入口にし、イベントのページを優先する")
     sp.set_defaults(fn=cmd_survey)
 

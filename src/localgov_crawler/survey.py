@@ -339,23 +339,58 @@ PDF_OTHER_DOC = re.compile(r"議事録|会議録|議事概要|計画|報告書|�
 PDF_SPORTS_ROLES = ("listing", "sports_nav", "facility", "event")
 
 
+def _read_pdfium(body: bytes, max_pages: int) -> tuple[str, int]:
+    import pypdfium2 as pdfium
+    doc = pdfium.PdfDocument(body)
+    try:
+        n = len(doc)
+        parts = []
+        for i in range(min(n, max_pages)):
+            page = doc[i]
+            tp = page.get_textpage()
+            parts.append(tp.get_text_range())
+            tp.close()
+            page.close()
+        return "\n".join(parts), n
+    finally:
+        doc.close()
+
+
+def _read_pypdf(body: bytes, max_pages: int) -> tuple[str, int]:
+    import io
+
+    import pypdf
+    reader = pypdf.PdfReader(io.BytesIO(body))
+    if reader.is_encrypted:
+        raise ValueError("encrypted")
+    return "\n".join((pg.extract_text() or "") for pg in reader.pages[:max_pages]), len(reader.pages)
+
+
+# PDFの読み取り器(D-147)。日本語の自治体PDF 53件で比べた結果、pypdfium2(PDFium)が最も速く、ワードの検出も最も多かった。
+# pypdfium2 を先に使い、読めない・文字が取れないときだけ pypdf で読み直す(どちらも無ければ no_reader)。
+PDF_READERS = (("pypdfium2", _read_pdfium), ("pypdf", _read_pypdf))
+
+
 def pdf_text(body: bytes, max_pages: int = 30) -> tuple[str, int, str]:
     """PDFの本文(ページ内の改行は残す)・ページ数・状態(ok / no_text / error / no_reader)。画像だけのPDFは no_text。"""
-    import io
-    try:
-        import pypdf
-    except ImportError:
+    available = False
+    pages = 0
+    for _name, reader in PDF_READERS:
+        try:
+            raw, n = reader(body, max_pages)
+        except ImportError:
+            continue
+        except Exception:
+            available = True
+            continue
+        available = True
+        pages = max(pages, n)
+        text = "\n".join(norm_text(l) for l in raw.replace("\r\n", "\n").replace("\r", "\n").split("\n") if norm_text(l))
+        if len(text) >= 20:
+            return text, pages, "ok"
+    if not available:
         return "", 0, "no_reader"
-    try:
-        reader = pypdf.PdfReader(io.BytesIO(body))
-        if reader.is_encrypted:
-            return "", len(reader.pages), "error"
-        pages = reader.pages[:max_pages]
-        text = "\n".join((pg.extract_text() or "") for pg in pages)
-    except Exception:
-        return "", 0, "error"
-    text = "\n".join(norm_text(l) for l in text.split("\n") if norm_text(l))
-    return text, len(reader.pages), ("ok" if len(text) >= 20 else "no_text")
+    return "", pages, ("no_text" if pages else "error")
 
 
 def classify_pdf(title: str, link_text: str, url: str) -> str:

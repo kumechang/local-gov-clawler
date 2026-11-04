@@ -309,3 +309,25 @@ def test_survey_reads_pdfs_from_sports_pages_only(monkeypatch):
     assert len(rows) == 1 and rows[0]["page_kind"] == "facility"
     off = sv.survey_municipality(M, r, make_fetcher(routes), SPEC, sv.SurveyConfig(route="t", retry_wait=0))
     assert not [p for p in off["pages"] if p["role"] == "pdf"]  # 既定ではPDFを読まない
+
+
+def test_pdf_readers_fall_back_in_order(monkeypatch):
+    def first(body, max_pages):
+        raise RuntimeError("broken")
+
+    def second(body, max_pages):
+        return "グラウンドゴルフ場が1か所あります。\r\n平成大橋上流右岸広場にあります。", 3
+
+    monkeypatch.setattr(sv, "PDF_READERS", (("a", first), ("b", second)))
+    text, pages, state = sv.pdf_text(b"x")
+    assert state == "ok" and pages == 3 and "\r" not in text and text.split("\n")[0].startswith("グラウンドゴルフ")
+    monkeypatch.setattr(sv, "PDF_READERS", (("a", first),))
+    assert sv.pdf_text(b"x")[2] == "error"
+    monkeypatch.setattr(sv, "PDF_READERS", (("a", lambda b, m: ("", 2)),))
+    assert sv.pdf_text(b"x") == ("", 2, "no_text")
+
+    def missing(body, max_pages):
+        raise ImportError("no module")
+
+    monkeypatch.setattr(sv, "PDF_READERS", (("a", missing),))
+    assert sv.pdf_text(b"x")[2] == "no_reader"

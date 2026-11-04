@@ -201,3 +201,6 @@
 - [ ] ユーザー判断待ち: イベント15行(ev3)の確認(`data/ground_truth/events_grandgolf_ev3_sample.csv`)
 - [x] イベント15行(ev3)の確認(D-146): 全体OK、修正3点を反映。ev4(`ev4_*`)を設定
 - [ ] PR・マージ: ユーザーの指示で、修正がそろってからまとめて(ev4とPDFの試しpdf1_hokkaido)
+- [x] PDF読み取りライブラリの比較(D-147)。pypdfium2 を既定に変更
+- [ ] 北海道の試し pdf2_hokkaido(pypdfium2): mainへのマージで実行(PR・マージは指示待ち。pdf1は実行中)
+- [ ] 画像だけのPDF(約7.5%)のOCR: GitHub Actionsで tesseract-jpn を試す(別の段階)

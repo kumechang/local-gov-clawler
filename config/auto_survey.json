@@ -821,6 +821,14 @@
       "from_route": "redecide_v12_1",
       "max_pages": 200,
       "read_pdf": "1"
+    },
+    {
+      "prefecture": "北海道",
+      "keyword": "grandgolf",
+      "route": "pdf2_hokkaido",
+      "from_route": "redecide_v12_1",
+      "max_pages": 200,
+      "read_pdf": "1"
     }
   ]
 }
