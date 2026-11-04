@@ -38,3 +38,9 @@
 - `grandgolf_facilities_verified.csv`: **掲載版**。`grandgolf_facilities_all.csv`(自動抽出862行)に、ユーザーが補完した施設のうち**元ページで確認できたもの**を加えた(1,006行・412自治体)。`data_source` は『自動抽出』『ユーザー補完』。`verification` に、ページで確認できた項目(住所・電話)を書いた。`contact_phone` は、施設の電話があればそれ、無ければ問い合わせ先の電話(`contact_phone_kind` に種別)。
 - `grandgolf_facilities_to_check.csv`: **掲載しなかったもの**(100行)と理由。元ページを取得できない、施設名の近くにグラウンドゴルフの記述がない、補完した住所・電話が元ページで確認できない、のいずれか。
 - 元のユーザー補完CSVは `data/input/grandgolf_facilities_merged_enriched_20261020.csv`。
+
+## イベント(第2版、2026-11-04、D-139)
+- `grandgolf_events_detail.csv`: イベントの詳細すべて(405行・196自治体)。`event_kind`(グラウンドゴルフ専用/複数競技の大会/カレンダー・予定表/結果・報告/その他)、`date_start`・`date_end`(`date_basis` が日付の出どころ)、`period`(期間内=2025年4月以降/期間外/日付不明)、会場・主催・対象・参加費・申込・締切・問い合わせ先、`evidence`(ワードのある文)。
+- `grandgolf_events_detail_in_period.csv`: 令和7年度以降の行(212行・132自治体)。
+- `grandgolf_events_detail_gg_only.csv`: グラウンドゴルフ専用で期間外を除く行(51行)。
+- 範囲外: ワード調査が到達しなかったイベントのページ、PDFの中身、JavaScriptで描画するカレンダーの日付。
