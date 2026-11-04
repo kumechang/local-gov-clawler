@@ -337,7 +337,7 @@ def cmd_events(args) -> int:
     for route in _routes_of(args):
         for s_ in sv.load_surveys(Path(args.surveys), spec.name, route):
             chosen.setdefault(s_["municipality"]["code"], s_)
-    pages = {code: [r for r in sv.export_rows(s_) if (r["page_kind"] == "event" or r["found_via"] == "event") and r["found_via"] != "pdf_link"] for code, s_ in chosen.items()}
+    pages = {code: [r for r in sv.export_rows(s_) if r["page_kind"] == "event" and r["found_via"] != "pdf_link"] for code, s_ in chosen.items()}
     proxy = os.environ.get("CRAWL_PROXY_URL") if args.use_proxy else None
     contact = os.environ.get("CRAWLER_CONTACT", DEFAULT_CONTACT)
     cfg = evm.EventsConfig(route=args.route, max_pages=args.max_pages)
