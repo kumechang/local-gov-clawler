@@ -1,0 +1,44 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+27100,大阪市,大阪府,surveyed,True,False,1,facility,event,210,max_requests,0,0,https://www.city.osaka.lg.jp/kensetsu/page/0000010427.html,event,facility,大阪市:住之江抽水所多目的グラウンド(休止中) (...>施設情報>各種スポーツ場),このグラウンドはグラウンド・ゴルフなどの練習ができるほか、バスケットボールの練習用ゴールもあり
+27140,堺市,大阪府,surveyed,True,False,10,event|facility|organization|other,event|facility,300,max_pages,0,0,https://www.city.sakai.lg.jp/kurashi/sports/oshirase/sakaisiminorinpikkutaikenkai.html,event,event,堺市民オリンピック同時開催イベント!! 堺市,・グラウンド・ゴルフ
+27202,岸和田市,大阪府,surveyed,True,False,6,event|facility|other,event|listing,300,max_pages,0,0,https://www.city.kishiwada.lg.jp/life/3/22/,event,other,生涯学習・スポーツ - 岸和田市公式ウェブサイト,2026年6月21日掲載スポーツ体験会(グラウンドゴルフ・モルック)
+27203,豊中市,大阪府,surveyed,True,False,4,event|facility,event,300,max_pages,0,0,https://www.city.toyonaka.osaka.jp/jinken_gakushu/sports/sports_topics/demaesports.html,event,event,軽スポーツ教室の参加者を募集 豊中市,グラウンドゴルフ
+27204,池田市,大阪府,surveyed,True,False,2,facility,event,96,exhausted,0,0,https://www.city.ikeda.osaka.jp/kanko_bunka/sports/shisetsu/21190.html,event,facility,空港緑地グラウンド/池田市,・高齢者が行うグラウンドゴルフ、ゲートボール、その他スポーツ活動
+27205,吹田市,大阪府,surveyed,False,False,0,,,300,max_pages,0,0,,,,,
+27206,泉大津市,大阪府,surveyed,False,False,0,,,24,exhausted,0,0,,,,,
+27207,高槻市,大阪府,surveyed,True,False,4,event|facility,event,300,max_pages,0,0,https://www.city.takatsuki.osaka.jp/life/6/59/307/,event,facility,コミュニティセンター - 高槻市ホームページ,2026年3月27日更新堤コミュニティセンターグラウンドゴルフ教室 令和8年度受講生募集
+27208,貝塚市,大阪府,surveyed,False,False,0,,,155,exhausted,0,0,,,,,
+27209,守口市,大阪府,surveyed,True,False,1,other,facility,38,exhausted,0,0,https://www.city.moriguchi.osaka.jp/kanko_bunka_sports/shogaigakushu/8264.html,facility,other,ニュースポーツ用具貸出について/守口市ホームページ,グラウンドゴルフ
+27210,枚方市,大阪府,surveyed,True,False,5,facility|organization,event|facility,300,max_pages,0,0,https://www.city.hirakata.osaka.jp/0000037395.html,event,organization,地域のスポーツを進める!支える!スポーツ推進委員 | 枚方市ホームページ,●「ライフ 親子グラウンド・ゴルフ大会」
+27211,茨木市,大阪府,surveyed,True,False,4,event|organization|other,event,300,max_pages,0,0,https://www.city.ibaraki.osaka.jp/kikou/shimin/sports_suishin/sports_info/event_information/index.html,event,event,各種大会・イベント情報/茨木市,第34回市民グラウンド・ゴルフ大会の開催について
+27212,八尾市,大阪府,surveyed,True,False,4,event|organization|other,event,268,exhausted,0,0,https://www.city.yao.osaka.jp/bunka_sports_event/sports/1011029/index.html,event,event,スポーツ大会|大阪府八尾市公式ホームページ,グラウンドゴルフ
+27213,泉佐野市,大阪府,surveyed,False,False,0,,,76,exhausted,0,0,,,,,
+27214,富田林市,大阪府,no_seed,False,False,0,,,0,,0,0,,,,,
+27215,寝屋川市,大阪府,surveyed,False,False,0,,,186,exhausted,0,0,,,,,
+27216,河内長野市,大阪府,surveyed,True,False,4,facility,event|listing,300,max_pages,0,0,https://www.city.kawachinagano.lg.jp/soshiki/47/3841.html,listing,facility,南河内3市2町1村のスポーツ施設は広域利用が可能です - 河内長野市ホームページ,グラウンド・ゴルフ場
+27217,松原市,大阪府,surveyed,True,False,3,event|facility,event,117,exhausted,0,0,https://www.city.matsubara.lg.jp/docs/2527799.html,event,event,令和8年度 市民スポーツ大会・前期スポーツ教室のご案内 (3月広報掲載分) - 松原市,グラウンド・ゴルフ
+27218,大東市,大阪府,surveyed,False,False,0,,,155,exhausted,0,0,,,,,
+27219,和泉市,大阪府,surveyed,False,False,0,,,87,exhausted,0,0,,,,,
+27220,箕面市,大阪府,surveyed,True,False,1,other,facility,285,exhausted,0,0,https://www.city.minoh.lg.jp/sports/sports_promotion/plan.html,facility,other,箕面市スポーツ振興計画/箕面市,ニュースポーツについては、過去において、ペタンク、グラウンドゴルフ、ゲートボール、ダーツ、健康体操、ソフトエアロビクス等の教室
+27221,柏原市,大阪府,surveyed,True,False,8,event|facility,event|facility,176,exhausted,0,0,https://www.city.kashiwara.lg.jp/category/bunya/machinomidokoro/event/,event,event,イベント・教室講座 | 大阪府柏原市,グラウンドゴルフや輪投げ、体力測定など、どなたでも楽しめるスポーツイベント。
+27222,羽曳野市,大阪府,surveyed,True,True,11,event|facility|other,event|facility|listing,82,exhausted,0,1,https://www.city.habikino.lg.jp/soshiki/shougaigakushu/shougaigakushsports/sports_shinko/kokyo_sports/14785.html,listing,facility,健康ふれあいの郷 グラウンド・ゴルフ場/羽曳野市,健康ふれあいの郷 グラウンド・ゴルフ場
+27223,門真市,大阪府,surveyed,True,False,20,event|facility,event,180,exhausted,0,0,https://www.city.kadoma.osaka.jp/event/36556.html,event,event,令和7(2025)年度 かどま市スポーツレクリエーションフェスティバル2025/門真市,グラウンドゴルフ体験
+27224,摂津市,大阪府,surveyed,True,False,2,facility,event|facility,122,exhausted,0,0,https://www.city.settsu.osaka.jp/map/bunnka/suport/undoujyou/10119.html,facility,facility,山田川運動広場/摂津市,、ソフトボール、サッカー、ラグビー(ポールなし、練習のみ)、グランドゴルフ
+27225,高石市,大阪府,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
+27226,藤井寺市,大阪府,surveyed,True,False,1,facility,facility,36,exhausted,0,0,https://www.city.fujiidera.lg.jp/shisetsuannaibasu/supotsu/1387252652372.html,facility,facility,グラウンド/藤井寺市,サッカーやグラウンドゴルフなどに利用できる青少年運動広場や、成人軟式野球に利用できる船
+27227,東大阪市,大阪府,surveyed,True,False,4,facility|organization,event,300,max_pages,0,0,https://www.city.higashiosaka.lg.jp/0000015775.html,event,facility,池島市民広場 | 東大阪市,硬式野球・中学生硬式野球・ソフトボール・サッカー・ラブビー・グラウンドゴルフ・ゲートボール等を楽しめる施設です。
+27228,泉南市,大阪府,surveyed,True,True,3,event|organization,event,149,exhausted,0,1,https://www.city.sennan.lg.jp/kanko/events/index.html,event,event,イベント/泉南市ウェブサイトにようこそ!,2025年10月 ライフ親子グラウンド・ゴルフ大会in泉南
+27229,四條畷市,大阪府,surveyed,True,False,2,event|facility,event,288,exhausted,0,0,https://www.city.shijonawate.lg.jp/page/17-19115.html,event,facility,北谷公園グラウンド利用案内 - 四條畷市ホームページ(建設管理課),少年の軟式野球、サッカー、グラウンドゴルフ等のスポーツを含め、多目的にご利用いただけます。
+27230,交野市,大阪府,surveyed,False,False,0,,,63,exhausted,0,0,,,,,
+27231,大阪狭山市,大阪府,surveyed,False,False,0,,,41,exhausted,0,0,,,,,
+27232,阪南市,大阪府,surveyed,False,False,0,,,38,exhausted,0,0,,,,,
+27301,島本町,大阪府,no_seed,False,False,0,,,0,,0,0,,,,,
+27321,豊能町,大阪府,surveyed,True,False,1,facility,event,100,exhausted,0,0,https://www.town.toyono.osaka.jp/kankou-bunka-sports/sports/fureai-hiroba/page007252.html,event,facility,豊能町立ふれあい広場について | 豊能町公式ホームページ,運動広場(40m×80m) 土の広場 ・・・グラウンドゴルフや遊び場としてご利用いただけます。
+27322,能勢町,大阪府,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
+27341,忠岡町,大阪府,surveyed,False,False,0,,,51,exhausted,0,0,,,,,
+27361,熊取町,大阪府,surveyed,True,False,7,event|facility|organization,event|facility,155,exhausted,0,0,https://www.town.kumatori.lg.jp/bunka_sports/15525.html,event,event,熊取町町民スポーツ大会を開催します!/熊取町,拳法、ソフトボール、テニス、ソフトテニス、バスケットボール、グラウンドゴルフ、サッカー、トランポリン、ペタンク、ノルディック・ウォーク、
+27362,田尻町,大阪府,surveyed,True,False,1,facility,facility,73,exhausted,0,0,https://www.town.tajiri.osaka.jp/johowosagasu/shisetsuannai/undousisetu/2494.html,facility,facility,たじりっち広場/田尻町ホームページ,は3on3バスケットやボールの壁あて、土の広場ではサッカーやグランドゴルフで体を動かしてね!
+27366,岬町,大阪府,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
+27381,太子町,大阪府,surveyed,True,True,3,facility,facility|listing,46,exhausted,0,1,http://www.town.taishi.osaka.jp/shisetsuguide/1550647673510.html,listing,facility,太子町立グラウンドゴルフ等多目的交流広場(いきいき交流広場)/大阪府太子町,太子町立グラウンドゴルフ等多目的交流広場(いきいき交流広場)
+27382,河南町,大阪府,surveyed,True,False,5,event|facility|organization,event|facility|listing,33,exhausted,0,0,https://www.town.kanan.osaka.jp/kanko_bunka_sports/sports/1/index.html,listing,facility,スポーツ施設案内/河南町,グラウンド・ゴルフ場
+27383,千早赤阪村,大阪府,surveyed,False,False,0,,,30,exhausted,0,0,,,,,
