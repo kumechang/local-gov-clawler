@@ -1,0 +1,18 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+18201,福井市,福井県,surveyed,True,False,4,facility|organization,event|facility,300,max_pages,0,0,https://www.city.fukui.lg.jp/kyoiku/sports/sisetu/spo-park.html,facility,facility,スポーツ公園の施設案内,グラウンドゴルフ場:18H
+18202,敦賀市,福井県,surveyed,True,True,3,event|facility|organization,event,300,max_pages,0,2,https://www.city.tsuruga.lg.jp/page/1499.html,event,facility,施設のご案内(総合運動公園) - 敦賀市ホームページ(総合運動公園),グラウンド・ゴルフ利用
+18204,小浜市,福井県,surveyed,False,False,0,,,83,exhausted,0,0,,,,,
+18205,大野市,福井県,surveyed,False,False,0,,,235,exhausted,0,0,,,,,
+18206,勝山市,福井県,surveyed,False,False,0,,,170,exhausted,0,0,,,,,
+18207,鯖江市,福井県,surveyed,True,False,1,organization,event,216,exhausted,0,0,https://www.city.sabae.fukui.jp/kosodate_kyoiku/shogaigakushu/sports/shogaisuports/sportsdantai/sabae-taiiku-kyokai.html,event,organization,一般社団法人鯖江市スポーツ協会 – めがねのまちさばえ 鯖江市,グラウンドゴルフ協会
+18208,あわら市,福井県,surveyed,True,False,1,other,event,206,exhausted,0,0,https://www.city.awara.lg.jp/mokuteki/education/education03/education0301/p015717.html,event,other,AWARAんぴっく~スポーツの祭典~たくさんのご来場、ありがとうございました! | あわら市ホームページ,(グラウンドゴルフ体験の様子)
+18209,越前市,福井県,surveyed,True,True,2,facility|other,event|facility,159,exhausted,0,1,https://www.city.echizen.lg.jp/office/010/040/sinkou/newsport.html,event,other,ニュースポーツの紹介 - 越前市 スポーツ振興,グラウンド・ゴルフ
+18210,坂井市,福井県,surveyed,False,False,0,,,300,max_pages,0,0,,,,,
+18322,永平寺町,福井県,surveyed,False,False,0,,,39,exhausted,0,0,,,,,
+18382,池田町,福井県,surveyed,True,False,1,facility,facility,64,exhausted,0,0,https://www.town.ikeda.fukui.jp/shisetsu/taiiku/p002489.html,facility,facility,野尻グラウンド | 福井県池田町,ゲートボール、グラウンドゴルフ等でご利用できます。(ナイター設備あり)
+18404,南越前町,福井県,surveyed,False,False,0,,,45,exhausted,0,0,,,,,
+18423,越前町,福井県,surveyed,False,False,0,,,125,exhausted,0,0,,,,,
+18442,美浜町,福井県,surveyed,True,False,3,facility|other,event,214,exhausted,0,0,https://www.town.fukui-mihama.lg.jp/soshiki/list8-18.html,event,other,お知らせ - 福井県美浜町,2022年5月17日更新美浜町西郷健康ひろば グラウンドゴルフ場
+18481,高浜町,福井県,surveyed,True,True,9,event|other,event|facility|listing,192,exhausted,0,2,http://www.town.takahama.fukui.jp/news2026.html,event,other,新着情報一覧|高浜町公式ホームページ 新着情報一覧(2026年),第6回高浜町グラウンド・ゴルフ大会の開催について
+18483,おおい町,福井県,surveyed,True,True,3,event|facility|other,facility|listing,137,exhausted,0,2,https://www.town.ohi.fukui.jp/1001/1207/46/index.html,listing,other,スポーツ | おおい町公式ホームページ,町民グラウンド・ゴルフ大会参加者募集
+18501,若狭町,福井県,surveyed,False,False,0,,,40,exhausted,0,0,,,,,
