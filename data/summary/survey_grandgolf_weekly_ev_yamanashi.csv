@@ -1,0 +1,28 @@
+﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
+19201,甲府市,山梨県,surveyed,False,False,0,,,0,exhausted,0,0,,,,,
+19202,富士吉田市,山梨県,no_seed,False,False,0,,,0,,0,0,,,,,
+19204,都留市,山梨県,surveyed,True,False,1,facility,event,43,exhausted,0,0,https://www.city.tsuru.yamanashi.jp/benri_service/facility_map/1/8/9381.html,event,facility,玉川グラウンド/都留市,サッカー(1面)・フットサル(2面)・グラウンドゴルフなど
+19205,山梨市,山梨県,surveyed,False,False,0,,,162,exhausted,0,0,,,,,
+19206,大月市,山梨県,surveyed,True,False,1,other,event,77,exhausted,0,0,https://www.city.otsuki.yamanashi.jp/bunka/sports/taiikuyougukasidasi.html,event,other,大月市 スポーツ 軽スポーツ用具の貸し出し 緑とせせらぎと未来のまち,グラウンドゴルフ
+19207,韮崎市,山梨県,surveyed,False,False,0,,,65,exhausted,0,0,,,,,
+19208,南アルプス市,山梨県,surveyed,True,False,1,event,event,200,exhausted,0,0,https://www.city.minami-alps.yamanashi.jp/docs/13632.html,event,event,第23回スポーツラリー大会の開催について - 山梨県 南アルプス市 -人がつどい 次世代につなぐ 活力あふれるまち-,4 グラウンドゴルフ
+19209,北杜市,山梨県,surveyed,True,False,1,facility,event,292,max_requests,0,0,https://www.city.hokuto.yamanashi.jp/docs/1300.html,event,facility,北杜市障害者総合支援センター(かざぐるま) - 山梨県北杜市公式サイト,軽スポーツ(卓球、グラウンドゴルフ、カーリング、ペタンクなど)
+19210,甲斐市,山梨県,surveyed,True,False,2,organization|other,event,206,exhausted,0,0,https://www.city.kai.yamanashi.jp/page/19599.html,event,organization,市スポーツ少年団交流会(まちできweb 2026年10月17日) - 甲斐市公式ウェブサイト(秘書課),まるばつゲームやボール運び競争、ドッジボール、大縄跳びの他、グラウンドゴルフ「めざせ!ホールインワン」の4種目を行い、普段は接することが
+19211,笛吹市,山梨県,surveyed,True,False,1,facility,facility,139,exhausted,0,0,https://www.city.fuefuki.yamanashi.jp/shisetsu/sportsshisetsu/006.html,facility,facility,笛吹市/笛吹市春日居スポーツ広場 笛吹市春日居スポーツ広場 (かすがいすぽーつひろば),面とソフトボール面があります。野球・ソフトボール・サッカー・グラウンドゴルフ・ゲートボール等各種のスポーツに利用できます。テニスコートは
+19212,上野原市,山梨県,surveyed,True,False,1,organization,event,168,exhausted,0,0,https://www.city.uenohara.yamanashi.jp/site/kyoiku/1071.html,event,organization,総合型地域スポーツクラブの会員募集について - 上野原市教育委員会 - 上野原市公式ホームページ(社会教育課),グラウンドゴルフ
+19213,甲州市,山梨県,surveyed,False,False,0,,,131,exhausted,0,0,,,,,
+19214,中央市,山梨県,surveyed,True,True,4,event|facility|other,event,70,exhausted,1,1,https://www.city.chuo.yamanashi.jp/eventboshu/15026.html,event,event,令和8年度グラウンド・ゴルフ大会/山梨県中央市公式ホームページ,グラウンドゴルフ大会実施要項R8 (PDFファイル: 145.9KB)
+19346,市川三郷町,山梨県,surveyed,False,False,0,,,61,exhausted,0,0,,,,,
+19364,早川町,山梨県,surveyed,True,False,2,event|organization,event,40,exhausted,0,0,https://www.town.hayakawa.yamanashi.jp/people/sports/sports-hayakawa-assoc.html,event,organization,早川町スポーツ協会 | 早川町役場,町民グラウンド・ゴルフ大会
+19365,身延町,山梨県,surveyed,False,False,0,,,3,exhausted,0,0,,,,,
+19366,南部町,山梨県,surveyed,True,False,2,facility|other,event,54,exhausted,0,0,https://www.town.nanbu.yamanashi.jp/shisetsu/syakaikyouiku/park_arukadia.html,event,facility,アルカディア南部総合公園|公共施設|山梨県南部町ホームページ,会や企業の福利厚生事業としての利用やサッカー・ゲートボール・グランドゴルフ大会等の開催に最適な施設です。
+19368,富士川町,山梨県,surveyed,True,False,4,facility|other,event|facility,45,exhausted,0,0,https://www.town.fujikawa.yamanashi.jp/docs/2023082200234/,facility,facility,富士川いきいきスポーツ公園 料金表 | 山梨県 富士川町,グラウンドゴルフ等、サッカー以外の利用も可能です。
+19384,昭和町,山梨県,surveyed,True,False,1,organization,event,62,exhausted,0,0,https://www.town.showa.yamanashi.jp/soshiki/17/1799.html,event,organization,昭和町スポーツ協会加盟競技団体・専門部一覧 - 人が集まるまち昭和町公式ホームページ,グラウンド・ゴルフ協会
+19422,道志村,山梨県,surveyed,False,False,0,,,0,exhausted,0,0,,,,,
+19423,西桂町,山梨県,surveyed,False,False,0,,,33,exhausted,0,0,,,,,
+19424,忍野村,山梨県,surveyed,False,False,0,,,39,exhausted,0,0,,,,,
+19425,山中湖村,山梨県,surveyed,False,False,0,,,56,exhausted,0,0,,,,,
+19429,鳴沢村,山梨県,surveyed,False,False,0,,,11,exhausted,0,0,,,,,
+19430,富士河口湖町,山梨県,surveyed,False,False,0,,,278,exhausted,0,0,,,,,
+19442,小菅村,山梨県,surveyed,True,False,1,other,event,5,exhausted,0,0,http://www.vill.kosuge.yamanashi.jp/kouhou/index.html,event,other,小菅村ホームページ 広報こすげ,第12回村長杯グラウンドゴルフ大会
+19443,丹波山村,山梨県,surveyed,False,False,0,,,82,exhausted,0,0,,,,,
