@@ -1,3 +1,1 @@
-﻿prefecture,municipality_code,municipality_name,pdf_url,title,kind,found_on,pdf_pages,ocr,text_len,truncated,sha256,fetched_at,text_file
-福井県,18208,あわら市,https://www.city.awara.lg.jp/online/6200/6230/6233/p000526_d/fil/6.pdf,【トリムパークかなづ】利用許可申請書(PDF形式 83キロバイト),other,https://www.city.awara.lg.jp/online/6200/6230/6233/p000526.html,1,,502,,2a97a37db8a5dc95fe1f1e6ebf22b3f19ea318263142282b714a6dd2ce51529b,2026-11-11T02:53:55Z,data/survey/grandgolf/weekly_pdf_fukui/_pdftext/18/18208.json
-福井県,18209,越前市,https://www.city.echizen.lg.jp/office/010/040/sinkou/newsport_d/fil/NSH_11.pdf,グラウンド・ゴルフ,facility,https://www.city.echizen.lg.jp/office/010/040/sinkou/newsport.html,2,1,2299,,544ffb8d540b73590f6cc8ddc5f84d385d4ecffdf928351ab0812c12b405f2e8,2026-11-11T02:53:25Z,data/survey/grandgolf/weekly_pdf_fukui/_pdftext/18/18209.json
+﻿municipality_code
