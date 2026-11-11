@@ -67,6 +67,8 @@ def test_workflows_are_wired():
     assert jobs["survey_facility"]["with"]["read_pdf"] == "1" and jobs["survey_facility"]["with"]["ocr_pdf"] == "1"
     assert jobs["survey_event"]["with"]["event_focus"] == "1"
     assert jobs["extract"]["uses"] == "./.github/workflows/extract.yml" and jobs["extract"]["with"]["survey_set"] == "weekly_facility"
+    # 同じサイトに同時にアクセスしない(1ホスト1リクエスト/秒以下。D-159): 県の中は順番
+    assert jobs["survey_event"]["needs"] == "survey_facility" and set(jobs["extract"]["needs"]) == {"survey_facility", "survey_event"} and set(jobs["events"]["needs"]) == {"survey_facility", "survey_event", "extract"}
     assert jobs["events"]["uses"] == "./.github/workflows/events.yml" and jobs["events"]["with"]["survey_set"] == "weekly_events"
     # 結果をコミットする(定期実行はmainへ)
     assert all(j["with"]["commit_results"] is True and j["permissions"]["contents"] == "write" for j in jobs.values())
@@ -158,4 +160,5 @@ def test_weekly_diff(tmp_path):
     assert "u3" in added and "u1" not in added
     assert "前週のCSVが無い" in diff_mod.build(tmp_path / "none", new, tmp_path / "o2")
     wf = (ROOT / ".github/workflows/weekly-batch.yml").read_text(encoding="utf-8")
+    assert "prev/event_focus" in wf and "--list event" in wf
     assert "cp data/export/weekly/*.csv prev/" in wf and "scripts/weekly_diff.py" in wf and wf.index("cp data/export/weekly/*.csv prev/") < wf.index("survey-export")

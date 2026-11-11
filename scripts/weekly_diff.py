@@ -12,6 +12,9 @@ TARGETS = [
     ("grandgolf_places.csv", "ワードのあったページ(場所)", ("municipality_code", "page_url")),
     ("grandgolf_events.csv", "ワードのあったページ(イベント)", ("municipality_code", "page_url")),
     ("grandgolf_others.csv", "ワードのあったページ(団体・その他)", ("municipality_code", "page_url")),
+    ("event_focus/grandgolf_places.csv", "イベント探索:ワードのあったページ(場所)", ("municipality_code", "page_url")),
+    ("event_focus/grandgolf_events.csv", "イベント探索:ワードのあったページ(イベント)", ("municipality_code", "page_url")),
+    ("event_focus/grandgolf_others.csv", "イベント探索:ワードのあったページ(団体・その他)", ("municipality_code", "page_url")),
     ("grandgolf_places_detail.csv", "施設の詳細", ("municipality_code", "facility_name", "page_url")),
     ("grandgolf_events_detail.csv", "イベントの詳細", ("municipality_code", "event_name", "date_start")),
     ("grandgolf_pdfs.csv", "ワードのあったPDF", ("municipality_code", "pdf_url")),
@@ -54,15 +57,15 @@ def build(prev_dir: Path, new_dir: Path, out_dir: Path) -> str:
     for fname, label, key in TARGETS:
         prev, new = read(prev_dir / fname), read(new_dir / fname)
         added, removed = diff(prev, new, key)
-        stem = fname.removesuffix(".csv")
+        stem = fname.removesuffix(".csv").replace("/", "_")
         write_csv(out_dir / f"{stem}_new.csv", added)
         write_csv(out_dir / f"{stem}_removed.csv", removed)
         lines.append(f"| {label} | {len(prev)} | {len(new)} | {len(added)} | {len(removed)} |")
-        if fname in ("grandgolf_places.csv", "grandgolf_events.csv", "grandgolf_others.csv"):
+        if "_detail" not in fname and "pdfs" not in fname:
             towns_prev |= {r["municipality_code"] for r in prev}
             towns_new |= {r["municipality_code"] for r in new}
     gained, lost = sorted(towns_new - towns_prev), sorted(towns_prev - towns_new)
-    names = {r["municipality_code"]: f"{r['prefecture']}{r['municipality_name']}" for fname, _, _ in TARGETS[:3] for r in read(new_dir / fname) + read(prev_dir / fname)}
+    names = {r["municipality_code"]: f"{r['prefecture']}{r['municipality_name']}" for fname, _, _ in TARGETS[:6] for r in read(new_dir / fname) + read(prev_dir / fname)}
     lines += ["", f"- ワードのあった自治体: 前週 {len(towns_prev)} → 今週 {len(towns_new)}(新しく {len(gained)}、無くなった {len(lost)})"]
     if gained:
         lines.append("  - 新しく: " + "、".join(names.get(c, c) for c in gained[:30]) + (" ほか" if len(gained) > 30 else ""))
