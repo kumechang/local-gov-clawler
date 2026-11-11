@@ -187,7 +187,7 @@ def cmd_survey(args) -> int:
     stored = {r["municipality"]["code"]: r for r in store.load_results(Path(args.results), args.from_route)}
     proxy = os.environ.get("CRAWL_PROXY_URL") if args.use_proxy else None
     contact = os.environ.get("CRAWLER_CONTACT", DEFAULT_CONTACT)
-    cfg = sv.SurveyConfig(route=args.route, max_pages=args.max_pages, seed_depth=args.depth + (1 if args.event_focus else 0), event_focus=args.event_focus, max_event_pages=args.max_pages if args.event_focus else 80, read_pdf=args.read_pdf, ocr_pdf=args.ocr_pdf, follow_external=args.follow_external, max_pdfs=args.max_pdfs)
+    cfg = sv.SurveyConfig(route=args.route, max_pages=args.max_pages, seed_depth=args.depth + (1 if args.event_focus else 0), event_focus=args.event_focus, max_event_pages=args.max_pages if args.event_focus else 80, read_pdf=args.read_pdf, ocr_pdf=args.ocr_pdf, follow_external=args.follow_external, max_pdfs=args.max_pdfs, save_text=args.save_text)
     out = Path(args.out)
     lock = threading.Lock()
     counter = [0]
@@ -288,6 +288,49 @@ def cmd_pdf_index(args) -> int:
         w.writeheader()
         w.writerows(rows)
     print(f"{args.keyword}_pdfs.csv: {len(rows)}行({len({r['municipality_code'] for r in rows})}自治体)  OCR {sum(1 for r in rows if r['ocr'])}  先頭から切った {sum(1 for r in rows if r['truncated'])}")
+    return 0
+
+
+def _page_texts(args) -> list[dict]:
+    from . import survey as sv
+    recs: dict[str, dict] = {}
+    for route in _routes_of(args):
+        for r in sv.load_page_texts(Path(args.surveys), args.keyword, route):
+            recs.setdefault(r["municipality"]["code"], r)
+    return [recs[c] for c in sorted(recs)]
+
+
+def cmd_page_index(args) -> int:
+    """ワードがあったHTMLページの本文の一覧(CSV。本文は含めない)を書き出す(D-164)。本文は page-text で取り出す。"""
+    from . import survey as sv
+    rows = sv.page_text_index(_page_texts(args))
+    out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
+    cols = ["prefecture", "municipality_code", "municipality_name", "page_url", "title", "kind", "found_via", "external_host", "text_len", "truncated", "sha256", "fetched_at", "text_file"]
+    with open(out / f"{args.keyword}_pages.csv", "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=cols)
+        w.writeheader()
+        w.writerows(rows)
+    print(f"{args.keyword}_pages.csv: {len(rows)}行({len({r['municipality_code'] for r in rows})}自治体)  外部サイト {sum(1 for r in rows if r['external_host'])}  先頭から切った {sum(1 for r in rows if r['truncated'])}")
+    return 0
+
+
+def cmd_page_text(args) -> int:
+    """保存したHTMLページの本文を取り出して表示する(D-164)。--code(自治体コード)か --url(URLの一部)で絞る。"""
+    n = 0
+    for r in _page_texts(args):
+        if args.code and r["municipality"]["code"] != args.code:
+            continue
+        for p in r["pages"]:
+            if args.url and args.url not in p["url"]:
+                continue
+            n += 1
+            print(f"===== {r['municipality']['prefecture']} {r['municipality']['name']} ({r['municipality']['code']}) [{p['kind']}] {p['title']}\n{p['url']}  文字数={p['text_len']}{'(先頭から切った)' if p['truncated'] else ''}\n")
+            print(p["text"] if not args.max_chars else p["text"][: args.max_chars])
+            print()
+    if not n:
+        print("該当するページがありません", file=sys.stderr)
+        return 1
     return 0
 
 
@@ -539,6 +582,7 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--use-proxy", action="store_true")
     sp.add_argument("--headless", action="store_true", help="JS描画のサイト(needs_headless)をヘッドレスブラウザで取得する(要 playwright)")
     sp.add_argument("--follow-external", action="store_true", help="スポーツ関連のページからリンクされた外部サイト(協会・指定管理者など)を少しだけ見る(D-161。ロボットファイルを確認し、1ホスト1リクエスト/秒以下)")
+    sp.add_argument("--save-text", action="store_true", help="ワードがあったHTMLページの本文(文字に起こしたもの。表は1行ずつ)を保存する(D-164。HTML原本は保存しない)")
     sp.add_argument("--max-pdfs", type=int, default=20, help="1自治体で読むPDFの数(--read-pdf のとき)")
     sp.add_argument("--ocr-pdf", action="store_true", help="画像だけのPDFをOCRで読む(D-149。--read-pdf が前提。tesseract か rapidocr が必要)")
     sp.add_argument("--read-pdf", action="store_true", help="スポーツ関連のページから出るPDFを読む(D-144。要 pypdfium2 か pypdf)")
@@ -592,6 +636,18 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--routes", nargs="+"); sp.add_argument("--routes-file")
     sp.add_argument("--out", default="data/export")
     sp.set_defaults(fn=cmd_pdf_index)
+
+    sp = sub.add_parser("page-index")
+    sp.add_argument("--surveys", default="data/survey"); sp.add_argument("--keyword", required=True)
+    sp.add_argument("--routes", nargs="+"); sp.add_argument("--routes-file")
+    sp.add_argument("--out", default="data/export")
+    sp.set_defaults(fn=cmd_page_index)
+
+    sp = sub.add_parser("page-text")
+    sp.add_argument("--surveys", default="data/survey"); sp.add_argument("--keyword", required=True)
+    sp.add_argument("--routes", nargs="+"); sp.add_argument("--routes-file")
+    sp.add_argument("--code"); sp.add_argument("--url"); sp.add_argument("--max-chars", type=int, default=0)
+    sp.set_defaults(fn=cmd_page_text)
 
     sp = sub.add_parser("pdf-text")
     sp.add_argument("--surveys", default="data/survey"); sp.add_argument("--keyword", required=True)

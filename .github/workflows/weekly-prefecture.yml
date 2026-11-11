@@ -61,6 +61,7 @@ jobs:
       ocr_pdf: "1"
       max_pdfs: ${{ inputs.facility_max_pdfs }}
       follow_external: ${{ inputs.follow_external }}
+      save_text: "1"
       commit_results: true
     permissions:
       contents: write
@@ -77,6 +78,7 @@ jobs:
       shards: ${{ inputs.shards }}
       max_pages: ${{ inputs.event_max_pages }}
       event_focus: "1"
+      save_text: "1"
       commit_results: true
     permissions:
       contents: write

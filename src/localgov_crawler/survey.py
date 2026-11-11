@@ -160,6 +160,7 @@ class SurveyConfig:
     read_pdf: bool = False  # スポーツ関連のページから出るPDFを読む(D-144)
     ocr_pdf: bool = False  # 画像だけのPDFをOCRで読む(D-149。read_pdf が前提)
     robots_retry_wait: float = 20.0  # robots.txt に届かなかったときの、やり直しまでの待ち(秒)
+    save_text: bool = False  # ワードがあったHTMLページの本文(文字に起こしたもの)を保存する(D-164)
     follow_external: bool = False  # スポーツ関連のページからリンクされた外部サイト(協会・指定管理者など)を少しだけ見る(D-161)
     max_external_pages: int = 12  # 1自治体あたり、外部サイトで取得するページ数の上限
     max_external_hosts: int = 4  # 1自治体あたり、見る外部ホスト数の上限
@@ -169,6 +170,10 @@ class SurveyConfig:
     retry_wait: float = 2.0
     max_requests: int = field(default=0)  # 0なら max_pages + 8 にする
 
+    def text_rows(self, res) -> tuple[str, str]:
+        """保存用の本文(表を1行ずつにしたもの)。取得済みのHTMLをもう一度解析するだけで、追加のアクセスはしない。"""
+        return page_text(parse_html(decode_bytes(res.body, res.content_type)), rows=True)
+
     def pipeline_config(self) -> Config:
         return Config(route=self.route, max_requests=self.max_requests or self.max_pages + 8 + (self.max_pdfs if self.read_pdf else 0) + ((self.max_external_pages + self.max_external_hosts) if self.follow_external else 0), retry_wait=self.retry_wait)
 
@@ -177,7 +182,7 @@ def _text_len(tag) -> int:
     return len(norm_text(tag.get_text(" ")))
 
 
-def page_text(soup: BeautifulSoup) -> tuple[str, str]:
+def page_text(soup: BeautifulSoup, rows: bool = False) -> tuple[str, str]:
     """(題名, 本文)。ナビ・ヘッダー・フッター・サイドバーは本文から外す(全ページ共通のワードを拾わないため)。
     本文の枠(main など)があればその中だけを見る。ページ全体を囲む要素(本文の6割超)は消さない。"""
     title = norm_text(soup.title.get_text(" ")) if soup.title else ""
@@ -204,6 +209,12 @@ def page_text(soup: BeautifulSoup) -> tuple[str, str]:
         tokens = [t for t in (tag.get("class") or []) + [tag.get("id") or ""] if t]
         if any(_CHROME_TOKEN.fullmatch(t.replace("_", "-")) for t in tokens) and _text_len(tag) <= limit:
             tag.decompose()
+    if rows:
+        # 保存用: 表は1行(セルを ' | ' でつなぐ)にして、行の対応(施設名と住所など)が分かるようにする(D-164)
+        for tr in reversed(base.find_all("tr")):
+            cells = [norm_text(c.get_text(" ")) for c in tr.find_all(["th", "td"], recursive=False)]
+            tr.clear()
+            tr.append(" | ".join(c for c in cells if c))
     # ブロック要素の境目を改行にして、行ごとに見られるようにする(否定の文を同じ行だけで判断するため、D-116)
     for br in base.find_all("br"):
         br.replace_with("\n")
@@ -561,6 +572,10 @@ def survey_municipality(m: Municipality, result: dict | None, fetcher: Fetcher, 
         out["external_found"] = any(p.get("ext_hit") for p in out["pages"])
         out["hit_roles"] = sorted({p["role"] for p in out["pages"] if p["hit"]})
         out["hit_kinds"] = sorted({p.get("kind", "other") for p in out["pages"] if p["hit"]})
+        if cfg.save_text:
+            rawp = out.pop("_page_texts", {})
+            keep = {p["url"] for p in out["pages"] if p.get("hit") or p.get("ext_hit")}
+            out["page_texts"] = [rawp[u] for u in rawp if u in keep]
         if cfg.read_pdf:
             # ワードのあったPDFの本文(文字に起こしたもの)。調査の結果とは別のファイルに保存する(write_survey。D-156)
             raw = out.pop("_pdf_texts", {})
@@ -626,6 +641,8 @@ def _survey_external(ext_queue: dict, ctx: _Ctx, spec: KeywordSpec, cfg: SurveyC
             fields.pop("keys", None)
             page.update(fields)
             out["pages"].append(page)
+            if cfg.save_text and page["ext_hit"]:
+                out.setdefault("_page_texts", {})[cur] = page_text_record(page, res, cfg.text_rows(res))
             if depth >= 1:
                 continue
             for l in links:
@@ -755,6 +772,8 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
             links = extract_links(soup, res.final_url, site_host)
             title, body = page_text(parse_html(decode_bytes(res.body, res.content_type)))
             page.update(_hit_fields(spec, cfg, res.final_url, title, body, links))
+            if cfg.save_text and page["hit"]:
+                out.setdefault("_page_texts", {})[url] = page_text_record(page, res, cfg.text_rows(res))
             out["pages"].append(page)
             for l in links:
                 if l.is_pdf and spec.in_text(l.text) and len(out["pdf_link_hits"]) < 20:
@@ -843,6 +862,17 @@ def _read_pdfs(pdf_queue: dict, ctx: _Ctx, spec: KeywordSpec, cfg: SurveyConfig,
 
 
 PDF_TEXT_MAX_CHARS = 150_000
+PAGE_TEXT_MAX_CHARS = 30_000
+
+
+def page_text_record(page: dict, res, text_fn) -> dict:
+    """ワードのあったHTMLページの本文を、後から読み返せる形にする(D-164)。原本のHTMLは保存しない。表は1行ずつ(セルを ' | ' でつなぐ)。"""
+    title, text = text_fn
+    return {
+        "url": page["url"], "final_url": res.final_url, "title": title[:120], "kind": page.get("kind", "other"), "role": page.get("role", ""), "via": page.get("via", ""),
+        "found_on": page.get("parent", ""), "external_host": page.get("external_host", ""), "text_len": len(text), "truncated": len(text) > PAGE_TEXT_MAX_CHARS,
+        "sha256": hashlib.sha256(res.body).hexdigest(), "fetched_at": _now(), "text": text[:PAGE_TEXT_MAX_CHARS],
+    }
 
 
 def pdf_text_record(page: dict, text: str, body: bytes, link_text: str, parent: str, ocr: bool) -> dict:
@@ -875,7 +905,7 @@ def write_survey(root: Path, survey: dict, prefecture_code: str) -> Path:
     base = Path(root) / survey["keyword"] / survey["run"]["route"]
     path = base / prefecture_code / f"{survey['municipality']['code']}.json"
     path.parent.mkdir(parents=True, exist_ok=True)
-    body = {k: v for k, v in survey.items() if k != "pdf_texts"}
+    body = {k: v for k, v in survey.items() if k not in ("pdf_texts", "page_texts")}
     path.write_text(json.dumps(body, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n", encoding="utf-8")
     if "pdf_texts" in survey:
         # ワードのあったPDFの本文は、別のファイル(<route>/_pdftext/<県>/<自治体>.json)に保存する。毎回上書きするので、無くなったPDFは消える
@@ -883,10 +913,35 @@ def write_survey(root: Path, survey: dict, prefecture_code: str) -> Path:
         tpath.parent.mkdir(parents=True, exist_ok=True)
         rec = {"municipality": survey["municipality"], "keyword": survey["keyword"], "route": survey["run"]["route"], "surveyed_at": survey["run"]["finished_at"], "pdfs": survey["pdf_texts"]}
         tpath.write_text(json.dumps(rec, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n", encoding="utf-8")
+    if "page_texts" in survey:
+        # ワードがあったHTMLページの本文は、別のファイル(<route>/_pagetext/<県>/<自治体>.json)に保存する(D-164)。毎回上書きする
+        tpath = base / PAGE_TEXT_DIR / prefecture_code / f"{survey['municipality']['code']}.json"
+        tpath.parent.mkdir(parents=True, exist_ok=True)
+        rec = {"municipality": survey["municipality"], "keyword": survey["keyword"], "route": survey["run"]["route"], "surveyed_at": survey["run"]["finished_at"], "pages": survey["page_texts"]}
+        tpath.write_text(json.dumps(rec, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n", encoding="utf-8")
     return path
 
 
 PDF_TEXT_DIR = "_pdftext"
+PAGE_TEXT_DIR = "_pagetext"
+
+
+def load_page_texts(root: Path, keyword: str, route: str) -> list[dict]:
+    """ワードがあったHTMLページの本文(1自治体1件)を読む。"""
+    base = Path(root) / keyword / route / PAGE_TEXT_DIR
+    return [json.loads(p.read_text(encoding="utf-8")) for p in sorted(base.glob("*/*.json"))]
+
+
+def page_text_index(recs: list[dict]) -> list[dict]:
+    """HTMLページの本文の一覧(本文は含めない)。1ページ=1行。"""
+    rows = []
+    for r in recs:
+        m = r["municipality"]
+        for p in r["pages"]:
+            rows.append({"prefecture": m["prefecture"], "municipality_code": m["code"], "municipality_name": m["name"], "page_url": p["url"], "title": p["title"], "kind": p["kind"], "found_via": p["role"], "external_host": p["external_host"],
+                         "text_len": p["text_len"], "truncated": "1" if p["truncated"] else "", "sha256": p["sha256"], "fetched_at": p["fetched_at"],
+                         "text_file": f"data/survey/{r['keyword']}/{r['route']}/{PAGE_TEXT_DIR}/{m['code'][:2]}/{m['code']}.json"})
+    return rows
 
 
 def load_pdf_texts(root: Path, keyword: str, route: str) -> list[dict]:
