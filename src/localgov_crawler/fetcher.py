@@ -6,7 +6,7 @@ import ssl
 import threading
 import time
 from dataclasses import dataclass, field
-from urllib.parse import urlsplit
+from urllib.parse import urljoin, urlsplit
 
 import httpx
 
@@ -104,6 +104,7 @@ class Fetcher:
     ):
         self.user_agent = user_agent or build_user_agent()
         self.min_interval = min_interval
+        self.max_redirects = 5
         self.max_bytes = max_bytes
         self.used_proxy = bool(proxy)
         self._host_delay: dict[str, float] = {}
@@ -114,7 +115,6 @@ class Fetcher:
             headers={"User-Agent": self.user_agent, "Accept-Language": "ja,en;q=0.5"},
             timeout=timeout,
             follow_redirects=True,
-            max_redirects=5,
             proxy=proxy,
             trust_env=False,
             transport=transport,
@@ -128,39 +128,55 @@ class Fetcher:
             self._host_delay[host] = seconds
 
     def _wait(self, host: str) -> None:
+        """同じホストへのリクエストの開始を、実際の開始時刻から interval 以上あける(D-159)。
+        以前は『予約した時刻』から測っていたため、スリープの起床が遅れると、次との間隔が1秒を切ることがあった(実測で最小0.78秒)。"""
         interval = max(self.min_interval, self._host_delay.get(host, 0.0))
-        with self._lock:
-            now = time.monotonic()
-            wait = self._last.get(host, 0.0) + interval - now
-            self._last[host] = now + max(wait, 0.0)
-        if wait > 0:
+        while True:
+            with self._lock:
+                now = time.monotonic()
+                wait = self._last.get(host, 0.0) + interval - now
+                if wait <= 0:
+                    self._last[host] = now
+                    return
             time.sleep(wait)
 
     def get(self, url: str) -> FetchResult:
-        host = (urlsplit(url).hostname or "").lower()
         res = FetchResult(url=url, final_url=url)
-        self._wait(host)
-        res.started = time.time()
         start = time.monotonic()
         try:
-            with self._client.stream("GET", url) as r:
-                res.status = r.status_code
-                res.final_url = str(r.url)
-                res.redirects = len(r.history)
-                res.content_type = r.headers.get("content-type", "")
-                res.etag = r.headers.get("etag", "")
-                res.last_modified = r.headers.get("last-modified", "")
-                ra = r.headers.get("retry-after", "")
-                res.retry_after = float(ra) if ra.strip().isdigit() else None
-                chunks, size = [], 0
-                for chunk in r.iter_bytes():
-                    size += len(chunk)
-                    if size > self.max_bytes:
-                        res.truncated = True
-                        chunks.append(chunk[: len(chunk) - (size - self.max_bytes)])
-                        break
-                    chunks.append(chunk)
-                res.body = b"".join(chunks)
+            cur = url
+            # リダイレクトは自分でたどる。1回たどるごとに1リクエストなので、間隔をあける(httpxの自動追従だと、間隔なしに連続して送ってしまう。D-159)
+            for hop in range(self.max_redirects + 1):
+                self._wait((urlsplit(cur).hostname or "").lower())
+                if hop == 0:
+                    res.started = time.time()
+                with self._client.stream("GET", cur, follow_redirects=False) as r:
+                    loc = r.headers.get("location", "")
+                    if r.status_code in (301, 302, 303, 307, 308) and loc:
+                        if hop >= self.max_redirects:
+                            raise httpx.TooManyRedirects(f"Exceeded maximum allowed redirects ({self.max_redirects}).", request=r.request)
+                        res.redirects += 1
+                        cur = urljoin(str(r.url), loc)
+                        if urlsplit(cur).scheme not in ("http", "https"):
+                            raise httpx.UnsupportedProtocol(f"redirect to {cur[:60]}")
+                        continue
+                    res.status = r.status_code
+                    res.final_url = str(r.url)
+                    res.content_type = r.headers.get("content-type", "")
+                    res.etag = r.headers.get("etag", "")
+                    res.last_modified = r.headers.get("last-modified", "")
+                    ra = r.headers.get("retry-after", "")
+                    res.retry_after = float(ra) if ra.strip().isdigit() else None
+                    chunks, size = [], 0
+                    for chunk in r.iter_bytes():
+                        size += len(chunk)
+                        if size > self.max_bytes:
+                            res.truncated = True
+                            chunks.append(chunk[: len(chunk) - (size - self.max_bytes)])
+                            break
+                        chunks.append(chunk)
+                    res.body = b"".join(chunks)
+                break
             res.error_class = classify_http_status(res.status)
             if res.error_class:
                 res.error_detail = f"HTTP {res.status}"
