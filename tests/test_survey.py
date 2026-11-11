@@ -406,3 +406,76 @@ def test_long_pdf_text_is_truncated_and_flagged(monkeypatch):
     out = sv.survey_municipality(M, result(cands=[("スポーツ施設", "https://www.city.example.jp/sports/")]), make_fetcher(routes), SPEC, sv.SurveyConfig(route="wk", retry_wait=0, read_pdf=True))
     t = out["pdf_texts"][0]
     assert t["truncated"] and len(t["text"]) == sv.PDF_TEXT_MAX_CHARS and t["text_len"] == len(big)
+
+
+def test_no_seed_municipality_falls_back_to_fresh_top_then_sitemap_page():
+    """保存したナビがお知らせばかり(大分類が無い)で入口が見つからなかった自治体(D-158)。トップを取り直し、無ければサイトマップのページから探す。"""
+    news = [("お知らせ%d" % i, f"https://www.city.example.jp/n/{i}") for i in range(6)]
+    stored = {"nav_links": [{"text": t, "url": u, "same_site": True, "is_pdf": False} for t, u in news], "genre_entrypoints": [], "site_profile": {"sitemap": {"top_level_paths": {"/sitemap.html": 1, "/index.html": 1}}}}
+    # トップのリンクに大分類がある場合
+    routes = {
+        "/robots.txt": (404, "text/plain", ""),
+        "/": page("トップ", '<a href="/bunka/">文化・生涯学習</a>'),
+        "/bunka/": page("文化・生涯学習", '<a href="/bunka/sports/">スポーツ</a>'),
+        "/bunka/sports/": page("スポーツ", '<a href="/f/1">中央運動場</a>'),
+        "/f/1": page("中央運動場", "<p>グラウンド・ゴルフができます。</p>"),
+    }
+    out = sv.survey_municipality(M, stored, make_fetcher(routes), SPEC, sv.SurveyConfig(route="t", retry_wait=0))
+    assert out["outcome"] == "surveyed" and out["seed_mode"] == "fallback_top" and out["found"]
+    # トップに無く、サイトマップのページ(ハブ判定で見えたURL)にある場合
+    routes2 = {
+        "/robots.txt": (404, "text/plain", ""),
+        "/": page("トップ", '<a href="/n/1">お知らせ</a>'),
+        "/sitemap.html": page("サイトマップ", '<a href="/bunka/sports/">スポーツ</a>'),
+        "/bunka/sports/": page("スポーツ", '<a href="/f/1">中央運動場</a>'),
+        "/f/1": page("中央運動場", "<p>グラウンド・ゴルフができます。</p>"),
+    }
+    out = sv.survey_municipality(M, stored, make_fetcher(routes2), SPEC, sv.SurveyConfig(route="t", retry_wait=0))
+    assert out["outcome"] == "surveyed" and out["seed_mode"] == "fallback_sitemap" and out["found"]
+    # どちらにも無ければ、これまでどおり no_seed(当てずっぽうの取得はしない)
+    routes3 = {"/robots.txt": (404, "text/plain", ""), "/": page("トップ", '<a href="/n/1">お知らせ</a>')}
+    out = sv.survey_municipality(M, stored, make_fetcher(routes3), SPEC, sv.SurveyConfig(route="t", retry_wait=0))
+    assert out["outcome"] == "no_seed" and sorted({r["url"].rsplit("/", 1)[-1] for r in out["requests"]}) == ["", "robots.txt", "sitemap.html"]
+
+
+def test_compliance_counts_fast_requests_reservation_and_robots_skips():
+    """取得ルールの遵守の計測(D-158)。1ホスト1秒以下、予約・ログインらしいURLの取得、robotsで飛ばした回数。"""
+    def req(host, path, t):
+        return {"url": f"https://{host}{path}", "t": t}
+
+    ok = {"municipality": {"code": "1"}, "robots_skipped": 2, "requests": [req("a.jp", "/", 100.0), req("a.jp", "/x", 101.0), req("b.jp", "/", 100.1), req("a.jp", "/y", 102.05), {"url": "https://a.jp/old"}]}
+    bad = {"municipality": {"code": "2"}, "requests": [req("c.jp", "/", 10.0), req("c.jp", "/yoyaku/", 10.4)]}
+    c = sv.compliance([ok, bad])
+    assert c["requests"] == 7 and c["untimed_requests"] == 1 and c["timed_pairs"] == 3
+    assert c["interval_violations"] == 1 and c["worst_gap"] == (0.4, "2", "c.jp")
+    assert c["reservation_fetched"] == 1 and c["robots_skipped"] == 2
+
+
+def test_fetch_log_records_send_time(monkeypatch):
+    import time as _t
+    from localgov_crawler.fetcher import FetchResult
+    r = FetchResult("https://a.jp/", started=_t.time())
+    assert r.log_entry()["t"] > 0
+
+
+def test_stale_hub_seeds_are_rebuilt_from_the_top_page():
+    """保存した入口がすべて消えていた(404)自治体は、トップから入口を作り直す(D-158)。1ページも読めなければ『調査できた』にしない。"""
+    stale = result(cands=[("スポーツ施設", "https://www.city.example.jp/old/sports/")])
+    routes = {
+        "/robots.txt": (404, "text/plain", ""),
+        "/": page("トップ", '<a href="/bunka/">文化・生涯学習</a>'),
+        "/bunka/": page("文化・生涯学習", '<a href="/bunka/sports/">スポーツ</a>'),
+        "/bunka/sports/": page("スポーツ", '<a href="/f/1">中央運動場</a>'),
+        "/f/1": page("中央運動場", "<p>グラウンド・ゴルフができます。</p>"),
+    }
+    out = sv.survey_municipality(M, stale, make_fetcher(routes), SPEC, sv.SurveyConfig(route="t", retry_wait=0))
+    assert out["outcome"] == "surveyed" and out["seed_mode"] == "fallback_stale" and out["found"]
+    assert out["stale_seeds"][0]["url"].endswith("/old/sports/") and out["pages_fetched"] >= 3
+    # トップにも手がかりが無い: 1ページも読めなかったので fetch_failed
+    dead = {"/robots.txt": (404, "text/plain", ""), "/": page("トップ", '<a href="/n/1">お知らせ</a>')}
+    out = sv.survey_municipality(M, stale, make_fetcher(dead), SPEC, sv.SurveyConfig(route="t", retry_wait=0))
+    assert out["outcome"] == "fetch_failed" and out["failure_class"] == "seeds_unreachable"
+    # 正常な自治体は、これまでどおり1回で終わる(入口の作り直しをしない)
+    ok = {"/robots.txt": (404, "text/plain", ""), "/old/sports/": page("スポーツ施設", "<p>グラウンド・ゴルフができます。</p>")}
+    out = sv.survey_municipality(M, stale, make_fetcher(ok), SPEC, sv.SurveyConfig(route="t", retry_wait=0))
+    assert out["outcome"] == "surveyed" and out["seed_mode"] == "normal" and "stale_seeds" not in out

@@ -84,13 +84,15 @@ jobs:
           WEEK: ${{ needs.plan.outputs.week }}
         run: |
           set -o pipefail
-          mkdir -p data/export/weekly data/summary/weekly
+          mkdir -p data/export/weekly data/summary/weekly prev
+          cp data/export/weekly/*.csv prev/ 2>/dev/null || true   # 前週のCSV(差分用)
           python3 scripts/weekly_report.py --week "$WEEK" --out data/summary/weekly/latest.md | tee -a "$GITHUB_STEP_SUMMARY"
           det=$(python3 scripts/weekly_report.py --list detail)
           localgov-crawler survey-export --keyword grandgolf --routes-file config/survey_sets/weekly_facility.json --out data/export/weekly
           localgov-crawler pdf-index --keyword grandgolf --routes-file config/survey_sets/weekly_facility.json --out data/export/weekly
           localgov-crawler extract-export --keyword grandgolf --extract-routes $det --out data/export/weekly
           localgov-crawler events-export --keyword grandgolf --events-routes $det --out data/export/weekly
+          python3 scripts/weekly_diff.py --prev prev --new data/export/weekly --out data/export/weekly/diff --md data/summary/weekly/diff.md | tee -a "$GITHUB_STEP_SUMMARY"
       - name: commit
         env:
           BRANCH: ${{ github.ref_name }}

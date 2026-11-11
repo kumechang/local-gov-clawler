@@ -116,7 +116,7 @@ def test_event_focus_seeds_priority_and_pager():
 
 def test_pdf_reading_is_wired_but_hokkaido_pilot_is_not_scheduled():
     cfg = json.loads((ROOT / "config" / "auto_survey.json").read_text(encoding="utf-8"))
-    assert [t["route"] for t in cfg["targets"] if t.get("read_pdf")] == ["pdf1_hokkaido", "pdf4_aichi", "pdf4_fukui", "pdf4_saitama"]  # 北海道は実行済み(pdf3のOCRはユーザー判断で実行しない=D-150)。愛知・福井・埼玉でPDF+OCRの試し(D-151)
+    assert [t["route"] for t in cfg["targets"] if t.get("read_pdf")] == ["pdf1_hokkaido", "pdf4_aichi", "pdf4_fukui", "pdf4_saitama", "pdf5_aichi", "pdf5_fukui", "pdf5_saitama"]  # pdf5 はPDFの本文を保存する再実行(D-158)。北海道は実行済み(pdf3のOCRはユーザー判断で実行しない=D-150)。愛知・福井・埼玉でPDF+OCRの試し(D-151)
     yml = (ROOT / ".github/workflows/survey.yml").read_text(encoding="utf-8")
     assert "--read-pdf" in yml and "--ocr-pdf" in yml and "tesseract-ocr-jpn" in yml
     assert "pypdfium2" in (ROOT / "pyproject.toml").read_text(encoding="utf-8")

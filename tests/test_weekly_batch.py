@@ -135,3 +135,27 @@ def test_details_only_skips_surveys():
     batch = yaml.safe_load((ROOT / ".github/workflows/weekly-batch.yml").read_text(encoding="utf-8"))
     assert "details_only" in (batch.get("on") or batch.get(True))["workflow_dispatch"]["inputs"]
     assert batch["jobs"]["prefecture"]["with"]["details_only"] == "${{ inputs.details_only }}"
+
+
+def test_weekly_diff(tmp_path):
+    diff_mod = load("weekly_diff")
+    prev, new = tmp_path / "prev", tmp_path / "new"
+    prev.mkdir(), new.mkdir()
+
+    def w(d, name, rows):
+        import csv
+        with open(d / name, "w", encoding="utf-8-sig", newline="") as f:
+            cw = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+            cw.writeheader()
+            cw.writerows(rows)
+
+    r = lambda code, url, pref="福井県", name="X市": {"prefecture": pref, "municipality_code": code, "municipality_name": name, "page_url": url}
+    w(prev, "grandgolf_places.csv", [r("1", "u1"), r("2", "u2", name="Y町")])
+    w(new, "grandgolf_places.csv", [r("1", "u1"), r("3", "u3", name="Z村"), r("3", "u3b", name="Z村")])
+    text = diff_mod.build(prev, new, tmp_path / "out")
+    assert "新しく 1、無くなった 1" in text and "福井県Z村" in text and "福井県Y町" in text
+    added = (tmp_path / "out/grandgolf_places_new.csv").read_text(encoding="utf-8-sig")
+    assert "u3" in added and "u1" not in added
+    assert "前週のCSVが無い" in diff_mod.build(tmp_path / "none", new, tmp_path / "o2")
+    wf = (ROOT / ".github/workflows/weekly-batch.yml").read_text(encoding="utf-8")
+    assert "cp data/export/weekly/*.csv prev/" in wf and "scripts/weekly_diff.py" in wf and wf.index("cp data/export/weekly/*.csv prev/") < wf.index("survey-export")
