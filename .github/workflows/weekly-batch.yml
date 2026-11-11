@@ -1,16 +1,20 @@
 name: weekly-batch
 # 毎週土曜の朝(日本時間6時)に、全国の自治体のワード調査→施設の詳細→イベントの詳細を自動で回す(D-154)。
-#  - cron は UTC。金曜21:00 UTC = 土曜06:00 JST。定期実行は main の最新で動く(ブランチでは動かない)
+#  - cron は UTC。金曜20:23 UTC = 土曜05:23 JST。定期実行は main の最新で動く(ブランチでは動かない)
+#    毎時0分は混み合って数時間遅れることがある(初回は3時間40分遅れた)ので、ずらした時刻にしている(D-155)
 #  - 県ごとに weekly-prefecture.yml を呼ぶ。同時に動かす県は12まで(runnerの同時実行上限と、結果のコミットの衝突を抑える)
 #  - 毎週同じ route 名(weekly_*)で上書きする。履歴は git に残る
 #  - 止めるには config/weekly_batch.json の enabled を false にする
 on:
   schedule:
-    - cron: "0 21 * * 5"
+    - cron: "23 20 * * 5"
   workflow_dispatch:
     inputs:
       prefecture:
         description: 試しに1県だけ動かすときの県名(例 福井県)。空なら全国
+        default: ""
+      details_only:
+        description: 空でなければ、ワード調査は飛ばして、保存済みの調査結果から施設・イベントの詳細だけを取り出し直す
         default: ""
 
 concurrency:
@@ -53,6 +57,7 @@ jobs:
       facility_route: ${{ matrix.facility_route }}
       event_route: ${{ matrix.event_route }}
       detail_route: ${{ matrix.detail_route }}
+      details_only: ${{ inputs.details_only }}
       facility_max_pages: ${{ matrix.facility_max_pages }}
       event_max_pages: ${{ matrix.event_max_pages }}
     permissions:
@@ -78,6 +83,7 @@ jobs:
         env:
           WEEK: ${{ needs.plan.outputs.week }}
         run: |
+          set -o pipefail
           mkdir -p data/export/weekly data/summary/weekly
           python3 scripts/weekly_report.py --week "$WEEK" --out data/summary/weekly/latest.md | tee -a "$GITHUB_STEP_SUMMARY"
           det=$(python3 scripts/weekly_report.py --list detail)

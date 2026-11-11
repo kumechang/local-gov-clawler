@@ -29,6 +29,9 @@ on:
       detail_route:
         type: string
         required: true
+      details_only:
+        type: string
+        default: ""
       facility_max_pages:
         type: string
         default: "200"
@@ -41,6 +44,7 @@ permissions:
 
 jobs:
   survey_facility:
+    if: ${{ inputs.details_only == '' }}
     uses: ./.github/workflows/survey.yml
     with:
       prefecture: ${{ inputs.prefecture }}
@@ -56,6 +60,7 @@ jobs:
       contents: write
 
   survey_event:
+    if: ${{ inputs.details_only == '' }}
     uses: ./.github/workflows/survey.yml
     with:
       prefecture: ${{ inputs.prefecture }}
@@ -71,7 +76,7 @@ jobs:
 
   extract:
     needs: survey_facility
-    if: ${{ !cancelled() && needs.survey_facility.result == 'success' }}
+    if: ${{ !cancelled() && (needs.survey_facility.result == 'success' || needs.survey_facility.result == 'skipped') }}
     uses: ./.github/workflows/extract.yml
     with:
       prefecture: ${{ inputs.prefecture }}
@@ -86,7 +91,7 @@ jobs:
   events:
     needs: [survey_facility, survey_event]
     # どちらかの調査が終われば取り出す(片方が落ちても、もう片方のぶんは取り出す)
-    if: ${{ !cancelled() && (needs.survey_facility.result == 'success' || needs.survey_event.result == 'success') }}
+    if: ${{ !cancelled() && (needs.survey_facility.result == 'success' || needs.survey_facility.result == 'skipped' || needs.survey_event.result == 'success') }}
     uses: ./.github/workflows/events.yml
     with:
       prefecture: ${{ inputs.prefecture }}

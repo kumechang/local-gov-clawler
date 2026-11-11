@@ -73,7 +73,10 @@ jobs:
       matrix:
         shard: ${{ fromJSON(needs.plan.outputs.shards) }}
     steps:
+      # 直前のワード調査(同じ実行の中)がブランチへコミットした結果を使うため、起動時点ではなく最新のブランチを取得する(D-155)
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -97,6 +100,7 @@ jobs:
           name: extract-${{ inputs.keyword }}-${{ inputs.route }}-${{ matrix.shard }}
           path: out/extract
           retention-days: 30
+          if-no-files-found: ignore
 
   merge:
     needs: [plan, extract]
@@ -121,7 +125,8 @@ jobs:
           ROUTE: ${{ inputs.route }}
         run: |
           mkdir -p data/extract
-          cp -r collected/. data/extract/
+          # 取り出すページが無い県は、結果が無い(artifactが無い)ので、取り込みを飛ばす
+          if [ -d collected ]; then cp -r collected/. data/extract/; fi
           localgov-crawler extract-export --keyword "$KEYWORD" --extract-routes "$ROUTE" --out "data/export/by_run/$ROUTE" | tee -a "$GITHUB_STEP_SUMMARY"
       - name: commit results
         if: ${{ inputs.commit_results }}
