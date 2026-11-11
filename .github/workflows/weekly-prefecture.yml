@@ -30,6 +30,12 @@ on:
       details_only:
         type: string
         default: ""
+      facility_max_pdfs:
+        type: string
+        default: "40"
+      follow_external:
+        type: string
+        default: ""
       facility_max_pages:
         type: string
         default: "200"
@@ -53,6 +59,8 @@ jobs:
       max_pages: ${{ inputs.facility_max_pages }}
       read_pdf: "1"
       ocr_pdf: "1"
+      max_pdfs: ${{ inputs.facility_max_pdfs }}
+      follow_external: ${{ inputs.follow_external }}
       commit_results: true
     permissions:
       contents: write

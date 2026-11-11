@@ -31,6 +31,12 @@ on:
       ocr_pdf:
         type: string
         default: ""
+      follow_external:
+        type: string
+        default: ""
+      max_pdfs:
+        type: string
+        default: "20"
       commit_results:
         type: boolean
         default: false
@@ -120,6 +126,8 @@ jobs:
           EVENT_FOCUS: ${{ inputs.event_focus }}
           READ_PDF: ${{ inputs.read_pdf }}
           OCR_PDF: ${{ inputs.ocr_pdf }}
+          FOLLOW_EXTERNAL: ${{ inputs.follow_external }}
+          MAX_PDFS: ${{ inputs.max_pdfs }}
           TOTAL: ${{ inputs.shards }}
           SHARD: ${{ matrix.shard }}
         run: |
@@ -128,6 +136,8 @@ jobs:
           if [ -n "$EVENT_FOCUS" ]; then args+=(--event-focus); fi
           if [ -n "$READ_PDF" ]; then args+=(--read-pdf); fi
           if [ -n "$OCR_PDF" ]; then args+=(--ocr-pdf); fi
+          if [ -n "$FOLLOW_EXTERNAL" ]; then args+=(--follow-external); fi
+          args+=(--max-pdfs "${MAX_PDFS:-20}")
           localgov-crawler "${args[@]}"
       - uses: actions/upload-artifact@v4
         if: ${{ always() }}

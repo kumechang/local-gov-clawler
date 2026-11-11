@@ -29,8 +29,18 @@ def survey_section(title: str, surveys: list[dict], keyword: str, n_target: int)
     stopped = Counter(r["stopped"] for r in surveyed)
     pdf_pages = sum(1 for s in surveys for p in s["pages"] if p.get("role") == "pdf")
     ocr_pages = sum(1 for s in surveys for p in s["pages"] if p.get("role") == "pdf" and p.get("ocr"))
+    ext_pages = [p for s_ in surveys for p in s_["pages"] if p.get("role") == "external"]
+    ext_munis = {s_["municipality"]["code"] for s_ in surveys if s_.get("external_found")}
+    retried = sum(1 for s_ in surveys if s_.get("robots_retried"))
+    seed_modes = Counter(s_.get("seed_mode", "") for s_ in surveys if s_.get("seed_mode") not in ("normal", "", None))
     lines = [f"### {title}", "", f"- 結果がある自治体: {len(rows)} / 対象 {n_target}", f"- 調査できた: {len(surveyed)} ({(len(surveyed) / n_target if n_target else 0):.1%})",
              f"- ワードがあった自治体: {len(found)}", f"- 上限で止まった: {len(capped_all)} ({(len(capped_all) / len(surveyed) if surveyed else 0):.2%})(うち max_pages {len(capped)}、max_requests {stopped.get('max_requests', 0)})", f"- PDFのページ: {pdf_pages}(うちOCRで読んだ {ocr_pages})"]
+    if ext_pages:
+        lines.append(f"- 外部サイトのページ: {len(ext_pages)}({len({p['external_host'] for p in ext_pages})}ホスト)、ワードがあった自治体(外部サイトだけで): {len(ext_munis)}")
+    if retried:
+        lines.append(f"- ロボットファイルをやり直して届いた自治体: {retried}")
+    if seed_modes:
+        lines.append("- 入口の作り直し: " + "、".join(f"{k} {v}" for k, v in seed_modes.most_common()))
     if outcomes:
         lines.append("- 調査できなかった内訳: " + "、".join(f"{k} {v}" for k, v in outcomes.most_common()))
     return lines + [""]

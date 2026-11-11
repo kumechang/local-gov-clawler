@@ -22,7 +22,7 @@ def plan(config_path: str, only_prefecture: str = "") -> tuple[list[dict], list[
         targets.append({
             "prefecture": p["name"], "slug": p["slug"], "shards": str(p.get("shards", 1)), "keyword": keyword, "from_route": cfg.get("from_route", "redecide_v12_1"),
             "facility_route": cfg["facility_route_prefix"] + p["slug"], "event_route": cfg["event_route_prefix"] + p["slug"], "detail_route": cfg["detail_route_prefix"] + p["slug"],
-            "facility_max_pages": str(cfg.get("facility_max_pages", 200)), "event_max_pages": str(cfg.get("event_max_pages", 300)),
+            "facility_max_pages": str(cfg.get("facility_max_pages", 200)), "facility_max_pdfs": str(cfg.get("facility_max_pdfs", 20)), "follow_external": "1" if cfg.get("follow_external") else "", "event_max_pages": str(cfg.get("event_max_pages", 300)),
         })
     if only_prefecture and not targets:
         notes.append(f"県 {only_prefecture} が config/weekly_batch.json に無い")
@@ -32,7 +32,7 @@ def plan(config_path: str, only_prefecture: str = "") -> tuple[list[dict], list[
 def main() -> int:
     targets, notes = plan("config/weekly_batch.json", os.environ.get("PREFECTURE", ""))
     week = datetime.datetime.now(JST).strftime("%Y-%m-%d")
-    dummy = {"prefecture": "none", "slug": "none", "shards": "1", "keyword": "none", "from_route": "none", "facility_route": "none", "event_route": "none", "detail_route": "none", "facility_max_pages": "1", "event_max_pages": "1"}
+    dummy = {"prefecture": "none", "slug": "none", "shards": "1", "keyword": "none", "from_route": "none", "facility_route": "none", "event_route": "none", "detail_route": "none", "facility_max_pages": "1", "facility_max_pdfs": "1", "follow_external": "", "event_max_pages": "1"}
     lines = [f"count={len(targets)}", f"week={week}", "matrix=" + json.dumps({"include": targets or [dummy]}, ensure_ascii=False)]
     out = os.environ.get("GITHUB_OUTPUT")
     if out:

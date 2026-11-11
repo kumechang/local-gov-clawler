@@ -8,6 +8,7 @@ import heapq
 import json
 import re
 import threading
+import time
 from dataclasses import dataclass, field
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -71,11 +72,12 @@ class KeywordSpec:
     label: str
     patterns: list[re.Pattern]
     ocr_patterns: list[re.Pattern] = field(default_factory=list)  # OCRの文字の崩れ(1字の誤り)を許す、ゆるいパターン(D-149)
+    external_deny_hosts: list[str] = field(default_factory=list)  # 外部サイトをたどるとき、除くホスト(全国組織のサイトなど。D-161)
 
     @classmethod
     def load(cls, path: str | Path) -> "KeywordSpec":
         d = json.loads(Path(path).read_text(encoding="utf-8"))
-        return cls(d["name"], d.get("label", d["name"]), [re.compile(p) for p in d["patterns"]], [re.compile(p) for p in d.get("ocr_patterns", [])])
+        return cls(d["name"], d.get("label", d["name"]), [re.compile(p) for p in d["patterns"]], [re.compile(p) for p in d.get("ocr_patterns", [])], list(d.get("external_deny_hosts", [])))
 
     def find_ocr(self, text: str) -> list[re.Match]:
         """OCRの文字に当てる。通常のパターンに加えて、ゆるいパターン(ocr_patterns)でも探す。"""
@@ -157,6 +159,10 @@ class SurveyConfig:
     event_focus: bool = False  # イベント専用の探索(D-141): イベント・お知らせ・カレンダーを入口にし、イベントのページを優先してたどる
     read_pdf: bool = False  # スポーツ関連のページから出るPDFを読む(D-144)
     ocr_pdf: bool = False  # 画像だけのPDFをOCRで読む(D-149。read_pdf が前提)
+    robots_retry_wait: float = 20.0  # robots.txt に届かなかったときの、やり直しまでの待ち(秒)
+    follow_external: bool = False  # スポーツ関連のページからリンクされた外部サイト(協会・指定管理者など)を少しだけ見る(D-161)
+    max_external_pages: int = 12  # 1自治体あたり、外部サイトで取得するページ数の上限
+    max_external_hosts: int = 4  # 1自治体あたり、見る外部ホスト数の上限
     max_pdfs: int = 20  # 1自治体で読むPDFの数
     pdf_max_pages: int = 30  # 1つのPDFで読むページ数
     snippet_chars: int = 30
@@ -164,7 +170,7 @@ class SurveyConfig:
     max_requests: int = field(default=0)  # 0なら max_pages + 8 にする
 
     def pipeline_config(self) -> Config:
-        return Config(route=self.route, max_requests=self.max_requests or self.max_pages + 8 + (self.max_pdfs if self.read_pdf else 0), retry_wait=self.retry_wait)
+        return Config(route=self.route, max_requests=self.max_requests or self.max_pages + 8 + (self.max_pdfs if self.read_pdf else 0) + ((self.max_external_pages + self.max_external_hosts) if self.follow_external else 0), retry_wait=self.retry_wait)
 
 
 def _text_len(tag) -> int:
@@ -242,6 +248,8 @@ def seeds_from_result(result: dict, max_seeds: int = 12) -> list[dict]:
             if c.get("kind", "").startswith("sports") or (c.get("kind") == "generic" and c.get("score", 0) >= hub.MIN_SCORE):
                 if c.get("score", 0) >= 5 and not hub.NOT_LISTING.search(norm_text(c.get("text", ""))):
                     add(c["url"], "listing", "candidate", c.get("text", ""))
+    for u in (result.get("site_profile", {}).get("sitemap", {}).get("keyword_urls") or [])[:5]:
+        add(u, "sports_nav", "sitemap", "")  # サイトマップのXMLにあった、スポーツ・施設らしいURL(D-161)
     nav = [l for l in result.get("nav_links", []) if l.get("same_site") and not l.get("is_pdf")]
     for l in nav:
         t = norm_text(l["text"])
@@ -544,6 +552,7 @@ def survey_municipality(m: Municipality, result: dict | None, fetcher: Fetcher, 
         out["run"]["request_count"] = len(ctx.log)
         out["found"] = any(p["hit"] for p in out["pages"]) or bool(out["nav_hits"])
         out["pdf_link_found"] = bool(out["pdf_link_hits"])
+        out["external_found"] = any(p.get("ext_hit") for p in out["pages"])
         out["hit_roles"] = sorted({p["role"] for p in out["pages"] if p["hit"]})
         out["hit_kinds"] = sorted({p.get("kind", "other") for p in out["pages"] if p["hit"]})
         if cfg.read_pdf:
@@ -552,6 +561,86 @@ def survey_municipality(m: Municipality, result: dict | None, fetcher: Fetcher, 
             hit_urls = {p["url"] for p in out["pages"] if p["role"] == "pdf" and p["hit"]}
             out["pdf_texts"] = [raw[u] for u in raw if u in hit_urls]
     return out
+
+
+# 外部サイトをたどる(D-161)。スポーツ関連のページからリンクされた、協会・指定管理者・団体などのサイトを少しだけ見る。
+EXTERNAL_DENY = re.compile(r"google\.|goo\.gl|youtube\.|youtu\.be|facebook\.|twitter\.|x\.com|instagram\.|line\.me|lin\.ee|tiktok\.|amazon\.|rakuten\.|yahoo\.|wikipedia\.|note\.com|ameblo\.|apple\.com|play\.google|adobe\.|microsoft\.|"
+                           r"\.go\.jp|\.lg\.jp|pref\.[a-z]+\.jp|city\.[a-z.\-]+\.jp|town\.[a-z.\-]+\.jp|vill\.[a-z.\-]+\.jp|e-gov|mext\.|mlit\.|jpn\.org|reserve|yoyaku|login|rsv", re.I)
+EXTERNAL_ORG_TEXT = re.compile(r"協会|連盟|連合|体育|スポーツ|指定管理|財団|公社|クラブ|同好会|サークル|組合|振興|レク|公式サイト|ホームページ|HP")
+
+
+def external_ok(url: str, text: str, spec: KeywordSpec) -> bool:
+    """外部サイトのリンクのうち、たどってよいもの。ワードを含むリンク文言か、協会・指定管理者などを表す文言のもの。SNS・地図・動画・他の自治体や官公庁・予約システムは除く。"""
+    parts = urlsplit(url)
+    host = (parts.hostname or "").lower()
+    t = norm_text(text)
+    if parts.scheme not in ("http", "https") or not host or EXTERNAL_DENY.search(host) or RESERVATION_URL.search(url) or RESERVATION_TEXT.search(t):
+        return False
+    if any(d and (host == d or host.endswith("." + d)) for d in spec.external_deny_hosts):
+        return False
+    return spec.in_text(t) or bool(EXTERNAL_ORG_TEXT.search(t))
+
+
+def _survey_external(ext_queue: dict, ctx: _Ctx, spec: KeywordSpec, cfg: SurveyConfig, out: dict) -> None:
+    """外部サイトのページを、ホストごとにロボットファイルを確認してから、最大 max_external_hosts ホスト・合計 max_external_pages ページ見る。
+    各ホストは、リンクされたページと、そこからのワード・施設・イベントらしいリンク1階層まで。結果は role=external のページとして記録し、`hit` は付けず `ext_hit` を付ける
+    (従来の『ワードがあった自治体』の数え方を変えないため。一覧には found_via=external として出す)。"""
+    fetched = 0
+    hosts: dict[str, int] = {}
+    for url, (_, _, link_text, parent) in sorted(ext_queue.items(), key=lambda kv: kv[1][:2]):
+        host = (urlsplit(url).hostname or "").lower()
+        if fetched >= cfg.max_external_pages:
+            break
+        if host not in hosts and len(hosts) >= cfg.max_external_hosts:
+            continue
+        if hosts.get(host, 0) >= 6:
+            continue
+        if host not in hosts:
+            hosts[host] = 0
+            info = ctx.load_robots(url)
+            if info.unreachable:
+                continue
+        todo = [(url, 0)]
+        seen = {url}
+        while todo and fetched < cfg.max_external_pages and hosts[host] < 6:
+            cur, depth = todo.pop(0)
+            res = ctx.get(cur)
+            if res.error_class == "budget_exceeded":
+                return
+            page = {"url": cur, "role": "external", "depth": depth, "via": "external", "status": res.status, "error_class": res.error_class, "hit": False, "parent": parent, "link_text": link_text, "external_host": host}
+            if not res.ok or (res.content_type and "html" not in res.content_type.lower()):
+                out["pages"].append(page)
+                continue
+            fetched += 1
+            hosts[host] += 1
+            links = extract_links(parse_html(decode_bytes(res.body, res.content_type)), res.final_url, base_host(res.final_url))
+            title, body = page_text(parse_html(decode_bytes(res.body, res.content_type)))
+            fields = _hit_fields(spec, cfg, res.final_url, title, body, links)
+            fields["ext_hit"], fields["hit"] = fields["hit"], False
+            fields.pop("keys", None)
+            page.update(fields)
+            out["pages"].append(page)
+            if depth >= 1:
+                continue
+            for l in links:
+                if l.is_pdf or not l.same_site or l.url in seen or RESERVATION_URL.search(l.url):
+                    continue
+                t = norm_text(l.text)
+                if len(t) <= 40 and (spec.in_text(t) or EVENT_LINK.search(t) or FOLLOW_SPORTS.search(t)) and not RESERVATION_TEXT.search(t):
+                    seen.add(l.url)
+                    todo.append((l.url, depth + 1))
+
+
+def _hit_fields(spec: KeywordSpec, cfg: SurveyConfig, final_url: str, title: str, body: str, links: list) -> dict:
+    """取得したHTMLページのワード判定(ヒットの有無・件数・否定文・抜粋・種類)。"""
+    hits_t, hits_b = spec.find(title), spec.find_affirmative(body)
+    all_pairs = spec.find_lines(body)
+    negated = len(all_pairs) - len(hits_b)
+    affirmed = {(l, m.start()) for l, m in hits_b}
+    negated_samples = [l[max(0, m.start() - 20): m.end() + 60] for l, m in all_pairs if (l, m.start()) not in affirmed][:2]
+    link_hits = [l for l in links if spec.in_text(l.text) and not l.is_pdf and l.region not in ("nav", "header", "footer")]
+    return dict(title=title[:80], kind=classify_page(title, final_url), text_len=len(body), hit=bool(hits_t or hits_b or link_hits), count=len(hits_b) + len(hits_t), negated=negated, negated_samples=negated_samples,
+                in_title=bool(hits_t), snippets=snippets(spec, body, cfg.snippet_chars, affirmative=True), keys=match_keys(spec, body, affirmative=True), link_hits=[{"text": l.text[:60], "url": l.url} for l in link_hits[:5]])
 
 
 def _fallback_entrances(m: Municipality, result: dict, ctx: _Ctx, cfg: SurveyConfig, out: dict, site_host: str, fresh: bool = False) -> list[dict] | None:
@@ -599,8 +688,14 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
     out["seed_mode"] = "normal"
     robots = ctx.load_robots(m.url)
     if robots.unreachable:
-        out["outcome"], out["failure_class"] = "fetch_failed", "robots_unreachable"
-        return
+        # robots.txt に届かなかった(一時的な不通かもしれない)ので、少し待って1回だけやり直す(D-161)。それでも届かなければ取得しない
+        time.sleep(cfg.robots_retry_wait)
+        ctx.robots.pop((urlsplit(m.url).hostname or "").lower(), None)
+        robots = ctx.load_robots(m.url)
+        if robots.unreachable:
+            out["outcome"], out["failure_class"] = "fetch_failed", "robots_unreachable"
+            return
+        out["robots_retried"] = True
     site_host = base_host(m.url)
     if not seeds:
         seeds = _fallback_entrances(m, result, ctx, cfg, out, site_host)
@@ -614,6 +709,7 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
     fetched = 0
     event_pages = 0
     pdf_queue: dict[str, tuple] = {}
+    ext_queue: dict[str, tuple] = {}
     stopped = "exhausted"
     queued: set[str] = set()
     for attempt in (0, 1):
@@ -652,18 +748,13 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
             soup = parse_html(decode_bytes(res.body, res.content_type))
             links = extract_links(soup, res.final_url, site_host)
             title, body = page_text(parse_html(decode_bytes(res.body, res.content_type)))
-            hits_t, hits_b = spec.find(title), spec.find_affirmative(body)
-            all_pairs = spec.find_lines(body)
-            negated = len(all_pairs) - len(hits_b)
-            affirmed = {(l, m.start()) for l, m in hits_b}
-            negated_samples = [l[max(0, m.start() - 20): m.end() + 60] for l, m in all_pairs if (l, m.start()) not in affirmed][:2]
-            link_hits = [l for l in links if spec.in_text(l.text) and not l.is_pdf and l.region not in ("nav", "header", "footer")]
-            page.update(title=title[:80], kind=classify_page(title, res.final_url), text_len=len(body), hit=bool(hits_t or hits_b or link_hits), count=len(hits_b) + len(hits_t), negated=negated, negated_samples=negated_samples,
-                        in_title=bool(hits_t), snippets=snippets(spec, body, cfg.snippet_chars, affirmative=True), keys=match_keys(spec, body, affirmative=True), link_hits=[{"text": l.text[:60], "url": l.url} for l in link_hits[:5]])
+            page.update(_hit_fields(spec, cfg, res.final_url, title, body, links))
             out["pages"].append(page)
             for l in links:
                 if l.is_pdf and spec.in_text(l.text) and len(out["pdf_link_hits"]) < 20:
                     out["pdf_link_hits"].append({"text": l.text[:80], "url": l.url, "page": url})
+                if cfg.follow_external and not l.same_site and not l.is_pdf and role in PDF_SPORTS_ROLES and l.region not in ("nav", "header", "footer") and l.url not in ext_queue and external_ok(l.url, l.text, spec):
+                    ext_queue[l.url] = (0 if spec.in_text(l.text) else 1, len(ext_queue), norm_text(l.text)[:60], url)
                 if cfg.read_pdf and l.is_pdf and l.same_site and role in PDF_SPORTS_ROLES and l.region not in ("nav", "header", "footer") and l.url not in pdf_queue and not RESERVATION_URL.search(l.url):
                     pdf_queue[l.url] = (_pdf_priority(l.text, l.url, spec), len(pdf_queue), norm_text(l.text)[:80], url)
             if depth >= maxd:
@@ -687,6 +778,8 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
                 return
         break
     _drop_boilerplate(out["pages"], fetched)
+    if cfg.follow_external and ext_queue and stopped != "max_requests":
+        _survey_external(ext_queue, ctx, spec, cfg, out)
     if cfg.read_pdf and pdf_queue and stopped != "max_requests":
         _read_pdfs(pdf_queue, ctx, spec, cfg, out, site_host)
     # 1ページも読めなかったのに『調査できた』と数えない(33件が該当。D-158)
@@ -822,7 +915,7 @@ def export_rows(s: dict) -> list[dict]:
     m = s["municipality"]
     rows = []
     for p in s["pages"]:
-        if not p.get("hit"):
+        if not (p.get("hit") or p.get("ext_hit")):
             continue
         matched = " / ".join((p.get("snippets") or []) + [l["text"] for l in p.get("link_hits", [])][:2])
         rows.append({

@@ -74,7 +74,7 @@ def test_no_seed_and_unreachable_robots():
     plain = {"/robots.txt": (404, "text/plain", ""), "/": page("トップ", '<a href="/news/">お知らせ</a>')}
     assert sv.survey_municipality(M, {"nav_links": [], "genre_entrypoints": []}, make_fetcher(plain), SPEC, sv.SurveyConfig())["outcome"] == "no_seed"
     r = result(cands=[("スポーツ", "https://www.city.example.jp/sports/")])
-    out = sv.survey_municipality(M, r, make_fetcher({"/robots.txt": (503, "text/plain", "")}), SPEC, sv.SurveyConfig(retry_wait=0))
+    out = sv.survey_municipality(M, r, make_fetcher({"/robots.txt": (503, "text/plain", "")}), SPEC, sv.SurveyConfig(retry_wait=0, robots_retry_wait=0))
     assert out["outcome"] == "fetch_failed" and out["failure_class"] == "robots_unreachable" and not out["pages"]
 
 
@@ -479,3 +479,90 @@ def test_stale_hub_seeds_are_rebuilt_from_the_top_page():
     ok = {"/robots.txt": (404, "text/plain", ""), "/old/sports/": page("スポーツ施設", "<p>グラウンド・ゴルフができます。</p>")}
     out = sv.survey_municipality(M, stale, make_fetcher(ok), SPEC, sv.SurveyConfig(route="t", retry_wait=0))
     assert out["outcome"] == "surveyed" and out["seed_mode"] == "normal" and "stale_seeds" not in out
+
+
+def host_fetcher(routes):
+    """(ホスト, パス) → (status, content_type, body)。外部サイトのテスト用。"""
+    import httpx
+    from localgov_crawler.fetcher import Fetcher
+
+    def handler(request):
+        r = routes.get((request.url.host, request.url.path))
+        if r is None:
+            return httpx.Response(404, text="not found")
+        status, ctype, body = r
+        return httpx.Response(status, headers={"content-type": ctype}, content=body.encode("utf-8"))
+
+    return Fetcher(min_interval=0, transport=httpx.MockTransport(handler))
+
+
+def test_external_sites_are_followed_only_with_robots_and_recorded_separately():
+    """スポーツ関連のページからリンクされた協会・指定管理者のサイトを少しだけ見る(D-161)。ロボットを確認し、結果は ext_hit(従来の found は変えない)。"""
+    ext = "https://www.gg-kyokai.example.org"
+    routes = {
+        ("www.city.example.jp", "/robots.txt"): (404, "text/plain", ""),
+        ("www.city.example.jp", "/sports/"): page("スポーツ", f'<a href="{ext}/">市スポーツ協会</a><a href="https://www.youtube.com/x">動画</a><a href="https://www.pref.example.lg.jp/">県</a><a href="https://yoyaku.example.jp/">予約</a>'),
+        ("www.gg-kyokai.example.org", "/robots.txt"): (200, "text/plain", "User-agent: *\nDisallow: /private/\n"),
+        ("www.gg-kyokai.example.org", "/"): page("市協会", '<a href="/taikai/">大会のご案内</a><a href="/private/x">会員</a>'),
+        ("www.gg-kyokai.example.org", "/taikai/"): page("大会のご案内", "<p>第3回グラウンドゴルフ大会を中央運動場で開催します。</p>"),
+    }
+    r = result(cands=[("スポーツ", "https://www.city.example.jp/sports/")])
+    off = sv.survey_municipality(M, r, host_fetcher(routes), SPEC, sv.SurveyConfig(route="t", retry_wait=0))
+    assert not [p for p in off["pages"] if p["role"] == "external"]  # 既定では外部サイトを見ない
+    out = sv.survey_municipality(M, r, host_fetcher(routes), SPEC, sv.SurveyConfig(route="t", retry_wait=0, follow_external=True))
+    ext_pages = [p for p in out["pages"] if p["role"] == "external"]
+    assert {p["url"] for p in ext_pages} == {f"{ext}/", f"{ext}/taikai/"}  # 動画・官公庁・予約は見ない。robotsで不許可の /private/ は取得しない
+    hit = next(p for p in ext_pages if p["url"].endswith("/taikai/"))
+    assert hit["ext_hit"] and not hit["hit"] and hit["external_host"] == "www.gg-kyokai.example.org" and hit["kind"] == "event"
+    assert out["external_found"] and not out["found"]  # 従来の『ワードがあった自治体』は変えない
+    rows = sv.export_rows(out)
+    assert len(rows) == 1 and rows[0]["found_via"] == "external" and rows[0]["page_kind"] == "event"
+    assert not any(r_["url"].endswith("/private/x") for r_ in out["requests"])
+    from localgov_crawler import cli
+    assert "external" in cli.PDF_FOUND_VIA  # 外部サイトの行は、HTMLとして取り直す抽出の対象にしない
+
+
+def test_external_ok_denies_and_national_hosts():
+    spec = sv.KeywordSpec("grandgolf", "グラウンドゴルフ", [__import__("re").compile(r"グラウ?ンド[\s・･\-ー]*ゴルフ")], [], ["groundgolf.or.jp"])
+    assert sv.external_ok("https://club.example.org/", "市グラウンドゴルフ協会", spec)
+    assert sv.external_ok("https://club.example.org/", "指定管理者のサイト", spec)
+    assert not sv.external_ok("https://www.groundgolf.or.jp/", "グラウンドゴルフ", spec)  # 全国組織のサイト
+    assert not sv.external_ok("https://maps.google.co.jp/x", "グラウンドゴルフ場の地図", spec)
+    assert not sv.external_ok("https://www.city.other.lg.jp/", "スポーツ協会", spec)
+    assert not sv.external_ok("https://club.example.org/yoyaku/", "スポーツ協会", spec)
+    assert not sv.external_ok("https://club.example.org/", "お問い合わせ", spec)
+
+
+def test_robots_unreachable_is_retried_once():
+    state = {"n": 0}
+    import httpx
+    from localgov_crawler.fetcher import Fetcher
+
+    def handler(request):
+        if request.url.path == "/robots.txt":
+            state["n"] += 1
+            return httpx.Response(503) if state["n"] <= 2 else httpx.Response(404)  # 最初の取得(再試行を含む2回)は不通、やり直しで届く
+        return httpx.Response(200, headers={"content-type": HTML}, content="<html><title>スポーツ</title><body><main>グランドゴルフ場あり</main></body></html>".encode())
+
+    r = result(cands=[("スポーツ", "https://www.city.example.jp/sports/")])
+    out = sv.survey_municipality(M, r, Fetcher(min_interval=0, transport=httpx.MockTransport(handler)), SPEC, sv.SurveyConfig(retry_wait=0, robots_retry_wait=0))
+    assert out["outcome"] == "surveyed" and out["found"] and out["robots_retried"]
+
+
+def test_sitemap_keyword_urls_become_seeds_and_keyword_variants():
+    r = {"nav_links": [], "genre_entrypoints": [], "site_profile": {"sitemap": {"keyword_urls": ["https://www.city.example.jp/kankou/park1", "https://www.city.example.jp/x2"]}}}
+    seeds = sv.seeds_from_result(r)
+    assert [s["url"] for s in seeds] == ["https://www.city.example.jp/kankou/park1", "https://www.city.example.jp/x2"] and seeds[0]["source"] == "sitemap"
+    import json as _j
+    from pathlib import Path
+    spec = sv.KeywordSpec.load(Path(__file__).parent.parent / "config/keywords/grandgolf.json")
+    for t in ["ぐらうんどごるふ大会", "Ground Golf", "グラウンド・ゴルフ", "グランドゴルフ", "ｸﾞﾗｳﾝﾄﾞｺﾞﾙﾌ"]:
+        assert spec.in_text(t), t
+    for t in ["パークゴルフ", "グラウンドとゴルフ場", "ground floor", "ゴルフ"]:
+        assert not spec.in_text(t), t
+    assert "groundgolf.or.jp" in spec.external_deny_hosts
+
+
+def test_max_pdfs_and_external_budget_are_in_request_budget():
+    base = sv.SurveyConfig(max_pages=100, read_pdf=True, max_pdfs=40, follow_external=True).pipeline_config().max_requests
+    assert base == 100 + 8 + 40 + 12 + 4
