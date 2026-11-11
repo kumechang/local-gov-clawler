@@ -59,6 +59,8 @@ jobs:
       event_route: ${{ matrix.event_route }}
       detail_route: ${{ matrix.detail_route }}
       details_only: ${{ inputs.details_only }}
+      facility_max_pdfs: ${{ matrix.facility_max_pdfs }}
+      follow_external: ${{ matrix.follow_external }}
       facility_max_pages: ${{ matrix.facility_max_pages }}
       event_max_pages: ${{ matrix.event_max_pages }}
     permissions:

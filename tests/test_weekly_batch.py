@@ -162,3 +162,17 @@ def test_weekly_diff(tmp_path):
     wf = (ROOT / ".github/workflows/weekly-batch.yml").read_text(encoding="utf-8")
     assert "prev/event_focus" in wf and "--list event" in wf
     assert "cp data/export/weekly/*.csv prev/" in wf and "scripts/weekly_diff.py" in wf and wf.index("cp data/export/weekly/*.csv prev/") < wf.index("survey-export")
+
+
+def test_discovery_options_flow_from_config_to_cli():
+    """発見を増やす設定(PDF40件・外部サイト)が、設定 → 計画 → ワークフロー → CLI までつながっている(D-161)。"""
+    assert CFG["facility_max_pdfs"] == 40 and CFG["follow_external"] is True
+    t = plan_mod.plan("config/weekly_batch.json", "福井県")[0][0]
+    assert t["facility_max_pdfs"] == "40" and t["follow_external"] == "1"
+    pref = yaml.safe_load((ROOT / ".github/workflows/weekly-prefecture.yml").read_text(encoding="utf-8"))["jobs"]
+    assert pref["survey_facility"]["with"]["max_pdfs"] == "${{ inputs.facility_max_pdfs }}" and pref["survey_facility"]["with"]["follow_external"] == "${{ inputs.follow_external }}"
+    assert "follow_external" not in pref["survey_event"]["with"]  # イベント探索は外部サイトを見ない(重複を避ける)
+    batch = yaml.safe_load((ROOT / ".github/workflows/weekly-batch.yml").read_text(encoding="utf-8"))["jobs"]["prefecture"]["with"]
+    assert batch["follow_external"] == "${{ matrix.follow_external }}" and batch["facility_max_pdfs"] == "${{ matrix.facility_max_pdfs }}"
+    survey = (ROOT / ".github/workflows/survey.yml").read_text(encoding="utf-8")
+    assert "--follow-external" in survey and '--max-pdfs "${MAX_PDFS:-20}"' in survey
