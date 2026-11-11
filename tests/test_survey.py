@@ -566,3 +566,20 @@ def test_sitemap_keyword_urls_become_seeds_and_keyword_variants():
 def test_max_pdfs_and_external_budget_are_in_request_budget():
     base = sv.SurveyConfig(max_pages=100, read_pdf=True, max_pdfs=40, follow_external=True).pipeline_config().max_requests
     assert base == 100 + 8 + 40 + 12 + 4
+
+
+def test_landing_page_gateway_links_become_broad_seeds():
+    """トップが『入口だけのページ』(小諸市・南牧村・御代田町など)の自治体は、本体への入口(公式サイト・行政)から探す(D-163)。"""
+    links = [{"text": t, "url": f"https://x.jp/{i}", "same_site": True, "is_pdf": False} for i, t in enumerate(["小諸市オフィシャルサイト", "シティプロモーションサイト", "移住・定住サイト(空き家バンク)", "ロゴマークダウンロード"])]
+    assert [s["text"] for s in sv.fallback_seeds(links)] == ["小諸市オフィシャルサイト"]
+    many = [{"text": f"お知らせ{i}", "url": f"https://x.jp/n{i}", "same_site": True, "is_pdf": False} for i in range(20)] + [{"text": "行政情報", "url": "https://x.jp/g", "same_site": True, "is_pdf": False}, {"text": "スポーツ", "url": "https://x.jp/s", "same_site": True, "is_pdf": False}]
+    assert [s["text"] for s in sv.fallback_seeds(many)][0] == "スポーツ"  # リンクが多い通常のトップでは、スポーツが先
+    routes = {
+        "/robots.txt": (404, "text/plain", ""),
+        "/": page("トップ", '<a href="/gyosei/">行政ページへリンク</a><a href="/promo/">移住・引っ越しページへリンク</a>'),
+        "/gyosei/": page("行政", '<a href="/sports/">スポーツ</a>'),
+        "/sports/": page("スポーツ", '<a href="/f/1">中央運動場</a>'),
+        "/f/1": page("中央運動場", "<p>グラウンド・ゴルフができます。</p>"),
+    }
+    out = sv.survey_municipality(M, {"nav_links": [], "genre_entrypoints": []}, make_fetcher(routes), SPEC, sv.SurveyConfig(route="t", retry_wait=0))
+    assert out["outcome"] == "surveyed" and out["found"] and out["seeds"][0]["text"] == "行政ページへリンク"

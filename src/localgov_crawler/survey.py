@@ -292,6 +292,10 @@ def event_focus_seeds(result: dict, max_seeds: int = 12) -> list[dict]:
 BROAD_NAV = re.compile(r"サイトマップ|サイト内の?案内|文化|生涯学習|学習|教育|くらし|暮らし|生活|施設|市民|町民|村民|観光|イベント|行事|健康|レクリエーション|分野|目的|各課")
 
 
+# トップが『入口だけのページ』(公式サイトへの案内など)の自治体の、本体への入口(D-163)
+GATEWAY_LABEL = re.compile(r"オフィシャル|公式|行政|役場|市政|町政|村政|ホームページ|トップページ|ENTER|入口", re.I)
+
+
 def fallback_seeds(links: list[dict], max_seeds: int = 12) -> list[dict]:
     """スポーツの入口が見つからない自治体の入口(D-117)。トップのナビにある『サイトマップ』『文化・生涯学習』『施設』『イベント』などの
     大分類を入口にし、その先でスポーツのリンクを探す(1階層深くたどる)。"""
@@ -300,10 +304,12 @@ def fallback_seeds(links: list[dict], max_seeds: int = 12) -> list[dict]:
         t = norm_text(l.get("text", ""))
         if not l.get("same_site", True) or l.get("is_pdf") or len(t) > 24 or not t:
             continue
-        if not (BROAD_NAV.search(t) or hub.SPORTS_WORD.search(t)) or RESERVATION_TEXT.search(t) or NEWS_LABEL.search(t) or RESERVATION_URL.search(l["url"]):
+        if not (BROAD_NAV.search(t) or hub.SPORTS_WORD.search(t) or GATEWAY_LABEL.search(t)) or RESERVATION_TEXT.search(t) or NEWS_LABEL.search(t) or RESERVATION_URL.search(l["url"]):
             continue
         if SITEMAP_LABEL.search(t):
             rank = 0
+        elif GATEWAY_LABEL.search(t) and not hub.SPORTS_WORD.search(t) and len(links) <= 15:
+            rank = 0  # リンクが少ない入口だけのページでは、本体への入口を最優先にする
         elif hub.SPORTS_WORD.search(t):
             rank = 1
         elif re.search(r"文化|生涯学習|学習|教育", t):
