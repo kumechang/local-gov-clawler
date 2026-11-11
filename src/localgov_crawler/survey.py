@@ -3,6 +3,7 @@
 保存するのは、ワードの有無・出たページのURL・前後の短い文だけ(本文の転載はしない)。"""
 from __future__ import annotations
 
+import hashlib
 import heapq
 import json
 import re
@@ -528,6 +529,11 @@ def survey_municipality(m: Municipality, result: dict | None, fetcher: Fetcher, 
         out["pdf_link_found"] = bool(out["pdf_link_hits"])
         out["hit_roles"] = sorted({p["role"] for p in out["pages"] if p["hit"]})
         out["hit_kinds"] = sorted({p.get("kind", "other") for p in out["pages"] if p["hit"]})
+        if cfg.read_pdf:
+            # ワードのあったPDFの本文(文字に起こしたもの)。調査の結果とは別のファイルに保存する(write_survey。D-156)
+            raw = out.pop("_pdf_texts", {})
+            hit_urls = {p["url"] for p in out["pages"] if p["role"] == "pdf" and p["hit"]}
+            out["pdf_texts"] = [raw[u] for u in raw if u in hit_urls]
     return out
 
 
@@ -674,6 +680,20 @@ def _read_pdfs(pdf_queue: dict, ctx: _Ctx, spec: KeywordSpec, cfg: SurveyConfig,
                     snippets=(snippets(spec, text, cfg.snippet_chars, affirmative=True) if not ocr else _ocr_snippets(spec, text, cfg.snippet_chars)),
                     keys=(match_keys(spec, text, affirmative=True) if not ocr else sorted({m.group(0) for m in spec.find_ocr(text)})[:5]), link_hits=[], ocr=ocr)
         out["pages"].append(page)
+        if page["hit"]:
+            out.setdefault("_pdf_texts", {})[url] = pdf_text_record(page, text, res.body, link_text, parent, ocr)
+
+
+PDF_TEXT_MAX_CHARS = 150_000
+
+
+def pdf_text_record(page: dict, text: str, body: bytes, link_text: str, parent: str, ocr: bool) -> dict:
+    """ワードのあったPDFの本文を、後から読み返せる形にする(D-156)。PDFの原本は保存しない。文字に起こした本文だけ(長すぎるときは先頭から切る)。"""
+    return {
+        "url": page["url"], "title": page.get("title", ""), "kind": page.get("kind", "other"), "link_text": link_text, "found_on": parent,
+        "pdf_pages": page.get("pdf_pages", 0), "ocr": ocr, "ocr_engines": page.get("ocr_engines", []), "text_len": len(text), "truncated": len(text) > PDF_TEXT_MAX_CHARS,
+        "sha256": hashlib.sha256(body).hexdigest(), "fetched_at": _now(), "text": text[:PDF_TEXT_MAX_CHARS],
+    }
 
 
 def _drop_boilerplate(pages: list[dict], fetched: int) -> None:
@@ -694,10 +714,39 @@ def _drop_boilerplate(pages: list[dict], fetched: int) -> None:
 
 
 def write_survey(root: Path, survey: dict, prefecture_code: str) -> Path:
-    path = Path(root) / survey["keyword"] / survey["run"]["route"] / prefecture_code / f"{survey['municipality']['code']}.json"
+    base = Path(root) / survey["keyword"] / survey["run"]["route"]
+    path = base / prefecture_code / f"{survey['municipality']['code']}.json"
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(survey, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n", encoding="utf-8")
+    body = {k: v for k, v in survey.items() if k != "pdf_texts"}
+    path.write_text(json.dumps(body, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n", encoding="utf-8")
+    if "pdf_texts" in survey:
+        # ワードのあったPDFの本文は、別のファイル(<route>/_pdftext/<県>/<自治体>.json)に保存する。毎回上書きするので、無くなったPDFは消える
+        tpath = base / PDF_TEXT_DIR / prefecture_code / f"{survey['municipality']['code']}.json"
+        tpath.parent.mkdir(parents=True, exist_ok=True)
+        rec = {"municipality": survey["municipality"], "keyword": survey["keyword"], "route": survey["run"]["route"], "surveyed_at": survey["run"]["finished_at"], "pdfs": survey["pdf_texts"]}
+        tpath.write_text(json.dumps(rec, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n", encoding="utf-8")
     return path
+
+
+PDF_TEXT_DIR = "_pdftext"
+
+
+def load_pdf_texts(root: Path, keyword: str, route: str) -> list[dict]:
+    """ワードのあったPDFの本文(1自治体1件)を読む。"""
+    base = Path(root) / keyword / route / PDF_TEXT_DIR
+    return [json.loads(p.read_text(encoding="utf-8")) for p in sorted(base.glob("*/*.json"))]
+
+
+def pdf_text_index(recs: list[dict]) -> list[dict]:
+    """PDFの本文の一覧(本文は含めない)。1PDF=1行。"""
+    rows = []
+    for r in recs:
+        m = r["municipality"]
+        for p in r["pdfs"]:
+            rows.append({"prefecture": m["prefecture"], "municipality_code": m["code"], "municipality_name": m["name"], "pdf_url": p["url"], "title": p["title"], "kind": p["kind"], "found_on": p["found_on"],
+                         "pdf_pages": p["pdf_pages"], "ocr": "1" if p["ocr"] else "", "text_len": p["text_len"], "truncated": "1" if p["truncated"] else "", "sha256": p["sha256"], "fetched_at": p["fetched_at"],
+                         "text_file": f"data/survey/{r['keyword']}/{r['route']}/{PDF_TEXT_DIR}/{m['code'][:2]}/{m['code']}.json"})
+    return rows
 
 
 def load_surveys(root: Path, keyword: str, route: str) -> list[dict]:

@@ -369,3 +369,40 @@ def test_pdfium_is_serialized_across_threads(monkeypatch):
     [t.start() for t in ts]
     [t.join() for t in ts]
     assert state["max"] == 1
+
+
+def test_hit_pdf_texts_are_stored_separately_and_readable(monkeypatch, tmp_path):
+    """ワードのあったPDFの本文(文字に起こしたもの)だけを、調査の結果とは別のファイルに保存する。原本は保存しない(D-156)。"""
+    pdf_hit = "市内パークゴルフ場\n平成大橋上流右岸広場 パークゴルフ場1 グラウンドゴルフ場1\n" + "あ" * 10
+    monkeypatch.setattr(sv, "pdf_text", lambda body, max_pages=30: (pdf_hit if body == b"%PDF-hit" else "関係のない計画\n" * 5, 2, "ok"))
+    routes = {
+        "/robots.txt": (404, "text/plain", ""),
+        "/sports/": page("スポーツ施設", '<a href="/doc/shisetsu.pdf">施設一覧(PDF)</a><a href="/doc/keikaku.pdf">スポーツ推進計画</a>'),
+        "/doc/shisetsu.pdf": (200, "application/pdf", "%PDF-hit"),
+        "/doc/keikaku.pdf": (200, "application/pdf", "%PDF-other"),
+    }
+    r = result(cands=[("スポーツ施設", "https://www.city.example.jp/sports/")])
+    out = sv.survey_municipality(M, r, make_fetcher(routes), SPEC, sv.SurveyConfig(route="wk", retry_wait=0, read_pdf=True))
+    assert [t["url"].rsplit("/", 1)[-1] for t in out["pdf_texts"]] == ["shisetsu.pdf"]  # ワードの無いPDFは保存しない
+    t = out["pdf_texts"][0]
+    assert t["kind"] == "facility" and t["text"].startswith("市内パークゴルフ場") and len(t["sha256"]) == 64 and not t["truncated"] and t["found_on"].endswith("/sports/")
+    assert "_pdf_texts" not in out
+    sv.write_survey(tmp_path, out, "13")
+    body = json.loads(next((tmp_path / "grandgolf" / "wk" / "13").glob("*.json")).read_text(encoding="utf-8"))
+    assert "pdf_texts" not in body  # 調査の結果のJSONは大きくならない
+    assert len(sv.load_surveys(tmp_path, "grandgolf", "wk")) == 1  # 本文のファイルが調査の結果として読まれない
+    recs = sv.load_pdf_texts(tmp_path, "grandgolf", "wk")
+    assert len(recs) == 1 and recs[0]["pdfs"][0]["text"] == t["text"]
+    rows = sv.pdf_text_index(recs)
+    assert len(rows) == 1 and rows[0]["text_file"].endswith(f"wk/_pdftext/{M.prefecture_code}/{M.code}.json") and "text" not in rows[0]
+    off = sv.survey_municipality(M, r, make_fetcher(routes), SPEC, sv.SurveyConfig(route="wk", retry_wait=0))
+    assert "pdf_texts" not in off  # PDFを読まない既定では何も作らない
+
+
+def test_long_pdf_text_is_truncated_and_flagged(monkeypatch):
+    big = "グラウンドゴルフ大会\n" + "あ" * (sv.PDF_TEXT_MAX_CHARS + 5)
+    monkeypatch.setattr(sv, "pdf_text", lambda body, max_pages=30: (big, 30, "ok"))
+    routes = {"/robots.txt": (404, "text/plain", ""), "/sports/": page("スポーツ施設", '<a href="/doc/a.pdf">大会要項</a>'), "/doc/a.pdf": (200, "application/pdf", "%PDF-x")}
+    out = sv.survey_municipality(M, result(cands=[("スポーツ施設", "https://www.city.example.jp/sports/")]), make_fetcher(routes), SPEC, sv.SurveyConfig(route="wk", retry_wait=0, read_pdf=True))
+    t = out["pdf_texts"][0]
+    assert t["truncated"] and len(t["text"]) == sv.PDF_TEXT_MAX_CHARS and t["text_len"] == len(big)

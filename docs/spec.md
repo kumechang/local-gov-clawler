@@ -118,3 +118,9 @@ GitHub Actions: `crawl` ワークフローを手動実行(`.github/workflows/cra
 - 設定: `config/weekly_batch.json`(県・シャード・上限ページ・止めるスイッチ)、入力の一覧 `config/survey_sets/weekly_facility.json`・`weekly_events.json`。
 - 施設・イベントの取り出しは、PDF由来の行(`found_via` が `pdf`/`pdf_link`)を対象にしない(PDFの中のイベント・施設の取り出しは未対応)。
 - 別のワードで回すときは `config/weekly_batch.json` の `keyword` を変える(ワード設定 `config/keywords/<名前>.json` が必要。route名は同じなので、前のワードの結果は `data/*/<旧keyword>/` に残る)。
+
+### PDFの本文の保存と取り出し(D-156)
+
+- 保存: ワードがあったPDFの本文を `data/survey/<keyword>/<route>/_pdftext/<県コード>/<自治体コード>.json` に保存(原本は保存しない)。1PDFあたり15万文字まで。
+- 取り出し: `localgov-crawler pdf-text --keyword K --routes-file config/survey_sets/weekly_facility.json [--code C] [--url U] [--max-chars N]`
+- 一覧: `localgov-crawler pdf-index --keyword K --routes-file ... --out DIR` → `K_pdfs.csv`(本文なし。`text_file` で本文のファイルを指す)。週次バッチが `data/export/weekly/` に出す。

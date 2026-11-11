@@ -39,6 +39,7 @@
 
 - **精度**: PDFだけで見つかる自治体は、計画・名簿・備品台帳の言及が混ざる(D-153。新しい11自治体のうち施設・大会の記述と言えるのは約4〜7件)。今回はPDFの種類で絞っていない。
 - **PDFの中の施設・イベントの取り出しは未対応**。PDF由来の行は③④の対象外(HTMLとして取得し直すと意味がないため)。PDFで見つかったページは `survey-export` のCSV(`data/export/weekly/grandgolf_places.csv` など)に出る。
+- ワードがあったPDFの本文は `_pdftext/` に保存(D-156)。取り出しは `pdf-text`、一覧は `data/export/weekly/grandgolf_pdfs.csv`。
 - 北海道は含める(D-150の打ち切りは『見逃しの調査』のこと)。外すなら `config/weekly_batch.json` の prefectures から消す。
 - 毎週同じroute名で上書きするため、一度消えたページ(自治体のサイト改修)は、その週の結果から消える。履歴はgitで見られる。
 - 定期実行はmainの最新で動く。マージ前は動かない。マージ後すぐ試すなら、Actionsの『weekly-batch』を手動実行(県を1つ指定可)。
