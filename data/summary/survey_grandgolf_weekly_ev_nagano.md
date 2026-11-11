@@ -1,15 +1,15 @@
 # ワード調査サマリ (keyword: grandgolf)
 
 - 対象: 77自治体
-- 調査できた: 70
-- ワードがあった: 9 (11.7%)
-- ワードのあったページの種類(自治体数、題名で判断): facility 5、organization 2、other 7
+- 調査できた: 71
+- ワードがあった: 10 (13.0%)
+- ワードのあったページの種類(自治体数、題名で判断): facility 6、organization 2、other 7
 - 本文・題名・リンクには無く、PDFのリンク文言だけにあった: 0
-- 平均取得ページ数: 82.3
-- 上限(max_pages)に達した: 5
+- 平均取得ページ数: 87.9
+- 上限(max_pages)に達した: 0
 
 ## outcome別
 
 - fetch_failed: 2
-- no_seed: 5
-- surveyed: 70
+- no_seed: 4
+- surveyed: 71
