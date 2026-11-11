@@ -1,9 +1,7 @@
 name: weekly-prefecture
 # 毎週の自動実行(weekly-batch.yml)の、1県ぶんの流れ(D-154)。
-#   ワード調査(PDF+OCR) ┐
-#                       ├→ イベントの詳細
-#   ワード調査(イベント探索) ┘
-#   ワード調査(PDF+OCR) → 施設の詳細
+# 同じ自治体のサイトへ同時に2本のアクセスをしない(1ホスト1リクエスト/秒以下を守るため)ので、1県の中は順番に動かす(D-159):
+#   ワード調査(PDF+OCR) → ワード調査(イベント探索) → 施設の詳細 → イベントの詳細
 # どの段階も、結果は呼び出し元のブランチ(定期実行ならmain)へコミットする。
 on:
   workflow_call:
@@ -60,7 +58,8 @@ jobs:
       contents: write
 
   survey_event:
-    if: ${{ inputs.details_only == '' }}
+    needs: survey_facility
+    if: ${{ !cancelled() && inputs.details_only == '' && needs.survey_facility.result != 'cancelled' }}
     uses: ./.github/workflows/survey.yml
     with:
       prefecture: ${{ inputs.prefecture }}
@@ -75,7 +74,7 @@ jobs:
       contents: write
 
   extract:
-    needs: survey_facility
+    needs: [survey_facility, survey_event]
     if: ${{ !cancelled() && (needs.survey_facility.result == 'success' || needs.survey_facility.result == 'skipped') }}
     uses: ./.github/workflows/extract.yml
     with:
@@ -89,8 +88,8 @@ jobs:
       contents: write
 
   events:
-    needs: [survey_facility, survey_event]
-    # どちらかの調査が終われば取り出す(片方が落ちても、もう片方のぶんは取り出す)
+    needs: [survey_facility, survey_event, extract]
+    # どちらかの調査が終われば取り出す(片方が落ちても、もう片方のぶんは取り出す)。施設の詳細(extract)が終わってから(同時にアクセスしない)
     if: ${{ !cancelled() && (needs.survey_facility.result == 'success' || needs.survey_facility.result == 'skipped' || needs.survey_event.result == 'success') }}
     uses: ./.github/workflows/events.yml
     with:

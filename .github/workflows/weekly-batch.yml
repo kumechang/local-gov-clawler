@@ -3,6 +3,7 @@ name: weekly-batch
 #  - cron は UTC。金曜20:23 UTC = 土曜05:23 JST。定期実行は main の最新で動く(ブランチでは動かない)
 #    毎時0分は混み合って数時間遅れることがある(初回は3時間40分遅れた)ので、ずらした時刻にしている(D-155)
 #  - 県ごとに weekly-prefecture.yml を呼ぶ。同時に動かす県は12まで(runnerの同時実行上限と、結果のコミットの衝突を抑える)
+#  - 県の中は順番に動かす(調査→イベント探索→施設の詳細→イベントの詳細)。同じサイトに同時にアクセスしないため(D-159)
 #  - 毎週同じ route 名(weekly_*)で上書きする。履歴は git に残る
 #  - 止めるには config/weekly_batch.json の enabled を false にする
 on:
@@ -86,9 +87,11 @@ jobs:
           set -o pipefail
           mkdir -p data/export/weekly data/summary/weekly prev
           cp data/export/weekly/*.csv prev/ 2>/dev/null || true   # 前週のCSV(差分用)
+          mkdir -p prev/event_focus; cp data/export/weekly/event_focus/*.csv prev/event_focus/ 2>/dev/null || true
           python3 scripts/weekly_report.py --week "$WEEK" --out data/summary/weekly/latest.md | tee -a "$GITHUB_STEP_SUMMARY"
           det=$(python3 scripts/weekly_report.py --list detail)
           localgov-crawler survey-export --keyword grandgolf --routes-file config/survey_sets/weekly_facility.json --out data/export/weekly
+          localgov-crawler survey-export --keyword grandgolf --routes $(python3 scripts/weekly_report.py --list event) --out data/export/weekly/event_focus
           localgov-crawler pdf-index --keyword grandgolf --routes-file config/survey_sets/weekly_facility.json --out data/export/weekly
           localgov-crawler extract-export --keyword grandgolf --extract-routes $det --out data/export/weekly
           localgov-crawler events-export --keyword grandgolf --events-routes $det --out data/export/weekly
