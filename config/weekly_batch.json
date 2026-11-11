@@ -7,7 +7,7 @@
   "event_route_prefix": "weekly_ev_",
   "detail_route_prefix": "weekly_",
   "facility_max_pages": 200,
-  "event_max_pages": 300,
+  "event_max_pages": 450,
   "prefectures": [
     {
       "name": "愛知県",

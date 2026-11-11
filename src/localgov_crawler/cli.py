@@ -267,6 +267,49 @@ def cmd_survey_export(args) -> int:
     return 0
 
 
+def _pdf_texts(args) -> list[dict]:
+    from . import survey as sv
+    recs: dict[str, dict] = {}
+    for route in _routes_of(args):
+        for r in sv.load_pdf_texts(Path(args.surveys), args.keyword, route):
+            recs.setdefault(r["municipality"]["code"], r)
+    return [recs[c] for c in sorted(recs)]
+
+
+def cmd_pdf_index(args) -> int:
+    """ワードのあったPDFの本文の一覧(CSV。本文は含めない)を書き出す(D-156)。本文は pdf-text で取り出す。"""
+    from . import survey as sv
+    rows = sv.pdf_text_index(_pdf_texts(args))
+    out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
+    cols = ["prefecture", "municipality_code", "municipality_name", "pdf_url", "title", "kind", "found_on", "pdf_pages", "ocr", "text_len", "truncated", "sha256", "fetched_at", "text_file"]
+    with open(out / f"{args.keyword}_pdfs.csv", "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=cols)
+        w.writeheader()
+        w.writerows(rows)
+    print(f"{args.keyword}_pdfs.csv: {len(rows)}行({len({r['municipality_code'] for r in rows})}自治体)  OCR {sum(1 for r in rows if r['ocr'])}  先頭から切った {sum(1 for r in rows if r['truncated'])}")
+    return 0
+
+
+def cmd_pdf_text(args) -> int:
+    """保存したPDFの本文を取り出して表示する(D-156)。--code(自治体コード)か --url(PDFのURLの一部)で絞る。"""
+    n = 0
+    for r in _pdf_texts(args):
+        if args.code and r["municipality"]["code"] != args.code:
+            continue
+        for p in r["pdfs"]:
+            if args.url and args.url not in p["url"]:
+                continue
+            n += 1
+            print(f"===== {r['municipality']['prefecture']} {r['municipality']['name']} ({r['municipality']['code']}) [{p['kind']}] {p['title']}\n{p['url']}  ページ数={p['pdf_pages']} OCR={'あり' if p['ocr'] else 'なし'} 文字数={p['text_len']}{'(先頭から切った)' if p['truncated'] else ''}\n")
+            print(p["text"] if not args.max_chars else p["text"][: args.max_chars])
+            print()
+    if not n:
+        print("該当するPDFがありません", file=sys.stderr)
+        return 1
+    return 0
+
+
 def cmd_extract(args) -> int:
     """ワード調査で見つかった『場所(施設)』のページを取得し直し、施設の名前・住所・電話番号・問い合わせ先を取り出す(D-124)。"""
     from . import extract as ex
@@ -541,6 +584,18 @@ def main(argv: list[str] | None = None) -> int:
     sp.add_argument("--routes", nargs="+"); sp.add_argument("--routes-file")
     sp.add_argument("--out", default="data/export")
     sp.set_defaults(fn=cmd_survey_export)
+
+    sp = sub.add_parser("pdf-index")
+    sp.add_argument("--surveys", default="data/survey"); sp.add_argument("--keyword", required=True)
+    sp.add_argument("--routes", nargs="+"); sp.add_argument("--routes-file")
+    sp.add_argument("--out", default="data/export")
+    sp.set_defaults(fn=cmd_pdf_index)
+
+    sp = sub.add_parser("pdf-text")
+    sp.add_argument("--surveys", default="data/survey"); sp.add_argument("--keyword", required=True)
+    sp.add_argument("--routes", nargs="+"); sp.add_argument("--routes-file")
+    sp.add_argument("--code"); sp.add_argument("--url"); sp.add_argument("--max-chars", type=int, default=0)
+    sp.set_defaults(fn=cmd_pdf_text)
 
     sp = sub.add_parser("ward-report")
     sp.add_argument("--master", default=str(mun.DEFAULT_MASTER)); sp.add_argument("--results", default="data/results")

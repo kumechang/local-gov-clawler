@@ -33,6 +33,7 @@ class FetchResult:
     etag: str = ""
     last_modified: str = ""
     retry_after: float | None = None  # 秒。Retry-Afterが秒数のときだけ
+    started: float = 0.0  # リクエストを送った時刻(UNIX秒)。1ホスト1秒以下の遵守の計測に使う(D-158)
 
     @property
     def ok(self) -> bool:
@@ -46,6 +47,7 @@ class FetchResult:
             "error_class": self.error_class,
             "elapsed_ms": self.elapsed_ms,
             "bytes": len(self.body),
+            "t": round(self.started, 2),
         }
 
 
@@ -138,6 +140,7 @@ class Fetcher:
         host = (urlsplit(url).hostname or "").lower()
         res = FetchResult(url=url, final_url=url)
         self._wait(host)
+        res.started = time.time()
         start = time.monotonic()
         try:
             with self._client.stream("GET", url) as r:

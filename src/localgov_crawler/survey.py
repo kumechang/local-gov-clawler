@@ -3,6 +3,7 @@
 保存するのは、ワードの有無・出たページのURL・前後の短い文だけ(本文の転載はしない)。"""
 from __future__ import annotations
 
+import hashlib
 import heapq
 import json
 import re
@@ -313,6 +314,22 @@ def fallback_seeds(links: list[dict], max_seeds: int = 12) -> list[dict]:
     return seeds[:max_seeds]
 
 
+SITEMAP_PATH = re.compile(r"sitemap|site_map|site-map", re.I)
+
+
+def sitemap_page_urls(result: dict, links: list[dict], base_url: str) -> list[str]:
+    """サイトマップのページ(HTML)のURL。トップのリンクの『サイトマップ』と、ハブ判定で見えたURLの先頭の階層(例 /sitemap.html)から。根拠のある先だけ(当てずっぽうの取得はしない)。"""
+    from urllib.parse import urljoin
+    urls: list[str] = []
+    for l in links:
+        if SITEMAP_LABEL.search(norm_text(l.get("text", ""))) and not str(l.get("url", "")).lower().endswith(".xml"):
+            urls.append(l["url"])
+    for path in (result.get("site_profile", {}).get("sitemap", {}).get("top_level_paths") or {}):
+        if SITEMAP_PATH.search(path) and not path.lower().endswith(".xml"):
+            urls.append(urljoin(base_url, path))
+    return list(dict.fromkeys(urls))
+
+
 def _child_role(parent_role: str, text: str, spec: KeywordSpec, event_focus: bool = False) -> str | None:
     """リンクをたどるか・たどるならどの役割か。たどらないなら None。"""
     t = norm_text(text)
@@ -522,13 +539,55 @@ def survey_municipality(m: Municipality, result: dict | None, fetcher: Fetcher, 
         _survey(m, result, ctx, spec, cfg, out)
     finally:
         out["requests"] = ctx.log
+        out["robots_skipped"] = ctx.robots_skipped
         out["run"]["finished_at"] = _now()
         out["run"]["request_count"] = len(ctx.log)
         out["found"] = any(p["hit"] for p in out["pages"]) or bool(out["nav_hits"])
         out["pdf_link_found"] = bool(out["pdf_link_hits"])
         out["hit_roles"] = sorted({p["role"] for p in out["pages"] if p["hit"]})
         out["hit_kinds"] = sorted({p.get("kind", "other") for p in out["pages"] if p["hit"]})
+        if cfg.read_pdf:
+            # ワードのあったPDFの本文(文字に起こしたもの)。調査の結果とは別のファイルに保存する(write_survey。D-156)
+            raw = out.pop("_pdf_texts", {})
+            hit_urls = {p["url"] for p in out["pages"] if p["role"] == "pdf" and p["hit"]}
+            out["pdf_texts"] = [raw[u] for u in raw if u in hit_urls]
     return out
+
+
+def _fallback_entrances(m: Municipality, result: dict, ctx: _Ctx, cfg: SurveyConfig, out: dict, site_host: str, fresh: bool = False) -> list[dict] | None:
+    """入口が見つからない自治体(D-117)の入口: ナビが取れていない・JS描画なら、トップを取得し直し(JS描画はヘッドレス)、大分類を入口にする。
+    保存したナビがお知らせばかりで大分類が無い自治体(D-158)は、トップを取り直し、それでも無ければ、サイトマップのページから探す。
+    fresh=True は、保存した入口が全部消えていた(404)自治体で、保存したナビを使わずトップから作り直す。取得できないときは None(outcome を設定済み)。"""
+    links = [] if fresh else [l for l in result.get("nav_links", []) if l.get("same_site") and not l.get("is_pdf")]
+    needs_headless = bool(result.get("site_profile", {}).get("rendering", {}).get("needs_headless"))
+    refetched = False
+    if fresh or needs_headless or len(links) < 5:
+        top = ctx.get(m.url)
+        refetched = True
+        if top.ok and is_same_site(top.final_url, site_host):
+            links = [l.to_dict() for l in extract_links(parse_html(decode_bytes(top.body, top.content_type)), top.final_url, site_host) if l.same_site and not l.is_pdf]
+        elif not links:
+            out["outcome"], out["failure_class"] = "fetch_failed", f"top_fetch_{top.error_class or 'other'}"
+            return None
+    seeds = fallback_seeds(links, cfg.max_seeds)
+    out["seed_mode"] = "fallback_stale" if fresh else "fallback"
+    if not seeds:
+        if not refetched:
+            top = ctx.get(m.url)
+            if top.ok and is_same_site(top.final_url, site_host):
+                links = [l.to_dict() for l in extract_links(parse_html(decode_bytes(top.body, top.content_type)), top.final_url, site_host) if l.same_site and not l.is_pdf]
+                seeds = fallback_seeds(links, cfg.max_seeds)
+                out["seed_mode"] = "fallback_top"
+        if not seeds:
+            for smap in sitemap_page_urls(result, links, m.url)[:2]:
+                sres = ctx.get(smap)
+                if sres.ok and is_same_site(sres.final_url, site_host):
+                    slinks = [l.to_dict() for l in extract_links(parse_html(decode_bytes(sres.body, sres.content_type)), sres.final_url, site_host) if l.same_site and not l.is_pdf]
+                    seeds = fallback_seeds(slinks, cfg.max_seeds)
+                    if seeds:
+                        out["seed_mode"] = "fallback_sitemap"
+                        break
+    return seeds
 
 
 def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, cfg: SurveyConfig, out: dict) -> None:
@@ -544,90 +603,96 @@ def _survey(m: Municipality, result: dict | None, ctx: _Ctx, spec: KeywordSpec, 
         return
     site_host = base_host(m.url)
     if not seeds:
-        # 入口が見つからない自治体(D-117): ナビが取れていない・JS描画なら、トップを取得し直し(JS描画はヘッドレス)、大分類を入口にする
-        links = [l for l in result.get("nav_links", []) if l.get("same_site") and not l.get("is_pdf")]
-        needs_headless = bool(result.get("site_profile", {}).get("rendering", {}).get("needs_headless"))
-        if needs_headless or len(links) < 5:
-            top = ctx.get(m.url)
-            if top.ok and is_same_site(top.final_url, site_host):
-                links = [l.to_dict() for l in extract_links(parse_html(decode_bytes(top.body, top.content_type)), top.final_url, site_host) if l.same_site and not l.is_pdf]
-            elif not links:
-                out["outcome"], out["failure_class"] = "fetch_failed", f"top_fetch_{top.error_class or 'other'}"
-                return
-        seeds = fallback_seeds(links, cfg.max_seeds)
-        out["seed_mode"] = "fallback"
+        seeds = _fallback_entrances(m, result, ctx, cfg, out, site_host)
+        if seeds is None:
+            return
     out["seeds"] = seeds
     if not seeds:
         out["outcome"] = "no_seed"
         return
-    heap: list = []
     seq = 0
-
-    def push(url: str, role: str, depth: int, via: str, text: str, maxd: int) -> None:
-        nonlocal seq
-        seq += 1
-        cls, d = _priority(role, depth, text or via, spec, cfg.event_focus)
-        heapq.heappush(heap, (cls, d, seq, url, role, depth, via, maxd))
-
-    queued = {s["url"] for s in seeds}
-    for sd in seeds:
-        push(sd["url"], sd["role"], 0, "seed", sd.get("text", ""), cfg.seed_depth + (1 if sd["role"] == "broad" or sd.get("source") == "fallback" else 0))
     fetched = 0
     event_pages = 0
     pdf_queue: dict[str, tuple] = {}
     stopped = "exhausted"
-    while heap:
-        if fetched >= cfg.max_pages:
-            stopped = "max_pages"
-            break
-        _, _, _, url, role, depth, via, maxd = heapq.heappop(heap)
-        if role == "event" and event_pages >= cfg.max_event_pages:
-            continue
-        res = ctx.get(url)
-        if res.error_class == "budget_exceeded":
-            stopped = "max_requests"
-            break
-        page = {"url": url, "role": role, "depth": depth, "via": via, "status": res.status, "error_class": res.error_class, "hit": False}
-        if not res.ok or (res.content_type and "html" not in res.content_type.lower()):
-            out["pages"].append(page)
-            continue
-        if not is_same_site(res.final_url, site_host):
-            page["error_class"] = "offsite_redirect"
-            out["pages"].append(page)
-            continue
-        fetched += 1
-        event_pages += role == "event"
-        soup = parse_html(decode_bytes(res.body, res.content_type))
-        links = extract_links(soup, res.final_url, site_host)
-        title, body = page_text(parse_html(decode_bytes(res.body, res.content_type)))
-        hits_t, hits_b = spec.find(title), spec.find_affirmative(body)
-        all_pairs = spec.find_lines(body)
-        negated = len(all_pairs) - len(hits_b)
-        affirmed = {(l, m.start()) for l, m in hits_b}
-        negated_samples = [l[max(0, m.start() - 20): m.end() + 60] for l, m in all_pairs if (l, m.start()) not in affirmed][:2]
-        link_hits = [l for l in links if spec.in_text(l.text) and not l.is_pdf and l.region not in ("nav", "header", "footer")]
-        page.update(title=title[:80], kind=classify_page(title, res.final_url), text_len=len(body), hit=bool(hits_t or hits_b or link_hits), count=len(hits_b) + len(hits_t), negated=negated, negated_samples=negated_samples,
-                    in_title=bool(hits_t), snippets=snippets(spec, body, cfg.snippet_chars, affirmative=True), keys=match_keys(spec, body, affirmative=True), link_hits=[{"text": l.text[:60], "url": l.url} for l in link_hits[:5]])
-        out["pages"].append(page)
-        for l in links:
-            if l.is_pdf and spec.in_text(l.text) and len(out["pdf_link_hits"]) < 20:
-                out["pdf_link_hits"].append({"text": l.text[:80], "url": l.url, "page": url})
-            if cfg.read_pdf and l.is_pdf and l.same_site and role in PDF_SPORTS_ROLES and l.region not in ("nav", "header", "footer") and l.url not in pdf_queue and not RESERVATION_URL.search(l.url):
-                pdf_queue[l.url] = (_pdf_priority(l.text, l.url, spec), len(pdf_queue), norm_text(l.text)[:80], url)
-        if depth >= maxd:
-            continue
-        for l in links:
-            if not l.same_site or l.is_pdf or l.url in queued or RESERVATION_URL.search(l.url) or l.region in ("footer",):
+    queued: set[str] = set()
+    for attempt in (0, 1):
+        heap: list = []
+
+        def push(url: str, role: str, depth: int, via: str, text: str, maxd: int) -> None:
+            nonlocal seq
+            seq += 1
+            cls, d = _priority(role, depth, text or via, spec, cfg.event_focus)
+            heapq.heappush(heap, (cls, d, seq, url, role, depth, via, maxd))
+
+        queued |= {s["url"] for s in seeds}
+        for sd in seeds:
+            push(sd["url"], sd["role"], 0, "seed", sd.get("text", ""), cfg.seed_depth + (1 if sd["role"] == "broad" or sd.get("source") == "fallback" else 0))
+        while heap:
+            if fetched >= cfg.max_pages:
+                stopped = "max_pages"
+                break
+            _, _, _, url, role, depth, via, maxd = heapq.heappop(heap)
+            if role == "event" and event_pages >= cfg.max_event_pages:
                 continue
-            child = _child_role(role, l.text, spec, cfg.event_focus)
-            if child is None:
+            res = ctx.get(url)
+            if res.error_class == "budget_exceeded":
+                stopped = "max_requests"
+                break
+            page = {"url": url, "role": role, "depth": depth, "via": via, "status": res.status, "error_class": res.error_class, "hit": False}
+            if not res.ok or (res.content_type and "html" not in res.content_type.lower()):
+                out["pages"].append(page)
                 continue
-            queued.add(l.url)
-            push(l.url, child, depth + 1, norm_text(l.text)[:40], norm_text(l.text), maxd)
+            if not is_same_site(res.final_url, site_host):
+                page["error_class"] = "offsite_redirect"
+                out["pages"].append(page)
+                continue
+            fetched += 1
+            event_pages += role == "event"
+            soup = parse_html(decode_bytes(res.body, res.content_type))
+            links = extract_links(soup, res.final_url, site_host)
+            title, body = page_text(parse_html(decode_bytes(res.body, res.content_type)))
+            hits_t, hits_b = spec.find(title), spec.find_affirmative(body)
+            all_pairs = spec.find_lines(body)
+            negated = len(all_pairs) - len(hits_b)
+            affirmed = {(l, m.start()) for l, m in hits_b}
+            negated_samples = [l[max(0, m.start() - 20): m.end() + 60] for l, m in all_pairs if (l, m.start()) not in affirmed][:2]
+            link_hits = [l for l in links if spec.in_text(l.text) and not l.is_pdf and l.region not in ("nav", "header", "footer")]
+            page.update(title=title[:80], kind=classify_page(title, res.final_url), text_len=len(body), hit=bool(hits_t or hits_b or link_hits), count=len(hits_b) + len(hits_t), negated=negated, negated_samples=negated_samples,
+                        in_title=bool(hits_t), snippets=snippets(spec, body, cfg.snippet_chars, affirmative=True), keys=match_keys(spec, body, affirmative=True), link_hits=[{"text": l.text[:60], "url": l.url} for l in link_hits[:5]])
+            out["pages"].append(page)
+            for l in links:
+                if l.is_pdf and spec.in_text(l.text) and len(out["pdf_link_hits"]) < 20:
+                    out["pdf_link_hits"].append({"text": l.text[:80], "url": l.url, "page": url})
+                if cfg.read_pdf and l.is_pdf and l.same_site and role in PDF_SPORTS_ROLES and l.region not in ("nav", "header", "footer") and l.url not in pdf_queue and not RESERVATION_URL.search(l.url):
+                    pdf_queue[l.url] = (_pdf_priority(l.text, l.url, spec), len(pdf_queue), norm_text(l.text)[:80], url)
+            if depth >= maxd:
+                continue
+            for l in links:
+                if not l.same_site or l.is_pdf or l.url in queued or RESERVATION_URL.search(l.url) or l.region in ("footer",):
+                    continue
+                child = _child_role(role, l.text, spec, cfg.event_focus)
+                if child is None:
+                    continue
+                queued.add(l.url)
+                push(l.url, child, depth + 1, norm_text(l.text)[:40], norm_text(l.text), maxd)
+        # 保存した入口がすべて消えていた(404など)自治体(33件が該当。D-158): 保存したナビを使わず、トップから入口を作り直して、もう一度たどる
+        if attempt == 0 and fetched == 0 and out["seed_mode"] == "normal" and stopped == "exhausted":
+            fresh = _fallback_entrances(m, result, ctx, cfg, out, site_host, fresh=True)
+            if fresh:
+                out["stale_seeds"] = seeds
+                seeds = out["seeds"] = fresh
+                continue
+            if fresh is None:
+                return
+        break
     _drop_boilerplate(out["pages"], fetched)
     if cfg.read_pdf and pdf_queue and stopped != "max_requests":
         _read_pdfs(pdf_queue, ctx, spec, cfg, out, site_host)
-    out["outcome"] = "surveyed"
+    # 1ページも読めなかったのに『調査できた』と数えない(33件が該当。D-158)
+    out["outcome"] = "surveyed" if fetched else "fetch_failed"
+    if not fetched:
+        out["failure_class"] = "seeds_unreachable"
     out["stopped"] = stopped
     out["pages_fetched"] = fetched
 
@@ -674,6 +739,20 @@ def _read_pdfs(pdf_queue: dict, ctx: _Ctx, spec: KeywordSpec, cfg: SurveyConfig,
                     snippets=(snippets(spec, text, cfg.snippet_chars, affirmative=True) if not ocr else _ocr_snippets(spec, text, cfg.snippet_chars)),
                     keys=(match_keys(spec, text, affirmative=True) if not ocr else sorted({m.group(0) for m in spec.find_ocr(text)})[:5]), link_hits=[], ocr=ocr)
         out["pages"].append(page)
+        if page["hit"]:
+            out.setdefault("_pdf_texts", {})[url] = pdf_text_record(page, text, res.body, link_text, parent, ocr)
+
+
+PDF_TEXT_MAX_CHARS = 150_000
+
+
+def pdf_text_record(page: dict, text: str, body: bytes, link_text: str, parent: str, ocr: bool) -> dict:
+    """ワードのあったPDFの本文を、後から読み返せる形にする(D-156)。PDFの原本は保存しない。文字に起こした本文だけ(長すぎるときは先頭から切る)。"""
+    return {
+        "url": page["url"], "title": page.get("title", ""), "kind": page.get("kind", "other"), "link_text": link_text, "found_on": parent,
+        "pdf_pages": page.get("pdf_pages", 0), "ocr": ocr, "ocr_engines": page.get("ocr_engines", []), "text_len": len(text), "truncated": len(text) > PDF_TEXT_MAX_CHARS,
+        "sha256": hashlib.sha256(body).hexdigest(), "fetched_at": _now(), "text": text[:PDF_TEXT_MAX_CHARS],
+    }
 
 
 def _drop_boilerplate(pages: list[dict], fetched: int) -> None:
@@ -694,10 +773,39 @@ def _drop_boilerplate(pages: list[dict], fetched: int) -> None:
 
 
 def write_survey(root: Path, survey: dict, prefecture_code: str) -> Path:
-    path = Path(root) / survey["keyword"] / survey["run"]["route"] / prefecture_code / f"{survey['municipality']['code']}.json"
+    base = Path(root) / survey["keyword"] / survey["run"]["route"]
+    path = base / prefecture_code / f"{survey['municipality']['code']}.json"
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(survey, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n", encoding="utf-8")
+    body = {k: v for k, v in survey.items() if k != "pdf_texts"}
+    path.write_text(json.dumps(body, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n", encoding="utf-8")
+    if "pdf_texts" in survey:
+        # ワードのあったPDFの本文は、別のファイル(<route>/_pdftext/<県>/<自治体>.json)に保存する。毎回上書きするので、無くなったPDFは消える
+        tpath = base / PDF_TEXT_DIR / prefecture_code / f"{survey['municipality']['code']}.json"
+        tpath.parent.mkdir(parents=True, exist_ok=True)
+        rec = {"municipality": survey["municipality"], "keyword": survey["keyword"], "route": survey["run"]["route"], "surveyed_at": survey["run"]["finished_at"], "pdfs": survey["pdf_texts"]}
+        tpath.write_text(json.dumps(rec, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n", encoding="utf-8")
     return path
+
+
+PDF_TEXT_DIR = "_pdftext"
+
+
+def load_pdf_texts(root: Path, keyword: str, route: str) -> list[dict]:
+    """ワードのあったPDFの本文(1自治体1件)を読む。"""
+    base = Path(root) / keyword / route / PDF_TEXT_DIR
+    return [json.loads(p.read_text(encoding="utf-8")) for p in sorted(base.glob("*/*.json"))]
+
+
+def pdf_text_index(recs: list[dict]) -> list[dict]:
+    """PDFの本文の一覧(本文は含めない)。1PDF=1行。"""
+    rows = []
+    for r in recs:
+        m = r["municipality"]
+        for p in r["pdfs"]:
+            rows.append({"prefecture": m["prefecture"], "municipality_code": m["code"], "municipality_name": m["name"], "pdf_url": p["url"], "title": p["title"], "kind": p["kind"], "found_on": p["found_on"],
+                         "pdf_pages": p["pdf_pages"], "ocr": "1" if p["ocr"] else "", "text_len": p["text_len"], "truncated": "1" if p["truncated"] else "", "sha256": p["sha256"], "fetched_at": p["fetched_at"],
+                         "text_file": f"data/survey/{r['keyword']}/{r['route']}/{PDF_TEXT_DIR}/{m['code'][:2]}/{m['code']}.json"})
+    return rows
 
 
 def load_surveys(root: Path, keyword: str, route: str) -> list[dict]:
@@ -747,6 +855,35 @@ def survey_rows(surveys: list[dict]) -> list[dict]:
             "first_hit_snippet": (first.get("snippets") or [""])[0] if first else "",
         })
     return rows
+
+
+def compliance(surveys: list[dict], min_gap: float = 0.95) -> dict:
+    """取得ルールの遵守の計測(D-158): 同じホストへの連続するリクエストの間隔が1秒未満(許容 min_gap 未満)の回数、予約・ログインらしいURLを取得した回数、
+    robots.txt の不許可で取得せず飛ばした回数。ヘッドレスブラウザの取得は時刻が無いので計測外。"""
+    from urllib.parse import urlsplit
+    pairs = fast = reservation = skipped = untimed = total = 0
+    worst = None
+    for s in surveys:
+        skipped += s.get("robots_skipped", 0)
+        by_host: dict[str, list[float]] = {}
+        for r in s.get("requests", []):
+            total += 1
+            if RESERVATION_URL.search(r.get("url", "")):
+                reservation += 1
+            t = r.get("t", 0)
+            if not t:
+                untimed += 1
+                continue
+            by_host.setdefault((urlsplit(r["url"]).hostname or "").lower(), []).append(t)
+        for host, ts in by_host.items():
+            ts.sort()
+            for a, b in zip(ts, ts[1:]):
+                pairs += 1
+                if b - a < min_gap:
+                    fast += 1
+                    if worst is None or b - a < worst[0]:
+                        worst = (round(b - a, 2), s["municipality"]["code"], host)
+    return {"requests": total, "timed_pairs": pairs, "interval_violations": fast, "worst_gap": worst, "reservation_fetched": reservation, "robots_skipped": skipped, "untimed_requests": untimed}
 
 
 def summary_markdown(rows: list[dict], keyword: str) -> str:

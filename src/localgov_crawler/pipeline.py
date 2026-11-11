@@ -47,6 +47,7 @@ class _Ctx:
         self.fetcher, self.cfg = fetcher, cfg
         self.log: list[dict] = []
         self.robots: dict[str, RobotsInfo] = {}
+        self.robots_skipped = 0  # robots.txt が不許可で、取得せずに飛ばした回数(遵守の計測。D-158)
 
     def robots_for(self, url: str) -> RobotsInfo | None:
         return self.robots.get((urlsplit(url).hostname or "").lower())
@@ -57,6 +58,7 @@ class _Ctx:
         if check_robots:
             info = self.robots_for(url)
             if info is not None and not info.can_fetch(url):
+                self.robots_skipped += 1
                 return FetchResult(url, url, error_class="robots_disallowed")
         res = self.fetcher.get(url)
         self.log.append(res.log_entry())

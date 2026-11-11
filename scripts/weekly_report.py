@@ -36,6 +36,18 @@ def survey_section(title: str, surveys: list[dict], keyword: str, n_target: int)
     return lines + [""]
 
 
+def compliance_section(surveys: list[dict]) -> list[str]:
+    from localgov_crawler import survey as sv
+    c = sv.compliance(surveys)
+    timed = c["requests"] - c["untimed_requests"]
+    lines = ["### 取得ルールの遵守", "", f"- リクエスト {c['requests']}(うち送信時刻を記録 {timed})", f"- 同じホストへの連続リクエストの間隔が1秒未満(0.95秒未満): **{c['interval_violations']}** / {c['timed_pairs']}組"
+             + (f"(最小 {c['worst_gap'][0]}秒 自治体{c['worst_gap'][1]} {c['worst_gap'][2]})" if c["worst_gap"] else ""),
+             f"- 予約・ログインらしいURLの取得: **{c['reservation_fetched']}**", f"- robots.txt の不許可で飛ばした回数: {c['robots_skipped']}"]
+    if c["untimed_requests"]:
+        lines.append(f"- 送信時刻なし(ヘッドレスブラウザの取得、または古い形式): {c['untimed_requests']}(計測外)")
+    return lines + [""]
+
+
 def build(cfg: dict, week: str, root: Path = ROOT) -> str:
     from localgov_crawler import events as evm
     from localgov_crawler import extract as ex
@@ -51,6 +63,7 @@ def build(cfg: dict, week: str, root: Path = ROOT) -> str:
     lines += survey_section("イベント専用の探索", evs, keyword, n_target)
     both = {s["municipality"]["code"] for s in fac + evs if s["found"]}
     lines += [f"- どちらかでワードがあった自治体(重複なし): {len(both)}", ""]
+    lines += compliance_section(fac + evs)
     drows = [row for r in routes(cfg, "detail") for rec in ex.load_extracts(root / "data/extract", keyword, r) for row in ex.detail_rows(rec)]
     erows = [row for r in routes(cfg, "detail") for rec in evm.load_events(root / "data/events", keyword, r) for row in evm.event_rows(rec)]
     lines += ["## 施設の詳細", "", f"- 行数: {len(drows)}({len({r['municipality_code'] for r in drows})}自治体)", f"- 住所あり: {sum(1 for r in drows if r['address'])}、電話あり: {sum(1 for r in drows if r['phone'])}", "",
