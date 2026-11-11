@@ -58,7 +58,7 @@ def test_plan_all_and_filters(tmp_path, monkeypatch):
 def test_workflows_are_wired():
     wf = {n: yaml.safe_load((ROOT / f".github/workflows/{n}.yml").read_text(encoding="utf-8")) for n in ("weekly-batch", "weekly-prefecture", "extract")}
     on = wf["weekly-batch"].get("on") or wf["weekly-batch"].get(True)
-    assert on["schedule"] == [{"cron": "0 21 * * 5"}]  # 金曜21:00 UTC = 土曜06:00 JST
+    assert on["schedule"] == [{"cron": "23 20 * * 5"}]  # 金曜20:23 UTC = 土曜05:23 JST
     assert "workflow_dispatch" in on
     pref = wf["weekly-batch"]["jobs"]["prefecture"]
     assert pref["uses"] == "./.github/workflows/weekly-prefecture.yml" and pref["strategy"]["max-parallel"] == 12 and pref["strategy"]["fail-fast"] is False
@@ -98,3 +98,40 @@ def test_report_builds_from_stored_surveys(tmp_path):
     text = report_mod.build(CFG, "2026-11-07", tmp_path)
     assert "2026-11-07" in text and "PDF+OCRつき" in text and "結果がある自治体: 17 / 対象 1747" in text
     assert "施設の詳細" in text and "イベントの詳細" in text
+
+
+def test_report_handles_unsurveyed_municipalities(tmp_path):
+    """初回の実行で、調査できなかった自治体(no_seed等)があるとレポートが KeyError で落ちた(D-155)。"""
+    src = ROOT / "data/survey/grandgolf/pdf4_fukui"
+    if not src.exists():
+        return
+    dst = tmp_path / "data/survey/grandgolf/weekly_pdf_fukui"
+    shutil.copytree(src, dst)
+    f = sorted(dst.glob("*/*.json"))[0]
+    d = json.loads(f.read_text(encoding="utf-8"))
+    d["outcome"] = "no_seed"
+    d["stopped"] = "max_requests"
+    f.write_text(json.dumps(d, ensure_ascii=False), encoding="utf-8")
+    text = report_mod.build(CFG, "2026-11-14", tmp_path)
+    assert "調査できなかった内訳: no_seed 1" in text
+
+
+def test_detail_stages_use_latest_branch_and_tolerate_no_pages():
+    """同じ実行の中で調査がコミットした結果を、施設・イベントの取り出しが使う(初回は起動時点のコミットを取得して、結果が無く全県失敗した。D-155)。"""
+    for name in ("extract", "events"):
+        wf = yaml.safe_load((ROOT / f".github/workflows/{name}.yml").read_text(encoding="utf-8"))
+        first = wf["jobs"][name]["steps"][0]
+        assert first["uses"].startswith("actions/checkout") and first["with"]["ref"] == "${{ github.ref_name }}"
+        text = (ROOT / f".github/workflows/{name}.yml").read_text(encoding="utf-8")
+        assert "if-no-files-found: ignore" in text and "if [ -d collected ]" in text
+
+
+def test_details_only_skips_surveys():
+    wf = yaml.safe_load((ROOT / ".github/workflows/weekly-prefecture.yml").read_text(encoding="utf-8"))
+    jobs = wf["jobs"]
+    assert "details_only" in (wf.get("on") or wf.get(True))["workflow_call"]["inputs"]
+    assert "details_only" in jobs["survey_facility"]["if"] and "details_only" in jobs["survey_event"]["if"]
+    assert "skipped" in jobs["extract"]["if"] and "skipped" in jobs["events"]["if"]
+    batch = yaml.safe_load((ROOT / ".github/workflows/weekly-batch.yml").read_text(encoding="utf-8"))
+    assert "details_only" in (batch.get("on") or batch.get(True))["workflow_dispatch"]["inputs"]
+    assert batch["jobs"]["prefecture"]["with"]["details_only"] == "${{ inputs.details_only }}"

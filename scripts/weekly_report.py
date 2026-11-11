@@ -24,13 +24,15 @@ def survey_section(title: str, surveys: list[dict], keyword: str, n_target: int)
     surveyed = [r for r in rows if r["outcome"] == "surveyed"]
     found = [r for r in rows if r["found"]]
     capped = [r for r in surveyed if r["stopped"] == "max_pages"]
-    classes = Counter(r["failure_class"] for r in rows if r["outcome"] != "surveyed")
+    capped_all = [r for r in surveyed if r["stopped"] in ("max_pages", "max_requests")]
+    outcomes = Counter(r["outcome"] for r in rows if r["outcome"] != "surveyed")
+    stopped = Counter(r["stopped"] for r in surveyed)
     pdf_pages = sum(1 for s in surveys for p in s["pages"] if p.get("role") == "pdf")
     ocr_pages = sum(1 for s in surveys for p in s["pages"] if p.get("role") == "pdf" and p.get("ocr"))
     lines = [f"### {title}", "", f"- 結果がある自治体: {len(rows)} / 対象 {n_target}", f"- 調査できた: {len(surveyed)} ({(len(surveyed) / n_target if n_target else 0):.1%})",
-             f"- ワードがあった自治体: {len(found)}", f"- 上限(max_pages)で止まった: {len(capped)} ({(len(capped) / len(surveyed) if surveyed else 0):.1%})", f"- PDFのページ: {pdf_pages}(うちOCRで読んだ {ocr_pages})"]
-    if classes:
-        lines.append("- 調査できなかった理由: " + "、".join(f"{k or '不明'} {v}" for k, v in classes.most_common()))
+             f"- ワードがあった自治体: {len(found)}", f"- 上限で止まった: {len(capped_all)} ({(len(capped_all) / len(surveyed) if surveyed else 0):.2%})(うち max_pages {len(capped)}、max_requests {stopped.get('max_requests', 0)})", f"- PDFのページ: {pdf_pages}(うちOCRで読んだ {ocr_pages})"]
+    if outcomes:
+        lines.append("- 調査できなかった内訳: " + "、".join(f"{k} {v}" for k, v in outcomes.most_common()))
     return lines + [""]
 
 
