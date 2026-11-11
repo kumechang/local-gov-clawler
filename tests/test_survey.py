@@ -583,3 +583,58 @@ def test_landing_page_gateway_links_become_broad_seeds():
     }
     out = sv.survey_municipality(M, {"nav_links": [], "genre_entrypoints": []}, make_fetcher(routes), SPEC, sv.SurveyConfig(route="t", retry_wait=0))
     assert out["outcome"] == "surveyed" and out["found"] and out["seeds"][0]["text"] == "行政ページへリンク"
+
+
+def test_hit_html_page_text_is_saved_with_table_rows_and_no_original_html(tmp_path):
+    """ワードがあったHTMLページの本文(文字に起こしたもの)を別ファイルに保存する。表は1行ずつ、原本のHTMLは保存しない(D-164)。"""
+    table = "<table><tr><th>施設名</th><th>住所</th><th>電話</th></tr><tr><td>中央運動場</td><td>サンプル市本町1-2</td><td>0742-11-2222</td></tr></table>"
+    routes = {
+        "/robots.txt": (404, "text/plain", ""),
+        "/sports/": page("スポーツ施設", f'<a href="/f/1">中央運動場</a><a href="/f/2">図書館</a>', '<nav>ナビの文字<a href="/x">メニュー</a></nav>'),
+        "/f/1": page("中央運動場", "<script>var secret=1;</script><h2>利用案内</h2><p>グラウンド・ゴルフができます。</p>" + table),
+        "/f/2": page("図書館", "<p>本を借りられます。</p>"),
+    }
+    r = result(cands=[("スポーツ施設", "https://www.city.example.jp/sports/")])
+    out = sv.survey_municipality(M, r, make_fetcher(routes), SPEC, sv.SurveyConfig(route="wk", retry_wait=0, save_text=True))
+    texts = out["page_texts"]
+    assert [t["url"].rsplit("/", 1)[-1] for t in texts] == ["1"]  # ワードのあったページだけ
+    t = texts[0]
+    assert "施設名 | 住所 | 電話" in t["text"] and "中央運動場 | サンプル市本町1-2 | 0742-11-2222" in t["text"] and "グラウンド・ゴルフができます" in t["text"]
+    assert "secret" not in t["text"] and "ナビの文字" not in t["text"] and "<" not in t["text"] and t["kind"] == "facility" and len(t["sha256"]) == 64
+    sv.write_survey(tmp_path, out, "29")
+    body = (next((tmp_path / "grandgolf" / "wk" / "29").glob("*.json"))).read_text(encoding="utf-8")
+    assert "page_texts" not in body and "サンプル市本町1-2" not in body  # 調査の結果は大きくならない
+    assert len(sv.load_surveys(tmp_path, "grandgolf", "wk")) == 1
+    recs = sv.load_page_texts(tmp_path, "grandgolf", "wk")
+    rows = sv.page_text_index(recs)
+    assert len(rows) == 1 and rows[0]["text_file"].endswith(f"wk/_pagetext/29/{M.code}.json") and "text" not in rows[0]
+    off = sv.survey_municipality(M, r, make_fetcher(routes), SPEC, sv.SurveyConfig(route="wk", retry_wait=0))
+    assert "page_texts" not in off  # 既定では保存しない
+    # 表の行を1行にする処理は、ワード判定に使う本文(rows=False)を変えない
+    t0, b0 = sv.page_text(sv.parse_html(f"<html><body><main>{table}<p>{'あ' * 120}</p></main></body></html>"))
+    assert "中央運動場\nサンプル市本町1-2" in b0
+
+
+def test_external_page_text_is_saved_too():
+    ext = "https://www.gg-kyokai.example.org"
+    routes = {
+        ("www.city.example.jp", "/robots.txt"): (404, "text/plain", ""),
+        ("www.city.example.jp", "/sports/"): page("スポーツ", f'<a href="{ext}/">市スポーツ協会</a>'),
+        ("www.gg-kyokai.example.org", "/robots.txt"): (404, "text/plain", ""),
+        ("www.gg-kyokai.example.org", "/"): page("市協会", "<p>第3回グラウンドゴルフ大会を開催します。</p>"),
+    }
+    out = sv.survey_municipality(M, result(cands=[("スポーツ", "https://www.city.example.jp/sports/")]), host_fetcher(routes), SPEC, sv.SurveyConfig(route="t", retry_wait=0, follow_external=True, save_text=True))
+    t = out["page_texts"][0]
+    assert t["role"] == "external" and t["external_host"] == "www.gg-kyokai.example.org" and "第3回グラウンドゴルフ大会" in t["text"]
+
+
+def test_save_text_is_wired_to_weekly_surveys():
+    import yaml
+    from pathlib import Path
+    root = Path(__file__).parent.parent
+    pref = yaml.safe_load((root / ".github/workflows/weekly-prefecture.yml").read_text(encoding="utf-8"))["jobs"]
+    assert pref["survey_facility"]["with"]["save_text"] == "1" and pref["survey_event"]["with"]["save_text"] == "1"
+    survey = (root / ".github/workflows/survey.yml").read_text(encoding="utf-8")
+    assert "--save-text" in survey and "SAVE_TEXT" in survey
+    batch = (root / ".github/workflows/weekly-batch.yml").read_text(encoding="utf-8")
+    assert batch.count("page-index") == 2

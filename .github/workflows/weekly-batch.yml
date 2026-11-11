@@ -94,6 +94,8 @@ jobs:
           det=$(python3 scripts/weekly_report.py --list detail)
           localgov-crawler survey-export --keyword grandgolf --routes-file config/survey_sets/weekly_facility.json --out data/export/weekly
           localgov-crawler survey-export --keyword grandgolf --routes $(python3 scripts/weekly_report.py --list event) --out data/export/weekly/event_focus
+          localgov-crawler page-index --keyword grandgolf --routes-file config/survey_sets/weekly_facility.json --out data/export/weekly
+          localgov-crawler page-index --keyword grandgolf --routes $(python3 scripts/weekly_report.py --list event) --out data/export/weekly/event_focus
           localgov-crawler pdf-index --keyword grandgolf --routes-file config/survey_sets/weekly_facility.json --out data/export/weekly
           localgov-crawler extract-export --keyword grandgolf --extract-routes $det --out data/export/weekly
           localgov-crawler events-export --keyword grandgolf --events-routes $det --out data/export/weekly
