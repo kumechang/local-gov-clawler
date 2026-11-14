@@ -2,13 +2,13 @@
 
 - 対象: 20自治体
 - 調査できた: 19
-- ワードがあった: 11 (55.0%)
-- ワードのあったページの種類(自治体数、題名で判断): event 8、facility 11、organization 1、other 7
+- ワードがあった: 14 (70.0%)
+- ワードのあったページの種類(自治体数、題名で判断): event 8、facility 14、organization 2、other 7
 - 本文・題名・リンクには無く、PDFのリンク文言だけにあった: 0
-- 平均取得ページ数: 95.3
-- 上限(max_pages)に達した: 1
+- 平均取得ページ数: 116.4
+- 上限(max_pages)に達した: 0
 
 ## outcome別
 
-- no_seed: 1
+- fetch_failed: 1
 - surveyed: 19
