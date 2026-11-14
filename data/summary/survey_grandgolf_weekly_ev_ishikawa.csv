@@ -1,19 +1,19 @@
 ﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
 17201,金沢市,石川県,surveyed,True,False,2,event|facility,event,163,exhausted,0,0,https://www4.city.kanazawa.lg.jp/soshikikarasagasu/sportsshinkoka/gyomuannai/1/23444.html,event,event,令和8年度スポーツイベント情報/金沢市公式ホームページ いいね金沢,グラウンド・ゴルフ大会
-17202,七尾市,石川県,surveyed,True,False,1,facility,listing,258,exhausted,0,0,https://www.city.nanao.lg.jp/sportsbunka/kanko/shisetsu/sports/index.html,listing,facility,スポーツ施設/七尾市,ソフトボール1面、夜間照明、グラウンドゴルフ1面
-17203,小松市,石川県,surveyed,True,False,2,event|facility,event|facility,143,exhausted,0,0,https://www.city.komatsu.lg.jp/kanko_bunka/sports/7256.html,event,event,スポーツの大会・合宿等の誘致(コンベンション開催補助金制度)について/小松市ホームページ,ソフトボール、サッカー、ラグビー、パークゴルフ、グラウンド・ゴルフができる施設です。
-17204,輪島市,石川県,surveyed,True,False,5,facility,facility,58,exhausted,0,0,https://www.city.wajima.ishikawa.jp/shougai/wajimasports/list.html,facility,facility,施設一覧|輪島市スポーツ合宿施設,輪島市町野グラウンドゴルフ場
+17202,七尾市,石川県,surveyed,True,False,1,facility,listing,211,exhausted,0,0,https://www.city.nanao.lg.jp/sportsbunka/kanko/shisetsu/sports/index.html,listing,facility,スポーツ施設/七尾市,ソフトボール1面、夜間照明、グラウンドゴルフ1面
+17203,小松市,石川県,surveyed,True,False,2,event|facility,event|facility,139,exhausted,0,0,https://www.city.komatsu.lg.jp/kanko_bunka/sports/7256.html,event,event,スポーツの大会・合宿等の誘致(コンベンション開催補助金制度)について/小松市ホームページ,ソフトボール、サッカー、ラグビー、パークゴルフ、グラウンド・ゴルフができる施設です。
+17204,輪島市,石川県,surveyed,True,False,5,facility,facility,60,exhausted,0,0,https://www.city.wajima.ishikawa.jp/shougai/wajimasports/list.html,facility,facility,施設一覧|輪島市スポーツ合宿施設,輪島市町野グラウンドゴルフ場
 17205,珠洲市,石川県,surveyed,False,False,0,,,82,exhausted,0,0,,,,,
-17206,加賀市,石川県,surveyed,False,False,0,,,111,exhausted,0,0,,,,,
+17206,加賀市,石川県,surveyed,False,False,0,,,110,exhausted,0,0,,,,,
 17207,羽咋市,石川県,surveyed,True,False,7,facility|other,event,78,exhausted,0,0,http://www.city.hakui.lg.jp/kyouiku_bunka_sports/sports/7997.html,event,other,スポーツ用具(ニュースポーツ用具)の貸し出し/羽咋市公式ホームページ,室内グランドゴルフ(スティック6本×2組)
-17209,かほく市,石川県,surveyed,True,False,8,event|facility,event|facility|listing,169,exhausted,0,0,https://www.city.kahoku.lg.jp/shisetu/index.html,listing,facility,施設 | 石川県かほく市公式サイト 施設一覧,かほく市高松グラウンド・ゴルフ場
-17210,白山市,石川県,surveyed,True,False,1,facility,facility,263,max_requests,0,0,https://www.city.hakusan.lg.jp/shisetsu/sports/1006489/1006500.html,facility,facility,白山ろく多目的広場 施設案内|白山市公式ホームページ,グラウンドゴルフコース16ホール
-17211,能美市,石川県,surveyed,True,False,4,facility,event,163,exhausted,0,0,https://www.city.nomi.lg.jp/docs/344.html,event,facility,グラウンドゴルフ場(屋外) - 能美市,根上翠ケ丘運動公園グラウンドゴルフ場
-17212,野々市市,石川県,surveyed,True,False,6,event|organization|other,event,244,exhausted,0,0,https://www.city.nonoichi.lg.jp/soshiki/list1-4.html,event,other,新着更新情報 - 野々市市ホームページ,2026年6月1日更新郷地区グラウンドゴルフ大会
+17209,かほく市,石川県,surveyed,True,False,8,event|facility,event|facility|listing,170,exhausted,0,0,https://www.city.kahoku.lg.jp/shisetu/index.html,listing,facility,施設 | 石川県かほく市公式サイト 施設一覧,かほく市高松グラウンド・ゴルフ場
+17210,白山市,石川県,surveyed,True,False,4,facility,event|facility,400,exhausted,0,0,https://www.city.hakusan.lg.jp/shisetsu/sports/1006489/1006498.html,event,facility,河内トリムパーク広場 施設案内|白山市公式ホームページ,グラウンドゴルフ 夜間照明有り
+17211,能美市,石川県,surveyed,True,False,4,facility,event,164,exhausted,0,0,https://www.city.nomi.lg.jp/docs/344.html,event,facility,グラウンドゴルフ場(屋外) - 能美市,根上翠ケ丘運動公園グラウンドゴルフ場
+17212,野々市市,石川県,surveyed,True,False,7,event|organization|other,event,225,exhausted,0,0,https://www.city.nonoichi.lg.jp/soshiki/list1-4.html,event,other,新着更新情報 - 野々市市ホームページ,2026年6月1日更新郷地区グラウンドゴルフ大会
 17324,川北町,石川県,surveyed,False,False,0,,,27,exhausted,0,0,,,,,
-17361,津幡町,石川県,surveyed,False,False,0,,,112,exhausted,0,0,,,,,
+17361,津幡町,石川県,surveyed,False,False,0,,,107,exhausted,0,0,,,,,
 17365,内灘町,石川県,surveyed,True,False,1,facility,event,97,exhausted,0,0,https://www.town.uchinada.lg.jp/soshiki/ohnebu-ph/,event,facility,大根布公民館(地域防災センター) - 内灘町公式ホームページ,側溝清掃、グラウンドゴルフ大会、町民体育祭参加、地区納涼盆踊り、祭礼行事、文化祭模擬店
-17384,志賀町,石川県,surveyed,True,False,2,facility|organization,event|facility,52,exhausted,0,0,https://www.town.shika.lg.jp/page/2486.html,event,facility,志賀町多目的スポーツセンター - 志賀町ホームページ(生涯学習課),競技可能種目 : テニス、ソフトテニス、ゲートボール、グラウンドゴルフ、トレーニング、ニュースポーツ全般、*軟式野球、*ソフトボー
+17384,志賀町,石川県,surveyed,True,False,2,facility|organization,event|facility,51,exhausted,0,0,https://www.town.shika.lg.jp/page/2486.html,event,facility,志賀町多目的スポーツセンター - 志賀町ホームページ(生涯学習課),競技可能種目 : テニス、ソフトテニス、ゲートボール、グラウンドゴルフ、トレーニング、ニュースポーツ全般、*軟式野球、*ソフトボー
 17386,宝達志水町,石川県,surveyed,True,False,1,facility,event,37,exhausted,0,0,https://www.hodatsushimizu.jp/gyosei/kanko_bunka_supotsu/sports/1999.html,event,facility,指定管理者による体育施設等の管理/宝達志水町,(6) 宝達志水グラウンドゴルフ場 同上
 17407,中能登町,石川県,surveyed,False,False,0,,,30,exhausted,0,0,,,,,
 17461,穴水町,石川県,surveyed,False,False,0,,,73,exhausted,0,0,,,,,
