@@ -1,22 +1,22 @@
 ﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
-30201,和歌山市,和歌山県,surveyed,True,False,2,facility|organization,event|facility,284,exhausted,0,0,https://www.city.wakayama.wakayama.jp/shisetsu/kouen_sp_shisetsu/1006086/1060590.html,facility,facility,施設案内 和歌山市つつじが丘総合公園中央公園ゾーン(多目的球技場他)|和歌山市,中央公園ゾーンの東側は、リニューアルしたパーゴラやグラウンドゴルフ、バスケットボールなどのボール遊びもできる中央公園東広場があ
-30202,海南市,和歌山県,surveyed,False,False,0,,,11,exhausted,0,0,,,,,
+30201,和歌山市,和歌山県,surveyed,True,False,2,facility|organization,event|facility,263,exhausted,0,0,https://www.city.wakayama.wakayama.jp/shisetsu/kouen_sp_shisetsu/1006086/1060590.html,facility,facility,施設案内 和歌山市つつじが丘総合公園中央公園ゾーン(多目的球技場他)|和歌山市,中央公園ゾーンの東側は、リニューアルしたパーゴラやグラウンドゴルフ、バスケットボールなどのボール遊びもできる中央公園東広場があ
+30202,海南市,和歌山県,surveyed,False,False,0,,,12,exhausted,0,0,,,,,
 30203,橋本市,和歌山県,surveyed,True,False,7,event|facility|other,event|facility,96,exhausted,0,0,https://www.city.hashimoto.lg.jp/event/event.html,event,event,市主催のイベント情報(11月~12月)/橋本市,親子グラウンドゴルフ大会
-30204,有田市,和歌山県,surveyed,False,False,0,,,93,exhausted,0,0,,,,,
+30204,有田市,和歌山県,surveyed,False,False,0,,,73,exhausted,0,0,,,,,
 30205,御坊市,和歌山県,fetch_failed,False,False,0,,,0,,0,0,,,,,
 30206,田辺市,和歌山県,surveyed,True,True,4,event|facility,event|facility,134,exhausted,0,1,https://www.city.tanabe.lg.jp/kanko_bunka_sports/sports/4/5527.html,facility,facility,田辺市立体育施設の概要について/和歌山県 田辺市ホームページ|未来へつながる道 田辺市,グラウンドゴルフ
 30207,新宮市,和歌山県,surveyed,False,False,0,,,48,exhausted,0,0,,,,,
-30208,紀の川市,和歌山県,surveyed,True,False,4,facility|organization,event,136,exhausted,0,0,https://www.city.kinokawa.lg.jp/045/2025-1024-1131-103.html,event,organization,令和8年度 紀の川市スポーツ賞の受賞者・受賞団体|紀の川市,大畑 敏紀(おおはた としき)競技種目:グラウンドゴルフ
-30209,岩出市,和歌山県,surveyed,True,False,8,event|facility|organization|other,event|facility,153,exhausted,0,0,https://www.city.iwade.lg.jp/soshiki/20/2447.html,event,event,第4回岩出市民総合スポーツ大会 - 岩出市(生涯学習課),グラウンドゴルフ
+30208,紀の川市,和歌山県,surveyed,True,False,4,facility|organization,event,131,exhausted,0,0,https://www.city.kinokawa.lg.jp/045/2025-1024-1131-103.html,event,organization,令和8年度 紀の川市スポーツ賞の受賞者・受賞団体|紀の川市,大畑 敏紀(おおはた としき)競技種目:グラウンドゴルフ
+30209,岩出市,和歌山県,surveyed,True,False,8,event|facility|organization|other,event|facility,151,exhausted,0,0,https://www.city.iwade.lg.jp/soshiki/20/2447.html,event,event,第4回岩出市民総合スポーツ大会 - 岩出市(生涯学習課),グラウンドゴルフ
 30304,紀美野町,和歌山県,surveyed,False,False,0,,,43,exhausted,0,0,,,,,
 30341,かつらぎ町,和歌山県,surveyed,True,False,1,facility,event,64,exhausted,0,0,https://www.town.katsuragi.wakayama.jp/050/120/90/2023-1206-1415-16.html,event,facility,「橋本市」との公共施設相互利用について|かつらぎ町,神野々緑地 芝生広場グラウンドゴルフ
-30343,九度山町,和歌山県,surveyed,False,False,0,,,51,exhausted,0,0,,,,,
-30344,高野町,和歌山県,surveyed,False,False,0,,,52,exhausted,0,0,,,,,
-30361,湯浅町,和歌山県,surveyed,False,False,0,,,47,exhausted,0,0,,,,,
+30343,九度山町,和歌山県,surveyed,False,False,0,,,57,exhausted,0,0,,,,,
+30344,高野町,和歌山県,surveyed,False,False,0,,,53,exhausted,0,0,,,,,
+30361,湯浅町,和歌山県,surveyed,False,False,0,,,46,exhausted,0,0,,,,,
 30362,広川町,和歌山県,surveyed,True,False,1,event,event,32,exhausted,0,0,https://www.town.hirogawa.wakayama.jp/kyouiku/sportcompetition.html,event,event,広川町スポーツ大会|広川町 和歌山県 広川町,グラウンドゴルフ(10月13日)
 30366,有田川町,和歌山県,surveyed,False,False,0,,,35,exhausted,0,0,,,,,
 30381,美浜町,和歌山県,surveyed,True,True,1,event,event,39,exhausted,0,1,http://www.town.mihama.wakayama.jp/docs/2019100800012/,event,event,町民大会 参加者・チーム募集 | 美浜町,R8グラウンド・ゴルフ大会要項.pdf(131KB)R8参加申込書(グラウンド・ゴ
-30382,日高町,和歌山県,surveyed,False,False,0,,,67,exhausted,0,0,,,,,
+30382,日高町,和歌山県,surveyed,False,False,0,,,68,exhausted,0,0,,,,,
 30383,由良町,和歌山県,surveyed,False,False,0,,,37,exhausted,0,0,,,,,
 30390,印南町,和歌山県,surveyed,True,False,4,facility|other,event,49,exhausted,0,0,https://www.town.wakayama-inami.lg.jp/0000000150.html,event,facility,若もの広場 | 印南町,、軟式野球、サッカー、ソフトボール、陸上競技、ゲートボール、グラウンドゴルフ、その他
 30391,みなべ町,和歌山県,surveyed,False,False,0,,,43,exhausted,0,0,,,,,
@@ -27,5 +27,5 @@
 30421,那智勝浦町,和歌山県,surveyed,False,False,0,,,46,exhausted,0,0,,,,,
 30422,太地町,和歌山県,surveyed,False,False,0,,,15,exhausted,0,0,,,,,
 30424,古座川町,和歌山県,surveyed,False,False,0,,,10,exhausted,0,0,,,,,
-30427,北山村,和歌山県,surveyed,False,False,0,,,4,exhausted,0,0,,,,,
-30428,串本町,和歌山県,surveyed,True,False,1,facility,event,58,exhausted,1,0,https://www.town.kushimoto.wakayama.jp/kosodate/sports/wakamono-hiroba.html,event,facility,田原若者広場|串本町,グラウンドゴルフ専用です。
+30427,北山村,和歌山県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
+30428,串本町,和歌山県,surveyed,True,False,1,facility,event,59,exhausted,1,0,https://www.town.kushimoto.wakayama.jp/kosodate/sports/wakamono-hiroba.html,event,facility,田原若者広場|串本町,グラウンドゴルフ専用です。
