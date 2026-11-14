@@ -1,26 +1,26 @@
 ﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
-09201,宇都宮市,栃木県,surveyed,True,False,3,organization|other,event|facility,160,exhausted,0,0,https://www.city.utsunomiya.lg.jp/event/sports/osusume/1006601.html,facility,other,ニュースポーツ用具等を無料貸出しします|宇都宮市公式Webサイト,グラウンドゴルフスティック(6本)
-09202,足利市,栃木県,surveyed,True,False,7,organization|other,facility,169,exhausted,0,0,https://www.city.ashikaga.tochigi.jp/education/000032/000190/000633/index.html,facility,organization,総合型地域スポーツクラブ | 足利市 公式ホームページ,ロビクス 卓球 エアロバイク バレーボール フォークダンス グラウンドゴルフ スポーツイベント ウォーキング大会 体力つくり相談室 ゴル
-09203,栃木市,栃木県,surveyed,True,False,2,facility,facility,200,max_pages,0,0,https://www.city.tochigi.lg.jp/soshiki/40/502.html,facility,facility,岩舟総合運動公園 - 栃木市ホームページ,有料公園施設以外:グラウンドゴルフ場、ターゲットバードゴルフ場、ユニバーサルスポーツ広場ほか
-09204,佐野市,栃木県,surveyed,True,False,1,event,pdf,30,exhausted,0,0,https://www.city.sano.lg.jp/material/files/group/52/r07_spcal.pdf,pdf,event,令和7年度スポーツカレンダー (PDFファイル: 900.5KB),リーグ戦(ソフトボール)[田総] 8 第4回佐野市長杯大会(グラウンド・ゴルフ)[運陸] 令和7年度関東高等学校ラグビー大会[運陸ほか] 
+09201,宇都宮市,栃木県,surveyed,True,False,5,facility|organization|other,event|facility|pdf,160,exhausted,0,0,https://www.city.utsunomiya.lg.jp/event/sports/osusume/1006601.html,facility,other,ニュースポーツ用具等を無料貸出しします|宇都宮市公式Webサイト,グラウンドゴルフスティック(6本)
+09202,足利市,栃木県,surveyed,True,False,7,organization|other,facility,171,exhausted,0,0,https://www.city.ashikaga.tochigi.jp/education/000032/000190/000633/index.html,facility,organization,総合型地域スポーツクラブ | 足利市 公式ホームページ,ロビクス 卓球 エアロバイク バレーボール フォークダンス グラウンドゴルフ スポーツイベント ウォーキング大会 体力つくり相談室 ゴル
+09203,栃木市,栃木県,surveyed,True,False,3,facility|other,facility|pdf,200,max_pages,0,0,https://www.city.tochigi.lg.jp/soshiki/40/502.html,facility,facility,岩舟総合運動公園 - 栃木市ホームページ,有料公園施設以外:グラウンドゴルフ場、ターゲットバードゴルフ場、ユニバーサルスポーツ広場ほか
+09204,佐野市,栃木県,surveyed,True,False,1,event,pdf,28,exhausted,0,0,https://www.city.sano.lg.jp/material/files/group/52/r07_spcal.pdf,pdf,event,令和7年度スポーツカレンダー (PDFファイル: 900.5KB),リーグ戦(ソフトボール)[田総] 8 第4回佐野市長杯大会(グラウンド・ゴルフ)[運陸] 令和7年度関東高等学校ラグビー大会[運陸ほか] 
 09205,鹿沼市,栃木県,surveyed,True,False,2,organization|other,facility,200,max_pages,0,0,https://www.city.kanuma.tochigi.jp/0288/info-0000000886-0.html,facility,other,スポーツ用具貸出 | 鹿沼市 公式ホームページ,グラウンドゴルフ
 09206,日光市,栃木県,surveyed,True,False,1,organization,facility,45,exhausted,0,0,https://www.city.nikko.lg.jp/kanko_bunka_sports/sports/9309.html,facility,organization,総合型地域スポーツクラブ/日光市公式ホームページ,グラウンドゴルフ
-09208,小山市,栃木県,surveyed,True,False,2,facility|other,event|facility,115,exhausted,0,0,https://www.city.oyama.tochigi.jp/kurashi/sports-shogaigakushu/sports/page000406.html,facility,other,ニュースポーツ用具貸出しのご案内 | 小山市公式ホームページ,グラウンドゴルフ ホール
-09209,真岡市,栃木県,surveyed,True,False,2,event,event|pdf,39,exhausted,0,0,https://www.city.moka.lg.jp/event_bunka_sports/sports/26377.html,event,event,スポーツ教室の様子/真岡市公式ホームページ,グラウンド・ゴルフ教室
-09210,大田原市,栃木県,no_seed,False,False,0,,,0,,0,0,,,,,
-09211,矢板市,栃木県,surveyed,True,False,7,event|facility|other,facility|listing|pdf,75,exhausted,0,0,https://www.city.yaita.tochigi.jp/site/kenkou/yaita-athletic-facilities.html,listing,facility,矢板市体育施設の使用方法 - 栃木県矢板市公式ウェブサイト,グラウンドゴルフ
-09213,那須塩原市,栃木県,surveyed,True,False,1,organization,pdf,60,exhausted,0,0,https://www.city.nasushiobara.tochigi.jp/material/files/group/56/r2supokyoukameidanntai.pdf,pdf,organization,令和2年度那須塩原市スポーツ協会加盟団体一覧 (PDFファイル: 181.9KB),グラウンド・ゴルフ協会
-09214,さくら市,栃木県,surveyed,True,True,7,event|facility|other,event|pdf,200,max_pages,0,2,https://www.city.tochigi-sakura.lg.jp/sightseeing/000041/000246/p005412.html,event,event,サトケン presents 第22回さくら市民体育祭夏季球技大会結果 | さくら市公式ホームページ,グラウンド・ゴルフ大会(9月13日)
-09215,那須烏山市,栃木県,surveyed,True,False,4,facility,pdf,86,exhausted,0,0,https://www.city.nasukarasuyama.lg.jp/data/doc/1776852257_doc_116_0.pdf,pdf,facility,【緑地運動公園】施設・備品台帳 [PDF形式/1.71MB],グラウンドゴルフ
+09208,小山市,栃木県,surveyed,True,False,2,facility|other,event|facility,122,exhausted,0,0,https://www.city.oyama.tochigi.jp/kurashi/sports-shogaigakushu/sports/page000406.html,facility,other,ニュースポーツ用具貸出しのご案内 | 小山市公式ホームページ,グラウンドゴルフ ホール
+09209,真岡市,栃木県,surveyed,True,False,2,event,event|pdf,36,exhausted,0,0,https://www.city.moka.lg.jp/event_bunka_sports/sports/26377.html,event,event,スポーツ教室の様子/真岡市公式ホームページ,グラウンド・ゴルフ教室
+09210,大田原市,栃木県,surveyed,True,True,8,event|facility|organization|other,facility|pdf,147,exhausted,0,1,https://www.city.ohtawara.tochigi.jp/docs/2013082773043/,facility,facility,大田原市湯津上農村環境改善センター(湯津上地区公民館) | 大田原市,自治公民館対抗グラウンドゴルフ大会
+09211,矢板市,栃木県,surveyed,True,False,7,event|facility|other,facility|listing|pdf,73,exhausted,0,0,https://www.city.yaita.tochigi.jp/site/kenkou/yaita-athletic-facilities.html,listing,facility,矢板市体育施設の使用方法 - 栃木県矢板市公式ウェブサイト,グラウンドゴルフ
+09213,那須塩原市,栃木県,surveyed,True,False,2,event|organization,pdf,59,exhausted,0,0,https://www.city.nasushiobara.tochigi.jp/material/files/group/56/r2supokyoukameidanntai.pdf,pdf,organization,令和2年度那須塩原市スポーツ協会加盟団体一覧 (PDFファイル: 181.9KB),グラウンド・ゴルフ協会
+09214,さくら市,栃木県,surveyed,True,True,14,event|facility|other,event|pdf,190,exhausted,0,2,https://www.city.tochigi-sakura.lg.jp/sightseeing/000041/000246/p005412.html,event,event,サトケン presents 第22回さくら市民体育祭を開催しました! | さくら市公式ホームページ,グラウンド・ゴルフ大会(9月13日)
+09215,那須烏山市,栃木県,surveyed,True,False,4,facility,pdf,88,exhausted,0,0,https://www.city.nasukarasuyama.lg.jp/data/doc/1776852257_doc_116_0.pdf,pdf,facility,【緑地運動公園】施設・備品台帳 [PDF形式/1.71MB],グラウンドゴルフ
 09216,下野市,栃木県,surveyed,False,False,0,,,200,max_pages,0,0,,,,,
-09301,上三川町,栃木県,surveyed,True,False,6,event|facility|organization,event|facility|pdf,88,exhausted,0,0,https://www.town.kaminokawa.lg.jp/0344/info-0000000496-0.html,facility,facility,蓼沼親水公園 | 上三川町公式ホームページ|ORIGAMIのまち,ステージと芝生広場があり、各種イベント、グラウンドゴルフ等の多目的に利用できます。
+09301,上三川町,栃木県,surveyed,True,False,7,event|facility|organization,event|facility|pdf,88,exhausted,0,0,https://www.town.kaminokawa.lg.jp/0344/info-0000000496-0.html,facility,facility,蓼沼親水公園 | 上三川町公式ホームページ|ORIGAMIのまち,ステージと芝生広場があり、各種イベント、グラウンドゴルフ等の多目的に利用できます。
 09342,益子町,栃木県,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
-09343,茂木町,栃木県,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
+09343,茂木町,栃木県,surveyed,False,False,0,,,23,exhausted,0,0,,,,,
 09344,市貝町,栃木県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
-09345,芳賀町,栃木県,surveyed,True,False,2,facility,facility|listing,42,exhausted,0,0,https://www.town.tochigi-haga.lg.jp/shisetsu/sports/sogo.html,listing,facility,芳賀町/総合運動公園(運動場),グラウンドゴルフ場
+09345,芳賀町,栃木県,surveyed,True,False,2,facility,facility|listing,52,exhausted,0,0,https://www.town.tochigi-haga.lg.jp/shisetsu/sports/sogo.html,listing,facility,芳賀町/総合運動公園(運動場),グラウンドゴルフ場
 09361,壬生町,栃木県,surveyed,False,False,0,,,45,exhausted,0,0,,,,,
-09364,野木町,栃木県,surveyed,True,True,10,event|facility|organization|other,event|facility|listing|pdf,48,exhausted,1,1,https://www.town.nogi.lg.jp/kosodate_kyouiku/syougaigakusyu/page000466.html,listing,facility,スポーツ施設の紹介・使用申し込みについて | 野木町公式ホームページ 野木町ホームページ,グラウンドゴルフ等
-09384,塩谷町,栃木県,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
-09386,高根沢町,栃木県,surveyed,True,False,7,event|facility|organization|other,facility|pdf,52,exhausted,0,0,https://www.town.takanezawa.tochigi.jp/learning/shisetsu/2021-1001-1132-99.html,facility,facility,町民広場陸上競技場の使用にあたっての遵守事項 | 高根沢町,グラウンド・ゴルフ
-09407,那須町,栃木県,surveyed,True,False,3,facility|organization,facility,79,exhausted,0,0,https://www.town.nasu.lg.jp/0150/info-0000000588-1.html,facility,facility,那須町中央運動公園 | 那須町行政ページ,利用種目 陸上競技、少年サッカー、グラウンドゴルフ
-09411,那珂川町,栃木県,surveyed,True,False,1,facility,pdf,65,exhausted,0,0,https://www.town.tochigi-nakagawa.lg.jp/manage/contents/upload/694901dae8f1e.pdf,pdf,facility,体育施設(馬頭西体育館・大山田体育館・小川南体育館)(pdf 66 KB),グラウンド・ゴルフ
+09364,野木町,栃木県,surveyed,True,True,9,event|facility|organization|other,event|facility|listing|pdf,47,exhausted,1,1,https://www.town.nogi.lg.jp/kosodate_kyouiku/syougaigakusyu/page000466.html,listing,facility,スポーツ施設の紹介・使用申し込みについて | 野木町公式ホームページ 野木町ホームページ,グラウンドゴルフ等
+09384,塩谷町,栃木県,surveyed,False,False,0,,,24,exhausted,0,0,,,,,
+09386,高根沢町,栃木県,surveyed,True,False,7,event|facility|organization|other,facility|pdf,51,exhausted,0,0,https://www.town.takanezawa.tochigi.jp/learning/shisetsu/2021-1001-1132-99.html,facility,facility,町民広場陸上競技場の使用にあたっての遵守事項 | 高根沢町,グラウンド・ゴルフ
+09407,那須町,栃木県,surveyed,True,False,3,facility|organization,facility|sports_nav,79,exhausted,0,0,https://www.town.nasu.lg.jp/0150/info-0000000588-1.html,facility,facility,那須町中央運動公園 | 那須町行政ページ,利用種目 陸上競技、少年サッカー、グラウンドゴルフ
+09411,那珂川町,栃木県,surveyed,True,False,1,facility,pdf,78,exhausted,0,0,https://www.town.tochigi-nakagawa.lg.jp/manage/contents/upload/694901dae8f1e.pdf,pdf,facility,体育施設(馬頭西体育館・大山田体育館・小川南体育館)(pdf 66 KB),グラウンド・ゴルフ
