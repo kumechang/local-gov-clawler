@@ -1,21 +1,21 @@
 ﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
-38201,松山市,愛媛県,surveyed,True,False,15,event|facility|other,event|facility|listing,185,exhausted,0,0,https://www.city.matsuyama.ehime.jp/shisetsu/koen/sportssyoukai/sportsshisetsu/index.html,listing,facility,市内スポーツ施設 松山市公式ホームページ PCサイト,グラウンド・ゴルフができる施設
-38202,今治市,愛媛県,surveyed,False,False,0,,,43,exhausted,0,0,,,,,
+38201,松山市,愛媛県,surveyed,True,False,16,event|facility|other,event|facility|listing|pdf,158,exhausted,0,0,https://www.city.matsuyama.ehime.jp/shisetsu/koen/sportssyoukai/sportsshisetsu/index.html,listing,facility,市内スポーツ施設 松山市公式ホームページ PCサイト,グラウンド・ゴルフができる施設
+38202,今治市,愛媛県,surveyed,False,False,0,,,44,exhausted,0,0,,,,,
 38203,宇和島市,愛媛県,no_seed,False,False,0,,,0,,0,0,,,,,
-38204,八幡浜市,愛媛県,surveyed,True,False,1,organization,pdf,11,exhausted,0,0,https://www.city.yawatahama.ehime.jp/doc/2026032600054/file_contents/file_20263264183939_1.pdf,pdf,organization,(参考)日本スポーツ協会 加盟団体一覧表[PDF:124KB],公益社団法人 日本グラウンド・ゴルフ協会
+38204,八幡浜市,愛媛県,surveyed,True,False,1,organization,pdf,20,exhausted,0,0,https://www.city.yawatahama.ehime.jp/doc/2026032600054/file_contents/file_20263264183939_1.pdf,pdf,organization,(参考)日本スポーツ協会 加盟団体一覧表[PDF:124KB],公益社団法人 日本グラウンド・ゴルフ協会
 38205,新居浜市,愛媛県,surveyed,False,False,0,,,26,exhausted,0,0,,,,,
-38206,西条市,愛媛県,surveyed,True,False,6,event|facility,event|facility|listing,154,exhausted,0,0,https://www.city.saijo.ehime.jp/soshiki/sportskenko/taiikusisetu.html,listing,facility,体育施設・料金一覧 - 愛媛県西条市ホームページ,小松中央公園グラウンドゴルフ場
-38207,大洲市,愛媛県,surveyed,False,False,0,,,93,exhausted,0,0,,,,,
+38206,西条市,愛媛県,surveyed,True,False,6,event|facility,event|facility|listing,161,exhausted,0,0,https://www.city.saijo.ehime.jp/soshiki/sportskenko/taiikusisetu.html,listing,facility,体育施設・料金一覧 - 愛媛県西条市ホームページ,小松中央公園グラウンドゴルフ場
+38207,大洲市,愛媛県,surveyed,False,False,0,,,90,exhausted,0,0,,,,,
 38210,伊予市,愛媛県,surveyed,False,False,0,,,68,exhausted,0,0,,,,,
 38213,四国中央市,愛媛県,surveyed,False,False,0,,,60,exhausted,0,0,,,,,
-38214,西予市,愛媛県,surveyed,False,False,0,,,13,exhausted,0,0,,,,,
+38214,西予市,愛媛県,surveyed,False,False,0,,,18,exhausted,0,0,,,,,
 38215,東温市,愛媛県,surveyed,False,False,0,,,3,exhausted,0,0,,,,,
 38356,上島町,愛媛県,surveyed,False,False,0,,,39,exhausted,0,0,,,,,
-38386,久万高原町,愛媛県,surveyed,True,False,1,other,pdf,25,exhausted,0,0,https://www.kumakogen.jp/uploaded/attachment/5995.pdf,pdf,other,久万高原町スポーツ推進計画 [PDFファイル/2.04MB],グラウンドゴルフ
+38386,久万高原町,愛媛県,surveyed,True,False,1,other,pdf,24,exhausted,0,0,https://www.kumakogen.jp/uploaded/attachment/5995.pdf,pdf,other,久万高原町スポーツ推進計画 [PDFファイル/2.04MB],グラウンドゴルフ
 38401,松前町,愛媛県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
 38402,砥部町,愛媛県,surveyed,True,False,1,facility,facility,20,exhausted,0,0,https://www.town.tobe.ehime.jp/bunka_supotsu/2/2448.html,facility,facility,社会体育施設・学校施設の使用方法/砥部町公式ホームページ,ゆとり公園各施設(多目的広場・体育館・武道場・テニスコート・グラウンドゴルフ場など)を使用したいときは、施設利用予約システムから予約する
-38422,内子町,愛媛県,surveyed,False,False,0,,,76,exhausted,0,0,,,,,
-38442,伊方町,愛媛県,surveyed,False,False,0,,,19,exhausted,0,0,,,,,
-38484,松野町,愛媛県,surveyed,False,False,0,,,6,exhausted,0,0,,,,,
-38488,鬼北町,愛媛県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
-38506,愛南町,愛媛県,surveyed,False,False,0,,,52,exhausted,0,0,,,,,
+38422,内子町,愛媛県,surveyed,False,False,0,,,77,exhausted,0,0,,,,,
+38442,伊方町,愛媛県,surveyed,False,False,0,,,14,exhausted,0,0,,,,,
+38484,松野町,愛媛県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
+38488,鬼北町,愛媛県,surveyed,True,False,2,event|facility,facility,29,exhausted,0,0,https://www.town.kihoku.ehime.jp/site/kanko-e/811.html,facility,event,鬼北総合公園 - 観光イベント情報 - 鬼北町ホームページ | き(ほ)おくにのこるまち,グランドゴルフ場
+38506,愛南町,愛媛県,surveyed,False,False,0,,,59,exhausted,0,0,,,,,
