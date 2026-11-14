@@ -1,21 +1,21 @@
 ﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
-38201,松山市,愛媛県,surveyed,True,False,11,event|facility|organization|other,event|facility|listing,300,max_pages,0,0,https://www.city.matsuyama.ehime.jp/shisetsu/koen/sportssyoukai/sportsshisetsu/index.html,listing,facility,市内スポーツ施設 松山市公式ホームページ PCサイト,グラウンド・ゴルフができる施設
-38202,今治市,愛媛県,surveyed,False,False,0,,,46,exhausted,0,0,,,,,
+38201,松山市,愛媛県,surveyed,True,False,17,event|facility|organization|other,event|facility|listing,369,exhausted,0,0,https://www.city.matsuyama.ehime.jp/shisetsu/koen/sportssyoukai/sportsshisetsu/index.html,listing,facility,市内スポーツ施設 松山市公式ホームページ PCサイト,グラウンド・ゴルフができる施設
+38202,今治市,愛媛県,surveyed,False,False,0,,,47,exhausted,0,0,,,,,
 38203,宇和島市,愛媛県,no_seed,False,False,0,,,0,,0,0,,,,,
-38204,八幡浜市,愛媛県,surveyed,False,False,0,,,18,exhausted,0,0,,,,,
+38204,八幡浜市,愛媛県,surveyed,False,False,0,,,29,exhausted,0,0,,,,,
 38205,新居浜市,愛媛県,surveyed,False,False,0,,,53,exhausted,0,0,,,,,
-38206,西条市,愛媛県,surveyed,True,False,7,event|facility,event,300,max_pages,0,0,https://www.city.saijo.ehime.jp/soshiki/sportskenko/21shiminsotai.html,event,event,第21回西条市民総合体育大会を開催します! - 愛媛県西条市ホームページ,グラウンド・ゴルフ
-38207,大洲市,愛媛県,surveyed,False,False,0,,,218,exhausted,0,0,,,,,
-38210,伊予市,愛媛県,surveyed,True,False,1,event,event,117,exhausted,0,0,https://www.city.iyo.lg.jp/shakaikyouiku/event/documents/gekirei202307.html,event,event,伊予市/全国大会出場者激励会・報告会を開催しました(2023年7月分:10件),8.第17回全国グラウンド・ゴルフレディス交歓大会出場激励会(7月27日開催)
+38206,西条市,愛媛県,surveyed,True,False,8,event|facility|other,event,413,exhausted,0,0,https://www.city.saijo.ehime.jp/soshiki/sportskenko/21shiminsotai.html,event,event,第21回西条市民総合体育大会を開催します! - 愛媛県西条市ホームページ,グラウンド・ゴルフ
+38207,大洲市,愛媛県,surveyed,False,False,0,,,210,exhausted,0,0,,,,,
+38210,伊予市,愛媛県,surveyed,True,False,1,event,event,130,exhausted,0,0,https://www.city.iyo.lg.jp/shakaikyouiku/event/documents/gekirei202307.html,event,event,伊予市/全国大会出場者激励会・報告会を開催しました(2023年7月分:10件),8.第17回全国グラウンド・ゴルフレディス交歓大会出場激励会(7月27日開催)
 38213,四国中央市,愛媛県,surveyed,False,False,0,,,93,exhausted,0,0,,,,,
-38214,西予市,愛媛県,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
-38215,東温市,愛媛県,surveyed,True,False,1,event,event,119,exhausted,0,0,https://www.city.toon.ehime.jp/soshiki/23/26996.html,event,event,令和8年度教室(講座)のご案内 - 東温市公式ホームページ,クロッケー協会/軟式野球協会/剣道会/バスケットボール協会/グランドゴルフ振興会
+38214,西予市,愛媛県,surveyed,False,False,0,,,29,exhausted,0,0,,,,,
+38215,東温市,愛媛県,surveyed,True,False,1,event,event,117,exhausted,0,0,https://www.city.toon.ehime.jp/soshiki/23/26996.html,event,event,令和8年度教室(講座)のご案内 - 東温市公式ホームページ,クロッケー協会/軟式野球協会/剣道会/バスケットボール協会/グランドゴルフ振興会
 38356,上島町,愛媛県,surveyed,False,False,0,,,106,exhausted,0,0,,,,,
-38386,久万高原町,愛媛県,surveyed,False,False,0,,,78,exhausted,0,0,,,,,
-38401,松前町,愛媛県,surveyed,True,False,2,event,event,188,exhausted,0,0,https://www.town.masaki.ehime.jp/soshiki/38/36709.html,event,event,令和8年度第2回北伊予小学校放課後子ども教室【みんなで歌おう】 - 松前町公式ホームページ|四国・愛媛 まさき,次回は11月6日、福徳泉公園にてグラウンドゴルフを開催します。
+38386,久万高原町,愛媛県,surveyed,False,False,0,,,79,exhausted,0,0,,,,,
+38401,松前町,愛媛県,surveyed,True,False,5,event|other,event,190,exhausted,0,0,https://www.town.masaki.ehime.jp/soshiki/list8-1.html,event,other,新着情報(お知らせ) - 松前町公式ホームページ|四国・愛媛 まさき,1月12日更新令和8年度第3回北伊予小学校放課後子ども教室【グラウンドゴルフ】
 38402,砥部町,愛媛県,surveyed,True,False,1,facility,event,56,exhausted,0,0,https://www.town.tobe.ehime.jp/bunka_supotsu/2/2448.html,event,facility,社会体育施設・学校施設の使用方法/砥部町公式ホームページ,ゆとり公園各施設(多目的広場・体育館・武道場・テニスコート・グラウンドゴルフ場など)を使用したいときは、施設利用予約システムから予約する
-38422,内子町,愛媛県,surveyed,False,False,0,,,184,exhausted,0,0,,,,,
-38442,伊方町,愛媛県,surveyed,False,False,0,,,20,exhausted,0,0,,,,,
+38422,内子町,愛媛県,surveyed,False,False,0,,,179,exhausted,0,0,,,,,
+38442,伊方町,愛媛県,surveyed,False,False,0,,,14,exhausted,0,0,,,,,
 38484,松野町,愛媛県,surveyed,False,False,0,,,7,exhausted,0,0,,,,,
-38488,鬼北町,愛媛県,surveyed,False,False,0,,,1,exhausted,0,0,,,,,
-38506,愛南町,愛媛県,surveyed,False,False,0,,,94,exhausted,0,0,,,,,
+38488,鬼北町,愛媛県,surveyed,True,False,2,event|facility,facility,31,exhausted,0,0,https://www.town.kihoku.ehime.jp/site/kanko-e/811.html,facility,event,鬼北総合公園 - 観光イベント情報 - 鬼北町ホームページ | き(ほ)おくにのこるまち,グランドゴルフ場
+38506,愛南町,愛媛県,surveyed,False,False,0,,,100,exhausted,0,0,,,,,
