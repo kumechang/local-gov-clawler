@@ -1,18 +1,18 @@
 ﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
 18201,福井市,福井県,surveyed,True,False,4,facility|organization,facility,200,max_pages,0,0,https://www.city.fukui.lg.jp/kyoiku/sports/sisetu/spo-park.html,facility,facility,スポーツ公園の施設案内,グラウンドゴルフ場:18H
-18202,敦賀市,福井県,surveyed,True,True,3,event|facility|organization,event|facility,102,exhausted,0,2,https://www.city.tsuruga.lg.jp/page/1499.html,facility,facility,施設のご案内(総合運動公園) - 敦賀市ホームページ(総合運動公園),グラウンド・ゴルフ利用
+18202,敦賀市,福井県,surveyed,True,True,3,event|facility|organization,event|facility,93,exhausted,0,2,https://www.city.tsuruga.lg.jp/page/1499.html,facility,facility,施設のご案内(総合運動公園) - 敦賀市ホームページ(総合運動公園),グラウンド・ゴルフ利用
 18204,小浜市,福井県,surveyed,False,False,0,,,37,exhausted,0,0,,,,,
-18205,大野市,福井県,surveyed,False,False,0,,,114,exhausted,0,0,,,,,
+18205,大野市,福井県,surveyed,True,False,1,event,pdf,112,exhausted,0,0,https://www.city.ono.fukui.jp/kenko/sports/sports_shingikai.files/0132_20241111.pdf,pdf,event,資料1-2(PDF:69KB),9 月 5 日 市民グラウンド・ゴルフ大会 市、市スポ協 ○ ふれあい公園芝生広場 市民
 18206,勝山市,福井県,surveyed,False,False,0,,,64,exhausted,0,0,,,,,
-18207,鯖江市,福井県,surveyed,False,False,0,,,84,exhausted,0,0,,,,,
-18208,あわら市,福井県,surveyed,True,False,2,other,event|pdf,126,exhausted,0,0,https://www.city.awara.lg.jp/mokuteki/education/education03/education0301/p015717.html,event,other,AWARAんぴっく~スポーツの祭典~たくさんのご来場、ありがとうございました! | あわら市ホームページ,(グラウンドゴルフ体験の様子)
+18207,鯖江市,福井県,surveyed,False,False,0,,,86,exhausted,0,0,,,,,
+18208,あわら市,福井県,surveyed,True,False,1,other,pdf,96,exhausted,0,0,https://www.city.awara.lg.jp/online/6200/6230/6233/p000526_d/fil/6.pdf,pdf,other,【トリムパークかなづ】利用許可申請書(PDF形式 83キロバイト),グラウンドゴルフコース
 18209,越前市,福井県,surveyed,True,True,2,facility|other,facility|pdf,83,exhausted,0,1,https://www.city.echizen.lg.jp/office/010/040/sinkou/newsport.html,facility,other,ニュースポーツの紹介 - 越前市 スポーツ振興,グラウンド・ゴルフ
-18210,坂井市,福井県,surveyed,False,False,0,,,101,exhausted,0,0,,,,,
+18210,坂井市,福井県,surveyed,False,False,0,,,114,exhausted,0,0,,,,,
 18322,永平寺町,福井県,surveyed,False,False,0,,,29,exhausted,0,0,,,,,
-18382,池田町,福井県,surveyed,True,False,1,facility,facility,36,exhausted,0,0,https://www.town.ikeda.fukui.jp/shisetsu/taiiku/p002489.html,facility,facility,野尻グラウンド | 福井県池田町,ゲートボール、グラウンドゴルフ等でご利用できます。(ナイター設備あり)
+18382,池田町,福井県,surveyed,True,False,2,facility,facility,65,exhausted,0,0,https://www.town.ikeda.fukui.jp/shisetsu/taiiku/p002489.html,facility,facility,野尻グラウンド | 福井県池田町,ゲートボール、グラウンドゴルフ等でご利用できます。(ナイター設備あり)
 18404,南越前町,福井県,surveyed,False,False,0,,,35,exhausted,0,0,,,,,
 18423,越前町,福井県,surveyed,False,False,0,,,43,exhausted,0,0,,,,,
-18442,美浜町,福井県,surveyed,True,False,1,facility,facility,42,exhausted,0,0,https://www.town.fukui-mihama.lg.jp/soshiki/44/,facility,facility,西郷健康ひろば - 福井県美浜町,2022年5月17日更新美浜町西郷健康ひろば グラウンドゴルフ場
+18442,美浜町,福井県,surveyed,True,False,1,facility,facility,43,exhausted,0,0,https://www.town.fukui-mihama.lg.jp/soshiki/44/,facility,facility,西郷健康ひろば - 福井県美浜町,2022年5月17日更新美浜町西郷健康ひろば グラウンドゴルフ場
 18481,高浜町,福井県,surveyed,False,False,0,,,66,exhausted,0,0,,,,,
-18483,おおい町,福井県,surveyed,True,False,1,facility,listing,86,exhausted,0,0,https://www.town.ohi.fukui.jp/1003/63/p13426.html,listing,facility,おおい町総合運動公園「球技場」 | おおい町公式ホームページ,グランドゴルフ (天然芝16ホール)
+18483,おおい町,福井県,surveyed,True,False,1,facility,listing,84,exhausted,0,0,https://www.town.ohi.fukui.jp/1003/63/p13426.html,listing,facility,おおい町総合運動公園「球技場」 | おおい町公式ホームページ,グランドゴルフ (天然芝16ホール)
 18501,若狭町,福井県,surveyed,False,False,0,,,26,exhausted,0,0,,,,,
