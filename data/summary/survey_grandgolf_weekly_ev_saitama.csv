@@ -1,64 +1,64 @@
 ﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
-11100,さいたま市,埼玉県,surveyed,True,False,9,event|facility|organization|other,event,300,max_pages,0,0,https://www.city.saitama.lg.jp/004/006/013/002/006/p083137.html,event,event,さいたま市/レクリエーションフェスティバルについて,クラフト、ディスコン、社交ダンス、フォークダンス、日本民踊、グラウンド・ゴルフ、ターゲット・バードゴルフ、サイクリング(13種目)
-11201,川越市,埼玉県,surveyed,True,False,1,facility,event,300,max_pages,0,0,https://www.city.kawagoe.saitama.jp/kurashi/sports/1003258/1003275/1003291.html,event,facility,高階運動広場(たかしなうんどうひろば)|川越市,高階運動広場は、ソフトボールやグラウンドゴルフなどができるグラウンドとゲートボールなどができる多目的広場と
-11202,熊谷市,埼玉県,surveyed,True,False,4,event|facility,event,300,max_pages,0,0,https://www.city.kumagaya.lg.jp/shisetsu/sports/tonesou.html,event,facility,利根川総合運動公園:熊谷市ホームページ,令和4年4月1日から多目的ゴルフひろばをオープンしました。グラウンドゴルフ、ターゲットバードゴルフ、パークゴルフ等ご利用いただけます。
-11203,川口市,埼玉県,surveyed,False,False,0,,,300,max_pages,0,0,,,,,
-11206,行田市,埼玉県,surveyed,True,False,1,organization,facility,67,exhausted,0,0,https://www.city.gyoda.lg.jp/soshiki/shougaigakusyubu/sports/sports/gyodacitysportskyoukai/2075.html,facility,organization,行田市スポーツ協会概要/行田市,グラウンド・ゴルフ協会
+11100,さいたま市,埼玉県,surveyed,True,False,25,event|facility|organization|other,event|facility,414,exhausted,0,0,https://www.city.saitama.lg.jp/004/006/013/002/006/p083137.html,event,event,さいたま市/レクリエーションフェスティバルについて,クラフト、ディスコン、社交ダンス、フォークダンス、日本民踊、グラウンド・ゴルフ、ターゲット・バードゴルフ、サイクリング(13種目)
+11201,川越市,埼玉県,surveyed,True,False,2,facility,event,364,exhausted,0,0,https://www.city.kawagoe.saitama.jp/kurashi/sports/1003258/1003275/1003291.html,event,facility,高階運動広場(たかしなうんどうひろば)|川越市,高階運動広場は、ソフトボールやグラウンドゴルフなどができるグラウンドとゲートボールなどができる多目的広場と
+11202,熊谷市,埼玉県,surveyed,True,False,4,event|facility,event,450,max_pages,0,0,https://www.city.kumagaya.lg.jp/shisetsu/sports/tonesou.html,event,facility,利根川総合運動公園:熊谷市ホームページ,令和4年4月1日から多目的ゴルフひろばをオープンしました。グラウンドゴルフ、ターゲットバードゴルフ、パークゴルフ等ご利用いただけます。
+11203,川口市,埼玉県,surveyed,False,False,0,,,302,exhausted,0,0,,,,,
+11206,行田市,埼玉県,surveyed,True,False,1,organization,facility,66,exhausted,0,0,https://www.city.gyoda.lg.jp/soshiki/shougaigakusyubu/sports/sports/gyodacitysportskyoukai/2075.html,facility,organization,行田市スポーツ協会概要/行田市,グラウンド・ゴルフ協会
 11207,秩父市,埼玉県,surveyed,True,False,1,organization,facility,151,exhausted,0,0,https://www.city.chichibu.lg.jp/dd.aspx?menuid=2259,facility,organization,秩父市スポーツ推進委員会/秩父市,よいとこ祭り(グランドゴルフ大会・体力測定)
-11208,所沢市,埼玉県,surveyed,True,False,5,event|organization|other,event,300,max_pages,0,0,https://www.city.tokorozawa.saitama.jp/kenko/koureisyafukushi/ikigaisien/roujinhukusiikoi/kourei20171227155800789.html,event,organization,所沢市ホームページ サークル一覧うしぬま荘(老人福祉センター),グラウンドゴルフ
-11209,飯能市,埼玉県,surveyed,False,False,0,,,113,exhausted,0,0,,,,,
+11208,所沢市,埼玉県,surveyed,True,False,6,event|organization|other,event|facility,450,exhausted,0,0,https://www.city.tokorozawa.saitama.jp/kenko/koureisyafukushi/ikigaisien/roujinhukusiikoi/kourei20171227155800789.html,event,organization,所沢市ホームページ サークル一覧うしぬま荘(老人福祉センター),グラウンドゴルフ
+11209,飯能市,埼玉県,surveyed,False,False,0,,,112,exhausted,0,0,,,,,
 11210,加須市,埼玉県,surveyed,True,False,15,event|facility,event|facility|listing,134,exhausted,0,0,http://www.city.kazo.lg.jp/iryo_hukushi/sports/2/index.html,listing,facility,スポーツ施設/加須市,大利根ファミリーグラウンドゴルフ場
-11211,本庄市,埼玉県,surveyed,True,False,2,facility,facility,179,exhausted,0,0,https://www.city.honjo.lg.jp/bunka_supotsu_kanko/kokyoshisetsu/koikishisetsuriyo/1378263321061.html,facility,facility,スポーツ施設/本庄市,川本グラウンド・ゴルフ場
-11212,東松山市,埼玉県,surveyed,True,False,10,event|facility|organization|other,event,300,max_pages,0,0,https://www.city.higashimatsuyama.lg.jp/site/koho/57153.html,event,other,令和8(2026)年広報ひがしまつやま10月号 - 広報ひがしまつやま - 東松山市公式ホームページ,会、一日合同行政相談所、第12回リバーサイドカップ秋季大会(グラウンド・ゴルフ大会)、第50回民俗芸能祭、自然学習ウォーキング~市民の森で
-11214,春日部市,埼玉県,surveyed,True,False,17,facility,facility,296,exhausted,0,0,https://www.city.kasukabe.lg.jp/soshikikarasagasu/sportssuishinka/gyomuannai/5/1/1/3418.html,facility,facility,谷原中西側グラウンド/春日部市公式ホームページ,サッカー(一般・少年)、少年野球、ソフトボール、グラウンドゴルフ、ターゲットバードゴルフなど
-11215,狭山市,埼玉県,surveyed,True,False,1,facility,event,300,max_pages,0,0,https://www.city.sayama.saitama.jp/shisei/shisetsu/sports/okugaiundoshisetsu/annai/00_manual.html,event,facility,屋外運動施設の利用の手引き 狭山市公式ウェブサイト,』、『少年ソフトボール』、『サッカー』、『少年サッカー』、『グラウンドゴルフ』、『ゲートボール』、『ラクロス』の利用ができます。
+11211,本庄市,埼玉県,surveyed,True,False,2,facility,facility,161,exhausted,0,0,https://www.city.honjo.lg.jp/bunka_supotsu_kanko/kokyoshisetsu/koikishisetsuriyo/1378263321061.html,facility,facility,スポーツ施設/本庄市,川本グラウンド・ゴルフ場
+11212,東松山市,埼玉県,surveyed,True,False,10,event|facility|organization|other,event,299,exhausted,0,0,https://www.city.higashimatsuyama.lg.jp/site/koho/57153.html,event,other,令和8(2026)年広報ひがしまつやま10月号 - 広報ひがしまつやま - 東松山市公式ホームページ,会、一日合同行政相談所、第12回リバーサイドカップ秋季大会(グラウンド・ゴルフ大会)、第50回民俗芸能祭、自然学習ウォーキング~市民の森で
+11214,春日部市,埼玉県,surveyed,True,False,17,facility,facility,297,exhausted,0,0,https://www.city.kasukabe.lg.jp/soshikikarasagasu/sportssuishinka/gyomuannai/5/1/1/3418.html,facility,facility,谷原中西側グラウンド/春日部市公式ホームページ,サッカー(一般・少年)、少年野球、ソフトボール、グラウンドゴルフ、ターゲットバードゴルフなど
+11215,狭山市,埼玉県,surveyed,True,False,7,facility,event,393,exhausted,0,0,https://www.city.sayama.saitama.jp/shisei/shisetsu/sports/okugaiundoshisetsu/annai/00_manual.html,event,facility,屋外運動施設の利用の手引き 狭山市公式ウェブサイト,』、『少年ソフトボール』、『サッカー』、『少年サッカー』、『グラウンドゴルフ』、『ゲートボール』、『ラクロス』の利用ができます。
 11216,羽生市,埼玉県,surveyed,True,False,3,event|facility|other,event|facility,133,exhausted,0,0,https://www.city.hanyu.lg.jp/docs/2023062000014/,event,event,はにゅうスポ・レクフェスタ | 羽生市,・陸上競技場:サッカー、グラウンド・ゴルフ
-11217,鴻巣市,埼玉県,surveyed,True,False,3,organization,event,300,max_pages,0,0,https://www.city.kounosu.saitama.jp/site/konosu-education/list195-702.html,event,organization,スポーツ団体 - 教育委員会 - 鴻巣市公式ホームページ,2024年6月12日更新鴻巣市グラウンド・ゴルフ協会
-11218,深谷市,埼玉県,surveyed,True,False,4,facility|organization,event|facility,176,exhausted,0,0,https://www.city.fukaya.saitama.jp/soshiki/kyoiku/shogaigakushu/tanto/supotu/supotushisetu/index.html,event,facility,スポーツ施設/深谷市ホームページ,川本グラウンド・ゴルフ場
-11219,上尾市,埼玉県,surveyed,True,False,1,facility,facility,181,exhausted,0,0,https://www.city.ageo.lg.jp/site/iinkai/072121070601.html,facility,facility,平方スポーツ広場 - 上尾市Webサイト,グラウンドゴルフ場
-11221,草加市,埼玉県,surveyed,True,False,1,event,event,235,exhausted,0,0,https://www.city.soka.saitama.jp/cont/s1602/010/010/030/020/04.html,event,event,住吉児童館のイベント案内 - 草加市役所,ふれあいグラウンドゴルフ
-11222,越谷市,埼玉県,surveyed,True,True,7,event|facility|other,event|facility|listing,300,max_pages,0,1,https://www.city.koshigaya.saitama.jp/kurashi_shisei/kosodate/bunkasports/sportstorikumi/index.html,listing,other,スポーツ 越谷市公式ホームページ,第39回グラウンド・ゴルフ大会
-11223,蕨市,埼玉県,surveyed,True,False,3,facility|organization,event|facility,259,exhausted,0,0,https://www.city.warabi.saitama.jp/shisei/soshiki/shisetsu/sports/1003620.html,facility,facility,施設案内 錦町スポーツ広場|蕨市公式ウェブサイト,例 ゲートボール・グラウンドゴルフ
-11224,戸田市,埼玉県,surveyed,True,False,1,other,event,300,max_pages,0,0,https://www.city.toda.saitama.jp/soshiki/194/bunka-sport-sports-staff.html,event,other,戸田市スポーツ推進スタッフ - 戸田市公式サイト(文化スポーツ課),親子ナイター・さわやかマラソン大会・町会対抗グラウンドゴルフ大会・スポーツ広場等の実施
-11225,入間市,埼玉県,surveyed,True,False,2,other,event,147,exhausted,0,0,https://www.city.iruma.saitama.jp/soshiki/sportssuishinka/event/235/12229.html,event,other,入間市スポーツ・レクリエーションフェア/入間市|香り豊かな緑の文化都市,グラウンドゴルフ:グラウンドゴルフ協会
-11227,朝霞市,埼玉県,surveyed,True,False,8,event|facility|organization,event,300,max_pages,0,0,https://www.city.asaka.lg.jp/soshiki/41/asaka-spofes.html,event,event,あさかスポーツフェスティバルを開催しました - 朝霞市,・グラウンド・ゴルフ連合
-11228,志木市,埼玉県,surveyed,True,True,1,organization,event,300,max_pages,0,1,https://www.city.shiki.lg.jp/site/kyouikuiinkai/10715.html,event,organization,令和8年度市民大会 - 教育委員会 - ずっと住み続けたいまち 志木,市民グラウンドゴルフ大会
-11229,和光市,埼玉県,surveyed,False,False,0,,,275,exhausted,0,0,,,,,
-11230,新座市,埼玉県,surveyed,False,False,0,,,300,max_pages,0,0,,,,,
+11217,鴻巣市,埼玉県,surveyed,True,False,4,organization,event|facility,360,exhausted,0,0,https://www.city.kounosu.saitama.jp/site/konosu-education/list195-702.html,event,organization,スポーツ団体 - 教育委員会 - 鴻巣市公式ホームページ,2024年6月12日更新鴻巣市グラウンド・ゴルフ協会
+11218,深谷市,埼玉県,surveyed,True,False,4,facility|organization,event|facility,127,exhausted,0,0,https://www.city.fukaya.saitama.jp/soshiki/kyoiku/shogaigakushu/tanto/supotu/supotushisetu/index.html,event,facility,スポーツ施設/深谷市ホームページ,川本グラウンド・ゴルフ場
+11219,上尾市,埼玉県,surveyed,True,False,1,facility,facility,169,exhausted,0,0,https://www.city.ageo.lg.jp/site/iinkai/072121070601.html,facility,facility,平方スポーツ広場 - 上尾市Webサイト,グラウンドゴルフ場
+11221,草加市,埼玉県,surveyed,True,False,1,event,event,242,exhausted,0,0,https://www.city.soka.saitama.jp/cont/s1602/010/010/030/020/04.html,event,event,住吉児童館のイベント案内 - 草加市役所,ふれあいグラウンドゴルフ
+11222,越谷市,埼玉県,surveyed,True,True,9,event|facility|other,event|facility|listing,428,exhausted,0,1,https://www.city.koshigaya.saitama.jp/kurashi_shisei/kosodate/bunkasports/sportstorikumi/index.html,listing,other,スポーツ 越谷市公式ホームページ,第39回グラウンド・ゴルフ大会
+11223,蕨市,埼玉県,surveyed,True,False,3,facility|organization,event|facility,251,exhausted,0,0,https://www.city.warabi.saitama.jp/shisei/soshiki/shisetsu/sports/1003620.html,facility,facility,施設案内 錦町スポーツ広場|蕨市公式ウェブサイト,例 ゲートボール・グラウンドゴルフ
+11224,戸田市,埼玉県,surveyed,True,False,1,other,event,381,exhausted,0,0,https://www.city.toda.saitama.jp/soshiki/194/bunka-sport-sports-staff.html,event,other,戸田市スポーツ推進スタッフ - 戸田市公式サイト(文化スポーツ課),親子ナイター・さわやかマラソン大会・町会対抗グラウンドゴルフ大会・スポーツ広場等の実施
+11225,入間市,埼玉県,surveyed,True,False,2,other,event,152,exhausted,0,0,https://www.city.iruma.saitama.jp/soshiki/sportssuishinka/event/235/12229.html,event,other,入間市スポーツ・レクリエーションフェア/入間市|香り豊かな緑の文化都市,グラウンドゴルフ:グラウンドゴルフ協会
+11227,朝霞市,埼玉県,surveyed,True,False,8,event|facility|organization,event,423,exhausted,0,0,https://www.city.asaka.lg.jp/soshiki/41/asaka-spofes.html,event,event,あさかスポーツフェスティバルを開催しました - 朝霞市,・グラウンド・ゴルフ連合
+11228,志木市,埼玉県,surveyed,True,True,2,facility|organization,event|facility,345,exhausted,0,1,https://www.city.shiki.lg.jp/site/kyouikuiinkai/10715.html,event,organization,令和8年度市民大会 - 教育委員会 - ずっと住み続けたいまち 志木,市民グラウンドゴルフ大会
+11229,和光市,埼玉県,surveyed,False,False,0,,,290,exhausted,0,0,,,,,
+11230,新座市,埼玉県,surveyed,False,False,0,,,297,exhausted,0,0,,,,,
 11231,桶川市,埼玉県,surveyed,True,False,6,facility|other,event,155,exhausted,0,0,https://www.city.okegawa.lg.jp/shiminkatsudo/sports/supo-tudantai/12383.html,event,other,みなさんも一緒に運動してみませんか?/桶川市,グラウンド・ゴルフ協会
-11232,久喜市,埼玉県,surveyed,True,False,11,facility|organization,event,229,exhausted,0,0,https://www.city.kuki.lg.jp/shisei/shisetsu/kaigo_korei/1012804.html,event,facility,菖蒲老人福祉センター|久喜市ホームページ,グラウンドゴルフ場(使用する場合は事前に予約をしてください。)
-11233,北本市,埼玉県,surveyed,False,False,0,,,74,exhausted,0,0,,,,,
-11234,八潮市,埼玉県,surveyed,True,False,1,organization,event,170,exhausted,0,0,https://www.city.yashio.lg.jp/kurashi/sports_rec/dantai/reku.html,event,organization,八潮市レクリエーション協会/八潮市,八潮市グラウンド・ゴルフ協会
-11235,富士見市,埼玉県,surveyed,True,False,2,event|facility,event,300,max_pages,0,0,https://www.city.fujimi.saitama.jp/madoguchi_shisetsu/02shisetsu/kouminkan/04higashi/2012-0528-1426-127/2014-0407-1523-70.html,event,facility,地域スポーツ支援事業|富士見市,グラウンドゴルフ大会もモルック体験会も盛り上がり、地域のみんなで親睦を深める
-11237,三郷市,埼玉県,surveyed,False,False,0,,,46,exhausted,0,0,,,,,
-11238,蓮田市,埼玉県,surveyed,False,False,0,,,300,max_pages,0,0,,,,,
-11239,坂戸市,埼玉県,surveyed,True,True,20,event|facility|organization|other,event|facility|listing,205,exhausted,0,2,https://www.city.sakado.lg.jp/soshiki/49/56617.html,listing,facility,坂戸市都市公園等運動施設利用案内 - 坂戸市ホームページ,グラウンドゴルフ・ペタンク・ゲートボール
-11240,幸手市,埼玉県,surveyed,True,False,1,organization,facility,39,exhausted,0,0,https://www.city.satte.lg.jp/kanko_bunka_sport/sport/13226.html,facility,organization,幸手市スポーツ協会/幸手市,グラウンド・ゴルフ協会
+11232,久喜市,埼玉県,surveyed,True,False,11,facility|organization,event,231,exhausted,0,0,https://www.city.kuki.lg.jp/shisei/shisetsu/kaigo_korei/1012804.html,event,facility,菖蒲老人福祉センター|久喜市ホームページ,グラウンドゴルフ場(使用する場合は事前に予約をしてください。)
+11233,北本市,埼玉県,surveyed,False,False,0,,,75,exhausted,0,0,,,,,
+11234,八潮市,埼玉県,surveyed,True,False,1,organization,event,152,exhausted,0,0,https://www.city.yashio.lg.jp/kurashi/sports_rec/dantai/reku.html,event,organization,八潮市レクリエーション協会/八潮市,八潮市グラウンド・ゴルフ協会
+11235,富士見市,埼玉県,surveyed,True,False,2,event|facility,event,450,max_pages,0,0,https://www.city.fujimi.saitama.jp/madoguchi_shisetsu/02shisetsu/kouminkan/04higashi/2012-0528-1426-127/2014-0407-1523-70.html,event,facility,地域スポーツ支援事業|富士見市,グラウンドゴルフ大会もモルック体験会も盛り上がり、地域のみんなで親睦を深める
+11237,三郷市,埼玉県,surveyed,False,False,0,,,47,exhausted,0,0,,,,,
+11238,蓮田市,埼玉県,surveyed,False,False,0,,,376,exhausted,0,0,,,,,
+11239,坂戸市,埼玉県,surveyed,True,True,21,event|facility|organization|other,event|facility|listing,204,exhausted,0,2,https://www.city.sakado.lg.jp/soshiki/49/56617.html,listing,facility,坂戸市都市公園等運動施設利用案内 - 坂戸市ホームページ,グラウンドゴルフ・ペタンク・ゲートボール
+11240,幸手市,埼玉県,surveyed,True,False,1,organization,facility,40,exhausted,0,0,https://www.city.satte.lg.jp/kanko_bunka_sport/sport/13226.html,facility,organization,幸手市スポーツ協会/幸手市,グラウンド・ゴルフ協会
 11241,鶴ヶ島市,埼玉県,no_seed,False,False,0,,,0,,0,0,,,,,
-11242,日高市,埼玉県,surveyed,True,False,3,facility,event,173,exhausted,0,0,https://www.city.hidaka.lg.jp/culture_sports/1/3591.html,event,facility,体育施設開放/日高市ホームページ,グラウンドゴルフ、ゲートボールなどの練習場として、市内2か所に運動場があり、
+11242,日高市,埼玉県,surveyed,True,False,3,facility,event,156,exhausted,0,0,https://www.city.hidaka.lg.jp/culture_sports/1/3591.html,event,facility,体育施設開放/日高市ホームページ,グラウンドゴルフ、ゲートボールなどの練習場として、市内2か所に運動場があり、
 11243,吉川市,埼玉県,surveyed,True,True,5,event|organization,event,109,exhausted,0,2,"https://www.city.yoshikawa.saitama.jp/index.cfm/26,0,143,771,html",event,event,イベント - 吉川市公式ホームページ,第11回グラウンドゴルフ大会参加者募集中
 11245,ふじみ野市,埼玉県,surveyed,True,False,5,event|facility|organization,event|facility,65,exhausted,0,0,https://www.city.fujimino.saitama.jp/kurashinojoho/bunka_sports_shakaikyoiku/sports/13899.html,event,event,「第21回ふじみ野市市民スポーツ大会」/ふじみ野市,グラウンド・ゴルフ
 11246,白岡市,埼玉県,surveyed,True,False,1,organization,facility,50,exhausted,0,0,https://www.city.shiraoka.lg.jp/soshiki/seikatsukeizaibu/bunkasports/40/5025.html,facility,organization,白岡市スポーツ協会加盟団体 及び 団体問合せ先一覧/白岡市,グラウンド・ゴルフ連盟
-11301,伊奈町,埼玉県,surveyed,True,False,2,facility,event,130,exhausted,0,0,https://www.town.saitama-ina.lg.jp/0000001933.html,event,facility,丸山スポーツ広場 | バラのまち埼玉県伊奈町公式ホームページ Ina Town Official Web site,サッカー・グラウンドゴルフ
-11324,三芳町,埼玉県,surveyed,True,False,2,event|organization,event,253,exhausted,0,0,https://www.town.saitama-miyoshi.lg.jp/study/sports/miyoshi-taikyou.html,event,organization,三芳町スポーツ協会|埼玉県三芳町,グラウンドゴルフ連盟
+11301,伊奈町,埼玉県,surveyed,True,False,2,facility,event,125,exhausted,0,0,https://www.town.saitama-ina.lg.jp/0000001933.html,event,facility,丸山スポーツ広場 | バラのまち埼玉県伊奈町公式ホームページ Ina Town Official Web site,サッカー・グラウンドゴルフ
+11324,三芳町,埼玉県,surveyed,True,False,2,event|organization,event,262,exhausted,0,0,https://www.town.saitama-miyoshi.lg.jp/study/sports/miyoshi-taikyou.html,event,organization,三芳町スポーツ協会|埼玉県三芳町,グラウンドゴルフ連盟
 11326,毛呂山町,埼玉県,surveyed,True,False,3,event,event,98,exhausted,0,0,https://www.town.moroyama.saitama.jp/gyoseisite/manabi_bunka_sports/event/10740.html,event,event,「スポーツフェスタもろやま2026」を開催します/毛呂山町,グラウンドゴルフ大会
 11327,越生町,埼玉県,surveyed,False,False,0,,,45,exhausted,0,0,,,,,
 11341,滑川町,埼玉県,surveyed,False,False,0,,,27,exhausted,0,0,,,,,
-11342,嵐山町,埼玉県,surveyed,True,False,3,event|facility|organization,event,56,exhausted,0,0,https://www.town.ranzan.saitama.jp/0000000573.html,event,facility,嵐山町B&G海洋センター・総合運動公園 | 嵐山町(らんざんまち)ホームページ,面、農村広場(少年サッカー場大の広さ)があり、他にサッカーやグランドゴルフなどさまざまなスポーツに使用できます。
+11342,嵐山町,埼玉県,surveyed,True,False,3,event|facility|organization,event,50,exhausted,0,0,https://www.town.ranzan.saitama.jp/0000000573.html,event,facility,嵐山町B&G海洋センター・総合運動公園 | 嵐山町(らんざんまち)ホームページ,面、農村広場(少年サッカー場大の広さ)があり、他にサッカーやグランドゴルフなどさまざまなスポーツに使用できます。
 11343,小川町,埼玉県,surveyed,True,False,1,facility,facility,67,exhausted,0,0,https://www.town.ogawa.saitama.jp/gyosei/kanko_bunka_sports/sports/sisetu/2717.html,facility,facility,総合運動場のサブグラウンドの利用について/和紙のふるさと 小川町,動場のサブグラウンドは、ウォーミングアップ、キャッチボール、グラウンドゴルフなどの練習にご使用いただけます。
 11346,川島町,埼玉県,surveyed,True,False,3,facility|organization,event,88,exhausted,0,0,https://www.town.kawajima.saitama.jp/2118.htm,event,facility,体育施設概要/ 川島町,多目的運動場(サッカー、グラウンド・ゴルフ)
 11347,吉見町,埼玉県,surveyed,False,False,0,,,15,exhausted,0,0,,,,,
 11348,鳩山町,埼玉県,surveyed,False,False,0,,,94,exhausted,0,0,,,,,
-11349,ときがわ町,埼玉県,surveyed,True,False,1,event,event,124,exhausted,0,0,https://www.town.tokigawa.lg.jp/Info/2778,event,event,- 埼玉県ときがわ町 -ときがわスポーツフェスタ2026について - 埼玉県ときがわ町 -,○グラウンドゴルフ
+11349,ときがわ町,埼玉県,surveyed,True,False,1,event,event,129,exhausted,0,0,https://www.town.tokigawa.lg.jp/Info/2778,event,event,- 埼玉県ときがわ町 -ときがわスポーツフェスタ2026について - 埼玉県ときがわ町 -,○グラウンドゴルフ
 11361,横瀬町,埼玉県,fetch_failed,False,False,0,,,0,,0,0,,,,,
 11362,皆野町,埼玉県,surveyed,False,False,0,,,38,exhausted,0,0,,,,,
-11363,長瀞町,埼玉県,surveyed,False,False,0,,,50,exhausted,0,0,,,,,
-11365,小鹿野町,埼玉県,surveyed,False,False,0,,,0,exhausted,0,0,,,,,
+11363,長瀞町,埼玉県,surveyed,False,False,0,,,54,exhausted,0,0,,,,,
+11365,小鹿野町,埼玉県,fetch_failed,False,False,0,,,0,exhausted,0,0,,,,,
 11369,東秩父村,埼玉県,surveyed,True,False,1,facility,listing,49,exhausted,0,0,https://www.vill.higashichichibu.saitama.jp/soshiki/09/taiikushisetsu.html,listing,facility,体育施設利用案内 - 東秩父村役場ホームページ,グラウンドゴルフ
 11381,美里町,埼玉県,surveyed,False,False,0,,,31,exhausted,0,0,,,,,
-11383,神川町,埼玉県,surveyed,True,False,5,facility|organization|other,event|listing,47,exhausted,0,0,https://www.town.kamikawa.saitama.jp/shisetsuannai/1439.html,listing,facility,文化・スポーツ施設/埼玉県神川町ホームページ,流川の河川敷を利用した運動公園。芝生を敷きつめソフトボール、グランドゴルフ等に使用。
+11383,神川町,埼玉県,surveyed,True,False,5,facility|organization|other,event|listing,48,exhausted,0,0,https://www.town.kamikawa.saitama.jp/shisetsuannai/1439.html,listing,facility,文化・スポーツ施設/埼玉県神川町ホームページ,流川の河川敷を利用した運動公園。芝生を敷きつめソフトボール、グランドゴルフ等に使用。
 11385,上里町,埼玉県,surveyed,True,False,5,facility,event|facility,99,exhausted,0,0,https://www.town.kamisato.saitama.jp/2083.htm,event,facility,「公共施設の相互利用」のご案内/上里町,川本グラウンド・ゴルフ場
-11408,寄居町,埼玉県,surveyed,False,False,0,,,162,exhausted,0,0,,,,,
-11442,宮代町,埼玉県,surveyed,True,False,2,event|facility,event,215,exhausted,0,0,https://www.town.miyashiro.lg.jp/0000027036.html,event,event,☀活動日記☀ 町民スポーツフェスティバル2026 | 埼玉県宮代町~首都圏でいちばん人が輝く町~,宮代町グラウンドゴルフ協会/グラウンドゴルフ体験
-11464,杉戸町,埼玉県,surveyed,True,False,5,organization,event,159,exhausted,0,0,https://www.town.sugito.lg.jp/site/kyouiku/28370.html,event,organization,スポーツフェスティバル2026!【10月11日 日曜日開催】(社会教育課) - 杉戸町教育委員会 - 杉戸町公式ホームページ,・バスケットボール ・剣道 ・空手道 ・卓球 ・グラウンド・ゴルフ ・ディスクゴルフ
-11465,松伏町,埼玉県,surveyed,False,False,0,,,125,exhausted,0,0,,,,,
+11408,寄居町,埼玉県,surveyed,False,False,0,,,160,exhausted,0,0,,,,,
+11442,宮代町,埼玉県,surveyed,True,False,4,event|facility|other,event,186,exhausted,0,0,https://www.town.miyashiro.lg.jp/category/14-0-0-0-0-0-0-0-0-0.html,event,other,健康・福祉 | 埼玉県宮代町~首都圏でいちばん人が輝く町~,開催しました!町民グラウンド・ゴルフ大会
+11464,杉戸町,埼玉県,surveyed,True,False,13,organization,event,202,exhausted,0,0,https://www.town.sugito.lg.jp/site/kyouiku/11230.html,event,organization,【泉地区】深輪産業団地多目的グラウンド(社会教育課) - 杉戸町教育委員会 - 杉戸町公式ホームページ,グラウンド・ゴルフ
+11465,松伏町,埼玉県,surveyed,False,False,0,,,128,exhausted,0,0,,,,,
