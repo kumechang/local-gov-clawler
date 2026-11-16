@@ -1,0 +1,17 @@
+{
+  "municipality_code": "11223",
+  "municipality_name": "蕨市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.warabi.saitama.jp/_res/projects/default_project/_page_/001/002/225/2025-1.pdf",
+      "title": "令和7年度第1回スポーツ推進審議会会議録",
+      "relevant": false,
+      "skip_reason": "会議録",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

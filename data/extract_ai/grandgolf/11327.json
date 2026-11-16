@@ -1,0 +1,17 @@
+{
+  "municipality_code": "11327",
+  "municipality_name": "越生町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.ogose.saitama.jp/material/files/group/7/R6kenkoudukurinenkanhoukokumihonn.pdf",
+      "title": "健康づくり地区活動記録の提出について",
+      "relevant": false,
+      "skip_reason": "提出様式の記入例",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

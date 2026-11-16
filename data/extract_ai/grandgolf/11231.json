@@ -1,0 +1,72 @@
+{
+  "municipality_code": "11231",
+  "municipality_name": "桶川市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.okegawa.lg.jp/material/files/group/57/sportskyokai_70kinenshi.pdf",
+      "title": "桶川市スポーツ協会70周年記念誌",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "団体紹介"
+    },
+    {
+      "pdf_url": "https://www.city.okegawa.lg.jp/material/files/group/57/suposuidayori45.pdf",
+      "title": "スポーツ推進委員だより第45号",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "広報誌"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "新小針領家グラウンド(A・B)",
+      "address": "桶川市大字小針領家",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "主に利用する加盟団体に軟式野球連盟・ソフトボール連盟・サッカー協会・グラウンド・ゴルフ協会",
+      "gg_evidence": "グラウンド・ゴルフ協会",
+      "pdf_url": "https://www.city.okegawa.lg.jp/material/files/group/57/sportskyokai_70kinenshi.pdf",
+      "confidence": "medium",
+      "note": "グラウンドゴルフの専用設備の記述はなく、加盟団体の利用の記述"
+    }
+  ],
+  "events": [
+    {
+      "event_name": "シルバーレクリエーション大会(おけがわスポーツフェスティバル2023)",
+      "event_kind": "複数競技の大会",
+      "date_text": "9月24日(日)",
+      "date_start": "2023-09-24",
+      "date_end": "2023-09-24",
+      "fiscal_year": 2023,
+      "period": "期間外",
+      "venue": "桶川サン・アリーナ",
+      "organizer": "",
+      "target": "年配の方",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンド・ゴルフ、ディスゲッター、ラダーゲッターといった年配の方でも精一杯楽しめる3種目で実施されました",
+      "pdf_url": "https://www.city.okegawa.lg.jp/material/files/group/57/suposuidayori45.pdf",
+      "confidence": "medium",
+      "note": "広報誌(令和6年3月発行)の報告記事。年は発行から2023年"
+    }
+  ],
+  "organizations": [
+    {
+      "org_name": "桶川市グラウンドゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "",
+      "activity_schedule": "春・夏・秋の親睦大会、毎月の合同練習。年度末に県協主催大会の上位入賞者を表彰。新規加入者向けの講習会",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "本協会には 3 クラブが所属し、親睦と交流を目的として、春・夏・秋の親睦大会や毎月の合同練習を行っています。",
+      "pdf_url": "https://www.city.okegawa.lg.jp/material/files/group/57/sportskyokai_70kinenshi.pdf",
+      "confidence": "high",
+      "note": "平成12年3月発足。3クラブが所属"
+    }
+  ],
+  "unsure": []
+}

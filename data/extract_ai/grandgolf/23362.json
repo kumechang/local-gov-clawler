@@ -1,0 +1,30 @@
+{
+  "municipality_code": "23362",
+  "municipality_name": "扶桑町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.fuso.lg.jp/_res/projects/default_project/_page_/001/003/962/katudou.pdf",
+      "title": "スポーツ協会 活動日・活動場所一覧表",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "団体紹介"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "扶桑町グラウンド・ゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "総合グラウンド",
+      "activity_schedule": "水・金 8:00〜12:00",
+      "contact_dept": "扶桑町スポーツ協会事務局(扶桑町総合体育館)",
+      "contact_phone": "(93)2441",
+      "evidence": "グラウンド・ゴルフ協会",
+      "pdf_url": "https://www.town.fuso.lg.jp/_res/projects/default_project/_page_/001/003/962/katudou.pdf",
+      "confidence": "high",
+      "note": "会長・副会長は個人名のため省略。電話は市外局番が本文に無い"
+    }
+  ],
+  "unsure": []
+}

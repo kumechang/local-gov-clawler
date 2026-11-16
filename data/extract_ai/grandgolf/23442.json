@@ -1,0 +1,30 @@
+{
+  "municipality_code": "23442",
+  "municipality_name": "東浦町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.aichi-higashiura.lg.jp/material/files/group/91/20261023genmen.pdf",
+      "title": "減免を認めた団体一覧(2026年10月23日現在)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "団体紹介"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "東浦町老人クラブ連合会グラウンドゴルフ部",
+      "org_kind": "クラブ",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "東浦町老人クラブ連合会グラウンドゴルフ部",
+      "pdf_url": "https://www.town.aichi-higashiura.lg.jp/material/files/group/91/20261023genmen.pdf",
+      "confidence": "high",
+      "note": "施設使用料の減免を認めた団体の一覧。代表者名・日付は省略"
+    }
+  ],
+  "unsure": []
+}

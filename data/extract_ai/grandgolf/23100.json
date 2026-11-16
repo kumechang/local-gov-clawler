@@ -1,0 +1,22 @@
+{
+  "municipality_code": "23100",
+  "municipality_name": "名古屋市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/034/142/jsc.pdf",
+      "title": "地域ジュニアスポーツクラブ(概要)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "団体紹介"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/034/142/jsc.pdf",
+      "note": "種目に『グラウンドゴルフ』があるが、どのクラブか本文だけでは確定できない"
+    }
+  ]
+}

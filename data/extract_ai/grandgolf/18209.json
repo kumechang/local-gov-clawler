@@ -1,0 +1,17 @@
+{
+  "municipality_code": "18209",
+  "municipality_name": "越前市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.echizen.lg.jp/office/010/040/sinkou/newsport_d/fil/NSH_11.pdf",
+      "title": "グラウンド・ゴルフ(ニュースポーツの紹介)",
+      "relevant": false,
+      "skip_reason": "競技の紹介文で、施設・イベント・団体の記述がない",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

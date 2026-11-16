@@ -1,0 +1,47 @@
+{
+  "municipality_code": "23223",
+  "municipality_name": "大府市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.obu.aichi.jp/_res/projects/default_project/_page_/001/017/267/2026tebiki.pdf",
+      "title": "大府市スポーツ施設利用の手引き",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "桜木多目的広場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "桜木多目的広場グラウンドゴルフ、ゲートボール",
+      "pdf_url": "https://www.city.obu.aichi.jp/_res/projects/default_project/_page_/001/017/267/2026tebiki.pdf",
+      "confidence": "medium",
+      "note": "利用時間は表の崩れで確定できない"
+    },
+    {
+      "facility_name": "長草多目的広場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "長草多目的広場グラウンドゴルフ、ゲートボール",
+      "pdf_url": "https://www.city.obu.aichi.jp/_res/projects/default_project/_page_/001/017/267/2026tebiki.pdf",
+      "confidence": "medium",
+      "note": "利用時間は表の崩れで確定できない"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.city.obu.aichi.jp/_res/projects/default_project/_page_/001/017/267/2026tebiki.pdf",
+      "note": "利用時間(5月〜10月 6時〜18時など)がどの施設の行か、表が崩れて確定できない"
+    }
+  ]
+}

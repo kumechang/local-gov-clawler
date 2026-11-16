@@ -1,0 +1,17 @@
+{
+  "municipality_code": "23203",
+  "municipality_name": "一宮市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.ichinomiya.aichi.jp/_res/projects/default_project/_page_/001/035/780/7bisinn.pdf",
+      "title": "管理棟貸与備品一覧表",
+      "relevant": false,
+      "skip_reason": "備品台帳の中の用具の記載",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

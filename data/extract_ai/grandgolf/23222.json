@@ -1,0 +1,17 @@
+{
+  "municipality_code": "23222",
+  "municipality_name": "東海市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tokai.aichi.jp/_res/projects/default_project/_page_/001/002/889/20260728.pdf",
+      "title": "令和8年度利用の手引き",
+      "relevant": false,
+      "skip_reason": "学校体育施設の利用種目の一覧。学校名との対応が確定できない",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

@@ -55,3 +55,16 @@ def test_load_texts_reads_saved_pdf_and_page_texts(tmp_path):
     t = mod.load_texts(tmp_path, "grandgolf", ["r"], "11239")
     assert set(t) == {URL, "https://www.city.example.jp/p"} and t[URL] == "グラウンドゴルフ"
     assert mod.load_texts(tmp_path, "grandgolf", ["r"], "99999") == {}
+
+
+def test_build_ai_extract_csv(tmp_path):
+    spec2 = importlib.util.spec_from_file_location("build_ai_extract_csv", ROOT / "scripts" / "build_ai_extract_csv.py")
+    m2 = importlib.util.module_from_spec(spec2)
+    spec2.loader.exec_module(m2)
+    src = tmp_path / "src"
+    src.mkdir()
+    (src / "11239.json").write_text(json.dumps({"municipality_code": "11239", "municipality_name": "坂戸市", "events": [{"event_name": "x", "date_start": "2026-04-29", "pdf_url": URL}], "facilities": [], "organizations": [], "unsure": [{"pdf_url": URL, "note": "n"}]}, ensure_ascii=False), encoding="utf-8")
+    c = m2.build(src, tmp_path / "out", "grandgolf")
+    assert c == {"facilities": 0, "events": 1, "organizations": 0, "unsure": 1, "municipalities": 1}
+    text = (tmp_path / "out" / "grandgolf_ai_events.csv").read_text(encoding="utf-8-sig")
+    assert "11239,坂戸市,x" in text and "2026-04-29" in text

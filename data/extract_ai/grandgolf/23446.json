@@ -1,0 +1,29 @@
+{
+  "municipality_code": "23446",
+  "municipality_name": "美浜町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.aichi-mihama.lg.jp/material/files/group/34/1225.pdf",
+      "title": "スポーツイベント予定表(令和7年度)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    },
+    {
+      "pdf_url": "https://www.town.aichi-mihama.lg.jp/material/files/group/34/0401.pdf",
+      "title": "スポーツイベント予定表(令和8年度)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.town.aichi-mihama.lg.jp/material/files/group/34/0401.pdf",
+      "note": "令和8年度のスポーツイベントカレンダー。春季町民グラウンドゴルフ大会・春季2町グラウンドゴルフ交流大会・秋季町民グラウンドゴルフ大会・グラウンドゴルフ部の月例会があるが、日付が本文で行事名と対応づけられない(カレンダーの崩れ)。日付が確定できないため行にしない"
+    }
+  ]
+}

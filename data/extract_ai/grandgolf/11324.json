@@ -1,0 +1,52 @@
+{
+  "municipality_code": "11324",
+  "municipality_name": "三芳町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.saitama-miyoshi.lg.jp/study/sports/documents/r8sportsas.soukai.pdf",
+      "title": "令和8年度総会資料",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "団体紹介"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "春季グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年3月19日",
+      "date_start": "2026-03-19",
+      "date_end": "2026-03-19",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "運動公園グラウンド",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "3月19日 春季グラウンドゴルフ大会 運動公園グラウンド",
+      "pdf_url": "https://www.town.saitama-miyoshi.lg.jp/study/sports/documents/r8sportsas.soukai.pdf",
+      "confidence": "medium",
+      "note": "総会資料の事業報告(令和7年度)。令和8年の見出しの下の3月19日。秋季大会(10月16日)は雨天のため予備日とも中止との記載"
+    }
+  ],
+  "organizations": [
+    {
+      "org_name": "三芳町スポーツ協会 グラウンドゴルフ連盟",
+      "org_kind": "連盟",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンドゴルフ連盟",
+      "pdf_url": "https://www.town.saitama-miyoshi.lg.jp/study/sports/documents/r8sportsas.soukai.pdf",
+      "confidence": "high",
+      "note": "三芳町スポーツ協会の加盟団体。会長は個人名のため省略"
+    }
+  ],
+  "unsure": []
+}

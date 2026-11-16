@@ -1,0 +1,17 @@
+{
+  "municipality_code": "23206",
+  "municipality_name": "春日井市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kasugai.lg.jp/_res/projects/default_project/_page_/001/004/258/tyuuou.pdf",
+      "title": "日本スポーツ協会加盟団体一覧",
+      "relevant": false,
+      "skip_reason": "全国組織の一覧",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}
