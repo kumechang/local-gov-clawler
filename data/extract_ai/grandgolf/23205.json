@@ -1,0 +1,39 @@
+{
+  "municipality_code": "23205",
+  "municipality_name": "半田市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.handa.lg.jp/_res/projects/default_project/_page_/001/002/793/chirasi2.pdf",
+      "title": "サマーニュースポーツフェスティバル",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "大会要項"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "サマーニュースポーツフェスティバル",
+      "event_kind": "体験会",
+      "date_text": "7月25日土曜日 18:00〜21:00(受付 20:30 迄)",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-25",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "半田市立 半田中学校 グラウンド",
+      "organizer": "半田市教育委員会(主管 半田市スポーツ推進委員連絡協議会)",
+      "target": "小学生以下の方は保護者同伴",
+      "fee": "無料",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "半田市教育委員会教育部スポーツ課",
+      "contact_phone": "0569(22)1184",
+      "evidence": "グラウンド・ゴルフ モルック ペタンク バッゴー ストラックアウト",
+      "pdf_url": "https://www.city.handa.lg.jp/_res/projects/default_project/_page_/001/002/793/chirasi2.pdf",
+      "confidence": "medium",
+      "note": "年は書かれていない。7月25日が土曜日になる直近の年(2026年)とした。予備日 7月26日"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

@@ -488,6 +488,14 @@ class EventsConfig:
         return Config(route=self.route, max_requests=self.max_pages + 4, retry_wait=self.retry_wait)
 
 
+# イベントのページではないもの(入札・公募・命名権・条例・予算など)。ワードが施設の一覧や募集要領の中に出るだけで、イベントの行にしない(D-167)
+NON_EVENT_PAGE = re.compile(r"ネーミングライツ|命名権|入札|公募型|プロポーザル|募集要領|条例|予算|決算|議会|議事録|会議録|指定管理者(?:の)?(?:募集|選定|制度)|職員採用|会計年度任用|補助金交付|工事|業務委託")
+
+
+def is_non_event_page(title: str, url: str = "") -> bool:
+    return bool(NON_EVENT_PAGE.search(norm_text(title or "")))
+
+
 def events_municipality(m: Municipality, pages: list[dict], fetcher: Fetcher, spec: KeywordSpec, cfg: EventsConfig) -> dict:
     out = {
         "schema_version": EVENTS_SCHEMA, "keyword": spec.name,
@@ -506,10 +514,14 @@ def events_municipality(m: Municipality, pages: list[dict], fetcher: Fetcher, sp
             return out
         site_host = base_host(m.url)
         for pg in pages[: cfg.max_pages]:
+            if is_non_event_page(pg.get("page_title", "")):
+                out["pages"].append({"page_url": pg["page_url"], "survey_title": pg.get("page_title", ""), "skipped": "non_event_page"})  # 入札・公募・命名権などのページは、取得もしない(D-167)
+                continue
             res = ctx.get(pg["page_url"])
             rec = {"page_url": pg["page_url"], "survey_title": pg.get("page_title", ""), "status": res.status, "error_class": res.error_class}
             if res.error_class == "budget_exceeded":
                 break
+
             if not res.ok or (res.content_type and "html" not in res.content_type.lower()) or not is_same_site(res.final_url, site_host):
                 out["pages"].append(rec)
                 continue

@@ -1,0 +1,30 @@
+{
+  "municipality_code": "23217",
+  "municipality_name": "江南市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.konan.lg.jp/_res/projects/default_project/_page_/001/010/451/r7kaisaiyoukou2.pdf",
+      "title": "第60回江南市民駅伝競走大会開催要項",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "大会要項"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "草井グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "第60回江南市民駅伝競走大会(令和8年1月25日)の第1中継所",
+      "gg_evidence": "草井グラウンドゴルフ場前",
+      "pdf_url": "https://www.city.konan.lg.jp/_res/projects/default_project/_page_/001/010/451/r7kaisaiyoukou2.pdf",
+      "confidence": "medium",
+      "note": "施設の存在は名前から読み取れるが、グラウンドゴルフの利用の記述はない。駅伝はグラウンドゴルフの行事ではないので、イベントの行は出さない"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

@@ -245,6 +245,6 @@
       "shards": 1
     }
   ],
-  "facility_max_pdfs": 40,
+  "facility_max_pdfs": 60,
   "follow_external": true
 }

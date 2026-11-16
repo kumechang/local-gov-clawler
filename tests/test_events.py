@@ -148,3 +148,22 @@ def test_ev4_reextracts_all_event_pages():
     ev = json.loads((ROOT / "config" / "survey_sets" / "grandgolf_events.json").read_text(encoding="utf-8"))["routes"]
     base = json.loads((ROOT / "config" / "survey_sets" / "grandgolf.json").read_text(encoding="utf-8"))["routes"]
     assert allset == ev + base
+
+
+def test_non_event_pages_are_skipped_without_fetching():
+    """入札・公募・命名権などのページは、イベントの行にしない。取得もしない(D-167)。"""
+    from conftest import make_fetcher
+    from localgov_crawler.municipalities import Municipality
+    assert ev.is_non_event_page("坂東市グラウンドゴルフ場ネーミングライツ事業募集要領") and ev.is_non_event_page("【公募型指名競争入札】第13回区民マラソン大会")
+    assert not ev.is_non_event_page("第3回グラウンドゴルフ大会のご案内") and not ev.is_non_event_page("指定管理者のお知らせ")
+    m = Municipality("29999", "サンプル市", "サンプル市", "29", "奈良県", "city", "municipality", "", "https://www.city.example.jp/", "", "")
+    spec = sv.KeywordSpec("grandgolf", "グラウンドゴルフ", [re.compile(r"グラウ?ンド[\s・･\-ー]*ゴルフ")])
+    seen = []
+    base = make_fetcher({"/robots.txt": (404, "text/plain", ""), "/ok": (200, "text/html; charset=utf-8", "<html><title>第3回グラウンドゴルフ大会</title><body><main><h1>第3回グラウンドゴルフ大会</h1><p>開催日 令和8年6月5日</p><p>会場 中央運動場</p></main></body></html>")})
+    orig = base.get
+    base.get = lambda url: (seen.append(url), orig(url))[1]
+    pages = [{"page_url": "https://www.city.example.jp/nl", "page_title": "坂東市ネーミングライツ事業募集要領"}, {"page_url": "https://www.city.example.jp/ok", "page_title": "第3回グラウンドゴルフ大会"}]
+    rec = ev.events_municipality(m, pages, base, spec, ev.EventsConfig(route="t"))
+    assert rec["pages"][0]["skipped"] == "non_event_page" and not any(u.endswith("/nl") for u in seen)
+    rows = ev.event_rows(rec)
+    assert len(rows) >= 1 and all("ネーミングライツ" not in r["event_name"] for r in rows) and rows[0]["venue"] == "中央運動場"
