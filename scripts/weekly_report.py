@@ -36,7 +36,7 @@ def survey_section(title: str, surveys: list[dict], keyword: str, n_target: int)
     lines = [f"### {title}", "", f"- 結果がある自治体: {len(rows)} / 対象 {n_target}", f"- 調査できた: {len(surveyed)} ({(len(surveyed) / n_target if n_target else 0):.1%})",
              f"- ワードがあった自治体: {len(found)}", f"- 上限で止まった: {len(capped_all)} ({(len(capped_all) / len(surveyed) if surveyed else 0):.2%})(うち max_pages {len(capped)}、max_requests {stopped.get('max_requests', 0)})", f"- PDFのページ: {pdf_pages}(うちOCRで読んだ {ocr_pages})"]
     if ext_pages:
-        lines.append(f"- 外部サイトのページ: {len(ext_pages)}({len({p['external_host'] for p in ext_pages})}ホスト)、ワードがあった自治体(外部サイトだけで): {len(ext_munis)}")
+        lines.append(f"- 外部サイトのページ: {len(ext_pages)}({len({p['external_host'] for p in ext_pages})}ホスト)、外部サイトにワードがあった自治体: {len(ext_munis)}")
     if retried:
         lines.append(f"- ロボットファイルをやり直して届いた自治体: {retried}")
     if seed_modes:
@@ -72,7 +72,10 @@ def build(cfg: dict, week: str, root: Path = ROOT) -> str:
     lines += survey_section("PDF+OCRつき(施設・PDF)", fac, keyword, n_target)
     lines += survey_section("イベント専用の探索", evs, keyword, n_target)
     both = {s["municipality"]["code"] for s in fac + evs if s["found"]}
-    lines += [f"- どちらかでワードがあった自治体(重複なし): {len(both)}", ""]
+    ext_only = {s_["municipality"]["code"] for s_ in fac if s_.get("external_found")} - both
+    pdf_hit = {s_["municipality"]["code"] for s_ in fac if any(p.get("role") == "pdf" and p.get("hit") for p in s_["pages"])}
+    non_pdf = {s_["municipality"]["code"] for s_ in fac + evs if s_.get("nav_hits") or any(p.get("hit") and p.get("role") != "pdf" for p in s_["pages"])}
+    lines += [f"- どちらかでワードがあった自治体(重複なし): {len(both)}", f"- 外部サイトだけで見つかった自治体(上の数に含まない): {len(ext_only)}", f"- PDFだけで見つかった自治体(上の数に含む): {len(pdf_hit - non_pdf)}", ""]
     lines += compliance_section(fac + evs)
     drows = [row for r in routes(cfg, "detail") for rec in ex.load_extracts(root / "data/extract", keyword, r) for row in ex.detail_rows(rec)]
     erows = [row for r in routes(cfg, "detail") for rec in evm.load_events(root / "data/events", keyword, r) for row in evm.event_rows(rec)]
