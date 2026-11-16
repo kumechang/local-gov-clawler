@@ -1,0 +1,17 @@
+{
+  "municipality_code": "23204",
+  "municipality_name": "瀬戸市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.seto.aichi.jp/docs/2026/01/08/00708041950/files/02-1.pdf",
+      "title": "学校開放利用者の皆様へ",
+      "relevant": false,
+      "skip_reason": "学校開放の利用種目の一覧。学校名との対応が確定できない",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

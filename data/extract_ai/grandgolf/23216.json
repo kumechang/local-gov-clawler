@@ -1,0 +1,17 @@
+{
+  "municipality_code": "23216",
+  "municipality_name": "常滑市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tokoname.aichi.jp/_res/projects/default_project/_page_/001/003/952/kashidashi_R71217.pdf",
+      "title": "貸出用具一覧",
+      "relevant": false,
+      "skip_reason": "貸出用具の一覧",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

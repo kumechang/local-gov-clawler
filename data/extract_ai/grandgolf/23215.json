@@ -1,0 +1,30 @@
+{
+  "municipality_code": "23215",
+  "municipality_name": "犬山市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.inuyama.aichi.jp/_res/projects/default_project/_page_/001/004/678/2026.06.29yakatu.pdf",
+      "title": "グラウンド・ゴルフ場利用再開のお知らせ",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "犬山市野外活動センター グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "犬山市教育委員会 スポーツ交流課",
+      "inquiry_phone": "0568-44-0353",
+      "usage_note": "令和8年6月26日からの大雨で利用中止、6月30日(火)から再開",
+      "gg_evidence": "グラウンド・ゴルフ場",
+      "pdf_url": "https://www.city.inuyama.aichi.jp/_res/projects/default_project/_page_/001/004/678/2026.06.29yakatu.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,17 @@
+{
+  "municipality_code": "11206",
+  "municipality_name": "行田市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.gyoda.lg.jp/material/files/group/44/taiikusisetubihin.pdf",
+      "title": "体育施設備品台帳",
+      "relevant": false,
+      "skip_reason": "備品台帳の用具の記載",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

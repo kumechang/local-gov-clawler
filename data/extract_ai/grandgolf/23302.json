@@ -1,0 +1,54 @@
+{
+  "municipality_code": "23302",
+  "municipality_name": "東郷町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.aichi-togo.lg.jp/material/files/group/25/riyounotebiki.pdf",
+      "title": "利用の手引き",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "町民運動広場(町民グラウンド)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "利用種目: 軟式野球・ソフトボール・グラウンドゴルフ等",
+      "gg_evidence": "町民運動広場(町民グラウンド) 軟式野球・ソフトボール・グラウンドゴルフ等",
+      "pdf_url": "https://www.town.aichi-togo.lg.jp/material/files/group/25/riyounotebiki.pdf",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "愛知池運動公園運動場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "利用種目: 陸上競技・ソフトボール・サッカー・グラウンドゴルフ等",
+      "gg_evidence": "愛知池運動公園運動場 陸上競技・ソフトボール・サッカー・グラウンドゴルフ等",
+      "pdf_url": "https://www.town.aichi-togo.lg.jp/material/files/group/25/riyounotebiki.pdf",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "境川緑地公園 第2多目的運動広場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "利用種目: 少年サッカー・グラウンドゴルフ・ハンドボール等",
+      "gg_evidence": "第2多目的運動広場 少年サッカー・グラウンドゴルフ・ハンドボール等",
+      "pdf_url": "https://www.town.aichi-togo.lg.jp/material/files/group/25/riyounotebiki.pdf",
+      "confidence": "medium",
+      "note": "『境川緑地公園』は第1・第2多目的運動広場の左見出しで、第2のみの行か表の崩れで確定できない"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

@@ -166,9 +166,9 @@ def test_weekly_diff(tmp_path):
 
 def test_discovery_options_flow_from_config_to_cli():
     """発見を増やす設定(PDF40件・外部サイト)が、設定 → 計画 → ワークフロー → CLI までつながっている(D-161)。"""
-    assert CFG["facility_max_pdfs"] == 40 and CFG["follow_external"] is True
+    assert CFG["facility_max_pdfs"] == 60 and CFG["follow_external"] is True
     t = plan_mod.plan("config/weekly_batch.json", "福井県")[0][0]
-    assert t["facility_max_pdfs"] == "40" and t["follow_external"] == "1"
+    assert t["facility_max_pdfs"] == "60" and t["follow_external"] == "1"
     pref = yaml.safe_load((ROOT / ".github/workflows/weekly-prefecture.yml").read_text(encoding="utf-8"))["jobs"]
     assert pref["survey_facility"]["with"]["max_pdfs"] == "${{ inputs.facility_max_pdfs }}" and pref["survey_facility"]["with"]["follow_external"] == "${{ inputs.follow_external }}"
     assert "follow_external" not in pref["survey_event"]["with"]  # イベント探索は外部サイトを見ない(重複を避ける)

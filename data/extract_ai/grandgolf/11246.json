@@ -1,0 +1,78 @@
+{
+  "municipality_code": "11246",
+  "municipality_name": "白岡市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.shiraoka.lg.jp/material/files/group/45/2026sportskawaraban.pdf",
+      "title": "スポーツかわら版(2026年)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "広報誌"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第20回白岡市民グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "11/12",
+      "date_start": "2026-11-12",
+      "date_end": "2026-11-12",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "白岡市グラウンド・ゴルフ協会",
+      "target": "白岡市民愛好者・白岡協会会員",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "第20回白岡市民グラウンド・ゴルフ大会",
+      "pdf_url": "https://www.city.shiraoka.lg.jp/material/files/group/45/2026sportskawaraban.pdf",
+      "confidence": "medium",
+      "note": "令和8年度行事予定の表。年は令和8年度から"
+    },
+    {
+      "event_name": "第4回白岡市杯グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "10/10",
+      "date_start": "2026-10-10",
+      "date_end": "2026-10-10",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "白岡市グラウンド・ゴルフ協会",
+      "target": "県内外協会(連盟)会員のみ",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "第4回白岡市杯グラウンド・ゴルフ大会",
+      "pdf_url": "https://www.city.shiraoka.lg.jp/material/files/group/45/2026sportskawaraban.pdf",
+      "confidence": "medium",
+      "note": "令和8年度行事予定の表。年は令和8年度から"
+    }
+  ],
+  "organizations": [
+    {
+      "org_name": "白岡市グラウンド・ゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "",
+      "activity_schedule": "練習は週2〜3回。入会希望者募集中",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "白岡市グラウンド・ゴルフ協会",
+      "pdf_url": "https://www.city.shiraoka.lg.jp/material/files/group/45/2026sportskawaraban.pdf",
+      "confidence": "high",
+      "note": "会長の氏名・携帯電話番号は個人の連絡先のため省略"
+    }
+  ],
+  "unsure": [
+    {
+      "pdf_url": "https://www.city.shiraoka.lg.jp/material/files/group/45/2026sportskawaraban.pdf",
+      "note": "協会の例会(76回5/7・77回7/2・78回9/3・79回12/3)と『白岡るんるんグラウンド・ゴルフ大会』(37回9/12・38回R9 3/6)は、表が崩れて行と日付の対応が確定できないため行にしない"
+    }
+  ]
+}

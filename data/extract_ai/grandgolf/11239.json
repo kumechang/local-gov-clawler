@@ -1,0 +1,39 @@
+{
+  "municipality_code": "11239",
+  "municipality_name": "坂戸市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.sakado.lg.jp/uploaded/life/57802_121390_misc.pdf",
+      "title": "第25回坂戸市民スポーツフェスティバルプログラム",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "大会要項"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第25回坂戸市民スポーツフェスティバル グラウンド・ゴルフ体験",
+      "event_kind": "体験会",
+      "date_text": "令和8年4月29日(水)8:30~正午(体験コーナー 10:00~12:00)",
+      "date_start": "2026-04-29",
+      "date_end": "2026-04-29",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "坂戸市民総合運動公園 第1多目的運動場",
+      "organizer": "グラウンド・ゴルフ協会(ブース)。大会の主催は坂戸市・坂戸市教育委員会・坂戸市スポーツ協会・坂戸市レクリエーションスポーツ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "★8 グラウンド・ゴルフ体験 グラウンド・ゴルフ協会",
+      "pdf_url": "https://www.city.sakado.lg.jp/uploaded/life/57802_121390_misc.pdf",
+      "confidence": "medium",
+      "note": "会場・時刻は、段組みの崩れから、第1多目的運動場の区画の記述と判断した(11/16に試した行の修正版)"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

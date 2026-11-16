@@ -1,0 +1,30 @@
+{
+  "municipality_code": "18208",
+  "municipality_name": "あわら市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.awara.lg.jp/online/6200/6230/6233/p000526_d/fil/6.pdf",
+      "title": "トリムパークかなづ 施設利用許可申請書",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "トリムパークかなづ グラウンドゴルフコース",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "あわら市教育委員会",
+      "inquiry_phone": "",
+      "usage_note": "申請書の利用施設の選択肢に『グラウンドゴルフコース』『マレットゴルフコース』『ゲートボール場』などがある",
+      "gg_evidence": "グラウンドゴルフコース",
+      "pdf_url": "https://www.city.awara.lg.jp/online/6200/6230/6233/p000526_d/fil/6.pdf",
+      "confidence": "medium",
+      "note": "申請書の様式。料金・所在地の記載はない"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

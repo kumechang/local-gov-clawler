@@ -1,0 +1,30 @@
+{
+  "municipality_code": "23213",
+  "municipality_name": "西尾市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.nishio.aichi.jp/_res/projects/default_project/_page_/001/003/951/shiyouryou2.pdf",
+      "title": "屋外体育施設使用料",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "料金表"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "西尾市松原グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "全面1時間100円。利用時間は午前6時から午後7時まで、毎正時から1時間単位",
+      "gg_evidence": "西尾市松原グラウンド・ゴルフ場 全面 1時間 100円",
+      "pdf_url": "https://www.city.nishio.aichi.jp/_res/projects/default_project/_page_/001/003/951/shiyouryou2.pdf",
+      "confidence": "high",
+      "note": "同じ内容のPDFが別URLで複数ある"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

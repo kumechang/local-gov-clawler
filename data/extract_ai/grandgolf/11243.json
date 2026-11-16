@@ -1,0 +1,44 @@
+{
+  "municipality_code": "11243",
+  "municipality_name": "吉川市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.yoshikawa.saitama.jp/index.cfm/26,120614,c,html/120614/20261102-114024.pdf",
+      "title": "2026年11月イベントカレンダー",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "11月22日 日 午前9時30分~正午",
+      "date_start": "2026-11-22",
+      "date_end": "2026-11-22",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "吉川運動公園",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "スポーツ推進課",
+      "contact_phone": "048-982-6800",
+      "evidence": "11月22日 日 午前9時30分~正午 吉川運動公園 グラウンドゴルフ大会",
+      "pdf_url": "https://www.city.yoshikawa.saitama.jp/index.cfm/26,120614,c,html/120614/20261102-114024.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.city.yoshikawa.saitama.jp/index.cfm/26,120614,c,html/120614/20261102-114024.pdf",
+      "note": "『シルバー人材センター グラウンドゴルフ大会 ~11月18日 シルバー人材センター 048-982-7720』は、日付が申込期限か開催かが確定できないため行にしない"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "municipality_code": "23202",
+  "municipality_name": "岡崎市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.okazaki.lg.jp/_res/projects/default_project/_page_/001/014/212/guidebook.pdf",
+      "title": "岡崎市スポーツ施設ガイドブック",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.city.okazaki.lg.jp/_res/projects/default_project/_page_/001/014/212/guidebook.pdf",
+      "note": "『多目的運動場 少年サッカー、フットサル、グラウンドゴルフ、ゲートボール』があるが、どの公園の施設か見出しの対応が確定できない"
+    }
+  ]
+}

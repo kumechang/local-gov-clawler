@@ -1,0 +1,30 @@
+{
+  "municipality_code": "23210",
+  "municipality_name": "刈谷市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kariya.lg.jp/_res/projects/default_project/_page_/001/006/488/shiryo2-10124.pdf",
+      "title": "第3次刈谷市スポーツマスタープラン(案)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "計画"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "刈谷市グラウンド・ゴルフ連盟",
+      "org_kind": "連盟",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "2013(平成25)年度にグラウンド・ゴルフ連盟が刈谷市レクリエーション協会より移行し",
+      "pdf_url": "https://www.city.kariya.lg.jp/_res/projects/default_project/_page_/001/006/488/shiryo2-10124.pdf",
+      "confidence": "medium",
+      "note": "刈谷市体育協会の加盟団体。会員数 485〜503人(5年間)。計画書の記述で、連絡先はない"
+    }
+  ],
+  "unsure": []
+}

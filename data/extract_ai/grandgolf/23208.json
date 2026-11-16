@@ -1,0 +1,17 @@
+{
+  "municipality_code": "23208",
+  "municipality_name": "津島市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tsushima.lg.jp/kurashi/sports/higashikouenkihon/20260512.files/higashigaiyou.pdf",
+      "title": "東公園一帯整備基本構想(概要版)",
+      "relevant": false,
+      "skip_reason": "整備構想(計画)",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

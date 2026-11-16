@@ -1,0 +1,148 @@
+{
+  "municipality_code": "23212",
+  "municipality_name": "安城市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/documents/seibuggriyouannnair0806.pdf",
+      "title": "西部グラウンドゴルフ場利用案内",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/documents/11gatsugyojiyotei.pdf",
+      "title": "総合運動公園内行事予定表(11月)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    },
+    {
+      "pdf_url": "https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/documents/10gatsugyojiyotei.pdf",
+      "title": "総合運動公園内行事予定表(10月)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    },
+    {
+      "pdf_url": "https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/documents/shisetsusyousaitamoku.pdf",
+      "title": "施設詳細(多目的グラウンド)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "安城市西部グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "西部公民館(申込窓口)",
+      "inquiry_phone": "0566-76-9393",
+      "usage_note": "無料。4月〜10月 午前6時〜正午・午後1時〜午後7時または日没まで、11月〜3月 午前8時30分〜正午・午後1時〜午後4時30分(12/29〜1/3は利用不可)。窓口・電話で予約(先着順)。グラウンドゴルフ、ゲートボール、モルックの利用",
+      "gg_evidence": "安城市西部グラウンドゴルフ場 利用案内",
+      "pdf_url": "https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/documents/seibuggriyouannnair0806.pdf",
+      "confidence": "high",
+      "note": "本文の住所(安城市福釜町釜ヶ渕20番地1)は申込窓口の西部公民館のもので、グラウンドゴルフ場の所在地と確定できないため address は空"
+    },
+    {
+      "facility_name": "安城市総合運動公園 多目的グラウンド",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "グラウンドゴルフは最大2コース(サッカー 大人最大1面、ゲートボール 最大12面)",
+      "gg_evidence": "グラウンドゴルフ 最大2コース",
+      "pdf_url": "https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/documents/shisetsusyousaitamoku.pdf",
+      "confidence": "medium",
+      "note": "行事予定表の会場『多目的グラウンド』と同じ施設とみられるが、PDF上で明記はない"
+    }
+  ],
+  "events": [
+    {
+      "event_name": "碧信杯",
+      "event_kind": "大会",
+      "date_text": "10月21日(水) 8:00〜13:00(予備日11/18)",
+      "date_start": "2026-10-21",
+      "date_end": "2026-10-21",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "多目的グラウンド(総合運動公園)",
+      "organizer": "安城市グラウンドゴルフ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "碧信杯(予備日11/18) 8:00 13:00 多目的グラウンド 全面 安城市グラウンドゴルフ協会",
+      "pdf_url": "https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/documents/10gatsugyojiyotei.pdf",
+      "confidence": "medium",
+      "note": "行事予定表(令和8年9月10日更新)の10月。年は更新日から2026年"
+    },
+    {
+      "event_name": "月例会(安城市グラウンドゴルフ協会)",
+      "event_kind": "大会",
+      "date_text": "11月4日(水) 8:00〜12:30(予備日11/18)",
+      "date_start": "2026-11-04",
+      "date_end": "2026-11-04",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "多目的グラウンド(総合運動公園)",
+      "organizer": "安城市グラウンドゴルフ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "月例会(予備日11/18) 8:00 12:30 多目的グラウンド 全面 安城市グラウンドゴルフ協会",
+      "pdf_url": "https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/documents/11gatsugyojiyotei.pdf",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "event_name": "安城選手権「グラウンドゴルフ」",
+      "event_kind": "大会",
+      "date_text": "11月19日(木) 8:00〜12:30(予備日11/26)",
+      "date_start": "2026-11-19",
+      "date_end": "2026-11-19",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "多目的グラウンド(総合運動公園)",
+      "organizer": "安城市スポーツ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "安城選手権「グラウンドゴルフ」(予備日11/26) 8:00 12:30 多目的グラウンド 全面 安城市スポーツ協会",
+      "pdf_url": "https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/documents/11gatsugyojiyotei.pdf",
+      "confidence": "medium",
+      "note": "11/24にも『(11/19の予備日)』の行がある"
+    },
+    {
+      "event_name": "郵友グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "11月20日(金) 8:00〜12:30",
+      "date_start": "2026-11-20",
+      "date_end": "2026-11-20",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "多目的グラウンド(総合運動公園)",
+      "organizer": "安城グラウンドゴルフ郵友会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "郵友グラウンド・ゴルフ大会 8:00 12:30 多目的グラウンド 全面 安城グラウンドゴルフ郵友会",
+      "pdf_url": "https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/documents/11gatsugyojiyotei.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

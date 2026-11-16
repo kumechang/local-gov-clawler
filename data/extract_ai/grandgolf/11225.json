@@ -1,0 +1,30 @@
+{
+  "municipality_code": "11225",
+  "municipality_name": "入間市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.iruma.saitama.jp/material/files/group/39/081029toyooka.pdf",
+      "title": "(10月29日時点)豊岡地区11月日程表(学校開放予約一覧)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "高倉グラウンドゴルフ愛好会",
+      "org_kind": "同好会",
+      "activity_place": "",
+      "activity_schedule": "学校開放の予約枠 2026年11月7日・21日・28日 9:00〜12:30",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "高倉グラウンドゴルフ愛好会",
+      "pdf_url": "https://www.city.iruma.saitama.jp/material/files/group/39/081029toyooka.pdf",
+      "confidence": "medium",
+      "note": "予約一覧のため活動場所の学校名は、段組みから確定できず空"
+    }
+  ],
+  "unsure": []
+}

@@ -1,0 +1,30 @@
+{
+  "municipality_code": "11211",
+  "municipality_name": "本庄市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.honjo.lg.jp/material/files/group/53/R8dantai.pdf",
+      "title": "令和8年度定期利用登録団体紹介一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "団体紹介"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "大久保シニアクラブ",
+      "org_kind": "クラブ",
+      "activity_place": "児玉小学校グラウンド",
+      "activity_schedule": "(土) 8:30~12:00。会費 1,000円/年、入会金 1,000円",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "3 グラウンドゴルフ 大久保シニアクラブ",
+      "pdf_url": "https://www.city.honjo.lg.jp/material/files/group/53/R8dantai.pdf",
+      "confidence": "high",
+      "note": "連絡先は個人名・個人の電話番号のため省略"
+    }
+  ],
+  "unsure": []
+}
