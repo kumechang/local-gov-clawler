@@ -1,0 +1,17 @@
+{
+  "municipality_code": "47213",
+  "municipality_name": "うるま市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.uruma.lg.jp/documents/683/sougoutaiikukan_kihonkousou.pdf",
+      "title": "具志川総合体育館等建替基本構想",
+      "relevant": false,
+      "skip_reason": "整備構想(計画)",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

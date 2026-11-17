@@ -1,0 +1,22 @@
+{
+  "municipality_code": "09204",
+  "municipality_name": "佐野市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.sano.lg.jp/material/files/group/52/r07_spcal.pdf",
+      "title": "令和7年度スポーツカレンダー",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.city.sano.lg.jp/material/files/group/52/r07_spcal.pdf",
+      "note": "第4回佐野市長杯大会(グラウンド・ゴルフ)、第26・27回佐野市G・G協会長杯親善大会などがあるが、カレンダーが1行に詰め込まれ、日付との対応が確定できない"
+    }
+  ]
+}

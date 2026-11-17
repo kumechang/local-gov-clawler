@@ -1,0 +1,22 @@
+{
+  "municipality_code": "09411",
+  "municipality_name": "那珂川町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.tochigi-nakagawa.lg.jp/manage/contents/upload/694901dae8f1e.pdf",
+      "title": "体育施設(馬頭西体育館・大山田体育館・小川南体育館)の利用予定",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.town.tochigi-nakagawa.lg.jp/manage/contents/upload/694901dae8f1e.pdf",
+      "note": "利用予定のカレンダーに『グラウンド・ゴルフ 8:30〜11:30』があるが、どの体育館の何月かが表の崩れで確定できない"
+    }
+  ]
+}

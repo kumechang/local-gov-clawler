@@ -1,0 +1,17 @@
+{
+  "municipality_code": "42209",
+  "municipality_name": "対馬市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tsushima.nagasaki.jp/material/files/group/70/r6touminkyugi.pdf",
+      "title": "第70回対馬島民体育大会 球技・武道大会",
+      "relevant": false,
+      "skip_reason": "成績表で、開催日・会場が無い",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

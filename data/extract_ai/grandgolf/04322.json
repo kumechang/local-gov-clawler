@@ -1,0 +1,17 @@
+{
+  "municipality_code": "04322",
+  "municipality_name": "村田町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.murata.miyagi.jp/kosodate/sports/sports_shinkokeikaku/file/05.pdf",
+      "title": "スポーツ振興計画(本文)",
+      "relevant": false,
+      "skip_reason": "計画(専用グラウンドが無いという現状の記述)",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

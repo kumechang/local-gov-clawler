@@ -1,0 +1,39 @@
+{
+  "municipality_code": "40202",
+  "municipality_name": "大牟田市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.omuta.lg.jp/kiji00321387/3_21387_134247_up_dx3rpseb.pdf",
+      "title": "令和8年10月の行事",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "大牟田市グラウンドゴルフ選手権大会",
+      "event_kind": "大会",
+      "date_text": "令和8年10月",
+      "date_start": "",
+      "date_end": "",
+      "fiscal_year": 2026,
+      "period": "日付不明",
+      "venue": "",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "大牟田市グラウンドゴルフ選手権大会",
+      "pdf_url": "https://www.city.omuta.lg.jp/kiji00321387/3_21387_134247_up_dx3rpseb.pdf",
+      "confidence": "medium",
+      "note": "令和8年10月の行事予定に載る。日・会場は表の崩れで確定できない"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

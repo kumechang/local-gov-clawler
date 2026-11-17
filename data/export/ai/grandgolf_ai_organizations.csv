@@ -1,11 +1,23 @@
 ﻿municipality_code,municipality_name,org_name,org_kind,activity_place,activity_schedule,contact_dept,contact_phone,evidence,pdf_url,confidence,note
+02202,弘前市,弘前グラウンドゴルフ協会,協会,,,,,弘前グラウンドゴルフ協会事務局,https://www.city.hirosaki.aomori.jp/fukushi/sports/2607_HP_sportskyoshitsu.pdf,high,問合せ先の担当者名・携帯電話は個人の連絡先のため省略
+04505,美里町,松ヶ崎グラウンドゴルフ会,同好会,,毎週月曜日(第1月曜日を除く) 9:00〜12:00,,,松ヶ崎グラウンドゴルフ会 毎週月曜日(第1月曜日を除く) 9:00~12:00,https://www.town.misato.miyagi.jp/10shisetu/pdf/R8tourokusa-kuru.pdf,high,
+04505,美里町,常盤会グランドゴルフ,同好会,,毎週水曜日,,,常盤会グランドゴルフ 毎週水曜日,https://www.town.misato.miyagi.jp/10shisetu/pdf/R8tourokusa-kuru.pdf,medium,表の崩れで時間は確定できない
+04505,美里町,なかよしグランドゴルフ愛好会,同好会,,,,,なかよしグランドゴルフ愛好会,https://www.town.misato.miyagi.jp/10shisetu/pdf/R8tourokusa-kuru.pdf,medium,活動日は表の崩れで確定できない
+09213,那須塩原市,那須塩原市グラウンド・ゴルフ協会,協会,,,,,グラウンド・ゴルフ協会,https://www.city.nasushiobara.tochigi.jp/material/files/group/56/r2supokyoukameidanntai.pdf,medium,令和2年度の加盟団体一覧(古い資料)
 11211,本庄市,大久保シニアクラブ,クラブ,児玉小学校グラウンド,"(土) 8:30~12:00。会費 1,000円/年、入会金 1,000円",,,3 グラウンドゴルフ 大久保シニアクラブ,https://www.city.honjo.lg.jp/material/files/group/53/R8dantai.pdf,high,連絡先は個人名・個人の電話番号のため省略
 11225,入間市,高倉グラウンドゴルフ愛好会,同好会,,学校開放の予約枠 2026年11月7日・21日・28日 9:00〜12:30,,,高倉グラウンドゴルフ愛好会,https://www.city.iruma.saitama.jp/material/files/group/39/081029toyooka.pdf,medium,予約一覧のため活動場所の学校名は、段組みから確定できず空
 11231,桶川市,桶川市グラウンドゴルフ協会,協会,,春・夏・秋の親睦大会、毎月の合同練習。年度末に県協主催大会の上位入賞者を表彰。新規加入者向けの講習会,,,本協会には 3 クラブが所属し、親睦と交流を目的として、春・夏・秋の親睦大会や毎月の合同練習を行っています。,https://www.city.okegawa.lg.jp/material/files/group/57/sportskyokai_70kinenshi.pdf,high,平成12年3月発足。3クラブが所属
 11246,白岡市,白岡市グラウンド・ゴルフ協会,協会,,練習は週2〜3回。入会希望者募集中,,,白岡市グラウンド・ゴルフ協会,https://www.city.shiraoka.lg.jp/material/files/group/45/2026sportskawaraban.pdf,high,会長の氏名・携帯電話番号は個人の連絡先のため省略
 11324,三芳町,三芳町スポーツ協会 グラウンドゴルフ連盟,連盟,,,,,グラウンドゴルフ連盟,https://www.town.saitama-miyoshi.lg.jp/study/sports/documents/r8sportsas.soukai.pdf,high,三芳町スポーツ協会の加盟団体。会長は個人名のため省略
+12238,いすみ市,いすみ市グラウンドゴルフ協会,協会,,,,,21 グラウンドゴルフ協会,https://www.city.isumi.lg.jp/material/files/group/64/20230524.pdf,high,いすみ市スポーツ協会の加盟団体(2023年5月現在)
+15206,新発田市,新発田市グラウンド・ゴルフ協会,協会,,,,,グラウンド・ゴルフ協会,https://www.city.shibata.lg.jp/_res/projects/default_project/_page_/001/001/568/supokamei.pdf,medium,新発田市スポーツ協会の加盟団体一覧
 23210,刈谷市,刈谷市グラウンド・ゴルフ連盟,連盟,,,,,2013(平成25)年度にグラウンド・ゴルフ連盟が刈谷市レクリエーション協会より移行し,https://www.city.kariya.lg.jp/_res/projects/default_project/_page_/001/006/488/shiryo2-10124.pdf,medium,刈谷市体育協会の加盟団体。会員数 485〜503人(5年間)。計画書の記述で、連絡先はない
 23236,みよし市,みよし市グラウンド・ゴルフ協会,協会,,,,,みよし市グラウンド・ゴルフ協会,https://www.city.aichi-miyoshi.lg.jp/material/files/group/11/080917.pdf,high,代表者名が載っているが、個人名のため省略
 23236,みよし市,三好上グラウンド・ゴルフクラブ,クラブ,,,,,三好上グラウンド・ゴルフクラブ,https://www.city.aichi-miyoshi.lg.jp/material/files/group/11/080917.pdf,high,代表者名が載っているが、個人名のため省略
 23362,扶桑町,扶桑町グラウンド・ゴルフ協会,協会,総合グラウンド,水・金 8:00〜12:00,扶桑町スポーツ協会事務局(扶桑町総合体育館),(93)2441,グラウンド・ゴルフ協会,https://www.town.fuso.lg.jp/_res/projects/default_project/_page_/001/003/962/katudou.pdf,high,会長・副会長は個人名のため省略。電話は市外局番が本文に無い
 23442,東浦町,東浦町老人クラブ連合会グラウンドゴルフ部,クラブ,,,,,東浦町老人クラブ連合会グラウンドゴルフ部,https://www.town.aichi-higashiura.lg.jp/material/files/group/91/20261023genmen.pdf,high,施設使用料の減免を認めた団体の一覧。代表者名・日付は省略
+23447,武豊町,武豊町グラウンド・ゴルフクラブ,クラブ,鹿狩池公園グラウンド、中央公民館グラウンド、運動公園,毎週木曜日 8:00〜11:00,,,グラウンド・ゴルフクラブ,https://www.town.taketoyo.lg.jp/_res/projects/default_project/_page_/001/002/037/2026-04.pdf,medium,講座・サークル案内の表。クラブ名と活動場所の対応は、表の崩れから判断した
+24562,紀宝町,紀宝スポーツクラブ グラウンドゴルフ教室,クラブ,井内多目的広場、井田神社の上、田代公園、深田グランド、鮒田区憩いの広場,朝〜昼の時間帯(8:00〜12:00、9:00〜12:00、9:30〜12:00、13:00〜15:00 など)。雨天中止。曜日は表の崩れで確定できない,,,グラウンドゴルフ 小学1年生以上 8:00~12:00 井内多目的地広場 雨天の場合中止,https://www.town.kiho.lg.jp/wp-content/uploads/2025/07/reiwa7nendo-sportsclub-list.pdf,medium,複数のグラウンドゴルフ教室がある。対象は小学1年生以上と18歳以上の2種類
+31401,日南町,日南町スポーツ協会 グラウンドゴルフ部,その他,,,,,グラウンドゴルフ部,https://www.town.nichinan.lg.jp/material/files/group/10/20230529kaisoku.pdf,high,日南町スポーツ協会の部(会則第7条)
+40224,福津市,東福間グランドゴルフクラブ,クラブ,,,,,東福間グランドゴルフクラブ,https://www.city.fukutsu.lg.jp/material/files/group/28/teikiitiranR8.pdf,medium,学校施設の定期利用団体の一覧。活動場所・曜日は表の崩れで確定できない
+44205,佐伯市,佐伯市グラウンド・ゴルフ協会,協会,,,,,佐伯市グラウンド・ゴルフ協会,https://www.city.saiki.oita.jp/kiji0033658/3_3658_45423_up_sm6tmt84.pdf,high,佐伯市スポーツ協会の加盟団体

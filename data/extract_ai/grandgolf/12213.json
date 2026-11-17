@@ -1,0 +1,30 @@
+{
+  "municipality_code": "12213",
+  "municipality_name": "東金市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.togane.chiba.jp/cmsfiles/contents/0000005/5830/siryou.pdf",
+      "title": "資料編(スポーツ施設)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "東金市多目的グラウンド",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "東金アリーナに隣接したスポーツ広場で夜間照明を備える。野球・ソフトボール・サッカー・グラウンドゴルフなどに利用",
+      "gg_evidence": "野球・ソフトボール・サッカー・グラウンドゴルフなどに利用されている",
+      "pdf_url": "https://www.city.togane.chiba.jp/cmsfiles/contents/0000005/5830/siryou.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

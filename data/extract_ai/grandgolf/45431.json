@@ -1,0 +1,30 @@
+{
+  "municipality_code": "45431",
+  "municipality_name": "美郷町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.miyazaki-misato.lg.jp/kiji003561/3_561_1209_up_zdl0xkz1.pdf",
+      "title": "美郷町社会体育施設一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "西郷総合グラウンド",
+      "address": "美郷町西郷1870番地",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "野球・ソフトボール・サッカー・グラウンドゴルフ。夜間照明設備あり",
+      "gg_evidence": "美郷町西郷 1870 番地 野球・ソフトボール・サッカー・グラウンドゴルフ",
+      "pdf_url": "https://www.town.miyazaki-misato.lg.jp/kiji003561/3_561_1209_up_zdl0xkz1.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

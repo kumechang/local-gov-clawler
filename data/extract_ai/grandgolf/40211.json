@@ -1,0 +1,59 @@
+{
+  "municipality_code": "40211",
+  "municipality_name": "筑後市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.chikugo.lg.jp/var/rev0/0059/0186/2013218151528.pdf",
+      "title": "市民の森公園のご案内2",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.chikugo.lg.jp/var/rev0/0059/7802/126102393645.pdf",
+      "title": "ちっごスポーツフェスティバル大会結果一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "大会要項"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "市民の森公園 軽スポーツ広場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "グラウンドゴルフをはじめ様々な軽スポーツができる多目的広場",
+      "gg_evidence": "グラウンドゴルフをはじめ、",
+      "pdf_url": "https://www.city.chikugo.lg.jp/var/rev0/0059/0186/2013218151528.pdf",
+      "confidence": "medium",
+      "note": "OCRで読んだPDFで、文が崩れている"
+    }
+  ],
+  "events": [
+    {
+      "event_name": "ちっごスポーツフェスティバル グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "10月8日(水)",
+      "date_start": "2025-10-08",
+      "date_end": "2025-10-08",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "窓ケ原公園グラウンド",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンドゴルフ大会【10月8日(水)窓ケ原公園グラウンド】124人参加",
+      "pdf_url": "https://www.city.chikugo.lg.jp/var/rev0/0059/7802/126102393645.pdf",
+      "confidence": "medium",
+      "note": "大会結果の一覧(124人参加)。年は書かれていない。10月8日が水曜日になる直近の過去の年(2025年)とした"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,17 @@
+{
+  "municipality_code": "46404",
+  "municipality_name": "長島町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.nagashima.lg.jp/wp-content/uploads/2026/03/2026花フェスタポスターメール校正用05.pdf",
+      "title": "花フェスタ(2026年)ポスター",
+      "relevant": false,
+      "skip_reason": "GG会場の案内図の記載のみで、日時・名称が確定できない",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

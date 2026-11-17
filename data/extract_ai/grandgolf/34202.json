@@ -1,0 +1,30 @@
+{
+  "municipality_code": "34202",
+  "municipality_name": "呉市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kure.lg.jp/uploaded/attachment/113340.pdf",
+      "title": "テニスコート・弓道場整備用地(呉昭和高校跡地グラウンド等)のスポーツ使用に関わる資料",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "呉昭和高校跡地グラウンド",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "使用可能な用途: ソフトボール(ゴム)、軟式野球、グラウンドゴルフ、サッカー等(取扱要綱に基づく暫定的な使用)",
+      "gg_evidence": "グラウンド ソフトボール(ゴム),軟式野球,グラウンドゴルフ,",
+      "pdf_url": "https://www.city.kure.lg.jp/uploaded/attachment/113340.pdf",
+      "confidence": "medium",
+      "note": "資料の題名にある『呉昭和高校跡地グラウンド等』の『グラウンド』の区分の記述"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

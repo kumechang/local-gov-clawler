@@ -1,6 +1,11 @@
 ﻿municipality_code,municipality_name,facility_name,address,phone,inquiry_dept,inquiry_phone,usage_note,gg_evidence,pdf_url,confidence,note
+02201,青森市,盛運輸サンドーム(屋内グラウンド),,,,,野球、サッカー、グラウンドゴルフなどに、例年17万人を超える利用,野球、サッカー、グラウンドゴルフなど、例年17万人を超える方々に利,https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/009/973/260119_setumeikaisiryou2.pdf,medium,整備計画の説明資料の記述。利用種目別の割合でグラウンドゴルフは7.2%
+03206,北上市,和賀川グラウンドゴルフ公認コース,,,,,,和賀川グラウンドゴルフ公認コース,https://www.city.kitakami.iwate.jp/material/files/group/12/R805.pdf,medium,和賀川グリーンパークの施設一覧に載る名前(展勝地プールと並記)
+09215,那須烏山市,大桶運動公園 野球場北側広場,,,,,グラウンドゴルフ 1面,野球場北側広場 グラウンドゴルフ 1面,https://www.city.nasukarasuyama.lg.jp/data/doc/1776852068_doc_116_0.pdf,medium,施設・備品台帳の記述
+10345,吉岡町,リバートピア吉岡 グラウンドゴルフ場,,,,,パークゴルフ場・ケイマンゴルフ場とともに、緑地運動公園内の各種ゴルフ場,グラウンドゴルフ場,https://www.town.yoshioka.lg.jp/kosodate/pdf/78bd1cad38a381c0b9ab51aea85ce5a5_1.pdf,medium,案内図付きのパンフレット。文字が崩れており、施設名は図の見出しから判断
 11231,桶川市,新小針領家グラウンド(A・B),桶川市大字小針領家,,,,主に利用する加盟団体に軟式野球連盟・ソフトボール連盟・サッカー協会・グラウンド・ゴルフ協会,グラウンド・ゴルフ協会,https://www.city.okegawa.lg.jp/material/files/group/57/sportskyokai_70kinenshi.pdf,medium,グラウンドゴルフの専用設備の記述はなく、加盟団体の利用の記述
 11326,毛呂山町,毛呂山総合公園 芝生広場,,,,,ピクニックやグラウンドゴルフなどの軽スポーツができる,グラウンドゴルフなどの,https://www.town.moroyama.saitama.jp/material/files/group/26/SKMBT_C284e17091414231.pdf,medium,段組みの崩れで『4 芝生広場』の説明と判断した
+12213,東金市,東金市多目的グラウンド,,,,,東金アリーナに隣接したスポーツ広場で夜間照明を備える。野球・ソフトボール・サッカー・グラウンドゴルフなどに利用,野球・ソフトボール・サッカー・グラウンドゴルフなどに利用されている,https://www.city.togane.chiba.jp/cmsfiles/contents/0000005/5830/siryou.pdf,high,
 18208,あわら市,トリムパークかなづ グラウンドゴルフコース,,,あわら市教育委員会,,申請書の利用施設の選択肢に『グラウンドゴルフコース』『マレットゴルフコース』『ゲートボール場』などがある,グラウンドゴルフコース,https://www.city.awara.lg.jp/online/6200/6230/6233/p000526_d/fil/6.pdf,medium,申請書の様式。料金・所在地の記載はない
 23212,安城市,安城市西部グラウンドゴルフ場,,,西部公民館(申込窓口),0566-76-9393,無料。4月〜10月 午前6時〜正午・午後1時〜午後7時または日没まで、11月〜3月 午前8時30分〜正午・午後1時〜午後4時30分(12/29〜1/3は利用不可)。窓口・電話で予約(先着順)。グラウンドゴルフ、ゲートボール、モルックの利用,安城市西部グラウンドゴルフ場 利用案内,https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/documents/seibuggriyouannnair0806.pdf,high,本文の住所(安城市福釜町釜ヶ渕20番地1)は申込窓口の西部公民館のもので、グラウンドゴルフ場の所在地と確定できないため address は空
 23212,安城市,安城市総合運動公園 多目的グラウンド,,,,,グラウンドゴルフは最大2コース(サッカー 大人最大1面、ゲートボール 最大12面),グラウンドゴルフ 最大2コース,https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/documents/shisetsusyousaitamoku.pdf,medium,行事予定表の会場『多目的グラウンド』と同じ施設とみられるが、PDF上で明記はない
@@ -14,3 +19,8 @@
 23302,東郷町,町民運動広場(町民グラウンド),,,,,利用種目: 軟式野球・ソフトボール・グラウンドゴルフ等,町民運動広場(町民グラウンド) 軟式野球・ソフトボール・グラウンドゴルフ等,https://www.town.aichi-togo.lg.jp/material/files/group/25/riyounotebiki.pdf,high,
 23302,東郷町,愛知池運動公園運動場,,,,,利用種目: 陸上競技・ソフトボール・サッカー・グラウンドゴルフ等,愛知池運動公園運動場 陸上競技・ソフトボール・サッカー・グラウンドゴルフ等,https://www.town.aichi-togo.lg.jp/material/files/group/25/riyounotebiki.pdf,high,
 23302,東郷町,境川緑地公園 第2多目的運動広場,,,,,利用種目: 少年サッカー・グラウンドゴルフ・ハンドボール等,第2多目的運動広場 少年サッカー・グラウンドゴルフ・ハンドボール等,https://www.town.aichi-togo.lg.jp/material/files/group/25/riyounotebiki.pdf,medium,『境川緑地公園』は第1・第2多目的運動広場の左見出しで、第2のみの行か表の崩れで確定できない
+27215,寝屋川市,池の里市民交流センター(サブグラウンド・グラウンド),,,,,フットサル、グラウンドゴルフなど,グラウンドゴルフなど,https://www.city.neyagawa.osaka.jp/material/files/group/117/annaizu.pdf,medium,案内図のため、所在地・連絡先の記載はない。サブグラウンドとグラウンドのどちらで行えるかは、図の崩れで確定できない
+29402,明日香村,ニュースポーツ広場(明日香村),,,,,"面積約2,500㎡。グランドゴルフ(8コース)をはじめ、ボール遊びなど様々な利用が可能",グランドゴルフ(8コース) をはじめとして,https://www.asukamura.jp/files/syogaigakusyu_syakaitaiiku_03.pdf,medium,OCRで読んだPDF。表記は『グランドゴルフ』
+34202,呉市,呉昭和高校跡地グラウンド,,,,,使用可能な用途: ソフトボール(ゴム)、軟式野球、グラウンドゴルフ、サッカー等(取扱要綱に基づく暫定的な使用),"グラウンド ソフトボール(ゴム),軟式野球,グラウンドゴルフ,",https://www.city.kure.lg.jp/uploaded/attachment/113340.pdf,medium,資料の題名にある『呉昭和高校跡地グラウンド等』の『グラウンド』の区分の記述
+40211,筑後市,市民の森公園 軽スポーツ広場,,,,,グラウンドゴルフをはじめ様々な軽スポーツができる多目的広場,グラウンドゴルフをはじめ、,https://www.city.chikugo.lg.jp/var/rev0/0059/0186/2013218151528.pdf,medium,OCRで読んだPDFで、文が崩れている
+45431,美郷町,西郷総合グラウンド,美郷町西郷1870番地,,,,野球・ソフトボール・サッカー・グラウンドゴルフ。夜間照明設備あり,美郷町西郷 1870 番地 野球・ソフトボール・サッカー・グラウンドゴルフ,https://www.town.miyazaki-misato.lg.jp/kiji003561/3_561_1209_up_zdl0xkz1.pdf,high,

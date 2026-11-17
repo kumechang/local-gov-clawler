@@ -1,0 +1,67 @@
+{
+  "municipality_code": "28464",
+  "municipality_name": "太子町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.hyogo-taishi.lg.jp/material/files/group/2/gyoujiyotei_r809.pdf",
+      "title": "令和8年9月行事予定表",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    },
+    {
+      "pdf_url": "https://www.town.hyogo-taishi.lg.jp/material/files/group/2/gyoujiyotei_r803.pdf",
+      "title": "令和8年3月行事予定表",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第53回グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "9月12日(土) 9:00~",
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-12",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "丸尾建築総合公園 町民グラウンド",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "町民体育館",
+      "contact_phone": "",
+      "evidence": "第53回グラウンドゴルフ大会 9:00~ 丸尾建築総合公園 町民グラウンド 町民体育館",
+      "pdf_url": "https://www.town.hyogo-taishi.lg.jp/material/files/group/2/gyoujiyotei_r809.pdf",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "event_name": "第52回グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "3月7日(土) 9:00~",
+      "date_start": "2026-03-07",
+      "date_end": "2026-03-07",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "丸尾建築総合公園町民グラウンド",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "町民体育館",
+      "contact_phone": "",
+      "evidence": "第52回グラウンドゴルフ大会 9:00~ 丸尾建築総合公園町民グラウンド 町民体育館",
+      "pdf_url": "https://www.town.hyogo-taishi.lg.jp/material/files/group/2/gyoujiyotei_r803.pdf",
+      "confidence": "high",
+      "note": "令和8年3月の行事予定表"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

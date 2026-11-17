@@ -1,0 +1,30 @@
+{
+  "municipality_code": "40224",
+  "municipality_name": "福津市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.fukutsu.lg.jp/material/files/group/28/teikiitiranR8.pdf",
+      "title": "令和8年度学校施設 定期利用団体",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "団体紹介"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "東福間グランドゴルフクラブ",
+      "org_kind": "クラブ",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "東福間グランドゴルフクラブ",
+      "pdf_url": "https://www.city.fukutsu.lg.jp/material/files/group/28/teikiitiranR8.pdf",
+      "confidence": "medium",
+      "note": "学校施設の定期利用団体の一覧。活動場所・曜日は表の崩れで確定できない"
+    }
+  ],
+  "unsure": []
+}

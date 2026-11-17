@@ -1,0 +1,17 @@
+{
+  "municipality_code": "40345",
+  "municipality_name": "新宮町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.shingu.fukuoka.jp/material/files/group/20/012.pdf",
+      "title": "新体育館建設基本構想資料編",
+      "relevant": false,
+      "skip_reason": "整備構想(計画)の資料",
+      "doc_kind": "計画"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

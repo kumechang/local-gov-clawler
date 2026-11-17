@@ -1,0 +1,17 @@
+{
+  "municipality_code": "47361",
+  "municipality_name": "久米島町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.kumejima.okinawa.jp/docs/2025092900043/file_contents/r81004.pdf",
+      "title": "町民運動会プログラム",
+      "relevant": false,
+      "skip_reason": "運動会の種目の一文のみ",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

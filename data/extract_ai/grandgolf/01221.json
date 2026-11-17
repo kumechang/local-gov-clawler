@@ -1,0 +1,22 @@
+{
+  "municipality_code": "01221",
+  "municipality_name": "名寄市",
+  "documents": [
+    {
+      "pdf_url": "http://www.city.nayoro.lg.jp/section/sports/vdh2d10000005yfu-att/prkeql000004esal.pdf",
+      "title": "アリーナ(利用案内)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "http://www.city.nayoro.lg.jp/section/sports/vdh2d10000005yfu-att/prkeql000004esal.pdf",
+      "note": "アリーナの利用できる種目にグラウンド・ゴルフがあるが、施設の正式名称が抜粋では確定できない"
+    }
+  ]
+}

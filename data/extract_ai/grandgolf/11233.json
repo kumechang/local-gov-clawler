@@ -1,0 +1,17 @@
+{
+  "municipality_code": "11233",
+  "municipality_name": "北本市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kitamoto.lg.jp/material/files/group/5/26382210.pdf",
+      "title": "わくわくハッピー市民活動フェスタチラシ",
+      "relevant": false,
+      "skip_reason": "婦人会の活動紹介の一文のみ",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

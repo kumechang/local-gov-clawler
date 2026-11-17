@@ -1,0 +1,35 @@
+{
+  "municipality_code": "02202",
+  "municipality_name": "弘前市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.hirosaki.aomori.jp/fukushi/sports/2607_HP_sportskyoshitsu.pdf",
+      "title": "〈7月掲載〉各種スポーツ・体験教室",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "広報誌"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "弘前グラウンドゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "弘前グラウンドゴルフ協会事務局",
+      "pdf_url": "https://www.city.hirosaki.aomori.jp/fukushi/sports/2607_HP_sportskyoshitsu.pdf",
+      "confidence": "high",
+      "note": "問合せ先の担当者名・携帯電話は個人の連絡先のため省略"
+    }
+  ],
+  "unsure": [
+    {
+      "pdf_url": "https://www.city.hirosaki.aomori.jp/fukushi/sports/2607_HP_sportskyoshitsu.pdf",
+      "note": "『令和8年度市民グラウンド・ゴルフ初心者教室』の日時・会場が、複数の教室が並ぶ表の崩れで確定できない(『とき 7月12日・26日(日)』が別の教室の可能性)"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "municipality_code": "28213",
+  "municipality_name": "西脇市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.nishiwaki.lg.jp/material/files/group/19/r8youkou3.pdf",
+      "title": "令和8年度大会要項",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "大会要項"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "グラウンド・ゴルフ大会(令和8年度大会要項)",
+      "event_kind": "大会",
+      "date_text": "10月15日(木)",
+      "date_start": "2026-10-15",
+      "date_end": "2026-10-15",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "西脇市グラウンド・ゴルフ協会",
+      "target": "西脇市グラウンド・ゴルフ協会会員のみ(申込期限までに会員登録をした場合も可)",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "西脇市グラウンド・ゴルフ協会会員のみ",
+      "pdf_url": "https://www.city.nishiwaki.lg.jp/material/files/group/19/r8youkou3.pdf",
+      "confidence": "low",
+      "note": "10月15日(木)の記述と、表の崩れにより大会名・会場が確定できない。男女個人戦8ホール×3ラウンド24ホールのストロークプレー"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

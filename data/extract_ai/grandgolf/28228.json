@@ -1,0 +1,51 @@
+{
+  "municipality_code": "28228",
+  "municipality_name": "加東市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kato.lg.jp/material/files/group/1/R9_2.pdf",
+      "title": "令和9年2月行事予定",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    },
+    {
+      "pdf_url": "https://www.city.kato.lg.jp/material/files/group/1/R8_11.pdf",
+      "title": "令和8年11月行事予定",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "北播磨広域定住自立圏グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "2月23日(火)",
+      "date_start": "2027-02-23",
+      "date_end": "2027-02-23",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "滝野総合公園多目的グラウンド",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "北播磨広域定住自立圏グラウンド・ゴルフ大会",
+      "pdf_url": "https://www.city.kato.lg.jp/material/files/group/1/R9_2.pdf",
+      "confidence": "medium",
+      "note": "令和9年2月の行事予定(令和8年10月1日更新)"
+    }
+  ],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.city.kato.lg.jp/material/files/group/1/R8_11.pdf",
+      "note": "11月の行事予定の『第21回加東市ふれあい球技大会』は種目がペタンク・ゲートボール・卓球で、グラウンド・ゴルフを含む別の行事(地区親善家庭バレーボール、グラウンド・ゴルフ)との対応が崩れて確定できない"
+    }
+  ]
+}

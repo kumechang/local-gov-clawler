@@ -1,0 +1,17 @@
+{
+  "municipality_code": "13112",
+  "municipality_name": "世田谷区",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.setagaya.lg.jp/documents/4902/dai4gou.pdf",
+      "title": "上用賀公園拡張事業公園づくりニュース",
+      "relevant": false,
+      "skip_reason": "公園整備の計画資料",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}
