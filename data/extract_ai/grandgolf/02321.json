@@ -1,0 +1,22 @@
+{
+  "municipality_code": "02321",
+  "municipality_name": "鰺ヶ沢町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.ajigasawa.lg.jp/kurashi/shisetsu/sportsshisetsu.files/seihokugo_sportsshisetsu_20201221.pdf",
+      "title": "西北五圏域スポーツ施設一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.town.ajigasawa.lg.jp/kurashi/shisetsu/sportsshisetsu.files/seihokugo_sportsshisetsu_20201221.pdf",
+      "note": "『芝生広場 グラウンドゴルフ等』の施設名が表の崩れで確定できない"
+    }
+  ]
+}

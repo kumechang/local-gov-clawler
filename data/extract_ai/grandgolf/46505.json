@@ -1,0 +1,17 @@
+{
+  "municipality_code": "46505",
+  "municipality_name": "屋久島町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.yakushima.kagoshima.jp/material/files/group/19/20260810_68kumagetaikaiseiseki.pdf",
+      "title": "第67回県民スポーツ大会熊毛地区大会 競技別成績表",
+      "relevant": false,
+      "skip_reason": "成績表で、開催日・会場が無い",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

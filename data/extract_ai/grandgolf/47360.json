@@ -1,0 +1,17 @@
+{
+  "municipality_code": "47360",
+  "municipality_name": "伊是名村",
+  "documents": [
+    {
+      "pdf_url": "https://vill.izena.okinawa.jp/userfiles/files/autoupload/2020/12/1607655435.pdf",
+      "title": "地域包括支援センターだより No.20",
+      "relevant": false,
+      "skip_reason": "住民の意見の中の一言で、施設・イベント・団体の記述ではない",
+      "doc_kind": "広報誌"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

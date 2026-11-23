@@ -158,6 +158,10 @@ def test_weekly_diff(tmp_path):
     assert "新しく 1、無くなった 1" in text and "福井県Z村" in text and "福井県Y町" in text
     added = (tmp_path / "out/grandgolf_places_new.csv").read_text(encoding="utf-8-sig")
     assert "u3" in added and "u1" not in added
+    allcsv = (tmp_path / "out/grandgolf_diff_all.csv").read_text(encoding="utf-8-sig")
+    assert "区分,項目" in allcsv and "新しい,ワードのあったページ(場所)" in allcsv and "無くなった,ワードのあったページ(場所)" in allcsv and "u3" in allcsv
+    munis = (tmp_path / "out/grandgolf_diff_municipalities.csv").read_text(encoding="utf-8-sig")
+    assert "新しく見つかった,3,福井県Z村" in munis and "無くなった,2,福井県Y町" in munis
     assert "前週のCSVが無い" in diff_mod.build(tmp_path / "none", new, tmp_path / "o2")
     wf = (ROOT / ".github/workflows/weekly-batch.yml").read_text(encoding="utf-8")
     assert "prev/event_focus" in wf and "--list event" in wf

@@ -1,0 +1,94 @@
+{
+  "municipality_code": "03206",
+  "municipality_name": "北上市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kitakami.iwate.jp/material/files/group/12/R805.pdf",
+      "title": "2026年度スポーツ施設行事予定表",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "和賀川グラウンドゴルフ公認コース",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "和賀川グラウンドゴルフ公認コース",
+      "pdf_url": "https://www.city.kitakami.iwate.jp/material/files/group/12/R805.pdf",
+      "confidence": "medium",
+      "note": "和賀川グリーンパークの施設一覧に載る名前(展勝地プールと並記)"
+    }
+  ],
+  "events": [
+    {
+      "event_name": "グラウンド・ゴルフ 春季交流大会",
+      "event_kind": "大会",
+      "date_text": "4/15(水)(予備日 4/16(木))",
+      "date_start": "2026-04-15",
+      "date_end": "2026-04-15",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "4/15(水) グラウンド・ゴルフ 春季交流大会(予備日:4/16(木))",
+      "pdf_url": "https://www.city.kitakami.iwate.jp/material/files/group/12/R805.pdf",
+      "confidence": "medium",
+      "note": "会場は、行事と施設の対応が表の崩れで確定できないため空"
+    },
+    {
+      "event_name": "グラウンド・ゴルフ 夏季交流大会",
+      "event_kind": "大会",
+      "date_text": "5/20(水)(予備日 5/27(水))",
+      "date_start": "2026-05-20",
+      "date_end": "2026-05-20",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "5/20(水) グラウンド・ゴルフ 夏季交流大会(予備日:5/27(水))",
+      "pdf_url": "https://www.city.kitakami.iwate.jp/material/files/group/12/R805.pdf",
+      "confidence": "medium",
+      "note": "会場は空(同上)"
+    },
+    {
+      "event_name": "北海道・東北 グラウンド・ゴルフ交歓大会",
+      "event_kind": "大会",
+      "date_text": "7/1(水)~2(木)(準備日 6/30(火))",
+      "date_start": "2026-07-01",
+      "date_end": "2026-07-02",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "7/1(水)~2(木) 北海道・東北 グラウンド・ゴルフ交歓大会(準備日:6/30(火))",
+      "pdf_url": "https://www.city.kitakami.iwate.jp/material/files/group/12/R805.pdf",
+      "confidence": "medium",
+      "note": "会場は空(同上)"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

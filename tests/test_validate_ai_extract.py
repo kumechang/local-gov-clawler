@@ -65,6 +65,8 @@ def test_build_ai_extract_csv(tmp_path):
     src.mkdir()
     (src / "11239.json").write_text(json.dumps({"municipality_code": "11239", "municipality_name": "坂戸市", "events": [{"event_name": "x", "date_start": "2026-04-29", "pdf_url": URL}], "facilities": [], "organizations": [], "unsure": [{"pdf_url": URL, "note": "n"}]}, ensure_ascii=False), encoding="utf-8")
     c = m2.build(src, tmp_path / "out", "grandgolf")
-    assert c == {"facilities": 0, "events": 1, "organizations": 0, "unsure": 1, "municipalities": 1}
+    assert c == {"facilities": 0, "events": 1, "organizations": 0, "unsure": 1, "municipalities": 1, "all": 1, "documents": 0}
+    allcsv = (tmp_path / "out" / "grandgolf_ai_all.csv").read_text(encoding="utf-8-sig")
+    assert "イベント,11239,坂戸市,x" in allcsv and (tmp_path / "out" / "grandgolf_ai_documents.csv").exists()
     text = (tmp_path / "out" / "grandgolf_ai_events.csv").read_text(encoding="utf-8-sig")
     assert "11239,坂戸市,x" in text and "2026-04-29" in text

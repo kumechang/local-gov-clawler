@@ -1,0 +1,22 @@
+{
+  "municipality_code": "02205",
+  "municipality_name": "五所川原市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.goshogawara.lg.jp/kyouiku/sports/files/azigasawamati.pdf",
+      "title": "鯵ヶ沢町スポーツ施設一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.city.goshogawara.lg.jp/kyouiku/sports/files/azigasawamati.pdf",
+      "note": "鯵ヶ沢町(五所川原市のサイトに掲載)の施設一覧に『芝生広場 グラウンドゴルフ等 8時〜19時』があるが、施設名の対応が表の崩れで確定できない。また対象は五所川原市でなく鰺ヶ沢町"
+    }
+  ]
+}

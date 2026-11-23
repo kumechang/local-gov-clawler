@@ -1,0 +1,54 @@
+{
+  "municipality_code": "04505",
+  "municipality_name": "美里町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.misato.miyagi.jp/10shisetu/pdf/R8tourokusa-kuru.pdf",
+      "title": "美里町サークル情報",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "団体紹介"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "松ヶ崎グラウンドゴルフ会",
+      "org_kind": "同好会",
+      "activity_place": "",
+      "activity_schedule": "毎週月曜日(第1月曜日を除く) 9:00〜12:00",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "松ヶ崎グラウンドゴルフ会 毎週月曜日(第1月曜日を除く) 9:00~12:00",
+      "pdf_url": "https://www.town.misato.miyagi.jp/10shisetu/pdf/R8tourokusa-kuru.pdf",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "org_name": "常盤会グランドゴルフ",
+      "org_kind": "同好会",
+      "activity_place": "",
+      "activity_schedule": "毎週水曜日",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "常盤会グランドゴルフ 毎週水曜日",
+      "pdf_url": "https://www.town.misato.miyagi.jp/10shisetu/pdf/R8tourokusa-kuru.pdf",
+      "confidence": "medium",
+      "note": "表の崩れで時間は確定できない"
+    },
+    {
+      "org_name": "なかよしグランドゴルフ愛好会",
+      "org_kind": "同好会",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "なかよしグランドゴルフ愛好会",
+      "pdf_url": "https://www.town.misato.miyagi.jp/10shisetu/pdf/R8tourokusa-kuru.pdf",
+      "confidence": "medium",
+      "note": "活動日は表の崩れで確定できない"
+    }
+  ],
+  "unsure": []
+}

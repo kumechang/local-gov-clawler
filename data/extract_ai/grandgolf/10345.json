@@ -1,0 +1,30 @@
+{
+  "municipality_code": "10345",
+  "municipality_name": "吉岡町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.yoshioka.lg.jp/kosodate/pdf/78bd1cad38a381c0b9ab51aea85ce5a5_1.pdf",
+      "title": "施設のご案内",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "リバートピア吉岡 グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "パークゴルフ場・ケイマンゴルフ場とともに、緑地運動公園内の各種ゴルフ場",
+      "gg_evidence": "グラウンドゴルフ場",
+      "pdf_url": "https://www.town.yoshioka.lg.jp/kosodate/pdf/78bd1cad38a381c0b9ab51aea85ce5a5_1.pdf",
+      "confidence": "medium",
+      "note": "案内図付きのパンフレット。文字が崩れており、施設名は図の見出しから判断"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

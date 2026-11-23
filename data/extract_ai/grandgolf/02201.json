@@ -1,0 +1,59 @@
+{
+  "municipality_code": "02201",
+  "municipality_name": "青森市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/005/208/2026nen7gatubun.pdf",
+      "title": "令和8年7月スポーツイベント",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "広報誌"
+    },
+    {
+      "pdf_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/009/973/260119_setumeikaisiryou2.pdf",
+      "title": "(仮称)新青森市屋内グラウンド整備について",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "計画"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "盛運輸サンドーム(屋内グラウンド)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "野球、サッカー、グラウンドゴルフなどに、例年17万人を超える利用",
+      "gg_evidence": "野球、サッカー、グラウンドゴルフなど、例年17万人を超える方々に利",
+      "pdf_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/009/973/260119_setumeikaisiryou2.pdf",
+      "confidence": "medium",
+      "note": "整備計画の説明資料の記述。利用種目別の割合でグラウンドゴルフは7.2%"
+    }
+  ],
+  "events": [
+    {
+      "event_name": "グラウンド・ゴルフ体験会(2026年7月)",
+      "event_kind": "体験会",
+      "date_text": "7月6日(月)・7月8日(水) 9:00〜(雨天時 7月13日・7月9日)",
+      "date_start": "2026-07-06",
+      "date_end": "2026-07-08",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "野木和公園 / ふるさとの森 / 総合運動公園 三角広場",
+      "organizer": "担当クラブ(油川とまと・ほがらか会・ふるさとの森)",
+      "target": "",
+      "fee": "無料(道具は準備)",
+      "entry": "各担当クラブへ電話で申込み",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "「グラウンド・ゴルフ体験会」",
+      "pdf_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/005/208/2026nen7gatubun.pdf",
+      "confidence": "medium",
+      "note": "3回の体験会(7/6と7/8の2日の記載)。会場は3か所で、日付との対応が崩れている。担当者の氏名・電話番号は個人の連絡先のため省略"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

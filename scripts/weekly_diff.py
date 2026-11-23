@@ -47,6 +47,29 @@ def write_csv(path: Path, rows: list[dict]) -> None:
         w.writerows(rows)
 
 
+# まとめた1枚のCSV(consolidated)に出す列。ファイルごとの列の名前の違いを、共通の列にそろえる
+NAME_KEYS = ("facility_name", "event_name", "page_title", "title")
+URL_KEYS = ("page_url", "pdf_url")
+NOTE_KEYS = ("matched_text", "date_text", "address", "evidence")
+
+
+def consolidate(rows_by_target: list[tuple[str, str, list[dict], list[dict]]], out_dir: Path) -> int:
+    """前週との差分(新しい・無くなった)を、全部まとめた1枚のCSVにする。"""
+    rows = []
+    for _, label, added, removed in rows_by_target:
+        for kind, rs in (("新しい", added), ("無くなった", removed)):
+            for r in rs:
+                first = lambda keys: next((r[k] for k in keys if r.get(k)), "")
+                rows.append({"区分": kind, "項目": label, "都道府県": r.get("prefecture", ""), "自治体コード": r.get("municipality_code", ""), "自治体名": r.get("municipality_name", ""),
+                             "名称": first(NAME_KEYS), "URL": first(URL_KEYS), "日付・住所": r.get("date_start", "") or r.get("address", ""), "根拠・抜粋": first(NOTE_KEYS)[:150]})
+    out_dir.mkdir(parents=True, exist_ok=True)
+    with open(out_dir / "grandgolf_diff_all.csv", "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["区分", "項目", "都道府県", "自治体コード", "自治体名", "名称", "URL", "日付・住所", "根拠・抜粋"])
+        w.writeheader()
+        w.writerows(rows)
+    return len(rows)
+
+
 def build(prev_dir: Path, new_dir: Path, out_dir: Path) -> str:
     lines = ["## 前週との差分", ""]
     if not prev_dir.exists() or not any(prev_dir.glob("*.csv")):
@@ -54,6 +77,7 @@ def build(prev_dir: Path, new_dir: Path, out_dir: Path) -> str:
     lines += ["| 項目 | 前週 | 今週 | 新しい | 無くなった |", "|---|---|---|---|---|"]
     towns_prev: set[str] = set()
     towns_new: set[str] = set()
+    collected = []
     for fname, label, key in TARGETS:
         prev, new = read(prev_dir / fname), read(new_dir / fname)
         added, removed = diff(prev, new, key)
@@ -61,11 +85,18 @@ def build(prev_dir: Path, new_dir: Path, out_dir: Path) -> str:
         write_csv(out_dir / f"{stem}_new.csv", added)
         write_csv(out_dir / f"{stem}_removed.csv", removed)
         lines.append(f"| {label} | {len(prev)} | {len(new)} | {len(added)} | {len(removed)} |")
+        collected.append((fname, label, added, removed))
         if "_detail" not in fname and "pdfs" not in fname:
             towns_prev |= {r["municipality_code"] for r in prev}
             towns_new |= {r["municipality_code"] for r in new}
     gained, lost = sorted(towns_new - towns_prev), sorted(towns_prev - towns_new)
     names = {r["municipality_code"]: f"{r['prefecture']}{r['municipality_name']}" for fname, _, _ in TARGETS[:6] for r in read(new_dir / fname) + read(prev_dir / fname)}
+    n_all = consolidate(collected, out_dir)
+    names2 = dict(names)
+    with open(out_dir / "grandgolf_diff_municipalities.csv", "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["区分", "自治体コード", "自治体名"])
+        w.writeheader()
+        w.writerows([{"区分": "新しく見つかった", "自治体コード": c, "自治体名": names2.get(c, "")} for c in gained] + [{"区分": "無くなった", "自治体コード": c, "自治体名": names2.get(c, "")} for c in lost])
     lines += ["", f"- ワードのあった自治体: 前週 {len(towns_prev)} → 今週 {len(towns_new)}(新しく {len(gained)}、無くなった {len(lost)})"]
     if gained:
         lines.append("  - 新しく: " + "、".join(names.get(c, c) for c in gained[:30]) + (" ほか" if len(gained) > 30 else ""))

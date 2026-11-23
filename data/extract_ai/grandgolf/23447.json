@@ -1,0 +1,30 @@
+{
+  "municipality_code": "23447",
+  "municipality_name": "武豊町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.taketoyo.lg.jp/_res/projects/default_project/_page_/001/002/037/2026-04.pdf",
+      "title": "令和8年度前期カルチャー&スポーツ",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "団体紹介"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "武豊町グラウンド・ゴルフクラブ",
+      "org_kind": "クラブ",
+      "activity_place": "鹿狩池公園グラウンド、中央公民館グラウンド、運動公園",
+      "activity_schedule": "毎週木曜日 8:00〜11:00",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンド・ゴルフクラブ",
+      "pdf_url": "https://www.town.taketoyo.lg.jp/_res/projects/default_project/_page_/001/002/037/2026-04.pdf",
+      "confidence": "medium",
+      "note": "講座・サークル案内の表。クラブ名と活動場所の対応は、表の崩れから判断した"
+    }
+  ],
+  "unsure": []
+}

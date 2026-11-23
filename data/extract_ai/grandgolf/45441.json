@@ -1,0 +1,17 @@
+{
+  "municipality_code": "45441",
+  "municipality_name": "高千穂町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town-takachiho.jp/material/files/group/8/11216743.pdf",
+      "title": "アンケート調査結果",
+      "relevant": false,
+      "skip_reason": "アンケートの集計",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

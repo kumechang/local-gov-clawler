@@ -1,0 +1,80 @@
+{
+  "municipality_code": "31401",
+  "municipality_name": "日南町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.nichinan.lg.jp/material/files/group/10/20230529kaisoku.pdf",
+      "title": "日南町スポーツ協会会則",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "団体紹介"
+    },
+    {
+      "pdf_url": "https://www.town.nichinan.lg.jp/material/files/group/10/sportskkyoukaijigyou.pdf",
+      "title": "日南町スポーツ協会年間行事予定",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "日南町グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "5/16(土)",
+      "date_start": "2026-05-16",
+      "date_end": "2026-05-16",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "三本松グリーンパーク",
+      "organizer": "日南町スポーツ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "5/16(土) 日南町グラウンドゴルフ大会 三本松グリーンパーク",
+      "pdf_url": "https://www.town.nichinan.lg.jp/material/files/group/10/sportskkyoukaijigyou.pdf",
+      "confidence": "medium",
+      "note": "年間行事予定。年は書かれていない。曜日が合う2026年とした"
+    },
+    {
+      "event_name": "阿毘縁高原グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "9/9(水)",
+      "date_start": "2026-09-09",
+      "date_end": "2026-09-09",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "多里山村広場",
+      "organizer": "日南町スポーツ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "9/9(水) 阿毘縁高原グラウンドゴルフ大会 多里山村広場",
+      "pdf_url": "https://www.town.nichinan.lg.jp/material/files/group/10/sportskkyoukaijigyou.pdf",
+      "confidence": "medium",
+      "note": "年間行事予定。年は書かれていない。曜日が合う2026年とした"
+    }
+  ],
+  "organizations": [
+    {
+      "org_name": "日南町スポーツ協会 グラウンドゴルフ部",
+      "org_kind": "その他",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンドゴルフ部",
+      "pdf_url": "https://www.town.nichinan.lg.jp/material/files/group/10/20230529kaisoku.pdf",
+      "confidence": "high",
+      "note": "日南町スポーツ協会の部(会則第7条)"
+    }
+  ],
+  "unsure": []
+}

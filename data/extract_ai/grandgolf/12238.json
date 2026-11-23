@@ -1,0 +1,59 @@
+{
+  "municipality_code": "12238",
+  "municipality_name": "いすみ市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.isumi.lg.jp/material/files/group/64/20230524.pdf",
+      "title": "いすみ市スポーツ協会加盟団体一覧(2023年5月)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "団体紹介"
+    },
+    {
+      "pdf_url": "https://www.city.isumi.lg.jp/material/files/group/64/isumisiminnsupo-tutaikaiyoukou18.pdf",
+      "title": "第18回いすみ市民スポーツ大会要項",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "大会要項"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第18回いすみ市民スポーツ大会 グラウンドゴルフ",
+      "event_kind": "複数競技の大会",
+      "date_text": "10月8日(水)(予備日 10/9(木))",
+      "date_start": "2025-10-08",
+      "date_end": "2025-10-08",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "岬運動場",
+      "organizer": "グラウンドゴルフ協会(いすみ市スポーツ協会の競技別)",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "13 グラウンドゴルフ協会 10 月 8 日(水) 岬運動場",
+      "pdf_url": "https://www.city.isumi.lg.jp/material/files/group/64/isumisiminnsupo-tutaikaiyoukou18.pdf",
+      "confidence": "medium",
+      "note": "年は書かれていない。同じ表の4月13日(日)・10月8日(水)の曜日が合う2025年とした"
+    }
+  ],
+  "organizations": [
+    {
+      "org_name": "いすみ市グラウンドゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "21 グラウンドゴルフ協会",
+      "pdf_url": "https://www.city.isumi.lg.jp/material/files/group/64/20230524.pdf",
+      "confidence": "high",
+      "note": "いすみ市スポーツ協会の加盟団体(2023年5月現在)"
+    }
+  ],
+  "unsure": []
+}

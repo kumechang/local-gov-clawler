@@ -1,0 +1,59 @@
+{
+  "municipality_code": "15206",
+  "municipality_name": "新発田市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.shibata.lg.jp/_res/projects/default_project/_page_/001/001/568/supokamei.pdf",
+      "title": "【加盟団体】一覧表",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "団体紹介"
+    },
+    {
+      "pdf_url": "https://www.city.shibata.lg.jp/_res/projects/default_project/_page_/001/001/568/supo.pdf",
+      "title": "【大会予定】R6スポーツカレンダー",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "グラウンド・ゴルフ(R6スポーツカレンダー)",
+      "event_kind": "大会",
+      "date_text": "09月28日(土)",
+      "date_start": "2024-09-28",
+      "date_end": "2024-09-28",
+      "fiscal_year": 2024,
+      "period": "期間外",
+      "venue": "加治川地区屋外運動場",
+      "organizer": "",
+      "target": "一般",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "09月28日(土) グラウンド・ゴルフ 加治川地区屋外運動場 一般",
+      "pdf_url": "https://www.city.shibata.lg.jp/_res/projects/default_project/_page_/001/001/568/supo.pdf",
+      "confidence": "medium",
+      "note": "令和6年度のカレンダー(過去)"
+    }
+  ],
+  "organizations": [
+    {
+      "org_name": "新発田市グラウンド・ゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンド・ゴルフ協会",
+      "pdf_url": "https://www.city.shibata.lg.jp/_res/projects/default_project/_page_/001/001/568/supokamei.pdf",
+      "confidence": "medium",
+      "note": "新発田市スポーツ協会の加盟団体一覧"
+    }
+  ],
+  "unsure": []
+}

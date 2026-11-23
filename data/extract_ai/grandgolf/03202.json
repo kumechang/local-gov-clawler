@@ -1,0 +1,39 @@
+{
+  "municipality_code": "03202",
+  "municipality_name": "宮古市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.miyako.iwate.jp/material/files/group/38/gennoukandayori19.pdf",
+      "title": "玄翁館だより第19号",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "広報誌"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "目指せホールインワン『グラウンド・ゴルフ大会』(第13回)",
+      "event_kind": "大会",
+      "date_text": "6月7日(日)",
+      "date_start": "2026-06-07",
+      "date_end": "2026-06-07",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "新里生涯学習センター",
+      "organizer": "新里地区生涯スポーツ推進協議会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "目指せホールインワン『グラウンド・ゴルフ大会』",
+      "pdf_url": "https://www.city.miyako.iwate.jp/material/files/group/38/gennoukandayori19.pdf",
+      "confidence": "medium",
+      "note": "開催後の報告記事(28人参加・32ホール)。年は書かれていない。6月7日が日曜日になる直近の年(2026年)とした"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

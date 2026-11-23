@@ -1,0 +1,30 @@
+{
+  "municipality_code": "24562",
+  "municipality_name": "紀宝町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.kiho.lg.jp/wp-content/uploads/2025/07/reiwa7nendo-sportsclub-list.pdf",
+      "title": "令和7年度 紀宝スポーツクラブ プログラム",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "団体紹介"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "紀宝スポーツクラブ グラウンドゴルフ教室",
+      "org_kind": "クラブ",
+      "activity_place": "井内多目的広場、井田神社の上、田代公園、深田グランド、鮒田区憩いの広場",
+      "activity_schedule": "朝〜昼の時間帯(8:00〜12:00、9:00〜12:00、9:30〜12:00、13:00〜15:00 など)。雨天中止。曜日は表の崩れで確定できない",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンドゴルフ 小学1年生以上 8:00~12:00 井内多目的地広場 雨天の場合中止",
+      "pdf_url": "https://www.town.kiho.lg.jp/wp-content/uploads/2025/07/reiwa7nendo-sportsclub-list.pdf",
+      "confidence": "medium",
+      "note": "複数のグラウンドゴルフ教室がある。対象は小学1年生以上と18歳以上の2種類"
+    }
+  ],
+  "unsure": []
+}

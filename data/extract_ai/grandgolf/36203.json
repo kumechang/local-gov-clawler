@@ -1,0 +1,17 @@
+{
+  "municipality_code": "36203",
+  "municipality_name": "小松島市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.komatsushima.lg.jp/fs/6/1/0/3/8/3/_/%E5%A4%A7%E4%BC%9A_%E7%AB%8B%E6%B1%9F%E5%9D%82%E9%87%8E.pdf",
+      "title": "坂野運動広場の大会予定案",
+      "relevant": false,
+      "skip_reason": "グランドゴルフ練習の言及のみ",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

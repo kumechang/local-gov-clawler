@@ -1,0 +1,30 @@
+{
+  "municipality_code": "29402",
+  "municipality_name": "明日香村",
+  "documents": [
+    {
+      "pdf_url": "https://www.asukamura.jp/files/syogaigakusyu_syakaitaiiku_03.pdf",
+      "title": "近隣公園マップ",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "ニュースポーツ広場(明日香村)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "面積約2,500㎡。グランドゴルフ(8コース)をはじめ、ボール遊びなど様々な利用が可能",
+      "gg_evidence": "グランドゴルフ(8コース) をはじめとして",
+      "pdf_url": "https://www.asukamura.jp/files/syogaigakusyu_syakaitaiiku_03.pdf",
+      "confidence": "medium",
+      "note": "OCRで読んだPDF。表記は『グランドゴルフ』"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,30 @@
+{
+  "municipality_code": "44205",
+  "municipality_name": "佐伯市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.saiki.oita.jp/kiji0033658/3_3658_45423_up_sm6tmt84.pdf",
+      "title": "佐伯市スポーツ協会加盟団体一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "団体紹介"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "佐伯市グラウンド・ゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "佐伯市グラウンド・ゴルフ協会",
+      "pdf_url": "https://www.city.saiki.oita.jp/kiji0033658/3_3658_45423_up_sm6tmt84.pdf",
+      "confidence": "high",
+      "note": "佐伯市スポーツ協会の加盟団体"
+    }
+  ],
+  "unsure": []
+}

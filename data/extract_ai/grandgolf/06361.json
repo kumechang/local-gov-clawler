@@ -1,0 +1,22 @@
+{
+  "municipality_code": "06361",
+  "municipality_name": "金山町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.kaneyama.yamagata.jp/material/files/group/1/206.pdf",
+      "title": "金山町行事予定カレンダー2026",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.town.kaneyama.yamagata.jp/material/files/group/1/206.pdf",
+      "note": "『安沢:避難訓練・グラウンドゴルフ大会』『宮:グラウンドゴルフ・レクリエーション芋煮会』(集落ごとの行事)があるが、日付との対応が確定できない"
+    }
+  ]
+}

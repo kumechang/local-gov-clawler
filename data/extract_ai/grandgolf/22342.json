@@ -1,0 +1,17 @@
+{
+  "municipality_code": "22342",
+  "municipality_name": "長泉町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.nagaizumi.lg.jp/material/files/group/6/monitaringu_R7taiiku.pdf",
+      "title": "令和7年度指定管理者モニタリング評価調書",
+      "relevant": false,
+      "skip_reason": "評価調書(町民大会の実施の一文のみ)",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

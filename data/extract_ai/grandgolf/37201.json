@@ -1,0 +1,33 @@
+{
+  "municipality_code": "37201",
+  "municipality_name": "高松市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shisetsu/sports/sports_up20230710.files/2026kohyou7-2koushin.pdf",
+      "title": "施設個票",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shisetsu/sports/sports_up20230710.files/2026kohyou7-5koushin.pdf",
+      "title": "施設個票(プレイセンター)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shisetsu/sports/sports_up20230710.files/2026kohyou7-2koushin.pdf",
+      "note": "『グランドゴルフ大会(年1回、来場者数500〜600人)』が行われる施設名が、抜粋では確定できない"
+    },
+    {
+      "pdf_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shisetsu/sports/sports_up20230710.files/2026kohyou7-5koushin.pdf",
+      "note": "『多目的広場は、グランドゴルフや少年野球等で有効に利用』の施設名が、抜粋では確定できない"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "municipality_code": "09215",
+  "municipality_name": "那須烏山市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.nasukarasuyama.lg.jp/data/doc/1776852068_doc_116_0.pdf",
+      "title": "【大桶運動公園】施設・備品台帳",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.nasukarasuyama.lg.jp/data/doc/1776852257_doc_116_0.pdf",
+      "title": "【緑地運動公園】施設・備品台帳",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "大桶運動公園 野球場北側広場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "グラウンドゴルフ 1面",
+      "gg_evidence": "野球場北側広場 グラウンドゴルフ 1面",
+      "pdf_url": "https://www.city.nasukarasuyama.lg.jp/data/doc/1776852068_doc_116_0.pdf",
+      "confidence": "medium",
+      "note": "施設・備品台帳の記述"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.city.nasukarasuyama.lg.jp/data/doc/1776852257_doc_116_0.pdf",
+      "note": "緑地運動公園の台帳に『多目的競技場 グラウンドゴルフ 2面』とあるが、表の崩れで行の対応が確定できない"
+    }
+  ]
+}

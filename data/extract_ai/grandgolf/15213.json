@@ -1,0 +1,39 @@
+{
+  "municipality_code": "15213",
+  "municipality_name": "燕市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tsubame.niigata.jp/material/files/group/29/yoshida20252.pdf",
+      "title": "2025年度吉田地区行事予定表",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "市民グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "10月4日(土)",
+      "date_start": "2025-10-04",
+      "date_end": "2025-10-04",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "吉田ふれあい広場",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "4 土 市民グラウンド・ゴルフ大会 吉田ふれあい広場",
+      "pdf_url": "https://www.city.tsubame.niigata.jp/material/files/group/29/yoshida20252.pdf",
+      "confidence": "medium",
+      "note": "2025年度の吉田地区の行事予定表。2段組みで月の対応が崩れており、10月と判断(10月4日が土曜日)"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

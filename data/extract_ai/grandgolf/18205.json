@@ -1,0 +1,39 @@
+{
+  "municipality_code": "18205",
+  "municipality_name": "大野市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.ono.fukui.jp/kenko/sports/sports_shingikai.files/0132_20241111.pdf",
+      "title": "資料1-2(スポーツ行事の予定)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "年間予定"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "市民グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "9月5日",
+      "date_start": "",
+      "date_end": "",
+      "fiscal_year": "",
+      "period": "日付不明",
+      "venue": "ふれあい公園芝生広場",
+      "organizer": "大野市・大野市スポーツ協会",
+      "target": "市民",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "9 月 5 日 市民グラウンド・ゴルフ大会 市、市スポ協",
+      "pdf_url": "https://www.city.ono.fukui.jp/kenko/sports/sports_shingikai.files/0132_20241111.pdf",
+      "confidence": "low",
+      "note": "年が書かれていない(スポーツ推進審議会の資料で、令和7年度の行事予定とみられるが断定できない)"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

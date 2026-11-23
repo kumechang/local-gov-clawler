@@ -1,0 +1,22 @@
+{
+  "municipality_code": "02209",
+  "municipality_name": "つがる市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tsugaru.aomori.jp/material/files/group/52/R8seihokugosuports.pdf",
+      "title": "令和8年度西北五圏域スポーツ施設一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.city.tsugaru.aomori.jp/material/files/group/52/R8seihokugosuports.pdf",
+      "note": "『芝生広場 グラウンドゴルフ等 8時〜19時』があるが、どの町の施設か表の崩れで確定できない(鰺ヶ沢町・深浦町の同じ一覧にもある)"
+    }
+  ]
+}

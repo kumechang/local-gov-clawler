@@ -1,0 +1,30 @@
+{
+  "municipality_code": "27215",
+  "municipality_name": "寝屋川市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.neyagawa.osaka.jp/material/files/group/117/annaizu.pdf",
+      "title": "池の里市民交流センター施設案内図",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "池の里市民交流センター(サブグラウンド・グラウンド)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "フットサル、グラウンドゴルフなど",
+      "gg_evidence": "グラウンドゴルフなど",
+      "pdf_url": "https://www.city.neyagawa.osaka.jp/material/files/group/117/annaizu.pdf",
+      "confidence": "medium",
+      "note": "案内図のため、所在地・連絡先の記載はない。サブグラウンドとグラウンドのどちらで行えるかは、図の崩れで確定できない"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

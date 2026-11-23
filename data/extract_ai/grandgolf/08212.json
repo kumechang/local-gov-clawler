@@ -1,0 +1,17 @@
+{
+  "municipality_code": "08212",
+  "municipality_name": "常陸太田市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.hitachiota.ibaraki.jp/data/doc/1631685337_doc_116_0.pdf",
+      "title": "新総合体育館整備基本設計業務プロポーザル実施要領",
+      "relevant": false,
+      "skip_reason": "プロポーザルの要領(計画)",
+      "doc_kind": "計画"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}
