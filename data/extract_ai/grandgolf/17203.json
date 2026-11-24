@@ -1,0 +1,30 @@
+{
+  "municipality_code": "17203",
+  "municipality_name": "小松市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.komatsu.lg.jp/material/files/group/14/chikutaiikukan_siyounotebiki.pdf",
+      "title": "小松市地区体育施設の使用の手引き",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "鶴ヶ島グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "屋外の利用時間は5:00〜22:00。鶴ヶ島グラウンドゴルフ場は日没まで",
+      "gg_evidence": "鶴ヶ島グラウンドゴルフ場にあっては日没まで",
+      "pdf_url": "https://www.city.komatsu.lg.jp/material/files/group/14/chikutaiikukan_siyounotebiki.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

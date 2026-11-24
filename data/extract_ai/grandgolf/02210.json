@@ -1,0 +1,44 @@
+{
+  "municipality_code": "02210",
+  "municipality_name": "平川市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.hirakawa.lg.jp/kokuspohirakawa/kokuminsport/files/groundgolf_shutten.pdf",
+      "title": "出店一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "グラウンド・ゴルフ競技会(ひらかわドリームアリーナ)",
+      "event_kind": "大会",
+      "date_text": "9月26日(土)〜9月27日(日)",
+      "date_start": "2026-09-26",
+      "date_end": "2026-09-27",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "ひらかわドリームアリーナ",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンド・ゴルフ競技会 出店一覧 会期: 9月26日(土)~9月27日(日) 会場: ひらかわドリームアリーナ正面駐車場",
+      "pdf_url": "https://www.city.hirakawa.lg.jp/kokuspohirakawa/kokuminsport/files/groundgolf_shutten.pdf",
+      "confidence": "medium",
+      "note": "出店一覧の会期・会場。年は曜日が合う2026年とした。競技日程(別PDF)は9月27日(日)にグラウンド・ゴルフ競技"
+    }
+  ],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.city.hirakawa.lg.jp/kokuspohirakawa/kokuminsport/files/groundgolf_nittei.pdf",
+      "note": "『〔5〕グラウンド・ゴルフ競技 競技日程』(9月27日(日)12時40分、ひらかわドリームアリーナ)が、どの大会の日程か本文だけでは確定できない"
+    }
+  ]
+}

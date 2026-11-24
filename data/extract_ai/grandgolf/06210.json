@@ -1,0 +1,30 @@
+{
+  "municipality_code": "06210",
+  "municipality_name": "天童市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tendo.yamagata.jp/lifeinfo/sports/2026akaneenjoy.pdf",
+      "title": "2026年度あかねエンジョイクラブご案内",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "天童市グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "天童市グラウンドゴルフ場",
+      "pdf_url": "https://www.city.tendo.yamagata.jp/lifeinfo/sports/2026akaneenjoy.pdf",
+      "confidence": "medium",
+      "note": "あかねエンジョイクラブの案内の記載"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

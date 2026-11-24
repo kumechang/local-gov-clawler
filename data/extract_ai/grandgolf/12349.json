@@ -1,0 +1,17 @@
+{
+  "municipality_code": "12349",
+  "municipality_name": "東庄町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.tohnosho.chiba.jp/material/files/group/14/tohnoshosportsfestival.pdf",
+      "title": "東庄スポーツフェスタ2023チラシ",
+      "relevant": false,
+      "skip_reason": "2023年のチラシ(過去)",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

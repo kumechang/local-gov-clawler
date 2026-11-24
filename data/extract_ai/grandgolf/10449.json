@@ -1,0 +1,73 @@
+{
+  "municipality_code": "10449",
+  "municipality_name": "みなかみ町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.minakami.gunma.jp/life/10bunka_sports/shakaitaiiku/files/20260513_taikaikyousituyoteihyou.pdf",
+      "title": "令和8年度みなかみ町スポーツ大会・各スポーツ教室年間予定表",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "みなかみ町春季グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "",
+      "date_start": "",
+      "date_end": "",
+      "fiscal_year": 2026,
+      "period": "日付不明",
+      "venue": "",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "みなかみ町春季グラウンドゴルフ大会",
+      "pdf_url": "https://www.town.minakami.gunma.jp/life/10bunka_sports/shakaitaiiku/files/20260513_taikaikyousituyoteihyou.pdf",
+      "confidence": "medium",
+      "note": "令和8年度の年間予定表。日付と会場は表の崩れで確定できない"
+    },
+    {
+      "event_name": "みなかみ町秋季グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "",
+      "date_start": "",
+      "date_end": "",
+      "fiscal_year": 2026,
+      "period": "日付不明",
+      "venue": "",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "みなかみ町秋季グラウンドゴルフ大会",
+      "pdf_url": "https://www.town.minakami.gunma.jp/life/10bunka_sports/shakaitaiiku/files/20260513_taikaikyousituyoteihyou.pdf",
+      "confidence": "medium",
+      "note": "令和8年度の年間予定表。日付と会場は表の崩れで確定できない"
+    }
+  ],
+  "organizations": [
+    {
+      "org_name": "みなかみ町グラウンドゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンドゴルフ協会",
+      "pdf_url": "https://www.town.minakami.gunma.jp/life/10bunka_sports/shakaitaiiku/files/20260513_taikaikyousituyoteihyou.pdf",
+      "confidence": "medium",
+      "note": "町スポーツ協会の加盟競技団体(各競技団体主催の行事あり)"
+    }
+  ],
+  "unsure": []
+}

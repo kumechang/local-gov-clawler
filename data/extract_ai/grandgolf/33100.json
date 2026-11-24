@@ -1,0 +1,54 @@
+{
+  "municipality_code": "33100",
+  "municipality_name": "岡山市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000046/46493/1-3keikakuzenntai.pdf",
+      "title": "(3)第2章",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "御津グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "御津グラウンドゴルフ場 平成元年",
+      "pdf_url": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000046/46493/1-3keikakuzenntai.pdf",
+      "confidence": "medium",
+      "note": "計画資料の施設一覧(8コース、芝生)"
+    },
+    {
+      "facility_name": "承芳ふれあい広場グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "承芳ふれあい広場グラウンドゴルフ場",
+      "pdf_url": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000046/46493/1-3keikakuzenntai.pdf",
+      "confidence": "medium",
+      "note": "計画資料の施設一覧(北区、平成9年、8コース)"
+    },
+    {
+      "facility_name": "建部町総合スポーツセンターグラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "建部町総合スポーツセンターグラウンドゴルフ場 昭和 55年",
+      "pdf_url": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000046/46493/1-3keikakuzenntai.pdf",
+      "confidence": "medium",
+      "note": "計画資料の施設一覧(昭和55年、18コース、芝生)"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

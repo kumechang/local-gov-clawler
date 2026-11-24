@@ -1,0 +1,39 @@
+{
+  "municipality_code": "25210",
+  "municipality_name": "野洲市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.yasu.lg.jp/material/files/group/72/R8_SYUUKI_SUPOTAI_YOUKOU3.pdf",
+      "title": "令和8年度野洲市秋季スポーツ大会 大会要項",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "令和8年度野洲市秋季スポーツ大会 グラウンド・ゴルフ",
+      "event_kind": "大会",
+      "date_text": "11月12日(木)",
+      "date_start": "2026-11-12",
+      "date_end": "2026-11-12",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "蓮池の里多目的公園",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "10月31日(土)",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンド・ゴルフ 11 月 12 日(木) 蓮池の里多目的公園 10 月 31 日(土)",
+      "pdf_url": "https://www.city.yasu.lg.jp/material/files/group/72/R8_SYUUKI_SUPOTAI_YOUKOU3.pdf",
+      "confidence": "medium",
+      "note": "大会要項の種目一覧。10月31日(土)は、同じ行の申込期限とみられる"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

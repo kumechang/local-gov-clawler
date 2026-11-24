@@ -1,0 +1,59 @@
+{
+  "municipality_code": "05203",
+  "municipality_name": "横手市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.yokote.lg.jp/_res/projects/default_project/_page_/001/012/073/r8.2.pdf",
+      "title": "令和8年2月 横手市スポーツスケジュール",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.yokote.lg.jp/_res/projects/default_project/_page_/001/003/445/r8.4.pdf.pdf",
+      "title": "横手市社会体育施設使用許可申請書",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "赤坂総合公園グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "使用施設名称及び区分 赤坂総合公園グラウンド・ゴルフ場",
+      "pdf_url": "https://www.city.yokote.lg.jp/_res/projects/default_project/_page_/001/003/445/r8.4.pdf.pdf",
+      "confidence": "medium",
+      "note": "社会体育施設使用許可申請書の施設名の記載例"
+    }
+  ],
+  "events": [
+    {
+      "event_name": "第3回横手カップ室内GG大会",
+      "event_kind": "大会",
+      "date_text": "2月2日(月)",
+      "date_start": "2026-02-02",
+      "date_end": "2026-02-02",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "横手体育館",
+      "organizer": "横手市グラウンド・ゴルフ連盟",
+      "target": "横手市民",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "2月2日(月) 第3回横手カップ室内GG大会 横手体育館 横手市民 横手市グラウンド・ゴルフ連盟",
+      "pdf_url": "https://www.city.yokote.lg.jp/_res/projects/default_project/_page_/001/012/073/r8.2.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

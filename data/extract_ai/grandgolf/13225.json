@@ -1,0 +1,46 @@
+{
+  "municipality_code": "13225",
+  "municipality_name": "稲城市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.inagi.tokyo.jp/_res/projects/default_project/_page_/001/004/106/r8youkou.pdf",
+      "title": "グラウンドゴルフ大会 実施要項",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.inagi.tokyo.jp/_res/projects/default_project/_page_/001/004/106/r8gg_kojin.pdf",
+      "title": "R8グラウンドゴルフ大会結果(個人)",
+      "relevant": false,
+      "skip_reason": "成績表",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第58回稲城市民スポーツ・レクリエーション大会 グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年11月3日(火・祝) 受付8:15〜8:45 競技9:00〜正午(小雨決行)",
+      "date_start": "2026-11-03",
+      "date_end": "2026-11-03",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "稲城長峰ヴェルディフィールド",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "スポーツ推進課",
+      "contact_phone": "378-2111(内線644)",
+      "evidence": "レクリエーション競技 グラウンドゴルフ大会 実施要項 期 日 令和 8 年11月 3 日(火・祝)",
+      "pdf_url": "https://www.city.inagi.tokyo.jp/_res/projects/default_project/_page_/001/004/106/r8youkou.pdf",
+      "confidence": "high",
+      "note": "会場は大会一覧表(別PDF)の記載。電話は市外局番が本文に無い"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

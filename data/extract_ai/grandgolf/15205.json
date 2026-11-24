@@ -1,0 +1,39 @@
+{
+  "municipality_code": "15205",
+  "municipality_name": "柏崎市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kashiwazaki.lg.jp/material/files/group/47/2026suporekugpgg_youkou.pdf",
+      "title": "【要項】2026柏崎スポーツレクリエーショングランプリ グラウンドゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "2026柏崎スポーツレクリエーショングランプリ グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "6/21(日)",
+      "date_start": "2026-06-21",
+      "date_end": "2026-06-21",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "鯖石川記念改修公園(柏崎市橋場町、槙原町)",
+      "organizer": "柏崎市教育委員会(主管 柏崎市スポーツ推進委員協議会、協力 柏崎市地区体育協会連絡協議会)",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "2026柏崎スポーツレクリエーショングランプリ(スポレク GP) ~グラウンドゴルフ大会~ 要項",
+      "pdf_url": "https://www.city.kashiwazaki.lg.jp/material/files/group/47/2026suporekugpgg_youkou.pdf",
+      "confidence": "high",
+      "note": "日時・会場はチラシ(別PDF)の記載"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,17 @@
+{
+  "municipality_code": "15222",
+  "municipality_name": "上越市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.joetsu.niigata.jp/uploaded/attachment/286589.pdf",
+      "title": "いきいきスポーツ出前講座",
+      "relevant": false,
+      "skip_reason": "出前講座の一般的な案内(GG体験は例示)",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

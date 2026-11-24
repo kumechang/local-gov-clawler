@@ -1,9 +1,12 @@
 ﻿municipality_code,municipality_name,org_name,org_kind,activity_place,activity_schedule,contact_dept,contact_phone,evidence,pdf_url,confidence,note
 02202,弘前市,弘前グラウンドゴルフ協会,協会,,,,,弘前グラウンドゴルフ協会事務局,https://www.city.hirosaki.aomori.jp/fukushi/sports/2607_HP_sportskyoshitsu.pdf,high,問合せ先の担当者名・携帯電話は個人の連絡先のため省略
+03215,奥州市,江刺グラウンド・ゴルフ協会藤里支部,協会,,,,,江刺グラウンド・ゴルフ協会藤里支部,https://www.city.oshu.iwate.jp/material/files/group/14/grand.pdf,high,団体の登録情報(団体名・対象 男女・一般)
+04216,富谷市,富谷市グランドゴルフ協会,協会,総合運動公園,総合運動公園の予定表に、月に複数回の利用枠(予備日あり),,,富谷市グランドゴルフ協会(C),https://www.tomiya-city.miyagi.jp/uploads/pdf/R8.10souunyoteihyou.pdf,medium,総合運動公園予定表(令和8年10月分)。曜日・時間は表の崩れで確定できない
 04505,美里町,松ヶ崎グラウンドゴルフ会,同好会,,毎週月曜日(第1月曜日を除く) 9:00〜12:00,,,松ヶ崎グラウンドゴルフ会 毎週月曜日(第1月曜日を除く) 9:00~12:00,https://www.town.misato.miyagi.jp/10shisetu/pdf/R8tourokusa-kuru.pdf,high,
 04505,美里町,常盤会グランドゴルフ,同好会,,毎週水曜日,,,常盤会グランドゴルフ 毎週水曜日,https://www.town.misato.miyagi.jp/10shisetu/pdf/R8tourokusa-kuru.pdf,medium,表の崩れで時間は確定できない
 04505,美里町,なかよしグランドゴルフ愛好会,同好会,,,,,なかよしグランドゴルフ愛好会,https://www.town.misato.miyagi.jp/10shisetu/pdf/R8tourokusa-kuru.pdf,medium,活動日は表の崩れで確定できない
 09213,那須塩原市,那須塩原市グラウンド・ゴルフ協会,協会,,,,,グラウンド・ゴルフ協会,https://www.city.nasushiobara.tochigi.jp/material/files/group/56/r2supokyoukameidanntai.pdf,medium,令和2年度の加盟団体一覧(古い資料)
+10449,みなかみ町,みなかみ町グラウンドゴルフ協会,協会,,,,,グラウンドゴルフ協会,https://www.town.minakami.gunma.jp/life/10bunka_sports/shakaitaiiku/files/20260513_taikaikyousituyoteihyou.pdf,medium,町スポーツ協会の加盟競技団体(各競技団体主催の行事あり)
 11211,本庄市,大久保シニアクラブ,クラブ,児玉小学校グラウンド,"(土) 8:30~12:00。会費 1,000円/年、入会金 1,000円",,,3 グラウンドゴルフ 大久保シニアクラブ,https://www.city.honjo.lg.jp/material/files/group/53/R8dantai.pdf,high,連絡先は個人名・個人の電話番号のため省略
 11225,入間市,高倉グラウンドゴルフ愛好会,同好会,,学校開放の予約枠 2026年11月7日・21日・28日 9:00〜12:30,,,高倉グラウンドゴルフ愛好会,https://www.city.iruma.saitama.jp/material/files/group/39/081029toyooka.pdf,medium,予約一覧のため活動場所の学校名は、段組みから確定できず空
 11231,桶川市,桶川市グラウンドゴルフ協会,協会,,春・夏・秋の親睦大会、毎月の合同練習。年度末に県協主催大会の上位入賞者を表彰。新規加入者向けの講習会,,,本協会には 3 クラブが所属し、親睦と交流を目的として、春・夏・秋の親睦大会や毎月の合同練習を行っています。,https://www.city.okegawa.lg.jp/material/files/group/57/sportskyokai_70kinenshi.pdf,high,平成12年3月発足。3クラブが所属

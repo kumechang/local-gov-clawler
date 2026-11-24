@@ -1,0 +1,30 @@
+{
+  "municipality_code": "21221",
+  "municipality_name": "海津市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kaizu.lg.jp/kanko/cmsfiles/contents/0000003/3968/camp_map.pdf",
+      "title": "駐車場(3)詳細",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "南濃グランドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "南濃グランドゴルフ場",
+      "pdf_url": "https://www.city.kaizu.lg.jp/kanko/cmsfiles/contents/0000003/3968/camp_map.pdf",
+      "confidence": "medium",
+      "note": "駐車場の詳細の資料に載る名前"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,39 @@
+{
+  "municipality_code": "09211",
+  "municipality_name": "矢板市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.yaita.tochigi.jp/uploaded/attachment/23229.pdf",
+      "title": "令和8年度矢板市スポーツ教室一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "グラウンド・ゴルフ教室(令和8年度矢板市スポーツ教室)",
+      "event_kind": "教室",
+      "date_text": "第2・4水曜日 7:30〜12:00",
+      "date_start": "",
+      "date_end": "",
+      "fiscal_year": 2026,
+      "period": "日付不明",
+      "venue": "大進電気グラウンド(運動公園多目的グラウンド)",
+      "organizer": "",
+      "target": "一般(定員100人)",
+      "fee": "保険料500円",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンド・ゴルフ 一般 第2・4水 7:30~12:00 大進電気グラウンド(運動公園多目的グラウンド) 100人 500円",
+      "pdf_url": "https://www.city.yaita.tochigi.jp/uploaded/attachment/23229.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

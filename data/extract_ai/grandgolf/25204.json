@@ -1,0 +1,30 @@
+{
+  "municipality_code": "25204",
+  "municipality_name": "近江八幡市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.omihachiman.lg.jp/material/files/group/132/honpenR6.pdf",
+      "title": "本編",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "日野川グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "日野川グラウンド・ゴルフ場 30,080",
+      "pdf_url": "https://www.city.omihachiman.lg.jp/material/files/group/132/honpenR6.pdf",
+      "confidence": "medium",
+      "note": "計画の施設別の利用者数の表に載る名前(利用者数 30,080人など)"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,17 @@
+{
+  "municipality_code": "07367",
+  "municipality_name": "只見町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.tadami.lg.jp/lifeguide/2026/03/23/calendar2026.pdf",
+      "title": "生涯学習カレンダー",
+      "relevant": false,
+      "skip_reason": "月・日が表の崩れで確定できない",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

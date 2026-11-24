@@ -1,0 +1,39 @@
+{
+  "municipality_code": "29363",
+  "municipality_name": "田原本町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.tawaramoto.nara.jp/material/files/group/44/R8youkou-10gatu.pdf",
+      "title": "大会要項(グラウンドゴルフ・サッカー・ソフトバレーボール)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "田原本町総合競技大会 グラウンドゴルフ",
+      "event_kind": "大会",
+      "date_text": "令和8年9月8日(火)・9月11日(金)",
+      "date_start": "2026-09-08",
+      "date_end": "2026-09-08",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "田原本町総合競技大会開催要項 グラウンドゴルフ 令和8年9月8日(火)",
+      "pdf_url": "https://www.town.tawaramoto.nara.jp/material/files/group/44/R8youkou-10gatu.pdf",
+      "confidence": "medium",
+      "note": "2つの日付(9月8日と9月11日)のうち、どちらが予備日かは本文だけでは確定できない"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

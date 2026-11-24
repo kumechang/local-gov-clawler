@@ -1,0 +1,67 @@
+{
+  "municipality_code": "13122",
+  "municipality_name": "葛飾区",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/038/810/2026_gg_result_all.pdf",
+      "title": "区民春季グラウンド・ゴルフ大会結果",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/038/810/groundgolf_2025_autumn_result.pdf",
+      "title": "区民秋季グラウンド・ゴルフ大会結果",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "葛飾区民春季グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年4月15日",
+      "date_start": "2026-04-15",
+      "date_end": "2026-04-15",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "柴又球技場",
+      "organizer": "葛飾区グランド・ゴルフ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "葛飾区民春季G・G大会 柴又球技場",
+      "pdf_url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/038/810/2026_gg_result_all.pdf",
+      "confidence": "medium",
+      "note": "大会の成績表(結果)。OCRで読んだPDF"
+    },
+    {
+      "event_name": "葛飾区民秋季グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和7年11月26日",
+      "date_start": "2025-11-26",
+      "date_end": "2025-11-26",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "柴又球技場",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "区民秋季グラウンド・ゴルフ大会が令和7年11月26日に柴又球技場で開催され、98名が参加しました",
+      "pdf_url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/038/810/groundgolf_2025_autumn_result.pdf",
+      "confidence": "high",
+      "note": "大会の結果報告(98名参加)"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

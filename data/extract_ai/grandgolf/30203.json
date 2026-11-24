@@ -1,0 +1,52 @@
+{
+  "municipality_code": "30203",
+  "municipality_name": "橋本市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.hashimoto.lg.jp/material/files/group/64/R8_sports_youkou.pdf",
+      "title": "開催要項",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "神野々緑地芝生広場(グラウンドゴルフ場)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "ライフ親子グラウンド・ゴルフ大会の会場",
+      "gg_evidence": "神野々緑地芝生広場(グラウンドゴルフ場)",
+      "pdf_url": "https://www.city.hashimoto.lg.jp/material/files/group/64/R8_sports_youkou.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [
+    {
+      "event_name": "ライフ親子グラウンド・ゴルフ大会 in 橋本",
+      "event_kind": "大会",
+      "date_text": "令和8年11月21日(土) 予備日 11月22日(日) 受付8:30 開会式9:15 終了12:00(予定)",
+      "date_start": "2026-11-21",
+      "date_end": "2026-11-21",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "神野々緑地芝生広場(グラウンドゴルフ場)",
+      "organizer": "",
+      "target": "",
+      "fee": "無料",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "ライフ親子グラウンド・ゴルフ大会 in 橋本 開催要項",
+      "pdf_url": "https://www.city.hashimoto.lg.jp/material/files/group/64/R8_sports_youkou.pdf",
+      "confidence": "high",
+      "note": "16ホールペアマッチ(8ホール2ラウンド)。公益財団法人ライフスポーツ財団の助成事業"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

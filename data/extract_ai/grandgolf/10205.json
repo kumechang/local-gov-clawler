@@ -1,0 +1,30 @@
+{
+  "municipality_code": "10205",
+  "municipality_name": "太田市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.ota.gunma.jp/uploaded/life/14172_60132_misc.pdf",
+      "title": "太田市スポーツ施設ストック適正化計画",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "利根グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "利根グラウンドゴルフ場 昭和 59 年",
+      "pdf_url": "https://www.city.ota.gunma.jp/uploaded/life/14172_60132_misc.pdf",
+      "confidence": "medium",
+      "note": "スポーツ施設ストック適正化計画の施設一覧(昭和59年)"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

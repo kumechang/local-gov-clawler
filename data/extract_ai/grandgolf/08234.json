@@ -1,0 +1,52 @@
+{
+  "municipality_code": "08234",
+  "municipality_name": "鉾田市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.hokota.lg.jp/data/doc/1555485587_doc_88_0.pdf",
+      "title": "平成31年度鉾田市スポーツレクリエーション結果(男子)",
+      "relevant": false,
+      "skip_reason": "成績表(古い年度)",
+      "doc_kind": "その他"
+    },
+    {
+      "pdf_url": "https://www.city.hokota.lg.jp/data/doc/1555485587_doc_88_1.pdf",
+      "title": "平成31年度鉾田市スポーツレクリエーション結果(女子)",
+      "relevant": false,
+      "skip_reason": "成績表(古い年度)",
+      "doc_kind": "その他"
+    },
+    {
+      "pdf_url": "https://www.city.hokota.lg.jp/data/doc/1776921438_doc_88_0.pdf",
+      "title": "男子の部",
+      "relevant": false,
+      "skip_reason": "成績表で、大会名・日付・会場が本文に無い",
+      "doc_kind": "その他"
+    },
+    {
+      "pdf_url": "https://www.city.hokota.lg.jp/data/doc/1776921442_doc_88_0.pdf",
+      "title": "女子の部",
+      "relevant": false,
+      "skip_reason": "成績表で、大会名・日付・会場が本文に無い",
+      "doc_kind": "その他"
+    },
+    {
+      "pdf_url": "https://www.city.hokota.lg.jp/data/doc/1747719354_doc_88_0.pdf",
+      "title": "男子の部",
+      "relevant": false,
+      "skip_reason": "成績表で、大会名・日付・会場が本文に無い",
+      "doc_kind": "その他"
+    },
+    {
+      "pdf_url": "https://www.city.hokota.lg.jp/data/doc/1747719358_doc_88_0.pdf",
+      "title": "女子の部",
+      "relevant": false,
+      "skip_reason": "成績表で、大会名・日付・会場が本文に無い",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

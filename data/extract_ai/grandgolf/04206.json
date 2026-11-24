@@ -1,0 +1,30 @@
+{
+  "municipality_code": "04206",
+  "municipality_name": "白石市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.shiroishi.miyagi.jp/uploaded/attachment/23764.pdf",
+      "title": "グラウンド・ゴルフ場パンフレット",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "白石市グラウンド・ゴルフ場(若林弁天パーク)",
+      "address": "宮城県白石市大鷹沢大町字若林地内",
+      "phone": "0224-26-6090",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "8ホール2コース(計16ホール)。1日100円。開設 令和4年10月17日。利用は申込が必要",
+      "gg_evidence": "所 在 地:宮城県白石市大鷹沢大町字若林地内",
+      "pdf_url": "https://www.city.shiroishi.miyagi.jp/uploaded/attachment/23764.pdf",
+      "confidence": "high",
+      "note": "パンフレット(OCR・文字が崩れている)。電話番号は施設の記載"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

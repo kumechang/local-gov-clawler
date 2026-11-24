@@ -1,0 +1,39 @@
+{
+  "municipality_code": "12226",
+  "municipality_name": "富津市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.futtsu.lg.jp/cmsfiles/contents/0000008/8549/ggyoukou.pdf",
+      "title": "グラウンド・ゴルフ要項",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "富津市ふれあいスポーツフェスタ2026 グラウンド・ゴルフ",
+      "event_kind": "大会",
+      "date_text": "令和8年10月12日(月・祝)スポーツの日 受付8:30〜9:00",
+      "date_start": "2026-10-12",
+      "date_end": "2026-10-12",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "富津市グラウンド・ゴルフ協会(組合せ・スタート)",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンド・ゴルフ要項 1 期 日 令和8年10月12日(月・祝)スポーツの日",
+      "pdf_url": "https://www.city.futtsu.lg.jp/cmsfiles/contents/0000008/8549/ggyoukou.pdf",
+      "confidence": "high",
+      "note": "8ホール×2回の16ホール・ストロークプレイ。日本グラウンド・ゴルフ協会の競技規則に準じる"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

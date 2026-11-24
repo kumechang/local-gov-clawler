@@ -1,0 +1,79 @@
+{
+  "municipality_code": "03215",
+  "municipality_name": "奥州市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.oshu.iwate.jp/material/files/group/14/ny.pdf",
+      "title": "令和8年度奥州市民スポーツ祭 開催要項",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.oshu.iwate.jp/material/files/group/14/grand.pdf",
+      "title": "01グラウンドゴルフ(団体登録)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.oshu.iwate.jp/material/files/group/14/28711.pdf",
+      "title": "胆沢川桜づつみ広場グランドゴルフ場兼パークゴルフ場料金表",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "胆沢川桜づつみ広場グランドゴルフ場兼パークゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "料金表あり(利用区分ごとの基本利用料・付加使用料)",
+      "gg_evidence": "胆沢川桜づつみ広場グランドゴルフ場兼パークゴルフ場",
+      "pdf_url": "https://www.city.oshu.iwate.jp/material/files/group/14/28711.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [
+    {
+      "event_name": "令和8年度奥州市民スポーツ祭 グラウンド・ゴルフ競技",
+      "event_kind": "大会",
+      "date_text": "6月13日(土)",
+      "date_start": "2026-06-13",
+      "date_end": "2026-06-13",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "水沢公園陸上競技場",
+      "organizer": "奥州市グラウンド・ゴルフ連盟",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "2026-05-26",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンド・ゴルフ 奥州市グラウンド・ゴルフ連盟 6月13日(土) 水沢公園陸上競技場",
+      "pdf_url": "https://www.city.oshu.iwate.jp/material/files/group/14/ny.pdf",
+      "confidence": "high",
+      "note": "申込締切は令和8年5月26日(火)"
+    }
+  ],
+  "organizations": [
+    {
+      "org_name": "江刺グラウンド・ゴルフ協会藤里支部",
+      "org_kind": "協会",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "江刺グラウンド・ゴルフ協会藤里支部",
+      "pdf_url": "https://www.city.oshu.iwate.jp/material/files/group/14/grand.pdf",
+      "confidence": "high",
+      "note": "団体の登録情報(団体名・対象 男女・一般)"
+    }
+  ],
+  "unsure": []
+}

@@ -1,0 +1,30 @@
+{
+  "municipality_code": "34545",
+  "municipality_name": "神石高原町",
+  "documents": [
+    {
+      "pdf_url": "http://www.jinsekigun.jp/user/filer_public/91/9c/919cb521-c4ab-49e9-8c8a-1d3b24fd515c/04guraundogoruhuchang-02_li-song-shan-cun-guang-chang-ggchang-shi-yong-ri-zhi.pdf",
+      "title": "山村広場グラウンドゴルフ場使用日誌",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "山村広場グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "山村広場グラウンドゴルフ場使用日誌",
+      "pdf_url": "http://www.jinsekigun.jp/user/filer_public/91/9c/919cb521-c4ab-49e9-8c8a-1d3b24fd515c/04guraundogoruhuchang-02_li-song-shan-cun-guang-chang-ggchang-shi-yong-ri-zhi.pdf",
+      "confidence": "medium",
+      "note": "使用日誌の様式"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

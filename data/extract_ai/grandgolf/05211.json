@@ -1,0 +1,73 @@
+{
+  "municipality_code": "05211",
+  "municipality_name": "潟上市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.katagami.lg.jp/material/files/group/17/supofesu2026tirasi2.pdf",
+      "title": "スポーツフェスティバル2026チラシ",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.katagami.lg.jp/material/files/group/17/katagamisuportskeikaku.pdf",
+      "title": "潟上市スポーツ推進計画",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "昭和グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "スポーツフェスティバル2026で、潟上市民限定で無料開放",
+      "gg_evidence": "昭和グラウンドゴルフ場",
+      "pdf_url": "https://www.city.katagami.lg.jp/material/files/group/17/supofesu2026tirasi2.pdf",
+      "confidence": "medium",
+      "note": "チラシ。所在地の記載は抜粋に無い"
+    },
+    {
+      "facility_name": "二荒山グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "スポーツフェスティバル2026で、潟上市民限定で無料開放",
+      "gg_evidence": "二荒山グラウンドゴルフ場",
+      "pdf_url": "https://www.city.katagami.lg.jp/material/files/group/17/supofesu2026tirasi2.pdf",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "facility_name": "トレイクかたがみ グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "スポーツフェスティバル2026で、潟上市民限定で無料開放",
+      "gg_evidence": "トレイクかたがみ グラウンドゴルフ場",
+      "pdf_url": "https://www.city.katagami.lg.jp/material/files/group/17/supofesu2026tirasi2.pdf",
+      "confidence": "medium",
+      "note": "段組みの崩れで、グラウンドゴルフ場の名前の対応は見出しから判断した"
+    },
+    {
+      "facility_name": "飯田川二荒山グラウンドゴルフ場",
+      "address": "潟上市飯田川下虻川字蟹沢12番地1",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "飯田川二荒山グラウンドゴルフ場 潟上市飯田川下虻川字蟹沢 12 番地 1",
+      "pdf_url": "https://www.city.katagami.lg.jp/material/files/group/17/katagamisuportskeikaku.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

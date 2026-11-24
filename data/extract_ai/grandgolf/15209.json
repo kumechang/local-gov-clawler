@@ -1,0 +1,80 @@
+{
+  "municipality_code": "15209",
+  "municipality_name": "加茂市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kamo.niigata.jp/fs/2/1/8/3/8/2/_/R8%E8%A6%81%E9%A0%85.pdf",
+      "title": "R8要項",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.kamo.niigata.jp/fs/1/9/6/0/4/9/_/(GG)R7%E8%A6%81%E9%A0%85.pdf",
+      "title": "R7要項",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "リバーサイド加茂グラウンド・ゴルフコース",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "加茂市総合スポーツ大会のグラウンド・ゴルフ大会の会場",
+      "gg_evidence": "リバーサイド加茂グラウンド・ゴルフコース",
+      "pdf_url": "https://www.city.kamo.niigata.jp/fs/2/1/8/3/8/2/_/R8%E8%A6%81%E9%A0%85.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [
+    {
+      "event_name": "第69回加茂市総合スポーツ大会 グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年10月10日(土) 受付8:40 開会式8:50 スタート9:00",
+      "date_start": "2026-10-10",
+      "date_end": "2026-10-10",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "リバーサイド加茂グラウンド・ゴルフコース",
+      "organizer": "加茂市・加茂市教育委員会(主管 加茂市スポーツ協会・加茂グラウンドゴルフ協会)",
+      "target": "",
+      "fee": "大人1人300円 中学生以下1人100円",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "☆第69回加茂市総合スポーツ大会☆ グラウンド・ゴルフ大会 開催要項",
+      "pdf_url": "https://www.city.kamo.niigata.jp/fs/2/1/8/3/8/2/_/R8%E8%A6%81%E9%A0%85.pdf",
+      "confidence": "high",
+      "note": "32ホールストロークプレイ(16ホール×2ラウンド)"
+    },
+    {
+      "event_name": "第68回加茂市総合スポーツ大会 グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和7年10月11日(土)",
+      "date_start": "2025-10-11",
+      "date_end": "2025-10-11",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "リバーサイド加茂グラウンド・ゴルフコース",
+      "organizer": "加茂市・加茂市教育委員会(主管 加茂市スポーツ協会・加茂グラウンドゴルフ協会)",
+      "target": "",
+      "fee": "大人1人300円 中学生以下1人100円",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "☆第68回加茂市総合スポーツ大会☆ グラウンド・ゴルフ大会 開催要項",
+      "pdf_url": "https://www.city.kamo.niigata.jp/fs/1/9/6/0/4/9/_/(GG)R7%E8%A6%81%E9%A0%85.pdf",
+      "confidence": "high",
+      "note": "令和7年度(過去の開催)"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

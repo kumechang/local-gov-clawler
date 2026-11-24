@@ -1,0 +1,30 @@
+{
+  "municipality_code": "04301",
+  "municipality_name": "蔵王町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.zao.miyagi.jp/kurashi_guide/koukyoushisetsu/taiikushisetsu/sogokoen.files/yutai.pdf",
+      "title": "優待確認書",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "蔵王町総合運動公園 グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "蔵王球場・テニスコート・多目的球場とともに総合運動公園内の施設",
+      "gg_evidence": "蔵王町総合運動公園〔蔵王球場、テニスコート、グラウンドゴルフ場・ゲートボール場、",
+      "pdf_url": "https://www.town.zao.miyagi.jp/kurashi_guide/koukyoushisetsu/taiikushisetsu/sogokoen.files/yutai.pdf",
+      "confidence": "high",
+      "note": "優待確認書(利用料の優待の対象施設一覧)"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

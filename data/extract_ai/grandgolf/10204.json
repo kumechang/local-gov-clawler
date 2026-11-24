@@ -1,0 +1,61 @@
+{
+  "municipality_code": "10204",
+  "municipality_name": "伊勢崎市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.isesaki.lg.jp/material/files/group/34/azumaryoukin.pdf",
+      "title": "新料金表",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.isesaki.lg.jp/material/files/group/34/R1-10-1.pdf",
+      "title": "新料金表",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "つつみ公園グランドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "新料金表あり",
+      "gg_evidence": "伊勢崎市つつみ公園グランドゴルフ場",
+      "pdf_url": "https://www.city.isesaki.lg.jp/material/files/group/34/azumaryoukin.pdf",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "西小保方沼公園グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "新料金表あり",
+      "gg_evidence": "伊勢崎市西小保方沼公園グラウンドゴルフ場",
+      "pdf_url": "https://www.city.isesaki.lg.jp/material/files/group/34/azumaryoukin.pdf",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "境広瀬川緑地グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "新料金表あり",
+      "gg_evidence": "伊勢崎市境広瀬川緑地グラウンドゴルフ場",
+      "pdf_url": "https://www.city.isesaki.lg.jp/material/files/group/34/R1-10-1.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

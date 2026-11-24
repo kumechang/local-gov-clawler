@@ -1,0 +1,52 @@
+{
+  "municipality_code": "31384",
+  "municipality_name": "日吉津村",
+  "documents": [
+    {
+      "pdf_url": "https://www.hiezu.jp/wp-content/uploads/2026/06/日吉津村グラウンドゴルフ大会チラシ.pdf",
+      "title": "日吉津村グラウンドゴルフ大会チラシ",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "海浜運動公園スポーツ広場(日吉津村)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "令和7年度の再整備で整備した芝生のスポーツ広場。6月から利用開始。利用開始記念に日吉津村グラウンドゴルフ大会を開催",
+      "gg_evidence": "海浜運動公園スポーツ広場",
+      "pdf_url": "https://www.hiezu.jp/wp-content/uploads/2026/06/日吉津村グラウンドゴルフ大会チラシ.pdf",
+      "confidence": "medium",
+      "note": "チラシ。所在地の記載は抜粋に無い"
+    }
+  ],
+  "events": [
+    {
+      "event_name": "日吉津村グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "",
+      "date_start": "",
+      "date_end": "",
+      "fiscal_year": 2026,
+      "period": "日付不明",
+      "venue": "海浜運動公園スポーツ広場",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "日吉津村グラウンドゴルフ大会",
+      "pdf_url": "https://www.hiezu.jp/wp-content/uploads/2026/06/日吉津村グラウンドゴルフ大会チラシ.pdf",
+      "confidence": "medium",
+      "note": "スポーツ広場の利用開始記念のオープン大会。申込はQRコード、クラブの貸し出しあり。日付は抜粋に無く確定できない"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

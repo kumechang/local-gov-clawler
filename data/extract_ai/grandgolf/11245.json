@@ -1,0 +1,30 @@
+{
+  "municipality_code": "11245",
+  "municipality_name": "ふじみ野市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.fujimino.saitama.jp/material/files/group/18/R7_fujiminocity_sports.pdf",
+      "title": "令和7年度ふじみ野市のスポーツ",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "大井グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "大井グラウンド・ゴルフ場",
+      "pdf_url": "https://www.city.fujimino.saitama.jp/material/files/group/18/R7_fujiminocity_sports.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

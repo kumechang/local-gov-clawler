@@ -1,0 +1,39 @@
+{
+  "municipality_code": "06364",
+  "municipality_name": "真室川町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.mamurogawa.yamagata.jp/material/files/group/9/karennda-0804.pdf",
+      "title": "令和8年4月行事予定カレンダー",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "梅の里まむろがわ春まつり グランドゴルフ交流大会",
+      "event_kind": "大会",
+      "date_text": "昭和の日(4月29日)",
+      "date_start": "2026-04-29",
+      "date_end": "2026-04-29",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "梅の里まむろがわ春まつりグランドゴルフ交流大会",
+      "pdf_url": "https://www.town.mamurogawa.yamagata.jp/material/files/group/9/karennda-0804.pdf",
+      "confidence": "medium",
+      "note": "令和8年4月の行事予定カレンダー。表が崩れて会場は確定できない。日付は『昭和の日』の記載から"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

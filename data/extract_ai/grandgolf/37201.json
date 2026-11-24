@@ -1,22 +1,7 @@
 {
   "municipality_code": "37201",
   "municipality_name": "高松市",
-  "documents": [
-    {
-      "pdf_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shisetsu/sports/sports_up20230710.files/2026kohyou7-2koushin.pdf",
-      "title": "施設個票",
-      "relevant": true,
-      "skip_reason": "",
-      "doc_kind": "施設案内"
-    },
-    {
-      "pdf_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shisetsu/sports/sports_up20230710.files/2026kohyou7-5koushin.pdf",
-      "title": "施設個票(プレイセンター)",
-      "relevant": true,
-      "skip_reason": "",
-      "doc_kind": "施設案内"
-    }
-  ],
+  "documents": [],
   "facilities": [],
   "events": [],
   "organizations": [],

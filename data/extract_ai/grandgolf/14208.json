@@ -1,0 +1,24 @@
+{
+  "municipality_code": "14208",
+  "municipality_name": "逗子市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.zushi.kanagawa.jp/_res/projects/default_project/_page_/001/010/930/tirsai2024.pdf",
+      "title": "逗子市スポーツの祭典2024チラシ",
+      "relevant": false,
+      "skip_reason": "過去の年のチラシ",
+      "doc_kind": "その他"
+    },
+    {
+      "pdf_url": "https://www.city.zushi.kanagawa.jp/_res/projects/default_project/_page_/001/009/178/sposai2023.pdf",
+      "title": "逗子市スポーツの祭典2023チラシ",
+      "relevant": false,
+      "skip_reason": "過去の年のチラシ",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

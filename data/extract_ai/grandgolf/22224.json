@@ -1,0 +1,30 @@
+{
+  "municipality_code": "22224",
+  "municipality_name": "菊川市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kikugawa.shizuoka.jp/shakaikyouiku/sports/documents/syusei.pdf",
+      "title": "第2次菊川市スポーツ振興基本計画",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "小笠グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "小笠グラウンドゴルフ場 グラウンドゴルフ",
+      "pdf_url": "https://www.city.kikugawa.shizuoka.jp/shakaikyouiku/sports/documents/syusei.pdf",
+      "confidence": "medium",
+      "note": "スポーツ振興基本計画の施設一覧の記述"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

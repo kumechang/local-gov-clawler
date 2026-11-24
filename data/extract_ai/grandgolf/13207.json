@@ -1,0 +1,44 @@
+{
+  "municipality_code": "13207",
+  "municipality_name": "昭島市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.akishima.lg.jp/_res/projects/default_project/_page_/001/012/223/homepages.pdf",
+      "title": "第73回昭島市民スポーツ大会「種目別大会」一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第73回昭島市民スポーツ大会 種目別大会 グラウンド・ゴルフ",
+      "event_kind": "大会",
+      "date_text": "9月30日(水)午前9時(雨天中止)",
+      "date_start": "2026-09-30",
+      "date_end": "2026-09-30",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "昭和公園陸上競技場",
+      "organizer": "グラウンド・ゴルフ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンド・ゴルフ グラウンド・ゴルフ協会 9月30日(水)午前9時 〈雨天中止〉 昭和公園陸上競技場",
+      "pdf_url": "https://www.city.akishima.lg.jp/_res/projects/default_project/_page_/001/012/223/homepages.pdf",
+      "confidence": "medium",
+      "note": "年は書かれていない。9月30日が水曜日になる2026年とした。申込先の担当者の携帯電話は個人の連絡先のため省略"
+    }
+  ],
+  "organizations": [],
+  "unsure": [
+    {
+      "pdf_url": "https://www.city.akishima.lg.jp/_res/projects/default_project/_page_/001/012/223/homepages.pdf",
+      "note": "昭島市の別の月カレンダー表に『昭島市グラウンド・ゴルフ協会(交換大会予備日)』があるが、日付が確定できない"
+    }
+  ]
+}

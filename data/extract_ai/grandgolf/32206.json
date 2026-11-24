@@ -1,0 +1,42 @@
+{
+  "municipality_code": "32206",
+  "municipality_name": "安来市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.yasugi.shimane.jp/kurashi/bunka/sports/sports-event/2026year.data/R8yotei_chiku-sports-kyokai.pdf",
+      "title": "各地区スポーツ協会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "やまびこグラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "やまびこグラウンドゴルフ場",
+      "pdf_url": "https://www.city.yasugi.shimane.jp/kurashi/bunka/sports/sports-event/2026year.data/R8yotei_chiku-sports-kyokai.pdf",
+      "confidence": "medium",
+      "note": "山佐地区スポーツ協会の第34回グラウンドゴルフ大会(9月)の会場として載る"
+    },
+    {
+      "facility_name": "八幡町グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "八幡町グラウンドゴルフ場",
+      "pdf_url": "https://www.city.yasugi.shimane.jp/kurashi/bunka/sports/sports-event/2026year.data/R8yotei_chiku-sports-kyokai.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

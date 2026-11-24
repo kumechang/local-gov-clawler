@@ -1,0 +1,31 @@
+{
+  "municipality_code": "11216",
+  "municipality_name": "羽生市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.hanyu.lg.jp/docs/2016100800011/file_contents/h30_youkou.pdf",
+      "title": "運動会要項",
+      "relevant": false,
+      "skip_reason": "運動会の種目の一文のみ",
+      "doc_kind": "その他"
+    },
+    {
+      "pdf_url": "https://www.city.hanyu.lg.jp/docs/2016100800011/file_contents/30kaiyoukou.pdf",
+      "title": "運動会要項",
+      "relevant": false,
+      "skip_reason": "運動会の種目の一文のみ",
+      "doc_kind": "その他"
+    },
+    {
+      "pdf_url": "https://www.city.hanyu.lg.jp/docs/2016100800011/file_contents/29youkou.pdf",
+      "title": "運動会要項",
+      "relevant": false,
+      "skip_reason": "運動会の種目の一文のみ",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

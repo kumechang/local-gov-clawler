@@ -1,12 +1,49 @@
 ﻿municipality_code,municipality_name,facility_name,address,phone,inquiry_dept,inquiry_phone,usage_note,gg_evidence,pdf_url,confidence,note
 02201,青森市,盛運輸サンドーム(屋内グラウンド),,,,,野球、サッカー、グラウンドゴルフなどに、例年17万人を超える利用,野球、サッカー、グラウンドゴルフなど、例年17万人を超える方々に利,https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/009/973/260119_setumeikaisiryou2.pdf,medium,整備計画の説明資料の記述。利用種目別の割合でグラウンドゴルフは7.2%
+02203,八戸市,プライフーズスタジアム(多賀多目的運動場) 多目的広場,,,プライフーズスタジアム(多賀多目的運動場)事務室,0178-80-7597,"敷地面積 多目的広場1 約14,000㎡・多目的広場2 約9,000㎡。利用期間 3月中旬〜11月(気候により変動)。休館日 第2・第4月曜日の午後",利用種目 グラウンドゴルフなど,https://www.city.hachinohe.aomori.jp/material/files/group/9/23090804.pdf,medium,
+02203,八戸市,八戸市 主練習場・投球練習場・トレーニング室,,,,,通年。休館日 毎週木曜日・年末年始,野球練習、フットサル、グラウンドゴルフなど,https://www.city.hachinohe.aomori.jp/material/files/group/9/20190925-150113.pdf,medium,施設案内。名称は資料の題名から
+02203,八戸市,屋内運動場(グリーンドーム)(八戸市),,,,,アリーナ74m×54m・天井高14m。通年。休館日 毎週月曜日・年末年始,野球練習、ソフトボール練習、フットサル、グラウンドゴルフなど,https://www.city.hachinohe.aomori.jp/material/files/group/9/202504nango_ryokin04dome.pdf,high,
 03206,北上市,和賀川グラウンドゴルフ公認コース,,,,,,和賀川グラウンドゴルフ公認コース,https://www.city.kitakami.iwate.jp/material/files/group/12/R805.pdf,medium,和賀川グリーンパークの施設一覧に載る名前(展勝地プールと並記)
+03215,奥州市,胆沢川桜づつみ広場グランドゴルフ場兼パークゴルフ場,,,,,料金表あり(利用区分ごとの基本利用料・付加使用料),胆沢川桜づつみ広場グランドゴルフ場兼パークゴルフ場,https://www.city.oshu.iwate.jp/material/files/group/14/28711.pdf,high,
+04206,白石市,白石市グラウンド・ゴルフ場(若林弁天パーク),宮城県白石市大鷹沢大町字若林地内,0224-26-6090,,,8ホール2コース(計16ホール)。1日100円。開設 令和4年10月17日。利用は申込が必要,所 在 地:宮城県白石市大鷹沢大町字若林地内,https://www.city.shiroishi.miyagi.jp/uploaded/attachment/23764.pdf,high,パンフレット(OCR・文字が崩れている)。電話番号は施設の記載
+04301,蔵王町,蔵王町総合運動公園 グラウンドゴルフ場,,,,,蔵王球場・テニスコート・多目的球場とともに総合運動公園内の施設,蔵王町総合運動公園〔蔵王球場、テニスコート、グラウンドゴルフ場・ゲートボール場、,https://www.town.zao.miyagi.jp/kurashi_guide/koukyoushisetsu/taiikushisetsu/sogokoen.files/yutai.pdf,high,優待確認書(利用料の優待の対象施設一覧)
+05201,秋田市,秋田市のグラウンドゴルフ場(屋外体育施設),,,,,令和8年は4月10日(金)にオープン。利用の申込は、利用日当日に施設窓口,グラウンドゴルフ場 4月10日(金),https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/016/213/r8okugai.pdf,medium,屋外体育施設オープン予定一覧。施設の正式名称は抜粋に無い
+05203,横手市,赤坂総合公園グラウンド・ゴルフ場,,,,,,使用施設名称及び区分 赤坂総合公園グラウンド・ゴルフ場,https://www.city.yokote.lg.jp/_res/projects/default_project/_page_/001/003/445/r8.4.pdf.pdf,medium,社会体育施設使用許可申請書の施設名の記載例
+05211,潟上市,昭和グラウンドゴルフ場,,,,,スポーツフェスティバル2026で、潟上市民限定で無料開放,昭和グラウンドゴルフ場,https://www.city.katagami.lg.jp/material/files/group/17/supofesu2026tirasi2.pdf,medium,チラシ。所在地の記載は抜粋に無い
+05211,潟上市,二荒山グラウンドゴルフ場,,,,,スポーツフェスティバル2026で、潟上市民限定で無料開放,二荒山グラウンドゴルフ場,https://www.city.katagami.lg.jp/material/files/group/17/supofesu2026tirasi2.pdf,medium,
+05211,潟上市,トレイクかたがみ グラウンドゴルフ場,,,,,スポーツフェスティバル2026で、潟上市民限定で無料開放,トレイクかたがみ グラウンドゴルフ場,https://www.city.katagami.lg.jp/material/files/group/17/supofesu2026tirasi2.pdf,medium,段組みの崩れで、グラウンドゴルフ場の名前の対応は見出しから判断した
+05211,潟上市,飯田川二荒山グラウンドゴルフ場,潟上市飯田川下虻川字蟹沢12番地1,,,,,飯田川二荒山グラウンドゴルフ場 潟上市飯田川下虻川字蟹沢 12 番地 1,https://www.city.katagami.lg.jp/material/files/group/17/katagamisuportskeikaku.pdf,medium,
+05212,大仙市,南外グラウンド・ゴルフ場,,,,,,南外グラウンド・ゴルフ場,https://www.city.daisen.lg.jp/uploads/public/archive_0000000071_00/daisen_walking_map.pdf,medium,大仙市ウォーキングマップの記載
+06201,山形市,山形市グラウンド・ゴルフ場,,,,,,(山形市グラウンド・ゴルフ場),https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/004/615/r7_shisetugennmenn.pdf,high,
+06201,山形市,南石関グラウンド・ゴルフ場,山形市南石関57-1,,,,,南石関グラウンド・ゴルフ場 山形市南石関57-1,https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/004/615/r7_shisetugennmenn.pdf,high,
+06208,村山市,金谷グラウンド・ゴルフ場,,,,,使用料一覧に、金谷クラブハウスとともに載る,金谷グラウンド・ゴルフ場及び金谷クラブハウス使,https://www.city.murayama.lg.jp/kurashi/sports_yoka/sports/sports_shisetsu.files/shiyouryouichiran.pdf,high,
+06210,天童市,天童市グラウンドゴルフ場,,,,,,天童市グラウンドゴルフ場,https://www.city.tendo.yamagata.jp/lifeinfo/sports/2026akaneenjoy.pdf,medium,あかねエンジョイクラブの案内の記載
+06212,尾花沢市,花笠グランドゴルフ場,,,,,,花笠グランドゴルフ場前,https://www.city.obanazawa.yamagata.jp/files/original/2025122015545461686e52938.pdf,medium,全国花笠マラソン大会のスタート地点として名前が出る(徳良湖周辺)。グラウンドゴルフの利用の記述はない
+06428,庄内町,庄内町笠山グラウンドゴルフ場,,,,,,庄内町笠山グラウンドゴルフ場,https://www.town.shonai.lg.jp/kurashi/shisetsu/undou/siteikannritaiikukann.files/210302_kome_sitei.pdf,high,指定管理の経過の資料
+09214,さくら市,兎田河原グラウンド・ゴルフ場,,,,,,場所 兎田河原グラウンド・ゴルフ場,https://www.city.tochigi-sakura.lg.jp/manage/contents/upload/6ad6c0f8aa088.pdf,high,
+09214,さくら市,鬼怒川運動公園グラウンドゴルフ場,,,,,,鬼怒川運動公園グラウンドゴルフ場,https://www.city.tochigi-sakura.lg.jp/manage/contents/upload/6997e3c7904cd.pdf,medium,さくら市スポーツ施設ストック最適化計画の施設一覧の記述
 09215,那須烏山市,大桶運動公園 野球場北側広場,,,,,グラウンドゴルフ 1面,野球場北側広場 グラウンドゴルフ 1面,https://www.city.nasukarasuyama.lg.jp/data/doc/1776852068_doc_116_0.pdf,medium,施設・備品台帳の記述
+10204,伊勢崎市,つつみ公園グランドゴルフ場,,,,,新料金表あり,伊勢崎市つつみ公園グランドゴルフ場,https://www.city.isesaki.lg.jp/material/files/group/34/azumaryoukin.pdf,high,
+10204,伊勢崎市,西小保方沼公園グラウンドゴルフ場,,,,,新料金表あり,伊勢崎市西小保方沼公園グラウンドゴルフ場,https://www.city.isesaki.lg.jp/material/files/group/34/azumaryoukin.pdf,high,
+10204,伊勢崎市,境広瀬川緑地グラウンドゴルフ場,,,,,新料金表あり,伊勢崎市境広瀬川緑地グラウンドゴルフ場,https://www.city.isesaki.lg.jp/material/files/group/34/R1-10-1.pdf,high,
+10205,太田市,利根グラウンドゴルフ場,,,,,,利根グラウンドゴルフ場 昭和 59 年,https://www.city.ota.gunma.jp/uploaded/life/14172_60132_misc.pdf,medium,スポーツ施設ストック適正化計画の施設一覧(昭和59年)
+10212,みどり市,あすかホールグラウンドゴルフ場,,,,,,あすかホールグラウンドゴルフ場,https://www.city.midori.gunma.jp/_res/projects/default_project/_page_/001/003/762/syakai.pdf,high,
+10212,みどり市,笠懸グラウンドゴルフ場,,,,,,(笠懸グラウンドゴルフ場),https://www.city.midori.gunma.jp/_res/projects/default_project/_page_/001/003/762/syakai.pdf,high,
 10345,吉岡町,リバートピア吉岡 グラウンドゴルフ場,,,,,パークゴルフ場・ケイマンゴルフ場とともに、緑地運動公園内の各種ゴルフ場,グラウンドゴルフ場,https://www.town.yoshioka.lg.jp/kosodate/pdf/78bd1cad38a381c0b9ab51aea85ce5a5_1.pdf,medium,案内図付きのパンフレット。文字が崩れており、施設名は図の見出しから判断
+10448,昭和村,総合運動公園グラウンドゴルフ場(昭和村),,,,,村のグラウンド・ゴルフ大会・教室の会場,総合運動公園グラウンドゴルフ場,https://www.vill.showa.gunma.jp/kurashi/kyouiku/taikyo/files/01/R08_kyositsutaikai.pdf,high,
 11231,桶川市,新小針領家グラウンド(A・B),桶川市大字小針領家,,,,主に利用する加盟団体に軟式野球連盟・ソフトボール連盟・サッカー協会・グラウンド・ゴルフ協会,グラウンド・ゴルフ協会,https://www.city.okegawa.lg.jp/material/files/group/57/sportskyokai_70kinenshi.pdf,medium,グラウンドゴルフの専用設備の記述はなく、加盟団体の利用の記述
+11245,ふじみ野市,大井グラウンド・ゴルフ場,,,,,,大井グラウンド・ゴルフ場,https://www.city.fujimino.saitama.jp/material/files/group/18/R7_fujiminocity_sports.pdf,medium,
 11326,毛呂山町,毛呂山総合公園 芝生広場,,,,,ピクニックやグラウンドゴルフなどの軽スポーツができる,グラウンドゴルフなどの,https://www.town.moroyama.saitama.jp/material/files/group/26/SKMBT_C284e17091414231.pdf,medium,段組みの崩れで『4 芝生広場』の説明と判断した
 12213,東金市,東金市多目的グラウンド,,,,,東金アリーナに隣接したスポーツ広場で夜間照明を備える。野球・ソフトボール・サッカー・グラウンドゴルフなどに利用,野球・ソフトボール・サッカー・グラウンドゴルフなどに利用されている,https://www.city.togane.chiba.jp/cmsfiles/contents/0000005/5830/siryou.pdf,high,
+14212,厚木市,及川グラウンド・ゴルフ場,,,,,,及川グラウンド・ゴルフ場,https://www.city.atsugi.kanagawa.jp/material/files/group/73/kihonnkousou.pdf,medium,基本構想の施設一覧
+15209,加茂市,リバーサイド加茂グラウンド・ゴルフコース,,,,,加茂市総合スポーツ大会のグラウンド・ゴルフ大会の会場,リバーサイド加茂グラウンド・ゴルフコース,https://www.city.kamo.niigata.jp/fs/2/1/8/3/8/2/_/R8%E8%A6%81%E9%A0%85.pdf,high,
+17201,金沢市,加賀朝日町グラウンドゴルフ場,金沢市加賀朝日町北6番地,,,,,加賀朝日町グラウンドゴルフ場 金沢市加賀朝日町北6番地,https://www4.city.kanazawa.lg.jp/material/files/group/25/R4-shisetsu-ichiran-kanazawa-city.pdf,high,
+17201,金沢市,こなん水辺グラウンドゴルフ場,,,,,,こなん水辺グラウンドゴルフ場,https://www4.city.kanazawa.lg.jp/material/files/group/25/R4-shisetsu-ichiran-kanazawa-city.pdf,high,
+17203,小松市,鶴ヶ島グラウンドゴルフ場,,,,,屋外の利用時間は5:00〜22:00。鶴ヶ島グラウンドゴルフ場は日没まで,鶴ヶ島グラウンドゴルフ場にあっては日没まで,https://www.city.komatsu.lg.jp/material/files/group/14/chikutaiikukan_siyounotebiki.pdf,medium,
 18208,あわら市,トリムパークかなづ グラウンドゴルフコース,,,あわら市教育委員会,,申請書の利用施設の選択肢に『グラウンドゴルフコース』『マレットゴルフコース』『ゲートボール場』などがある,グラウンドゴルフコース,https://www.city.awara.lg.jp/online/6200/6230/6233/p000526_d/fil/6.pdf,medium,申請書の様式。料金・所在地の記載はない
+21206,中津川市,福岡グラウンドゴルフ場,,,,,使用料金表では無料,福岡グラウンドゴルフ場 無料,https://www.city.nakatsugawa.lg.jp/material/files/group/44/20210628_shogai-sp_golfryoukin.pdf,high,
+21221,海津市,南濃グランドゴルフ場,,,,,,南濃グランドゴルフ場,https://www.city.kaizu.lg.jp/kanko/cmsfiles/contents/0000003/3968/camp_map.pdf,medium,駐車場の詳細の資料に載る名前
+22224,菊川市,小笠グラウンドゴルフ場,,,,,,小笠グラウンドゴルフ場 グラウンドゴルフ,https://www.city.kikugawa.shizuoka.jp/shakaikyouiku/sports/documents/syusei.pdf,medium,スポーツ振興基本計画の施設一覧の記述
 23212,安城市,安城市西部グラウンドゴルフ場,,,西部公民館(申込窓口),0566-76-9393,無料。4月〜10月 午前6時〜正午・午後1時〜午後7時または日没まで、11月〜3月 午前8時30分〜正午・午後1時〜午後4時30分(12/29〜1/3は利用不可)。窓口・電話で予約(先着順)。グラウンドゴルフ、ゲートボール、モルックの利用,安城市西部グラウンドゴルフ場 利用案内,https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/documents/seibuggriyouannnair0806.pdf,high,本文の住所(安城市福釜町釜ヶ渕20番地1)は申込窓口の西部公民館のもので、グラウンドゴルフ場の所在地と確定できないため address は空
 23212,安城市,安城市総合運動公園 多目的グラウンド,,,,,グラウンドゴルフは最大2コース(サッカー 大人最大1面、ゲートボール 最大12面),グラウンドゴルフ 最大2コース,https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/documents/shisetsusyousaitamoku.pdf,medium,行事予定表の会場『多目的グラウンド』と同じ施設とみられるが、PDF上で明記はない
 23213,西尾市,西尾市松原グラウンド・ゴルフ場,,,,,全面1時間100円。利用時間は午前6時から午後7時まで、毎正時から1時間単位,西尾市松原グラウンド・ゴルフ場 全面 1時間 100円,https://www.city.nishio.aichi.jp/_res/projects/default_project/_page_/001/003/951/shiyouryou2.pdf,high,同じ内容のPDFが別URLで複数ある
@@ -19,8 +56,33 @@
 23302,東郷町,町民運動広場(町民グラウンド),,,,,利用種目: 軟式野球・ソフトボール・グラウンドゴルフ等,町民運動広場(町民グラウンド) 軟式野球・ソフトボール・グラウンドゴルフ等,https://www.town.aichi-togo.lg.jp/material/files/group/25/riyounotebiki.pdf,high,
 23302,東郷町,愛知池運動公園運動場,,,,,利用種目: 陸上競技・ソフトボール・サッカー・グラウンドゴルフ等,愛知池運動公園運動場 陸上競技・ソフトボール・サッカー・グラウンドゴルフ等,https://www.town.aichi-togo.lg.jp/material/files/group/25/riyounotebiki.pdf,high,
 23302,東郷町,境川緑地公園 第2多目的運動広場,,,,,利用種目: 少年サッカー・グラウンドゴルフ・ハンドボール等,第2多目的運動広場 少年サッカー・グラウンドゴルフ・ハンドボール等,https://www.town.aichi-togo.lg.jp/material/files/group/25/riyounotebiki.pdf,medium,『境川緑地公園』は第1・第2多目的運動広場の左見出しで、第2のみの行か表の崩れで確定できない
+25201,大津市,大津大石淀グラウンド・ゴルフ場,,,,,全4コースの天然芝グラウンド・ゴルフ場。使用料の減免申請・使用許可の規定あり,大自然に囲まれた全4コースの天然芝グラウンド・ゴルフ場,https://www.city.otsu.lg.jp/material/files/group/126/rifuretto.pdf,high,
+25202,彦根市,荒神山公園グラウンド・ゴルフ場,,,,,A・Bコース,荒神山公園グラウンド・ゴルフ場,https://www.city.hikone.lg.jp/material/files/group/106/ABcourse.pdf,high,
+25204,近江八幡市,日野川グラウンド・ゴルフ場,,,,,,"日野川グラウンド・ゴルフ場 30,080",https://www.city.omihachiman.lg.jp/material/files/group/132/honpenR6.pdf,medium,"計画の施設別の利用者数の表に載る名前(利用者数 30,080人など)"
+25383,日野町,大谷公園 グラウンドゴルフ場,,,,,,このグラウンドゴルフ場は、,https://www.town.shiga-hino.lg.jp/cmsfiles/contents/0000004/4873/shiori.pdf,medium,大谷公園しおりの説明。施設の正式名称は本文の抜粋では確定できない
 27215,寝屋川市,池の里市民交流センター(サブグラウンド・グラウンド),,,,,フットサル、グラウンドゴルフなど,グラウンドゴルフなど,https://www.city.neyagawa.osaka.jp/material/files/group/117/annaizu.pdf,medium,案内図のため、所在地・連絡先の記載はない。サブグラウンドとグラウンドのどちらで行えるかは、図の崩れで確定できない
+27222,羽曳野市,羽曳野市立健康ふれあいの郷グラウンド・ゴルフ場,羽曳野市羽曳が丘9丁目35-1,072-950-6611,,,月例大会の会場(参加費1名350円、定員224名),4. 会 場 羽曳野市立健康ふれあいの郷グラウンド・ゴルフ場,https://www.city.habikino.lg.jp/material/files/group/67/r8guraunndogolfgetureitaikaiyoukou.pdf,high,開催要項の会場欄の記載
 29402,明日香村,ニュースポーツ広場(明日香村),,,,,"面積約2,500㎡。グランドゴルフ(8コース)をはじめ、ボール遊びなど様々な利用が可能",グランドゴルフ(8コース) をはじめとして,https://www.asukamura.jp/files/syogaigakusyu_syakaitaiiku_03.pdf,medium,OCRで読んだPDF。表記は『グランドゴルフ』
+30203,橋本市,神野々緑地芝生広場(グラウンドゴルフ場),,,,,ライフ親子グラウンド・ゴルフ大会の会場,神野々緑地芝生広場(グラウンドゴルフ場),https://www.city.hashimoto.lg.jp/material/files/group/64/R8_sports_youkou.pdf,high,
+31325,若桜町,八幡広場グラウンド・ゴルフコース,,,,,,八幡広場グラウンド・ゴルフコース,https://www.town.wakasa.tottori.jp/material/files/group/2/98684955.pdf,medium,連休中の施設の利用案内
+31384,日吉津村,海浜運動公園スポーツ広場(日吉津村),,,,,令和7年度の再整備で整備した芝生のスポーツ広場。6月から利用開始。利用開始記念に日吉津村グラウンドゴルフ大会を開催,海浜運動公園スポーツ広場,https://www.hiezu.jp/wp-content/uploads/2026/06/日吉津村グラウンドゴルフ大会チラシ.pdf,medium,チラシ。所在地の記載は抜粋に無い
+32201,松江市,鹿島グラウンドゴルフ場,,,,,利用料金表あり,鹿島グラウンドゴルフ場 利用料金,https://www.city.matsue.lg.jp/material/files/group/36/kashima-GG.pdf,high,
+32201,松江市,松江市ニュースポーツ公園グラウンドゴルフ場,,,,,利用料金表あり,松江市ニュースポーツ公園グラウンドゴルフ場 利用料金,https://www.city.matsue.lg.jp/material/files/group/36/newspo-GG.pdf,high,
+32201,松江市,東出雲グラウンドゴルフ場,,,,,利用料金表あり,東出雲グラウンドゴルフ場 グラウンドゴルフ場 利用料金,https://www.city.matsue.lg.jp/material/files/group/36/higaimoGG.pdf,high,
+32206,安来市,やまびこグラウンドゴルフ場,,,,,,やまびこグラウンドゴルフ場,https://www.city.yasugi.shimane.jp/kurashi/bunka/sports/sports-event/2026year.data/R8yotei_chiku-sports-kyokai.pdf,medium,山佐地区スポーツ協会の第34回グラウンドゴルフ大会(9月)の会場として載る
+32206,安来市,八幡町グラウンドゴルフ場,,,,,,八幡町グラウンドゴルフ場,https://www.city.yasugi.shimane.jp/kurashi/bunka/sports/sports-event/2026year.data/R8yotei_chiku-sports-kyokai.pdf,medium,
+32505,吉賀町,大野原グラウンドゴルフ場,,,,,,大野原グラウンドゴルフ場 柿木 123.9 平成 29 年,https://www.town.yoshika.lg.jp/about/zaiseijohou/shisetsumanejimento.data/202203shisetsukanri_zentai.pdf,medium,公共施設等総合管理計画の施設一覧(柿木地区)
+32505,吉賀町,蔵木グラウンドゴルフ場,,,,,,蔵木グラウンドゴルフ場 蔵木 170.2 平成 3 年,https://www.town.yoshika.lg.jp/about/zaiseijohou/shisetsumanejimento.data/202203shisetsukanri_zentai.pdf,medium,公共施設等総合管理計画の施設一覧(蔵木地区)
+33100,岡山市,御津グラウンドゴルフ場,,,,,,御津グラウンドゴルフ場 平成元年,https://www.city.okayama.jp/shisei/cmsfiles/contents/0000046/46493/1-3keikakuzenntai.pdf,medium,計画資料の施設一覧(8コース、芝生)
+33100,岡山市,承芳ふれあい広場グラウンドゴルフ場,,,,,,承芳ふれあい広場グラウンドゴルフ場,https://www.city.okayama.jp/shisei/cmsfiles/contents/0000046/46493/1-3keikakuzenntai.pdf,medium,計画資料の施設一覧(北区、平成9年、8コース)
+33100,岡山市,建部町総合スポーツセンターグラウンドゴルフ場,,,,,,建部町総合スポーツセンターグラウンドゴルフ場 昭和 55年,https://www.city.okayama.jp/shisei/cmsfiles/contents/0000046/46493/1-3keikakuzenntai.pdf,medium,計画資料の施設一覧(昭和55年、18コース、芝生)
+33202,倉敷市,倉敷市グラウンド・ゴルフ場,,,,,,倉敷市グラウンド・ゴルフ場 案内図,https://www.city.kurashiki.okayama.jp/_res/projects/default_project/_page_/001/005/102/course_heimennzu.pdf,high,コース平面図・案内図
 34202,呉市,呉昭和高校跡地グラウンド,,,,,使用可能な用途: ソフトボール(ゴム)、軟式野球、グラウンドゴルフ、サッカー等(取扱要綱に基づく暫定的な使用),"グラウンド ソフトボール(ゴム),軟式野球,グラウンドゴルフ,",https://www.city.kure.lg.jp/uploaded/attachment/113340.pdf,medium,資料の題名にある『呉昭和高校跡地グラウンド等』の『グラウンド』の区分の記述
+34213,廿日市市,宮浜温泉グラウンド・ゴルフ場,,,,,,宮浜温泉グラウンド・ゴルフ場,https://www.city.hatsukaichi.hiroshima.jp/uploaded/attachment/30682.pdf,medium,スポーツ施設の整備の沿革に載る
+34369,北広島町,道の駅舞ロードIC千代田グラウンドゴルフ場,,,,,,道の駅舞ロードIC千代田グラウンドゴルフ場,https://www.town.kitahiroshima.lg.jp/uploaded/attachment/20560.pdf,medium,地域イベントのチラシの会場として載る
+34545,神石高原町,山村広場グラウンドゴルフ場,,,,,,山村広場グラウンドゴルフ場使用日誌,http://www.jinsekigun.jp/user/filer_public/91/9c/919cb521-c4ab-49e9-8c8a-1d3b24fd515c/04guraundogoruhuchang-02_li-song-shan-cun-guang-chang-ggchang-shi-yong-ri-zhi.pdf,medium,使用日誌の様式
+36207,美馬市,美馬市穴吹グラウンド・ゴルフ場,,,,,,美馬市穴吹グラウンド・ゴルフ場使用許可申請書,https://www.city.mima.lg.jp/fs/1/1/0/5/6/4/_/ggorufushiyou.pdf,high,使用許可申請書の様式
+40130,福岡市,久山グラウンドゴルフ場,,,久山グラウンドゴルフ場管理事務所,,使用許可申請書を利用日の3か月前から1か月前の間に提出,久山グラウンドゴルフ場管理事務所に提出,https://www.city.fukuoka.lg.jp/kankyo/cleanpark-e/hp/documents/R7.9hisayamaGG.pdf,high,
 40211,筑後市,市民の森公園 軽スポーツ広場,,,,,グラウンドゴルフをはじめ様々な軽スポーツができる多目的広場,グラウンドゴルフをはじめ、,https://www.city.chikugo.lg.jp/var/rev0/0059/0186/2013218151528.pdf,medium,OCRで読んだPDFで、文が崩れている
+41205,伊万里市,伊万里松浦グラウンド・ゴルフ場,,,,,使用料一覧(社会体育施設)に載る,伊万里松浦グラウンド・ゴルフ場,https://www.city.imari.lg.jp/secure/34336/★使用料一覧（社会体育施設）R6.4.1.pdf,high,
 45431,美郷町,西郷総合グラウンド,美郷町西郷1870番地,,,,野球・ソフトボール・サッカー・グラウンドゴルフ。夜間照明設備あり,美郷町西郷 1870 番地 野球・ソフトボール・サッカー・グラウンドゴルフ,https://www.town.miyazaki-misato.lg.jp/kiji003561/3_561_1209_up_zdl0xkz1.pdf,high,

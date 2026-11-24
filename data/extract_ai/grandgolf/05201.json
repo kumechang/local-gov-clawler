@@ -1,0 +1,30 @@
+{
+  "municipality_code": "05201",
+  "municipality_name": "秋田市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/016/213/r8okugai.pdf",
+      "title": "屋外体育施設オープン予定一覧(令和8年)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "秋田市のグラウンドゴルフ場(屋外体育施設)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "令和8年は4月10日(金)にオープン。利用の申込は、利用日当日に施設窓口",
+      "gg_evidence": "グラウンドゴルフ場 4月10日(金)",
+      "pdf_url": "https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/016/213/r8okugai.pdf",
+      "confidence": "medium",
+      "note": "屋外体育施設オープン予定一覧。施設の正式名称は抜粋に無い"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

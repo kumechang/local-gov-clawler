@@ -1,0 +1,30 @@
+{
+  "municipality_code": "31325",
+  "municipality_name": "若桜町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.wakasa.tottori.jp/material/files/group/2/98684955.pdf",
+      "title": "教育委員会所管施設の連休中の利用",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "八幡広場グラウンド・ゴルフコース",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "八幡広場グラウンド・ゴルフコース",
+      "pdf_url": "https://www.town.wakasa.tottori.jp/material/files/group/2/98684955.pdf",
+      "confidence": "medium",
+      "note": "連休中の施設の利用案内"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

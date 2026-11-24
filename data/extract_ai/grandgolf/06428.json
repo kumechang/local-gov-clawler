@@ -1,0 +1,30 @@
+{
+  "municipality_code": "06428",
+  "municipality_name": "庄内町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.shonai.lg.jp/kurashi/shisetsu/undou/siteikannritaiikukann.files/210302_kome_sitei.pdf",
+      "title": "指定経過",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "庄内町笠山グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "庄内町笠山グラウンドゴルフ場",
+      "pdf_url": "https://www.town.shonai.lg.jp/kurashi/shisetsu/undou/siteikannritaiikukann.files/210302_kome_sitei.pdf",
+      "confidence": "high",
+      "note": "指定管理の経過の資料"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,30 @@
+{
+  "municipality_code": "25202",
+  "municipality_name": "彦根市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.hikone.lg.jp/material/files/group/106/ABcourse.pdf",
+      "title": "A・Bコース",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "荒神山公園グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "A・Bコース",
+      "gg_evidence": "荒神山公園グラウンド・ゴルフ場",
+      "pdf_url": "https://www.city.hikone.lg.jp/material/files/group/106/ABcourse.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

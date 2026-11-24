@@ -1,0 +1,68 @@
+{
+  "municipality_code": "02203",
+  "municipality_name": "八戸市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.hachinohe.aomori.jp/material/files/group/9/23090804.pdf",
+      "title": "多目的広場利用案内",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.hachinohe.aomori.jp/material/files/group/9/20190925-150113.pdf",
+      "title": "主練習場・投球練習場・トレーニング室利用案内",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.hachinohe.aomori.jp/material/files/group/9/202504nango_ryokin04dome.pdf",
+      "title": "屋内運動場(グリーンドーム)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "プライフーズスタジアム(多賀多目的運動場) 多目的広場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "プライフーズスタジアム(多賀多目的運動場)事務室",
+      "inquiry_phone": "0178-80-7597",
+      "usage_note": "敷地面積 多目的広場1 約14,000㎡・多目的広場2 約9,000㎡。利用期間 3月中旬〜11月(気候により変動)。休館日 第2・第4月曜日の午後",
+      "gg_evidence": "利用種目 グラウンドゴルフなど",
+      "pdf_url": "https://www.city.hachinohe.aomori.jp/material/files/group/9/23090804.pdf",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "facility_name": "八戸市 主練習場・投球練習場・トレーニング室",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "通年。休館日 毎週木曜日・年末年始",
+      "gg_evidence": "野球練習、フットサル、グラウンドゴルフなど",
+      "pdf_url": "https://www.city.hachinohe.aomori.jp/material/files/group/9/20190925-150113.pdf",
+      "confidence": "medium",
+      "note": "施設案内。名称は資料の題名から"
+    },
+    {
+      "facility_name": "屋内運動場(グリーンドーム)(八戸市)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "アリーナ74m×54m・天井高14m。通年。休館日 毎週月曜日・年末年始",
+      "gg_evidence": "野球練習、ソフトボール練習、フットサル、グラウンドゴルフなど",
+      "pdf_url": "https://www.city.hachinohe.aomori.jp/material/files/group/9/202504nango_ryokin04dome.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

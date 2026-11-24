@@ -1,0 +1,73 @@
+{
+  "municipality_code": "10448",
+  "municipality_name": "昭和村",
+  "documents": [
+    {
+      "pdf_url": "https://www.vill.showa.gunma.jp/kurashi/kyouiku/taikyo/files/01/R08_kyositsutaikai.pdf",
+      "title": "各種大会・教室開催要項(令和8年4月時点)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "総合運動公園グラウンドゴルフ場(昭和村)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "村のグラウンド・ゴルフ大会・教室の会場",
+      "gg_evidence": "総合運動公園グラウンドゴルフ場",
+      "pdf_url": "https://www.vill.showa.gunma.jp/kurashi/kyouiku/taikyo/files/01/R08_kyositsutaikai.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [
+    {
+      "event_name": "第10回グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "2026年5月19日(火) 午前8時30分集合",
+      "date_start": "2026-05-19",
+      "date_end": "2026-05-19",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "総合運動公園グラウンドゴルフ場",
+      "organizer": "",
+      "target": "小学生以上の村内在住者および村内勤務者",
+      "fee": "",
+      "entry": "",
+      "deadline": "2026-05-12",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "第10回グラウンド・ゴルフ大会 1 日 時 2026年5月19日(火) 午前8時30分集合 2 会 場 総合運動公園グラウンドゴルフ場",
+      "pdf_url": "https://www.vill.showa.gunma.jp/kurashi/kyouiku/taikyo/files/01/R08_kyositsutaikai.pdf",
+      "confidence": "high",
+      "note": "申込は教育委員会事務局へ5月12日(火)まで"
+    },
+    {
+      "event_name": "第10回グラウンド・ゴルフ教室",
+      "event_kind": "教室",
+      "date_text": "2026年5月12日(火) 8:30除草・整備、10:00教室開始",
+      "date_start": "2026-05-12",
+      "date_end": "2026-05-12",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "総合運動公園グラウンドゴルフ場",
+      "organizer": "",
+      "target": "小学生以上の村内在住者および村内勤務者",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "第10回グラウンド・ゴルフ教室 1 日 時 2026年5月12日(火)午前8時30分除草・整備作業開始",
+      "pdf_url": "https://www.vill.showa.gunma.jp/kurashi/kyouiku/taikyo/files/01/R08_kyositsutaikai.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

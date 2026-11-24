@@ -1,0 +1,17 @@
+{
+  "municipality_code": "13212",
+  "municipality_name": "日野市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/008/157/hinospo1gou.pdf",
+      "title": "ひのスポ第1号",
+      "relevant": false,
+      "skip_reason": "推進委員の紹介記事(個人の経歴)",
+      "doc_kind": "その他"
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

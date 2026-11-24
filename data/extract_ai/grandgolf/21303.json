@@ -1,0 +1,39 @@
+{
+  "municipality_code": "21303",
+  "municipality_name": "笠松町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.kasamatsu.gifu.jp/docs/2021081200026/file_contents/R8groundgolf.pdf",
+      "title": "令和8年度町民・交流グラウンド・ゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第44回町民・交流グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年10月25日(日) 予備日10月26日(月) 受付8:30 開会式9:00",
+      "date_start": "2026-10-25",
+      "date_end": "2026-10-25",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "四季の里広場",
+      "organizer": "笠松町スポーツ協会(共催 笠松町、主管 笠松町グラウンド・ゴルフ協会)",
+      "target": "笠松町の在住在勤者・町協会・クラブ在籍者(中学生以上)",
+      "fee": "1人100円",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "第 44 回 町民・交流グラウンド・ゴルフ 実施要項",
+      "pdf_url": "https://www.town.kasamatsu.gifu.jp/docs/2021081200026/file_contents/R8groundgolf.pdf",
+      "confidence": "high",
+      "note": "申込は『9月30日(月)まで』とあるが、令和8年の9月30日は水曜日で曜日が合わない(本文のまま)"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}
