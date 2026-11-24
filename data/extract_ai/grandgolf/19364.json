@@ -1,0 +1,39 @@
+{
+  "municipality_code": "19364",
+  "municipality_name": "早川町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.hayakawa.yamanashi.jp/people/sports/groundgolf.html",
+      "title": "町民グラウンド・ゴルフ大会(早川町)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "町民グラウンド・ゴルフ大会(早川町)",
+      "event_kind": "大会",
+      "date_text": "10月18日(日)(年3回開催の第3回)",
+      "date_start": "2026-10-18",
+      "date_end": "2026-10-18",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "町民スポーツ広場",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "早川町教育委員会教育課",
+      "contact_phone": "0556-45-2547",
+      "evidence": "第3回目は10月18日(日)に開催予定です。",
+      "pdf_url": "https://www.town.hayakawa.yamanashi.jp/people/sports/groundgolf.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

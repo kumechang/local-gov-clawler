@@ -1,0 +1,30 @@
+{
+  "municipality_code": "11217",
+  "municipality_name": "鴻巣市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kounosu.saitama.jp/site/konosu-education/2206.html",
+      "title": "鴻巣市グラウンド・ゴルフ協会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "鴻巣市グラウンド・ゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "市内公園等",
+      "activity_schedule": "各チーム週1〜3回練習、年2〜3回大会",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "構成クラブ 13クラブ 主な活動場所 市内公園等",
+      "pdf_url": "https://www.city.kounosu.saitama.jp/site/konosu-education/2206.html",
+      "confidence": "high",
+      "note": "13クラブで構成。会長の氏名・連絡先(携帯電話)は個人のため省略"
+    }
+  ],
+  "unsure": []
+}

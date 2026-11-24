@@ -1,0 +1,39 @@
+{
+  "municipality_code": "12205",
+  "municipality_name": "館山市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tateyama.chiba.jp/sports/page100700.html",
+      "title": "館山市スポーツ少年団親子グラウンドゴルフ大会が開催!",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "館山市スポーツ少年団親子グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "6月8日(日)",
+      "date_start": "2025-06-08",
+      "date_end": "2025-06-08",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "館山市営市民運動場",
+      "organizer": "館山市スポーツ少年団",
+      "target": "スポーツ少年団の団員・保護者(4団・77名参加)",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "6月8日(日曜日)に親子グラウンドゴルフ大会を館山市営市民運動場で開催しました。",
+      "pdf_url": "https://www.city.tateyama.chiba.jp/sports/page100700.html",
+      "confidence": "high",
+      "note": "令和7年6月10日掲載の開催報告"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

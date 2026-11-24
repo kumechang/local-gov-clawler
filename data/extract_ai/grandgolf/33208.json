@@ -1,0 +1,42 @@
+{
+  "municipality_code": "33208",
+  "municipality_name": "総社市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.soja.okayama.jp/soshiki/17/2686.html",
+      "title": "グラウンドゴルフコース案内(総社市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "清音ふるさとふれあい広場 グラウンドゴルフコース",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "ミニコース。アップダウンのある8コース(公認)",
+      "gg_evidence": "清音ふるさとふれあい広場内にある公認コースのグラウンドゴルフコースを紹介します。",
+      "pdf_url": "https://www.city.soja.okayama.jp/soshiki/17/2686.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "清音ふるさとふれあい広場 グラウンドゴルフコース",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "ミニコース。アップダウンのある8コース(公認)",
+      "gg_evidence": "清音ふるさとふれあい広場内にある公認コースのグラウンドゴルフコースを紹介します。",
+      "pdf_url": "https://www.city.soja.okayama.jp/soshiki/17/2686.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

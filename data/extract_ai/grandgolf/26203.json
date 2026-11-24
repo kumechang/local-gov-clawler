@@ -1,0 +1,30 @@
+{
+  "municipality_code": "26203",
+  "municipality_name": "綾部市",
+  "documents": [
+    {
+      "pdf_url": "https://www.ayabeonsen.com/leisure/golf/",
+      "title": "グラウンドゴルフ(あやべ温泉 二王館)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "あやべ温泉 二王館 グラウンドゴルフ",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "天然芝。廻り放題600円/人。9:00〜17:00、第2・第4月曜休(祝日の場合は翌日)。コンペ対応可",
+      "gg_evidence": "平日は3コース、24ホールで、土日祝日は1コース、8ホールでグラウンドゴルフが楽しめます。",
+      "pdf_url": "https://www.ayabeonsen.com/leisure/golf/",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

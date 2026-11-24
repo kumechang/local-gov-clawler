@@ -15,6 +15,20 @@
       "relevant": false,
       "skip_reason": "成績表",
       "doc_kind": "その他"
+    },
+    {
+      "pdf_url": "https://www.city.inagi.tokyo.jp/event/sports/1004106.html",
+      "title": "【結果公表】第58回稲城市民スポーツ・レクリエーション大会 グラウンドゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.inagi.tokyo.jp/event/kourei/1012946.html",
+      "title": "参加者募集!グラウンドゴルフ講習会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [],
@@ -39,6 +53,48 @@
       "pdf_url": "https://www.city.inagi.tokyo.jp/_res/projects/default_project/_page_/001/004/106/r8youkou.pdf",
       "confidence": "high",
       "note": "会場は大会一覧表(別PDF)の記載。電話は市外局番が本文に無い"
+    },
+    {
+      "event_name": "第58回稲城市民スポーツ・レクリエーション大会 グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "11月3日(火・祝)",
+      "date_start": "2026-11-03",
+      "date_end": "2026-11-03",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "11月3日(火曜・祝日)に「第58回稲城市民スポーツ・レクリエーション大会」レクリエーション競技としてグラウンドゴルフ大会を開催しました。",
+      "pdf_url": "https://www.city.inagi.tokyo.jp/event/sports/1004106.html",
+      "confidence": "high",
+      "note": "開催結果の公表。19チーム87名が参加。会場は抜粋に無い"
+    },
+    {
+      "event_name": "グラウンドゴルフ講習会(稲城市)",
+      "event_kind": "教室",
+      "date_text": "令和8年11月12日(木)9:30〜13:00(予備日11月19日)",
+      "date_start": "2026-11-12",
+      "date_end": "2026-11-12",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "稲城中央公園総合グラウンド",
+      "organizer": "稲城市みどりクラブ連合会",
+      "target": "募集30人(申込先着順)",
+      "fee": "無料",
+      "entry": "",
+      "deadline": "令和8年10月30日(金)",
+      "contact_dept": "稲城市みどりクラブ連合会(福祉部高齢福祉課)",
+      "contact_phone": "042-378-2111",
+      "evidence": "令和8年11月12日(木曜日)",
+      "pdf_url": "https://www.city.inagi.tokyo.jp/event/kourei/1012946.html",
+      "confidence": "high",
+      "note": ""
     }
   ],
   "organizations": [],

@@ -1,0 +1,30 @@
+{
+  "municipality_code": "31201",
+  "municipality_name": "鳥取市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tottori.lg.jp/site/kasenkouen-kouenn/5786.html",
+      "title": "湖山池公園(多目的広場)でのグラウンドゴルフ等の使用について",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "湖山池金沢休養ゾーン(金沢ふれあい公園)多目的広場",
+      "address": "鳥取市金沢",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "GG用に初心者コース(真砂土)と上級者コース(芝)の2種類を確保できる。自由使用だが独占使用は許可申請が必要",
+      "gg_evidence": "多目的広場(グラウンドゴルフ、イベント等に利用できます。)",
+      "pdf_url": "https://www.city.tottori.lg.jp/site/kasenkouen-kouenn/5786.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

@@ -8,6 +8,20 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.ota.gunma.jp/site/home-town-ota/1115.html",
+      "title": "渡良瀬スポーツ広場グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.ota.gunma.jp/site/home-town-ota/1133.html",
+      "title": "利根グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -22,6 +36,30 @@
       "pdf_url": "https://www.city.ota.gunma.jp/uploaded/life/14172_60132_misc.pdf",
       "confidence": "medium",
       "note": "スポーツ施設ストック適正化計画の施設一覧(昭和59年)"
+    },
+    {
+      "facility_name": "渡良瀬スポーツ広場グラウンドゴルフ場",
+      "address": "太田市只上町2862-7",
+      "phone": "",
+      "inquiry_dept": "渡良瀬スポーツ広場係",
+      "inquiry_phone": "0276-37-2990",
+      "usage_note": "4コース32ホール。9:00〜17:00、毎週水曜休、利用料無料",
+      "gg_evidence": "渡良瀬スポーツ広場グラウンドゴルフ場",
+      "pdf_url": "https://www.city.ota.gunma.jp/site/home-town-ota/1115.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "利根グラウンドゴルフ場",
+      "address": "太田市武蔵島町地先",
+      "phone": "",
+      "inquiry_dept": "尾島体育館",
+      "inquiry_phone": "0276-61-3355",
+      "usage_note": "土コース32ホール・芝コース8ホール。6:00〜18:00、利用料無料。芝コースは水・木と2/1〜4月末が養生期間",
+      "gg_evidence": "土コース32ホール 芝コース8ホール",
+      "pdf_url": "https://www.city.ota.gunma.jp/site/home-town-ota/1133.html",
+      "confidence": "high",
+      "note": ""
     }
   ],
   "events": [],

@@ -1,0 +1,39 @@
+{
+  "municipality_code": "27212",
+  "municipality_name": "八尾市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.yao.osaka.jp/bunka_sports_event/sports/1011029/1025085.html",
+      "title": "八尾市GG協会 第37回グラウンド・ゴルフ大会 出場者募集",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "八尾市GG協会 第37回グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年12月8日(火)9:00〜(予備日12月11日)",
+      "date_start": "2026-12-08",
+      "date_end": "2026-12-08",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "八尾市立青少年運動広場(安中町)",
+      "organizer": "八尾市グラウンド・ゴルフ協会",
+      "target": "八尾市在住・在勤・在学の方(個人ゲーム、募集180名・申込順)",
+      "fee": "800円",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年12月8日(火曜日)",
+      "pdf_url": "https://www.city.yao.osaka.jp/bunka_sports_event/sports/1011029/1025085.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

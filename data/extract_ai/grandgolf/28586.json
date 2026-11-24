@@ -1,0 +1,42 @@
+{
+  "municipality_code": "28586",
+  "municipality_name": "新温泉町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.shinonsen.hyogo.jp/page/?mode=detail&page_id=c47ccc0b17868bad27b1f54c458f4103",
+      "title": "浜坂多目的公園グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "浜坂多目的公園グラウンドゴルフ場",
+      "address": "兵庫県美方郡新温泉町浜坂字下タ山61",
+      "phone": "",
+      "inquiry_dept": "新温泉町体育協会(浜坂B&G海洋センター内)",
+      "inquiry_phone": "0796-82-1616",
+      "usage_note": "平成20年3月完成。8:30〜17:00、月曜・年末年始休み。貸切(2コース)午前・午後各4,000円(町外8,000円)、個人1人200円(町外400円)",
+      "gg_evidence": "浜坂多目的公園グラウンドゴルフ場",
+      "pdf_url": "https://www.town.shinonsen.hyogo.jp/page/?mode=detail&page_id=c47ccc0b17868bad27b1f54c458f4103",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "浜坂多目的公園グラウンドゴルフ場",
+      "address": "兵庫県美方郡新温泉町浜坂字下タ山61",
+      "phone": "",
+      "inquiry_dept": "新温泉町体育協会(浜坂B&G海洋センター内)",
+      "inquiry_phone": "0796-82-1616",
+      "usage_note": "平成20年3月完成。8:30〜17:00、月曜・年末年始休み。貸切(2コース)午前・午後各4,000円(町外8,000円)、個人1人200円(町外400円)",
+      "gg_evidence": "浜坂多目的公園グラウンドゴルフ場",
+      "pdf_url": "https://www.town.shinonsen.hyogo.jp/page/?mode=detail&page_id=c47ccc0b17868bad27b1f54c458f4103",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

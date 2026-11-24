@@ -1,0 +1,30 @@
+{
+  "municipality_code": "15216",
+  "municipality_name": "糸魚川市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.itoigawa.lg.jp/page/2342.html",
+      "title": "美山グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "美山グラウンド・ゴルフ場",
+      "address": "糸魚川市大野65-1",
+      "phone": "025-552-8290(美山管理棟・予約先)",
+      "inquiry_dept": "市民総合体育館(冬季閉鎖中の予約先)",
+      "inquiry_phone": "025-552-6521",
+      "usage_note": "日本GG協会公認8ホール×3コース。9:00〜日没、12/1〜3/31閉鎖",
+      "gg_evidence": "美山グラウンド・ゴルフ場",
+      "pdf_url": "https://www.city.itoigawa.lg.jp/page/2342.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

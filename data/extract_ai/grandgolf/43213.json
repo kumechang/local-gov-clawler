@@ -1,0 +1,49 @@
+{
+  "municipality_code": "43213",
+  "municipality_name": "宇城市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.uki.kumamoto.jp/2008868",
+      "title": "宇城市松橋グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.uki.kumamoto.jp/2008899",
+      "title": "豊野グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "宇城市松橋グラウンドゴルフ場",
+      "address": "宇城市松橋町松橋395番地",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "8:30〜22:00、日曜・祝日の17時以降と12/29〜1/3休み。駐車場約10台。1時間あたり市内無料・市外400円(照明は別料金)",
+      "gg_evidence": "所在地:〒869-0502 宇城市松橋町松橋395番地",
+      "pdf_url": "https://www.city.uki.kumamoto.jp/2008868",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "豊野グラウンドゴルフ場",
+      "address": "宇城市豊野町糸石2614番地1",
+      "phone": "",
+      "inquiry_dept": "豊野公民館",
+      "inquiry_phone": "0964-45-3700",
+      "usage_note": "8:30〜17:00、日曜と12/29〜1/3休み。駐車場15台・トイレあり",
+      "gg_evidence": "所在地:〒861-4301 宇城市豊野町糸石2614番地1",
+      "pdf_url": "https://www.city.uki.kumamoto.jp/2008899",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

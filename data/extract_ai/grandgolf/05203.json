@@ -15,6 +15,20 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.yokote.lg.jp/shisei/1001176/1001445/1001542/1006756.html",
+      "title": "施設案内 大森グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.yokote.lg.jp/shisetsu/1001526/1004539.html",
+      "title": "施設案内 赤坂総合公園",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -29,6 +43,30 @@
       "pdf_url": "https://www.city.yokote.lg.jp/_res/projects/default_project/_page_/001/003/445/r8.4.pdf.pdf",
       "confidence": "medium",
       "note": "社会体育施設使用許可申請書の施設名の記載例"
+    },
+    {
+      "facility_name": "大森グラウンド・ゴルフ場(横手市)",
+      "address": "横手市大森町字高口下水戸堤1",
+      "phone": "0182-26-2601",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "全4コース32ホール、日本GG協会認定コース。貸し出し用クラブ・ボールあり。営業4月中旬〜11月中旬 9:00〜17:00、駐車場200台",
+      "gg_evidence": "公益社団法人日本グラウンド・ゴルフ協会認定コースです。",
+      "pdf_url": "https://www.city.yokote.lg.jp/shisei/1001176/1001445/1001542/1006756.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "赤坂総合公園グラウンド・ゴルフ場",
+      "address": "横手市赤坂字大沼沢48",
+      "phone": "0182-33-2546",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "野球場・運動広場とともに赤坂総合公園内の施設",
+      "gg_evidence": "0182-33-2546(グラウンド・ゴルフ場)",
+      "pdf_url": "https://www.city.yokote.lg.jp/shisetsu/1001526/1004539.html",
+      "confidence": "high",
+      "note": ""
     }
   ],
   "events": [

@@ -1,0 +1,39 @@
+{
+  "municipality_code": "24344",
+  "municipality_name": "川越町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.kawagoe.mie.jp/bunka_sports_event/1002592/1004007.html",
+      "title": "おひさま児童館 グラウンドゴルフ",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "おひさま児童館 グラウンドゴルフ",
+      "event_kind": "教室",
+      "date_text": "令和8年4月7日〜令和9年3月3日の月1回(水曜中心)15:20〜16:20",
+      "date_start": "2026-04-07",
+      "date_end": "2027-03-03",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "おひさま児童館広場",
+      "organizer": "",
+      "target": "小学生",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年4月7日(火曜日)",
+      "pdf_url": "https://www.town.kawagoe.mie.jp/bunka_sports_event/1002592/1004007.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

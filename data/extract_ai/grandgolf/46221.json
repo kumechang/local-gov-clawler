@@ -1,0 +1,39 @@
+{
+  "municipality_code": "46221",
+  "municipality_name": "志布志市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.shibushi.lg.jp/soshiki/22/35693.html",
+      "title": "高齢者学級合同グラウンド・ゴルフ大会が開催されました!",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "高齢者学級合同グラウンド・ゴルフ大会(志布志市)",
+      "event_kind": "大会",
+      "date_text": "11月6日(金)",
+      "date_start": "2026-11-06",
+      "date_end": "2026-11-06",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "志布志市(高齢者学級)",
+      "target": "市内の高齢者学級(60歳以上)。26チーム129名参加",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "11月6日(金曜日)、志布志市高齢者学級合同グラウンド・ゴルフ大会が開催されました。",
+      "pdf_url": "https://www.city.shibushi.lg.jp/soshiki/22/35693.html",
+      "confidence": "high",
+      "note": "開催報告。会場は抜粋に無い"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

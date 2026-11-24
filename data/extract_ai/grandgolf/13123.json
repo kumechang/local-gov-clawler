@@ -1,0 +1,30 @@
+{
+  "municipality_code": "13123",
+  "municipality_name": "江戸川区",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.edogawa.tokyo.jp/e028/sports/sports/kensaku/groundgolf_shi_d.html",
+      "title": "鹿骨1丁目リバーズ(グラウンドゴルフ)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "鹿骨1丁目リバーズ",
+      "org_kind": "サークル",
+      "activity_place": "鹿骨松本小学校 校庭",
+      "activity_schedule": "毎週日曜日 9:00〜11:00",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "鹿骨地区で活動するグラウンドゴルフのサークルです。",
+      "pdf_url": "https://www.city.edogawa.tokyo.jp/e028/sports/sports/kensaku/groundgolf_shi_d.html",
+      "confidence": "high",
+      "note": "年会費7,000円。江戸川区グラウンドゴルフ協会加盟団体。江戸川大会(春・夏・秋)3回。申込・問合せは個人名のため省略"
+    }
+  ],
+  "unsure": []
+}

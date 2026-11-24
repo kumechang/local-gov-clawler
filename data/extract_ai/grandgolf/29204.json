@@ -1,0 +1,42 @@
+{
+  "municipality_code": "29204",
+  "municipality_name": "天理市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tenri.nara.jp/shisetsu/sportsshisetsu/groundgolfjou/1401355004476.html",
+      "title": "グラウンド・ゴルフ場(天理市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "天理市グラウンド・ゴルフ場",
+      "address": "天理市杉本町150番地",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "やまのべコース(東側)・まほろばコース(西側)の2コース(各50m・30m・25m・15mが2ホールずつ)。9:00〜17:00(受付 午前9〜12時、午後13〜16時)",
+      "gg_evidence": "やまのべコース (東側)",
+      "pdf_url": "https://www.city.tenri.nara.jp/shisetsu/sportsshisetsu/groundgolfjou/1401355004476.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "天理市グラウンド・ゴルフ場",
+      "address": "天理市杉本町150番地",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "やまのべコース(東側)・まほろばコース(西側)の2コース(各50m・30m・25m・15mが2ホールずつ)。9:00〜17:00(受付 午前9〜12時、午後13〜16時)",
+      "gg_evidence": "やまのべコース (東側)",
+      "pdf_url": "https://www.city.tenri.nara.jp/shisetsu/sportsshisetsu/groundgolfjou/1401355004476.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

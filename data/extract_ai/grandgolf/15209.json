@@ -15,6 +15,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.kamo.niigata.jp/shisetsu/list/facility08_11/",
+      "title": "リバーサイド加茂グラウンド・ゴルフコース",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -27,6 +34,18 @@
       "usage_note": "加茂市総合スポーツ大会のグラウンド・ゴルフ大会の会場",
       "gg_evidence": "リバーサイド加茂グラウンド・ゴルフコース",
       "pdf_url": "https://www.city.kamo.niigata.jp/fs/2/1/8/3/8/2/_/R8%E8%A6%81%E9%A0%85.pdf",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "リバーサイド加茂グラウンド・ゴルフコース",
+      "address": "新潟県加茂市河川敷(石川地内)",
+      "phone": "0256-53-2206",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "リバーサイド加茂グラウンド・ゴルフコース",
+      "pdf_url": "https://www.city.kamo.niigata.jp/shisetsu/list/facility08_11/",
       "confidence": "high",
       "note": ""
     }

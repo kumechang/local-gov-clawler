@@ -1,0 +1,39 @@
+{
+  "municipality_code": "24204",
+  "municipality_name": "松阪市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.matsusaka.mie.jp/site/sports/261115.html",
+      "title": "第22回松阪市長杯グラウンド・ゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第22回松阪市長杯グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年11月15日(日)8:45〜",
+      "date_start": "2026-11-15",
+      "date_end": "2026-11-15",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "松阪市総合運動公園 多目的広場 第1",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "教育委員会事務局スポーツ課",
+      "contact_phone": "0598-53-4391",
+      "evidence": "令和8年11月15日(日曜日)午前8時45分~",
+      "pdf_url": "https://www.city.matsusaka.mie.jp/site/sports/261115.html",
+      "confidence": "high",
+      "note": "雨のため中止(当日6時発表)"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

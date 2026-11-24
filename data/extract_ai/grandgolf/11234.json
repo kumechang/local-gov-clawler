@@ -1,0 +1,92 @@
+{
+  "municipality_code": "11234",
+  "municipality_name": "八潮市",
+  "documents": [
+    {
+      "pdf_url": "https://yashio-groundgolf.jimdofree.com/大会開催要項-クラブ対抗-選手権各大会要項/",
+      "title": "令和6年度 八潮市グラウンド・ゴルフ大会要項",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://yashio-groundgolf.jimdofree.com/令和８年度大会成績表/",
+      "title": "令和8年度 クラブ対抗交歓大会 順位",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "八潮市 令和8年度 春季交歓大会",
+      "event_kind": "大会",
+      "date_text": "2月22日(日)",
+      "date_start": "2026-02-22",
+      "date_end": "2026-02-22",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "八潮市グラウンド・ゴルフ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年度 春季交歓大会 (2月22日 日曜日)",
+      "pdf_url": "https://yashio-groundgolf.jimdofree.com/令和８年度大会成績表/",
+      "confidence": "high",
+      "note": "成績表のページ(会場は抜粋に無い)"
+    },
+    {
+      "event_name": "八潮市 令和8年度 春季交歓大会",
+      "event_kind": "大会",
+      "date_text": "2月22日(日)",
+      "date_start": "2026-02-22",
+      "date_end": "2026-02-22",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "八潮市グラウンド・ゴルフ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年度 春季交歓大会 (2月22日 日曜日)",
+      "pdf_url": "https://yashio-groundgolf.jimdofree.com/令和８年度大会成績表/",
+      "confidence": "high",
+      "note": "成績表のページ(会場は抜粋に無い)"
+    }
+  ],
+  "organizations": [
+    {
+      "org_name": "八潮市グラウンド・ゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "鶴ケ曾根運動広場(令和6年度大会要項の会場)",
+      "activity_schedule": "クラブ対抗・選手権・春季交歓大会など",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "2、主 催 八潮市グラウンド・ゴルフ協会",
+      "pdf_url": "https://yashio-groundgolf.jimdofree.com/大会開催要項-クラブ対抗-選手権各大会要項/",
+      "confidence": "high",
+      "note": "登録団体を統括する協会。会長・事務局担当者の氏名・連絡先(携帯電話)は個人のため省略"
+    },
+    {
+      "org_name": "八潮市グラウンド・ゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "鶴ケ曾根運動広場(令和6年度大会要項の会場)",
+      "activity_schedule": "クラブ対抗・選手権・春季交歓大会など",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "2、主 催 八潮市グラウンド・ゴルフ協会",
+      "pdf_url": "https://yashio-groundgolf.jimdofree.com/大会開催要項-クラブ対抗-選手権各大会要項/",
+      "confidence": "high",
+      "note": "登録団体を統括する協会。会長・事務局担当者の氏名・連絡先(携帯電話)は個人のため省略"
+    }
+  ],
+  "unsure": []
+}

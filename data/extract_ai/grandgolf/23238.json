@@ -1,0 +1,30 @@
+{
+  "municipality_code": "23238",
+  "municipality_name": "長久手市",
+  "documents": [
+    {
+      "pdf_url": "https://www.nagakute-sport.com/グラウンド-ゴルフ連盟",
+      "title": "グラウンド・ゴルフ連盟(Nagakute City Sport)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "長久手市グラウンド・ゴルフ連盟",
+      "org_kind": "連盟",
+      "activity_place": "スポーツの杜(冬は市民球場)",
+      "activity_schedule": "定期練習 毎月第1・3水曜日",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンド・ゴルフ連盟",
+      "pdf_url": "https://www.nagakute-sport.com/グラウンド-ゴルフ連盟",
+      "confidence": "high",
+      "note": "会員数41名。役員の氏名は個人名のため省略"
+    }
+  ],
+  "unsure": []
+}

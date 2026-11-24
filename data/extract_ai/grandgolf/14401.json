@@ -1,0 +1,30 @@
+{
+  "municipality_code": "14401",
+  "municipality_name": "愛川町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.aikawa.kanagawa.jp/saposen/member/4/graundgolfkyoukai/index.html",
+      "title": "愛川町グラウンド・ゴルフ協会(公益活動団体情報)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "愛川町グラウンド・ゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "愛川町グラウンド・ゴルフ協会",
+      "pdf_url": "https://www.town.aikawa.kanagawa.jp/saposen/member/4/graundgolfkyoukai/index.html",
+      "confidence": "high",
+      "note": "公益活動団体として平成23年9月登録、会員40人。代表者の住所・電話・メールは個人のため省略"
+    }
+  ],
+  "unsure": []
+}

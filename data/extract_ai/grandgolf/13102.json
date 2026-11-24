@@ -1,0 +1,39 @@
+{
+  "municipality_code": "13102",
+  "municipality_name": "中央区",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.chuo.lg.jp/a0015/bunkakankou/sports/jigyou/taikai/golfkousyukai.html",
+      "title": "グラウンドゴルフ・ペタンク・ターゲットバードゴルフ講習会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "グラウンドゴルフ・ペタンク・ターゲットバードゴルフ講習会(中央区)",
+      "event_kind": "教室",
+      "date_text": "令和8年5月21日(木)13:00〜15:00(雨天中止)",
+      "date_start": "2026-05-21",
+      "date_end": "2026-05-21",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "月島運動場",
+      "organizer": "",
+      "target": "18歳以上の区内在住・在勤者(高校生を除く)",
+      "fee": "",
+      "entry": "当日直接会場へ",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年5月21日(木曜日)",
+      "pdf_url": "https://www.city.chuo.lg.jp/a0015/bunkakankou/sports/jigyou/taikai/golfkousyukai.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,30 @@
+{
+  "municipality_code": "06203",
+  "municipality_name": "鶴岡市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tsuruoka.lg.jp/bunka/sports/sports-shisetsu/sportsguraunndogoruh.html",
+      "title": "鶴岡市グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "鶴岡市グラウンド・ゴルフ場",
+      "address": "鶴岡市勝福寺字田畑地内",
+      "phone": "",
+      "inquiry_dept": "NPO法人鶴岡市スポーツ協会(櫛引スポーツセンター)",
+      "inquiry_phone": "0235-57-4311",
+      "usage_note": "8ホール×6コース(常設4)。8:30〜19:00。12〜3月は使用不可。電話か櫛引スポーツセンター窓口で予約し使用許可申請書を提出(専用使用)。指定管理者はNPO法人鶴岡市スポーツ協会",
+      "gg_evidence": "8ホール×6コース(常設4コース)",
+      "pdf_url": "https://www.city.tsuruoka.lg.jp/bunka/sports/sports-shisetsu/sportsguraunndogoruh.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

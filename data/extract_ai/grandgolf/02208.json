@@ -15,6 +15,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "http://kyoushin.org/sports/index.php?QBlog-20260923-1",
+      "title": "大畑中央公園ブログ",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [],
@@ -123,6 +130,27 @@
       "pdf_url": "https://www.city.mutsu.lg.jp/bunka/sports/event/sportscalender/files/kannsei.pdf",
       "confidence": "medium",
       "note": ""
+    },
+    {
+      "event_name": "第10回グラウンド・ゴルフ教室(大畑中央公園)",
+      "event_kind": "教室",
+      "date_text": "9月23日(水)",
+      "date_start": "2026-09-23",
+      "date_end": "2026-09-23",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "大畑中央公園陸上競技場",
+      "organizer": "",
+      "target": "",
+      "fee": "550円(用具の貸し出しは無料)",
+      "entry": "大畑中央公園受付に問い合わせ",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "0175-34-6810",
+      "evidence": "9月23日(水)大畑中央公園陸上競技場にてグラウンド・ゴルフ教室を開催しました。",
+      "pdf_url": "http://kyoushin.org/sports/index.php?QBlog-20260923-1",
+      "confidence": "high",
+      "note": "毎月2回(第2・第4水曜日)開催。次回は10月14日"
     }
   ],
   "organizations": [],

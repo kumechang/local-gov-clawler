@@ -1,0 +1,39 @@
+{
+  "municipality_code": "14402",
+  "municipality_name": "清川村",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.kiyokawa.kanagawa.jp/Sightseeing/sports/4013.html",
+      "title": "清川村グラウンド・ゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "清川村グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年6月27日(土)8:00〜(受付7:30)",
+      "date_start": "2026-06-27",
+      "date_end": "2026-06-27",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "村運動公園野球場",
+      "organizer": "清川村(生涯スポーツ推進事業)",
+      "target": "村内在住・在勤者 20人(先着)",
+      "fee": "無料",
+      "entry": "",
+      "deadline": "6月19日(金)",
+      "contact_dept": "生涯学習課",
+      "contact_phone": "",
+      "evidence": "6月27 日(土曜日) 午前8時~",
+      "pdf_url": "https://www.town.kiyokawa.kanagawa.jp/Sightseeing/sports/4013.html",
+      "confidence": "high",
+      "note": "雨天により中止"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

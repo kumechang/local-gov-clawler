@@ -1,0 +1,42 @@
+{
+  "municipality_code": "10464",
+  "municipality_name": "玉村町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.tamamura.lg.jp/docs/2018052200314/",
+      "title": "玉村町グラウンド・ゴルフ場/スポーツ施設",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "玉村町グラウンド・ゴルフ場",
+      "address": "玉村町大字角渕3202−3",
+      "phone": "",
+      "inquiry_dept": "総合運動公園(指定管理者: 企業組合群馬中高年雇用福祉事業団)",
+      "inquiry_phone": "0270-65-9530",
+      "usage_note": "グラウンド・ゴルフ場と多目的広場。9:00〜17:00、月曜休(祝日の場合は翌日)。スタート小屋で随時受付、50人以上の町内団体の大会等は1か月前から文化センター窓口で予約",
+      "gg_evidence": "玉村町グラウンド・ゴルフ場利用案内",
+      "pdf_url": "https://www.town.tamamura.lg.jp/docs/2018052200314/",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "玉村町グラウンド・ゴルフ場",
+      "address": "玉村町大字角渕3202−3",
+      "phone": "",
+      "inquiry_dept": "総合運動公園(指定管理者: 企業組合群馬中高年雇用福祉事業団)",
+      "inquiry_phone": "0270-65-9530",
+      "usage_note": "グラウンド・ゴルフ場と多目的広場。9:00〜17:00、月曜休(祝日の場合は翌日)。スタート小屋で随時受付、50人以上の町内団体の大会等は1か月前から文化センター窓口で予約",
+      "gg_evidence": "玉村町グラウンド・ゴルフ場利用案内",
+      "pdf_url": "https://www.town.tamamura.lg.jp/docs/2018052200314/",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,142 @@
+{
+  "municipality_code": "34207",
+  "municipality_name": "福山市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.fukuyama.hiroshima.jp/site/sports/415922.html",
+      "title": "沼隈グラウンド・ゴルフ交歓会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.fukuyama.hiroshima.jp/soshiki/sports/4705.html",
+      "title": "福山市グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.fukuyama.hiroshima.jp/soshiki/sports/17117.html",
+      "title": "福山市芦田川グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.fukuyama.hiroshima.jp/soshiki/sports/67689.html",
+      "title": "福山市沼隈グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "福山市グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "7コース全面芝の日本GG協会認定コース、クラブハウス・駐車場あり。開場 10〜6月9:00〜17:00、7〜9月7:00〜17:00。専用使用は1コース1日20,940円",
+      "gg_evidence": "2008年(平成20年)7月28日(月曜日)に、福山市グラウンド・ゴルフ場が完成しました。",
+      "pdf_url": "https://www.city.fukuyama.hiroshima.jp/soshiki/sports/4705.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "福山市芦田川グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "増水のおそれで6/25から使用中止、6/30 9:00に利用再開(令和8年)",
+      "gg_evidence": "福山市芦田川グラウンド・ゴルフ場は、河川工作物を撤去し、6月25日(木曜日)から使用中止とします。",
+      "pdf_url": "https://www.city.fukuyama.hiroshima.jp/soshiki/sports/17117.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "福山市グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "7コース全面芝の日本GG協会認定コース、クラブハウス・駐車場あり。開場 10〜6月9:00〜17:00、7〜9月7:00〜17:00。専用使用は1コース1日20,940円",
+      "gg_evidence": "2008年(平成20年)7月28日(月曜日)に、福山市グラウンド・ゴルフ場が完成しました。",
+      "pdf_url": "https://www.city.fukuyama.hiroshima.jp/soshiki/sports/4705.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "福山市芦田川グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "増水のおそれで6/25から使用中止、6/30 9:00に利用再開(令和8年)",
+      "gg_evidence": "福山市芦田川グラウンド・ゴルフ場は、河川工作物を撤去し、6月25日(木曜日)から使用中止とします。",
+      "pdf_url": "https://www.city.fukuyama.hiroshima.jp/soshiki/sports/17117.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "福山市沼隈グラウンド・ゴルフ場",
+      "address": "福山市沼隈町大字下山南字西ノ迫7023番1",
+      "phone": "084-988-0909",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "全面芝張り2コースのグラウンド・ゴルフ専用施設(平成28年完成)",
+      "gg_evidence": "2016年(平成28年)5月1日(日曜日)、福山市沼隈グラウンド・ゴルフ場が完成しました。",
+      "pdf_url": "https://www.city.fukuyama.hiroshima.jp/soshiki/sports/67689.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [
+    {
+      "event_name": "沼隈グラウンド・ゴルフ交歓会(福山市)",
+      "event_kind": "大会",
+      "date_text": "2026年11月21日(土)受付8:30〜(雨天中止)",
+      "date_start": "2026-11-21",
+      "date_end": "2026-11-21",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "福山市沼隈グラウンド・ゴルフ場",
+      "organizer": "",
+      "target": "小学生以上(小中高生は保護者同伴)、定員96人(先着)",
+      "fee": "1人700円",
+      "entry": "11月1日9時から参加費を添えて直接沼隈グラウンド・ゴルフ場へ",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "2026年(令和8年)11月21日(土曜日) 受付午前8時30分~",
+      "pdf_url": "https://www.city.fukuyama.hiroshima.jp/site/sports/415922.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "event_name": "沼隈グラウンド・ゴルフ交歓会(福山市)",
+      "event_kind": "大会",
+      "date_text": "2026年11月21日(土)受付8:30〜(雨天中止)",
+      "date_start": "2026-11-21",
+      "date_end": "2026-11-21",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "福山市沼隈グラウンド・ゴルフ場",
+      "organizer": "",
+      "target": "小学生以上(小中高生は保護者同伴)、定員96人(先着)",
+      "fee": "1人700円",
+      "entry": "11月1日9時から参加費を添えて直接沼隈グラウンド・ゴルフ場へ",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "2026年(令和8年)11月21日(土曜日) 受付午前8時30分~",
+      "pdf_url": "https://www.city.fukuyama.hiroshima.jp/site/sports/415922.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

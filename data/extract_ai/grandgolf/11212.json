@@ -1,0 +1,73 @@
+{
+  "municipality_code": "11212",
+  "municipality_name": "東松山市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.higashimatsuyama.lg.jp/site/circle/1952.html",
+      "title": "平野グラウンド・ゴルフクラブ",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.higashimatsuyama.lg.jp/site/circle/25953.html",
+      "title": "野本グラウンドゴルフ愛好会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "平野グラウンド・ゴルフクラブ",
+      "org_kind": "クラブ",
+      "activity_place": "",
+      "activity_schedule": "練習会を実施(日時は抜粋に無い)",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "平野クラブは、2000年(平成12年)に「健康とふれあい」を目的に発足、誰でもいつでも入会できます。",
+      "pdf_url": "https://www.city.higashimatsuyama.lg.jp/site/circle/1952.html",
+      "confidence": "high",
+      "note": "2000年発足。東松山市のサークル紹介ページ"
+    },
+    {
+      "org_name": "野本グラウンドゴルフ愛好会",
+      "org_kind": "サークル",
+      "activity_place": "",
+      "activity_schedule": "月4回、第1〜第4土曜日の午前中",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "練習は1か月4回で、第1土曜日から第4土曜日の午前中に行っています。",
+      "pdf_url": "https://www.city.higashimatsuyama.lg.jp/site/circle/25953.html",
+      "confidence": "high",
+      "note": "会員の約60%以上が女性"
+    },
+    {
+      "org_name": "平野グラウンド・ゴルフクラブ",
+      "org_kind": "クラブ",
+      "activity_place": "",
+      "activity_schedule": "練習会を実施(日時は抜粋に無い)",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "平野クラブは、2000年(平成12年)に「健康とふれあい」を目的に発足、誰でもいつでも入会できます。",
+      "pdf_url": "https://www.city.higashimatsuyama.lg.jp/site/circle/1952.html",
+      "confidence": "high",
+      "note": "2000年発足。東松山市のサークル紹介ページ"
+    },
+    {
+      "org_name": "野本グラウンドゴルフ愛好会",
+      "org_kind": "サークル",
+      "activity_place": "",
+      "activity_schedule": "月4回、第1〜第4土曜日の午前中",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "練習は1か月4回で、第1土曜日から第4土曜日の午前中に行っています。",
+      "pdf_url": "https://www.city.higashimatsuyama.lg.jp/site/circle/25953.html",
+      "confidence": "high",
+      "note": "会員の約60%以上が女性"
+    }
+  ],
+  "unsure": []
+}

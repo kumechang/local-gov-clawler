@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "年間予定"
+    },
+    {
+      "pdf_url": "https://www.city.yoshikawa.saitama.jp/index.cfm/26,107298,143,771,html",
+      "title": "第11回グラウンドゴルフ大会参加者募集中",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [],
@@ -32,6 +39,27 @@
       "pdf_url": "https://www.city.yoshikawa.saitama.jp/index.cfm/26,120614,c,html/120614/20261102-114024.pdf",
       "confidence": "high",
       "note": ""
+    },
+    {
+      "event_name": "第11回グラウンドゴルフ大会(吉川市)",
+      "event_kind": "大会",
+      "date_text": "令和8年11月22日(日)9:30〜12:00(受付9:00)",
+      "date_start": "2026-11-22",
+      "date_end": "2026-11-22",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "吉川運動公園",
+      "organizer": "吉川市スポーツ推進課",
+      "target": "市内在住・在勤・在学の小学生以上(定員64名、超過は抽選)",
+      "fee": "無料",
+      "entry": "窓口(総合体育館)・ファクス・電子申請",
+      "deadline": "令和8年10月22日(木)",
+      "contact_dept": "スポーツ推進課 スポーツ推進係",
+      "contact_phone": "048-982-6800",
+      "evidence": "令和8年11月22日(日曜日)午前9時30分から正午まで",
+      "pdf_url": "https://www.city.yoshikawa.saitama.jp/index.cfm/26,107298,143,771,html",
+      "confidence": "high",
+      "note": "個人戦、2コース16ホール"
     }
   ],
   "organizations": [],

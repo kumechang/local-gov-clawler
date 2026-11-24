@@ -8,9 +8,41 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.town.tawaramoto.nara.jp/gyosei/shisetsu/sport/8804.html",
+      "title": "グラウンドゴルフ場(田原本町)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
-  "facilities": [],
+  "facilities": [
+    {
+      "facility_name": "田原本町グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "令和7年10月1日〜 9:00〜17:00(受付はまちづくり建設課9:00〜15:00、中央体育館8:30〜15:00)。施設名・所在地は抜粋に無い",
+      "gg_evidence": "グラウンドゴルフ場",
+      "pdf_url": "https://www.town.tawaramoto.nara.jp/gyosei/shisetsu/sport/8804.html",
+      "confidence": "low",
+      "note": ""
+    },
+    {
+      "facility_name": "田原本町グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "令和7年10月1日〜 9:00〜17:00(受付はまちづくり建設課9:00〜15:00、中央体育館8:30〜15:00)。施設名・所在地は抜粋に無い",
+      "gg_evidence": "グラウンドゴルフ場",
+      "pdf_url": "https://www.town.tawaramoto.nara.jp/gyosei/shisetsu/sport/8804.html",
+      "confidence": "low",
+      "note": ""
+    }
+  ],
   "events": [
     {
       "event_name": "田原本町総合競技大会 グラウンドゴルフ",

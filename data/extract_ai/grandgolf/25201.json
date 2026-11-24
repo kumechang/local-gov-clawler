@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.otsu.lg.jp/sc/s/sh/c/67776.html",
+      "title": "大津大石淀グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -20,6 +27,18 @@
       "usage_note": "全4コースの天然芝グラウンド・ゴルフ場。使用料の減免申請・使用許可の規定あり",
       "gg_evidence": "大自然に囲まれた全4コースの天然芝グラウンド・ゴルフ場",
       "pdf_url": "https://www.city.otsu.lg.jp/material/files/group/126/rifuretto.pdf",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "大津大石淀グラウンド・ゴルフ場",
+      "address": "大津市大石淀町737番地の6",
+      "phone": "",
+      "inquiry_dept": "管理棟",
+      "inquiry_phone": "077-536-3200",
+      "usage_note": "4コース32ホール。9:00〜17:00(16:00最終受付)、毎週水曜・年末年始休み",
+      "gg_evidence": "大津大石淀グラウンド・ゴルフ場",
+      "pdf_url": "https://www.city.otsu.lg.jp/sc/s/sh/c/67776.html",
       "confidence": "high",
       "note": ""
     }

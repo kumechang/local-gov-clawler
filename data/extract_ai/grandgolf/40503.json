@@ -1,0 +1,39 @@
+{
+  "municipality_code": "40503",
+  "municipality_name": "大刀洗町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.tachiarai.fukuoka.jp/kiji0031541/index.html",
+      "title": "春季グラウンドゴルフ大会(大刀洗町)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "春季グラウンドゴルフ大会(大刀洗町)",
+      "event_kind": "大会",
+      "date_text": "5月10日(土)8:30受付・9:00開会式(小雨決行、雨天は11日に延期)",
+      "date_start": "2025-05-10",
+      "date_end": "2025-05-10",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "大刀洗町運動公園 多目的グラウンド",
+      "organizer": "",
+      "target": "町内在住者・勤務者(年齢制限なし)",
+      "fee": "",
+      "entry": "電話またはFAXで生涯学習課へ",
+      "deadline": "",
+      "contact_dept": "生涯学習課",
+      "contact_phone": "",
+      "evidence": "日 時 5月10日(土曜日)",
+      "pdf_url": "https://www.town.tachiarai.fukuoka.jp/kiji0031541/index.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

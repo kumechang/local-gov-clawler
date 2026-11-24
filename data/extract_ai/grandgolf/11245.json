@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.fujimino.saitama.jp/shinojoho/shisetsuannai/sportsshisetsu/5614.html",
+      "title": "ゲートボール場、グラウンド・ゴルフ場(ふじみ野市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -21,6 +28,30 @@
       "gg_evidence": "大井グラウンド・ゴルフ場",
       "pdf_url": "https://www.city.fujimino.saitama.jp/material/files/group/18/R7_fujiminocity_sports.pdf",
       "confidence": "medium",
+      "note": ""
+    },
+    {
+      "facility_name": "大井グラウンド・ゴルフ場",
+      "address": "ふじみ野市大井781",
+      "phone": "",
+      "inquiry_dept": "文化・スポーツ振興課",
+      "inquiry_phone": "049-220-2090",
+      "usage_note": "",
+      "gg_evidence": "大井グラウンド・ゴルフ場",
+      "pdf_url": "https://www.city.fujimino.saitama.jp/shinojoho/shisetsuannai/sportsshisetsu/5614.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "総合体育館前グラウンド・ゴルフ場(臨時駐車場)",
+      "address": "ふじみ野市大井武蔵野1570-1、-2",
+      "phone": "",
+      "inquiry_dept": "文化・スポーツ振興課",
+      "inquiry_phone": "049-220-2090",
+      "usage_note": "",
+      "gg_evidence": "総合体育館前グラウンド・ゴルフ場(臨時駐車場)",
+      "pdf_url": "https://www.city.fujimino.saitama.jp/shinojoho/shisetsuannai/sportsshisetsu/5614.html",
+      "confidence": "high",
       "note": ""
     }
   ],

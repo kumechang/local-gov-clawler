@@ -15,6 +15,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.unzen.nagasaki.jp/kiji0034779/index.html",
+      "title": "雲仙市みずほすこやかランド グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -40,6 +47,18 @@
       "gg_evidence": "▼テニスコート ▼グラウンドゴルフ場",
       "pdf_url": "https://www.city.unzen.nagasaki.jp/kiji0038543/3_8543_23068_up_o5rbasj0.pdf",
       "confidence": "medium",
+      "note": ""
+    },
+    {
+      "facility_name": "雲仙市みずほすこやかランド グラウンド・ゴルフ場",
+      "address": "雲仙市瑞穂町西郷辛408",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "令和3年12月に日本GG協会認定コースになった(県内2か所目)",
+      "gg_evidence": "雲仙市みずほすこやかランド グラウンド・ゴルフ場 (雲仙市瑞穂町西郷辛408)",
+      "pdf_url": "https://www.city.unzen.nagasaki.jp/kiji0034779/index.html",
+      "confidence": "high",
       "note": ""
     }
   ],

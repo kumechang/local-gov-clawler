@@ -1,0 +1,39 @@
+{
+  "municipality_code": "08217",
+  "municipality_name": "取手市",
+  "documents": [
+    {
+      "pdf_url": "http://www.city.toride.ibaraki.jp/sports/bunkakatsudo/shogaigakushu/sportsoshirase/groundgolf2026.html",
+      "title": "第27回取手市民グラウンドゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第27回取手市民グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年11月7日(土)8:30受付、9:00開会式(雨天中止・延期なし)",
+      "date_start": "2026-11-07",
+      "date_end": "2026-11-07",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "北浦川緑地 多目的広場(取手市中田880)",
+      "organizer": "取手市教育委員会スポーツ振興課",
+      "target": "市内在住・在勤・在学の小学4年生以上(定員150名、超過は抽選)",
+      "fee": "無料",
+      "entry": "個人は電話、団体は申込書を窓口・郵送・ファクスで提出",
+      "deadline": "令和8年10月18日(日)(申込期間 10月1日〜18日)",
+      "contact_dept": "取手市教育委員会スポーツ振興課",
+      "contact_phone": "0297-82-7200",
+      "evidence": "令和8年11月7日(土曜日)に「第27回取手市民グラウンドゴルフ大会」を開催します。",
+      "pdf_url": "http://www.city.toride.ibaraki.jp/sports/bunkakatsudo/shogaigakushu/sportsoshirase/groundgolf2026.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

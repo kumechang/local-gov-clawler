@@ -1,0 +1,39 @@
+{
+  "municipality_code": "31372",
+  "municipality_name": "北栄町",
+  "documents": [
+    {
+      "pdf_url": "https://www.e-hokuei.net/soshiki/2/9144.html",
+      "title": "第4回 あつまらいや北条 松ぼっくりグラウンドゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第4回 あつまらいや北条 松ぼっくりグラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "9月5日(土)",
+      "date_start": "2026-09-05",
+      "date_end": "2026-09-05",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "北条オートキャンプ場",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "9月5日(土曜日)、秋風が心地よい北条オートキャンプ場にて「第4回 あつまらいや北条 松ぼっくりグラウンドゴルフ大会」を開催し、町内から58名の皆さまにご参加いただきました!",
+      "pdf_url": "https://www.e-hokuei.net/soshiki/2/9144.html",
+      "confidence": "high",
+      "note": "開催報告。町内から58名。過去3回は北条多目的広場で開催"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

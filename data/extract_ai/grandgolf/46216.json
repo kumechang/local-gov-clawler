@@ -1,0 +1,49 @@
+{
+  "municipality_code": "46216",
+  "municipality_name": "日置市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.hioki.kagoshima.jp/shakyo02/shisetsu/taiku/030.html",
+      "title": "小正醸造日吉運動公園グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.hioki.kagoshima.jp/sposhin/shisetsu/taiku/021.html",
+      "title": "日置市伊集院総合運動公園グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "小正醸造日吉運動公園グラウンドゴルフ場(日置市日吉グラウンドゴルフ場)",
+      "address": "日置市日吉町日置5243番地1",
+      "phone": "099-292-2056",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "8ホール。8:30〜22:00、月曜・年末年始休み",
+      "gg_evidence": "日置市日吉町日置5243番地1",
+      "pdf_url": "https://www.city.hioki.kagoshima.jp/shakyo02/shisetsu/taiku/030.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "日置市伊集院総合運動公園グラウンドゴルフ場",
+      "address": "日置市伊集院町野田1792番地",
+      "phone": "099-272-2525",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "芝8ホール。8:30〜17:00、12/27〜1/4休み",
+      "gg_evidence": "日置市伊集院町野田1792番地",
+      "pdf_url": "https://www.city.hioki.kagoshima.jp/sposhin/shisetsu/taiku/021.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

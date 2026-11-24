@@ -1,0 +1,50 @@
+{
+  "municipality_code": "06302",
+  "municipality_name": "中山町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.nakayama.yamagata.jp/kanko_bunka/shizen/1245.html",
+      "title": "最上川中山緑地",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.town.nakayama.yamagata.jp/kanko_bunka/sports/817.html",
+      "title": "中山町スポーツ協会専門部紹介",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "最上川中山緑地 ひまわりグラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "最上川中山緑地(せせらぎ公園から下流へ1km)内。令和8年度は年間使用券・コース独占使用の申込受付あり(3/1〜、受付は中山町総合体育館)",
+      "gg_evidence": "ひまわりグラウンド・ゴルフ場(せせらぎ公園から下流へ1キロメートル)",
+      "pdf_url": "https://www.town.nakayama.yamagata.jp/kanko_bunka/shizen/1245.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "中山町グラウンド・ゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "ひまわりグラウンド・ゴルフ場",
+      "activity_schedule": "4月〜11月(月1回の月例大会ほか各種大会)",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "団体名 | 中山町グラウンド・ゴルフ協会",
+      "pdf_url": "https://www.town.nakayama.yamagata.jp/kanko_bunka/sports/817.html",
+      "confidence": "high",
+      "note": "設立平成14年9月、会員123名。代表者・問合せは個人名のため省略"
+    }
+  ],
+  "unsure": []
+}

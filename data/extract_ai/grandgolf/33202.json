@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.kurashiki.okayama.jp/culture/sports/1005100/1005102.html",
+      "title": "倉敷市グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -22,6 +29,30 @@
       "pdf_url": "https://www.city.kurashiki.okayama.jp/_res/projects/default_project/_page_/001/005/102/course_heimennzu.pdf",
       "confidence": "high",
       "note": "コース平面図・案内図"
+    },
+    {
+      "facility_name": "倉敷市グラウンド・ゴルフ場",
+      "address": "倉敷市有城570番地3",
+      "phone": "086-428-5625(管理棟)",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "令和4年4月1日から公益財団法人倉敷市スポーツ振興協会が指定管理者",
+      "gg_evidence": "倉敷市グラウンド・ゴルフ場",
+      "pdf_url": "https://www.city.kurashiki.okayama.jp/culture/sports/1005100/1005102.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "倉敷市グラウンド・ゴルフ場",
+      "address": "倉敷市有城570番地3",
+      "phone": "086-428-5625(管理棟)",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "令和4年4月1日から公益財団法人倉敷市スポーツ振興協会が指定管理者",
+      "gg_evidence": "倉敷市グラウンド・ゴルフ場",
+      "pdf_url": "https://www.city.kurashiki.okayama.jp/culture/sports/1005100/1005102.html",
+      "confidence": "high",
+      "note": ""
     }
   ],
   "events": [],

@@ -1,0 +1,59 @@
+{
+  "municipality_code": "26465",
+  "municipality_name": "与謝野町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.yosano.lg.jp/culture/art/sports/entry_1267/",
+      "title": "野田川グラウンド・ゴルフ大会のお知らせ",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.town.yosano.lg.jp/facility-info/leisure-sightseeing-hotel/leisure-facilities/165076/",
+      "title": "阿蘇シーサイドパークグラウンド・ゴルフ場の使用",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "阿蘇シーサイドパークグラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "使用料が必要。許可なく使用不可",
+      "gg_evidence": "阿蘇シーサイドパークグラウンド・ゴルフ場は、日本三景の一つ天橋立の景観を活かし",
+      "pdf_url": "https://www.town.yosano.lg.jp/facility-info/leisure-sightseeing-hotel/leisure-facilities/165076/",
+      "confidence": "high",
+      "note": "ページの更新は2016年"
+    }
+  ],
+  "events": [
+    {
+      "event_name": "野田川森林公園グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年11月23日(祝・月)受付13:00〜、競技開始13:30〜(雨天は翌日に延期)",
+      "date_start": "2026-11-23",
+      "date_end": "2026-11-23",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "野田川森林公園",
+      "organizer": "野田川グラウンド・ゴルフ協会",
+      "target": "定員96人(先着順)",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年11月23日(祝・月) ※雨天の場合は翌日に延期",
+      "pdf_url": "https://www.town.yosano.lg.jp/culture/art/sports/entry_1267/",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,42 @@
+{
+  "municipality_code": "11218",
+  "municipality_name": "深谷市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.fukaya.saitama.jp/kurashi/sports/sports/shisetsu/1545803280715.html",
+      "title": "川本グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "川本グラウンド・ゴルフ場",
+      "address": "深谷市本田501番地先(荒川河川敷)",
+      "phone": "048-583-3234(川本公民館)",
+      "inquiry_dept": "生涯学習スポーツ振興課",
+      "inquiry_phone": "048-572-9581",
+      "usage_note": "芝コート8面・土コート4面。8:00〜17:30、12/29〜1/3休み。有料",
+      "gg_evidence": "深谷市本田501番地先(荒川河川敷)",
+      "pdf_url": "https://www.city.fukaya.saitama.jp/kurashi/sports/sports/shisetsu/1545803280715.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "川本グラウンド・ゴルフ場",
+      "address": "深谷市本田501番地先(荒川河川敷)",
+      "phone": "048-583-3234(川本公民館)",
+      "inquiry_dept": "生涯学習スポーツ振興課",
+      "inquiry_phone": "048-572-9581",
+      "usage_note": "芝コート8面・土コート4面。8:00〜17:30、12/29〜1/3休み。有料",
+      "gg_evidence": "深谷市本田501番地先(荒川河川敷)",
+      "pdf_url": "https://www.city.fukaya.saitama.jp/kurashi/sports/sports/shisetsu/1545803280715.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

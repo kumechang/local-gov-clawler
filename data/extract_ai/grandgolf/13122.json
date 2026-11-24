@@ -15,6 +15,20 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.katsushika.lg.jp/tourism/1002753/1030213/1033073.html",
+      "title": "グラウンド・ゴルフ体験コーナー",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.katsushika.lg.jp/tourism/1002753/1030213/1038987.html",
+      "title": "第43回葛飾区スポーツ指導員養成講習会(グラウンド・ゴルフ)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [],
@@ -60,6 +74,48 @@
       "pdf_url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/038/810/groundgolf_2025_autumn_result.pdf",
       "confidence": "high",
       "note": "大会の結果報告(98名参加)"
+    },
+    {
+      "event_name": "区民秋季グラウンド・ゴルフ大会(葛飾区)・グラウンド・ゴルフ体験コーナー",
+      "event_kind": "大会",
+      "date_text": "令和8年11月25日(水)10:00〜12:00(体験コーナー)",
+      "date_start": "2026-11-25",
+      "date_end": "2026-11-25",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "柴又球技場",
+      "organizer": "",
+      "target": "体験コーナーはどなたでも(事前申込が必要)",
+      "fee": "無料(用具貸出無料)",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年11月25日(水曜日)に実施される区民秋季グラウンド・ゴルフ大会の会場で、「グラウンド・ゴルフ体験コーナー」を同時開催します。",
+      "pdf_url": "https://www.city.katsushika.lg.jp/tourism/1002753/1030213/1033073.html",
+      "confidence": "high",
+      "note": "区民秋季GG大会と同時開催の体験コーナー"
+    },
+    {
+      "event_name": "第43回葛飾区スポーツ指導員養成講習会(グラウンド・ゴルフ)",
+      "event_kind": "教室",
+      "date_text": "令和8年11月12日(木)・13日(金)9:00〜12:00(予定)",
+      "date_start": "2026-11-12",
+      "date_end": "2026-11-13",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "奥戸総合スポーツセンター少年野球場(雨天は同体育館小体育室)",
+      "organizer": "",
+      "target": "18歳以上でグラウンド・ゴルフの普及に携わる方",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年11月12日(木曜日)",
+      "pdf_url": "https://www.city.katsushika.lg.jp/tourism/1002753/1030213/1038987.html",
+      "confidence": "high",
+      "note": ""
     }
   ],
   "organizations": [],

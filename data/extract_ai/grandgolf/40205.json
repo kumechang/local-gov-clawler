@@ -1,0 +1,30 @@
+{
+  "municipality_code": "40205",
+  "municipality_name": "飯塚市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.iizuka.lg.jp/soshiki/17/13927.html",
+      "title": "飯塚市グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "飯塚市グラウンドゴルフ場",
+      "address": "飯塚市平恒866番地3",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "4コース32ホール・天然芝、敷地27,128㎡、駐車場117台、クラブハウスあり。9:00〜17:00、12/29〜1/3休み。クラブ・ボール貸出可",
+      "gg_evidence": "4コース32ホールの広大な天然芝のプレイエリア、クラブハウスも備えた充実した施設です。",
+      "pdf_url": "https://www.city.iizuka.lg.jp/soshiki/17/13927.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

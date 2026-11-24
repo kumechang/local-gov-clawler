@@ -1,0 +1,30 @@
+{
+  "municipality_code": "25207",
+  "municipality_name": "守山市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.moriyama.lg.jp/kanko_event_manabi/event_leisure/1002762/1002778/1002809.html",
+      "title": "もりやまエコパークグラウンド・ゴルフ場のご案内",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "もりやまエコパークグラウンド・ゴルフ場",
+      "address": "守山市環境学習都市宣言記念公園1番地1",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "9:00〜17:00、利用料金無料、月曜休。もりやまエコパーク交流拠点施設入口で受付表を記入。団体利用は事前相談",
+      "gg_evidence": "守山市環境学習都市宣言記念公園1番地1",
+      "pdf_url": "https://www.city.moriyama.lg.jp/kanko_event_manabi/event_leisure/1002762/1002778/1002809.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

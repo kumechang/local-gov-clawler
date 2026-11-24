@@ -1,0 +1,30 @@
+{
+  "municipality_code": "46201",
+  "municipality_name": "鹿児島市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kagoshima.lg.jp/sports/shisetsu/kanko/044_50025_329.html",
+      "title": "グラウンドゴルフ場(鹿児島市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "郡山総合運動場 グラウンドゴルフ場(鹿児島市)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "日本GG協会の県内6番目の公認コース",
+      "gg_evidence": "日本グラウンド協会で県内6番目の公認コースを有しています。",
+      "pdf_url": "https://www.city.kagoshima.lg.jp/sports/shisetsu/kanko/044_50025_329.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

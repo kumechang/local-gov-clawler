@@ -1,0 +1,30 @@
+{
+  "municipality_code": "44211",
+  "municipality_name": "宇佐市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.usa.oita.jp/sougo/soshiki/13/shinko/1/2_1/14680.html",
+      "title": "はちまんの郷グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "はちまんの郷グラウンド・ゴルフ場",
+      "address": "宇佐市大字川部1571番地の1",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "9:00〜日没、12/29〜1/3と毎月第3月曜休み。第1コート1時間450円(市外900円)・第2コート250円(市外500円)",
+      "gg_evidence": "所在地:宇佐市大字川部1571番地の1",
+      "pdf_url": "https://www.city.usa.oita.jp/sougo/soshiki/13/shinko/1/2_1/14680.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

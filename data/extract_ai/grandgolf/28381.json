@@ -1,0 +1,42 @@
+{
+  "municipality_code": "28381",
+  "municipality_name": "稲美町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.hyogo-inami.lg.jp/0000000406.html",
+      "title": "万葉森林浴グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "万葉森林浴グラウンドゴルフ場(稲美中央公園内)",
+      "address": "稲美町国安1287番地の109",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "東側いきいきコース・西側ふれあいコースの2コース16ホール。4ラウンドあたり町内100円・町外300円・中学生以下無料。9:00〜17:00、月曜休。平成21年4月完成",
+      "gg_evidence": "起伏に富んだ2コース16ホール",
+      "pdf_url": "https://www.town.hyogo-inami.lg.jp/0000000406.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "万葉森林浴グラウンドゴルフ場(稲美中央公園内)",
+      "address": "稲美町国安1287番地の109",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "東側いきいきコース・西側ふれあいコースの2コース16ホール。4ラウンドあたり町内100円・町外300円・中学生以下無料。9:00〜17:00、月曜休。平成21年4月完成",
+      "gg_evidence": "起伏に富んだ2コース16ホール",
+      "pdf_url": "https://www.town.hyogo-inami.lg.jp/0000000406.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

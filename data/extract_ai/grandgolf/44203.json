@@ -1,0 +1,67 @@
+{
+  "municipality_code": "44203",
+  "municipality_name": "中津市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city-nakatsu.jp/doc/2026102900015/",
+      "title": "第6回「いつも心に交通安全」グラウンド・ゴルフ大会が開催されました",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city-nakatsu.jp/doc/2026111900037/",
+      "title": "第21回中津市長杯親善グラウンド・ゴルフ大会が開催されました",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第6回「いつも心に交通安全」グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年10月27日(火)9:00〜",
+      "date_start": "2026-10-27",
+      "date_end": "2026-10-27",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "耶馬溪運動場野球場(耶馬溪町大字小友田)",
+      "organizer": "交通安全協会耶馬溪町連合分会(耶馬溪グラウンド・ゴルフ愛好会が協力)",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年10月27日火曜日、午前9時より、耶馬溪町大字小友田の耶馬溪運動場野球場において",
+      "pdf_url": "https://www.city-nakatsu.jp/doc/2026102900015/",
+      "confidence": "high",
+      "note": "開催報告。高齢者の交通安全意識の高揚が目的、令和3年度から開催"
+    },
+    {
+      "event_name": "第21回中津市長杯親善グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年11月19日(木)",
+      "date_start": "2026-11-19",
+      "date_end": "2026-11-19",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "ダイハツ九州スポーツパーク大貞(芝生広場)",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年11月19日木曜日、ダイハツ九州スポーツパーク大貞(芝生広場)にて、",
+      "pdf_url": "https://www.city-nakatsu.jp/doc/2026111900037/",
+      "confidence": "high",
+      "note": "開催報告"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

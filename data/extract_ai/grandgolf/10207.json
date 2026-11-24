@@ -1,0 +1,30 @@
+{
+  "municipality_code": "10207",
+  "municipality_name": "館林市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tatebayashi.gunma.jp/s094/map/050/20201105162456.html",
+      "title": "城沼グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "城沼グラウンドゴルフ場",
+      "address": "館林市つつじ町14-1",
+      "phone": "",
+      "inquiry_dept": "ダノン城沼アリーナ",
+      "inquiry_phone": "0276-74-2611",
+      "usage_note": "全12ホール・全長325m・面積8,447.66㎡。利用料無料。公共施設予約システムまたは電話で予約",
+      "gg_evidence": "城沼グラウンドゴルフ場",
+      "pdf_url": "https://www.city.tatebayashi.gunma.jp/s094/map/050/20201105162456.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

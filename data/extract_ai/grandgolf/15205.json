@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.kashiwazaki.lg.jp/kanko_bunka_sports/sports/sportstaikai_event/7/48353.html",
+      "title": "2026柏崎スポーツレクリエーショングランプリ「グラウンドゴルフ大会」",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [],
@@ -32,6 +39,27 @@
       "pdf_url": "https://www.city.kashiwazaki.lg.jp/material/files/group/47/2026suporekugpgg_youkou.pdf",
       "confidence": "high",
       "note": "日時・会場はチラシ(別PDF)の記載"
+    },
+    {
+      "event_name": "2026柏崎スポーツレクリエーショングランプリ グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "2026年6月21日(日)8:00受付",
+      "date_start": "2026-06-21",
+      "date_end": "2026-06-21",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "鯖石川改修記念公園",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "2026年6月21日(日曜日)午前8時~受け付け",
+      "pdf_url": "https://www.city.kashiwazaki.lg.jp/kanko_bunka_sports/sports/sportstaikai_event/7/48353.html",
+      "confidence": "high",
+      "note": "開催中止。スポレクGP第1回の競技"
     }
   ],
   "organizations": [],

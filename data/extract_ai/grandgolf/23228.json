@@ -1,0 +1,39 @@
+{
+  "municipality_code": "23228",
+  "municipality_name": "岩倉市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.iwakura.aichi.jp/0000005301.html",
+      "title": "第30回市民グラウンドゴルフ大会の参加者を募集しています",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第30回市民グラウンドゴルフ大会(岩倉市)",
+      "event_kind": "大会",
+      "date_text": "令和8年11月15日(日)小雨決行、予備日11月22日(日)。受付8:30、開会式9:00、競技開始9:15、閉会式12:00(予定)",
+      "date_start": "2026-11-15",
+      "date_end": "2026-11-15",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "野寄スポーツ広場",
+      "organizer": "",
+      "target": "個人戦(8ホール×2回)",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年11月15日(日)小雨決行",
+      "pdf_url": "https://www.city.iwakura.aichi.jp/0000005301.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

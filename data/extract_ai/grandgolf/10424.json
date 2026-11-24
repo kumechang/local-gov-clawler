@@ -1,0 +1,42 @@
+{
+  "municipality_code": "10424",
+  "municipality_name": "長野原町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.naganohara.gunma.jp/development/?content=329",
+      "title": "川原畑グラウンド・ゴルフ場の利用案内について",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "川原畑グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "4月上旬〜11月下旬、9:00〜17:00。1日の料金は高校生・大人500円、小中学生200円、未就学児と町民は無料。クラブ・ボールの無料貸出あり",
+      "gg_evidence": "川原畑グラウンド・ゴルフ場の利用案内について",
+      "pdf_url": "https://www.town.naganohara.gunma.jp/development/?content=329",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "川原畑グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "4月上旬〜11月下旬、9:00〜17:00。1日の料金は高校生・大人500円、小中学生200円、未就学児と町民は無料。クラブ・ボールの無料貸出あり",
+      "gg_evidence": "川原畑グラウンド・ゴルフ場の利用案内について",
+      "pdf_url": "https://www.town.naganohara.gunma.jp/development/?content=329",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

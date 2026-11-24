@@ -8,6 +8,20 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "料金表"
+    },
+    {
+      "pdf_url": "https://www.city.nishio.aichi.jp/shisetsu/sports/1001573/1003950.html",
+      "title": "西尾市吉良グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.nishio.aichi.jp/shisetsu/sports/1001573/1003951.html",
+      "title": "西尾市松原グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -22,6 +36,30 @@
       "pdf_url": "https://www.city.nishio.aichi.jp/_res/projects/default_project/_page_/001/003/951/shiyouryou2.pdf",
       "confidence": "high",
       "note": "同じ内容のPDFが別URLで複数ある"
+    },
+    {
+      "facility_name": "西尾市吉良グラウンド・ゴルフ場",
+      "address": "西尾市吉良町富田市子野17",
+      "phone": "",
+      "inquiry_dept": "吉良野外趣味活動施設",
+      "inquiry_phone": "0563-32-1602",
+      "usage_note": "6:00〜19:00、月曜・年末年始休み。利用日の3か月前の初日から予約受付",
+      "gg_evidence": "西尾市吉良町富田市子野17",
+      "pdf_url": "https://www.city.nishio.aichi.jp/shisetsu/sports/1001573/1003950.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "西尾市松原グラウンド・ゴルフ場",
+      "address": "西尾市西幡豆町古浜75-1",
+      "phone": "",
+      "inquiry_dept": "文化交流センター北館",
+      "inquiry_phone": "0563-63-0130",
+      "usage_note": "1コース16ホール。6:00〜19:00、月曜・年末年始休み、駐車場45台",
+      "gg_evidence": "グラウンド・ゴルフ場(1コース 16H)",
+      "pdf_url": "https://www.city.nishio.aichi.jp/shisetsu/sports/1001573/1003951.html",
+      "confidence": "high",
+      "note": ""
     }
   ],
   "events": [],

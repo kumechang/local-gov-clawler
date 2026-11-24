@@ -1,0 +1,42 @@
+{
+  "municipality_code": "11210",
+  "municipality_name": "加須市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kazo.lg.jp/iryo_hukushi/sports/2/38526.html",
+      "title": "大利根ファミリーグラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "大利根ファミリーグラウンドゴルフ場",
+      "address": "加須市阿佐間769",
+      "phone": "0480-72-5488",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "8:30〜17:00(月曜・金曜は施設管理日)、12/29〜1/3休み。3か月前から大利根文化体育館窓口で予約、利用が無ければ当日も可",
+      "gg_evidence": "加須市阿佐間769",
+      "pdf_url": "https://www.city.kazo.lg.jp/iryo_hukushi/sports/2/38526.html",
+      "confidence": "high",
+      "note": "ページの更新は2018年"
+    },
+    {
+      "facility_name": "大利根ファミリーグラウンドゴルフ場",
+      "address": "加須市阿佐間769",
+      "phone": "0480-72-5488",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "8:30〜17:00(月曜・金曜は施設管理日)、12/29〜1/3休み。3か月前から大利根文化体育館窓口で予約、利用が無ければ当日も可",
+      "gg_evidence": "加須市阿佐間769",
+      "pdf_url": "https://www.city.kazo.lg.jp/iryo_hukushi/sports/2/38526.html",
+      "confidence": "high",
+      "note": "ページの更新は2018年"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

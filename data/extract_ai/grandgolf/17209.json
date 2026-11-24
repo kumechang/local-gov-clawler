@@ -1,0 +1,30 @@
+{
+  "municipality_code": "17209",
+  "municipality_name": "かほく市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kahoku.lg.jp/shisetu/080/d000581.html",
+      "title": "かほく市高松グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "かほく市高松グラウンド・ゴルフ場",
+      "address": "かほく市二ツ屋マ1番地",
+      "phone": "076-281-3751",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "芝張り。加賀・能登・宝達山・日本海の4コース、クラブハウスやすらぎ。日の出〜日没、12/29〜1/3休み",
+      "gg_evidence": "かほく市高松グラウンド・ゴルフ場",
+      "pdf_url": "https://www.city.kahoku.lg.jp/shisetu/080/d000581.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

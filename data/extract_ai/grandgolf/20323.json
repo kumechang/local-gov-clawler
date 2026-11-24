@@ -1,0 +1,30 @@
+{
+  "municipality_code": "20323",
+  "municipality_name": "御代田町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.miyota.nagano.jp/category/shisetsuannai/163684.html",
+      "title": "やまゆり公園グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "やまゆり公園グラウンドゴルフ場",
+      "address": "御代田町大字塩野3024",
+      "phone": "",
+      "inquiry_dept": "やまゆり体育館",
+      "inquiry_phone": "0267-32-6665",
+      "usage_note": "8ホール。使用料無料。予約不要(スポーツ協会GG部の定例会・大会時は利用不可)。貸切はB&G海洋センター(0267-32-6114)またはやまゆり体育館へ",
+      "gg_evidence": "予約は必要ありません。グラウンドゴルフ場入り口の利用簿に氏名を記載の上、ご利用ください。",
+      "pdf_url": "https://www.town.miyota.nagano.jp/category/shisetsuannai/163684.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

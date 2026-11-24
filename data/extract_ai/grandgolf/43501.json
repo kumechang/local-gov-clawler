@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.town.kumamoto-nishiki.lg.jp/kiji0031241/index.html",
+      "title": "第12回分館対抗グラウンド・ゴルフ大会の開催について",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [],
@@ -32,6 +39,27 @@
       "pdf_url": "https://www.town.kumamoto-nishiki.lg.jp/kiji0031241/3_1241_3122_up_xlwl240a.pdf",
       "confidence": "high",
       "note": "団体戦。8ホール2ラウンド16ホールの上位5人の合計打数"
+    },
+    {
+      "event_name": "第12回分館対抗グラウンド・ゴルフ大会(錦町)",
+      "event_kind": "大会",
+      "date_text": "令和8年10月4日(日)8:40開会式・9:00競技開始(雨天中止)",
+      "date_start": "2026-10-04",
+      "date_end": "2026-10-04",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "錦町民グラウンド",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年10月4日(日曜日) ※雨天中止 午前8時40分 開会式",
+      "pdf_url": "https://www.town.kumamoto-nishiki.lg.jp/kiji0031241/index.html",
+      "confidence": "high",
+      "note": ""
     }
   ],
   "organizations": [],

@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.okayama.jp/life/0000041450.html",
+      "title": "御津グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -46,6 +53,30 @@
       "pdf_url": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000046/46493/1-3keikakuzenntai.pdf",
       "confidence": "medium",
       "note": "計画資料の施設一覧(昭和55年、18コース、芝生)"
+    },
+    {
+      "facility_name": "御津グラウンドゴルフ場",
+      "address": "岡山市北区御津宇垣1227-2",
+      "phone": "",
+      "inquiry_dept": "北区御津支所総務民生課",
+      "inquiry_phone": "086-724-1111",
+      "usage_note": "毎週水曜・年末年始休み。開館は午前9時から",
+      "gg_evidence": "御津グラウンドゴルフ場",
+      "pdf_url": "https://www.city.okayama.jp/life/0000041450.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "御津グラウンドゴルフ場",
+      "address": "岡山市北区御津宇垣1227-2",
+      "phone": "",
+      "inquiry_dept": "北区御津支所総務民生課",
+      "inquiry_phone": "086-724-1111",
+      "usage_note": "毎週水曜・年末年始休み。開館は午前9時から",
+      "gg_evidence": "御津グラウンドゴルフ場",
+      "pdf_url": "https://www.city.okayama.jp/life/0000041450.html",
+      "confidence": "high",
+      "note": ""
     }
   ],
   "events": [],

@@ -1,0 +1,67 @@
+{
+  "municipality_code": "07203",
+  "municipality_name": "郡山市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.koriyama.lg.jp/soshiki/66/184991.html",
+      "title": "第45回郡山市老人クラブ連合会グラウンド・ゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.koriyama.lg.jp/soshiki/66/197739.html",
+      "title": "第46回郡山市老人クラブ連合会グラウンド・ゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第45回郡山市老人クラブ連合会グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年6月11日(木)",
+      "date_start": "2026-06-11",
+      "date_end": "2026-06-11",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "郡山ヒロセ開成山陸上競技場",
+      "organizer": "郡山市老人クラブ連合会",
+      "target": "老人クラブ会員(149名参加、16ホール個人戦)",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年6月11日(木曜日)に郡山ヒロセ開成山陸上競技場において",
+      "pdf_url": "https://www.city.koriyama.lg.jp/soshiki/66/184991.html",
+      "confidence": "high",
+      "note": "開催報告。後援・協力 アルファクラブ株式会社"
+    },
+    {
+      "event_name": "第46回郡山市老人クラブ連合会グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年10月20日(火)",
+      "date_start": "2026-10-20",
+      "date_end": "2026-10-20",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "郡山ヒロセ開成山陸上競技場",
+      "organizer": "郡山市老人クラブ連合会",
+      "target": "老人クラブ会員(156名参加、個人戦)",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年10月20日(火曜日)に郡山ヒロセ開成山陸上競技場において",
+      "pdf_url": "https://www.city.koriyama.lg.jp/soshiki/66/197739.html",
+      "confidence": "high",
+      "note": "開催報告。雨のため1ラウンドのみ"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

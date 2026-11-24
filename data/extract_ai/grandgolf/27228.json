@@ -1,0 +1,60 @@
+{
+  "municipality_code": "27228",
+  "municipality_name": "泉南市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.sennan.lg.jp/kanko/events/11285.html",
+      "title": "2025年10月 ライフ親子グラウンド・ゴルフ大会in泉南",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "ライフ親子グラウンド・ゴルフ大会 in 泉南(2025年10月)",
+      "event_kind": "大会",
+      "date_text": "令和7年10月26日(日)9:00受付・9:30開始・12:00終了予定",
+      "date_start": "2025-10-26",
+      "date_end": "2025-10-26",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "泉南グラウンド・ゴルフ in ロングパーク(りんくう南浜2-211)",
+      "organizer": "",
+      "target": "小学生以下の子どもと大人(2名1組)",
+      "fee": "",
+      "entry": "",
+      "deadline": "10月10日(金)",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和7年10月26日(日曜日)",
+      "pdf_url": "https://www.city.sennan.lg.jp/kanko/events/11285.html",
+      "confidence": "high",
+      "note": "ライフスポーツ財団の親子GG大会"
+    },
+    {
+      "event_name": "ライフ親子グラウンド・ゴルフ大会 in 泉南(2025年10月)",
+      "event_kind": "大会",
+      "date_text": "令和7年10月26日(日)9:00受付・9:30開始・12:00終了予定",
+      "date_start": "2025-10-26",
+      "date_end": "2025-10-26",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "泉南グラウンド・ゴルフ in ロングパーク(りんくう南浜2-211)",
+      "organizer": "",
+      "target": "小学生以下の子どもと大人(2名1組)",
+      "fee": "",
+      "entry": "",
+      "deadline": "10月10日(金)",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和7年10月26日(日曜日)",
+      "pdf_url": "https://www.city.sennan.lg.jp/kanko/events/11285.html",
+      "confidence": "high",
+      "note": "ライフスポーツ財団の親子GG大会"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,30 @@
+{
+  "municipality_code": "34205",
+  "municipality_name": "尾道市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.onomichi.hiroshima.jp/site/kyoiku/3087.html",
+      "title": "御調グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "御調グラウンド・ゴルフ場",
+      "address": "尾道市御調町綾目1929番地1",
+      "phone": "0848-76-3025",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "日本GG協会認定、4コース×8ホール。9:00〜17:00、月曜(祝日の場合は翌日)と12/28〜1/4休み",
+      "gg_evidence": "日本グラウンド・ゴルフ協会認定コース 4コース×8ホール",
+      "pdf_url": "https://www.city.onomichi.hiroshima.jp/site/kyoiku/3087.html",
+      "confidence": "high",
+      "note": "ページの更新は2017年"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

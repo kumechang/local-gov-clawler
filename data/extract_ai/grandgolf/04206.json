@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.shiroishi.miyagi.jp/soshiki/30/31566.html",
+      "title": "白石市グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -22,6 +29,18 @@
       "pdf_url": "https://www.city.shiroishi.miyagi.jp/uploaded/attachment/23764.pdf",
       "confidence": "high",
       "note": "パンフレット(OCR・文字が崩れている)。電話番号は施設の記載"
+    },
+    {
+      "facility_name": "白石市グラウンド・ゴルフ場(若林弁天パーク)",
+      "address": "白石市大鷹沢大町字若林地内",
+      "phone": "0224-26-6090",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "8ホール×2コース=16ホール。クラブハウス・駐車場30台。一般1日300円、小中学生・障がい者200円、用具貸出100円。営業10〜6月9:00〜16:00、7〜9月9:00〜17:00",
+      "gg_evidence": "8ホールを2コース、合計16ホール",
+      "pdf_url": "https://www.city.shiroishi.miyagi.jp/soshiki/30/31566.html",
+      "confidence": "high",
+      "note": ""
     }
   ],
   "events": [],

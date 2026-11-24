@@ -1,0 +1,30 @@
+{
+  "municipality_code": "43444",
+  "municipality_name": "甲佐町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.kosa.lg.jp/q/aview/125/24.html",
+      "title": "グリーンパル甲佐でグラウンドゴルフを楽しみませんか?",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "グリーンパル甲佐(安津橋健康広場グラウンド・ゴルフ場)",
+      "address": "甲佐町大字有安地内",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "令和7年8月の豪雨で停止していた『緑コース』を令和8年11月に利用再開",
+      "gg_evidence": "安津橋健康広場グラウンド・ゴルフ場「グリーンパル甲佐」",
+      "pdf_url": "https://www.town.kosa.lg.jp/q/aview/125/24.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

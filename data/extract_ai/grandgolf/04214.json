@@ -1,0 +1,39 @@
+{
+  "municipality_code": "04214",
+  "municipality_name": "東松島市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.higashimatsushima.miyagi.jp/kurashi/manabu-tanoshimu/sports/sportsivent/R8groundgolf.html",
+      "title": "第20回東松島市グラウンドゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第20回東松島市グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年11月14日(土)9:00〜",
+      "date_start": "2026-11-14",
+      "date_end": "2026-11-14",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "矢本西小学校校庭",
+      "organizer": "東松島市教育委員会(生涯学習課スポーツ振興係)",
+      "target": "中学生以上の市民(1チーム3名、団体戦・個人戦)",
+      "fee": "1チーム1,000円(当日会場で)",
+      "entry": "申込期間 令和8年10月5日〜11月6日(予定)",
+      "deadline": "令和8年11月6日(金)",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年11月14日(土曜)",
+      "pdf_url": "https://www.city.higashimatsushima.miyagi.jp/kurashi/manabu-tanoshimu/sports/sportsivent/R8groundgolf.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

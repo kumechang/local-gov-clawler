@@ -1,0 +1,95 @@
+{
+  "municipality_code": "17212",
+  "municipality_name": "野々市市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.nonoichi.lg.jp/soshiki/37/59139.html",
+      "title": "第27回本町地区グラウンドゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.nonoichi.lg.jp/soshiki/37/59281.html",
+      "title": "第32回押野地区グラウンドゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.nonoichi.lg.jp/soshiki/37/67652.html",
+      "title": "郷地区グラウンドゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第27回本町地区グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "5月18日(日)8:30開会(雨天は5月25日に延期)",
+      "date_start": "2025-05-18",
+      "date_end": "2025-05-18",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "野々市中央公園運動広場",
+      "organizer": "",
+      "target": "本町地区住民(4人1組、16ホール×2回)",
+      "fee": "",
+      "entry": "",
+      "deadline": "5月9日(金)",
+      "contact_dept": "野々市公民館",
+      "contact_phone": "",
+      "evidence": "日時 5月18日(日曜日)午前8時30分開会",
+      "pdf_url": "https://www.city.nonoichi.lg.jp/soshiki/37/59139.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "event_name": "第32回押野地区グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "5月11日(日)9:00開会(小雨決行、予備日18日)",
+      "date_start": "2025-05-11",
+      "date_end": "2025-05-11",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "御経塚史跡公園",
+      "organizer": "",
+      "target": "押野地区住民(町内会対抗団体戦・個人戦、1チーム5人)",
+      "fee": "1チーム2,500円(1人500円)",
+      "entry": "",
+      "deadline": "4月18日(金)",
+      "contact_dept": "押野公民館",
+      "contact_phone": "",
+      "evidence": "日時 5月11日(日曜日)午前9時開会",
+      "pdf_url": "https://www.city.nonoichi.lg.jp/soshiki/37/59281.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "event_name": "郷地区グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "6月28日(日)9:00開会(小雨決行)",
+      "date_start": "2026-06-28",
+      "date_end": "2026-06-28",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "つばきの郷公園",
+      "organizer": "",
+      "target": "郷地区住民(中学生以上、1チーム6人編成)",
+      "fee": "",
+      "entry": "",
+      "deadline": "6月21日(日)",
+      "contact_dept": "郷公民館",
+      "contact_phone": "",
+      "evidence": "日時 6月 28 日(日曜日)午前9時開会",
+      "pdf_url": "https://www.city.nonoichi.lg.jp/soshiki/37/67652.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

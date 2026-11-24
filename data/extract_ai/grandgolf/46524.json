@@ -1,0 +1,30 @@
+{
+  "municipality_code": "46524",
+  "municipality_name": "宇検村",
+  "documents": [
+    {
+      "pdf_url": "http://www.uken.net/shougaigakushu/shisetsu/kyoiku/027.html",
+      "title": "グランドゴルフ場(宇検村)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "宇検村グランドゴルフ場",
+      "address": "鹿児島県大島郡宇検村大字湯湾2937-83",
+      "phone": "0997-67-2261",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "8ホール×2コース。9:00〜17:00。利用料金は村内居住者108円・村外216円",
+      "gg_evidence": "○グラウンドゴルフ場 【案内】8ホール×2コース",
+      "pdf_url": "http://www.uken.net/shougaigakushu/shisetsu/kyoiku/027.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

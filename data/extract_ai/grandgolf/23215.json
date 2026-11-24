@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.inuyama.aichi.jp/shisetsu/koukyoshisetsu/1001550/1001562.html",
+      "title": "野外活動センター(キャンプ場/グラウンド・ゴルフ場)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -20,6 +27,18 @@
       "usage_note": "令和8年6月26日からの大雨で利用中止、6月30日(火)から再開",
       "gg_evidence": "グラウンド・ゴルフ場",
       "pdf_url": "https://www.city.inuyama.aichi.jp/_res/projects/default_project/_page_/001/004/678/2026.06.29yakatu.pdf",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "犬山市野外活動センター グラウンド・ゴルフ場",
+      "address": "犬山市大字栗栖字垣ノ内181",
+      "phone": "0568-65-2990",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "日本GG協会認定コース。キャンプ場・管理棟(研修室・会議室)を併設",
+      "gg_evidence": "日本グラウンド・ゴルフ協会から認定コースを取得したグラウンド・ゴルフ場があります。",
+      "pdf_url": "https://www.city.inuyama.aichi.jp/shisetsu/koukyoshisetsu/1001550/1001562.html",
       "confidence": "high",
       "note": ""
     }

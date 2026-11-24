@@ -1,0 +1,123 @@
+{
+  "municipality_code": "10209",
+  "municipality_name": "藤岡市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.fujioka.gunma.jp/kanko_bunka_sports/sports/3/3/10220.html",
+      "title": "令和8年度藤岡市民初心者グラウンドゴルフ教室",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.fujioka.gunma.jp/soshiki/kyoikuiinkai/sports/4/1/3/10358.html",
+      "title": "第35回藤岡市民春季グラウンドゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.fujioka.gunma.jp/soshiki/kyoikuiinkai/sports/4/1/3/10407.html",
+      "title": "第17回藤岡市長杯グラウンドゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.fujioka.gunma.jp/soshiki/kyoikuiinkai/sports/4/1/3/9600.html",
+      "title": "第57回藤岡市民総合体育大会兼第35回藤岡市民秋季グラウンドゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "令和8年度藤岡市民初心者グラウンドゴルフ教室",
+      "event_kind": "教室",
+      "date_text": "令和8年4月6日〜5月11日の全10回(10:00〜12:00)",
+      "date_start": "2026-04-06",
+      "date_end": "2026-05-11",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "藤岡市中央公園(初日・雨天時は地域づくりセンター藤岡)",
+      "organizer": "藤岡市教育委員会(主管: 藤岡市グラウンドゴルフ協会)",
+      "target": "市内在住・在勤・在学者(定員30名・先着)",
+      "fee": "600円(スポーツ傷害保険料等)",
+      "entry": "",
+      "deadline": "令和8年3月23日(月)",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年4月6日から5月11日までの全10回",
+      "pdf_url": "https://www.city.fujioka.gunma.jp/kanko_bunka_sports/sports/3/3/10220.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "event_name": "第35回藤岡市民春季グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年5月17日(日)8:00集合・8:30開会式、予備日5月18日(月)",
+      "date_start": "2026-05-17",
+      "date_end": "2026-05-17",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "保美憩いの広場",
+      "organizer": "藤岡市教育委員会・藤岡市スポーツ協会(主管: 同協会グラウンドゴルフ部・藤岡市グラウンドゴルフ協会)",
+      "target": "藤岡市在住・在勤・在学・在クラブの人",
+      "fee": "1人500円(申込時に納入)",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年5月17日(日曜日) 小雨決行",
+      "pdf_url": "https://www.city.fujioka.gunma.jp/soshiki/kyoikuiinkai/sports/4/1/3/10358.html",
+      "confidence": "high",
+      "note": "8ホール×3ラウンド・24ホールストロークプレー。結果ページ(5/27)では96名参加"
+    },
+    {
+      "event_name": "第17回藤岡市長杯グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年6月10日(水)8:00集合・8:30開会式、予備日6月11日(木)",
+      "date_start": "2026-06-10",
+      "date_end": "2026-06-10",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "保美憩いの広場",
+      "organizer": "藤岡市・藤岡市教育委員会(主管: 藤岡市グラウンドゴルフ協会)",
+      "target": "藤岡市在住・在勤・在クラブの人",
+      "fee": "1人500円(申込時に納入)",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年6月10日(水曜日) 小雨決行",
+      "pdf_url": "https://www.city.fujioka.gunma.jp/soshiki/kyoikuiinkai/sports/4/1/3/10407.html",
+      "confidence": "high",
+      "note": "結果ページ(6/16)では96名参加"
+    },
+    {
+      "event_name": "第57回藤岡市民総合体育大会兼第35回藤岡市民秋季グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年10月18日(日)8:00受付・8:30開会式、予備日10月19日(月)",
+      "date_start": "2026-10-18",
+      "date_end": "2026-10-18",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "保美憩いの広場",
+      "organizer": "藤岡市・藤岡市教育委員会・藤岡市スポーツ協会(主管: 同協会グラウンドゴルフ部・藤岡市グラウンドゴルフ協会)",
+      "target": "藤岡市在住・在勤・在クラブの人",
+      "fee": "1人500円(申込時に納入)",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年10月18日(日曜日)午前8時00分受付、午前8時30分開会式・小雨決行",
+      "pdf_url": "https://www.city.fujioka.gunma.jp/soshiki/kyoikuiinkai/sports/4/1/3/9600.html",
+      "confidence": "high",
+      "note": "結果ページ(11/2)では84名参加"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,73 @@
+{
+  "municipality_code": "28218",
+  "municipality_name": "小野市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.ono.hyogo.jp/kanko_sports/sports/12592.html",
+      "title": "こだまの森グラウンドゴルフ場の使用料",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.ono.hyogo.jp/kanko_sports/shizen_koen_seibutsu/onoshinokoen/12673.html",
+      "title": "グラウンドゴルフのできる公園(小野市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "こだまの森グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "使用料: 小野市民200円(減免申請で無料)、市外在住で市内通勤通学の方200円、それ以外400円",
+      "gg_evidence": "こだまの森グラウンドゴルフ場の使用料が4月1日から変わります",
+      "pdf_url": "https://www.city.ono.hyogo.jp/kanko_sports/sports/12592.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "堀井城跡ふれあい公園",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "市内でグラウンドゴルフが楽しめる公園として、こだまの森とともに紹介",
+      "gg_evidence": "堀井城跡ふれあい公園",
+      "pdf_url": "https://www.city.ono.hyogo.jp/kanko_sports/shizen_koen_seibutsu/onoshinokoen/12673.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "こだまの森グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "使用料: 小野市民200円(減免申請で無料)、市外在住で市内通勤通学の方200円、それ以外400円",
+      "gg_evidence": "こだまの森グラウンドゴルフ場の使用料が4月1日から変わります",
+      "pdf_url": "https://www.city.ono.hyogo.jp/kanko_sports/sports/12592.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "堀井城跡ふれあい公園",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "市内でグラウンドゴルフが楽しめる公園として、こだまの森とともに紹介",
+      "gg_evidence": "堀井城跡ふれあい公園",
+      "pdf_url": "https://www.city.ono.hyogo.jp/kanko_sports/shizen_koen_seibutsu/onoshinokoen/12673.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

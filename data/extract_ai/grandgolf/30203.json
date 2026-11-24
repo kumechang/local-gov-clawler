@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.hashimoto.lg.jp/guide/kyoikuiinkai/syougaku/sports/23259.html",
+      "title": "令和8年度 親子グラウンドゴルフ大会の開催について",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -45,6 +52,27 @@
       "pdf_url": "https://www.city.hashimoto.lg.jp/material/files/group/64/R8_sports_youkou.pdf",
       "confidence": "high",
       "note": "16ホールペアマッチ(8ホール2ラウンド)。公益財団法人ライフスポーツ財団の助成事業"
+    },
+    {
+      "event_name": "ライフ親子グラウンドゴルフ大会in橋本(令和8年度)",
+      "event_kind": "大会",
+      "date_text": "令和8年11月21日(土)8:30〜12:00(予定)、予備日11月22日(日)",
+      "date_start": "2026-11-21",
+      "date_end": "2026-11-21",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "神野々緑地芝生広場(グラウンドゴルフ場)",
+      "organizer": "",
+      "target": "親子(子どもは小学校6年生まで)または地域の大人と小学6年生以下",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年11月21日(土) 午前8時30分~12時00分(予定)",
+      "pdf_url": "https://www.city.hashimoto.lg.jp/guide/kyoikuiinkai/syougaku/sports/23259.html",
+      "confidence": "high",
+      "note": ""
     }
   ],
   "organizations": [],

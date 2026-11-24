@@ -1,0 +1,30 @@
+{
+  "municipality_code": "38206",
+  "municipality_name": "西条市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.saijo.ehime.jp/soshiki/sportskenko/0032-00.html",
+      "title": "西条市小松中央公園グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "西条市小松中央公園グラウンドゴルフ場",
+      "address": "西条市小松町新屋敷甲2427番地",
+      "phone": "",
+      "inquiry_dept": "小松中央公園管理事務所",
+      "inquiry_phone": "0898-72-5128",
+      "usage_note": "8:30〜17:00、毎週火曜(祝日の場合は翌日)・年末年始休み、芝生養生期間あり",
+      "gg_evidence": "〒799-1101 愛媛県西条市小松町新屋敷甲2427番地",
+      "pdf_url": "https://www.city.saijo.ehime.jp/soshiki/sportskenko/0032-00.html",
+      "confidence": "high",
+      "note": "ページの更新は2020年"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

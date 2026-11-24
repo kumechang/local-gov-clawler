@@ -1,0 +1,42 @@
+{
+  "municipality_code": "33681",
+  "municipality_name": "吉備中央町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.kibichuo.lg.jp/soshiki/27/19540.html",
+      "title": "令和8年度吉備中央町グラウンドゴルフ場年間利用者募集",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "吉備中央町グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "吉備中央町教育委員会事務局 / かもがわ総合スポーツ公園管理事務所",
+      "inquiry_phone": "",
+      "usage_note": "令和8年度の年間利用者を募集(申込金額5,240円/人、令和8年3月2日から)",
+      "gg_evidence": "令和8年度吉備中央町グラウンドゴルフ場の年間利用をご希望の方",
+      "pdf_url": "https://www.town.kibichuo.lg.jp/soshiki/27/19540.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "吉備中央町グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "吉備中央町教育委員会事務局 / かもがわ総合スポーツ公園管理事務所",
+      "inquiry_phone": "",
+      "usage_note": "令和8年度の年間利用者を募集(申込金額5,240円/人、令和8年3月2日から)",
+      "gg_evidence": "令和8年度吉備中央町グラウンドゴルフ場の年間利用をご希望の方",
+      "pdf_url": "https://www.town.kibichuo.lg.jp/soshiki/27/19540.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

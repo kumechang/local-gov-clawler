@@ -1,0 +1,39 @@
+{
+  "municipality_code": "38201",
+  "municipality_name": "松山市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.matsuyama.ehime.jp/kanko/event/bunka/38ggenki.html",
+      "title": "第38回松山市民グラウンド・ゴルフ大会を延期します",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第38回松山市民グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年6月14日(日)8:30〜13:30(雨天のため6月7日から延期)",
+      "date_start": "2026-06-14",
+      "date_end": "2026-06-14",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年(2026年)6月14日(日曜日) 午前8:30~午後1:30",
+      "pdf_url": "https://www.city.matsuyama.ehime.jp/kanko/event/bunka/38ggenki.html",
+      "confidence": "high",
+      "note": "延期の告知ページ。会場は抜粋に無い"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

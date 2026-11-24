@@ -1,0 +1,30 @@
+{
+  "municipality_code": "05210",
+  "municipality_name": "由利本荘市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.yurihonjo.lg.jp/shisetsu/1002011/1002035/1006409.html",
+      "title": "ぽぽろっこグラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "ぽぽろっこグラウンドゴルフ場",
+      "address": "由利本荘市岩谷町字西越36",
+      "phone": "0184-62-1126",
+      "inquiry_dept": "観光文化スポーツ部スポーツ振興課",
+      "inquiry_phone": "0184-74-8038",
+      "usage_note": "",
+      "gg_evidence": "ぽぽろっこグラウンドゴルフ場",
+      "pdf_url": "https://www.city.yurihonjo.lg.jp/shisetsu/1002011/1002035/1006409.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

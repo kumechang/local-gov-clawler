@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.town.kumenan.lg.jp/news/living/2026groundgolf_sports.html",
+      "title": "第11回グラウンドゴルフ大会参加者募集!",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -24,7 +31,50 @@
       "note": ""
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "event_name": "第11回久米南町スポーツ協会会長杯グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "11月7日(土)受付8:30・開会9:00(小雨決行)",
+      "date_start": "2026-11-07",
+      "date_end": "2026-11-07",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "久米南町民運動公園グラウンドゴルフ場",
+      "organizer": "久米南町スポーツ協会",
+      "target": "町内在住者・在勤者(3ゲーム24ホール・天然芝)",
+      "fee": "1,000円(申込時集金)",
+      "entry": "電子申請、または町民運動公園・教育委員会窓口の申込書",
+      "deadline": "10月30日(金)",
+      "contact_dept": "久米南町教育委員会教育課",
+      "contact_phone": "086-728-2711",
+      "evidence": "日時:11/7(土)小雨決行",
+      "pdf_url": "https://www.town.kumenan.lg.jp/news/living/2026groundgolf_sports.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "event_name": "第11回久米南町スポーツ協会会長杯グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "11月7日(土)受付8:30・開会9:00(小雨決行)",
+      "date_start": "2026-11-07",
+      "date_end": "2026-11-07",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "久米南町民運動公園グラウンドゴルフ場",
+      "organizer": "久米南町スポーツ協会",
+      "target": "町内在住者・在勤者(3ゲーム24ホール・天然芝)",
+      "fee": "1,000円(申込時集金)",
+      "entry": "電子申請、または町民運動公園・教育委員会窓口の申込書",
+      "deadline": "10月30日(金)",
+      "contact_dept": "久米南町教育委員会教育課",
+      "contact_phone": "086-728-2711",
+      "evidence": "日時:11/7(土)小雨決行",
+      "pdf_url": "https://www.town.kumenan.lg.jp/news/living/2026groundgolf_sports.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
   "organizations": [],
   "unsure": []
 }

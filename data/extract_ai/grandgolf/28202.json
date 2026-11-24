@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.amagasaki.hyogo.jp/manabu/sports_act/107ivento/1036582.html",
+      "title": "グラウンド・ゴルフ月例大会(尼崎市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [],
@@ -32,6 +39,48 @@
       "pdf_url": "https://www.city.amagasaki.hyogo.jp/_res/projects/default_project/_page_/001/014/192/R8saimoku.pdf",
       "confidence": "high",
       "note": "事業計画の細目。年は令和8年度から補った"
+    },
+    {
+      "event_name": "グラウンド・ゴルフ月例大会(尼崎市)",
+      "event_kind": "月例大会",
+      "date_text": "2026年10月26日(月)・11月20日(金)・12月17日(木)9:00〜12:00(雨天中止)",
+      "date_start": "2026-10-26",
+      "date_end": "2026-12-17",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "ベイコム補助陸上競技場",
+      "organizer": "",
+      "target": "一般、シニア(グラウンド・ゴルフ愛好者)",
+      "fee": "",
+      "entry": "申込不要(参加費が必要)",
+      "deadline": "",
+      "contact_dept": "教育委員会事務局 社会教育部 スポーツ推進課",
+      "contact_phone": "06-4950-0406",
+      "evidence": "2026年10月26日(月曜日)",
+      "pdf_url": "https://www.city.amagasaki.hyogo.jp/manabu/sports_act/107ivento/1036582.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "event_name": "グラウンド・ゴルフ月例大会(尼崎市)",
+      "event_kind": "月例大会",
+      "date_text": "2026年10月26日(月)・11月20日(金)・12月17日(木)9:00〜12:00(雨天中止)",
+      "date_start": "2026-10-26",
+      "date_end": "2026-12-17",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "ベイコム補助陸上競技場",
+      "organizer": "",
+      "target": "一般、シニア(グラウンド・ゴルフ愛好者)",
+      "fee": "",
+      "entry": "申込不要(参加費が必要)",
+      "deadline": "",
+      "contact_dept": "教育委員会事務局 社会教育部 スポーツ推進課",
+      "contact_phone": "06-4950-0406",
+      "evidence": "2026年10月26日(月曜日)",
+      "pdf_url": "https://www.city.amagasaki.hyogo.jp/manabu/sports_act/107ivento/1036582.html",
+      "confidence": "high",
+      "note": ""
     }
   ],
   "organizations": [],

@@ -1,0 +1,30 @@
+{
+  "municipality_code": "08228",
+  "municipality_name": "坂東市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.bando.lg.jp/page/page009745.html",
+      "title": "坂東市グラウンドゴルフ場ネーミングライツ事業募集要領",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "坂東市グラウンドゴルフ場",
+      "address": "坂東市駒跿903番地1",
+      "phone": "",
+      "inquiry_dept": "坂東市教育委員会スポーツ振興課 施設管理係",
+      "inquiry_phone": "",
+      "usage_note": "ネーミングライツ事業の募集(最低命名権料 年額20万円・契約3〜5年)",
+      "gg_evidence": "施設名 | 坂東市グラウンドゴルフ場",
+      "pdf_url": "https://www.city.bando.lg.jp/page/page009745.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

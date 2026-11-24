@@ -1,0 +1,42 @@
+{
+  "municipality_code": "33209",
+  "municipality_name": "高梁市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.takahashi.lg.jp/site/kyouikuiinkai/sports9.html",
+      "title": "有漢スポーツパーク/グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "有漢スポーツパーク グラウンドゴルフ場",
+      "address": "高梁市有漢町有漢7996-1",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "天然芝8ホールの赤・黄・青・新の4コース。日本GG協会認定コース。クラブハウス(トイレ完備)・東屋あり",
+      "gg_evidence": "〒716-1321 高梁市有漢町有漢7996-1",
+      "pdf_url": "https://www.city.takahashi.lg.jp/site/kyouikuiinkai/sports9.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "有漢スポーツパーク グラウンドゴルフ場",
+      "address": "高梁市有漢町有漢7996-1",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "天然芝8ホールの赤・黄・青・新の4コース。日本GG協会認定コース。クラブハウス(トイレ完備)・東屋あり",
+      "gg_evidence": "〒716-1321 高梁市有漢町有漢7996-1",
+      "pdf_url": "https://www.city.takahashi.lg.jp/site/kyouikuiinkai/sports9.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

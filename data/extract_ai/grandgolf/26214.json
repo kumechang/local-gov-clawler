@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.kizugawa-sports-association.or.jp/members/12_groundgolf/1.shtml",
+      "title": "木津川市スポーツ協会 加盟団体 グラウンドゴルフ協会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -25,6 +32,19 @@
     }
   ],
   "events": [],
-  "organizations": [],
+  "organizations": [
+    {
+      "org_name": "木津川市グラウンドゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "木津支部: 木津ふれあい健康グラウンド / 加茂支部: 赤田川グラウンド",
+      "activity_schedule": "木津支部 水曜9:00〜 / 加茂支部 水・金9:00〜",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンドゴルフ協会",
+      "pdf_url": "https://www.kizugawa-sports-association.or.jp/members/12_groundgolf/1.shtml",
+      "confidence": "high",
+      "note": "木津川市スポーツ協会の加盟団体。3支部・153名(男子88名・女子65名)。代表者の氏名は省略"
+    }
+  ],
   "unsure": []
 }

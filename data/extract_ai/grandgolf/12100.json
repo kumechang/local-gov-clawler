@@ -1,0 +1,30 @@
+{
+  "municipality_code": "12100",
+  "municipality_name": "千葉市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.chiba.jp/shimin/seikatsubunka/sports/nakatasupo-tusennta-.html",
+      "title": "中田スポーツセンター",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "中田スポーツセンター グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "043-228-2415",
+      "usage_note": "球技場(サッカー・グラウンドゴルフ)・多目的運動場・野球場・庭球場とともにグラウンドゴルフ場(グラウンドゴルフ・ターゲットゴルフ)がある。個人使用は当日受付(2時間単位)、専用使用は予約制",
+      "gg_evidence": "グラウンドゴルフ場 グラウンドゴルフ ターゲットゴルフ",
+      "pdf_url": "https://www.city.chiba.jp/shimin/seikatsubunka/sports/nakatasupo-tusennta-.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

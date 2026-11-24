@@ -1,0 +1,42 @@
+{
+  "municipality_code": "11100",
+  "municipality_name": "さいたま市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.saitama.lg.jp/002/001/014/002/p054156.html",
+      "title": "さいたま市宝来グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "さいたま市宝来グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "令和3年4月1日から25人以上の団体利用が可能に。団体予約は全面に加えて半面の予約も可能(公共施設予約システム)",
+      "gg_evidence": "さいたま市宝来グラウンド・ゴルフ場",
+      "pdf_url": "https://www.city.saitama.lg.jp/002/001/014/002/p054156.html",
+      "confidence": "high",
+      "note": "所在地・電話は抜粋に無い。ページの更新は2024年2月"
+    },
+    {
+      "facility_name": "さいたま市宝来グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "令和3年4月1日から25人以上の団体利用が可能に。団体予約は全面に加えて半面の予約も可能(公共施設予約システム)",
+      "gg_evidence": "さいたま市宝来グラウンド・ゴルフ場",
+      "pdf_url": "https://www.city.saitama.lg.jp/002/001/014/002/p054156.html",
+      "confidence": "high",
+      "note": "所在地・電話は抜粋に無い。ページの更新は2024年2月"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

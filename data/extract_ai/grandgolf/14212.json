@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.atsugi.kanagawa.jp/soshiki/sportssuishinka/3/1/35030.html",
+      "title": "及川グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -22,6 +29,18 @@
       "pdf_url": "https://www.city.atsugi.kanagawa.jp/material/files/group/73/kihonnkousou.pdf",
       "confidence": "medium",
       "note": "基本構想の施設一覧"
+    },
+    {
+      "facility_name": "及川グラウンド・ゴルフ場",
+      "address": "厚木市及川722-2",
+      "phone": "",
+      "inquiry_dept": "スポーツ魅力創造課",
+      "inquiry_phone": "046-225-2530",
+      "usage_note": "開場 4〜9月8:00〜18:00、10〜3月9:00〜17:00。年末年始休み",
+      "gg_evidence": "及川グラウンド・ゴルフ場",
+      "pdf_url": "https://www.city.atsugi.kanagawa.jp/soshiki/sportssuishinka/3/1/35030.html",
+      "confidence": "high",
+      "note": ""
     }
   ],
   "events": [],

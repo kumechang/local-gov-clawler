@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.tamano.lg.jp/site/community/15991.html",
+      "title": "令和8年度地域交流グラウンドゴルフ大会を開催しました",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [],
@@ -32,6 +39,48 @@
       "pdf_url": "https://www.city.tamano.lg.jp/uploaded/attachment/37060.pdf",
       "confidence": "medium",
       "note": "大会の様子の報告(題名の令和8年11月7日開催から)"
+    },
+    {
+      "event_name": "令和8年度地域交流グラウンドゴルフ大会(玉野市)",
+      "event_kind": "大会",
+      "date_text": "令和8年11月7日(土)",
+      "date_start": "2026-11-07",
+      "date_end": "2026-11-07",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "玉野市コミュニティ協議会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "今年度は、11月7日(土曜日)に秋晴れの中開催し、総勢230名が参加するにぎやかな大会になりました。",
+      "pdf_url": "https://www.city.tamano.lg.jp/site/community/15991.html",
+      "confidence": "high",
+      "note": "開催報告。230名参加。会場は抜粋に無い"
+    },
+    {
+      "event_name": "令和8年度地域交流グラウンドゴルフ大会(玉野市)",
+      "event_kind": "大会",
+      "date_text": "令和8年11月7日(土)",
+      "date_start": "2026-11-07",
+      "date_end": "2026-11-07",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "玉野市コミュニティ協議会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "今年度は、11月7日(土曜日)に秋晴れの中開催し、総勢230名が参加するにぎやかな大会になりました。",
+      "pdf_url": "https://www.city.tamano.lg.jp/site/community/15991.html",
+      "confidence": "high",
+      "note": "開催報告。230名参加。会場は抜粋に無い"
     }
   ],
   "organizations": [],

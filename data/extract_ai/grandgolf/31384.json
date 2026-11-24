@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.hiezu.jp/%e6%b5%b7%e6%b5%9c%e9%81%8b%e5%8b%95%e5%85%ac%e5%9c%92%e3%82%b9%e3%83%9d%e3%83%bc%e3%83%84%e5%ba%83%e5%a0%b4%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88%e3%80%8c%e6%97%a5/",
+      "title": "【中止】日吉津村グラウンドゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -45,6 +52,27 @@
       "pdf_url": "https://www.hiezu.jp/wp-content/uploads/2026/06/日吉津村グラウンドゴルフ大会チラシ.pdf",
       "confidence": "medium",
       "note": "スポーツ広場の利用開始記念のオープン大会。申込はQRコード、クラブの貸し出しあり。日付は抜粋に無く確定できない"
+    },
+    {
+      "event_name": "日吉津村グラウンドゴルフ大会(海浜運動公園スポーツ広場オープンイベント)",
+      "event_kind": "大会",
+      "date_text": "令和8年6月20日(土)10:00〜(受付9:15〜)",
+      "date_start": "2026-06-20",
+      "date_end": "2026-06-20",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "海浜運動公園スポーツ広場",
+      "organizer": "",
+      "target": "村民(小学生以下は保護者同伴・専用ショートコース)",
+      "fee": "",
+      "entry": "日吉津村役場総務課へ電話、またはQRコードからオンライン",
+      "deadline": "6月15日(月)",
+      "contact_dept": "日吉津村役場 総務課",
+      "contact_phone": "0859-27-5954",
+      "evidence": "令和8年6月20日(土)10時から",
+      "pdf_url": "https://www.hiezu.jp/%e6%b5%b7%e6%b5%9c%e9%81%8b%e5%8b%95%e5%85%ac%e5%9c%92%e3%82%b9%e3%83%9d%e3%83%bc%e3%83%84%e5%ba%83%e5%a0%b4%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88%e3%80%8c%e6%97%a5/",
+      "confidence": "high",
+      "note": "当日は雷注意報・雨天のため中止"
     }
   ],
   "organizations": [],

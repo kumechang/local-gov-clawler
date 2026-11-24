@@ -8,6 +8,20 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.hikone.lg.jp/kakuka/toshi_seisaku/7_1/kouen/2/3/4292.html",
+      "title": "荒神山公園運動施設(グラウンド・ゴルフ場)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "http://www.koujinyama-park.com/posts/news22.html",
+      "title": "R8年度グラウンド・ゴルフ例会(彦根市荒神山公園)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -22,9 +36,43 @@
       "pdf_url": "https://www.city.hikone.lg.jp/material/files/group/106/ABcourse.pdf",
       "confidence": "high",
       "note": ""
+    },
+    {
+      "facility_name": "荒神山公園グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "平成26年12月8日から日本GG協会認定コース。32ホール(8ホール×4コース)・天然芝。あずまや・トイレ・駐車場あり",
+      "gg_evidence": "32ホール(8ホール × 4コース) ・ 天然芝",
+      "pdf_url": "https://www.city.hikone.lg.jp/kakuka/toshi_seisaku/7_1/kouen/2/3/4292.html",
+      "confidence": "high",
+      "note": ""
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "event_name": "R8年度グラウンド・ゴルフ例会(11月度)",
+      "event_kind": "例会",
+      "date_text": "令和8年11月19日(木)",
+      "date_start": "2026-11-19",
+      "date_end": "2026-11-19",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "荒神山公園(グラウンド・ゴルフ場)",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "R8年11月19日(木)に開催しました11月度グラウンド・ゴルフ例会の結果をアップしました。",
+      "pdf_url": "http://www.koujinyama-park.com/posts/news22.html",
+      "confidence": "high",
+      "note": "結果掲載。月例の例会"
+    }
+  ],
   "organizations": [],
   "unsure": []
 }

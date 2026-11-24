@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.fujieda.shizuoka.jp/benri/shisetsu/BE001/BE003/1447731254326.html",
+      "title": "大井川河川敷スポーツ広場・グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -21,6 +28,18 @@
       "gg_evidence": "グランドゴルフ 個人利用 午前利用 午後利用",
       "pdf_url": "https://www.city.fujieda.shizuoka.jp/material/files/group/114/sougouundoukoensiseturiyouryou.pdf",
       "confidence": "medium",
+      "note": ""
+    },
+    {
+      "facility_name": "大井川河川敷スポーツ広場・グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "高麗芝10,200㎡、12ホール3コース計36ホール、駐車場253台。当日券 一般・学生は半日200円・全日400円、専用利用は1コース半日3,490円・全日6,980円",
+      "gg_evidence": "12ホール3コース合計36ホール",
+      "pdf_url": "https://www.city.fujieda.shizuoka.jp/benri/shisetsu/BE001/BE003/1447731254326.html",
+      "confidence": "high",
       "note": ""
     }
   ],

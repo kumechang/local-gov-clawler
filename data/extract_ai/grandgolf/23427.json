@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.vill.tobishima.aichi.jp/bunkasports/sports/1002030/1003003/1002035.html",
+      "title": "グラウンドゴルフ協会(飛島村)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [],
@@ -24,6 +31,18 @@
       "pdf_url": "https://www.vill.tobishima.aichi.jp/_res/projects/default_project/_page_/001/002/057/2026_zenki_kyoiku_center_tushin.pdf",
       "confidence": "low",
       "note": "生涯学習情報の団体活動表。他団体(インディアカ・軟式野球・ソフトテニス)と並ぶ。曜日・会場の対応は確定できない"
+    },
+    {
+      "org_name": "飛島村グラウンドゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "古政公園",
+      "activity_schedule": "毎週土曜・日曜及び祝日 7:30〜9:00(月8〜9回の例会)",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンドゴルフ協会",
+      "pdf_url": "https://www.vill.tobishima.aichi.jp/bunkasports/sports/1002030/1003003/1002035.html",
+      "confidence": "high",
+      "note": "会員28名(40〜80歳代)、会費2,000円/年、会員募集あり。代表者氏名は省略"
     }
   ],
   "unsure": []

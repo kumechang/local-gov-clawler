@@ -1,0 +1,39 @@
+{
+  "municipality_code": "40213",
+  "municipality_name": "行橋市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.yukuhashi.fukuoka.jp/soshiki/14/33909.html",
+      "title": "第36回いきいき健康づくりグラウンド・ゴルフ大会成績",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第36回いきいき健康づくりグラウンド・ゴルフ大会(行橋市)",
+      "event_kind": "大会",
+      "date_text": "令和8年10月15日",
+      "date_start": "2026-10-15",
+      "date_end": "2026-10-15",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "行橋市 国保年金課",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年10月15日、第36回いきいき健康づくりグラウンド・ゴルフ大会を実施しました。",
+      "pdf_url": "https://www.city.yukuhashi.fukuoka.jp/soshiki/14/33909.html",
+      "confidence": "high",
+      "note": "成績の掲載。会場は抜粋に無い"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

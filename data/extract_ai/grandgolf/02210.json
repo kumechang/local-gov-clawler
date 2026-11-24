@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.hirakawa.lg.jp/kokuspohirakawa/kokuminsport/2026-0903-1313-87.html",
+      "title": "【公開競技】グラウンド・ゴルフ",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [],
@@ -32,6 +39,27 @@
       "pdf_url": "https://www.city.hirakawa.lg.jp/kokuspohirakawa/kokuminsport/files/groundgolf_shutten.pdf",
       "confidence": "medium",
       "note": "出店一覧の会期・会場。年は曜日が合う2026年とした。競技日程(別PDF)は9月27日(日)にグラウンド・ゴルフ競技"
+    },
+    {
+      "event_name": "国スポ公開競技 グラウンド・ゴルフ(平川市)",
+      "event_kind": "大会",
+      "date_text": "令和8年9月26日(土)〜27日(日)",
+      "date_start": "2026-09-26",
+      "date_end": "2026-09-27",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "平川市陸上競技場・平賀多目的広場(開始式・表彰式はひらかわドリームアリーナ)",
+      "organizer": "",
+      "target": "",
+      "fee": "入場料無料",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年9月26日(土曜日)",
+      "pdf_url": "https://www.city.hirakawa.lg.jp/kokuspohirakawa/kokuminsport/2026-0903-1313-87.html",
+      "confidence": "high",
+      "note": "国民スポーツ大会の公開競技。都道府県対抗の団体ゲームと個人ゲーム。大会は終了"
     }
   ],
   "organizations": [],

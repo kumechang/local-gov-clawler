@@ -1,0 +1,30 @@
+{
+  "municipality_code": "08542",
+  "municipality_name": "五霞町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.goka.lg.jp/kurashi-machi-shigoto/gokanabi/sports/kaiyou/page006301.html",
+      "title": "丸池台グラウンド・ゴルフ場について",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "丸池台グラウンド・ゴルフ場(旧丸池台野球場)",
+      "address": "茨城県猿島郡五霞町元栗橋2847-1",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "令和8年4月リニューアルオープン。9:00〜17:00、年末年始休み。土舗装8ホール・芝生8ホール。利用料金は当面無料",
+      "gg_evidence": "令和8年4月より丸池台球場が「丸池台グラウンド・ゴルフ場」としてリニューアルオープン!",
+      "pdf_url": "https://www.town.goka.lg.jp/kurashi-machi-shigoto/gokanabi/sports/kaiyou/page006301.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

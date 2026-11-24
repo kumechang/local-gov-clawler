@@ -1,0 +1,39 @@
+{
+  "municipality_code": "22222",
+  "municipality_name": "伊豆市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.izu.shizuoka.jp/soshiki/1013/1/suport-event/4459.html",
+      "title": "令和6年度伊豆市グラウンド・ゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "令和6年度伊豆市グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和6年11月3日(日)",
+      "date_start": "2024-11-03",
+      "date_end": "2024-11-03",
+      "fiscal_year": 2024,
+      "period": "期間外",
+      "venue": "丸山スポーツ公園野球場(伊豆市八木沢)",
+      "organizer": "",
+      "target": "市内10チーム・62人参加",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和6年11月3日(日曜日)、伊豆市八木沢の丸山スポーツ公園野球場にて開催し",
+      "pdf_url": "https://www.city.izu.shizuoka.jp/soshiki/1013/1/suport-event/4459.html",
+      "confidence": "high",
+      "note": "開催報告。スポーツ推進委員オリジナルコース"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,30 @@
+{
+  "municipality_code": "08236",
+  "municipality_name": "小美玉市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.omitama.lg.jp/0144/info-0000004138-0.html",
+      "title": "小川グラウンドゴルフクラブ",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "小川グラウンドゴルフクラブ",
+      "org_kind": "クラブ",
+      "activity_place": "宮田防災公園など",
+      "activity_schedule": "練習 毎週火・木・金",
+      "contact_dept": "教育委員会 スポーツ推進課 スポーツ推進係",
+      "contact_phone": "0299-48-1111",
+      "evidence": "小川グラウンドゴルフクラブ",
+      "pdf_url": "https://www.city.omitama.lg.jp/0144/info-0000004138-0.html",
+      "confidence": "medium",
+      "note": "体育協会所属。1チーム58人。ページの更新は平成29年(古い)"
+    }
+  ],
+  "unsure": []
+}

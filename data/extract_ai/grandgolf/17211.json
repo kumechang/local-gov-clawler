@@ -1,0 +1,42 @@
+{
+  "municipality_code": "17211",
+  "municipality_name": "能美市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.nomi.lg.jp/docs/344.html",
+      "title": "グラウンドゴルフ場(屋外)(能美市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "根上翠ケ丘運動公園グラウンドゴルフ場",
+      "address": "能美市山口町リ37番地12",
+      "phone": "",
+      "inquiry_dept": "根上体育館",
+      "inquiry_phone": "0761-55-2896",
+      "usage_note": "24ホール、平成4年建設。オールシーズン(年末年始除く)8:30〜17:00",
+      "gg_evidence": "根上翠ケ丘運動公園グラウンドゴルフ場",
+      "pdf_url": "https://www.city.nomi.lg.jp/docs/344.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "寺井グラウンドゴルフ場",
+      "address": "能美市泉台町東10番地",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "協会認定24ホール(白山コース・手取コース・九谷コース)、クラブハウス。平成11年建設",
+      "gg_evidence": "寺井グラウンドゴルフ場",
+      "pdf_url": "https://www.city.nomi.lg.jp/docs/344.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

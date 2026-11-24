@@ -1,0 +1,30 @@
+{
+  "municipality_code": "22100",
+  "municipality_name": "静岡市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.shizuoka.lg.jp/shisetsu/s0000157.html",
+      "title": "三保真崎グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "三保真崎グラウンドゴルフ場",
+      "address": "静岡市清水区三保2399番地地先",
+      "phone": "054-334-0826(管理事務所)",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "天然芝。近くに三保松原",
+      "gg_evidence": "三保半島の先端にあり、富士山の眺望と天然芝で楽しむことができるグラウンドゴルフ場です。",
+      "pdf_url": "https://www.city.shizuoka.lg.jp/shisetsu/s0000157.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

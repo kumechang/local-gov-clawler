@@ -8,6 +8,34 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.daisen.lg.jp/archive/contents-14155",
+      "title": "米ヶ森公園",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.daisen.lg.jp/archive/contents-14156",
+      "title": "南外ふれあいパーク",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.daisen.lg.jp/archive/contents-14157",
+      "title": "太田ふれあいの里",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.daisen.lg.jp/archive/p20261001132415",
+      "title": "健幸まちづくりグラウンドゴルフ",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -22,9 +50,67 @@
       "pdf_url": "https://www.city.daisen.lg.jp/uploads/public/archive_0000000071_00/daisen_walking_map.pdf",
       "confidence": "medium",
       "note": "大仙市ウォーキングマップの記載"
+    },
+    {
+      "facility_name": "米ヶ森公園(グラウンド・ゴルフ場)",
+      "address": "大仙市協和荒川字新田表 地内",
+      "phone": "018-881-6646",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "大仙市協和荒川字新田表 地内",
+      "pdf_url": "https://www.city.daisen.lg.jp/archive/contents-14155",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "南外ふれあいパーク(グラウンド・ゴルフ場)",
+      "address": "大仙市南外字大畑135番地3外",
+      "phone": "0187-74-2130",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "大仙市南外字大畑135番地3外",
+      "pdf_url": "https://www.city.daisen.lg.jp/archive/contents-14156",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "太田ふれあいの里(秋田太田奥羽グラウンド・ゴルフ場)",
+      "address": "大仙市太田町太田字惣行大谷地 地内",
+      "phone": "0187-86-9116",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "大仙市太田町太田字惣行大谷地 地内",
+      "pdf_url": "https://www.city.daisen.lg.jp/archive/contents-14157",
+      "confidence": "high",
+      "note": ""
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "event_name": "健幸まちづくりグラウンドゴルフ(大仙市)",
+      "event_kind": "大会",
+      "date_text": "令和8年10月25日(日)受付8:30〜、競技開始9:30〜(正午ごろ終了)",
+      "date_start": "2026-10-25",
+      "date_end": "2026-10-25",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "米ヶ森公園(道の駅「協和」敷地内)",
+      "organizer": "",
+      "target": "大仙市健幸まちづくりプロジェクトに参加している方(当日の新規登録も可)・定員100人",
+      "fee": "無料",
+      "entry": "大仙市スマート申請(申込フォーム)、電話でも可",
+      "deadline": "10月21日(水)(期間を延長)",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "10月25日(日曜日)に道の駅協和敷地内にある米ヶ森公園で、健幸まちづくりグラウンドゴルフを開催します。",
+      "pdf_url": "https://www.city.daisen.lg.jp/archive/p20261001132415",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
   "organizations": [],
   "unsure": []
 }

@@ -1,0 +1,30 @@
+{
+  "municipality_code": "46222",
+  "municipality_name": "奄美市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.amami.lg.jp/ksangyo/shisetsu/leisure/015.html",
+      "title": "あやまる岬多目的広場(グラウンドゴルフ場)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "あやまる岬多目的広場(グラウンドゴルフ場)",
+      "address": "奄美市笠利町須野地内",
+      "phone": "0997-63-1111",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "あやまる岬多目的広場(グラウンドゴルフ場)",
+      "pdf_url": "https://www.city.amami.lg.jp/ksangyo/shisetsu/leisure/015.html",
+      "confidence": "high",
+      "note": "ページの更新は2013年"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

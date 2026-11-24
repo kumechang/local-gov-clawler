@@ -1,0 +1,39 @@
+{
+  "municipality_code": "08224",
+  "municipality_name": "守谷市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.moriya.ibaraki.jp/bunka_sports_shiminkatsudou/sports/1008050/1009252.html",
+      "title": "守谷市グラウンドゴルフ大会 参加者募集中",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "守谷市グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年9月27日(日)9:00集合・9:30試合開始、予備日9月28日(月)",
+      "date_start": "2026-09-27",
+      "date_end": "2026-09-27",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "常総運動公園 陸上競技場",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "教育委員会 生涯学習課",
+      "contact_phone": "0297-45-1111",
+      "evidence": "開催日 令和8年9月27日(日曜)",
+      "pdf_url": "https://www.city.moriya.ibaraki.jp/bunka_sports_shiminkatsudou/sports/1008050/1009252.html",
+      "confidence": "high",
+      "note": "9/28に雨天のため中止、今年度の大会は中止(守谷市スポーツ協会の告知)"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

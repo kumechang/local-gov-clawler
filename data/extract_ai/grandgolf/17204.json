@@ -1,0 +1,49 @@
+{
+  "municipality_code": "17204",
+  "municipality_name": "輪島市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.wajima.ishikawa.jp/shougai/wajimasports/establish/matino_grandgolf.html",
+      "title": "輪島市町野グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.wajima.ishikawa.jp/shougai/wajimasports/establish/monzen_grandgolf.html",
+      "title": "輪島市門前グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "輪島市町野グラウンドゴルフ場",
+      "address": "輪島市町野町東大野出村109",
+      "phone": "",
+      "inquiry_dept": "町野スポーツ施設管理棟",
+      "inquiry_phone": "0768-32-1040",
+      "usage_note": "8ホール・2コース。貸切可。年末年始休み、日の出〜日没",
+      "gg_evidence": "輪島市町野グラウンドゴルフ場",
+      "pdf_url": "https://www.city.wajima.ishikawa.jp/shougai/wajimasports/establish/matino_grandgolf.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "輪島市門前グラウンドゴルフ場",
+      "address": "輪島市門前町道下にの49-1",
+      "phone": "",
+      "inquiry_dept": "門前健民体育館",
+      "inquiry_phone": "0768-42-1495",
+      "usage_note": "ゲートボール1面、グラウンドゴルフ8ホール×4コース。トイレ・駐車場あり。12/29〜1/3休み、日の出〜日没",
+      "gg_evidence": "輪島市門前グラウンドゴルフ場",
+      "pdf_url": "https://www.city.wajima.ishikawa.jp/shougai/wajimasports/establish/monzen_grandgolf.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

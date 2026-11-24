@@ -1,0 +1,30 @@
+{
+  "municipality_code": "46218",
+  "municipality_name": "霧島市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city-kirishima.jp/hoken-taiiku/kyoiku/sport/chikubetsu/mizobe/groundgolf.html",
+      "title": "溝辺グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "溝辺グラウンドゴルフ場",
+      "address": "霧島市溝辺町麓3391",
+      "phone": "",
+      "inquiry_dept": "コミュニティセンター(指定管理者 きりしまPPP株式会社)",
+      "inquiry_phone": "0995-58-2451",
+      "usage_note": "全16ホール。8:30〜22:00、毎月第1月曜・年末年始休み",
+      "gg_evidence": "〒899-6404 霧島市溝辺町麓3391",
+      "pdf_url": "https://www.city-kirishima.jp/hoken-taiiku/kyoiku/sport/chikubetsu/mizobe/groundgolf.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

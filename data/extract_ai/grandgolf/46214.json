@@ -1,0 +1,30 @@
+{
+  "municipality_code": "46214",
+  "municipality_name": "垂水市",
+  "documents": [
+    {
+      "pdf_url": "http://www.city.tarumizu.lg.jp/bunka/kurashi/kosodate/undokoen/sisetu/guraunndogoruhujyou.html",
+      "title": "中央地区多目的広場兼グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "中央地区多目的広場兼グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "令和8年9月18日から利用開始。8:30〜日没、利用申請は体育館事務所へ(9〜17時)。予約は令和8年9月16日から受付、2か月前から予約可",
+      "gg_evidence": "令和8年9月18日(金曜日)オープニングセレモニー終了後から利用を開始します。",
+      "pdf_url": "http://www.city.tarumizu.lg.jp/bunka/kurashi/kosodate/undokoen/sisetu/guraunndogoruhujyou.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

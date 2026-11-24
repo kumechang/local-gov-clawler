@@ -1,0 +1,42 @@
+{
+  "municipality_code": "27382",
+  "municipality_name": "河南町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.kanan.osaka.jp/kanko_bunka_sports/sports/1/3159.html",
+      "title": "グラウンド・ゴルフ場(河南町)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "河南町グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "敷地7,200㎡・コース2,700㎡、8ホール(高麗芝)。9:00〜17:00、月曜休。1人1回(8ホール×2ラウンド)個人200円・団体(15人以上)100円・用具100円",
+      "gg_evidence": "8ホール(高麗芝貼り)",
+      "pdf_url": "https://www.town.kanan.osaka.jp/kanko_bunka_sports/sports/1/3159.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "河南町グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "敷地7,200㎡・コース2,700㎡、8ホール(高麗芝)。9:00〜17:00、月曜休。1人1回(8ホール×2ラウンド)個人200円・団体(15人以上)100円・用具100円",
+      "gg_evidence": "8ホール(高麗芝貼り)",
+      "pdf_url": "https://www.town.kanan.osaka.jp/kanko_bunka_sports/sports/1/3159.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

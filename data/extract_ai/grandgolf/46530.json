@@ -1,0 +1,39 @@
+{
+  "municipality_code": "46530",
+  "municipality_name": "徳之島町",
+  "documents": [
+    {
+      "pdf_url": "http://www.tokunoshima-town.org/omotenashikanko/gyoujiyotei/2026guraunndogoruhu.html",
+      "title": "どんどん祭りグラウンド・ゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "どんどん祭りグラウンド・ゴルフ大会(徳之島町)",
+      "event_kind": "大会",
+      "date_text": "2026年9月12日(土)9:00〜",
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-12",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "徳之島町運動公園陸上競技場",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "おもてなし観光課商工観光係",
+      "contact_phone": "0997-83-0731",
+      "evidence": "どんどん祭りグラウンド・ゴルフ大会が開催予定です。",
+      "pdf_url": "http://www.tokunoshima-town.org/omotenashikanko/gyoujiyotei/2026guraunndogoruhu.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

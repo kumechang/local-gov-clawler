@@ -1,0 +1,39 @@
+{
+  "municipality_code": "46482",
+  "municipality_name": "東串良町",
+  "documents": [
+    {
+      "pdf_url": "https://www.higashikushira.com/docs/2025061800015/",
+      "title": "マルマリンカップ(グラウンドゴルフ)延期開催について",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "マルマリンカップ(グラウンドゴルフ・東串良町)",
+      "event_kind": "大会",
+      "date_text": "8月9日(土)9:00〜14:00(予定)から8月16日(土)に延期",
+      "date_start": "2025-08-16",
+      "date_end": "2025-08-16",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "東串良町円山公園内(川東4989番地6)",
+      "organizer": "",
+      "target": "小学5年生以上(1名から申込可、年齢ミックスのくじ引きチーム)",
+      "fee": "小中学生無料・高校生以上500円",
+      "entry": "",
+      "deadline": "7月31日(木)",
+      "contact_dept": "円山公園管理センター",
+      "contact_phone": "",
+      "evidence": "東串良町円山公園内(鹿児島県肝属郡東串良町川東4989番地6)",
+      "pdf_url": "https://www.higashikushira.com/docs/2025061800015/",
+      "confidence": "medium",
+      "note": "令和7年。延期後の日付を採用"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,39 @@
+{
+  "municipality_code": "12221",
+  "municipality_name": "八千代市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.yachiyo.lg.jp/soshiki/67/83901.html",
+      "title": "阿蘇公民館主催講座 グラウンドゴルフ体験",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "阿蘇公民館主催講座「楽しく体を動かそう」グラウンドゴルフ体験(全3回)",
+      "event_kind": "教室",
+      "date_text": "令和8年11月11日・18日・25日(いずれも水曜)13:30〜15:30",
+      "date_start": "2026-11-11",
+      "date_end": "2026-11-25",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "旧米本小学校運動場(雨天は阿蘇公民館講習室でボッチャ)",
+      "organizer": "阿蘇公民館",
+      "target": "市内在住か在勤の60歳以上(定員12人・抽選)",
+      "fee": "無料",
+      "entry": "",
+      "deadline": "令和8年10月5日(月)17:00",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年11月11日・11月18日・11月25日",
+      "pdf_url": "https://www.city.yachiyo.lg.jp/soshiki/67/83901.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

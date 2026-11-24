@@ -1,0 +1,42 @@
+{
+  "municipality_code": "34204",
+  "municipality_name": "三原市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.mihara.hiroshima.jp/site/kyouiku/hongou-groundgolf.html",
+      "title": "北方グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "三原市北方グラウンド・ゴルフ場",
+      "address": "三原市本郷町上北方1001番地1",
+      "phone": "0848-86-0920",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "9:00〜17:00、毎週月曜・12/28〜1/4休み。JR本郷駅から車で10分",
+      "gg_evidence": "三原市本郷町上北方1001番地1",
+      "pdf_url": "https://www.city.mihara.hiroshima.jp/site/kyouiku/hongou-groundgolf.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "三原市北方グラウンド・ゴルフ場",
+      "address": "三原市本郷町上北方1001番地1",
+      "phone": "0848-86-0920",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "9:00〜17:00、毎週月曜・12/28〜1/4休み。JR本郷駅から車で10分",
+      "gg_evidence": "三原市本郷町上北方1001番地1",
+      "pdf_url": "https://www.city.mihara.hiroshima.jp/site/kyouiku/hongou-groundgolf.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

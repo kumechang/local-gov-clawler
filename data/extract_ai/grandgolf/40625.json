@@ -1,0 +1,49 @@
+{
+  "municipality_code": "40625",
+  "municipality_name": "みやこ町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.miyako.lg.jp/syougaigakusyuu/sisetsu/taiikusisetu/groundgolf.html",
+      "title": "みやこ町犀川運動公園グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.town.miyako.lg.jp/syougaigakusyuu/sisetsu/taiikusisetu/groundgolf_irahara.html",
+      "title": "みやこ町犀川伊良原グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "みやこ町犀川運動公園グラウンドゴルフ場",
+      "address": "京都郡みやこ町犀川末江249番地",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "グラウンドゴルフ1面。9:00〜日没、毎週月曜・年末年始休み",
+      "gg_evidence": "福岡県京都郡みやこ町犀川末江249番地",
+      "pdf_url": "https://www.town.miyako.lg.jp/syougaigakusyuu/sisetsu/taiikusisetu/groundgolf.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "みやこ町犀川伊良原グラウンドゴルフ場",
+      "address": "京都郡みやこ町犀川下伊良原1887番地",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "グラウンドゴルフ場2面。9:00〜日没、毎週月曜・年末年始休み。全面1時間1,100円(町内一般)",
+      "gg_evidence": "福岡県京都郡みやこ町犀川下伊良原1887番地",
+      "pdf_url": "https://www.town.miyako.lg.jp/syougaigakusyuu/sisetsu/taiikusisetu/groundgolf_irahara.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

@@ -15,6 +15,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.isesaki.lg.jp/kanko_bunka_sports/sports/sportsshisetsu_yagaikatsudoshisetsu/15759.html",
+      "title": "グラウンドゴルフ場・ゲートボール場(伊勢崎市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -51,6 +58,102 @@
       "usage_note": "新料金表あり",
       "gg_evidence": "伊勢崎市境広瀬川緑地グラウンドゴルフ場",
       "pdf_url": "https://www.city.isesaki.lg.jp/material/files/group/34/R1-10-1.pdf",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "赤堀グラウンドゴルフ場",
+      "address": "伊勢崎市五目牛町104番地10",
+      "phone": "",
+      "inquiry_dept": "赤堀運動施設管理事務所",
+      "inquiry_phone": "",
+      "usage_note": "全芝生・セパレート16コース。8:00〜19:00。休場日は毎月第2・第4火曜日、12/29〜5月末(芝生養生)",
+      "gg_evidence": "赤堀グラウンドゴルフ場",
+      "pdf_url": "https://www.city.isesaki.lg.jp/kanko_bunka_sports/sports/sportsshisetsu_yagaikatsudoshisetsu/15759.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "赤堀中央グラウンドゴルフ場",
+      "address": "伊勢崎市西久保町二丁目88番地1",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "全芝生・フラット、グラウンドゴルフコート1面。8:00〜19:00。休場日は毎月第2・第4火曜日、12/29〜翌3月",
+      "gg_evidence": "赤堀中央グラウンドゴルフ場",
+      "pdf_url": "https://www.city.isesaki.lg.jp/kanko_bunka_sports/sports/sportsshisetsu_yagaikatsudoshisetsu/15759.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "西小保方沼公園グラウンドゴルフ場",
+      "address": "伊勢崎市西小保方町692",
+      "phone": "",
+      "inquiry_dept": "あずま運動施設管理事務所",
+      "inquiry_phone": "",
+      "usage_note": "全芝生・フラット24コース(常設)。8:00〜19:00。休場日は毎月第2・第4火曜日、12/29〜翌4月末",
+      "gg_evidence": "西小保方沼公園グラウンドゴルフ場",
+      "pdf_url": "https://www.city.isesaki.lg.jp/kanko_bunka_sports/sports/sportsshisetsu_yagaikatsudoshisetsu/15759.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "つつみ公園グラウンドゴルフ場",
+      "address": "伊勢崎市国定町二丁目1940",
+      "phone": "",
+      "inquiry_dept": "あずま運動施設管理事務所",
+      "inquiry_phone": "",
+      "usage_note": "全芝生・セパレート16コース。8:00〜19:00。休場日は毎月第2・第4火曜日、12/29〜翌3月末",
+      "gg_evidence": "つつみ公園グラウンドゴルフ場",
+      "pdf_url": "https://www.city.isesaki.lg.jp/kanko_bunka_sports/sports/sportsshisetsu_yagaikatsudoshisetsu/15759.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "境広瀬川緑地グラウンドゴルフ場",
+      "address": "伊勢崎市境中島442番地1",
+      "phone": "",
+      "inquiry_dept": "境運動施設管理事務所",
+      "inquiry_phone": "",
+      "usage_note": "第1(全芝生・セパレート16コース)・第2(全芝生・フラット16コース)の2か所。8:00〜19:00。休場日は第1が毎月第2・第4火曜日、第2が毎月第1・第3火曜日、いずれも12/29〜1/3と2/1〜4月末",
+      "gg_evidence": "境広瀬川緑地グラウンドゴルフ場",
+      "pdf_url": "https://www.city.isesaki.lg.jp/kanko_bunka_sports/sports/sportsshisetsu_yagaikatsudoshisetsu/15759.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "西小保方沼公園グラウンドゴルフ場",
+      "address": "伊勢崎市西小保方町692",
+      "phone": "",
+      "inquiry_dept": "あずま運動施設管理事務所",
+      "inquiry_phone": "",
+      "usage_note": "全芝生・フラット24コース(常設)。8:00〜19:00。休場日は毎月第2・第4火曜日、12/29〜翌4月末",
+      "gg_evidence": "西小保方沼公園グラウンドゴルフ場",
+      "pdf_url": "https://www.city.isesaki.lg.jp/kanko_bunka_sports/sports/sportsshisetsu_yagaikatsudoshisetsu/15759.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "つつみ公園グラウンドゴルフ場",
+      "address": "伊勢崎市国定町二丁目1940",
+      "phone": "",
+      "inquiry_dept": "あずま運動施設管理事務所",
+      "inquiry_phone": "",
+      "usage_note": "全芝生・セパレート16コース。8:00〜19:00。休場日は毎月第2・第4火曜日、12/29〜翌3月末",
+      "gg_evidence": "つつみ公園グラウンドゴルフ場",
+      "pdf_url": "https://www.city.isesaki.lg.jp/kanko_bunka_sports/sports/sportsshisetsu_yagaikatsudoshisetsu/15759.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "境広瀬川緑地グラウンドゴルフ場",
+      "address": "伊勢崎市境中島442番地1",
+      "phone": "",
+      "inquiry_dept": "境運動施設管理事務所",
+      "inquiry_phone": "",
+      "usage_note": "第1(全芝生・セパレート16コース)・第2(全芝生・フラット16コース)の2か所。8:00〜19:00。休場日は第1が毎月第2・第4火曜日、第2が毎月第1・第3火曜日、いずれも12/29〜1/3と2/1〜4月末",
+      "gg_evidence": "境広瀬川緑地グラウンドゴルフ場",
+      "pdf_url": "https://www.city.isesaki.lg.jp/kanko_bunka_sports/sports/sportsshisetsu_yagaikatsudoshisetsu/15759.html",
       "confidence": "high",
       "note": ""
     }

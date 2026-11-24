@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.shimada.shizuoka.jp/kanko-docs/0848.html",
+      "title": "グラウンドゴルフ場(島田市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -22,6 +29,18 @@
       "pdf_url": "https://www.city.shimada.shizuoka.jp/fs/1/0/1/4/6/1/_/gaidomap4-5.pdf",
       "confidence": "medium",
       "note": "公園ガイドマップの説明。文は途中で切れている"
+    },
+    {
+      "facility_name": "島田市グラウンドゴルフ場",
+      "address": "島田市向島地先(大井川河川敷内)",
+      "phone": "",
+      "inquiry_dept": "島田球場",
+      "inquiry_phone": "0547-36-2617",
+      "usage_note": "平成15年開設、高麗芝18,000㎡。使用料無料。月曜・年末年始休み。島田球場で申請",
+      "gg_evidence": "島田市向島地先(大井川河川敷内)",
+      "pdf_url": "https://www.city.shimada.shizuoka.jp/kanko-docs/0848.html",
+      "confidence": "high",
+      "note": ""
     }
   ],
   "events": [],

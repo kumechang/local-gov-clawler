@@ -1,0 +1,30 @@
+{
+  "municipality_code": "26201",
+  "municipality_name": "福知山市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.fukuchiyama.lg.jp/soshiki/26/2037.html",
+      "title": "大呂グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "大呂グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "天然芝8ホール×2コース(ナイター設備あり)、駐車場49台。使用料 大人(中学生以上)500円(6枚綴り回数券2,500円)",
+      "gg_evidence": "大呂グラウンドゴルフ場は、日本グラウンドゴルフ協会から認定を受けたコースです。",
+      "pdf_url": "https://www.city.fukuchiyama.lg.jp/soshiki/26/2037.html",
+      "confidence": "high",
+      "note": "ページの更新は2018年"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

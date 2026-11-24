@@ -1,0 +1,30 @@
+{
+  "municipality_code": "07214",
+  "municipality_name": "本宮市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.motomiya.lg.jp/soshiki/51/golfopen.html",
+      "title": "パークゴルフ場及び恵向公園グラウンド・ゴルフ場の再オープン",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "恵向公園グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "生涯学習課",
+      "inquiry_phone": "0243-33-2611",
+      "usage_note": "令和8年4月1日(水)9:00に再オープン。定休日は木曜日",
+      "gg_evidence": "恵向公園グラウンド・ゴルフ場再オープンのお知らせです。",
+      "pdf_url": "https://www.city.motomiya.lg.jp/soshiki/51/golfopen.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

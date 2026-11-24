@@ -1,0 +1,95 @@
+{
+  "municipality_code": "13206",
+  "municipality_name": "府中市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.fuchu.tokyo.jp/bunka/bunkacenter/chuo/chuoguraunndogolf.html",
+      "title": "グラウンドゴルフの集い(中央文化センター)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.fuchu.tokyo.jp/bunka/bunkacenter/oshitate/guraunndogorufutaikai.html",
+      "title": "グラウンドゴルフ大会(押立文化センター)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.fuchu.tokyo.jp/bunka/bunkacenter/yotuya/guraundogolf.html",
+      "title": "グラウンドゴルフ大会(四谷文化センター)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "グラウンドゴルフの集い(中央文化センター)",
+      "event_kind": "集い",
+      "date_text": "11月4日(水)・8日(日)・18日(水)9:00〜11:00(雨天中止)",
+      "date_start": "2026-11-04",
+      "date_end": "2026-11-18",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "府中公園",
+      "organizer": "中央文化センター",
+      "target": "20歳以上",
+      "fee": "無料",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "11月4日(水曜日)午前9時から午前11時",
+      "pdf_url": "https://www.city.fuchu.tokyo.jp/bunka/bunkacenter/chuo/chuoguraunndogolf.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "event_name": "グラウンドゴルフ大会(押立文化センター)",
+      "event_kind": "大会",
+      "date_text": "10月17日(土)9:45集合",
+      "date_start": "2026-10-17",
+      "date_end": "2026-10-17",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "押立公園(押立町1-18)",
+      "organizer": "押立文化センター",
+      "target": "先着50人(大会は1チーム5人×8チーム、体験コーナーは個人10人)",
+      "fee": "",
+      "entry": "",
+      "deadline": "9月29日(火)15:00から押立文化センター1階事務室で受付",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "10月17日(土曜日)午前9時45分集合",
+      "pdf_url": "https://www.city.fuchu.tokyo.jp/bunka/bunkacenter/oshitate/guraunndogorufutaikai.html",
+      "confidence": "high",
+      "note": "チーム対抗戦と初心者向け体験コーナー"
+    },
+    {
+      "event_name": "グラウンドゴルフ大会(四谷文化センター)",
+      "event_kind": "大会",
+      "date_text": "11月28日(土)10:00(受付9:30〜9:50、雨天中止)",
+      "date_start": "2026-11-28",
+      "date_end": "2026-11-28",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "四谷小学校校庭",
+      "organizer": "四谷文化センター",
+      "target": "小学5年生以上の市民(先着64人・4名1組×16組)",
+      "fee": "無料",
+      "entry": "",
+      "deadline": "10月22日(木)から受付",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "11月28日(土曜日)午前10時",
+      "pdf_url": "https://www.city.fuchu.tokyo.jp/bunka/bunkacenter/yotuya/guraundogolf.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

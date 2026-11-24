@@ -1,0 +1,30 @@
+{
+  "municipality_code": "10203",
+  "municipality_name": "桐生市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kiryu.lg.jp/shisetsu/sports/kouen/1010089.html",
+      "title": "さくら遊園(グラウンドゴルフ場) 施設案内",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "さくら遊園グラウンドゴルフ場",
+      "address": "桐生市桜木町地内(渡良瀬川河川敷)",
+      "phone": "",
+      "inquiry_dept": "都市整備部 公園緑地課",
+      "inquiry_phone": "",
+      "usage_note": "用具(クラブ・ボールを除く)の貸出しあり。利用には公園使用許可申請が必要",
+      "gg_evidence": "桐生市桜木町地内(渡良瀬川河川敷)",
+      "pdf_url": "https://www.city.kiryu.lg.jp/shisetsu/sports/kouen/1010089.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

@@ -29,6 +29,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/anjo-west-gg.html",
+      "title": "安城市西部グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -55,6 +62,18 @@
       "pdf_url": "https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/documents/shisetsusyousaitamoku.pdf",
       "confidence": "medium",
       "note": "行事予定表の会場『多目的グラウンド』と同じ施設とみられるが、PDF上で明記はない"
+    },
+    {
+      "facility_name": "安城市西部グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "国道23号線の高架下を活用。利用後はグラウンドの整備が必要",
+      "gg_evidence": "国道23号線の高架下を活用したグラウンドゴルフ場です。",
+      "pdf_url": "https://www.city.anjo.aichi.jp/tanoshimu/sports/2022/anjo-west-gg.html",
+      "confidence": "high",
+      "note": ""
     }
   ],
   "events": [

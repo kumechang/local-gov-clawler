@@ -1,0 +1,30 @@
+{
+  "municipality_code": "12225",
+  "municipality_name": "君津市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kimitsu.lg.jp/soshiki/23/390.html",
+      "title": "君津グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "君津グラウンド・ゴルフ場",
+      "address": "君津市作木201-3",
+      "phone": "0439(55)6225",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "天然芝7,720㎡、キャラコース・ミツバコース(最大32ホール設置可)。管理棟・駐車場57台。指定管理者は釼持工業株式会社(令和7年4月〜令和10年3月)",
+      "gg_evidence": "場所 : 君津市作木201-3",
+      "pdf_url": "https://www.city.kimitsu.lg.jp/soshiki/23/390.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

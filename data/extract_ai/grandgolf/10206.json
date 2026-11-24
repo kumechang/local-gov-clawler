@@ -1,0 +1,95 @@
+{
+  "municipality_code": "10206",
+  "municipality_name": "沼田市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.numata.gunma.jp/event/taiiku/1009428.html",
+      "title": "令和6年度 第32回沼田市民グラウンド・ゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.numata.gunma.jp/event/taiiku/1016166.html",
+      "title": "【中止】令和7年度 第33回沼田市民グラウンド・ゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.numata.gunma.jp/event/taiiku/1018133.html",
+      "title": "令和8年度 第34回沼田市民グラウンド・ゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第32回沼田市民グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和6年10月27日(日)9:00開会式・9:30競技開始",
+      "date_start": "2024-10-27",
+      "date_end": "2024-10-27",
+      "fiscal_year": 2024,
+      "period": "期間外",
+      "venue": "沼田市運動公園(陸上競技場)",
+      "organizer": "NPO法人沼田市スポーツ協会事務局(申込先)",
+      "target": "市民(学生・生徒・児童は除く)。一般男子の部・一般女子の部",
+      "fee": "",
+      "entry": "",
+      "deadline": "令和6年10月15日(火)",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和6年10月27日(日曜日)",
+      "pdf_url": "https://www.city.numata.gunma.jp/event/taiiku/1009428.html",
+      "confidence": "high",
+      "note": "令和6年度。大会は終了"
+    },
+    {
+      "event_name": "第33回沼田市民グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和7年10月26日(日)9:00開会式・9:30競技開始",
+      "date_start": "2025-10-26",
+      "date_end": "2025-10-26",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "沼田市運動公園(陸上競技場)",
+      "organizer": "",
+      "target": "市民(学生・生徒・児童は除く)",
+      "fee": "",
+      "entry": "",
+      "deadline": "令和7年10月10日(金)",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和7年10月26日(日曜日)",
+      "pdf_url": "https://www.city.numata.gunma.jp/event/taiiku/1016166.html",
+      "confidence": "high",
+      "note": "当日雨天により中止"
+    },
+    {
+      "event_name": "第34回沼田市民グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年10月22日(木)9:00開会式・9:30競技開始",
+      "date_start": "2026-10-22",
+      "date_end": "2026-10-22",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "沼田市運動公園(陸上競技場)",
+      "organizer": "",
+      "target": "市民(学生・生徒・児童は除く)。一般男子の部・一般女子の部",
+      "fee": "",
+      "entry": "",
+      "deadline": "令和8年10月22日(木)",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年10月22日(木曜日)",
+      "pdf_url": "https://www.city.numata.gunma.jp/event/taiiku/1018133.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,30 @@
+{
+  "municipality_code": "35208",
+  "municipality_name": "岩国市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.iwakuni.lg.jp/map/7537.html",
+      "title": "玖珂運動総合公園 グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "玖珂運動総合公園 グラウンドゴルフ場",
+      "address": "岩国市玖珂町3800-1",
+      "phone": "0827-81-0350",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "山口県岩国市玖珂町3800-1",
+      "pdf_url": "https://www.city.iwakuni.lg.jp/map/7537.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,39 @@
+{
+  "municipality_code": "27207",
+  "municipality_name": "高槻市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.takatsuki.osaka.jp/soshiki/17/168035.html",
+      "title": "堤コミュニティセンターグラウンドゴルフ教室",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "堤コミュニティセンター グラウンドゴルフ教室(令和8年度)",
+      "event_kind": "教室",
+      "date_text": "毎週月・水・金 9:00〜12:00",
+      "date_start": "",
+      "date_end": "",
+      "fiscal_year": "",
+      "period": "日付不明",
+      "venue": "堤コミュニティセンター(堤町3番2号)",
+      "organizer": "",
+      "target": "市内在住の60歳以上・定員20人(申込順)",
+      "fee": "年会費1,000円、受講料2,000円/月",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "毎週 月曜日・水曜日・金曜日 9時00分から12時00分",
+      "pdf_url": "https://www.city.takatsuki.osaka.jp/soshiki/17/168035.html",
+      "confidence": "high",
+      "note": "令和8年度受講生募集。開始日は抜粋に無い"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

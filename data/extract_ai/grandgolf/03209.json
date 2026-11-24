@@ -22,6 +22,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.ichinoseki.iwate.jp/archive/p20260917135853",
+      "title": "グラウンドゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [],
@@ -171,6 +178,27 @@
       "evidence": "一関市グラウンド・ゴルフ協会東山支部長杯 グラウンド・ゴルフ大会",
       "pdf_url": "https://www.city.ichinoseki.iwate.jp/uploads/public/archive_0000003369_00/【様式】令和８年１１月（東山・室根・川崎・藤沢）訂正.pdf",
       "confidence": "medium",
+      "note": ""
+    },
+    {
+      "event_name": "日形地区 グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年10月25日(日)9:00〜11:30",
+      "date_start": "2026-10-25",
+      "date_end": "2026-10-25",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "旧日形小学校グラウンド",
+      "organizer": "日形市民センター、日形地区体育協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "日形市民センター",
+      "contact_phone": "0191-82-1010",
+      "evidence": "令和8年10月25日(日曜日)9時00分~11時30分",
+      "pdf_url": "https://www.city.ichinoseki.iwate.jp/archive/p20260917135853",
+      "confidence": "high",
       "note": ""
     }
   ],

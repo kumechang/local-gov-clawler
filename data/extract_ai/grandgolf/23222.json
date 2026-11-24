@@ -8,9 +8,29 @@
       "relevant": false,
       "skip_reason": "学校体育施設の利用種目の一覧。学校名との対応が確定できない",
       "doc_kind": "その他"
+    },
+    {
+      "pdf_url": "https://www.city.tokai.aichi.jp/shisetsu/1005662/1002888.html",
+      "title": "荒尾グラウンドゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
-  "facilities": [],
+  "facilities": [
+    {
+      "facility_name": "荒尾グラウンドゴルフ場",
+      "address": "東海市荒尾町大狭間23-1",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "2面、使用料無料。7:00〜17:00(5〜10月は19:00まで)。利用対象は東海市・半田市・常滑市・大府市・知多市・阿久比町・東浦町・南知多町・美浜町・武豊町の在住・在勤・在学者",
+      "gg_evidence": "グラウンド・ゴルフ場2面",
+      "pdf_url": "https://www.city.tokai.aichi.jp/shisetsu/1005662/1002888.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
   "events": [],
   "organizations": [],
   "unsure": []

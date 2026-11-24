@@ -1,0 +1,59 @@
+{
+  "municipality_code": "31370",
+  "municipality_name": "湯梨浜町",
+  "documents": [
+    {
+      "pdf_url": "http://www.yurihama.jp/soshiki/20/28417.html",
+      "title": "第38回グラウンド・ゴルフ発祥地大会(結果)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.yurihama.jp/soshiki/7/10630.html",
+      "title": "グラウンド・ゴルフの聖地「潮風の丘とまり」",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "グラウンドゴルフのふる里公園「潮風の丘とまり」",
+      "address": "鳥取県湯梨浜町泊",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "平成5年整備。岬コース・インコース・アウトコースの天然芝8ホール3コース。年間約200の大会が開催される",
+      "gg_evidence": "グラウンドゴルフのふる里公園「潮風の丘とまり」",
+      "pdf_url": "https://www.yurihama.jp/soshiki/7/10630.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [
+    {
+      "event_name": "第38回グラウンド・ゴルフ発祥地大会",
+      "event_kind": "大会",
+      "date_text": "2026年6月13日(土)・14日(日)",
+      "date_start": "2026-06-13",
+      "date_end": "2026-06-14",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "潮風の丘とまり(鳥取県湯梨浜町泊)",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "2026年6月13日(土曜日)・14日(日曜日)、グラウンド・ゴルフの発祥地「潮風の丘とまり」",
+      "pdf_url": "http://www.yurihama.jp/soshiki/20/28417.html",
+      "confidence": "high",
+      "note": "結果掲載。24府県とオーストラリアから669人が参加"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,39 @@
+{
+  "municipality_code": "13119",
+  "municipality_name": "板橋区",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.itabashi.tokyo.jp/bunka/sports/jigyo/1054490.html",
+      "title": "令和8年度シニアグラウンド・ゴルフ大会",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "令和8年度シニアグラウンド・ゴルフ大会(板橋区)",
+      "event_kind": "大会",
+      "date_text": "10月20日(火)9:00〜13:30(予備日10月28日)",
+      "date_start": "2026-10-20",
+      "date_end": "2026-10-20",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "板橋区立城北野球場(板橋区坂下二丁目19番1号)",
+      "organizer": "",
+      "target": "区内在住・在勤の65歳以上",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "10月20日(火曜日)午前9時00分から午後1時30分",
+      "pdf_url": "https://www.city.itabashi.tokyo.jp/bunka/sports/jigyo/1054490.html",
+      "confidence": "high",
+      "note": "開催済み"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

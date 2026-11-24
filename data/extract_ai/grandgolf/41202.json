@@ -1,0 +1,30 @@
+{
+  "municipality_code": "41202",
+  "municipality_name": "唐津市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.karatsu.lg.jp/page/3856.html",
+      "title": "唐津市相知天徳の丘運動公園グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "唐津市相知天徳の丘運動公園グラウンド・ゴルフ場",
+      "address": "唐津市相知町相知2579",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "芝コース8ホール、日本GG協会公認コース。8:30〜日没、12/29〜1/3休み",
+      "gg_evidence": "佐賀県唐津市相知町相知2579",
+      "pdf_url": "https://www.city.karatsu.lg.jp/page/3856.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

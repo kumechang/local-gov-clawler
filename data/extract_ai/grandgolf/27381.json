@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "http://www.town.taishi.osaka.jp/shisetsuguide/1550647673510.html",
+      "title": "太子町立グラウンドゴルフ等多目的交流広場(いきいき交流広場)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -22,6 +29,30 @@
       "pdf_url": "https://www.town.taishi.osaka.jp/material/files/group/23/shisetsu_ichiran.pdf",
       "confidence": "medium",
       "note": "施設は河南町所在。掲載元は太子町"
+    },
+    {
+      "facility_name": "太子町立グラウンドゴルフ等多目的交流広場(いきいき交流広場)",
+      "address": "太子町葉室地区",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "グラウンドゴルフ等の多目的交流広場。ゲートボールのグラウンドも併設",
+      "gg_evidence": "「太子町立グラウンドゴルフ等多目的交流広場(いきいき交流広場)」(太子町葉室地区)",
+      "pdf_url": "http://www.town.taishi.osaka.jp/shisetsuguide/1550647673510.html",
+      "confidence": "high",
+      "note": "ページの更新は2019年"
+    },
+    {
+      "facility_name": "太子町立グラウンドゴルフ等多目的交流広場(いきいき交流広場)",
+      "address": "太子町葉室地区",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "グラウンドゴルフ等の多目的交流広場。ゲートボールのグラウンドも併設",
+      "gg_evidence": "「太子町立グラウンドゴルフ等多目的交流広場(いきいき交流広場)」(太子町葉室地区)",
+      "pdf_url": "http://www.town.taishi.osaka.jp/shisetsuguide/1550647673510.html",
+      "confidence": "high",
+      "note": "ページの更新は2019年"
     }
   ],
   "events": [],

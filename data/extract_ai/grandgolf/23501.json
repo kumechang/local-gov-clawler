@@ -1,0 +1,30 @@
+{
+  "municipality_code": "23501",
+  "municipality_name": "幸田町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.kota.lg.jp/soshiki/24/820.html",
+      "title": "幸田町大日蔭グラウンド・ゴルフ場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "幸田町大日蔭グラウンド・ゴルフ場",
+      "address": "幸田町大字野場字大日蔭33番地",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "延面積31,800㎡、常設80ホール(5面)。専用貸出は1コマ1,300円(6〜9時、9〜12時、12〜15時、15〜18時)",
+      "gg_evidence": "幸田町大字野場字大日蔭33番地",
+      "pdf_url": "https://www.town.kota.lg.jp/soshiki/24/820.html",
+      "confidence": "high",
+      "note": "ページの更新は2020年"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,30 @@
+{
+  "municipality_code": "23224",
+  "municipality_name": "知多市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.chita.lg.jp/docs/2014012300575/",
+      "title": "西知多医療厚生組合(庭球場、グラウンドゴルフ場)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "西知多医療厚生組合 グラウンドゴルフ場",
+      "address": "知多市三反田3丁目1番地の2",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "利用者は知多市・東海市の在住・在勤・在学者。受付8:30〜17:00、土日祝休み。駐車場約20台。庭球場併設",
+      "gg_evidence": "西知多医療厚生組合(庭球場、グラウンドゴルフ場)",
+      "pdf_url": "https://www.city.chita.lg.jp/docs/2014012300575/",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}
