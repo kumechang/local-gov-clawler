@@ -1,0 +1,59 @@
+{
+  "municipality_code": "40605",
+  "municipality_name": "川崎町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town-kawasaki.com/wp-content/uploads/2026/05/R8.健康ポイント予定表　最終版-　印刷用　.pdf",
+      "title": "川崎町健康ポイント制度の概要",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.town-kawasaki.com/wp-content/uploads/2017/03/K402_R010620_shisetsu_undokoen.pdf",
+      "title": "施設概要(運動公園)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "川崎町 運動公園 グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "施設概要・使用料表にグラウンドゴルフ場(無料)。ソフトボール2面・サッカー2面・相撲場・三井グラウンドを併設",
+      "gg_evidence": "グラウンドゴルフ場 無料 無料",
+      "pdf_url": "https://www.town-kawasaki.com/wp-content/uploads/2017/03/K402_R010620_shisetsu_undokoen.pdf",
+      "confidence": "medium",
+      "note": "公園名はURL(undokoen)から"
+    }
+  ],
+  "events": [
+    {
+      "event_name": "川崎町 協会グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "4月・10月(年2回)",
+      "date_start": "",
+      "date_end": "",
+      "fiscal_year": 2026,
+      "period": "日付不明",
+      "venue": "大島ゴルフ場",
+      "organizer": "川崎町体育協会・グラウンドゴルフ協会",
+      "target": "全町民",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "協会グラウンドゴルフ大会 2 4月・10月 大島ゴルフ場 全町民対象 川体協・グラウンドゴルフ協会主催",
+      "pdf_url": "https://www.town-kawasaki.com/wp-content/uploads/2026/05/R8.健康ポイント予定表　最終版-　印刷用　.pdf",
+      "confidence": "medium",
+      "note": "令和8年度の健康ポイント制度の対象行事の一覧。日は無い"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

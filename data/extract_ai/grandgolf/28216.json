@@ -1,0 +1,30 @@
+{
+  "municipality_code": "28216",
+  "municipality_name": "高砂市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.takasago.lg.jp/material/files/group/39/20220228-2.pdf",
+      "title": "米田多目的広場公園利用申込要領",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "米田多目的広場公園",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "利用形態は小学生以下の野球・サッカー・ソフトボール、グランドゴルフ等、テニス(いずれも大会利用は除く)",
+      "gg_evidence": "グランドゴルフ、キャッチボール等フェンスを越える恐れがない競技",
+      "pdf_url": "https://www.city.takasago.lg.jp/material/files/group/39/20220228-2.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

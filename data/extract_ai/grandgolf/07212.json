@@ -1,0 +1,54 @@
+{
+  "municipality_code": "07212",
+  "municipality_name": "南相馬市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.minamisoma.lg.jp/material/files/group/15/itiran.pdf",
+      "title": "スポーツ施設一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "小高中部運動場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "9:00〜17:00。面積4,251㎡。多目的運動場",
+      "gg_evidence": "小高中部運動場 9:00~17:00 区分:多目的運動場 グラウンドゴルフなど",
+      "pdf_url": "https://www.city.minamisoma.lg.jp/material/files/group/15/itiran.pdf",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "小高片草運動場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "9:00〜21:00。テニス、サッカー、グラウンドゴルフなど。照明あり(テニスコート)",
+      "gg_evidence": "小高片草運動場 9:00~21:00 ※ 区分:多目的運動、テニスコート(砂入り人工芝3面) テニス、サッカー、グラウンドゴルフなど",
+      "pdf_url": "https://www.city.minamisoma.lg.jp/material/files/group/15/itiran.pdf",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "facility_name": "千倉グラウンド",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "9:00〜21:00。多目的運動場。少年野球、グラウンドゴルフなど。ナイター設備",
+      "gg_evidence": "千倉グラウンド 9:00~21:00 区分:多目的運動場 少年野球、グラウンドゴルフなど",
+      "pdf_url": "https://www.city.minamisoma.lg.jp/material/files/group/15/itiran.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

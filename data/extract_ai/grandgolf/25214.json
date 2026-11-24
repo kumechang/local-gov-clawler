@@ -1,0 +1,30 @@
+{
+  "municipality_code": "25214",
+  "municipality_name": "米原市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.maibara.lg.jp/material/files/group/46/banbatamokutekihirobanoriyou_ver2.pdf",
+      "title": "米原市番場多目的広場の利用について",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "米原市 番場多目的広場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "貸出備品にグラウンドゴルフセット(8ホール分)とフットサルゴール1組",
+      "gg_evidence": "グラウンドゴルフセット(8ホール分)",
+      "pdf_url": "https://www.city.maibara.lg.jp/material/files/group/46/banbatamokutekihirobanoriyou_ver2.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

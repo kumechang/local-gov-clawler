@@ -1,0 +1,30 @@
+{
+  "municipality_code": "26303",
+  "municipality_name": "大山崎町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.oyamazaki.kyoto.jp/material/files/group/49/41872433.pdf",
+      "title": "使用要領",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "大山崎町 多目的広場A・B",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "多目的広場A(約6,570㎡)・B(約2,730㎡)。使用料無料。グランドゴルフ・ゲートボール等の軽スポーツ、町内会等の催し、町主催事業に利用",
+      "gg_evidence": "グランドゴルフ・ゲートボール等の軽スポーツ競技",
+      "pdf_url": "https://www.town.oyamazaki.kyoto.jp/material/files/group/49/41872433.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

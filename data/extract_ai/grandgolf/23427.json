@@ -1,0 +1,30 @@
+{
+  "municipality_code": "23427",
+  "municipality_name": "飛島村",
+  "documents": [
+    {
+      "pdf_url": "https://www.vill.tobishima.aichi.jp/_res/projects/default_project/_page_/001/002/057/2026_zenki_kyoiku_center_tushin.pdf",
+      "title": "生涯学習情報2026年度前期版",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "飛島村 グラウンドゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "南部運動場(表の崩れにより推定)",
+      "activity_schedule": "毎週日曜 9:30〜(表の崩れにより対応は要確認)",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンドゴルフ協会",
+      "pdf_url": "https://www.vill.tobishima.aichi.jp/_res/projects/default_project/_page_/001/002/057/2026_zenki_kyoiku_center_tushin.pdf",
+      "confidence": "low",
+      "note": "生涯学習情報の団体活動表。他団体(インディアカ・軟式野球・ソフトテニス)と並ぶ。曜日・会場の対応は確定できない"
+    }
+  ],
+  "unsure": []
+}

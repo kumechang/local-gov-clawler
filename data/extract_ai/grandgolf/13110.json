@@ -1,0 +1,39 @@
+{
+  "municipality_code": "13110",
+  "municipality_name": "目黒区",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.meguro.tokyo.jp/documents/13355/groundgolf20261127.pdf",
+      "title": "グラウンド・ゴルフ教室 参加申込書",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "グラウンド・ゴルフ教室(砧イベント)",
+      "event_kind": "教室",
+      "date_text": "令和8年11月27日(金)10:00〜14:30(集合9:30)",
+      "date_start": "2026-11-27",
+      "date_end": "2026-11-27",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "指導 目黒区グラウンド・ゴルフ連盟",
+      "target": "年齢・性別を問わず、定員20名(超えた場合は抽選)",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "日 時 令和8年11月27日(金)10:00~14:30 集合時間 9:30 定 員 20名",
+      "pdf_url": "https://www.city.meguro.tokyo.jp/documents/13355/groundgolf20261127.pdf",
+      "confidence": "high",
+      "note": "会場は砧イベントの一部とみられるが、抜粋に会場名が無い"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

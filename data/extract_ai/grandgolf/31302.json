@@ -1,0 +1,30 @@
+{
+  "municipality_code": "31302",
+  "municipality_name": "岩美町",
+  "documents": [
+    {
+      "pdf_url": "https://www.iwami.gr.jp/secure/6692/syakaikyouikushisetsu.pdf",
+      "title": "社会教育(生涯学習)関連施設案内",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "ゆかむりの里 岩井温泉グラウンドゴルフ場",
+      "address": "岩美町宇治 1041",
+      "phone": "",
+      "inquiry_dept": "教育委員会",
+      "inquiry_phone": "(73-1302)",
+      "usage_note": "芝生常設16ホール。使用料: 町民無料、町外1人400円(団体1人300円)、用具使用料1人100円。休場日12/26〜3/19",
+      "gg_evidence": "ゆかむりの里 岩井温泉 グラウンドゴルフ場 宇治 1041 教育委員会 (73-1302) 芝生常設 16 ホール",
+      "pdf_url": "https://www.iwami.gr.jp/secure/6692/syakaikyouikushisetsu.pdf",
+      "confidence": "medium",
+      "note": "電話は資料の表記のまま(市外局番省略)。施設名の読み取りは表の崩れにより要確認"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

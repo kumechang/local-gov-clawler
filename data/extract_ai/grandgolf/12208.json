@@ -1,0 +1,87 @@
+{
+  "municipality_code": "12208",
+  "municipality_name": "野田市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.noda.chiba.jp/_res/projects/default_project/_page_/001/001/069/R8sekiyadopa-kumoxtupusugoruhuzyouhuxtutosaruzyou.pdf",
+      "title": "令和8年度施設利用予約状況(体育館、グラウンド・ゴルフ場、フットサル場)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.noda.chiba.jp/_res/projects/default_project/_page_/001/001/069/r7sekiyadopa-kumoxtupusu.goruhuzyou.huxtutosaruzyou.pdf",
+      "title": "令和8年度施設利用予約状況",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.noda.chiba.jp/_res/projects/default_project/_page_/001/001/076/R8hukudayakyuuzyou.pdf",
+      "title": "令和8年度施設利用予約状況【福田運動場】",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "関宿パークMOPS グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "施設予約状況の表に、体育館・フットサル場とともに載る。グラウンド・ゴルフ協会の大会などに使われる",
+      "gg_evidence": "日 曜 グラウンド・ゴルフ場 フットサル場",
+      "pdf_url": "https://www.city.noda.chiba.jp/_res/projects/default_project/_page_/001/001/069/r7sekiyadopa-kumoxtupusu.goruhuzyou.huxtutosaruzyou.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [
+    {
+      "event_name": "野田市協会普及指導員大会(グラウンド・ゴルフ協会)",
+      "event_kind": "大会",
+      "date_text": "5月26日(火) 9〜15時(予備日 5月29日(金))",
+      "date_start": "2026-05-26",
+      "date_end": "2026-05-26",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "関宿パークMOPS グラウンド・ゴルフ場",
+      "organizer": "野田市グラウンド・ゴルフ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "野田市協会普及指導員大会 (グラウンド・ゴルフ協会) 9-15",
+      "pdf_url": "https://www.city.noda.chiba.jp/_res/projects/default_project/_page_/001/001/069/R8sekiyadopa-kumoxtupusugoruhuzyouhuxtutosaruzyou.pdf",
+      "confidence": "medium",
+      "note": "令和8年度の施設予約状況【5月】"
+    },
+    {
+      "event_name": "福田地区グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "6月6日(土) 9-13(予備日 6月13日(土))",
+      "date_start": "2026-06-06",
+      "date_end": "2026-06-06",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "福田運動場(野球場)",
+      "organizer": "福田公民館",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "福田地区グラウンド・ゴルフ大会 (福田公民館)9-13",
+      "pdf_url": "https://www.city.noda.chiba.jp/_res/projects/default_project/_page_/001/001/076/R8hukudayakyuuzyou.pdf",
+      "confidence": "medium",
+      "note": "令和8年度予約状況表(4〜7月)。日付は表の列から6月6日(土)と読み取り(6月1日=月と曜日が一致)"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

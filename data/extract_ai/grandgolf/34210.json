@@ -1,0 +1,30 @@
+{
+  "municipality_code": "34210",
+  "municipality_name": "庄原市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.shobara.hiroshima.jp/main/%E2%91%A1%E5%B1%8B%E5%A4%96%E4%BD%93%E8%82%B2%E6%96%BD%E8%A8%AD%E3%80%90344KB%E3%80%91.pdf",
+      "title": "庄原市戸宇スポーツ広場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "庄原市 戸宇スポーツ広場 グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "料金表にグラウンドゴルフ場(1時間当たり)の区分あり。市民無料・市民以外200円と読めるが列対応は要確認",
+      "gg_evidence": "・グラウンドゴルフ場 (1時間当たり)",
+      "pdf_url": "https://www.city.shobara.hiroshima.jp/main/%E2%91%A1%E5%B1%8B%E5%A4%96%E4%BD%93%E8%82%B2%E6%96%BD%E8%A8%AD%E3%80%90344KB%E3%80%91.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

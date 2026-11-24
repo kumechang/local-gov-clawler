@@ -1,0 +1,59 @@
+{
+  "municipality_code": "06426",
+  "municipality_name": "三川町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.mikawa.yamagata.jp/kurashi/sport/mikawa.files/supomika2026.2.pdf",
+      "title": "三川町スポーツ協会だより2月号",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.town.mikawa.yamagata.jp/kurashi/sport/mikawa.files/supomika2026.5.pdf",
+      "title": "三川町スポーツ協会だより2026年5月号",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "三川町スポーツ協会会長杯 グラウンド・ゴルフ30周年記念大会",
+      "event_kind": "大会",
+      "date_text": "日付は抜粋に無い(広報2026年5月号の大会結果欄)",
+      "date_start": "",
+      "date_end": "",
+      "fiscal_year": "",
+      "period": "日付不明",
+      "venue": "",
+      "organizer": "三川町スポーツ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "三川町スポーツ協会会長杯 グラウンド・ゴルフ 30周年記念大会",
+      "pdf_url": "https://www.town.mikawa.yamagata.jp/kurashi/sport/mikawa.files/supomika2026.5.pdf",
+      "confidence": "low",
+      "note": "広報の大会結果欄の見出し。開催日・会場は抜粋に無い"
+    }
+  ],
+  "organizations": [
+    {
+      "org_name": "三川町グラウンド・ゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "三川町グラウンド・ゴルフ協会は、令和8 年度の会員を募集しています。",
+      "pdf_url": "https://www.town.mikawa.yamagata.jp/kurashi/sport/mikawa.files/supomika2026.2.pdf",
+      "confidence": "high",
+      "note": "令和8年度の会員募集(広報2月号)"
+    }
+  ],
+  "unsure": []
+}

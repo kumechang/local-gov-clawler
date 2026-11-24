@@ -15,6 +15,20 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.sakado.lg.jp/uploaded/attachment/33460.pdf",
+      "title": "申込書(第49回)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.sakado.lg.jp/uploaded/attachment/32014.pdf",
+      "title": "申込書(第48回)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -52,6 +66,48 @@
       "pdf_url": "https://www.city.sakado.lg.jp/uploaded/life/57802_121390_misc.pdf",
       "confidence": "medium",
       "note": "会場・時刻は、段組みの崩れから、第1多目的運動場の区画の記述と判断した(11/16に試した行の修正版)"
+    },
+    {
+      "event_name": "第49回グラウンドゴルフ大会(坂戸市)",
+      "event_kind": "大会",
+      "date_text": "令和7年11月9日(日)(予備日なし)",
+      "date_start": "2025-11-09",
+      "date_end": "2025-11-09",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "第49 回グラウンドゴルフ大会参加申込書 開催日:令和7年11月9日(日)",
+      "pdf_url": "https://www.city.sakado.lg.jp/uploaded/attachment/33460.pdf",
+      "confidence": "high",
+      "note": "参加申込書。会場は書かれていない"
+    },
+    {
+      "event_name": "第48回グラウンドゴルフ大会(坂戸市)",
+      "event_kind": "大会",
+      "date_text": "令和7年6月22日(日)(予備日なし)",
+      "date_start": "2025-06-22",
+      "date_end": "2025-06-22",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "第48回グラウンドゴルフ大会参加申込書 開催日:令和7年6月22日(日)",
+      "pdf_url": "https://www.city.sakado.lg.jp/uploaded/attachment/32014.pdf",
+      "confidence": "high",
+      "note": "参加申込書。会場は書かれていない"
     }
   ],
   "organizations": [],

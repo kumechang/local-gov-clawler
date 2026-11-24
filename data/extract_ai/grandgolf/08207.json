@@ -1,0 +1,30 @@
+{
+  "municipality_code": "08207",
+  "municipality_name": "結城市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.yuki.lg.jp/data/doc/1718351007_doc_114_0.pdf",
+      "title": "鹿窪パンフレット",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "鹿窪ニュースポーツ広場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "パークゴルフ9ホール、グラウンドゴルフ8ホール、ターゲットバードゴルフ9ホールの設置が可能(有料)",
+      "gg_evidence": "グラウンドゴルフ 8ホール設置可能",
+      "pdf_url": "https://www.city.yuki.lg.jp/data/doc/1718351007_doc_114_0.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

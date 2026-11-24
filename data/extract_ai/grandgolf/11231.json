@@ -15,6 +15,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "広報誌"
+    },
+    {
+      "pdf_url": "https://www.city.okegawa.lg.jp/material/files/group/57/R8_3.pdf",
+      "title": "スポーツ推進委員だより第49号",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -52,6 +59,27 @@
       "pdf_url": "https://www.city.okegawa.lg.jp/material/files/group/57/suposuidayori45.pdf",
       "confidence": "medium",
       "note": "広報誌(令和6年3月発行)の報告記事。年は発行から2023年"
+    },
+    {
+      "event_name": "桶川市スポーツ推進委員 レクリエーション大会(室内グラウンド・ゴルフ)",
+      "event_kind": "大会",
+      "date_text": "9月28日(日)",
+      "date_start": "2025-09-28",
+      "date_end": "2025-09-28",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "桶川サン・アリーナ",
+      "organizer": "桶川市スポーツ推進委員",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "9月28日(日)桶川サン・アリーナにおいてレクリエーション 大会を開催しました。",
+      "pdf_url": "https://www.city.okegawa.lg.jp/material/files/group/57/R8_3.pdf",
+      "confidence": "medium",
+      "note": "広報誌(第49号・令和8年3月発行)の報告。室内グラウンド・ゴルフ、マットス、ラダーゲッターの3種目に16名参加。年は発行から2025年"
     }
   ],
   "organizations": [

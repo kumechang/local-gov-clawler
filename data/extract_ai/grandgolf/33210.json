@@ -1,0 +1,49 @@
+{
+  "municipality_code": "33210",
+  "municipality_name": "新見市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.niimi.okayama.jp/media_images/files/ryokinhyo_ikoi_to_hureai_no_koen.pdf",
+      "title": "料金表(いこいとふれあいの公園)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.niimi.okayama.jp/media_images/files/ryokinhyo_shimin_undou_koen.pdf",
+      "title": "料金表<新見市民運動公園>",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "新見市 いこいとふれあいの公園 グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "1人1回100円または年間5,000円。専用使用は1回1日2,000円。市外の方は50%加算",
+      "gg_evidence": "グラウンドゴルフ場 ― 1人1回あたり100円又は年間5,000円",
+      "pdf_url": "https://www.city.niimi.okayama.jp/media_images/files/ryokinhyo_ikoi_to_hureai_no_koen.pdf",
+      "confidence": "high",
+      "note": "公園名は資料URL(ikoi_to_hureai_no_koen)から。屋内ゲートボール場も併設"
+    },
+    {
+      "facility_name": "新見市民運動公園",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "A'・B'区画で陸上競技・サッカー・グラウンドゴルフ・ゲートボール等。一般400円(半面200円)",
+      "gg_evidence": "陸上競技・サッカー・ グラウンドゴルフ・ゲ ートボール等",
+      "pdf_url": "https://www.city.niimi.okayama.jp/media_images/files/ryokinhyo_shimin_undou_koen.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

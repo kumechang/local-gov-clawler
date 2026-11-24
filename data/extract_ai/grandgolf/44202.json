@@ -1,0 +1,30 @@
+{
+  "municipality_code": "44202",
+  "municipality_name": "別府市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.beppu.oita.jp/doc/sisei/kakusyukeikaku/publicfacility/chart_r5/12_01.pdf",
+      "title": "実相寺多目的グラウンド(実相寺中央公園管理棟)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "実相寺多目的グラウンド",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "ラグビー・サッカー・ゲートボール・グランドゴルフなどに多目的に利用できる(管理棟に会議室・シャワー室等)",
+      "gg_evidence": "ラグビー、サッカー、ゲートボール、グランドゴルフなどのスポーツが 多目的に利用できる施設",
+      "pdf_url": "https://www.city.beppu.oita.jp/doc/sisei/kakusyukeikaku/publicfacility/chart_r5/12_01.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

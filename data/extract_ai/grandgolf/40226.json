@@ -1,0 +1,30 @@
+{
+  "municipality_code": "40226",
+  "municipality_name": "宮若市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.miyawaka.lg.jp/kiji003444498/3_444498_2734_up_ykrixgy8.pdf",
+      "title": "西鞍の丘総合運動公園 利用案内",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "西鞍の丘総合運動公園 芝生フィールド",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "芝生に負荷がかからない競技(サッカー・グラウンドゴルフ・ゲートボール等)で利用可",
+      "gg_evidence": "【芝生フィールド】~サッカー、グラウンドゴルフ、ゲートボール",
+      "pdf_url": "https://www.city.miyawaka.lg.jp/kiji003444498/3_444498_2734_up_ykrixgy8.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

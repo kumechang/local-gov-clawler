@@ -1,0 +1,30 @@
+{
+  "municipality_code": "17210",
+  "municipality_name": "白山市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.hakusan.lg.jp/_res/projects/default_project/_page_/001/002/851/siyouryoutouhyou_guraundo.pdf",
+      "title": "使用料等表 グラウンド",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "河内トリムパーク(グラウンドゴルフ)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "グラウンドゴルフ専用の料金区分あり。照明不使用時 全面1時間1,460円・半面730円、照明使用時 全面1,670円",
+      "gg_evidence": "河内トリムパーク グラウンドゴルフ 専用 照明不使用時 全面 1時間 1,460円",
+      "pdf_url": "https://www.city.hakusan.lg.jp/_res/projects/default_project/_page_/001/002/851/siyouryoutouhyou_guraundo.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

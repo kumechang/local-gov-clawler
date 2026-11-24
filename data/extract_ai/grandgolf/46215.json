@@ -1,0 +1,59 @@
+{
+  "municipality_code": "46215",
+  "municipality_name": "薩摩川内市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.satsumasendai.lg.jp/material/files/group/29/1011_3.pdf",
+      "title": "スポーツフェスタチラシ1",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.satsumasendai.lg.jp/material/files/group/26/sougouundou.pdf",
+      "title": "総合運動公園パンフレット",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "総合運動公園(薩摩川内市)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "パンフレットのレイアウトでソフトボール1面・グラウンドゴルフ他・フットサル2面・テニス3面",
+      "gg_evidence": "ソフトボール・・・・・1面 グラウンドゴルフ 他",
+      "pdf_url": "https://www.city.satsumasendai.lg.jp/material/files/group/26/sougouundou.pdf",
+      "confidence": "low",
+      "note": "配置図の文字抜粋のため区画名は要確認"
+    }
+  ],
+  "events": [
+    {
+      "event_name": "スポーツフェスタ グラウンド・ゴルフ1ホール対決",
+      "event_kind": "大会",
+      "date_text": "9:35〜(日付は抜粋に無い)",
+      "date_start": "",
+      "date_end": "",
+      "fiscal_year": "",
+      "period": "日付不明",
+      "venue": "",
+      "organizer": "市スポーツ推進委員",
+      "target": "上限32チーム・1チーム4人",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンド・ゴルフ 1ホール対決 募集人数 上限32チーム。1チーム4人構成。",
+      "pdf_url": "https://www.city.satsumasendai.lg.jp/material/files/group/29/1011_3.pdf",
+      "confidence": "medium",
+      "note": "1ホール(30m)対決の勝ち上がり方式。日付は確定できない"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

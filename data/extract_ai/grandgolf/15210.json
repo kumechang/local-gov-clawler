@@ -1,0 +1,30 @@
+{
+  "municipality_code": "15210",
+  "municipality_name": "十日町市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tokamachi.lg.jp/material/files/group/32/hirobachui.pdf",
+      "title": "多目的広場利用上の注意事項",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "十日町市 多目的広場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "芝生を大きく傷めないスポーツ(ランニング・ゲートボール・グラウンドゴルフ・少年サッカー・レクリエーション)の使用対象",
+      "gg_evidence": "ゲートボール、グラウンドゴルフ、少年サッカー(小学生以下)",
+      "pdf_url": "https://www.city.tokamachi.lg.jp/material/files/group/32/hirobachui.pdf",
+      "confidence": "medium",
+      "note": "広場の個別名は抜粋に無い"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

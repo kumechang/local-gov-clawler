@@ -1,0 +1,39 @@
+{
+  "municipality_code": "24201",
+  "municipality_name": "津市",
+  "documents": [
+    {
+      "pdf_url": "https://www.info.city.tsu.mie.jp/_res/projects/default_project/_page_/001/010/319/kawage1120.pdf",
+      "title": "河芸第一・第二グラウンド 予約状況",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "グラウンドゴルフ津市民スポーツ教室",
+      "event_kind": "教室",
+      "date_text": "17日(月・年は抜粋に無い)",
+      "date_start": "",
+      "date_end": "",
+      "fiscal_year": "",
+      "period": "日付不明",
+      "venue": "河芸第二グラウンド",
+      "organizer": "津市スポーツ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "17日 第二グラウンド 津市スポーツ協会 グラウンドゴルフ津市民スポーツ教室",
+      "pdf_url": "https://www.info.city.tsu.mie.jp/_res/projects/default_project/_page_/001/010/319/kawage1120.pdf",
+      "confidence": "low",
+      "note": "河芸第一・第二グラウンド予約状況表の1行。月・年は確定できない"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

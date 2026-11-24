@@ -1,0 +1,39 @@
+{
+  "municipality_code": "35206",
+  "municipality_name": "防府市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.hofu.yamaguchi.jp/uploaded/attachment/145746.pdf",
+      "title": "防府市スポーツ行事主要予定表",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第111回防府市グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "15日(水) 8:00(月は表の崩れで確定できない)",
+      "date_start": "",
+      "date_end": "",
+      "fiscal_year": "",
+      "period": "日付不明",
+      "venue": "運動広場",
+      "organizer": "防府市グラウンドゴルフ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "第111回防府市グラウンドゴルフ大会",
+      "pdf_url": "https://www.city.hofu.yamaguchi.jp/uploaded/attachment/145746.pdf",
+      "confidence": "medium",
+      "note": "スポーツ行事主要予定表。月・年は確定できない"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

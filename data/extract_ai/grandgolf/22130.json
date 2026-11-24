@@ -1,0 +1,30 @@
+{
+  "municipality_code": "22130",
+  "municipality_name": "浜松市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.hamamatsu.shizuoka.jp/documents/164026/mikkabiground_price_list.pdf",
+      "title": "三ヶ日運動場料金表",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "三ヶ日運動場(グラウンド)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "グラウンドで軟式野球・ソフトボール・サッカー・グラウンド・ゴルフ・レクリエーション等が可能(OCR文字に崩れあり)",
+      "gg_evidence": "サッカー、グラウンド・ゴルフ、レ クリエーションなど",
+      "pdf_url": "https://www.city.hamamatsu.shizuoka.jp/documents/164026/mikkabiground_price_list.pdf",
+      "confidence": "low",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

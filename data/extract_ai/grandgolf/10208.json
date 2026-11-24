@@ -1,0 +1,30 @@
+{
+  "municipality_code": "10208",
+  "municipality_name": "渋川市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.shibukawa.lg.jp/manage/contents/upload/677b863145dd0.pdf",
+      "title": "有料公園施設利用料金一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "坂東橋緑地公園ソフトボール場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "ゲートボール及びグラウンドゴルフでの利用(市内の者・法人等)は、ソフトボール場の利用料金を適用しない",
+      "gg_evidence": "坂東橋緑地公園ソフトボール場の利用料金は、市内の者又は本市に事務所を有する法人等がゲートボール及びグラウンドゴルフで利用する場合は適用しない",
+      "pdf_url": "https://www.city.shibukawa.lg.jp/manage/contents/upload/677b863145dd0.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

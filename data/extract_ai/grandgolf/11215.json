@@ -1,0 +1,30 @@
+{
+  "municipality_code": "11215",
+  "municipality_name": "狭山市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.sayama.saitama.jp/shisei/shisetsu/sports/okugaiundoshisetsu/annai/00_manual.files/R8.10.1.pdf",
+      "title": "屋外運動施設利用の手引き",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "狭山市 多目的グラウンド",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "サッカー・グラウンドゴルフ・ラクロスの利用ができる",
+      "gg_evidence": "多目的グラウンドは、『サッカー』、『グラウンドゴルフ』、『ラクロス』の利用ができます",
+      "pdf_url": "https://www.city.sayama.saitama.jp/shisei/shisetsu/sports/okugaiundoshisetsu/annai/00_manual.files/R8.10.1.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

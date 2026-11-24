@@ -1,0 +1,39 @@
+{
+  "municipality_code": "36201",
+  "municipality_name": "徳島市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tokushima.tokushima.jp/kurashi/sports/20220822.files/15_ground.pdf",
+      "title": "第21回徳島市民スポ・レクフェスティバル GG大会要項",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第21回 徳島市民スポ・レクフェスティバル グラウンド・ゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "令和8年10月11日(日) 8:30受付開始(少雨決行)、予備日 10月18日(日)",
+      "date_start": "2026-10-11",
+      "date_end": "2026-10-11",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "徳島市民吉野川運動場 多目的広場Bコート(吉野川南岸)",
+      "organizer": "徳島市民スポレクフェスティバル実行委員会(主管: 徳島市グラウンド・ゴルフ協会)",
+      "target": "小学校4年生以上の男女の徳島市民及び徳島市グラウンド・ゴルフ協会会員",
+      "fee": "1人500円(弁当持参)",
+      "entry": "申込書を徳島市グラウンド・ゴルフ協会宛に郵送、参加費は振込",
+      "deadline": "令和8年9月18日(金)",
+      "contact_dept": "徳島市グラウンド・ゴルフ協会",
+      "contact_phone": "",
+      "evidence": "令和8年10月11日(日)8時30分受付開始(少雨決行) 予備日10月18日(日)",
+      "pdf_url": "https://www.city.tokushima.tokushima.jp/kurashi/sports/20220822.files/15_ground.pdf",
+      "confidence": "high",
+      "note": "個人戦のみ3ラウンド(24ホール)、日本GG協会ルール準拠。連絡先は個人宅のため電話番号は省略"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

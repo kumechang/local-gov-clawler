@@ -1,0 +1,30 @@
+{
+  "municipality_code": "13204",
+  "municipality_name": "三鷹市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.mitaka.lg.jp/c_service/114/attached/attach_114327_1.pdf",
+      "title": "井口グラウンド概要等",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "井口グラウンド",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "使用可能種目: 小学生サッカー・軟式野球・ソフトボール・ラグビー、グラウンドゴルフ(整備後の概要)",
+      "gg_evidence": "小学生サッカー、小学生軟式野球、小学生ソフトボール、小学生ラグビー グラウンドゴルフ",
+      "pdf_url": "https://www.city.mitaka.lg.jp/c_service/114/attached/attach_114327_1.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

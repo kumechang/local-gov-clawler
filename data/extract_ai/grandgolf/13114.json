@@ -1,0 +1,49 @@
+{
+  "municipality_code": "13114",
+  "municipality_name": "中野区",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tokyo-nakano.lg.jp/kurashi/bunka/manabu/2023shogaigakushu.files/supo-tu.pdf",
+      "title": "スポーツコミュニティプラザ/鷺宮運動広場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.tokyo-nakano.lg.jp/kurashi/bunka/manabu/2023shogaigakushu.files/nakanokuritukouenn.pdf",
+      "title": "中野区立公園多目的運動場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "鷺宮運動広場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "軟式野球(小学生以下)、ソフトボール、サッカー(小学生以下)、ゲートボール、グラウンド・ゴルフなど",
+      "gg_evidence": "軟式野球 (小学生以下)、ソフトボール (小学生以下と一般女子)、 サッカー (小学生以下、 試合は不可)、ゲートボール、グラウンド・ゴルフ",
+      "pdf_url": "https://www.city.tokyo-nakano.lg.jp/kurashi/bunka/manabu/2023shogaigakushu.files/supo-tu.pdf",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "facility_name": "区立公園多目的運動場(中野区)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "少年軟式野球・少年サッカー・ソフトボール・フットサル・ゲートボール・グラウンドゴルフ等に利用可",
+      "gg_evidence": "少年軟式野球、少年サッカー、ソフトボール、 フットサル、 ゲートボール、 グラウンドゴルフ等に 利用可",
+      "pdf_url": "https://www.city.tokyo-nakano.lg.jp/kurashi/bunka/manabu/2023shogaigakushu.files/nakanokuritukouenn.pdf",
+      "confidence": "low",
+      "note": "複数公園の一覧。個別の公園名はOCRが崩れ確定できない"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

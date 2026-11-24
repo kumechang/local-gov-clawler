@@ -1,0 +1,30 @@
+{
+  "municipality_code": "22212",
+  "municipality_name": "焼津市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.yaizu.lg.jp/documents/12019/20250329151554.pdf",
+      "title": "スポーツ施設基本料金表",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "焼津市 多目的広場A・D",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "多目的広場A,D(土)は主にグラウンドゴルフ用。B,Cは天然芝のサッカー規格",
+      "gg_evidence": "(A,D:主にグラウンドゴルフ)",
+      "pdf_url": "https://www.city.yaizu.lg.jp/documents/12019/20250329151554.pdf",
+      "confidence": "medium",
+      "note": "公園名は抜粋に無い(スポーツ施設基本料金表)"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

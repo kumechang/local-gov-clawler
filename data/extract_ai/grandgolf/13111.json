@@ -1,0 +1,49 @@
+{
+  "municipality_code": "13111",
+  "municipality_name": "大田区",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.ota.tokyo.jp/shisetsu/park/oomorifurusatonohamabe.files/parkmap.pdf",
+      "title": "公園マップ",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.ota.tokyo.jp/shisetsu/uguisunet_annai/shisetsushiyouryounokaitei.files/uguisunettaishoushisetsushiyouryoukaitei.pdf",
+      "title": "うぐいすネット対象施設使用料改定一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "大森ふるさとの浜辺公園 フットサル場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "フットサル、タグラグビー、アルティメット、グラウンドゴルフなどで使用可能",
+      "gg_evidence": "フットサル、タグラグビー、アルティメット、グラウンドゴルフなどで使用可能です",
+      "pdf_url": "https://www.city.ota.tokyo.jp/shisetsu/park/oomorifurusatonohamabe.files/parkmap.pdf",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "facility_name": "萩中公園運動場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "少年野球・グラウンドゴルフ・ゲートボール",
+      "gg_evidence": "萩中公園運動場 少年野球 グラウンドゴルフ ゲートボール",
+      "pdf_url": "https://www.city.ota.tokyo.jp/shisetsu/uguisunet_annai/shisetsushiyouryounokaitei.files/uguisunettaishoushisetsushiyouryoukaitei.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,39 @@
+{
+  "municipality_code": "31371",
+  "municipality_name": "琴浦町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.kotoura.tottori.jp/docs/2026042700034/file_contents/youkou_guraundogoruhu1.pdf",
+      "title": "グラウンド・ゴルフの部 要項",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "東伯郡 グラウンド・ゴルフの部(町村対抗)",
+      "event_kind": "大会",
+      "date_text": "6月21日(日) 受付9:00〜、開会9:30〜(少雨実施)",
+      "date_start": "2026-06-21",
+      "date_end": "2026-06-21",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "北栄町 レークサイド大栄",
+      "organizer": "北栄町G・G協会 北条支部(連絡先は個人名のため省略)",
+      "target": "東伯郡内に居住する者(年齢制限なし)。1チーム4名、旧町村単位で男女各2チーム",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "6月21日(日) 受 付 9:00~ 開 会 9:30~ 北栄町 レークサイド大栄",
+      "pdf_url": "https://www.town.kotoura.tottori.jp/docs/2026042700034/file_contents/youkou_guraundogoruhu1.pdf",
+      "confidence": "medium",
+      "note": "琴浦町掲載の要項。年は資料URLの日付(2026-04-27)と6/21が日曜であることから2026年と判断。大会の正式名は抜粋に無い"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

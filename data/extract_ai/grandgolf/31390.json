@@ -1,0 +1,30 @@
+{
+  "municipality_code": "31390",
+  "municipality_name": "伯耆町",
+  "documents": [
+    {
+      "pdf_url": "https://www.houki-town.jp/user/filer_public/00/1d/001d6e15-5af4-44cf-8be9-dd8928ea3775/bo-qi-ting-ti-yu-shi-she-shi-yong-liao-yi-lan.pdf",
+      "title": "伯耆町体育施設使用料一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "伯耆町 グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "体育施設使用料一覧に掲載。町民無料(町外は100円と読めるが列対応は要確認)",
+      "gg_evidence": "グラウンドゴルフ場 ゲートボール場 ※町民無料",
+      "pdf_url": "https://www.houki-town.jp/user/filer_public/00/1d/001d6e15-5af4-44cf-8be9-dd8928ea3775/bo-qi-ting-ti-yu-shi-she-shi-yong-liao-yi-lan.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

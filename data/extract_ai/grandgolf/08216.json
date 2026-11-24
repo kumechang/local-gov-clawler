@@ -1,0 +1,30 @@
+{
+  "municipality_code": "08216",
+  "municipality_name": "笠間市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kasama.lg.jp/data/doc/1720058188_doc_70_0.pdf",
+      "title": "いばらき県央地域広域利用施設ガイド",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "下入野健康増進センター(グラウンドゴルフ場併設)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "屋内プール・トレーニング室・多目的室・会議室・温浴施設のほか、グラウンドゴルフ場を備える",
+      "gg_evidence": "屋内プール、トレーニング室、多目的室、会議室、 温浴施設、グラウンドゴルフ場",
+      "pdf_url": "https://www.city.kasama.lg.jp/data/doc/1720058188_doc_70_0.pdf",
+      "confidence": "low",
+      "note": "OCR文字化けあり。住所・電話は確定できないため省略"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}
