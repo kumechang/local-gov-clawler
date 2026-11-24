@@ -15,6 +15,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.koriyama.lg.jp/site/manabi/117914.html",
+      "title": "【東部地域公民館】「東部地区スポーツ大会」",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [],
@@ -60,6 +67,27 @@
       "pdf_url": "https://www.city.koriyama.lg.jp/soshiki/66/197739.html",
       "confidence": "high",
       "note": "開催報告。雨のため1ラウンドのみ"
+    },
+    {
+      "event_name": "第41回東部地区スポーツ大会(ボッチャ・グラウンドゴルフ)",
+      "event_kind": "大会",
+      "date_text": "令和8年6月28日",
+      "date_start": "2026-06-28",
+      "date_end": "2026-06-28",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "東芳小学校の校庭と体育館",
+      "organizer": "東部地域公民館",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "第41回東部地区スポーツ大会が令和8年6月28日東芳小学校の校庭と体育館で行われました。",
+      "pdf_url": "https://www.city.koriyama.lg.jp/site/manabi/117914.html",
+      "confidence": "high",
+      "note": "開催報告。グラウンド・ゴルフは23名参加"
     }
   ],
   "organizations": [],

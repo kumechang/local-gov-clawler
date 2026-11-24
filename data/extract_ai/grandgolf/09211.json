@@ -8,9 +8,41 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.yaita.tochigi.jp/site/kenkou/yaita-athletic-facilities.html",
+      "title": "矢板市体育施設の使用方法",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
-  "facilities": [],
+  "facilities": [
+    {
+      "facility_name": "日新多目的グラウンド(矢板市)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "8:00〜17:00、年末年始休み。種目: グラウンドゴルフ",
+      "gg_evidence": "日新多目的 グラウンド | 8時00分 ~17時00分 休:年末年始 | グラウンドゴルフ",
+      "pdf_url": "https://www.city.yaita.tochigi.jp/site/kenkou/yaita-athletic-facilities.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "泉グラウンド(矢板市)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "種目: グラウンドゴルフ",
+      "gg_evidence": "泉グラウンド | グラウンドゴルフ",
+      "pdf_url": "https://www.city.yaita.tochigi.jp/site/kenkou/yaita-athletic-facilities.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
   "events": [
     {
       "event_name": "グラウンド・ゴルフ教室(令和8年度矢板市スポーツ教室)",

@@ -1,0 +1,39 @@
+{
+  "municipality_code": "16201",
+  "municipality_name": "富山市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.toyama.lg.jp/bunka/sports/1010573/1018872.html",
+      "title": "富山市民スポーツ・レクリエーション祭",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第25回富山市民スポーツ・レクリエーション祭(グラウンド・ゴルフ)",
+      "event_kind": "大会",
+      "date_text": "10月18日(日)",
+      "date_start": "2026-10-18",
+      "date_end": "2026-10-18",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "富山南総合公園芝生広場",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "フレッシュテニス、グラウンド・ゴルフ、パークゴルフ:10/18(日曜)",
+      "pdf_url": "https://www.city.toyama.lg.jp/bunka/sports/1010573/1018872.html",
+      "confidence": "medium",
+      "note": "種目の一つ。ビーチボールは9/13、パークゴルフは婦中神通パークゴルフ場"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

@@ -22,6 +22,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.oshu.iwate.jp/kanko_bunka_sports/sports/9157.html",
+      "title": "令和8年度奥州市民スポーツ祭開催日程のお知らせ",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -59,6 +66,27 @@
       "pdf_url": "https://www.city.oshu.iwate.jp/material/files/group/14/ny.pdf",
       "confidence": "high",
       "note": "申込締切は令和8年5月26日(火)"
+    },
+    {
+      "event_name": "令和8年度奥州市民スポーツ祭 グラウンド・ゴルフ",
+      "event_kind": "大会",
+      "date_text": "6月13日(日曜日)と掲載(令和8年度。曜日が2026年と合わないため日付は確定できない)",
+      "date_start": "",
+      "date_end": "",
+      "fiscal_year": "",
+      "period": "日付不明",
+      "venue": "水沢公園陸上競技場",
+      "organizer": "奥州市グラウンドゴルフ連盟",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンド・ゴルフ | 奥州市グラウンドゴルフ連盟 | 6月13日 (日曜日) | 水沢公園陸上競技場",
+      "pdf_url": "https://www.city.oshu.iwate.jp/kanko_bunka_sports/sports/9157.html",
+      "confidence": "low",
+      "note": "令和8年度奥州市民スポーツ祭の日程表"
     }
   ],
   "organizations": [

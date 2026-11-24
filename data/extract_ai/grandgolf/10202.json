@@ -15,6 +15,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.takasaki.gunma.jp/site/jougesuidou/1994.html",
+      "title": "阿久津水処理センター多目的グラウンド",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -39,6 +46,18 @@
       "usage_note": "1面。6:00〜17:00。料金無料。申込は倉渕体育館へ直接",
       "gg_evidence": "グラウンドゴルフ場 1面",
       "pdf_url": "https://www.city.takasaki.gunma.jp/page/4897.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "阿久津水処理センター多目的グラウンド",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "軟式野球・ソフトボール、グラウンドゴルフに利用可。6:00〜17:30。GGは高崎市グラウンドゴルフ協会が管理・事前の利用者登録が必要",
+      "gg_evidence": "軟式野球・ソフトボール、グラウンドゴルフ",
+      "pdf_url": "https://www.city.takasaki.gunma.jp/site/jougesuidou/1994.html",
       "confidence": "high",
       "note": ""
     }

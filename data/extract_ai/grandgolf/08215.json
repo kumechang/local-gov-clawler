@@ -1,0 +1,30 @@
+{
+  "municipality_code": "08215",
+  "municipality_name": "北茨城市",
+  "documents": [
+    {
+      "pdf_url": "https://shisetsu.mizuno.jp/m-7622/guide",
+      "title": "施設利用|北茨城市スポーツ施設",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "北茨城市 華川スポーツパーク グラウンドゴルフ場",
+      "address": "北茨城市華川町下相田109",
+      "phone": "0293-24-5250(華川スポーツパーク)",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "スケートボード場とともにGG場あり。9:00〜12:00・13:00〜17:00、月曜休",
+      "gg_evidence": "住所/問合せ | 北茨城市華川町下相田109 TEL:0293‐24‐5250(華川スポーツパーク)",
+      "pdf_url": "https://shisetsu.mizuno.jp/m-7622/guide",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

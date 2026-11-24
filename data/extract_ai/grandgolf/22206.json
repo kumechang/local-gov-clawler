@@ -8,9 +8,41 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.mishima.shizuoka.jp/page/2560.html",
+      "title": "体育施設・広場の一覧(三島市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
-  "facilities": [],
+  "facilities": [
+    {
+      "facility_name": "市の山広場(三島市)",
+      "address": "三島市塚原新田405-1",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "競技種目: グラウンドゴルフ等。市内団体のみ利用可、夜間利用不可",
+      "gg_evidence": "市の山広場 | × | グラウンドゴルフ等 | 塚原新田405-1 | 市内団体のみ利用可",
+      "pdf_url": "https://www.city.mishima.shizuoka.jp/page/2560.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "浄化センター広場(三島市)",
+      "address": "三島市長伏309",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "競技種目: サッカー・グラウンドゴルフ等。市内団体のみ利用可、夜間利用不可",
+      "gg_evidence": "浄化センター広場 | × | サッカー グラウンドゴルフ等 | 長伏309 | 市内団体のみ利用可",
+      "pdf_url": "https://www.city.mishima.shizuoka.jp/page/2560.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
   "events": [
     {
       "event_name": "第14回三島市長杯グラウンドゴルフ大会",

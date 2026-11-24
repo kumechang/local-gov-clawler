@@ -1,0 +1,30 @@
+{
+  "municipality_code": "13107",
+  "municipality_name": "墨田区",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.sumida.lg.jp/sisetu_info/kouen/kunai_park_annai/sumida_park/park61.html",
+      "title": "竪川親水公園(墨田区)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "竪川親水公園 グランドゴルフ場",
+      "address": "墨田区江東橋一丁目〜五丁目地先",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "9:30〜17:00、12/29〜1/3休み。テニスコート等を併設",
+      "gg_evidence": "グランドゴルフ場 | 午前9時30分から午後5時まで",
+      "pdf_url": "https://www.city.sumida.lg.jp/sisetu_info/kouen/kunai_park_annai/sumida_park/park61.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

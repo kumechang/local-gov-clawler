@@ -1,0 +1,73 @@
+{
+  "municipality_code": "10211",
+  "municipality_name": "安中市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.annaka.lg.jp/page/2396.html",
+      "title": "市内スポーツ施設案内(安中市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.annaka.lg.jp/page/2397.html",
+      "title": "松井田地域・安中市総合運動公園スポーツ施設",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "ふるや広場(安中市)",
+      "address": "安中市古屋920",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "グランドゴルフ場1面。ゲートボール場・ペタンク場(兼用)1面",
+      "gg_evidence": "ふるや広場 | 安中市古屋920 | グランドゴルフ場 1面",
+      "pdf_url": "https://www.city.annaka.lg.jp/page/2396.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "板鼻スポーツ広場(安中市)",
+      "address": "安中市板鼻1287-1",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "グラウンドゴルフ等の軽スポーツ",
+      "gg_evidence": "板鼻スポーツ広場 | 安中市板鼻1287-1 | グラウンドゴルフ等の軽スポーツ",
+      "pdf_url": "https://www.city.annaka.lg.jp/page/2396.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "西横野多目的広場(安中市)",
+      "address": "安中市松井田町二軒在家118",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "軟式野球・グラウンドゴルフ等。8:00〜19:00",
+      "gg_evidence": "西横野多目的広場 | 利用時間 08時00分~19時00分 休業日 年末年始/臨時休業 対象競技 軟式野球 グラウンドゴルフ など",
+      "pdf_url": "https://www.city.annaka.lg.jp/page/2397.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "人見広場(安中市)",
+      "address": "安中市松井田町人見1541-4",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "軟式野球・グラウンドゴルフ等。8:00〜19:00",
+      "gg_evidence": "人見広場 | 利用時間 08時00分~19時00分 休業日 年末年始/臨時休業 対象競技 軟式野球 グラウンドゴルフ など",
+      "pdf_url": "https://www.city.annaka.lg.jp/page/2397.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

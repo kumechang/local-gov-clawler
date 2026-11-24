@@ -1,0 +1,39 @@
+{
+  "municipality_code": "12232",
+  "municipality_name": "白井市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.shiroi.chiba.jp/manabu/sports/s01/10911.html",
+      "title": "スポーツ・レクリエーション祭(白井市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第34回白井市スポーツ・レクリエーション祭(グラウンドゴルフ)",
+      "event_kind": "大会",
+      "date_text": "令和8年11月14日(土)9:00〜12:00(受付8:30)、GGは雨天中止",
+      "date_start": "2026-11-14",
+      "date_end": "2026-11-14",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "白井市スポーツ推進委員協議会",
+      "target": "グラウンドゴルフ: 団体関係者 先着44名・小中学生 先着20名(要申込)。モルック・ピックルボールも実施",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "令和8年11月14日(土曜日) 午前9時から正午(受付は8時30分開始)",
+      "pdf_url": "https://www.city.shiroi.chiba.jp/manabu/sports/s01/10911.html",
+      "confidence": "high",
+      "note": "会場は抜粋に無い"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

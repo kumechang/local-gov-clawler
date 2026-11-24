@@ -1,0 +1,30 @@
+{
+  "municipality_code": "08201",
+  "municipality_name": "水戸市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.mito.lg.jp/page/2294.html",
+      "title": "下入野健康増進センターのご案内",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "下入野健康増進センター(グラウンドゴルフ場併設)",
+      "address": "水戸市下入野町1944-1",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "屋内プール・トレーニング室・多目的室・会議室・温浴施設・グラウンドゴルフ場。9:00〜22:00(グラウンドゴルフ場は18:00まで)。温浴施設及びGG場は1回1人 一般500円・高校生以下400円(区分により600円等の記載あり)",
+      "gg_evidence": "所在地:水戸市下入野町1944-1",
+      "pdf_url": "https://www.city.mito.lg.jp/page/2294.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

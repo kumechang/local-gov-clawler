@@ -15,6 +15,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.shimada.shizuoka.jp/kanko-docs/1605.html",
+      "title": "スポーツ施設一覧(島田市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -39,6 +46,30 @@
       "usage_note": "平成15年開設、高麗芝18,000㎡。使用料無料。月曜・年末年始休み。島田球場で申請",
       "gg_evidence": "島田市向島地先(大井川河川敷内)",
       "pdf_url": "https://www.city.shimada.shizuoka.jp/kanko-docs/0848.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "金谷南グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "島田市のグラウンドゴルフ場として一覧に掲載(島田市グラウンドゴルフ場、金谷北GG場とともに)",
+      "gg_evidence": "24.金谷南グラウンドゴルフ場",
+      "pdf_url": "https://www.city.shimada.shizuoka.jp/kanko-docs/1605.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "金谷北グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "島田市のグラウンドゴルフ場として一覧に掲載",
+      "gg_evidence": "25.金谷北グラウンドゴルフ場",
+      "pdf_url": "https://www.city.shimada.shizuoka.jp/kanko-docs/1605.html",
       "confidence": "high",
       "note": ""
     }

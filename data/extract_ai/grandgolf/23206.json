@@ -8,9 +8,29 @@
       "relevant": false,
       "skip_reason": "全国組織の一覧",
       "doc_kind": "その他"
+    },
+    {
+      "pdf_url": "https://www.city.kasugai.lg.jp/bunka/sports/1004285.html",
+      "title": "屋外スポーツ施設の概要(春日井市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
-  "facilities": [],
+  "facilities": [
+    {
+      "facility_name": "中央公園グラウンド ナイター(春日井市)",
+      "address": "春日井市鳥居松町",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "軟式野球・ソフトボール・グラウンド・ゴルフ・サッカーの練習等。ナイター2時間7,000円(昼間は無料)",
+      "gg_evidence": "中央公園グラウンド ナイター | 春日井市鳥居松町 | 軟式野球、ソフトボール、グラウンド・ゴルフ、サッカーの練習等",
+      "pdf_url": "https://www.city.kasugai.lg.jp/bunka/sports/1004285.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
   "events": [],
   "organizations": [],
   "unsure": []

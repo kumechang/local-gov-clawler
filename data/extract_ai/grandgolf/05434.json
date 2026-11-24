@@ -1,0 +1,30 @@
+{
+  "municipality_code": "05434",
+  "municipality_name": "美郷町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.misato.akita.jp/archive/contents-1160",
+      "title": "大台野広場(美郷町)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "大台野広場 グラウンド・ゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "日本GG協会公認の7コース56ホール(併設: パーク・マレットゴルフ場3コース27ホール)。使用1回 大人200円・小中学生100円",
+      "gg_evidence": "日本グラウンド・ゴルフ協会公認の7コース・56ホールの「グラウンド・ゴルフ場」",
+      "pdf_url": "https://www.town.misato.akita.jp/archive/contents-1160",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

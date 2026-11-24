@@ -1,0 +1,39 @@
+{
+  "municipality_code": "16202",
+  "municipality_name": "高岡市",
+  "documents": [
+    {
+      "pdf_url": "https://www.takaoka-sports.jp/?post_type=event",
+      "title": "大会・イベント情報(高岡市スポーツ協会)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "第21回高岡市民スポーツ大会 グラウンド・ゴルフ",
+      "event_kind": "大会",
+      "date_text": "令和8年6月21日(日)と掲載",
+      "date_start": "2026-06-21",
+      "date_end": "2026-06-21",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "高岡市スポーツ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "第21回高岡市民スポーツ大会 グラウンド・ゴルフ",
+      "pdf_url": "https://www.takaoka-sports.jp/?post_type=event",
+      "confidence": "medium",
+      "note": "大会・イベント情報の一覧。会場は抜粋で確定できない"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

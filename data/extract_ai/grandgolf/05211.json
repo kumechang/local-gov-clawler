@@ -15,6 +15,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.katagami.lg.jp/gyosei/kosodate_kyoiku_bunka/supotsu/4276.html",
+      "title": "潟上市スポーツフェスティバル 2026",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -64,6 +71,42 @@
       "gg_evidence": "飯田川二荒山グラウンドゴルフ場 潟上市飯田川下虻川字蟹沢 12 番地 1",
       "pdf_url": "https://www.city.katagami.lg.jp/material/files/group/17/katagamisuportskeikaku.pdf",
       "confidence": "medium",
+      "note": ""
+    },
+    {
+      "facility_name": "天王多目的健康広場グランパスくらかけ",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "潟上市スポーツフェスティバル2026でグラウンドゴルフ体験(市民限定無料開放)の会場の一つ",
+      "gg_evidence": "天王多目的健康広場グランパスくらかけ",
+      "pdf_url": "https://www.city.katagami.lg.jp/gyosei/kosodate_kyoiku_bunka/supotsu/4276.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "潟上市 昭和グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "潟上市内のグラウンドゴルフ場3か所の一つ(スポーツフェスティバル2026で体験開放)",
+      "gg_evidence": "昭和グラウンドゴルフ場",
+      "pdf_url": "https://www.city.katagami.lg.jp/gyosei/kosodate_kyoiku_bunka/supotsu/4276.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "潟上市 二荒山グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "潟上市内のグラウンドゴルフ場3か所の一つ(スポーツフェスティバル2026で体験開放)",
+      "gg_evidence": "二荒山グラウンドゴルフ場",
+      "pdf_url": "https://www.city.katagami.lg.jp/gyosei/kosodate_kyoiku_bunka/supotsu/4276.html",
+      "confidence": "high",
       "note": ""
     }
   ],

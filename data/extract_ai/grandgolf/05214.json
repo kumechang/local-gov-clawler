@@ -1,0 +1,54 @@
+{
+  "municipality_code": "05214",
+  "municipality_name": "にかほ市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.nikaho.akita.jp/gyosei/kanko_bunka_sports/sports/sportstaikai_event/4684.html",
+      "title": "スポーツ団体・サークル紹介(にかほ市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "仁賀保グラウンド・ゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "薫風苑・とんがり童夢ぱお(12〜3月はエスパーク★にかほ)",
+      "activity_schedule": "4〜11月は毎日13:00〜16:00、12〜3月は第1・3金曜日",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "仁賀保グラウンド・ゴルフ協会 | 薫風苑・とんがり童夢ぱお | 4月~11月:毎日 | 13時~16時",
+      "pdf_url": "https://www.city.nikaho.akita.jp/gyosei/kanko_bunka_sports/sports/sportstaikai_event/4684.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "org_name": "金浦グラウンド・ゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "南極公園",
+      "activity_schedule": "悪天候を除き毎日13:00〜",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "金浦グラウンド・ゴルフ協会 | 南極公園 | 悪天候除き毎日 | 13時~",
+      "pdf_url": "https://www.city.nikaho.akita.jp/gyosei/kanko_bunka_sports/sports/sportstaikai_event/4684.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "org_name": "にかほ市グラウンド・ゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "にかほ市グラウンド・ゴルフ協会 | お気軽にお問い合わせください。",
+      "pdf_url": "https://www.city.nikaho.akita.jp/gyosei/kanko_bunka_sports/sports/sportstaikai_event/4684.html",
+      "confidence": "high",
+      "note": "活動場所・日時は掲載無し"
+    }
+  ],
+  "unsure": []
+}

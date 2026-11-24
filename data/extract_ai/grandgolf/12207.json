@@ -15,6 +15,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.matsudo.chiba.jp/iryoutoshi/healthcare/kenko_ouendan/yagiri.html",
+      "title": "矢切・東部「健康松戸21応援団」",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -56,6 +63,19 @@
     }
   ],
   "events": [],
-  "organizations": [],
+  "organizations": [
+    {
+      "org_name": "グランドゴルフ友の会(松戸市矢切・東部)",
+      "org_kind": "サークル",
+      "activity_place": "いちご公園、美野里公園、二十世紀公園運動場等",
+      "activity_schedule": "毎週月・水・金曜日",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グランドゴルフ友の会",
+      "pdf_url": "https://www.city.matsudo.chiba.jp/iryoutoshi/healthcare/kenko_ouendan/yagiri.html",
+      "confidence": "high",
+      "note": "健康松戸21応援団。連絡先は個人のため省略"
+    }
+  ],
   "unsure": []
 }

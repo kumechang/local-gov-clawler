@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.hamamatsu.shizuoka.jp/koen-kan/shiteikanri/r6yotei/ensyuu.html",
+      "title": "令和8年度遠州灘海浜公園主な行事",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -24,7 +31,29 @@
       "note": ""
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "event_name": "第19回健康福祉祭グラウンド・ゴルフ大会(遠州灘海浜公園)",
+      "event_kind": "大会",
+      "date_text": "4月2日 9:00〜15:00",
+      "date_start": "2026-04-02",
+      "date_end": "2026-04-02",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "遠州灘海浜公園 自由広場全面",
+      "organizer": "浜松市グラウンド・ゴルフ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "4月2日 | 自由広場全面 | 9時 | 15時 | 第19回健康福祉祭グラウンド・ゴルフ大会 | 浜松市グラウンド・ゴルフ協会",
+      "pdf_url": "https://www.city.hamamatsu.shizuoka.jp/koen-kan/shiteikanri/r6yotei/ensyuu.html",
+      "confidence": "high",
+      "note": "令和8年度遠州灘海浜公園主な行事"
+    }
+  ],
   "organizations": [],
   "unsure": []
 }

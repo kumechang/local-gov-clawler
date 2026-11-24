@@ -8,10 +8,39 @@
       "relevant": false,
       "skip_reason": "評価調書(町民大会の実施の一文のみ)",
       "doc_kind": "その他"
+    },
+    {
+      "pdf_url": "https://sports-nagaizumi.com/tournament-information/event-results/",
+      "title": "大会結果・実績(長泉町スポーツ協会)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [],
-  "events": [],
+  "events": [
+    {
+      "event_name": "第27回町民グラウンドゴルフ大会(長泉町)",
+      "event_kind": "大会",
+      "date_text": "令和8年10月17日",
+      "date_start": "2026-10-17",
+      "date_end": "2026-10-17",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "NPO法人長泉町スポーツ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "第27回町民グラウンドゴルフ大会(R8.10.17)",
+      "pdf_url": "https://sports-nagaizumi.com/tournament-information/event-results/",
+      "confidence": "high",
+      "note": "大会結果・実績の一覧。会場は抜粋に無い"
+    }
+  ],
   "organizations": [],
   "unsure": []
 }

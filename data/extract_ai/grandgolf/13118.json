@@ -1,0 +1,30 @@
+{
+  "municipality_code": "13118",
+  "municipality_name": "荒川区",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.arakawa.tokyo.jp/a017/sport/shisetsuriyou/higashiokuriyou.html",
+      "title": "東尾久運動場の利用案内",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "東尾久運動場 小広場(ゲートボール/グラウンド・ゴルフ場)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "チーム登録は荒川総合スポーツセンターで受付。窓口・電話で予約",
+      "gg_evidence": "小広場のゲートボール/グラウンド・ゴルフ場を利用する場合は、チーム登録が必要です。",
+      "pdf_url": "https://www.city.arakawa.tokyo.jp/a017/sport/shisetsuriyou/higashiokuriyou.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

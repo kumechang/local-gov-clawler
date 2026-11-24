@@ -1,0 +1,54 @@
+{
+  "municipality_code": "13209",
+  "municipality_name": "町田市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.machida.tokyo.jp/bunka/sport/sport/sportshiroba.html",
+      "title": "スポーツ広場(町田市)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "金森中央スポーツ広場",
+      "address": "町田市金森3丁目11(金森3丁目1233-1)",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "利用種目(実績): グラウンドゴルフ・ゲートボール・マレットゴルフ",
+      "gg_evidence": "金森中央スポーツ広場 | 金森3丁目11 (金森3丁目1233-1) | グラウンドゴルフ ゲートボール マレットゴルフ",
+      "pdf_url": "https://www.city.machida.tokyo.jp/bunka/sport/sport/sportshiroba.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "山崎第二スポーツ広場",
+      "address": "町田市山崎町566-1",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "利用種目(実績): サッカー・少年野球・軟式野球・ソフトボール・グラウンドゴルフ・バードゴルフ",
+      "gg_evidence": "山崎第二スポーツ広場 | 山崎町566-1 | サッカー 少年野球 軟式野球 ソフトボール グラウンドゴルフ バードゴルフ",
+      "pdf_url": "https://www.city.machida.tokyo.jp/bunka/sport/sport/sportshiroba.html",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "金井スポーツ広場",
+      "address": "町田市金井2丁目28(金井2丁目28-5)",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "利用種目(実績): サッカー・少年野球・軟式野球・グラウンドゴルフ・ラクロス",
+      "gg_evidence": "金井スポーツ広場 | 金井2丁目28 (金井2丁目28-5) | サッカー 少年野球 軟式野球 グラウンドゴルフ ラクロス",
+      "pdf_url": "https://www.city.machida.tokyo.jp/bunka/sport/sport/sportshiroba.html",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

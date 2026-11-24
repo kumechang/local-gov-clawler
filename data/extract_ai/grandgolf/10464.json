@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.town.tamamura.lg.jp/docs/2024040800022/",
+      "title": "令和8年度玉村町スポーツ行事一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -36,7 +43,50 @@
       "note": ""
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "event_name": "第34回町民グラウンドゴルフ大会(玉村町)",
+      "event_kind": "大会",
+      "date_text": "9月26日(予備日9月27日)",
+      "date_start": "2026-09-26",
+      "date_end": "2026-09-26",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "総合運動公園陸上競技場",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "9月26日(9月27日) | 第34回町民グラウンドゴルフ大会 | 総合運動公園陸上競技場",
+      "pdf_url": "https://www.town.tamamura.lg.jp/docs/2024040800022/",
+      "confidence": "high",
+      "note": "令和8年度玉村町スポーツ行事一覧。申込締切 9月9日"
+    },
+    {
+      "event_name": "春季GG大会(玉村町)",
+      "event_kind": "大会",
+      "date_text": "4月2日(予備日4月3日)",
+      "date_start": "2026-04-02",
+      "date_end": "2026-04-02",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "角渕グラウンド・ゴルフ場",
+      "organizer": "グラウンド・ゴルフ協会",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "4月2日(3日) | 春季GG大会 | 角渕グラウンド・ゴルフ場 | グラウンド・ゴルフ協会",
+      "pdf_url": "https://www.town.tamamura.lg.jp/docs/2024040800022/",
+      "confidence": "high",
+      "note": "令和8年度玉村町スポーツ行事一覧"
+    }
+  ],
   "organizations": [],
   "unsure": []
 }
