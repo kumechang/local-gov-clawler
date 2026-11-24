@@ -1,0 +1,30 @@
+{
+  "municipality_code": "22209",
+  "municipality_name": "島田市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.shimada.shizuoka.jp/fs/1/0/1/4/6/1/_/gaidomap4-5.pdf",
+      "title": "公園ガイドマップ(島田市中心部)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "元島田公園",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "元島田公園は、はなみずき通り沿いに位置し、園内はグラウンドゴルフを楽",
+      "pdf_url": "https://www.city.shimada.shizuoka.jp/fs/1/0/1/4/6/1/_/gaidomap4-5.pdf",
+      "confidence": "medium",
+      "note": "公園ガイドマップの説明。文は途中で切れている"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

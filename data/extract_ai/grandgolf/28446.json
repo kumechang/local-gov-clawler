@@ -1,0 +1,30 @@
+{
+  "municipality_code": "28446",
+  "municipality_name": "神河町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.kamikawa.hyogo.jp/cmsfiles/contents/0000001/1126/shiyouwarihurihyo.pdf",
+      "title": "2026年度施設使用割振表",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "SC21かわかみグラウンドゴルフ",
+      "org_kind": "クラブ",
+      "activity_place": "川上小跡地グラウンド",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "11 SC21かわかみグラウンドゴルフ(川上小跡地グラウンド)",
+      "pdf_url": "https://www.town.kamikawa.hyogo.jp/cmsfiles/contents/0000001/1126/shiyouwarihurihyo.pdf",
+      "confidence": "medium",
+      "note": "2026年度施設使用割振表"
+    }
+  ],
+  "unsure": []
+}

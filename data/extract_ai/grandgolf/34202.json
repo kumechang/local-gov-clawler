@@ -8,6 +8,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.kure.lg.jp/uploaded/attachment/95505.pdf",
+      "title": "まちづくりイベント情報(9月)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [
@@ -24,7 +31,29 @@
       "note": "資料の題名にある『呉昭和高校跡地グラウンド等』の『グラウンド』の区分の記述"
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "event_name": "下蒲刈町グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "",
+      "date_start": "",
+      "date_end": "",
+      "fiscal_year": "",
+      "period": "日付不明",
+      "venue": "下蒲刈町大津泊庭園",
+      "organizer": "",
+      "target": "下蒲刈町に在住・勤務の方(団体1チーム5〜8名・個人)",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "健康づくりの一環としてグラウンドゴルフ大会を行います",
+      "pdf_url": "https://www.city.kure.lg.jp/uploaded/attachment/95505.pdf",
+      "confidence": "medium",
+      "note": "まちづくりイベント情報(9月)。年・日は抜粋に無く確定できない"
+    }
+  ],
   "organizations": [],
   "unsure": []
 }

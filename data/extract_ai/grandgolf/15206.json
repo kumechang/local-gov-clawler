@@ -15,6 +15,20 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "年間予定"
+    },
+    {
+      "pdf_url": "https://www.city.shibata.lg.jp/_res/projects/default_project/_page_/001/001/565/r8.7.pdf",
+      "title": "令和8年7月 スポーツ大会予定と個人利用可能日",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.shibata.lg.jp/_res/projects/default_project/_page_/001/001/565/r8.9.pdf",
+      "title": "令和8年9月 スポーツ大会予定と個人利用可能日",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [],
@@ -39,6 +53,48 @@
       "pdf_url": "https://www.city.shibata.lg.jp/_res/projects/default_project/_page_/001/001/568/supo.pdf",
       "confidence": "medium",
       "note": "令和6年度のカレンダー(過去)"
+    },
+    {
+      "event_name": "新潟県グラウンドゴルフ下越ブロック交歓大会",
+      "event_kind": "大会",
+      "date_text": "7月4日(土)",
+      "date_start": "2026-07-04",
+      "date_end": "2026-07-04",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "7月4日 (土) 新発田オープン卓球大会 新潟県グラウンドゴルフ下越ブロック交歓大会",
+      "pdf_url": "https://www.city.shibata.lg.jp/_res/projects/default_project/_page_/001/001/565/r8.7.pdf",
+      "confidence": "medium",
+      "note": "令和8年7月の『スポーツ大会予定と個人利用可能日』(施設の予定表)。会場の施設名は抜粋に無い"
+    },
+    {
+      "event_name": "市民総体グラウンドゴルフ",
+      "event_kind": "大会",
+      "date_text": "9月20日(日)",
+      "date_start": "2026-09-20",
+      "date_end": "2026-09-20",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "9月20日 (日) 市民総体ソフトバレー 市民総体グラウンドゴルフ",
+      "pdf_url": "https://www.city.shibata.lg.jp/_res/projects/default_project/_page_/001/001/565/r8.9.pdf",
+      "confidence": "medium",
+      "note": "令和8年9月の施設の予定表。会場の施設名は抜粋に無い"
     }
   ],
   "organizations": [

@@ -1,0 +1,30 @@
+{
+  "municipality_code": "12207",
+  "municipality_name": "松戸市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.matsudo.chiba.jp/kurashi/kyouiku_sports/culturesports/shingikai/sportssingikai.files/shiryo04-4-1.pdf",
+      "title": "スポーツ施設の資料",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "古ヶ崎スポーツ広場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "古ヶ崎スポーツ広場 S37 61 〇 グラウンドゴルフ",
+      "pdf_url": "https://www.city.matsudo.chiba.jp/kurashi/kyouiku_sports/culturesports/shingikai/sportssingikai.files/shiryo04-4-1.pdf",
+      "confidence": "medium",
+      "note": "スポーツ施設の一覧表(昭和37年)の記述"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

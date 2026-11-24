@@ -1,0 +1,30 @@
+{
+  "municipality_code": "11207",
+  "municipality_name": "秩父市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.chichibu.lg.jp/secure/19685/p16～p22.pdf",
+      "title": "スポーツ施設一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "羊山公園グラウンド(A・B)",
+      "address": "秩父市大宮6208番地",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "ソフトボール・グラウンドゴルフ",
+      "gg_evidence": "羊山公園グラウンド A・B 大宮 6208 番地 ソフトボール・グラウンドゴルフ",
+      "pdf_url": "https://www.city.chichibu.lg.jp/secure/19685/p16～p22.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

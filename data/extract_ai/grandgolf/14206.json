@@ -1,0 +1,30 @@
+{
+  "municipality_code": "14206",
+  "municipality_name": "小田原市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.odawara.kanagawa.jp/global-image/units/609077/1-20231130140800_b656818b07c770.pdf",
+      "title": "【資料2-2】ヒアリング結果",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "小田原市グランドゴルフ協会",
+      "org_kind": "協会",
+      "activity_place": "",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "小田原市グランドゴルフ協会",
+      "pdf_url": "https://www.city.odawara.kanagawa.jp/global-image/units/609077/1-20231130140800_b656818b07c770.pdf",
+      "confidence": "medium",
+      "note": "ヒアリング結果(資料2-2)に、小田原市スポーツ協会の加盟団体として載る。主な活動場所の欄にグラウンドゴルフ場がある(団体との対応は表の崩れで確定できない)"
+    }
+  ],
+  "unsure": []
+}

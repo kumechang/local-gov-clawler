@@ -15,6 +15,13 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": "年間予定"
+    },
+    {
+      "pdf_url": "https://www.town.hyogo-taishi.lg.jp/material/files/group/2/gyoujiyoteihyou_r709.pdf",
+      "title": "令和7年9月行事予定表",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
     }
   ],
   "facilities": [],
@@ -60,6 +67,27 @@
       "pdf_url": "https://www.town.hyogo-taishi.lg.jp/material/files/group/2/gyoujiyotei_r803.pdf",
       "confidence": "high",
       "note": "令和8年3月の行事予定表"
+    },
+    {
+      "event_name": "第51回グラウンドゴルフ大会",
+      "event_kind": "大会",
+      "date_text": "9月13日(土) 9:00〜",
+      "date_start": "2025-09-13",
+      "date_end": "2025-09-13",
+      "fiscal_year": 2025,
+      "period": "期間内",
+      "venue": "丸尾建築総合公園町民グラウンド",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "町民体育館",
+      "contact_phone": "",
+      "evidence": "土 第51回グラウンドゴルフ大会 9:00~ 丸尾建築総合公園町民グラウンド 町民体育館",
+      "pdf_url": "https://www.town.hyogo-taishi.lg.jp/material/files/group/2/gyoujiyoteihyou_r709.pdf",
+      "confidence": "high",
+      "note": "令和7年9月の行事予定表(開催済み)"
     }
   ],
   "organizations": [],

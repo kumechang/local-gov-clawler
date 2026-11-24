@@ -1,0 +1,30 @@
+{
+  "municipality_code": "21220",
+  "municipality_name": "下呂市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.gero.lg.jp/uploaded/attachment/16567.pdf",
+      "title": "きこちゃんスタジアムの詳細情報",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "きこちゃんスタジアム(下呂市)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "テニスコート1面、ゲートボール1面、グラウンドゴルフなどが利用可能",
+      "gg_evidence": "テニスコート1面、ゲートボール1面グラウンドゴルフなど利用が可能",
+      "pdf_url": "https://www.city.gero.lg.jp/uploaded/attachment/16567.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

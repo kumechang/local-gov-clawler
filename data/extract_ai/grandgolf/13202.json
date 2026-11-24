@@ -1,0 +1,49 @@
+{
+  "municipality_code": "13202",
+  "municipality_name": "立川市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.tachikawa.lg.jp/_res/projects/default_project/_page_/001/008/085/tebiki_20260801.pdf",
+      "title": "スポーツ施設利用の手引き",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.tachikawa.lg.jp/_res/projects/default_project/_page_/001/025/596/gentibarai1.pdf",
+      "title": "現地払い施設における直前キャンセル",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "中里多目的運動広場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "サッカー・グラウンドゴルフ・ゲートボール等",
+      "gg_evidence": "中 里 多目的運動広場 サッカー・グラウンドゴルフ・ゲートボール等",
+      "pdf_url": "https://www.city.tachikawa.lg.jp/_res/projects/default_project/_page_/001/008/085/tebiki_20260801.pdf",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "見影橋公園野球場(グラウンドゴルフ専用枠)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "グラウンドゴルフ及びゲートボール専用枠",
+      "gg_evidence": "見影橋公園野球場(グラウンドゴルフ及びゲートボール専用枠)",
+      "pdf_url": "https://www.city.tachikawa.lg.jp/_res/projects/default_project/_page_/001/025/596/gentibarai1.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

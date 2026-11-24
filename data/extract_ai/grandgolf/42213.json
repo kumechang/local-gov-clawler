@@ -1,0 +1,49 @@
+{
+  "municipality_code": "42213",
+  "municipality_name": "雲仙市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.unzen.nagasaki.jp/kiji0038543/3_8543_23059_up_vqpm8wl3.pdf",
+      "title": "吾妻農村広場",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    },
+    {
+      "pdf_url": "https://www.city.unzen.nagasaki.jp/kiji0038543/3_8543_23068_up_o5rbasj0.pdf",
+      "title": "愛野運動公園",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "吾妻農村広場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "グラウンド1面のみ: 野球、グラウンドゴルフ、ゲートボール",
+      "gg_evidence": "グラウンド 1 面のみ:野球、グラウンドゴルフ、ゲートボール",
+      "pdf_url": "https://www.city.unzen.nagasaki.jp/kiji0038543/3_8543_23059_up_vqpm8wl3.pdf",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "facility_name": "愛野運動公園 グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "▼テニスコート ▼グラウンドゴルフ場",
+      "pdf_url": "https://www.city.unzen.nagasaki.jp/kiji0038543/3_8543_23068_up_o5rbasj0.pdf",
+      "confidence": "medium",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

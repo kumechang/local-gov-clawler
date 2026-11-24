@@ -1,0 +1,30 @@
+{
+  "municipality_code": "26214",
+  "municipality_name": "木津川市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kizugawa.lg.jp/cmsfiles/contents/0000001/1544/20210128-135008.pdf",
+      "title": "利用案内",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "山城コミュニティ広場 一般競技場(グラウンドゴルフ用)",
+      "address": "木津川市山城町上狛川原",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "山城コミュニティ広場 一般競技場(グラウンドゴルフ用)",
+      "pdf_url": "https://www.city.kizugawa.lg.jp/cmsfiles/contents/0000001/1544/20210128-135008.pdf",
+      "confidence": "high",
+      "note": "利用案内の施設一覧。番地は抜粋に無い"
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}

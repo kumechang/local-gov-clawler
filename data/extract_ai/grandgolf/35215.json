@@ -1,0 +1,42 @@
+{
+  "municipality_code": "35215",
+  "municipality_name": "周南市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.shunan.lg.jp/uploaded/attachment/121964.pdf",
+      "title": "スポーツ・健康",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [],
+  "organizations": [
+    {
+      "org_name": "長穂グラウンドゴルフクラブ",
+      "org_kind": "クラブ",
+      "activity_place": "長穂市民センター(徳山)",
+      "activity_schedule": "毎週(月・火・木)",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グランドゴルフ 長穂グラウンドゴルフクラブ",
+      "pdf_url": "https://www.city.shunan.lg.jp/uploaded/attachment/121964.pdf",
+      "confidence": "medium",
+      "note": "市のサークル・団体の一覧表。時間は表の崩れで確定できない"
+    },
+    {
+      "org_name": "はつらつクラブ(グランドゴルフ)",
+      "org_kind": "クラブ",
+      "activity_place": "大道理夢求の里交流館(徳山)",
+      "activity_schedule": "第1・4(金)・第3木曜日 9:00〜",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グランドゴルフ はつらつクラブ",
+      "pdf_url": "https://www.city.shunan.lg.jp/uploaded/attachment/121964.pdf",
+      "confidence": "medium",
+      "note": "代表者の氏名は個人のため省略"
+    }
+  ],
+  "unsure": []
+}

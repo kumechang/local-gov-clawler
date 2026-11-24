@@ -8,9 +8,29 @@
       "relevant": true,
       "skip_reason": "",
       "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.town.mamurogawa.yamagata.jp/material/files/group/6/2109taiikusisetusiyouryou.pdf",
+      "title": "社会体育施設使用料一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
     }
   ],
-  "facilities": [],
+  "facilities": [
+    {
+      "facility_name": "真室川町 グラウンドゴルフ場",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "町民体育館",
+      "inquiry_phone": "0233-62-3411",
+      "usage_note": "ターゲットバードゴルフ場・グラウンドゴルフ場の使用料",
+      "gg_evidence": "ターゲットバードゴルフ場・グラウンドゴルフ場使用料 問合せ先:町民体育館(TEL:0233-62-3411)",
+      "pdf_url": "https://www.town.mamurogawa.yamagata.jp/material/files/group/6/2109taiikusisetusiyouryou.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
   "events": [
     {
       "event_name": "梅の里まむろがわ春まつり グランドゴルフ交流大会",

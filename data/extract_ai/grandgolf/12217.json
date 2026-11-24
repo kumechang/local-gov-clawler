@@ -1,10 +1,145 @@
 {
   "municipality_code": "12217",
   "municipality_name": "柏市",
-  "documents": [],
+  "documents": [
+    {
+      "pdf_url": "https://www.city.kashiwa.lg.jp/documents/34867/04kashiwa4shou.pdf",
+      "title": "柏第四小学校(学校開放)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.kashiwa.lg.jp/documents/34867/05kashiwa5shou.pdf",
+      "title": "柏第五小学校(学校開放)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.kashiwa.lg.jp/documents/34867/14kashiwa8shou.pdf",
+      "title": "柏第八小学校(学校開放)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.kashiwa.lg.jp/documents/34867/26yutakashou.pdf",
+      "title": "豊小学校(学校開放)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.kashiwa.lg.jp/documents/34867/27sakainehigashishou.pdf",
+      "title": "酒井根東小学校(学校開放)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.kashiwa.lg.jp/documents/34867/38takayanagishou.pdf",
+      "title": "高柳小学校(学校開放)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    },
+    {
+      "pdf_url": "https://www.city.kashiwa.lg.jp/documents/34867/03kashiwa3shou.pdf",
+      "title": "柏第三小学校(学校開放)",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
   "facilities": [],
   "events": [],
-  "organizations": [],
+  "organizations": [
+    {
+      "org_name": "香取台グランド・ゴルフ会",
+      "org_kind": "クラブ",
+      "activity_place": "柏第四小学校 校庭(グラウンド)",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "香取台グランド・ゴルフ会 校庭(グラウンド) グラウンド・ゴルフ",
+      "pdf_url": "https://www.city.kashiwa.lg.jp/documents/34867/04kashiwa4shou.pdf",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "org_name": "ふれあい友の会",
+      "org_kind": "クラブ",
+      "activity_place": "柏第五小学校 校庭(グラウンド)",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "ふれあい友の会 校庭(グラウンド) グラウンド・ゴルフ",
+      "pdf_url": "https://www.city.kashiwa.lg.jp/documents/34867/05kashiwa5shou.pdf",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "org_name": "永楽会",
+      "org_kind": "クラブ",
+      "activity_place": "柏第八小学校 校庭(グラウンド)",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "永楽会 校庭(グラウンド) グラウンド・ゴルフ",
+      "pdf_url": "https://www.city.kashiwa.lg.jp/documents/34867/14kashiwa8shou.pdf",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "org_name": "富里グラウンドゴルフクラブ同好会",
+      "org_kind": "クラブ",
+      "activity_place": "豊小学校 校庭(グラウンド)",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "富里グラウンドゴルフクラブ同好会 校庭(グラウンド) グラウンド・ゴルフ",
+      "pdf_url": "https://www.city.kashiwa.lg.jp/documents/34867/26yutakashou.pdf",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "org_name": "中原グランドゴルフクラブ",
+      "org_kind": "クラブ",
+      "activity_place": "酒井根東小学校 校庭(グラウンド)",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "中原グランドゴルフクラブ 校庭(グラウンド) グラウンドゴルフ",
+      "pdf_url": "https://www.city.kashiwa.lg.jp/documents/34867/27sakainehigashishou.pdf",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "org_name": "高柳高友会グランドゴルフ会",
+      "org_kind": "クラブ",
+      "activity_place": "高柳小学校 校庭(グラウンド)",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "高柳高友会グランドゴルフ会 校庭(グラウンド) グラウンド・ゴルフ",
+      "pdf_url": "https://www.city.kashiwa.lg.jp/documents/34867/38takayanagishou.pdf",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "org_name": "柏エンジェルス(グラウンドゴルフ)",
+      "org_kind": "クラブ",
+      "activity_place": "柏第三小学校 グラウンド",
+      "activity_schedule": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "柏エンジェルス グラウンド グラウンドゴルフ",
+      "pdf_url": "https://www.city.kashiwa.lg.jp/documents/34867/03kashiwa3shou.pdf",
+      "confidence": "medium",
+      "note": "団体名・種目の記載のみ"
+    }
+  ],
   "unsure": [
     {
       "pdf_url": "https://www.city.kashiwa.lg.jp/documents/3220/seibu-akinosportsfesta.pdf",

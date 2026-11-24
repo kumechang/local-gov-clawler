@@ -1,0 +1,39 @@
+{
+  "municipality_code": "32202",
+  "municipality_name": "浜田市",
+  "documents": [
+    {
+      "pdf_url": "https://www.city.hamada.shimane.jp/www/contents/1001000002124/simple/kaisaiitirann.pdf",
+      "title": "浜田市総合スポーツ大会競技別開催一覧",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": ""
+    }
+  ],
+  "facilities": [],
+  "events": [
+    {
+      "event_name": "浜田市総合スポーツ大会 グラウンドゴルフ",
+      "event_kind": "大会",
+      "date_text": "10月24日(土)",
+      "date_start": "2026-10-24",
+      "date_end": "2026-10-24",
+      "fiscal_year": 2026,
+      "period": "期間内",
+      "venue": "浜田市陸上競技場",
+      "organizer": "",
+      "target": "",
+      "fee": "",
+      "entry": "",
+      "deadline": "",
+      "contact_dept": "",
+      "contact_phone": "",
+      "evidence": "グラウンドゴルフ 10月24日(土) 浜田市陸上競技場",
+      "pdf_url": "https://www.city.hamada.shimane.jp/www/contents/1001000002124/simple/kaisaiitirann.pdf",
+      "confidence": "medium",
+      "note": "競技別開催一覧。年は書かれていない。10月24日が土曜日になる2026年とした"
+    }
+  ],
+  "organizations": [],
+  "unsure": []
+}

@@ -1,0 +1,30 @@
+{
+  "municipality_code": "33663",
+  "municipality_name": "久米南町",
+  "documents": [
+    {
+      "pdf_url": "https://www.town.kumenan.lg.jp/shisetsu/documents/utsukushimori_leaflet.pdf",
+      "title": "美しい森リーフレット",
+      "relevant": true,
+      "skip_reason": "",
+      "doc_kind": "施設案内"
+    }
+  ],
+  "facilities": [
+    {
+      "facility_name": "久米南町民運動公園(グラウンドゴルフ場)",
+      "address": "",
+      "phone": "",
+      "inquiry_dept": "",
+      "inquiry_phone": "",
+      "usage_note": "",
+      "gg_evidence": "久米南町民運動公園(グラウンドゴルフ場)",
+      "pdf_url": "https://www.town.kumenan.lg.jp/shisetsu/documents/utsukushimori_leaflet.pdf",
+      "confidence": "high",
+      "note": ""
+    }
+  ],
+  "events": [],
+  "organizations": [],
+  "unsure": []
+}
