@@ -1,15 +1,15 @@
 ﻿municipality_code,municipality_name,prefecture,outcome,found,pdf_link_found,hit_pages,hit_kinds,hit_roles,pages_fetched,stopped,nav_hits,pdf_link_hits,first_hit_url,first_hit_role,first_hit_kind,first_hit_title,first_hit_snippet
-39201,高知市,高知県,surveyed,False,False,0,,,68,exhausted,0,0,,,,,
+39201,高知市,高知県,surveyed,False,False,0,,,63,exhausted,0,0,,,,,
 39202,室戸市,高知県,surveyed,False,False,0,,,5,exhausted,0,0,,,,,
-39203,安芸市,高知県,surveyed,False,False,0,,,33,exhausted,0,0,,,,,
+39203,安芸市,高知県,surveyed,False,False,0,,,34,exhausted,0,0,,,,,
 39204,南国市,高知県,surveyed,False,False,0,,,48,exhausted,0,0,,,,,
-39205,土佐市,高知県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+39205,土佐市,高知県,surveyed,False,False,0,,,20,exhausted,0,0,,,,,
 39206,須崎市,高知県,surveyed,False,False,0,,,24,exhausted,0,0,,,,,
-39208,宿毛市,高知県,surveyed,False,False,0,,,31,exhausted,0,0,,,,,
+39208,宿毛市,高知県,surveyed,False,False,0,,,32,exhausted,0,0,,,,,
 39209,土佐清水市,高知県,surveyed,False,False,0,,,15,exhausted,0,0,,,,,
-39210,四万十市,高知県,surveyed,False,False,0,,,114,exhausted,0,0,,,,,
+39210,四万十市,高知県,surveyed,False,False,0,,,108,exhausted,0,0,,,,,
 39211,香南市,高知県,surveyed,False,False,0,,,30,exhausted,0,0,,,,,
-39212,香美市,高知県,surveyed,True,False,4,event|facility,event|facility,101,exhausted,0,0,https://www.city.kami.lg.jp/map/stadium-02.html,facility,facility,秦山公園野球場(土佐山田スタジアム) - 香美市公式ホームページ,○軟式野球 ○ホッケー ○グラウンド・ゴルフ ○保育園の運動会・凧上げ大会 ○結婚式の前撮り
+39212,香美市,高知県,surveyed,True,False,3,facility,facility,100,exhausted,0,0,https://www.city.kami.lg.jp/map/stadium-02.html,facility,facility,秦山公園野球場(土佐山田スタジアム) - 香美市公式ホームページ,○軟式野球 ○ホッケー ○グラウンド・ゴルフ ○保育園の運動会・凧上げ大会 ○結婚式の前撮り
 39301,東洋町,高知県,fetch_failed,False,False,0,,,0,,0,0,,,,,
 39302,奈半利町,高知県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
 39303,田野町,高知県,surveyed,True,False,1,other,sports_nav,27,exhausted,0,0,https://tanocho.jp/life/detail.php?hdnKey=143,sports_nav,other,田野町体育会|田野町 高知県田野町,グラウンドゴルフ
