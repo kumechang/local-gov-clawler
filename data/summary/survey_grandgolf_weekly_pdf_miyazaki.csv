@@ -9,13 +9,13 @@
 45208,西都市,宮崎県,surveyed,False,False,0,,,27,exhausted,0,0,,,,,
 45209,えびの市,宮崎県,surveyed,True,False,10,facility,facility|listing|pdf,38,exhausted,0,0,https://www.city.ebino.lg.jp/benri_service/shisetsuannai/2895.html,listing,facility,王子原運動公園・野球場/えびの市,グラウンドゴルフ 4ホール
 45341,三股町,宮崎県,surveyed,True,False,1,facility,facility,30,exhausted,0,0,https://www.town.mimata.lg.jp/contents/1301.html,facility,facility,申請書 ̳公園施設の使用申請 - 三股町公式ホームページ,2遠足やグラウンドゴルフなどで旭ヶ丘運動公園以外の公園(河川敷を含む)を利用する場合
-45361,高原町,宮崎県,surveyed,False,False,0,,,17,exhausted,0,0,,,,,
+45361,高原町,宮崎県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
 45382,国富町,宮崎県,surveyed,False,False,0,,,44,exhausted,0,0,,,,,
 45383,綾町,宮崎県,surveyed,False,False,0,,,44,exhausted,0,0,,,,,
-45401,高鍋町,宮崎県,surveyed,True,False,12,event|facility,event|facility|pdf,37,exhausted,0,0,https://www.town.takanabe.lg.jp/soshiki/shakaikyoiku/4/1/3/2767.html,facility,facility,高鍋町のスポーツ施設/高鍋町,ソフトボール3面、グラウンドゴルフ3面、サッカー2面、ラグビー1面、駐車場50台
+45401,高鍋町,宮崎県,surveyed,True,False,12,event|facility,event|facility|pdf,36,exhausted,0,0,https://www.town.takanabe.lg.jp/soshiki/shakaikyoiku/4/1/3/2767.html,facility,facility,高鍋町のスポーツ施設/高鍋町,ソフトボール3面、グラウンドゴルフ3面、サッカー2面、ラグビー1面、駐車場50台
 45402,新富町,宮崎県,surveyed,True,False,1,organization,facility,34,exhausted,0,0,https://www.town.shintomi.lg.jp/soshiki/shogaigakushu/gyomu/sports/2/953.html,facility,organization,スポーツ団体紹介/新富町,グラウンドゴルフ協会
 45403,西米良村,宮崎県,no_seed,False,False,0,,,0,,0,0,,,,,
-45404,木城町,宮崎県,surveyed,True,False,2,event|organization,event|facility,16,exhausted,0,0,https://www.town.kijo.lg.jp/sosikikarasagasu/kyouikuiinkai_kyouikuka/sport/1801.html,facility,organization,木城町スポーツ協会/木城町,木城町グラウンド・ゴルフ協会
+45404,木城町,宮崎県,surveyed,True,False,1,organization,facility,15,exhausted,0,0,https://www.town.kijo.lg.jp/sosikikarasagasu/kyouikuiinkai_kyouikuka/sport/1801.html,facility,organization,木城町スポーツ協会/木城町,木城町グラウンド・ゴルフ協会
 45405,川南町,宮崎県,surveyed,False,False,0,,,25,exhausted,0,0,,,,,
 45406,都農町,宮崎県,fetch_failed,False,False,0,,,0,exhausted,0,0,,,,,
 45421,門川町,宮崎県,surveyed,False,False,0,,,33,exhausted,0,0,,,,,
@@ -24,4 +24,4 @@
 45431,美郷町,宮崎県,surveyed,True,False,1,facility,pdf,52,exhausted,0,0,https://www.town.miyazaki-misato.lg.jp/kiji003561/3_561_1209_up_zdl0xkz1.pdf,pdf,facility,美郷町社会体育施設一覧(PDF:85.9キロバイト),グラウンドゴルフ
 45441,高千穂町,宮崎県,surveyed,True,False,2,event|other,pdf,6,exhausted,0,0,https://www.town-takachiho.jp/material/files/group/8/11216743.pdf,pdf,other,8.資料 (PDFファイル: 975.3KB),5.グランドゴルフ 6.ミニテニス 7.水泳・水中ウォーキング 8.筋力トレー
 45442,日之影町,宮崎県,surveyed,True,False,3,facility,facility,24,exhausted,0,0,https://www.town.hinokage.lg.jp/docs/2016022300088/,facility,facility,日之影中学校体育館 | 日之影町,野球/ソフトボール/ゲートボール/グラウンドゴルフ/サッカー等
-45443,五ヶ瀬町,宮崎県,surveyed,False,False,0,,,16,exhausted,0,0,,,,,
+45443,五ヶ瀬町,宮崎県,surveyed,False,False,0,,,15,exhausted,0,0,,,,,
